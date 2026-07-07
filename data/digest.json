@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T03:01:31.771317+00:00",
+  "generated_at": "2026-07-07T03:54:47.072828+00:00",
   "items": [
     {
       "id": "hk-fstb-press-releases-cf3d3aabb6",
@@ -22,7 +22,7 @@
       },
       "summary": "FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-press-releases-f0b13a24fb",
@@ -45,7 +45,7 @@
       },
       "summary": "FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "eu-eba-news-23fee21bfb",
@@ -68,7 +68,7 @@
       },
       "summary": "​The European Banking Authority consults on a draft methodology for setting fines under the Markets in Crypto-Assets Regulation (MiCA)",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "eu-eba-news-e444efca6b",
@@ -91,7 +91,7 @@
       },
       "summary": "​The EBA updates validation rules for supervisory reporting ​",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "us-cftc-press-releases-378f480267",
@@ -114,7 +114,7 @@
       },
       "summary": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "us-sec-press-releases-8121898124",
@@ -137,7 +137,7 @@
       },
       "summary": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "us-federal-reserve-press-releases-521e0c6a87",
@@ -160,7 +160,30 @@
       },
       "summary": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
+    },
+    {
+      "id": "global-gdf-news-0e5b951e42",
+      "jurisdiction": "GLOBAL",
+      "source": "GDF — News",
+      "title": "GDF and Block Release Landmark Report on Self-Custody Wallets",
+      "url": "https://www.gdf.io/news-letters/gdf-and-block-release-landmark-report-on-self-custody-wallets/",
+      "published": "2026-06-18T09:36:33+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "GDF — News",
+            "url": "https://www.gdf.io/news-letters/gdf-and-block-release-landmark-report-on-self-custody-wallets/"
+          }
+        ]
+      },
+      "summary": "GDF and Block Release Landmark Report on Self-Custody Wallets",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-press-releases-6c0313c1e9",
@@ -183,7 +206,7 @@
       },
       "summary": "HKMA demonstrates potential of tokenisation to corporate treasury community",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-press-releases-bd8330b490",
@@ -206,7 +229,7 @@
       },
       "summary": "HKMA establishes Tokenised Bond Expert Group",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-circulars-guidance-ab434e005c",
@@ -229,7 +252,7 @@
       },
       "summary": "SPM CRP-1: update on cryptoassets classification conditions",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-sfc-circulars-5d6918c746",
@@ -252,7 +275,7 @@
       },
       "summary": "Circular to licensed corporations, SFC-licensed virtual asset service providers and associated entities\nEnhanced cybersecurity measures to address evolving risks arising from artificial intelligence-enabled cyberattacks",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "global-bis-basel-committee-press-releases-de5f5d1d7b",
@@ -275,7 +298,7 @@
       },
       "summary": "Project Agorá shows how tokenisation can improve wholesale cross-border payments; work will advance to real-value testing",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-sfc-circulars-c4ab7cba21",
@@ -298,7 +321,7 @@
       },
       "summary": "Circular on provision of Relevant Stablecoin service by virtual asset trading platforms and licensed corporations",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-sfc-circulars-5d60d51039",
@@ -321,7 +344,7 @@
       },
       "summary": "Circular on SFC-authorised funds with exposure to virtual assets",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-circulars-guidance-3adac2f2c8",
@@ -344,7 +367,7 @@
       },
       "summary": "Guidance on Offering of Financing for Virtual Asset Dealing, Shared Order Book, and Client Virtual Asset Withdrawals",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-circulars-guidance-4d596f25e0",
@@ -367,7 +390,7 @@
       },
       "summary": "Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-circulars-guidance-87223380d5",
@@ -390,7 +413,7 @@
       },
       "summary": "Updated Guidance on Provision of Custodial Services for Digital Assets",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-circulars-guidance-b8f2a1e67e",
@@ -413,7 +436,7 @@
       },
       "summary": "Relevant Stablecoin-related Activities",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-fstb-press-releases-959976646f",
@@ -436,7 +459,7 @@
       },
       "summary": "FSTB and SFC publish consultation conclusions on legislative proposals for regulating virtual asset advisory and management services",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "global-bis-basel-committee-press-releases-3ac5b32640",
@@ -459,7 +482,7 @@
       },
       "summary": "Basel Committee agrees to publish report on information and communication technology risk management, progresses cryptoasset targeted review, considers targeted updates on liquidity risk principles",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-fstb-press-releases-ab980a8417",
@@ -482,7 +505,7 @@
       },
       "summary": "Inland Revenue (Amendment) (Crypto-Asset Reporting Framework and Amended Common Reporting Standard) Bill 2026 to be gazetted",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-press-releases-5c9bbb077d",
@@ -505,7 +528,7 @@
       },
       "summary": "Beware of tokens purported to be associated with licensed stablecoin issuers",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "global-bis-basel-committee-press-releases-39b3db9d11",
@@ -528,7 +551,7 @@
       },
       "summary": "CPMI-IOSCO assesses that the United Kingdom has implemented the Principles for financial market infrastructures for two FMI types, but recommends some improvements",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-hkma-press-releases-b3d87af7a9",
@@ -551,30 +574,7 @@
       },
       "summary": "Granting of stablecoin issuer licences",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
-    },
-    {
-      "id": "us-fincen-press-releases-6fb50d32ba",
-      "jurisdiction": "US",
-      "source": "FinCEN — Press releases",
-      "title": "Treasury Proposes Rule to Implement the GENIUS Act’s Requirements to Counter Illicit Finance",
-      "url": "https://www.fincen.gov/news/news-releases/treasury-proposes-rule-implement-genius-acts-requirements-counter-illicit",
-      "published": "2026-04-08T12:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "FinCEN — Press releases",
-            "url": "https://www.fincen.gov/news/news-releases/treasury-proposes-rule-implement-genius-acts-requirements-counter-illicit"
-          }
-        ]
-      },
-      "summary": "Treasury Proposes Rule to Implement the GENIUS Act’s Requirements to Counter Illicit Finance",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:01:31.771317+00:00"
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
     }
   ],
   "source_health": [
@@ -679,6 +679,21 @@
       "note": "Feed responding normally"
     },
     {
+      "name": "Wolfsberg Group — News & publications",
+      "status": "ok",
+      "note": "Feed responding normally"
+    },
+    {
+      "name": "GDF — News",
+      "status": "ok",
+      "note": "Feed responding normally"
+    },
+    {
+      "name": "ACAMS Today",
+      "status": "ok",
+      "note": "Feed responding normally"
+    },
+    {
       "name": "BIS / Basel Committee — Press releases",
       "status": "ok",
       "note": "Feed responding normally"
@@ -711,7 +726,7 @@
     {
       "name": "Claude summarisation",
       "status": "dead",
-      "note": "Batch summarisation call failed this run -- cards below show raw titles instead of AI summaries. Check ANTHROPIC_API_KEY and Action logs."
+      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
     }
   ]
 }

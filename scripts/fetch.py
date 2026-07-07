@@ -43,7 +43,7 @@ RELEVANCE_KEYWORDS = [
     "virtual currency", "defi", "decentralized finance", "decentralised finance",
     "crypto mixer", "crypto-asset", "cryptoasset",
     "e-hkd", "digital yuan", "digital renminbi", "digital currency",
-    "project ensemble", "mbridge", "m-bridge",
+    "project ensemble", "mbridge", "m-bridge", "wallet", "self-custody",
 ]
 
 
@@ -166,11 +166,17 @@ def _extract_page_items(html, base_url, selector=None, href_pattern=None):
             # Prefer the anchor with real text -- a thumbnail/image-only link
             # (no text, alt-text aside) is often the *first* <a> in a card,
             # with the actual title link appearing later in the same node.
-            link, title = None, ""
-            for candidate in node.find_all("a", href=True):
+            anchors = node.find_all("a", href=True)
+            link, title = (anchors[0], "") if anchors else (None, "")
+            for candidate in anchors:
                 text = _title_text(candidate)
                 if len(text) > len(title):
                     link, title = candidate, text
+            if link is not None and len(title) < 12:
+                # Overlay-anchor card pattern: an empty <a> stretched over the
+                # card for click handling, with the real title in a sibling
+                # heading rather than inside any anchor.
+                title = _title_text(node)
         if not link or not link.get("href"):
             continue
         href = urljoin(base_url, link["href"])

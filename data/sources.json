@@ -170,6 +170,29 @@
     "tier": "official"
   },
   {
+    "name": "Wolfsberg Group — News & publications",
+    "jurisdiction": "GLOBAL",
+    "kind": "page",
+    "url": "https://www.wolfsberg-group.org/news",
+    "tier": "official",
+    "selector": "div:has(> a[href^=\"/news/\"])"
+  },
+  {
+    "name": "GDF — News",
+    "jurisdiction": "GLOBAL",
+    "kind": "feed",
+    "url": "https://www.gdf.io/feed/",
+    "tier": "official"
+  },
+  {
+    "name": "ACAMS Today",
+    "jurisdiction": "GLOBAL",
+    "kind": "page",
+    "url": "https://www.acams.org/en/acamstoday",
+    "tier": "industry",
+    "href_pattern": "/en/opinion/"
+  },
+  {
     "name": "BIS / Basel Committee — Press releases",
     "jurisdiction": "GLOBAL",
     "kind": "feed",

@@ -10,6 +10,7 @@ nothing new to commit.
 import hashlib
 import json
 import logging
+import os
 import re
 import sys
 from datetime import datetime, timedelta, timezone
@@ -217,13 +218,16 @@ def main():
     if not summarise_ok:
         # Don't let a failed AI-enrichment call pass silently as if every
         # card's summary/so-what were genuinely Claude-generated -- reuse
-        # the existing source-health banner/footer to surface it.
-        source_health.append({
-            "name": "Claude summarisation",
-            "status": "dead",
-            "note": "Batch summarisation call failed this run -- cards below show raw "
-                    "titles instead of AI summaries. Check ANTHROPIC_API_KEY and Action logs.",
-        })
+        # the existing source-health banner/footer to surface it. The digest
+        # still publishes either way (raw titles, official-tier verification,
+        # register diffs and dedupe all work without an API key).
+        if os.environ.get("ANTHROPIC_API_KEY"):
+            note = ("Batch summarisation call failed this run -- cards below show raw "
+                    "titles instead of AI summaries. Check the Action logs.")
+        else:
+            note = ("No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and "
+                    "source self-healing are disabled; cards show raw source titles.")
+        source_health.append({"name": "Claude summarisation", "status": "dead", "note": note})
 
     merged_items = merge_digest_window(previous_digest.get("items", []), surfaced)
     digest = {
