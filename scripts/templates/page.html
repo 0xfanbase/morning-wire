@@ -196,6 +196,45 @@ try {
   }
   .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
   .theme-toggle .ico { font-size: 15px; }
+  .theme-toggle .caret { font-size: 10px; color: var(--ink-3); margin-left: 2px; }
+
+  /* Theme picker: button shows the CURRENT theme; the menu opens on hover
+     (mouse) or tap (touch/click) and checkmarks the active choice. The
+     8px top padding is a hover bridge so the pointer can't fall through
+     the gap between button and menu. */
+  .theme-menu { position: relative; flex: 0 0 auto; }
+  .theme-options {
+    display: none;
+    position: absolute; right: 0; top: 100%;
+    padding-top: 8px;
+    min-width: 140px; z-index: 40;
+  }
+  .theme-menu.open .theme-options { display: block; }
+  /* Hover-open for mouse users only; keyboard users toggle with Enter on the
+     button (focus-within would fight Escape/selection-close, since the
+     focused button keeps the menu pinned open). */
+  @media (hover: hover) and (pointer: fine) {
+    .theme-menu:hover .theme-options { display: block; }
+  }
+  .theme-options-list {
+    background: var(--card);
+    border: 1px solid var(--border-2);
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 8px 28px rgba(0,0,0,.16);
+  }
+  .theme-options button {
+    display: flex; align-items: center; gap: 9px; width: 100%;
+    min-height: 42px; padding: 0 12px;
+    border: none; border-radius: 8px; background: none;
+    font-family: var(--sans); font-size: 13.5px; font-weight: 600;
+    color: var(--ink-2); cursor: pointer; text-align: left;
+  }
+  .theme-options button:hover { color: var(--accent); background: var(--bg-2); }
+  .theme-options button[aria-checked="true"]::after {
+    content: "✓"; margin-left: auto; color: var(--accent); font-weight: 700;
+  }
+  .theme-options button .ico { font-size: 15px; width: 18px; }
 
   .disclaimer-line {
     max-width: 720px; margin: 0 auto;
@@ -674,7 +713,7 @@ try {
     html[data-theme="matrix"] header.masthead { background: #fff !important; }
     .wordmark, .section-head h2 { text-shadow: none !important; }
     header.masthead { position: static; border-bottom: 2px solid #000; }
-    .theme-toggle, .filters, .banner, .tabs, .archive summary .caret,
+    .theme-menu, .theme-toggle, .filters, .banner, .tabs, .archive summary .caret,
     .copycite, .copy-briefing, .jumpnav, .fresh-dot, .foot-links,
     details.brief > summary .b-caret { display: none !important; }
     /* Print everything: a hidden tab's content still belongs in the PDF. */
@@ -742,9 +781,18 @@ try {
       <p class="mast-meta"><strong id="mast-date">—</strong> · generated <span id="mast-time">—</span><span id="mast-fresh"></span></p>
       <p class="mast-meta" id="mast-scope"></p>
     </div>
-    <button class="theme-toggle" id="themeBtn" type="button" aria-label="Toggle colour theme">
-      <span class="ico" id="themeIco">☾</span><span id="themeLbl">Dark</span>
-    </button>
+    <div class="theme-menu" id="themeMenu">
+      <button class="theme-toggle" id="themeBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose theme">
+        <span class="ico" id="themeIco">☀</span><span id="themeLbl">Light</span><span class="caret" aria-hidden="true">▾</span>
+      </button>
+      <div class="theme-options">
+        <div class="theme-options-list" role="menu" aria-label="Theme">
+          <button type="button" role="menuitemradio" aria-checked="true" data-theme-opt="light"><span class="ico">☀</span>Light</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="dark"><span class="ico">☾</span>Dark</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="matrix"><span class="ico">ﾏ</span>Matrix</button>
+        </div>
+      </div>
+    </div>
   </div>
   <p class="disclaimer-line"><span class="bolt" aria-hidden="true">✦</span> AI-sourced &amp; AI-generated. Verify against official sources before acting.</p>
 </header>
@@ -1558,29 +1606,45 @@ const matrixRain = (() => {
    prefers-color-scheme, light fallback
    ============================================================ */
 const THEME_ORDER = ["light", "dark", "matrix"];
-const THEME_UI = { light: ["☾", "Dark"], dark: ["ﾏ", "Matrix"], matrix: ["☀", "Light"] };
+const THEME_UI = { light: ["☀", "Light"], dark: ["☾", "Dark"], matrix: ["ﾏ", "Matrix"] };
 function applyTheme(theme) {
   if (!THEME_ORDER.includes(theme)) theme = "light";
   document.documentElement.setAttribute("data-theme", theme);
+  // The button always states the CURRENT theme -- reading "Light" while the
+  // page is green-on-black is a lie; the menu is where you change it.
   const [ico, lbl] = THEME_UI[theme];
   document.getElementById("themeIco").textContent = ico;
   document.getElementById("themeLbl").textContent = lbl;
+  document.querySelectorAll("[data-theme-opt]").forEach(b =>
+    b.setAttribute("aria-checked", String(b.dataset.themeOpt === theme)));
   if (theme === "matrix") matrixRain.start(); else matrixRain.stop();
 }
 (function initTheme() {
   // The <head> pre-paint script already set data-theme (saved manual choice,
-  // else OS preference). Here we only sync the toggle + rain to it.
-  // Only an explicit manual toggle is persisted (click handler below) --
+  // else OS preference). Here we only sync the picker + rain to it.
+  // Only an explicit menu selection is persisted (handler below) --
   // auto-detection is never written back to storage, so an OS-preference
   // change keeps being followed until the reader deliberately overrides it.
   applyTheme(document.documentElement.getAttribute("data-theme") || "light");
 })();
-document.getElementById("themeBtn").onclick = () => {
-  const current = document.documentElement.getAttribute("data-theme");
-  const next = THEME_ORDER[(THEME_ORDER.indexOf(current) + 1) % THEME_ORDER.length];
-  applyTheme(next);
-  try { localStorage.setItem("regradar-theme", next); } catch (e) {}
-};
+const themeMenu = document.getElementById("themeMenu");
+function setThemeMenuOpen(open) {
+  themeMenu.classList.toggle("open", open);
+  document.getElementById("themeBtn").setAttribute("aria-expanded", String(open));
+}
+document.getElementById("themeBtn").onclick = () =>
+  setThemeMenuOpen(!themeMenu.classList.contains("open"));
+document.querySelectorAll("[data-theme-opt]").forEach(b => b.onclick = () => {
+  applyTheme(b.dataset.themeOpt);
+  try { localStorage.setItem("regradar-theme", b.dataset.themeOpt); } catch (e) {}
+  setThemeMenuOpen(false);
+});
+document.addEventListener("click", e => {
+  if (!themeMenu.contains(e.target)) setThemeMenuOpen(false);
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") setThemeMenuOpen(false);
+});
 
 /* ---------- print: a closed <details> won't expand via CSS alone ---------- */
 let printOpened = [];
