@@ -9,13 +9,13 @@ import json
 import logging
 import re
 
-from summarise import get_client, MODEL, _strip_fences, _extract_text  # noqa: F401 (reuse)
+from summarise import get_client, MODEL, WEB_SEARCH_TYPE, _strip_fences, _extract_text  # noqa: F401 (reuse)
 
 logger = logging.getLogger(__name__)
 
 MAX_VERIFY_CALLS_PER_RUN = 10
 
-WEB_SEARCH_TOOL = {"type": "web_search_20260209", "name": "web_search", "max_uses": 3}
+WEB_SEARCH_TOOL = {"type": WEB_SEARCH_TYPE, "name": "web_search", "max_uses": 3}
 
 
 def _base_source(item):

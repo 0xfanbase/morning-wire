@@ -147,8 +147,9 @@ def prune_seen_items(seen):
 
 def merge_digest_window(previous_items, fresh_items):
     """Union previous items (still within the retention window) with this
-    run's new/updated items, letting this run's version win on URL clashes,
-    then prune anything past DIGEST_ITEMS_MAX_AGE_DAYS.
+    run's new/updated items, letting this run's version win on dedupe-key
+    clashes (unique id for register items, canonical URL otherwise), then
+    prune anything past DIGEST_ITEMS_MAX_AGE_DAYS.
     """
     cutoff = datetime.now(timezone.utc) - timedelta(days=DIGEST_ITEMS_MAX_AGE_DAYS)
     by_key = {}

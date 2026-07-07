@@ -5,6 +5,15 @@
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
 <title>Reg Radar — Daily Digital-Asset Regulatory Digest</title>
+<script>
+/* Set the theme before first paint -- doing this at the end of <body> gives
+   dark-OS readers a flash of the light palette on every load. */
+try {
+  var saved = localStorage.getItem("regradar-theme");
+  var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+} catch (e) {}
+</script>
 
 <style>
   /* ============================================================
@@ -397,6 +406,13 @@
 </head>
 <body>
 
+<noscript>
+  <div style="max-width:720px;margin:40px auto;padding:0 20px;font-family:Georgia,serif;font-size:16px;line-height:1.6;">
+    <strong>Reg Radar</strong> needs JavaScript enabled to display the digest.
+    The raw data behind this page is available in the repository as <code>data/digest.json</code>.
+  </div>
+</noscript>
+
 <header class="masthead">
   <div class="mast-inner">
     <div>
@@ -638,9 +654,13 @@ function renderFeed(items) {
 /* ---------- archive ---------- */
 function renderArchive() {
   const slot = document.getElementById("archive-slot");
+  // Re-rendering (e.g. a filter-chip click) must not collapse an archive the
+  // reader has opened -- carry the open state across the rebuild.
+  const existing = slot.querySelector("details.archive");
+  const wasOpen = existing ? existing.open : false;
   const arch = archiveItems().filter(matchesFilters)
     .sort((a, b) => new Date(b.published) - new Date(a.published));
-  slot.innerHTML = `<details class="archive">
+  slot.innerHTML = `<details class="archive"${wasOpen ? " open" : ""}>
     <summary><span class="caret" aria-hidden="true">▶</span> Last 7 days<span class="a-count">${arch.length} item${arch.length === 1 ? "" : "s"}</span></summary>
     <div class="archive-body">
       ${arch.length ? arch.map(cardHTML).join("") : `<div class="empty"><p>No earlier items match the current filters.</p></div>`}
@@ -686,20 +706,29 @@ function applyTheme(theme) {
   document.getElementById("themeLbl").textContent = dark ? "Light" : "Dark";
 }
 (function initTheme() {
-  // Only an explicit manual toggle is persisted (below). Auto-detection is
-  // never written back to storage -- otherwise the very first automatic
-  // load would permanently pin the theme and stop following a live OS
-  // prefers-color-scheme change on every later visit.
-  let saved = null;
-  try { saved = localStorage.getItem("regradar-theme"); } catch (e) {}
-  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  applyTheme(saved || (prefersDark ? "dark" : "light")); // light is the fallback
+  // The <head> pre-paint script already set data-theme (saved manual choice,
+  // else OS preference). Here we only sync the toggle's icon/label to it.
+  // Only an explicit manual toggle is persisted (click handler below) --
+  // auto-detection is never written back to storage, so an OS-preference
+  // change keeps being followed until the reader deliberately overrides it.
+  applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light");
 })();
 document.getElementById("themeBtn").onclick = () => {
   const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
   applyTheme(next);
   try { localStorage.setItem("regradar-theme", next); } catch (e) {}
 };
+
+/* ---------- print: a closed <details> won't expand via CSS alone ---------- */
+let archiveOpenBeforePrint = null;
+window.addEventListener("beforeprint", () => {
+  const d = document.querySelector("details.archive");
+  if (d) { archiveOpenBeforePrint = d.open; d.open = true; }
+});
+window.addEventListener("afterprint", () => {
+  const d = document.querySelector("details.archive");
+  if (d && archiveOpenBeforePrint !== null) { d.open = archiveOpenBeforePrint; archiveOpenBeforePrint = null; }
+});
 
 /* ---------- boot ---------- */
 renderHealth();

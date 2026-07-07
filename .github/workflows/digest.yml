@@ -21,12 +21,17 @@ permissions:
 jobs:
   digest:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # Worst case is ~30 sequential sources each exhausting its 15s timeout
+    # across retries -- 15 minutes is not enough headroom for a bad network
+    # day; a hung run is still bounded well below the cron interval.
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          # Full history: the push fallback rebases onto a concurrently
+          # updated main, which can fail on a shallow clone.
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5

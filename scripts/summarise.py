@@ -3,13 +3,18 @@ and materiality judging for re-surfaced (same-URL, changed-title) items.
 """
 import json
 import logging
+import os
 import re
 
 import anthropic
 
 logger = logging.getLogger(__name__)
 
-MODEL = "claude-sonnet-4-6"
+# Overridable without a code change (repo Settings -> Variables/Secrets ->
+# pass through digest.yml env) so a model retirement or web-search tool
+# version bump never requires editing scripts.
+MODEL = os.environ.get("REG_RADAR_MODEL", "claude-sonnet-4-6")
+WEB_SEARCH_TYPE = os.environ.get("REG_RADAR_WEB_SEARCH_TYPE", "web_search_20260209")
 MAX_ITEMS_PER_RUN = 25
 
 VALID_TYPES = {

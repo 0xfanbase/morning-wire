@@ -23,6 +23,9 @@ concurrency:
 
 jobs:
   deploy:
+    # Skip quietly while the repository is still private (free-plan Pages
+    # requires a public repo -- running would just produce a daily red X).
+    if: ${{ github.event.repository.private != true }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages

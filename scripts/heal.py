@@ -15,7 +15,7 @@ from pathlib import Path
 
 from fetch import fetch_source
 from registers import _extract_entities, _get
-from summarise import get_client, MODEL, _strip_fences, _extract_text
+from summarise import get_client, MODEL, WEB_SEARCH_TYPE, _strip_fences, _extract_text
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +23,7 @@ HEALTH_PATH = Path(__file__).resolve().parent.parent / "data" / "source-health.j
 CHANGELOG_PATH = Path(__file__).resolve().parent.parent / "CHANGELOG-sources.md"
 
 FAILURE_THRESHOLD = 5
-WEB_SEARCH_TOOL = {"type": "web_search_20260209", "name": "web_search", "max_uses": 4}
+WEB_SEARCH_TOOL = {"type": WEB_SEARCH_TYPE, "name": "web_search", "max_uses": 4}
 
 
 def _load_health():

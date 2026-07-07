@@ -3,7 +3,7 @@ designed template in scripts/templates/page.html unmodified in layout.
 """
 import json
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -83,7 +83,7 @@ def sanitize_digest(digest):
     of failing the whole render.
     """
     clean = {
-        "generated_at": digest.get("generated_at") or datetime.utcnow().isoformat() + "Z",
+        "generated_at": digest.get("generated_at") or datetime.now(timezone.utc).isoformat(),
         "top_of_mind": str(digest.get("top_of_mind") or "")[:400],
         "items": [it for it in digest.get("items", []) if _valid_item(it)],
         "source_health": [h for h in digest.get("source_health", []) if _valid_health_entry(h)],

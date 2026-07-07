@@ -48,7 +48,7 @@
     "name": "People's Bank of China — Press releases",
     "jurisdiction": "CN",
     "kind": "page",
-    "url": "https://www.pbc.gov.cn/en/3688110/3688172/2026/index.html",
+    "url": "https://www.pbc.gov.cn/en/3688110/3688172/{year}/index.html",
     "tier": "official",
     "selector": "ul.prhhul li"
   },

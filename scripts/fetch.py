@@ -2,7 +2,7 @@
 import logging
 import re
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urljoin
 
 import feedparser
@@ -47,12 +47,32 @@ RELEVANCE_KEYWORDS = [
 ]
 
 
-def _get(url):
+def resolve_url(url):
+    """Substitute {year} with the current Hong Kong-time year -- for sources
+    whose listing URL is year-partitioned (e.g. PBoC's /en/.../2026/index.html
+    archive pages), so the source doesn't silently rot every January.
+    """
+    hk_now = datetime.now(timezone.utc) + timedelta(hours=8)
+    return url.replace("{year}", str(hk_now.year))
+
+
+# Several sources share one physical URL (e.g. CoinDesk's single RSS feed
+# backs three filtered source entries). Cache responses for the lifetime of
+# the run so each URL is fetched once per pipeline pass.
+_RESPONSE_CACHE = {}
+
+
+def _get(url, use_cache=True):
+    url = resolve_url(url)
+    if use_cache and url in _RESPONSE_CACHE:
+        return _RESPONSE_CACHE[url]
     last_exc = None
     for attempt in range(MAX_RETRIES + 1):
         try:
             resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT_SECS)
             resp.raise_for_status()
+            if use_cache:
+                _RESPONSE_CACHE[url] = resp
             return resp
         except requests.RequestException as exc:
             last_exc = exc
