@@ -198,10 +198,16 @@ def health_check_and_heal(sources, fetch_results, register_health_notes):
                 status = "dead"
                 note_text = _dead_note(state["consecutive_failures"], last_error)
 
-        state["last_checked"] = datetime.now(timezone.utc).isoformat()
+        checked_at = datetime.now(timezone.utc).isoformat()
+        state["last_checked"] = checked_at
         state["last_status"] = status
         health[name] = state
-        source_health.append({"name": name, "status": status, "note": note_text})
+        source_health.append({
+            "name": name, "status": status, "note": note_text,
+            # Extra fields for the page's About tab / dated health rows;
+            # render.py's validator passes unknown keys through untouched.
+            "tier": source.get("tier", ""), "checked_at": checked_at,
+        })
 
     _save_health(health)
     return source_health

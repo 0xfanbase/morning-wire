@@ -1,14 +1,23 @@
-"""Render data/digest.json into the static docs/index.html page, using the
-designed template in scripts/templates/page.html unmodified in layout.
+"""Render data/digest.json into the static docs/index.html page (plus the
+docs/feed.xml RSS feed), using the designed template in
+scripts/templates/page.html.
 """
+import html as html_mod
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 from pathlib import Path
+from xml.sax.saxutils import escape as xml_escape
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE_PATH = ROOT / "scripts" / "templates" / "page.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
+FEED_PATH = ROOT / "docs" / "feed.xml"
+
+SITE_URL = "https://fandamentals.github.io/morning-wire/"
+SITE_TITLE = "Digital Assets Morning Wire"
+RADAR_MAX_ENTRIES = 8
 
 VALID_JURISDICTIONS = {"HK", "CN", "US", "EU", "SG", "GLOBAL"}
 VALID_TYPES = {
@@ -118,6 +127,27 @@ def _valid_item(item):
     return True
 
 
+def _valid_radar_entry(entry, generated_at):
+    """Radar rows are forward-looking deadlines/effective dates maintained by
+    the enrichment session: {date, label, jurisdiction, url?}. Past-dated rows
+    are dropped automatically so the strip self-prunes as deadlines pass."""
+    if not isinstance(entry, dict):
+        return False
+    date = entry.get("date")
+    if not isinstance(date, str) or not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
+        return False
+    if not isinstance(entry.get("label"), str) or not entry["label"].strip():
+        return False
+    if entry.get("jurisdiction") not in VALID_JURISDICTIONS:
+        entry["jurisdiction"] = "GLOBAL"
+    if entry.get("url") is not None and not _is_http_url(entry["url"]):
+        return False
+    # Keep rows dated today (HKT) or later.
+    gen_day_hkt = (datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
+                   .astimezone(timezone(timedelta(hours=8))).date().isoformat())
+    return date >= gen_day_hkt
+
+
 def _valid_health_entry(entry):
     if not isinstance(entry, dict):
         return False
@@ -149,6 +179,10 @@ def sanitize_digest(digest):
             for e in (digest.get("run_log") or [])
             if isinstance(e, dict) and _normalize_iso(e.get("at"))
         ][-30:],
+        "radar": sorted(
+            [e for e in (digest.get("radar") or []) if _valid_radar_entry(e, generated_at)],
+            key=lambda e: e["date"],
+        )[:RADAR_MAX_ENTRIES],
     }
     dropped = len(items_in) - len(clean["items"])
     if dropped:
@@ -172,20 +206,80 @@ def _safe_json_embed(digest):
     return raw
 
 
+def _og_strings(clean):
+    """Day-fresh Open Graph title/description so a pasted link unfurls in
+    Teams/WhatsApp with today's synthesis instead of a bare URL."""
+    gen = datetime.fromisoformat(clean["generated_at"].replace("Z", "+00:00"))
+    hkt_day = (gen.astimezone(timezone(timedelta(hours=8)))).strftime("%A %-d %B %Y")
+    title = f"{SITE_TITLE} — {hkt_day}"
+    desc = clean["top_of_mind"].strip()
+    if not desc:
+        n = len(clean["items"])
+        desc = (f"{n} item{'s' if n != 1 else ''} across Hong Kong, mainland China, the United "
+                "States, the European Union, Singapore and global standard-setters. "
+                "AI-sourced and AI-generated — verify against official sources.")
+    return title[:200], desc[:200]
+
+
+def render_feed(clean):
+    """Write docs/feed.xml (RSS 2.0). One extra static output turns a page you
+    must remember to visit into a channel Outlook's built-in RSS folder — a
+    guaranteed fixture on locked-down bank desktops — can pull automatically.
+    guid is the stable item id (isPermaLink=false) so readers dedupe correctly
+    across the rolling 7-day window."""
+    def rfc822(iso):
+        return format_datetime(datetime.fromisoformat(iso.replace("Z", "+00:00")))
+
+    parts = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
+        "<channel>",
+        f"<title>{xml_escape(SITE_TITLE)}</title>",
+        f"<link>{xml_escape(SITE_URL)}</link>",
+        "<description>Daily digital-asset regulatory and market digest. "
+        "AI-sourced and AI-generated — verify against official sources before acting.</description>",
+        f"<lastBuildDate>{rfc822(clean['generated_at'])}</lastBuildDate>",
+        f'<atom:link href="{xml_escape(SITE_URL)}feed.xml" rel="self" type="application/rss+xml"/>',
+    ]
+    for it in clean["items"]:
+        desc = f"{it['summary']} So what: {it['so_what']} [{it['verification']['level'].replace('_', ' ')}]"
+        parts += [
+            "<item>",
+            f"<title>{xml_escape(it['title'])}</title>",
+            f"<link>{xml_escape(it['url'])}</link>",
+            f'<guid isPermaLink="false">{xml_escape(it["id"])}</guid>',
+            f"<pubDate>{rfc822(it['published'])}</pubDate>",
+            f"<description>{xml_escape(desc)}</description>",
+            f"<category>{xml_escape(it['jurisdiction'])}</category>",
+            f"<category>{xml_escape(it['type'])}</category>",
+            "</item>",
+        ]
+    parts += ["</channel>", "</rss>", ""]
+    FEED_PATH.parent.mkdir(parents=True, exist_ok=True)
+    FEED_PATH.write_text("\n".join(parts), encoding="utf-8")
+
+
 def render(digest):
-    """Render a digest dict to docs/index.html. Returns the rendered HTML
-    string (also written to disk) so callers can validate before committing.
+    """Render a digest dict to docs/index.html (+ docs/feed.xml). Returns the
+    rendered HTML string (also written to disk) so callers can validate
+    before committing.
     """
     clean = sanitize_digest(digest)
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
 
-    if "__DIGEST_JSON__" not in template:
-        raise RuntimeError("template is missing the __DIGEST_JSON__ placeholder")
+    for placeholder in ("__DIGEST_JSON__", "__OG_TITLE__", "__OG_DESC__"):
+        if placeholder not in template:
+            raise RuntimeError(f"template is missing the {placeholder} placeholder")
 
-    html = template.replace("__DIGEST_JSON__", _safe_json_embed(clean))
+    og_title, og_desc = _og_strings(clean)
+    html = (template
+            .replace("__DIGEST_JSON__", _safe_json_embed(clean))
+            .replace("__OG_TITLE__", html_mod.escape(og_title, quote=True))
+            .replace("__OG_DESC__", html_mod.escape(og_desc, quote=True)))
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(html, encoding="utf-8")
+    render_feed(clean)
     return html
 
 

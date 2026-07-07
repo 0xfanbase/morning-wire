@@ -46,28 +46,37 @@ do this:
    on quiet days. The page shows it as a callout above the priority list (which is
    capped at 5 rows — jurisdiction order, then recency — and only admits items
    published within the last 7 days, so a stale item marked `high` never headlines).
-5. Optional but valuable: for `tier`-industry items whose `verification.level` is
+5. While summarising, capture any EXPLICIT future dates the items mention —
+   consultation comment deadlines, rule effective dates, licence application
+   windows — into the top-level `radar` list (the page's "On the radar" strip):
+   `{"date": "YYYY-MM-DD", "label": "Comments close: <what>", "jurisdiction":
+   "HK|CN|US|EU|SG|GLOBAL", "url": "<source url, optional>"}`. Only dates stated
+   in the source — never inferred. Keep at most ~6 rows, nearest first; leave
+   existing rows alone (the renderer auto-drops past dates).
+6. Optional but valuable: for `tier`-industry items whose `verification.level` is
    `single_source`, use web search to look for an official source or a second
    independent reputable outlet (regulator site, Reuters, Bloomberg, FT or equivalent).
    If found, set `verification.level` to `corroborated` and make
    `verification.sources` exactly two entries: the original plus the confirming
    `{name, url}` (http/https URLs only). If nothing confirms it, leave it alone.
-6. In `source_health`, if there is a row named `Claude summarisation`, replace it with:
+7. In `source_health`, if there is a row named `Claude summarisation`, replace it with:
    `{"name": "Claude summarisation", "status": "ok", "note": "Summaries written via
    Claude Code session on <YYYY-MM-DD>"}`.
-7. Append an entry to the top-level `run_log` list (the page's Audit log tab):
+8. Append an entry to the top-level `run_log` list (the page's Audit log tab):
    `{"at": "<now, UTC ISO-8601>", "note": "Enrichment: <N> items summarised and
    classified via Claude Code session"}` — one short sentence; mention corroborations
    if any were made. Keep the list as-is otherwise; the pipeline caps it at 30.
-8. Re-render: `python3 scripts/render.py` (stdlib only — no pip install needed).
-9. Commit `data/digest.json` and `docs/index.html` (plain message, e.g. "chore: enrich
-   digest" — do NOT add `[skip ci]`, the push must trigger the Pages deploy workflow)
-   and push to `main` (if pushing to `main` is blocked, push a branch, open a PR and
-   merge it). The push triggers `.github/workflows/pages.yml`, which publishes `docs/`
-   to https://fandamentals.github.io/morning-wire/ a minute or two later. No artifact or
-   other publishing step is needed. Belt-and-braces: afterwards, use the GitHub MCP
-   actions tools to confirm a "Deploy site to Pages" run started for your commit; if
-   it didn't, dispatch `pages.yml` on `main` via `actions_run_trigger`.
+9. Re-render: `python3 scripts/render.py` (stdlib only — no pip install needed). This
+   also refreshes `docs/feed.xml` (the RSS feed) and the page's Open Graph tags.
+10. Commit `data/digest.json`, `docs/index.html` and `docs/feed.xml` (plain message,
+   e.g. "chore: enrich digest" — do NOT add `[skip ci]`, the push must trigger the
+   Pages deploy workflow) and push to `main` (if pushing to `main` is blocked, push a
+   branch, open a PR and merge it). The push triggers `.github/workflows/pages.yml`,
+   which publishes `docs/` to https://fandamentals.github.io/morning-wire/ a minute or
+   two later. No artifact or other publishing step is needed. Belt-and-braces:
+   afterwards, use the GitHub MCP actions tools to confirm a "Deploy site to Pages"
+   run started for your commit; if it didn't, dispatch `pages.yml` on `main` via
+   `actions_run_trigger`.
 
 Do NOT change the page template (`scripts/templates/page.html`) layout, the schema
 field names, or any enum values — `scripts/render.py` validates items and silently

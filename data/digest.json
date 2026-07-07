@@ -659,172 +659,240 @@
     {
       "name": "Hong Kong Monetary Authority — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Hong Kong Monetary Authority — Circulars & guidance",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Securities and Futures Commission — News",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Securities and Futures Commission — Circulars",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Financial Services and the Treasury Bureau — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Securities and Futures Commission — Licensed virtual asset trading platforms register",
       "status": "ok",
-      "note": "No change"
+      "note": "No change",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "People's Bank of China — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "CoinDesk — China policy",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "The Block — China policy",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Office of Foreign Assets Control (OFAC) — Recent actions",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "US Securities and Exchange Commission — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Commodity Futures Trading Commission — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Federal Reserve — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "US Department of Justice — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "European Securities and Markets Authority — News",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "European Banking Authority — News",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Monetary Authority of Singapore — Media releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Financial Action Task Force (FATF) — Publications",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Global Digital Finance (GDF) — News",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Bank for International Settlements / Basel Committee — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Financial Stability Board — Press releases",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "official",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "CoinDesk — Policy",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "The Block — Policy",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "CoinDesk — Institutional moves",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "The Block — Institutional moves",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "CoinDesk — Market news",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "The Block — Market news",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Chainalysis — Blog",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Elliptic — Blog",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "TRM Labs — Insights",
       "status": "ok",
-      "note": "Feed responding normally"
+      "note": "Feed responding normally",
+      "tier": "industry",
+      "checked_at": "2026-07-07T07:50:49.166227+00:00"
     },
     {
       "name": "Claude summarisation",
@@ -841,5 +909,6 @@
       "at": "2026-07-07T07:53:39.038684+00:00",
       "note": "Enrichment: 25 items summarised and classified via Claude Code session; 2 stories corroborated"
     }
-  ]
+  ],
+  "radar": []
 }

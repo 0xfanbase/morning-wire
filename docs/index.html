@@ -5,6 +5,13 @@
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
 <title>Digital Assets Morning Wire — Daily Regulatory &amp; Market Digest</title>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fandamentals.github.io/morning-wire/">
+<meta property="og:title" content="Digital Assets Morning Wire — Tuesday 7 July 2026">
+<meta property="og:description" content="The United States sanctions authority added more than one hundred terrorist-linked cryptocurrency wallets to its designations — screening lists need the update. Ripple won full European crypto authori">
+<meta property="og:image" content="https://fandamentals.github.io/morning-wire/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="Digital Assets Morning Wire" href="https://fandamentals.github.io/morning-wire/feed.xml">
 <script>
 /* Set the theme before first paint -- doing this at the end of <body> gives
    dark-OS readers a flash of the light palette on every load. */
@@ -181,6 +188,164 @@ try {
     .audit-list li { flex-direction: column; gap: 2px; }
     .audit-list .a-when { min-width: 0; }
   }
+
+  /* ============================================================
+     FRESHNESS + READ-BUDGET (masthead)
+     ============================================================ */
+  #mast-fresh { margin-left: 8px; }
+  .fresh-dot {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+    margin-right: 5px; vertical-align: baseline;
+  }
+  .fresh-dot.ok    { background: var(--ok); }
+  .fresh-dot.warn  { background: var(--warn); }
+  .fresh-dot.stale { background: var(--danger); }
+  #mast-scope { font-variant-numeric: tabular-nums; }
+  #mast-scope .hi { color: var(--accent-deep); font-weight: 600; }
+
+  /* ============================================================
+     ABOUT TAB + LEGEND + FOOTER LINKS
+     ============================================================ */
+  .about-body { max-width: 720px; font-size: 14.5px; color: var(--ink-2); }
+  .about-body h3 {
+    font-family: var(--serif); font-size: 16px; color: var(--ink);
+    margin: 22px 0 6px;
+  }
+  .about-body p { margin: 6px 0; line-height: 1.6; }
+  .legend { list-style: none; margin: 8px 0; padding: 0; }
+  .legend li { margin: 10px 0; line-height: 1.55; }
+  .legend .verify { margin-right: 8px; }
+  .linklike {
+    appearance: none; background: none; border: none; padding: 0;
+    font: inherit; color: var(--accent); cursor: pointer;
+  }
+  .linklike:hover { color: var(--accent-h); text-decoration: underline; }
+  .foot-links { margin-top: 10px; }
+
+  /* ============================================================
+     JUMP-NAV, RADAR, CATCH-UP, SIGN-OFF
+     ============================================================ */
+  .jumpnav {
+    margin-top: 14px; font-size: 13px; color: var(--ink-3);
+  }
+  .jumpnav a { color: var(--ink-2); font-weight: 600; }
+  .jumpnav a:hover { color: var(--accent); }
+  .jumpnav .jn-count { color: var(--ink-3); font-weight: 400; font-variant-numeric: tabular-nums; }
+  .juris-group { scroll-margin-top: 84px; }
+
+  .radar, .catchup {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg-2);
+    padding: 6px 4px;
+  }
+  .radar-item, .catchup-item {
+    display: flex; gap: 12px; align-items: baseline;
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .radar-item:last-child, .catchup-item:last-child { border-bottom: none; }
+  .radar-item .rd {
+    flex: 0 0 auto; min-width: 64px;
+    font-weight: 700; font-size: 12.5px; color: var(--accent-deep);
+    font-variant-numeric: tabular-nums;
+  }
+  .radar-item .rj, .catchup-item .pj {
+    flex: 0 0 auto; font-size: 11px; font-weight: 700; letter-spacing: .06em;
+    color: var(--ink-3); min-width: 96px; text-transform: uppercase;
+  }
+  .radar-item a, .catchup-item a { color: var(--ink); font-weight: 500; }
+  .radar-item a:hover, .catchup-item a:hover { color: var(--accent); }
+  .catchup-item .cdate { font-size: 12px; color: var(--ink-3); }
+  @media (max-width: 480px) {
+    .radar-item, .catchup-item { flex-wrap: wrap; gap: 4px 10px; }
+  }
+
+  .signoff {
+    margin: 34px 0 6px; padding-top: 16px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-family: var(--serif); font-style: italic;
+    font-size: 14.5px; color: var(--ink-3);
+  }
+
+  /* ============================================================
+     PRIORITY NUMBERING
+     ============================================================ */
+  .priority { counter-reset: pri; }
+  .priority-item::before {
+    counter-increment: pri; content: counter(pri);
+    flex: 0 0 auto; min-width: 18px;
+    font-family: var(--serif); font-weight: 700; font-size: 15px;
+    color: var(--accent-deep);
+  }
+
+  /* ============================================================
+     IN-BRIEF ROWS (tiered feed)
+     ============================================================ */
+  .brief-head {
+    font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--ink-3); margin: 4px 0 6px;
+  }
+  .brief-list { border-top: 1px solid var(--border); margin-bottom: 13px; }
+  details.brief { border-bottom: 1px solid var(--border); }
+  details.brief > summary {
+    list-style: none; cursor: pointer;
+    display: flex; align-items: baseline; gap: 9px;
+    padding: 10px 4px; min-height: 44px;
+    font-size: 14px; line-height: 1.4;
+  }
+  details.brief > summary::-webkit-details-marker { display: none; }
+  details.brief > summary .b-caret { color: var(--accent); font-size: 10px; flex: 0 0 auto; transition: transform .15s; }
+  details.brief[open] > summary .b-caret { transform: rotate(90deg); }
+  details.brief > summary .b-title { color: var(--ink); font-weight: 600; }
+  details.brief > summary .b-meta { color: var(--ink-3); font-size: 12px; white-space: nowrap; margin-left: auto; padding-left: 10px; }
+  details.brief .brief-body { padding: 2px 4px 14px 23px; font-size: 14.5px; }
+  details.brief .brief-body .summary { font-size: 14.5px; }
+  @media (max-width: 480px) {
+    details.brief > summary { flex-wrap: wrap; }
+    details.brief > summary .b-meta { margin-left: 23px; padding-left: 0; white-space: normal; }
+  }
+
+  /* ============================================================
+     READ-STATE + DEEP LINKS + COPY ACTIONS
+     ============================================================ */
+  .card.is-read h4 a, details.brief.is-read > summary .b-title { color: var(--ink-3); }
+  .card.is-read { opacity: .85; }
+  .card h4 a:visited { color: var(--ink-3); } /* zero-storage fallback */
+  .card:target { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .copycite {
+    appearance: none; border: 1px solid var(--border-2); background: transparent;
+    border-radius: 6px; padding: 3px 9px; margin-left: 8px;
+    font-family: var(--sans); font-size: 11.5px; font-weight: 600;
+    color: var(--ink-3); cursor: pointer; transition: color .15s, border-color .15s;
+  }
+  .copycite:hover { color: var(--accent); border-color: var(--accent); }
+  .copy-briefing {
+    appearance: none; border: 1px solid var(--border-2); background: var(--card);
+    border-radius: 999px; padding: 5px 13px; margin-left: auto;
+    font-family: var(--sans); font-size: 12.5px; font-weight: 600;
+    color: var(--ink-2); cursor: pointer; white-space: nowrap;
+  }
+  .copy-briefing:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* ============================================================
+     VERIFICATION DETAILS (inspectable badges)
+     ============================================================ */
+  details.verify-d { display: inline-block; }
+  details.verify-d > summary {
+    list-style: none; cursor: pointer; display: inline-flex;
+    min-height: 28px; align-items: center;
+  }
+  details.verify-d > summary::-webkit-details-marker { display: none; }
+  details.verify-d .verify-body {
+    margin: 8px 0 2px; padding: 9px 12px;
+    border-left: 2px solid var(--border-2);
+    font-size: 12.5px; color: var(--ink-3); line-height: 1.55;
+    max-width: 560px;
+  }
+  details.verify-d .verify-body a { margin-right: 6px; }
 
   /* ============================================================
      FILTERS
@@ -420,6 +585,11 @@ try {
   }
   .health-table th { color: var(--ink-3); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 10.5px; }
   .health-table td { color: var(--ink-2); }
+  .health-table tr.h-group td {
+    font-family: var(--serif); font-weight: 700; font-size: 13px; color: var(--ink);
+    padding-top: 16px; border-bottom: 2px solid var(--border-2);
+  }
+  #tab-health { overflow-x: auto; }
   .hstatus { font-weight: 700; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
   .hstatus.ok { color: var(--ok); }
   .hstatus.replaced { color: var(--warn); }
@@ -437,10 +607,19 @@ try {
       --border:#ddd; --border-2:#ccc; --shadow:none;
     }
     header.masthead { position: static; border-bottom: 2px solid #000; }
-    .theme-toggle, .filters, .banner, .tabs, .archive summary .caret { display: none !important; }
+    .theme-toggle, .filters, .banner, .tabs, .archive summary .caret,
+    .copycite, .copy-briefing, .jumpnav, .fresh-dot, .foot-links,
+    details.brief > summary .b-caret { display: none !important; }
     /* Print everything: a hidden tab's content still belongs in the PDF. */
-    #tab-digest[hidden], #tab-health[hidden], #tab-audit[hidden] { display: block !important; }
+    #tab-digest[hidden], #tab-health[hidden], #tab-audit[hidden], #tab-about[hidden] { display: block !important; }
     .archive[open] .archive-body, .archive .archive-body { display: block !important; }
+    /* Week-in-review mode: the footer button prints ONLY the 7-day view,
+       grouped by day, with source URLs on paper. */
+    body[data-print="week"] #tab-digest, body[data-print="week"] #tab-health,
+    body[data-print="week"] #tab-audit, body[data-print="week"] #tab-about { display: none !important; }
+    body[data-print="week"] #weekview[hidden] { display: block !important; }
+    #weekview h3.wk-day { font-family: var(--serif); font-size: 17px; margin: 18px 0 8px; border-bottom: 1px solid #ccc; }
+    #weekview .card h4 a[href]::after { content: " — " attr(href); font-size: 10px; color: #555; word-break: break-all; }
     .archive summary { border: none; background: none; padding-left: 0; }
     .card, .priority { box-shadow: none; break-inside: avoid; page-break-inside: avoid; }
     .juris-group, .priority-item { break-inside: avoid; }
@@ -471,7 +650,7 @@ try {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       column-gap: 14px;
     }
-    .juris-title, .juris-sep, .archive-body .empty { grid-column: 1 / -1; }
+    .juris-title, .juris-sep, .archive-body .empty, .brief-block { grid-column: 1 / -1; }
   }
   @media (min-width: 1560px) {
     .wrap, .mast-inner, .disclaimer-line { max-width: 1540px; }
@@ -492,7 +671,8 @@ try {
   <div class="mast-inner">
     <div>
       <h1 class="wordmark"><span class="radar-dot" aria-hidden="true"></span><span class="wm-stack"><span class="wm-kicker">Digital Assets</span>Morning Wire</span></h1>
-      <p class="mast-meta"><strong id="mast-date">—</strong> · generated <span id="mast-time">—</span></p>
+      <p class="mast-meta"><strong id="mast-date">—</strong> · generated <span id="mast-time">—</span><span id="mast-fresh"></span></p>
+      <p class="mast-meta" id="mast-scope"></p>
     </div>
     <button class="theme-toggle" id="themeBtn" type="button" aria-label="Toggle colour theme">
       <span class="ico" id="themeIco">☾</span><span id="themeLbl">Dark</span>
@@ -506,6 +686,7 @@ try {
     <button class="tab" type="button" data-tab="digest" aria-selected="true">Digest</button>
     <button class="tab" type="button" data-tab="health" aria-selected="false">Source health</button>
     <button class="tab" type="button" data-tab="audit" aria-selected="false">Audit log</button>
+    <button class="tab" type="button" data-tab="about" aria-selected="false">About &amp; method</button>
   </nav>
 
   <div id="tab-digest">
@@ -522,7 +703,10 @@ try {
 
     <div id="banner-slot"></div>
     <div id="topmind-slot"></div>
+    <div id="jumpnav-slot"></div>
     <div id="priority-slot"></div>
+    <div id="radar-slot"></div>
+    <div id="catchup-slot"></div>
     <div id="feed"></div>
     <div id="archive-slot"></div>
   </div>
@@ -531,7 +715,7 @@ try {
     <div class="section-head"><h2>Source health</h2><span class="rule"></span></div>
     <p class="tab-intro">Per-source status from the latest pipeline run. A source is never silently dropped — failures surface here and self-heal retries each run.</p>
     <table class="health-table" id="healthTable">
-      <thead><tr><th>Source</th><th>Status</th><th>Note</th></tr></thead>
+      <thead><tr><th>Source</th><th>Status</th><th>Last checked</th><th>Note</th></tr></thead>
       <tbody></tbody>
     </table>
   </div>
@@ -542,12 +726,65 @@ try {
     <ol class="audit-list" id="auditLog"></ol>
   </div>
 
+  <div id="tab-about" hidden>
+    <div class="section-head"><h2>About &amp; method</h2><span class="rule"></span></div>
+    <div class="about-body">
+      <h3>What this is</h3>
+      <p>A self-maintaining daily digest of digital-asset regulatory and market developments,
+      curated for a financial-crime-compliance readership with a Hong Kong and mainland China
+      focus, then the United States, the European Union, Singapore and global standard-setters.
+      It is AI-sourced and AI-generated: an automated pipeline fetches the sources each weekday
+      morning, and a language model writes the plain-English summaries and implications.
+      <strong>Verify against the linked official sources before acting — this page is
+      aggregation, not advice.</strong></p>
+
+      <h3>Sources</h3>
+      <p id="about-sources">—</p>
+      <p>Every monitored source and its current status is listed, dated, on the
+      <button type="button" class="linklike" data-goto="health">Source health</button> tab.
+      A source is never silently dropped: fetch failures surface there, and persistent
+      failures trigger an automated search for the source's new address.</p>
+
+      <h3>Verification levels</h3>
+      <ul class="legend">
+        <li><span class="verify official">✓ Official source</span> Published directly by the regulator or
+        standard-setter named on the card — the statement itself is the primary source.</li>
+        <li><span class="verify corroborated">✓✓ Corroborated</span> An industry-media report confirmed by a
+        second, independent source (an official body or another reputable outlet). Both links appear on the card.</li>
+        <li><span class="verify single_source">⚠ Single source — verify</span> Reported by one industry outlet with
+        no independent confirmation found at publish time. Treat as unverified.</li>
+      </ul>
+
+      <h3>What the AI writes</h3>
+      <p>Headlines link to and quote the original source. The one-sentence summary, the
+      "So what" implication, the category, the priority rating and the "Top of mind" callout
+      are model-written. When AI enrichment has not yet run, cards show the raw source
+      headline and say so.</p>
+
+      <h3>Schedule &amp; retention</h3>
+      <p>The pipeline runs each weekday around 07:00 Hong Kong time; AI enrichment follows
+      within the hour. The page shows today's items plus a seven-day archive; the Audit log
+      tab records the last 30 data updates. Items older than seven days at ingest are not
+      admitted — this is a daily wire, not an archive.</p>
+
+      <h3>Known limitations</h3>
+      <p>Some official sites block automated fetching (they appear on the Source health tab
+      as blocked) and their publications will not surface here. Single-source market items
+      may be wrong. All times are shown in Hong Kong time; publication times reflect what
+      the source published, converted.</p>
+    </div>
+  </div>
+
   <footer>
     <div class="foot-notes">
       <p><span class="strong">AI-sourced &amp; AI-generated.</span> Verify against official sources before acting.</p>
       <p>Automated aggregation — not advice.</p>
+      <p class="foot-links"><a href="feed.xml">RSS feed</a> ·
+        <button type="button" class="linklike" id="printWeekBtn">Print week in review</button></p>
     </div>
   </footer>
+
+  <section id="weekview" hidden aria-hidden="true"></section>
 </main>
 
 <script>
@@ -556,7 +793,7 @@ try {
    A downstream pipeline replaces this const with live data
    matching the same schema; nothing below reads anything else.
    ============================================================ */
-const DIGEST = {"generated_at": "2026-07-07T07:50:49.166227+00:00", "top_of_mind": "The United States sanctions authority added more than one hundred terrorist-linked cryptocurrency wallets to its designations — screening lists need the update. Ripple won full European crypto authorisation, and bitcoin's largest corporate holder is now selling in size.", "items": [{"id": "hk-fstb-press-releases-cf3d3aabb6", "jurisdiction": "HK", "source": "Financial Services and the Treasury Bureau — Press releases", "title": "FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market", "url": "https://www.info.gov.hk/gia/general/202606/29/P2026062900677.htm", "published": "2026-06-29T00:00:00+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "official", "sources": [{"name": "Financial Services and the Treasury Bureau — Press releases", "url": "https://www.info.gov.hk/gia/general/202606/29/P2026062900677.htm"}]}, "summary": "The Financial Services and the Treasury Bureau and the Hong Kong Monetary Authority announced further measures to expand the use of distributed ledger technology in Hong Kong's fixed-income market.", "so_what": "Signals a continuing official push to make tokenised debt mainstream in Hong Kong — expect follow-on guidance touching settlement, custody and record-keeping controls.", "first_seen": "2026-07-07T03:54:47.072828+00:00"}, {"id": "eu-eba-news-23fee21bfb", "jurisdiction": "EU", "source": "European Banking Authority — News", "title": "The European Banking Authority consults on a draft methodology for setting fines under the Markets in Crypto-Assets Regulation (MiCA)", "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets", "published": "2026-06-26T13:27:24+00:00", "type": "consultation", "priority": "normal", "status": "new", "verification": {"level": "official", "sources": [{"name": "European Banking Authority — News", "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets"}]}, "summary": "The European Banking Authority is consulting on a draft methodology for setting fines on issuers it supervises under the EU's Markets in Crypto-Assets Regulation.", "so_what": "A concrete preview of how penalties under the EU Markets in Crypto-Assets Regulation will be sized — a useful benchmark when gauging the EU enforcement exposure of stablecoin and token issuers.", "first_seen": "2026-07-07T03:54:47.072828+00:00"}, {"id": "eu-eba-news-e444efca6b", "jurisdiction": "EU", "source": "European Banking Authority — News", "title": "The EBA updates validation rules for supervisory reporting", "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-updates-validation-rules-supervisory-reporting", "published": "2026-06-26T11:17:02+00:00", "type": "guidance", "priority": "normal", "status": "new", "verification": {"level": "official", "sources": [{"name": "European Banking Authority — News", "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-updates-validation-rules-supervisory-reporting"}]}, "summary": "The European Banking Authority published updated validation rules for supervisory reporting, flagging corrections reporting institutions should apply.", "so_what": "Routine, but worth passing to regulatory-reporting teams handling EU entities, including MiCA-related returns.", "first_seen": "2026-07-07T03:54:47.072828+00:00"}, {"id": "global-trm-labs-insights-f5039e43fc", "jurisdiction": "GLOBAL", "source": "TRM Labs — Insights", "title": "Wallet Screening Best Practices for Compliance Teams", "url": "https://www.trmlabs.com/resources/blog/wallet-screening-best-practices-for-compliance-teams", "published": "2026-07-07T07:50:47.227133+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "TRM Labs — Insights", "url": "https://www.trmlabs.com/resources/blog/wallet-screening-best-practices-for-compliance-teams"}]}, "summary": "TRM Labs published a guide on how compliance teams should screen cryptocurrency wallets for sanctions and financial-crime risk.", "so_what": "A useful benchmark for reviewing whether existing wallet-screening controls cover sanctions exposure, indirect risk and re-screening frequency in line with current industry practice.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-trm-labs-insights-b35f07fd2d", "jurisdiction": "GLOBAL", "source": "TRM Labs — Insights", "title": "H1 2026 Crypto Hacks Reach Record High as Losses Fall Below USD 1 Billion", "url": "https://www.trmlabs.com/resources/blog/h1-2026-crypto-hacks-reach-record-high-as-losses-fall-below-usd-1-billion", "published": "2026-07-07T07:50:47.226988+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "TRM Labs — Insights", "url": "https://www.trmlabs.com/resources/blog/h1-2026-crypto-hacks-reach-record-high-as-losses-fall-below-usd-1-billion"}]}, "summary": "TRM Labs reported that the number of cryptocurrency hacks hit a record high in the first half of 2026, even though total losses fell below one billion United States dollars.", "so_what": "More frequent hacks raise the odds that client funds or counterparty exchanges are affected, so stolen-fund tracing alerts and exchange due-diligence reviews deserve continued attention.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-trm-labs-insights-4fa35664b1", "jurisdiction": "GLOBAL", "source": "TRM Labs — Insights", "title": "OFAC Sanctions 134 ISKP Cryptocurrency Addresses Tied to USD 2 Million in Terrorist Financing", "url": "https://www.trmlabs.com/resources/blog/ofac-sanctions-134-iskp-cryptocurrency-addresses-tied-to-usd-2-million-in-terrorist-financing", "published": "2026-07-07T07:50:47.226849+00:00", "type": "designation", "priority": "high", "status": "new", "verification": {"level": "corroborated", "sources": [{"name": "TRM Labs — Insights", "url": "https://www.trmlabs.com/resources/blog/ofac-sanctions-134-iskp-cryptocurrency-addresses-tied-to-usd-2-million-in-terrorist-financing"}, {"name": "Chainalysis — Blog", "url": "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026/"}]}, "summary": "The United States Office of Foreign Assets Control (OFAC) added 134 cryptocurrency addresses linked to Islamic State Khorasan Province to its sanctions list, tied to roughly two million United States dollars in terrorist financing.", "so_what": "The newly listed addresses need to reach wallet-screening data promptly, and a retrospective exposure check against them can confirm no historical flows touched client accounts.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-acams-today-851504e812", "jurisdiction": "GLOBAL", "source": "ACAMS Today", "title": "Crypto Threats, Vulnerabilities and What to Do Next", "url": "https://www.acams.org/en/opinion/crypto-threats-vulnerabilities-and-what-do-next", "published": "2026-07-07T07:50:39.198729+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "ACAMS Today", "url": "https://www.acams.org/en/opinion/crypto-threats-vulnerabilities-and-what-do-next"}]}, "summary": "An ACAMS Today article surveys current criminal threats and control weaknesses in cryptocurrency and suggests practical next steps for compliance teams.", "so_what": "A quick horizon-scanning read, useful when refreshing cryptocurrency risk assessments or training material for financial-crime teams.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-acams-today-2e465a9794", "jurisdiction": "GLOBAL", "source": "ACAMS Today", "title": "What OFAC’s crypto mixer sanctions mean for financial crime compliance", "url": "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance", "published": "2026-07-07T07:50:39.197034+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "ACAMS Today", "url": "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance"}]}, "summary": "An ACAMS Today article explains how the United States Office of Foreign Assets Control's sanctions on cryptocurrency mixing services affect financial-crime compliance programmes.", "so_what": "Helpful framing for tightening controls on mixer exposure, including how indirect exposure several transaction hops away should be treated in monitoring and investigations.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-acams-today-2bea5a2bff", "jurisdiction": "GLOBAL", "source": "ACAMS Today", "title": "Operation Prince: Inside a $15 billion crypto fraud takedown", "url": "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown", "published": "2026-07-07T07:50:39.196937+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "ACAMS Today", "url": "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown"}]}, "summary": "An ACAMS Today feature goes inside \"Operation Prince\", a law-enforcement takedown of a cryptocurrency fraud network measuring about fifteen billion United States dollars.", "so_what": "Case studies at this scale surface red-flag typologies — romance-investment fraud patterns and mule account networks — worth folding into monitoring scenarios and investigator training.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-market-news-7146026493", "jurisdiction": "GLOBAL", "source": "CoinDesk — Market news", "title": "Live markets: Bitcoin and ether ETFs drew inflows on Monday", "url": "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday", "published": "2026-07-07T06:51:28+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Market news", "url": "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday"}]}, "summary": "Exchange-traded funds holding bitcoin and ether recorded net investor inflows on Monday, according to CoinDesk market data.", "so_what": "Steady fund inflows signal continuing institutional participation in digital assets, sustaining the volumes that flow through banks' brokerage, custody and payments relationships.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-market-news-8dcd10142f", "jurisdiction": "GLOBAL", "source": "The Block — Market news", "title": "Grayscale says Strategy’s recent bitcoin sales should restore confidence in its financing structure", "url": "https://www.theblock.co/post/407360/grayscale-strategy-bitcoin-sales-comments?utm_source=rss&utm_medium=rss", "published": "2026-07-06T22:10:15+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Market news", "url": "https://www.theblock.co/post/407360/grayscale-strategy-bitcoin-sales-comments?utm_source=rss&utm_medium=rss"}]}, "summary": "Asset manager Grayscale said recent bitcoin sales by Strategy, the largest corporate holder of bitcoin, should reassure investors about the company's financing structure rather than alarm them.", "so_what": "Large corporate bitcoin holders adjusting positions can move prices and sentiment sharply, which matters when assessing collateral values and client exposure to bitcoin-treasury companies.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-policy-2c890e4264", "jurisdiction": "GLOBAL", "source": "CoinDesk — Policy", "title": "Bitcoin's U.S. reserve still a work-in-progress as federal agencies hash it out", "url": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out", "published": "2026-07-06T21:40:06+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Policy", "url": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out"}]}, "summary": "United States federal agencies are still working through legal and operational questions before the planned national bitcoin reserve becomes operational, CoinDesk reports.", "so_what": "A sovereign bitcoin reserve would further legitimise state-level holdings, and the unresolved custody and jurisdiction questions mirror those banks face when holding digital assets.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-chainalysis-blog-e10d024105", "jurisdiction": "GLOBAL", "source": "Chainalysis — Blog", "title": "Breadth, Depth, And Quality: Why Comparing Blockchain Analytics Vendors by Cluster Count Is Only Part of the Calculation", "url": "https://www.chainalysis.com/blog/comparing-blockchain-analytics-vendors/", "published": "2026-07-06T21:03:39+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "Chainalysis — Blog", "url": "https://www.chainalysis.com/blog/comparing-blockchain-analytics-vendors/"}]}, "summary": "Chainalysis argues that comparing blockchain-analytics vendors on the number of labelled address clusters tells only part of the story, with breadth, depth and attribution quality all mattering.", "so_what": "Relevant when benchmarking or renewing blockchain-analytics contracts: procurement criteria should test attribution quality and coverage rather than headline cluster counts alone.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-7ba8c24571", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "President Trump’s strategic bitcoin reserve hits a legal and jurisdictional snag: Bloomberg", "url": "https://www.theblock.co/post/407356/trump-strategic-bitcoin-reserve-hits-legal-jurisdictional-snag-bloomberg?utm_source=rss&utm_medium=rss", "published": "2026-07-06T19:56:00+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407356/trump-strategic-bitcoin-reserve-hits-legal-jurisdictional-snag-bloomberg?utm_source=rss&utm_medium=rss"}]}, "summary": "The planned United States strategic bitcoin reserve has hit legal and jurisdictional obstacles between federal agencies, according to a Bloomberg report cited by The Block.", "so_what": "The delays highlight unsettled United States federal authority over seized and state-held cryptoassets, with knock-on implications for custody and sanctions policy worth watching.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-1f1f1d0ab9", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "Judge revives fraud claim against Barry Silbert, DCG in Genesis Yield lawsuit", "url": "https://www.theblock.co/post/407337/judge-revives-fraud-claim-against-barry-silbert-dcg-genesis-yield-lawsuit?utm_source=rss&utm_medium=rss", "published": "2026-07-06T18:55:49+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407337/judge-revives-fraud-claim-against-barry-silbert-dcg-genesis-yield-lawsuit?utm_source=rss&utm_medium=rss"}]}, "summary": "A United States judge revived a fraud claim against Digital Currency Group and its founder Barry Silbert in a lawsuit over the collapsed Genesis yield programme.", "so_what": "Litigation from the 2022-23 crypto lending collapses keeps counterparty-failure risk visible; exposure reviews for clients tied to affected entities may need refreshing as claims progress.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-45e49ff153", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "Vitalik Buterin proposes ‘Extremely Lean’ Ethereum, shrinking the chain to near-zero state with ZK proofs", "url": "https://www.theblock.co/post/407319/vitalik-buterin-extremely-lean-ethereum-shrinking-chain-to-near-zero-state-zk-proofs?utm_source=rss&utm_medium=rss", "published": "2026-07-06T16:34:32+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407319/vitalik-buterin-extremely-lean-ethereum-shrinking-chain-to-near-zero-state-zk-proofs?utm_source=rss&utm_medium=rss"}]}, "summary": "Ethereum co-founder Vitalik Buterin proposed an \"extremely lean\" redesign that would shrink the blockchain's stored state to near zero using zero-knowledge cryptographic proofs.", "so_what": "Protocol changes of this scale would eventually affect how transaction records used in investigations are stored and verified, though any practical impact is years away.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-institutional-moves-19b547342f", "jurisdiction": "GLOBAL", "source": "CoinDesk — Institutional moves", "title": "Circle’s USDC is leaving Tether behind in the stablecoin volume race, new data from Visa shows", "url": "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race", "published": "2026-07-06T16:00:15+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Institutional moves", "url": "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race"}]}, "summary": "New data published by Visa shows Circle's USDC stablecoin pulling ahead of rival Tether in on-chain transaction volume by a widening margin.", "so_what": "A volume shift toward the more regulation-forward stablecoin issuer changes the counterparty mix in client transaction flows and is useful context for stablecoin risk assessments.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-258fd6649e", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "President Trump says he’s a ‘big crypto guy,’ while distancing himself from family’s crypto ventures", "url": "https://www.theblock.co/post/407312/president-trump-big-crypto-guy-distancing-familys-crypto-ventures?utm_source=rss&utm_medium=rss", "published": "2026-07-06T15:53:22+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407312/president-trump-big-crypto-guy-distancing-familys-crypto-ventures?utm_source=rss&utm_medium=rss"}]}, "summary": "United States President Trump described himself as strongly supportive of cryptocurrency while distancing himself from his family's commercial crypto ventures.", "so_what": "Top-level political support continues to shape a permissive United States policy direction, while conflict-of-interest questions around official crypto ventures remain a reputational theme to monitor.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-market-news-9cad11867e", "jurisdiction": "GLOBAL", "source": "CoinDesk — Market news", "title": "DeFi protocol Summer.fi halts Lazy Summer vaults after $6 million exploit", "url": "https://www.coindesk.com/web3/2026/07/06/defi-protocol-summer-fi-halts-lazy-summer-vaults-after-usd6-million-exploit", "published": "2026-07-06T13:42:12+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Market news", "url": "https://www.coindesk.com/web3/2026/07/06/defi-protocol-summer-fi-halts-lazy-summer-vaults-after-usd6-million-exploit"}]}, "summary": "Decentralised-finance protocol Summer.fi suspended its \"Lazy Summer\" investment vaults after an exploit drained about six million United States dollars.", "so_what": "Fresh exploit proceeds typically move fast through mixers and cross-chain bridges, so screening-provider alerts for exposure to the stolen funds are worth watching over the coming days.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-elliptic-blog-4edb359f95", "jurisdiction": "GLOBAL", "source": "Elliptic — Blog", "title": "How the UK's stablecoin rules came together", "url": "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together", "published": "2026-07-06T13:00:02+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "Elliptic — Blog", "url": "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together"}]}, "summary": "Elliptic published an explainer tracing how the United Kingdom's newly finalised stablecoin regulatory regime was developed and what it covers.", "so_what": "A concise map of the United Kingdom regime helps benchmark it against the Hong Kong and European Union stablecoin frameworks when advising on cross-border issuance and custody.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-market-news-053cb92677", "jurisdiction": "GLOBAL", "source": "CoinDesk — Market news", "title": "Michael Saylor's Strategy dramatically ups pace of bitcoin sales, raising $216 million", "url": "https://www.coindesk.com/markets/2026/07/06/michael-saylor-s-strategy-dramatically-ups-pace-of-bitcoin-sales-raising-usd216-million", "published": "2026-07-06T12:16:28+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Market news", "url": "https://www.coindesk.com/markets/2026/07/06/michael-saylor-s-strategy-dramatically-ups-pace-of-bitcoin-sales-raising-usd216-million"}]}, "summary": "Strategy, the software company turned bitcoin holding vehicle led by Michael Saylor, sharply accelerated its bitcoin sales, raising about 216 million United States dollars.", "so_what": "The largest corporate bitcoin holder switching from accumulation to sizeable sales is a market-sentiment signal relevant to collateral valuations and exposure to bitcoin-treasury companies.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-policy-9559d96c92", "jurisdiction": "GLOBAL", "source": "CoinDesk — Policy", "title": "Ripple's preliminary crypto asset provider license in Luxembourg upgraded to fully compliant", "url": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant", "published": "2026-07-06T10:01:24+00:00", "type": "licensing", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Policy", "url": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant"}]}, "summary": "CoinDesk reports that Ripple's preliminary crypto-asset service provider licence in Luxembourg has been upgraded to fully compliant status under the European Union's Markets in Crypto-Assets Regulation (MiCA).", "so_what": "Full authorisation lets Ripple passport crypto services across the European Economic Area, adding a large licensed counterparty to the European payments and custody landscape.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-a3f39bf606", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "Ripple secures full MiCA CASP authorization for crypto services across 30 EEA countries", "url": "https://www.theblock.co/post/407207/ripple-secures-full-mica-casp-authorization-for-crypto-services-across-30-eea-countries?utm_source=rss&utm_medium=rss", "published": "2026-07-06T09:30:56+00:00", "type": "licensing", "priority": "high", "status": "new", "verification": {"level": "corroborated", "sources": [{"name": "The Block — Market news", "url": "https://www.theblock.co/post/407207/ripple-secures-full-mica-casp-authorization-for-crypto-services-across-30-eea-countries?utm_source=rss&utm_medium=rss"}, {"name": "CoinDesk — Policy", "url": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant"}]}, "summary": "Ripple secured full authorisation as a crypto-asset service provider under the European Union's Markets in Crypto-Assets Regulation (MiCA), allowing it to offer crypto services across thirty European Economic Area countries.", "so_what": "A major payments-focused crypto firm gaining authorisation across the whole European Economic Area expands the set of fully licensed counterparties and sharpens comparison with Hong Kong's licensing regime.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-00a1b988af", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "South Korea develops crypto-specific procedures for asset seizures and liquidation: report", "url": "https://www.theblock.co/post/407183/south-korea-crypto-specific-procedure?utm_source=rss&utm_medium=rss", "published": "2026-07-06T08:35:54+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407183/south-korea-crypto-specific-procedure?utm_source=rss&utm_medium=rss"}]}, "summary": "South Korean authorities are developing procedures specifically for seizing and liquidating cryptocurrency in criminal and tax cases, according to a report cited by The Block.", "so_what": "Clearer seizure mechanics in a major Asian market offer a template regional peers may follow and affect how frozen-asset requests involving Korean counterparties are executed.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-market-news-2f266b7d60", "jurisdiction": "GLOBAL", "source": "The Block — Market news", "title": "How Sovereign Wealth Funds Invest in Digital Assets", "url": "https://www.theblock.co/learn/407186/how-sovereign-wealth-funds-invest-in-digital-assets?utm_source=rss&utm_medium=rss", "published": "2026-07-06T06:14:32+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Market news", "url": "https://www.theblock.co/learn/407186/how-sovereign-wealth-funds-invest-in-digital-assets?utm_source=rss&utm_medium=rss"}]}, "summary": "An explainer from The Block describes the channels sovereign wealth funds use to invest in digital assets, from exchange-traded products to direct holdings and venture stakes.", "so_what": "Sovereign investors entering digital assets deepen institutional flows through regulated intermediaries — useful context for onboarding and source-of-funds conversations involving state-linked vehicles.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-3a49a90f7e", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "Nigel Farage failed to declare funding from crypto gambling figure convicted of fraud: Sunday Times", "url": "https://www.theblock.co/post/407178/nigel-farage-failed-to-declare-funding-from-crypto-gambling-figure-convicted-of-fraud-sunday-times?utm_source=rss&utm_medium=rss", "published": "2026-07-05T22:53:05+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407178/nigel-farage-failed-to-declare-funding-from-crypto-gambling-figure-convicted-of-fraud-sunday-times?utm_source=rss&utm_medium=rss"}]}, "summary": "The Sunday Times reported that British politician Nigel Farage failed to declare funding from a cryptocurrency gambling figure previously convicted of fraud.", "so_what": "Politically exposed persons with undisclosed crypto-linked funding illustrate the adverse-media and source-of-wealth checks that cryptocurrency exposure adds to customer due diligence.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-elliptic-blog-9f279187a9", "jurisdiction": "GLOBAL", "source": "Elliptic — Blog", "title": "Introducing Continuous Monitoring: stay aware of changing crypto risk", "url": "https://www.elliptic.co/blog/introducing-continuous-monitoring", "published": "2026-07-02T13:00:01+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "Elliptic — Blog", "url": "https://www.elliptic.co/blog/introducing-continuous-monitoring"}]}, "summary": "Elliptic launched a continuous-monitoring capability that re-screens cryptocurrency wallets and transactions as risk information changes after the initial check.", "so_what": "Point-in-time wallet screening ages quickly; continuous re-screening options are worth weighing when reviewing blockchain-analytics tooling against ongoing monitoring obligations.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-chainalysis-blog-987207320d", "jurisdiction": "GLOBAL", "source": "Chainalysis — Blog", "title": "OFAC Updates ISIS-Khorasan Sanctions with Over 100 Cryptocurrency Wallets", "url": "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026/", "published": "2026-07-01T20:26:45+00:00", "type": "designation", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "Chainalysis — Blog", "url": "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026/"}]}, "summary": "Chainalysis analysed the United States Office of Foreign Assets Control's update adding more than one hundred cryptocurrency wallet addresses linked to Islamic State Khorasan to its sanctions designations.", "so_what": "The attribution detail on the newly designated addresses supports retrospective exposure checks and tuning of sanctions-screening rules for indirect exposure.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}], "source_health": [{"name": "Hong Kong Monetary Authority — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "Hong Kong Monetary Authority — Circulars & guidance", "status": "ok", "note": "Feed responding normally"}, {"name": "Securities and Futures Commission — News", "status": "ok", "note": "Feed responding normally"}, {"name": "Securities and Futures Commission — Circulars", "status": "ok", "note": "Feed responding normally"}, {"name": "Financial Services and the Treasury Bureau — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "Securities and Futures Commission — Licensed virtual asset trading platforms register", "status": "ok", "note": "No change"}, {"name": "People's Bank of China — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "CoinDesk — China policy", "status": "ok", "note": "Feed responding normally"}, {"name": "The Block — China policy", "status": "ok", "note": "Feed responding normally"}, {"name": "Financial Crimes Enforcement Network (FinCEN) — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "Office of Foreign Assets Control (OFAC) — Recent actions", "status": "ok", "note": "Feed responding normally"}, {"name": "US Securities and Exchange Commission — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "Commodity Futures Trading Commission — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "Office of the Comptroller of the Currency — News releases", "status": "ok", "note": "Feed responding normally"}, {"name": "Federal Reserve — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "US Department of Justice — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "European Securities and Markets Authority — News", "status": "ok", "note": "Feed responding normally"}, {"name": "European Banking Authority — News", "status": "ok", "note": "Feed responding normally"}, {"name": "Monetary Authority of Singapore — Media releases", "status": "ok", "note": "Feed responding normally"}, {"name": "Financial Action Task Force (FATF) — Publications", "status": "ok", "note": "Feed responding normally"}, {"name": "Wolfsberg Group — News & publications", "status": "ok", "note": "Feed responding normally"}, {"name": "Global Digital Finance (GDF) — News", "status": "ok", "note": "Feed responding normally"}, {"name": "ACAMS Today", "status": "ok", "note": "Feed responding normally"}, {"name": "Bank for International Settlements / Basel Committee — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "Financial Stability Board — Press releases", "status": "ok", "note": "Feed responding normally"}, {"name": "CoinDesk — Policy", "status": "ok", "note": "Feed responding normally"}, {"name": "The Block — Policy", "status": "ok", "note": "Feed responding normally"}, {"name": "CoinDesk — Institutional moves", "status": "ok", "note": "Feed responding normally"}, {"name": "The Block — Institutional moves", "status": "ok", "note": "Feed responding normally"}, {"name": "CoinDesk — Market news", "status": "ok", "note": "Feed responding normally"}, {"name": "The Block — Market news", "status": "ok", "note": "Feed responding normally"}, {"name": "Chainalysis — Blog", "status": "ok", "note": "Feed responding normally"}, {"name": "Elliptic — Blog", "status": "ok", "note": "Feed responding normally"}, {"name": "TRM Labs — Insights", "status": "ok", "note": "Feed responding normally"}, {"name": "Claude summarisation", "status": "ok", "note": "Summaries written via Claude Code session on 2026-07-07"}], "run_log": [{"at": "2026-07-07T07:50:49.166227+00:00", "note": "Daily fetch: 25 new items surfaced; 34/35 sources ok"}, {"at": "2026-07-07T07:53:39.038684+00:00", "note": "Enrichment: 25 items summarised and classified via Claude Code session; 2 stories corroborated"}]};
+const DIGEST = {"generated_at": "2026-07-07T07:50:49.166227+00:00", "top_of_mind": "The United States sanctions authority added more than one hundred terrorist-linked cryptocurrency wallets to its designations — screening lists need the update. Ripple won full European crypto authorisation, and bitcoin's largest corporate holder is now selling in size.", "items": [{"id": "hk-fstb-press-releases-cf3d3aabb6", "jurisdiction": "HK", "source": "Financial Services and the Treasury Bureau — Press releases", "title": "FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market", "url": "https://www.info.gov.hk/gia/general/202606/29/P2026062900677.htm", "published": "2026-06-29T00:00:00+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "official", "sources": [{"name": "Financial Services and the Treasury Bureau — Press releases", "url": "https://www.info.gov.hk/gia/general/202606/29/P2026062900677.htm"}]}, "summary": "The Financial Services and the Treasury Bureau and the Hong Kong Monetary Authority announced further measures to expand the use of distributed ledger technology in Hong Kong's fixed-income market.", "so_what": "Signals a continuing official push to make tokenised debt mainstream in Hong Kong — expect follow-on guidance touching settlement, custody and record-keeping controls.", "first_seen": "2026-07-07T03:54:47.072828+00:00"}, {"id": "eu-eba-news-23fee21bfb", "jurisdiction": "EU", "source": "European Banking Authority — News", "title": "The European Banking Authority consults on a draft methodology for setting fines under the Markets in Crypto-Assets Regulation (MiCA)", "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets", "published": "2026-06-26T13:27:24+00:00", "type": "consultation", "priority": "normal", "status": "new", "verification": {"level": "official", "sources": [{"name": "European Banking Authority — News", "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets"}]}, "summary": "The European Banking Authority is consulting on a draft methodology for setting fines on issuers it supervises under the EU's Markets in Crypto-Assets Regulation.", "so_what": "A concrete preview of how penalties under the EU Markets in Crypto-Assets Regulation will be sized — a useful benchmark when gauging the EU enforcement exposure of stablecoin and token issuers.", "first_seen": "2026-07-07T03:54:47.072828+00:00"}, {"id": "eu-eba-news-e444efca6b", "jurisdiction": "EU", "source": "European Banking Authority — News", "title": "The EBA updates validation rules for supervisory reporting", "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-updates-validation-rules-supervisory-reporting", "published": "2026-06-26T11:17:02+00:00", "type": "guidance", "priority": "normal", "status": "new", "verification": {"level": "official", "sources": [{"name": "European Banking Authority — News", "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-updates-validation-rules-supervisory-reporting"}]}, "summary": "The European Banking Authority published updated validation rules for supervisory reporting, flagging corrections reporting institutions should apply.", "so_what": "Routine, but worth passing to regulatory-reporting teams handling EU entities, including MiCA-related returns.", "first_seen": "2026-07-07T03:54:47.072828+00:00"}, {"id": "global-trm-labs-insights-f5039e43fc", "jurisdiction": "GLOBAL", "source": "TRM Labs — Insights", "title": "Wallet Screening Best Practices for Compliance Teams", "url": "https://www.trmlabs.com/resources/blog/wallet-screening-best-practices-for-compliance-teams", "published": "2026-07-07T07:50:47.227133+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "TRM Labs — Insights", "url": "https://www.trmlabs.com/resources/blog/wallet-screening-best-practices-for-compliance-teams"}]}, "summary": "TRM Labs published a guide on how compliance teams should screen cryptocurrency wallets for sanctions and financial-crime risk.", "so_what": "A useful benchmark for reviewing whether existing wallet-screening controls cover sanctions exposure, indirect risk and re-screening frequency in line with current industry practice.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-trm-labs-insights-b35f07fd2d", "jurisdiction": "GLOBAL", "source": "TRM Labs — Insights", "title": "H1 2026 Crypto Hacks Reach Record High as Losses Fall Below USD 1 Billion", "url": "https://www.trmlabs.com/resources/blog/h1-2026-crypto-hacks-reach-record-high-as-losses-fall-below-usd-1-billion", "published": "2026-07-07T07:50:47.226988+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "TRM Labs — Insights", "url": "https://www.trmlabs.com/resources/blog/h1-2026-crypto-hacks-reach-record-high-as-losses-fall-below-usd-1-billion"}]}, "summary": "TRM Labs reported that the number of cryptocurrency hacks hit a record high in the first half of 2026, even though total losses fell below one billion United States dollars.", "so_what": "More frequent hacks raise the odds that client funds or counterparty exchanges are affected, so stolen-fund tracing alerts and exchange due-diligence reviews deserve continued attention.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-trm-labs-insights-4fa35664b1", "jurisdiction": "GLOBAL", "source": "TRM Labs — Insights", "title": "OFAC Sanctions 134 ISKP Cryptocurrency Addresses Tied to USD 2 Million in Terrorist Financing", "url": "https://www.trmlabs.com/resources/blog/ofac-sanctions-134-iskp-cryptocurrency-addresses-tied-to-usd-2-million-in-terrorist-financing", "published": "2026-07-07T07:50:47.226849+00:00", "type": "designation", "priority": "high", "status": "new", "verification": {"level": "corroborated", "sources": [{"name": "TRM Labs — Insights", "url": "https://www.trmlabs.com/resources/blog/ofac-sanctions-134-iskp-cryptocurrency-addresses-tied-to-usd-2-million-in-terrorist-financing"}, {"name": "Chainalysis — Blog", "url": "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026/"}]}, "summary": "The United States Office of Foreign Assets Control (OFAC) added 134 cryptocurrency addresses linked to Islamic State Khorasan Province to its sanctions list, tied to roughly two million United States dollars in terrorist financing.", "so_what": "The newly listed addresses need to reach wallet-screening data promptly, and a retrospective exposure check against them can confirm no historical flows touched client accounts.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-acams-today-851504e812", "jurisdiction": "GLOBAL", "source": "ACAMS Today", "title": "Crypto Threats, Vulnerabilities and What to Do Next", "url": "https://www.acams.org/en/opinion/crypto-threats-vulnerabilities-and-what-do-next", "published": "2026-07-07T07:50:39.198729+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "ACAMS Today", "url": "https://www.acams.org/en/opinion/crypto-threats-vulnerabilities-and-what-do-next"}]}, "summary": "An ACAMS Today article surveys current criminal threats and control weaknesses in cryptocurrency and suggests practical next steps for compliance teams.", "so_what": "A quick horizon-scanning read, useful when refreshing cryptocurrency risk assessments or training material for financial-crime teams.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-acams-today-2e465a9794", "jurisdiction": "GLOBAL", "source": "ACAMS Today", "title": "What OFAC’s crypto mixer sanctions mean for financial crime compliance", "url": "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance", "published": "2026-07-07T07:50:39.197034+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "ACAMS Today", "url": "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance"}]}, "summary": "An ACAMS Today article explains how the United States Office of Foreign Assets Control's sanctions on cryptocurrency mixing services affect financial-crime compliance programmes.", "so_what": "Helpful framing for tightening controls on mixer exposure, including how indirect exposure several transaction hops away should be treated in monitoring and investigations.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-acams-today-2bea5a2bff", "jurisdiction": "GLOBAL", "source": "ACAMS Today", "title": "Operation Prince: Inside a $15 billion crypto fraud takedown", "url": "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown", "published": "2026-07-07T07:50:39.196937+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "ACAMS Today", "url": "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown"}]}, "summary": "An ACAMS Today feature goes inside \"Operation Prince\", a law-enforcement takedown of a cryptocurrency fraud network measuring about fifteen billion United States dollars.", "so_what": "Case studies at this scale surface red-flag typologies — romance-investment fraud patterns and mule account networks — worth folding into monitoring scenarios and investigator training.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-market-news-7146026493", "jurisdiction": "GLOBAL", "source": "CoinDesk — Market news", "title": "Live markets: Bitcoin and ether ETFs drew inflows on Monday", "url": "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday", "published": "2026-07-07T06:51:28+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Market news", "url": "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday"}]}, "summary": "Exchange-traded funds holding bitcoin and ether recorded net investor inflows on Monday, according to CoinDesk market data.", "so_what": "Steady fund inflows signal continuing institutional participation in digital assets, sustaining the volumes that flow through banks' brokerage, custody and payments relationships.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-market-news-8dcd10142f", "jurisdiction": "GLOBAL", "source": "The Block — Market news", "title": "Grayscale says Strategy’s recent bitcoin sales should restore confidence in its financing structure", "url": "https://www.theblock.co/post/407360/grayscale-strategy-bitcoin-sales-comments?utm_source=rss&utm_medium=rss", "published": "2026-07-06T22:10:15+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Market news", "url": "https://www.theblock.co/post/407360/grayscale-strategy-bitcoin-sales-comments?utm_source=rss&utm_medium=rss"}]}, "summary": "Asset manager Grayscale said recent bitcoin sales by Strategy, the largest corporate holder of bitcoin, should reassure investors about the company's financing structure rather than alarm them.", "so_what": "Large corporate bitcoin holders adjusting positions can move prices and sentiment sharply, which matters when assessing collateral values and client exposure to bitcoin-treasury companies.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-policy-2c890e4264", "jurisdiction": "GLOBAL", "source": "CoinDesk — Policy", "title": "Bitcoin's U.S. reserve still a work-in-progress as federal agencies hash it out", "url": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out", "published": "2026-07-06T21:40:06+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Policy", "url": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out"}]}, "summary": "United States federal agencies are still working through legal and operational questions before the planned national bitcoin reserve becomes operational, CoinDesk reports.", "so_what": "A sovereign bitcoin reserve would further legitimise state-level holdings, and the unresolved custody and jurisdiction questions mirror those banks face when holding digital assets.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-chainalysis-blog-e10d024105", "jurisdiction": "GLOBAL", "source": "Chainalysis — Blog", "title": "Breadth, Depth, And Quality: Why Comparing Blockchain Analytics Vendors by Cluster Count Is Only Part of the Calculation", "url": "https://www.chainalysis.com/blog/comparing-blockchain-analytics-vendors/", "published": "2026-07-06T21:03:39+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "Chainalysis — Blog", "url": "https://www.chainalysis.com/blog/comparing-blockchain-analytics-vendors/"}]}, "summary": "Chainalysis argues that comparing blockchain-analytics vendors on the number of labelled address clusters tells only part of the story, with breadth, depth and attribution quality all mattering.", "so_what": "Relevant when benchmarking or renewing blockchain-analytics contracts: procurement criteria should test attribution quality and coverage rather than headline cluster counts alone.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-7ba8c24571", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "President Trump’s strategic bitcoin reserve hits a legal and jurisdictional snag: Bloomberg", "url": "https://www.theblock.co/post/407356/trump-strategic-bitcoin-reserve-hits-legal-jurisdictional-snag-bloomberg?utm_source=rss&utm_medium=rss", "published": "2026-07-06T19:56:00+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407356/trump-strategic-bitcoin-reserve-hits-legal-jurisdictional-snag-bloomberg?utm_source=rss&utm_medium=rss"}]}, "summary": "The planned United States strategic bitcoin reserve has hit legal and jurisdictional obstacles between federal agencies, according to a Bloomberg report cited by The Block.", "so_what": "The delays highlight unsettled United States federal authority over seized and state-held cryptoassets, with knock-on implications for custody and sanctions policy worth watching.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-1f1f1d0ab9", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "Judge revives fraud claim against Barry Silbert, DCG in Genesis Yield lawsuit", "url": "https://www.theblock.co/post/407337/judge-revives-fraud-claim-against-barry-silbert-dcg-genesis-yield-lawsuit?utm_source=rss&utm_medium=rss", "published": "2026-07-06T18:55:49+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407337/judge-revives-fraud-claim-against-barry-silbert-dcg-genesis-yield-lawsuit?utm_source=rss&utm_medium=rss"}]}, "summary": "A United States judge revived a fraud claim against Digital Currency Group and its founder Barry Silbert in a lawsuit over the collapsed Genesis yield programme.", "so_what": "Litigation from the 2022-23 crypto lending collapses keeps counterparty-failure risk visible; exposure reviews for clients tied to affected entities may need refreshing as claims progress.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-45e49ff153", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "Vitalik Buterin proposes ‘Extremely Lean’ Ethereum, shrinking the chain to near-zero state with ZK proofs", "url": "https://www.theblock.co/post/407319/vitalik-buterin-extremely-lean-ethereum-shrinking-chain-to-near-zero-state-zk-proofs?utm_source=rss&utm_medium=rss", "published": "2026-07-06T16:34:32+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407319/vitalik-buterin-extremely-lean-ethereum-shrinking-chain-to-near-zero-state-zk-proofs?utm_source=rss&utm_medium=rss"}]}, "summary": "Ethereum co-founder Vitalik Buterin proposed an \"extremely lean\" redesign that would shrink the blockchain's stored state to near zero using zero-knowledge cryptographic proofs.", "so_what": "Protocol changes of this scale would eventually affect how transaction records used in investigations are stored and verified, though any practical impact is years away.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-institutional-moves-19b547342f", "jurisdiction": "GLOBAL", "source": "CoinDesk — Institutional moves", "title": "Circle’s USDC is leaving Tether behind in the stablecoin volume race, new data from Visa shows", "url": "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race", "published": "2026-07-06T16:00:15+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Institutional moves", "url": "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race"}]}, "summary": "New data published by Visa shows Circle's USDC stablecoin pulling ahead of rival Tether in on-chain transaction volume by a widening margin.", "so_what": "A volume shift toward the more regulation-forward stablecoin issuer changes the counterparty mix in client transaction flows and is useful context for stablecoin risk assessments.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-258fd6649e", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "President Trump says he’s a ‘big crypto guy,’ while distancing himself from family’s crypto ventures", "url": "https://www.theblock.co/post/407312/president-trump-big-crypto-guy-distancing-familys-crypto-ventures?utm_source=rss&utm_medium=rss", "published": "2026-07-06T15:53:22+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407312/president-trump-big-crypto-guy-distancing-familys-crypto-ventures?utm_source=rss&utm_medium=rss"}]}, "summary": "United States President Trump described himself as strongly supportive of cryptocurrency while distancing himself from his family's commercial crypto ventures.", "so_what": "Top-level political support continues to shape a permissive United States policy direction, while conflict-of-interest questions around official crypto ventures remain a reputational theme to monitor.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-market-news-9cad11867e", "jurisdiction": "GLOBAL", "source": "CoinDesk — Market news", "title": "DeFi protocol Summer.fi halts Lazy Summer vaults after $6 million exploit", "url": "https://www.coindesk.com/web3/2026/07/06/defi-protocol-summer-fi-halts-lazy-summer-vaults-after-usd6-million-exploit", "published": "2026-07-06T13:42:12+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Market news", "url": "https://www.coindesk.com/web3/2026/07/06/defi-protocol-summer-fi-halts-lazy-summer-vaults-after-usd6-million-exploit"}]}, "summary": "Decentralised-finance protocol Summer.fi suspended its \"Lazy Summer\" investment vaults after an exploit drained about six million United States dollars.", "so_what": "Fresh exploit proceeds typically move fast through mixers and cross-chain bridges, so screening-provider alerts for exposure to the stolen funds are worth watching over the coming days.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-elliptic-blog-4edb359f95", "jurisdiction": "GLOBAL", "source": "Elliptic — Blog", "title": "How the UK's stablecoin rules came together", "url": "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together", "published": "2026-07-06T13:00:02+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "Elliptic — Blog", "url": "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together"}]}, "summary": "Elliptic published an explainer tracing how the United Kingdom's newly finalised stablecoin regulatory regime was developed and what it covers.", "so_what": "A concise map of the United Kingdom regime helps benchmark it against the Hong Kong and European Union stablecoin frameworks when advising on cross-border issuance and custody.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-market-news-053cb92677", "jurisdiction": "GLOBAL", "source": "CoinDesk — Market news", "title": "Michael Saylor's Strategy dramatically ups pace of bitcoin sales, raising $216 million", "url": "https://www.coindesk.com/markets/2026/07/06/michael-saylor-s-strategy-dramatically-ups-pace-of-bitcoin-sales-raising-usd216-million", "published": "2026-07-06T12:16:28+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Market news", "url": "https://www.coindesk.com/markets/2026/07/06/michael-saylor-s-strategy-dramatically-ups-pace-of-bitcoin-sales-raising-usd216-million"}]}, "summary": "Strategy, the software company turned bitcoin holding vehicle led by Michael Saylor, sharply accelerated its bitcoin sales, raising about 216 million United States dollars.", "so_what": "The largest corporate bitcoin holder switching from accumulation to sizeable sales is a market-sentiment signal relevant to collateral valuations and exposure to bitcoin-treasury companies.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-coindesk-policy-9559d96c92", "jurisdiction": "GLOBAL", "source": "CoinDesk — Policy", "title": "Ripple's preliminary crypto asset provider license in Luxembourg upgraded to fully compliant", "url": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant", "published": "2026-07-06T10:01:24+00:00", "type": "licensing", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "CoinDesk — Policy", "url": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant"}]}, "summary": "CoinDesk reports that Ripple's preliminary crypto-asset service provider licence in Luxembourg has been upgraded to fully compliant status under the European Union's Markets in Crypto-Assets Regulation (MiCA).", "so_what": "Full authorisation lets Ripple passport crypto services across the European Economic Area, adding a large licensed counterparty to the European payments and custody landscape.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-a3f39bf606", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "Ripple secures full MiCA CASP authorization for crypto services across 30 EEA countries", "url": "https://www.theblock.co/post/407207/ripple-secures-full-mica-casp-authorization-for-crypto-services-across-30-eea-countries?utm_source=rss&utm_medium=rss", "published": "2026-07-06T09:30:56+00:00", "type": "licensing", "priority": "high", "status": "new", "verification": {"level": "corroborated", "sources": [{"name": "The Block — Market news", "url": "https://www.theblock.co/post/407207/ripple-secures-full-mica-casp-authorization-for-crypto-services-across-30-eea-countries?utm_source=rss&utm_medium=rss"}, {"name": "CoinDesk — Policy", "url": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant"}]}, "summary": "Ripple secured full authorisation as a crypto-asset service provider under the European Union's Markets in Crypto-Assets Regulation (MiCA), allowing it to offer crypto services across thirty European Economic Area countries.", "so_what": "A major payments-focused crypto firm gaining authorisation across the whole European Economic Area expands the set of fully licensed counterparties and sharpens comparison with Hong Kong's licensing regime.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-00a1b988af", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "South Korea develops crypto-specific procedures for asset seizures and liquidation: report", "url": "https://www.theblock.co/post/407183/south-korea-crypto-specific-procedure?utm_source=rss&utm_medium=rss", "published": "2026-07-06T08:35:54+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407183/south-korea-crypto-specific-procedure?utm_source=rss&utm_medium=rss"}]}, "summary": "South Korean authorities are developing procedures specifically for seizing and liquidating cryptocurrency in criminal and tax cases, according to a report cited by The Block.", "so_what": "Clearer seizure mechanics in a major Asian market offer a template regional peers may follow and affect how frozen-asset requests involving Korean counterparties are executed.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-market-news-2f266b7d60", "jurisdiction": "GLOBAL", "source": "The Block — Market news", "title": "How Sovereign Wealth Funds Invest in Digital Assets", "url": "https://www.theblock.co/learn/407186/how-sovereign-wealth-funds-invest-in-digital-assets?utm_source=rss&utm_medium=rss", "published": "2026-07-06T06:14:32+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Market news", "url": "https://www.theblock.co/learn/407186/how-sovereign-wealth-funds-invest-in-digital-assets?utm_source=rss&utm_medium=rss"}]}, "summary": "An explainer from The Block describes the channels sovereign wealth funds use to invest in digital assets, from exchange-traded products to direct holdings and venture stakes.", "so_what": "Sovereign investors entering digital assets deepen institutional flows through regulated intermediaries — useful context for onboarding and source-of-funds conversations involving state-linked vehicles.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-the-block-policy-3a49a90f7e", "jurisdiction": "GLOBAL", "source": "The Block — Policy", "title": "Nigel Farage failed to declare funding from crypto gambling figure convicted of fraud: Sunday Times", "url": "https://www.theblock.co/post/407178/nigel-farage-failed-to-declare-funding-from-crypto-gambling-figure-convicted-of-fraud-sunday-times?utm_source=rss&utm_medium=rss", "published": "2026-07-05T22:53:05+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "The Block — Policy", "url": "https://www.theblock.co/post/407178/nigel-farage-failed-to-declare-funding-from-crypto-gambling-figure-convicted-of-fraud-sunday-times?utm_source=rss&utm_medium=rss"}]}, "summary": "The Sunday Times reported that British politician Nigel Farage failed to declare funding from a cryptocurrency gambling figure previously convicted of fraud.", "so_what": "Politically exposed persons with undisclosed crypto-linked funding illustrate the adverse-media and source-of-wealth checks that cryptocurrency exposure adds to customer due diligence.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-elliptic-blog-9f279187a9", "jurisdiction": "GLOBAL", "source": "Elliptic — Blog", "title": "Introducing Continuous Monitoring: stay aware of changing crypto risk", "url": "https://www.elliptic.co/blog/introducing-continuous-monitoring", "published": "2026-07-02T13:00:01+00:00", "type": "news", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "Elliptic — Blog", "url": "https://www.elliptic.co/blog/introducing-continuous-monitoring"}]}, "summary": "Elliptic launched a continuous-monitoring capability that re-screens cryptocurrency wallets and transactions as risk information changes after the initial check.", "so_what": "Point-in-time wallet screening ages quickly; continuous re-screening options are worth weighing when reviewing blockchain-analytics tooling against ongoing monitoring obligations.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}, {"id": "global-chainalysis-blog-987207320d", "jurisdiction": "GLOBAL", "source": "Chainalysis — Blog", "title": "OFAC Updates ISIS-Khorasan Sanctions with Over 100 Cryptocurrency Wallets", "url": "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026/", "published": "2026-07-01T20:26:45+00:00", "type": "designation", "priority": "normal", "status": "new", "verification": {"level": "single_source", "sources": [{"name": "Chainalysis — Blog", "url": "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026/"}]}, "summary": "Chainalysis analysed the United States Office of Foreign Assets Control's update adding more than one hundred cryptocurrency wallet addresses linked to Islamic State Khorasan to its sanctions designations.", "so_what": "The attribution detail on the newly designated addresses supports retrospective exposure checks and tuning of sanctions-screening rules for indirect exposure.", "first_seen": "2026-07-07T07:50:49.166227+00:00"}], "source_health": [{"name": "Hong Kong Monetary Authority — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Hong Kong Monetary Authority — Circulars & guidance", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Securities and Futures Commission — News", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Securities and Futures Commission — Circulars", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Financial Services and the Treasury Bureau — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Securities and Futures Commission — Licensed virtual asset trading platforms register", "status": "ok", "note": "No change", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "People's Bank of China — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "CoinDesk — China policy", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "The Block — China policy", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Financial Crimes Enforcement Network (FinCEN) — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Office of Foreign Assets Control (OFAC) — Recent actions", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "US Securities and Exchange Commission — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Commodity Futures Trading Commission — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Office of the Comptroller of the Currency — News releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Federal Reserve — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "US Department of Justice — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "European Securities and Markets Authority — News", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "European Banking Authority — News", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Monetary Authority of Singapore — Media releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Financial Action Task Force (FATF) — Publications", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Wolfsberg Group — News & publications", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Global Digital Finance (GDF) — News", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "ACAMS Today", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Bank for International Settlements / Basel Committee — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Financial Stability Board — Press releases", "status": "ok", "note": "Feed responding normally", "tier": "official", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "CoinDesk — Policy", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "The Block — Policy", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "CoinDesk — Institutional moves", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "The Block — Institutional moves", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "CoinDesk — Market news", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "The Block — Market news", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Chainalysis — Blog", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Elliptic — Blog", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "TRM Labs — Insights", "status": "ok", "note": "Feed responding normally", "tier": "industry", "checked_at": "2026-07-07T07:50:49.166227+00:00"}, {"name": "Claude summarisation", "status": "ok", "note": "Summaries written via Claude Code session on 2026-07-07"}], "run_log": [{"at": "2026-07-07T07:50:49.166227+00:00", "note": "Daily fetch: 25 new items surfaced; 34/35 sources ok"}, {"at": "2026-07-07T07:53:39.038684+00:00", "note": "Enrichment: 25 items summarised and classified via Claude Code session; 2 stories corroborated"}], "radar": []};
 
 /* ============================================================
    LABEL MAPS — plain English in all UI chrome
@@ -619,6 +856,54 @@ const state = { juris: "ALL", bucket: "ALL" };
 let pendingFocus = null;  // [attr, value] of a chip to refocus after re-render
 const GEN_DAY = hkDayKey(DIGEST.generated_at);
 
+/* ---------- returning-reader state (all client-side, all optional) ---------- */
+/* Visit baseline: items first seen after your previous session get a "New"
+   pill and a masthead count. The baseline only rolls when the gap since the
+   last activity exceeds an hour, so mid-session refreshes don't clear it. */
+let VISIT_BASELINE = null;
+try {
+  const v = JSON.parse(localStorage.getItem("regradar-visits") || "null");
+  const now = Date.now();
+  if (v && typeof v.current === "number") {
+    VISIT_BASELINE = (now - v.current > 60 * 60000) ? v.current : (v.baseline ?? null);
+  }
+  localStorage.setItem("regradar-visits", JSON.stringify({ baseline: VISIT_BASELINE, current: now }));
+} catch (e) {}
+const isNewSinceVisit = it =>
+  VISIT_BASELINE !== null && new Date(it.first_seen || it.published).getTime() > VISIT_BASELINE;
+
+/* Read-set: clicked headlines dim on this and future visits. Pruned against
+   current item ids so it never grows past the 7-day window. */
+let READ = new Set();
+try {
+  const ids = new Set(DIGEST.items.map(it => it.id));
+  READ = new Set((JSON.parse(localStorage.getItem("regradar-read") || "[]")).filter(id => ids.has(id)));
+} catch (e) {}
+function markRead(id) {
+  if (!id || READ.has(id)) return;
+  READ.add(id);
+  try { localStorage.setItem("regradar-read", JSON.stringify([...READ])); } catch (e) {}
+  document.querySelectorAll(`[data-id="${CSS.escape(id)}"]`).forEach(el => el.classList.add("is-read"));
+}
+
+/* Remembered filters: the Hong-Kong-only reader lands on their lens every
+   morning. Restored only when still valid AND non-empty for today. */
+function saveFilters() {
+  try { localStorage.setItem("regradar-filters", JSON.stringify(state)); } catch (e) {}
+}
+function restoreFilters() {
+  try {
+    const saved = JSON.parse(localStorage.getItem("regradar-filters") || "null");
+    if (!saved) return;
+    if (JURIS_ORDER.includes(saved.juris) || saved.juris === "ALL") state.juris = saved.juris;
+    if (BUCKETS[saved.bucket]) state.bucket = saved.bucket;
+    if (!todayItems().filter(matchesFilters).length &&
+        !archiveItems().filter(matchesFilters).length) {
+      state.juris = "ALL"; state.bucket = "ALL";  // stale lens: show everything
+    }
+  } catch (e) {}
+}
+
 function bucketOf(type) {
   for (const [k, v] of Object.entries(BUCKETS)) {
     if (v.types && v.types.includes(type)) return k;
@@ -662,8 +947,8 @@ function renderChips() {
     return `<button class="chip" type="button" aria-pressed="${state.bucket === val}" data-bucket="${val}">${esc(def.label)}<span class="count">${n}</span></button>`;
   }).join("");
 
-  jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; pendingFocus = ["data-juris", b.dataset.juris]; render(); });
-  bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; pendingFocus = ["data-bucket", b.dataset.bucket]; render(); });
+  jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; saveFilters(); pendingFocus = ["data-juris", b.dataset.juris]; render(); });
+  bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; saveFilters(); pendingFocus = ["data-bucket", b.dataset.bucket]; render(); });
 
   // renderChips() rebuilds these buttons via innerHTML, which drops keyboard
   // focus to <body> and loses the user's place. Restore focus to the chip that
@@ -687,39 +972,75 @@ function renderBanner() {
   </div>`;
 }
 
-/* ---------- verification badge ---------- */
+/* ---------- verification badge: an inspectable claim, not decoration ---------- */
+const VERIFY_EXPLAIN = {
+  official: "Published directly by the regulator or standard-setter named on the card — the statement itself is the primary source. Verify details against the linked original before acting.",
+  corroborated: "An industry-media report confirmed by a second, independent source — an official body or another reputable outlet. Both links are below.",
+  single_source: "Reported by one industry outlet; no independent confirmation was found at publish time. Treat as unverified and check the original source.",
+};
 function verifyBadge(v) {
   if (v.level === "official") return `<span class="verify official">✓ Official source</span>`;
   if (v.level === "corroborated") return `<span class="verify corroborated">✓✓ Corroborated — ${(v.sources || []).length} sources</span>`;
   return `<span class="verify single_source">⚠ Single source — verify</span>`;
 }
-function corroSources(v) {
-  if (v.level !== "corroborated" || !v.sources || v.sources.length < 2) return "";
-  const links = v.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ");
-  return `<div class="corro-sources"><span class="cs-lbl">Sources:</span> ${links}</div>`;
+function verifyDetails(v) {
+  const srcs = v.sources || [];
+  const links = srcs.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ");
+  return `<details class="verify-d">
+    <summary aria-label="What this verification level means">${verifyBadge(v)}</summary>
+    <div class="verify-body">${VERIFY_EXPLAIN[v.level] || ""}
+      ${links ? `<div class="corro-sources"><span class="cs-lbl">Source${srcs.length > 1 ? "s" : ""}:</span> ${links}</div>` : ""}
+    </div>
+  </details>`;
 }
 
 /* ---------- card ---------- */
-const UNIFORM_STATUS = new Set(DIGEST.items.map(it => it.status)).size <= 1;
 function cardHTML(it) {
-  // A badge every card wears carries no signal -- suppress when uniform.
-  const pill = UNIFORM_STATUS ? "" : (it.status === "update"
+  // "Updated" reflects pipeline status; "New" is relative to YOUR last visit
+  // (Techmeme-style) -- first-time visitors see no pills at all.
+  const pill = it.status === "update"
     ? `<span class="pill update">Updated</span>`
-    : `<span class="pill new">New</span>`);
-  return `<article class="card${it.priority === "high" ? " is-high" : ""}">
+    : (isNewSinceVisit(it) ? `<span class="pill new">New</span>` : "");
+  return `<article class="card${it.priority === "high" ? " is-high" : ""}${READ.has(it.id) ? " is-read" : ""}"
+      id="${esc(it.id)}" data-id="${esc(it.id)}">
     <div class="card-top">
       <span class="src-badge">${esc(it.source)}</span>
       <span class="type-tag" style="--h:${TYPE_HUE[it.type] || 90}">${esc(TYPE_LABEL[it.type] || it.type)}</span>
-      <span class="card-date">${fmtCardDate(it.published)}</span>
+      <span class="card-date" title="First logged ${esc(fmtAudit(it.first_seen || it.published))}">${fmtCardDate(it.published)}</span>
       <span class="spacer"></span>
       ${pill}
+      <button class="copycite" type="button" data-cite="${esc(it.id)}" aria-label="Copy a citation for this item">Copy cite</button>
     </div>
     <h4><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}<span class="ext" aria-hidden="true">↗</span></a></h4>
     <p class="summary">${esc(it.summary)}</p>
     <p class="sowhat"><span class="lbl">→ So what:</span> ${esc(it.so_what)}</p>
-    ${verifyBadge(it.verification)}
-    ${corroSources(it.verification)}
+    ${verifyDetails(it.verification)}
   </article>`;
+}
+
+/* ---------- in-brief row (tiered feed) ----------
+   Normal-priority market news reads as a one-line expandable row: 22 pieces
+   of market chatter must not carry the same visual weight as a sanctions
+   designation. The full summary / so-what / badge sit inside the disclosure.
+   Official-tier statements (verification level "official") always keep a
+   full card, whatever their type -- a regulator speaking is never chatter. */
+const isBrief = it => it.type === "news" && it.priority !== "high"
+  && (it.verification || {}).level !== "official";
+function briefHTML(it) {
+  return `<details class="brief${READ.has(it.id) ? " is-read" : ""}" id="${esc(it.id)}" data-id="${esc(it.id)}">
+    <summary>
+      <span class="b-caret" aria-hidden="true">▶</span>
+      <span class="b-title">${esc(it.title)}${isNewSinceVisit(it) ? ` <span class="pill new">New</span>` : ""}</span>
+      <span class="b-meta">${esc(it.source.split("—")[0].trim())} · ${fmtCardDate(it.published)}</span>
+    </summary>
+    <div class="brief-body">
+      <p class="summary">${esc(it.summary)}</p>
+      <p class="sowhat"><span class="lbl">→ So what:</span> ${esc(it.so_what)}</p>
+      <a href="${esc(it.url)}" target="_blank" rel="noopener">Read at the source <span class="ext" aria-hidden="true">↗</span></a>
+      · <button class="copycite" type="button" data-cite="${esc(it.id)}">Copy cite</button>
+      <div>${verifyDetails(it.verification)}</div>
+    </div>
+  </details>`;
 }
 
 /* ---------- top of mind ---------- */
@@ -767,7 +1088,8 @@ function renderPriority(items) {
   const more = high.length > PRIORITY_CAP
     ? `<div class="priority-more">+ ${high.length - PRIORITY_CAP} more high-priority item${high.length - PRIORITY_CAP > 1 ? "s" : ""} flagged in the feed below</div>`
     : "";
-  slot.innerHTML = `<div class="section-head"><h2>Priority — needs a look</h2><span class="rule"></span></div>
+  const n = Math.min(high.length, PRIORITY_CAP);
+  slot.innerHTML = `<div class="section-head"><h2>Priority — ${n} thing${n > 1 ? "s" : ""} that need${n > 1 ? "" : "s"} a look</h2><span class="rule"></span></div>
     <div class="priority">${rows}${more}</div>`;
 }
 
@@ -786,17 +1108,30 @@ function renderFeed(items) {
     </div>`;
     return;
   }
-  let html = `<div class="section-head"><h2>Today · by jurisdiction</h2><span class="rule"></span></div>`;
+  let html = `<div class="section-head"><h2>Today · by jurisdiction</h2><span class="rule"></span>
+    <button class="copy-briefing" type="button" id="copyBriefingBtn" aria-label="Copy today's briefing as text">⧉ Copy briefing</button></div>`;
   JURIS_ORDER.forEach(j => {
     const group = items.filter(it => it.jurisdiction === j)
       .sort((a, b) => (b.priority === "high") - (a.priority === "high") || new Date(b.published) - new Date(a.published));
     if (!group.length) return;
-    html += `<section class="juris-group">
+    const cards = group.filter(it => !isBrief(it));
+    const briefs = group.filter(isBrief);
+    html += `<section class="juris-group" id="jsec-${esc(j)}">
       <h3 class="juris-title">${esc(JURIS_FULL[j])} <span class="jt-count">${group.length} item${group.length > 1 ? "s" : ""}</span></h3>
       <div class="juris-sep"></div>
-      ${group.map(cardHTML).join("")}
+      ${cards.map(cardHTML).join("")}
+      ${briefs.length ? `<div class="brief-block">
+        <p class="brief-head">In brief — ${briefs.length} market headline${briefs.length > 1 ? "s" : ""}</p>
+        <div class="brief-list">${briefs.map(briefHTML).join("")}</div>
+      </div>` : ""}
     </section>`;
   });
+  // Finite-briefing sign-off: the completion contract of a daily ritual.
+  const filtered = state.juris !== "ALL" || state.bucket !== "ALL";
+  const nSources = DIGEST.source_health.filter(s => s.name !== "Claude summarisation").length;
+  html += `<p class="signoff">${filtered
+    ? `— End of matching items · ${items.length} shown — clear filters to see all ${todayItems().length} —`
+    : `— End of today's wire · ${items.length} new item${items.length > 1 ? "s" : ""} from ${nSources} monitored sources · updated each weekday morning, Hong Kong time —`}</p>`;
   feed.innerHTML = html;
 }
 
@@ -809,10 +1144,15 @@ function renderArchive() {
   const wasOpen = existing ? existing.open : false;
   const arch = archiveItems().filter(matchesFilters)
     .sort((a, b) => new Date(b.published) - new Date(a.published));
+  const cards = arch.filter(it => !isBrief(it));
+  const briefs = arch.filter(isBrief);
+  const newCount = arch.filter(isNewSinceVisit).length;
   slot.innerHTML = `<details class="archive"${wasOpen ? " open" : ""}>
-    <summary><span class="caret" aria-hidden="true">▶</span> Last 7 days<span class="a-count">${arch.length} item${arch.length === 1 ? "" : "s"}</span></summary>
+    <summary><span class="caret" aria-hidden="true">▶</span> Last 7 days<span class="a-count">${newCount ? `${newCount} new · ` : ""}${arch.length} item${arch.length === 1 ? "" : "s"}</span></summary>
     <div class="archive-body">
-      ${arch.length ? arch.map(cardHTML).join("") : `<div class="empty"><p>${state.juris === "ALL" && state.bucket === "ALL" ? "No earlier items yet — the archive fills as days pass." : "No earlier items match the current filters."}</p></div>`}
+      ${arch.length ? `${cards.map(cardHTML).join("")}
+        ${briefs.length ? `<div class="brief-block"><p class="brief-head">In brief — ${briefs.length} market headline${briefs.length > 1 ? "s" : ""}</p><div class="brief-list">${briefs.map(briefHTML).join("")}</div></div>` : ""}`
+        : `<div class="empty"><p>${state.juris === "ALL" && state.bucket === "ALL" ? "No earlier items yet — the archive fills as days pass." : "No earlier items match the current filters."}</p></div>`}
     </div>
   </details>`;
 }
@@ -820,12 +1160,22 @@ function renderArchive() {
 /* ---------- source-health table (Source health tab) ---------- */
 function renderHealth() {
   const tb = document.querySelector("#healthTable tbody");
-  tb.innerHTML = DIGEST.source_health.map(s =>
-    `<tr>
+  const row = s => `<tr>
        <td>${esc(s.name)}</td>
        <td><span class="hstatus ${s.status}">${s.status === "ok" ? "OK" : esc(s.status)}</span></td>
+       <td>${s.checked_at ? esc(fmtAudit(s.checked_at)) : "—"}</td>
        <td>${esc(s.note)}</td>
-     </tr>`).join("");
+     </tr>`;
+  const groups = [
+    ["Official sources", s => s.tier === "official"],
+    ["Industry sources", s => s.tier === "industry"],
+    ["Pipeline", s => s.tier !== "official" && s.tier !== "industry"],
+  ];
+  tb.innerHTML = groups.map(([label, match]) => {
+    const rows = DIGEST.source_health.filter(match);
+    if (!rows.length) return "";
+    return `<tr class="h-group"><td colspan="4">${label}</td></tr>` + rows.map(row).join("");
+  }).join("");
 }
 
 /* ---------- audit log (Audit log tab) ---------- */
@@ -847,7 +1197,7 @@ function renderAudit() {
 }
 
 /* ---------- tabs ---------- */
-const TAB_PANELS = { digest: "tab-digest", health: "tab-health", audit: "tab-audit" };
+const TAB_PANELS = { digest: "tab-digest", health: "tab-health", audit: "tab-audit", about: "tab-about" };
 document.querySelectorAll(".tabs .tab").forEach(btn => btn.onclick = () => {
   document.querySelectorAll(".tabs .tab").forEach(t =>
     t.setAttribute("aria-selected", String(t === btn)));
@@ -856,15 +1206,194 @@ document.querySelectorAll(".tabs .tab").forEach(btn => btn.onclick = () => {
   }
 });
 
+/* ---------- jump-nav: "take me there" on a long column ---------- */
+function renderJumpnav(items) {
+  const slot = document.getElementById("jumpnav-slot");
+  const parts = JURIS_ORDER
+    .map(j => [j, items.filter(it => it.jurisdiction === j).length])
+    .filter(([, n]) => n > 0)
+    .map(([j, n]) => `<a href="#jsec-${esc(j)}">${esc(JURIS_FULL[j])}</a> <span class="jn-count">${n}</span>`);
+  slot.innerHTML = parts.length > 1
+    ? `<p class="jumpnav">On today's wire: ${parts.join(" · ")}</p>` : "";
+}
+
+/* ---------- on the radar: forward-looking deadlines ---------- */
+function renderRadar() {
+  const slot = document.getElementById("radar-slot");
+  const rows = DIGEST.radar || [];
+  if (!rows.length) { slot.innerHTML = ""; return; }
+  slot.innerHTML = `<div class="section-head"><h2>On the radar — dates that matter</h2><span class="rule"></span></div>
+    <div class="radar">${rows.map(r => `
+      <div class="radar-item">
+        <span class="rd">${fmtDay(r.date + "T00:00:00+08:00")}</span>
+        <span class="rj">${esc(JURIS_FULL[r.jurisdiction] || r.jurisdiction)}</span>
+        <span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.label)}</a>` : esc(r.label)}</span>
+      </div>`).join("")}</div>`;
+}
+
+/* ---------- while you were away: missed high-priority items ---------- */
+function renderCatchup() {
+  const slot = document.getElementById("catchup-slot");
+  slot.innerHTML = "";
+  if (VISIT_BASELINE === null) return;
+  // Only meaningful when the last visit predates today's digest day.
+  if (hkDayKey(new Date(VISIT_BASELINE).toISOString()) === GEN_DAY) return;
+  const missed = archiveItems()
+    .filter(it => it.priority === "high" && new Date(it.first_seen || it.published).getTime() > VISIT_BASELINE)
+    .sort((a, b) => new Date(b.published) - new Date(a.published))
+    .slice(0, 4);
+  if (!missed.length) return;
+  const since = fmtDay(new Date(VISIT_BASELINE).toISOString());
+  slot.innerHTML = `<div class="section-head"><h2>While you were away · since ${since}</h2><span class="rule"></span></div>
+    <div class="catchup">${missed.map(it => `
+      <div class="catchup-item">
+        <span class="pj">${esc(JURIS_FULL[it.jurisdiction])}</span>
+        <span><a href="#${esc(it.id)}" data-open-archive="1">${esc(it.title)}</a>
+          <span class="cdate">· ${fmtDay(it.published)}</span></span>
+      </div>`).join("")}</div>`;
+}
+
+/* ---------- masthead freshness: the page's one silent failure mode ---------- */
+function renderFreshness() {
+  const el = document.getElementById("mast-fresh");
+  const ageH = (Date.now() - new Date(DIGEST.generated_at).getTime()) / 3600000;
+  const cls = ageH < 26 ? "ok" : ageH < 50 ? "warn" : "stale";
+  const rel = ageH < 1 ? "just now" : ageH < 26 ? `${Math.round(ageH)}h ago` : `${Math.floor(ageH / 24)} day${ageH >= 48 ? "s" : ""} ago`;
+  el.innerHTML = ` · <span class="fresh-dot ${cls}" aria-hidden="true"></span>as of ${rel}`;
+  const slot = document.getElementById("banner-slot");
+  const existing = slot.querySelector(".banner.freshness");
+  if (existing) existing.remove();
+  if (ageH >= 26) {
+    slot.insertAdjacentHTML("afterbegin", `<div class="banner freshness" role="status">
+      <span class="b-ico" aria-hidden="true">⚠</span>
+      <div><strong>This digest has not updated since ${fmtAudit(DIGEST.generated_at)}.</strong>
+      The daily pipeline may have stalled — items below may be out of date.</div>
+    </div>`);
+  }
+}
+
+/* ---------- read-budget line: state the size of the ask up front ---------- */
+function renderScope() {
+  const el = document.getElementById("mast-scope");
+  const today = todayItems();
+  if (!today.length) { el.textContent = ""; return; }
+  const words = today.reduce((n, it) =>
+    n + `${it.title} ${it.summary} ${it.so_what}`.split(/\s+/).length, 0);
+  const mins = Math.max(1, Math.round(words / 220));
+  const high = today.filter(it => it.priority === "high").length;
+  const newN = today.filter(isNewSinceVisit).length;
+  // Previous digest day's volume (most recent HKT day before today in the window).
+  const days = {};
+  DIGEST.items.forEach(it => { const k = hkDayKey(it.first_seen || it.published); if (k !== GEN_DAY) days[k] = (days[k] || 0) + 1; });
+  const prevKey = Object.keys(days).sort().pop();
+  const parts = [
+    `${today.length} item${today.length > 1 ? "s" : ""} today`,
+    high ? `<span class="hi">${high} high priority</span>` : "nothing high priority",
+    `~${mins} min full read`,
+  ];
+  if (newN && VISIT_BASELINE !== null) parts.splice(1, 0, `<span class="hi">${newN} new since your last visit</span>`);
+  if (prevKey) parts.push(`${days[prevKey]} on the previous digest day`);
+  el.innerHTML = parts.join(" · ");
+}
+
+/* ---------- about tab: live source counts ---------- */
+function renderAbout() {
+  const rows = DIGEST.source_health.filter(s => s.name !== "Claude summarisation");
+  const official = rows.filter(s => s.tier === "official").length;
+  const industry = rows.filter(s => s.tier === "industry").length;
+  document.getElementById("about-sources").textContent =
+    `${rows.length} sources are monitored every run: ${official || "—"} official (regulators, central banks, standard-setters — including licence registers that are diffed for changes) and ${industry || "—"} industry (crypto press and blockchain-analytics firms). Official items are trusted as primary sources; industry items must earn corroboration.`;
+}
+
+/* ---------- clipboard: copy cite + copy briefing ---------- */
+function toClipboard(text, html) {
+  const fallback = () => {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    ta.remove();
+    return Promise.resolve();
+  };
+  try {
+    if (navigator.clipboard && window.ClipboardItem && html) {
+      return navigator.clipboard.write([new ClipboardItem({
+        "text/plain": new Blob([text], { type: "text/plain" }),
+        "text/html": new Blob([html], { type: "text/html" }),
+      })]).catch(() => navigator.clipboard.writeText(text)).catch(fallback);
+    }
+    if (navigator.clipboard) return navigator.clipboard.writeText(text).catch(fallback);
+  } catch (e) {}
+  return fallback();
+}
+function flashButton(btn, label) {
+  const prev = btn.textContent;
+  btn.textContent = label;
+  setTimeout(() => { btn.textContent = prev; }, 1500);
+}
+function citeText(it) {
+  return [
+    `${it.title} — ${it.source}, published ${fmtCardDate(it.published)} HKT`,
+    `Original: ${it.url}`,
+    `Verification: ${(it.verification.level || "").replace("_", " ")}`,
+    `Digest link: https://fandamentals.github.io/morning-wire/#${it.id}`,
+    `(AI-sourced digest — verify against the official source before acting.)`,
+  ].join("\n");
+}
+function briefingStrings() {
+  const items = todayItems().filter(matchesFilters);
+  const dateLine = fmtHeaderDate(DIGEST.generated_at);
+  const lines = [`DIGITAL ASSETS MORNING WIRE — ${dateLine}`];
+  const hparts = [`<h3>Digital Assets Morning Wire — ${esc(dateLine)}</h3>`];
+  if (DIGEST.top_of_mind) { lines.push("", `TOP OF MIND: ${DIGEST.top_of_mind}`); hparts.push(`<p><strong>Top of mind:</strong> ${esc(DIGEST.top_of_mind)}</p>`); }
+  JURIS_ORDER.forEach(j => {
+    const group = items.filter(it => it.jurisdiction === j);
+    if (!group.length) return;
+    lines.push("", `== ${JURIS_FULL[j].toUpperCase()} ==`);
+    hparts.push(`<h4>${esc(JURIS_FULL[j])}</h4><ul>`);
+    group.forEach(it => {
+      lines.push(`• ${it.title}${it.priority === "high" ? " [HIGH PRIORITY]" : ""}`,
+                 `  ${it.summary}`, `  So what: ${it.so_what}`,
+                 `  ${(it.verification.level || "").replace("_", " ")} · ${it.url}`);
+      hparts.push(`<li><strong>${esc(it.title)}</strong>${it.priority === "high" ? " <em>[high priority]</em>" : ""}<br>${esc(it.summary)}<br><em>So what:</em> ${esc(it.so_what)}<br><a href="${esc(it.url)}">${esc(it.url)}</a></li>`);
+    });
+    hparts.push(`</ul>`);
+  });
+  const disclaimer = "AI-sourced & AI-generated — verify against official sources before acting. https://fandamentals.github.io/morning-wire/";
+  lines.push("", disclaimer);
+  hparts.push(`<p><em>${esc(disclaimer)}</em></p>`);
+  return [lines.join("\n"), hparts.join("")];
+}
+
+/* ---------- week-in-review print ---------- */
+function buildWeekView() {
+  const wk = document.getElementById("weekview");
+  const byDay = {};
+  DIGEST.items.forEach(it => { const k = hkDayKey(it.first_seen || it.published); (byDay[k] = byDay[k] || []).push(it); });
+  wk.innerHTML = `<h2>Week in review — ${esc(fmtHeaderDate(DIGEST.generated_at))}</h2>` +
+    Object.keys(byDay).sort().reverse().map(k =>
+      `<h3 class="wk-day">${esc(fmtHeaderDate(byDay[k][0].first_seen || byDay[k][0].published))}</h3>` +
+      byDay[k].sort((a, b) => (b.priority === "high") - (a.priority === "high")).map(cardHTML).join("")
+    ).join("");
+  // The live feed already owns these element ids -- duplicates would break
+  // deep-link lookups. The print view needs none.
+  wk.querySelectorAll("[id]").forEach(el => el.removeAttribute("id"));
+}
+
 /* ============================================================
    MASTER RENDER
    ============================================================ */
 function render() {
   renderChips();
   renderBanner();
+  renderFreshness();
+  renderScope();
   renderTopOfMind();
   const today = todayItems().filter(matchesFilters);
+  renderJumpnav(today);
   renderPriority(today);
+  renderRadar();
+  renderCatchup();
   renderFeed(today);
   renderArchive();
 }
@@ -897,20 +1426,88 @@ document.getElementById("themeBtn").onclick = () => {
 };
 
 /* ---------- print: a closed <details> won't expand via CSS alone ---------- */
-let archiveOpenBeforePrint = null;
+let printOpened = [];
 window.addEventListener("beforeprint", () => {
-  const d = document.querySelector("details.archive");
-  if (d) { archiveOpenBeforePrint = d.open; d.open = true; }
+  printOpened = [];
+  document.querySelectorAll("details.archive, details.brief").forEach(d => {
+    if (!d.open) { printOpened.push(d); d.open = true; }
+  });
 });
 window.addEventListener("afterprint", () => {
-  const d = document.querySelector("details.archive");
-  if (d && archiveOpenBeforePrint !== null) { d.open = archiveOpenBeforePrint; archiveOpenBeforePrint = null; }
+  printOpened.forEach(d => { d.open = false; });
+  printOpened = [];
+  if (document.body.dataset.print) delete document.body.dataset.print;
 });
 
+/* ---------- delegated interactions ---------- */
+document.addEventListener("click", e => {
+  // Copy cite
+  const cite = e.target.closest(".copycite");
+  if (cite) {
+    const it = DIGEST.items.find(x => x.id === cite.dataset.cite);
+    if (it) { toClipboard(citeText(it)); flashButton(cite, "Copied ✓"); markRead(it.id); }
+    return;
+  }
+  // Copy briefing (current filtered view)
+  if (e.target.closest("#copyBriefingBtn")) {
+    const btn = e.target.closest("#copyBriefingBtn");
+    const [txt, html] = briefingStrings();
+    toClipboard(txt, html); flashButton(btn, "Copied ✓");
+    return;
+  }
+  // Print week in review
+  if (e.target.closest("#printWeekBtn")) {
+    buildWeekView();
+    document.body.dataset.print = "week";
+    window.print();
+    return;
+  }
+  // About tab's inline "Source health" link
+  const goto = e.target.closest("[data-goto]");
+  if (goto) { document.querySelector(`.tab[data-tab="${goto.dataset.goto}"]`)?.click(); return; }
+  // Catch-up rows: open the archive before jumping to the card
+  const opener = e.target.closest("[data-open-archive]");
+  if (opener) { const a = document.querySelector("details.archive"); if (a) a.open = true; }
+  // Read-marking: any headline/source link inside an item
+  const link = e.target.closest("a[href]");
+  if (link) { const host = link.closest("[data-id]"); if (host) markRead(host.dataset.id); }
+});
+// Brief rows count as read once expanded.
+document.addEventListener("toggle", e => {
+  const d = e.target;
+  if (d.matches && d.matches("details.brief") && d.open) markRead(d.dataset.id);
+}, true);
+
+/* ---------- deep links: /#<item-id> scrolls to and highlights the card ---------- */
+function gotoHash() {
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (!id) return;
+  const it = DIGEST.items.find(x => x.id === id);
+  if (!it) return;
+  document.querySelector('.tab[data-tab="digest"]')?.click();
+  state.juris = "ALL"; state.bucket = "ALL"; render();
+  if (hkDayKey(it.first_seen || it.published) !== GEN_DAY) {
+    const a = document.querySelector("details.archive"); if (a) a.open = true;
+  }
+  const el = document.getElementById(id);
+  if (el) {
+    if (el.tagName === "DETAILS") el.open = true;
+    el.scrollIntoView({ block: "center" });
+  }
+}
+window.addEventListener("hashchange", gotoHash);
+
+/* ---------- keep the freshness state honest on a long-lived tab ---------- */
+document.addEventListener("visibilitychange", () => { if (!document.hidden) renderFreshness(); });
+setInterval(renderFreshness, 10 * 60000);
+
 /* ---------- boot ---------- */
+restoreFilters();
 renderHealth();
 renderAudit();
+renderAbout();
 render();
+if (location.hash) gotoHash();
 </script>
 
 
