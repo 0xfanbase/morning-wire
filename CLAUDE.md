@@ -45,10 +45,23 @@ do this:
      cryptoasset exposures, sanctions/travel rule, AML/CFT rulemaking); else `normal`.
 4. Write the top-level `top_of_mind` field in `data/digest.json`: one or two sentences
    (max ~45 words) saying what is top of mind today for the reader, synthesising the
-   day's high-priority items. Plain English, no acronyms, neutral voice. Set it to ""
-   on quiet days. The page shows it as a callout above the priority list (which is
-   capped at 5 rows — jurisdiction order, then recency — and only admits items
-   published within the last 7 days, so a stale item marked `high` never headlines).
+   day's high-priority items. Write for a compliance officer at a globally
+   systemically important bank (a G-SIB) — this shapes what you pick and how you
+   phrase it, but never say so on the page itself. Rank by direct operational impact
+   on a bank compliance function, not simply by the `high` flag: a sanctions
+   designation or an enforcement action (something that changes a screening list or
+   sets an enforcement precedent) outranks a licensing grant to a single firm, which
+   outranks a consultation or a peer bank's product launch. When several high-priority
+   items compete for the ~45-word budget, keep the ones with a concrete compliance
+   action attached (a list to update, a control to check, a filing deadline) and drop
+   pure market-price moves or single-firm news even if flagged `high`. Fact-check
+   before writing: every claim in `top_of_mind` must trace back to an item's own
+   `summary`/`so_what` already in this digest — never generalise, extrapolate, or add
+   an implication the source items don't themselves support. Plain English, no
+   acronyms, neutral voice. Set it to "" on quiet days. The page shows it as a callout
+   beside the priority list (which is capped at 5 rows — jurisdiction order, then
+   recency — and only admits items published within the last 7 days, so a stale item
+   marked `high` never headlines).
 5. While summarising, capture any EXPLICIT future dates the items mention —
    consultation comment deadlines, rule effective dates, licence application
    windows — into the top-level `radar` list (the page's "On the radar" strip):
