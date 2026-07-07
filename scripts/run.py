@@ -214,7 +214,7 @@ def main():
     verify.verify_items(surfaced)
 
     logger.info("6/6 summarise (%d candidate items)", len(surfaced))
-    summarise_ok = summarise.summarise_items(surfaced)
+    summarise_ok, top_of_mind = summarise.summarise_items(surfaced)
     if not summarise_ok:
         # Don't let a failed AI-enrichment call pass silently as if every
         # card's summary/so-what were genuinely Claude-generated -- reuse
@@ -232,6 +232,7 @@ def main():
     merged_items = merge_digest_window(previous_digest.get("items", []), surfaced)
     digest = {
         "generated_at": now_iso,
+        "top_of_mind": top_of_mind,
         "items": [finalize_item(it) for it in merged_items],
         "source_health": source_health,
     }

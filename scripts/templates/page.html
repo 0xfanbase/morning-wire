@@ -171,6 +171,22 @@
   .banner strong { color: var(--ink); }
 
   /* ============================================================
+     TOP OF MIND
+     ============================================================ */
+  .topmind {
+    margin-top: 22px; padding: 14px 16px;
+    background: color-mix(in srgb, var(--accent) 7%, var(--bg-2));
+    border-left: 3px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    font-family: var(--serif); font-size: 17px; line-height: 1.55; color: var(--ink);
+  }
+  .topmind .lbl {
+    display: block; font-family: var(--sans); font-size: 11px; font-weight: 700;
+    letter-spacing: .09em; text-transform: uppercase; color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  /* ============================================================
      PRIORITY STRIP
      ============================================================ */
   .section-head {
@@ -204,6 +220,7 @@
   .priority-item a { color: var(--ink); font-weight: 600; font-size: 15px; line-height: 1.35; }
   .priority-item a:hover { color: var(--accent); }
   .priority-item .psrc { font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+  .priority-more { padding: 10px 14px; font-size: 12.5px; color: var(--ink-3); }
   @media (max-width: 480px) {
     .priority-item { flex-direction: column; gap: 3px; }
     .priority-item .pj { min-width: 0; }
@@ -404,6 +421,7 @@
   </section>
 
   <div id="banner-slot"></div>
+  <div id="topmind-slot"></div>
   <div id="priority-slot"></div>
   <div id="feed"></div>
   <div id="archive-slot"></div>
@@ -560,12 +578,24 @@ function cardHTML(it) {
   </article>`;
 }
 
-/* ---------- priority strip ---------- */
+/* ---------- top of mind ---------- */
+function renderTopOfMind() {
+  const slot = document.getElementById("topmind-slot");
+  const text = (DIGEST.top_of_mind || "").trim();
+  if (!text) { slot.innerHTML = ""; return; }
+  slot.innerHTML = `<div class="topmind"><span class="lbl">Top of mind</span>${esc(text)}</div>`;
+}
+
+/* ---------- priority strip (capped -- a 12-row list isn't a priority) ---------- */
+const PRIORITY_CAP = 5;
 function renderPriority(items) {
   const slot = document.getElementById("priority-slot");
-  const high = items.filter(it => it.priority === "high");
+  const high = items.filter(it => it.priority === "high")
+    .sort((a, b) =>
+      JURIS_ORDER.indexOf(a.jurisdiction) - JURIS_ORDER.indexOf(b.jurisdiction) ||
+      new Date(b.published) - new Date(a.published));
   if (!high.length) { slot.innerHTML = ""; return; }
-  const rows = high.map(it =>
+  const rows = high.slice(0, PRIORITY_CAP).map(it =>
     `<div class="priority-item">
        <span class="pj">${esc(JURIS_FULL[it.jurisdiction])}</span>
        <div>
@@ -573,8 +603,11 @@ function renderPriority(items) {
          <div class="psrc">${esc(it.source)}</div>
        </div>
      </div>`).join("");
+  const more = high.length > PRIORITY_CAP
+    ? `<div class="priority-more">+ ${high.length - PRIORITY_CAP} more high-priority item${high.length - PRIORITY_CAP > 1 ? "s" : ""} flagged in the feed below</div>`
+    : "";
   slot.innerHTML = `<div class="section-head"><h2>Priority — needs a look</h2><span class="rule"></span></div>
-    <div class="priority">${rows}</div>`;
+    <div class="priority">${rows}${more}</div>`;
 }
 
 /* ---------- feed grouped by jurisdiction ---------- */
@@ -632,6 +665,7 @@ function renderHealth() {
 function render() {
   renderChips();
   renderBanner();
+  renderTopOfMind();
   const today = todayItems().filter(matchesFilters);
   renderPriority(today);
   renderFeed(today);
