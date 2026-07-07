@@ -45,11 +45,18 @@ jobs:
       - name: Run digest pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Optional repo Variables (Settings -> Secrets and variables ->
+          # Actions -> Variables) to swap the model / web-search tool version
+          # without a code change; blank falls back to in-code defaults.
+          REG_RADAR_MODEL: ${{ vars.REG_RADAR_MODEL }}
+          REG_RADAR_WEB_SEARCH_TYPE: ${{ vars.REG_RADAR_WEB_SEARCH_TYPE }}
         run: python scripts/run.py
 
       # No [skip ci] here: this workflow has no push trigger (schedule +
-      # dispatch only), so its own commit cannot retrigger it -- and the
-      # commit MUST trigger pages.yml, which deploys docs/ to GitHub Pages.
+      # dispatch only), so its own commit cannot retrigger it. Note the
+      # Pages deploy does NOT rely on this push event -- pushes made with
+      # the Actions bot token never fire push-triggered workflows, so
+      # pages.yml listens for this workflow's completion (workflow_run).
       - name: Commit and push updated digest
         run: |
           git config user.name "reg-radar-bot"

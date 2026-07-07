@@ -53,7 +53,9 @@ do this:
    and push to `main` (if pushing to `main` is blocked, push a branch, open a PR and
    merge it). The push triggers `.github/workflows/pages.yml`, which publishes `docs/`
    to https://lockout-fit.github.io/Reg-Radar/ a minute or two later. No artifact or
-   other publishing step is needed.
+   other publishing step is needed. Belt-and-braces: afterwards, use the GitHub MCP
+   actions tools to confirm a "Deploy site to Pages" run started for your commit; if
+   it didn't, dispatch `pages.yml` on `main` via `actions_run_trigger`.
 
 Do NOT change the page template (`scripts/templates/page.html`) layout, the schema
 field names, or any enum values — `scripts/render.py` validates items and silently

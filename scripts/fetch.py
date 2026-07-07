@@ -117,7 +117,7 @@ def _parse_feed(content, source):
 
     for entry in parsed.entries:
         url = (entry.get("link") or "").strip()
-        title = (entry.get("title") or "").strip()
+        title = _clean_title(entry.get("title") or "")
         summary = (entry.get("summary") or entry.get("description") or "").strip()
         if not url or not title:
             continue
@@ -142,6 +142,20 @@ def _parse_feed(content, source):
 
         items.append({"title": title, "url": url, "published": published.isoformat(), "summary": summary})
     return items
+
+
+_ZERO_WIDTH_RE = re.compile(r"[​‌‍﻿]")
+_PDF_SUFFIX_RE = re.compile(r"\s*\(PDF File[^)]*\)\s*$", re.IGNORECASE)
+
+
+def _clean_title(text):
+    """Normalise scraped titles: strip zero-width characters some CMSes leak
+    into headlines (EBA), collapse whitespace, and drop trailing
+    "(PDF File, 142.8 KB)"-style attachment suffixes (HKMA circulars).
+    """
+    text = _ZERO_WIDTH_RE.sub("", text or "")
+    text = re.sub(r"\s+", " ", text).strip()
+    return _PDF_SUFFIX_RE.sub("", text)
 
 
 def _title_text(el):
@@ -195,8 +209,12 @@ def _extract_page_items(html, base_url, selector=None, href_pattern=None):
             if link is not None and len(title) < 12:
                 # Overlay-anchor card pattern: an empty <a> stretched over the
                 # card for click handling, with the real title in a sibling
-                # heading rather than inside any anchor.
-                title = _title_text(node)
+                # heading. Only accept an explicit heading/title element here
+                # -- falling back to the container's full text would glue
+                # date + teaser into a junk headline.
+                heading = node.select_one('[class*="title" i], h1, h2, h3, h4, h5, h6')
+                title = heading.get_text(" ", strip=True) if heading else ""
+        title = _clean_title(title)
         if not link or not link.get("href"):
             continue
         href = urljoin(base_url, link["href"])
@@ -251,8 +269,10 @@ def fetch_source(source, require_relevant=True):
         if source["kind"] == "feed":
             items = _parse_feed(resp.content, source)
         else:
+            # base_url must be the RESOLVED url -- joining relative hrefs
+            # against a literal "{year}" path would publish broken links.
             items = _extract_page_items(
-                resp.text, source["url"], source.get("selector"), source.get("href_pattern")
+                resp.text, resolve_url(source["url"]), source.get("selector"), source.get("href_pattern")
             )
     except Exception as exc:  # a parsing bug in one source must not kill the run
         return [], f"parse failed: {exc}", 0

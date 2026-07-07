@@ -167,7 +167,8 @@
     "jurisdiction": "GLOBAL",
     "kind": "page",
     "url": "https://www.fatf-gafi.org/en/publications.html",
-    "tier": "official"
+    "tier": "official",
+    "href_pattern": "/en/publications/"
   },
   {
     "name": "Wolfsberg Group — News & publications",

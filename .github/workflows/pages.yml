@@ -7,6 +7,16 @@ name: Deploy site to Pages
 # repos, so runs before the visibility flip will fail with a 403 and can be
 # ignored.
 on:
+  # workflow_run is the trigger that matters for the daily pipeline: pushes
+  # made with the Actions bot token (digest.yml's commit-back) deliberately
+  # do NOT fire push-triggered workflows, so we deploy on "Daily digest"
+  # completing instead. The push trigger still covers ordinary pushes to
+  # docs/ (e.g. the daily enrichment session), and workflow_dispatch covers
+  # manual runs.
+  workflow_run:
+    workflows: ["Daily digest"]
+    types: [completed]
+    branches: [main]
   push:
     branches: [main]
     paths: ['docs/**']

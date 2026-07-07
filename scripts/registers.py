@@ -83,6 +83,11 @@ def diff_register(source):
     added = [] if first_run else sorted(set(current) - set(previous))
     removed = [] if first_run else sorted(set(previous) - set(current))
 
+    # Known tradeoff: the snapshot is updated NOW, before run.py's item cap
+    # runs, so a register event that later falls past the 25-item cap would
+    # not refire. In practice register items sort official-tier + newest and
+    # land at the top of the cap; accepted for simplicity.
+
     snapshot_path.write_text(
         json.dumps(
             {"entities": current, "updated_at": datetime.now(timezone.utc).isoformat()},

@@ -82,8 +82,13 @@ def sanitize_digest(digest):
     the public page. Drops individually malformed items/health rows instead
     of failing the whole render.
     """
+    generated_at = digest.get("generated_at")
+    if not _is_valid_iso8601(generated_at):
+        # hkDayKey() throws client-side on an unparseable date, blanking the
+        # whole page -- never embed a generated_at we haven't validated.
+        generated_at = datetime.now(timezone.utc).isoformat()
     clean = {
-        "generated_at": digest.get("generated_at") or datetime.now(timezone.utc).isoformat(),
+        "generated_at": generated_at,
         "top_of_mind": str(digest.get("top_of_mind") or "")[:400],
         "items": [it for it in digest.get("items", []) if _valid_item(it)],
         "source_health": [h for h in digest.get("source_health", []) if _valid_health_entry(h)],

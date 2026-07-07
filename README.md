@@ -47,7 +47,9 @@ Each scheduled run (`scripts/run.py`):
    serves from `main`/`docs` (`scripts/render.py`). Every item is schema-validated before
    it's embedded in the public page; malformed items are dropped rather than crashing
    the render for everyone else.
-8. **Commit** — the workflow commits `data/` and `docs/` back with `[skip ci]`. If any
+8. **Commit** — the workflow commits `data/` and `docs/` back (plain message; the
+   Pages deploy listens for this workflow's completion via `workflow_run`, since
+   bot-token pushes never fire push-triggered workflows). If any
    step above raises, `run.py` exits non-zero *before* touching `digest.json` or
    `docs/index.html`, so the workflow's commit step finds nothing to commit and the
    published page never regresses to blank.

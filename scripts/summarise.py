@@ -13,8 +13,8 @@ logger = logging.getLogger(__name__)
 # Overridable without a code change (repo Settings -> Variables/Secrets ->
 # pass through digest.yml env) so a model retirement or web-search tool
 # version bump never requires editing scripts.
-MODEL = os.environ.get("REG_RADAR_MODEL", "claude-sonnet-4-6")
-WEB_SEARCH_TYPE = os.environ.get("REG_RADAR_WEB_SEARCH_TYPE", "web_search_20260209")
+MODEL = os.environ.get("REG_RADAR_MODEL") or "claude-sonnet-4-6"
+WEB_SEARCH_TYPE = os.environ.get("REG_RADAR_WEB_SEARCH_TYPE") or "web_search_20260209"
 MAX_ITEMS_PER_RUN = 25
 
 VALID_TYPES = {
@@ -147,7 +147,18 @@ def summarise_items(items):
         else:
             results = parsed.get("items", [])
             top_of_mind = str(parsed.get("top_of_mind") or "").strip()
-        by_idx = {r.get("idx"): r for r in results if isinstance(r, dict)}
+        by_idx = {}
+        for r in results:
+            if isinstance(r, dict):
+                try:
+                    by_idx[int(r.get("idx"))] = r  # tolerate "0" for 0
+                except (TypeError, ValueError):
+                    pass
+        if selected and not by_idx:
+            # A parseable response that matched no items is the same failure
+            # as an unparseable one -- surface it, don't degrade silently.
+            logger.error("summarise: response matched no items, using fallbacks")
+            ok = False
     except Exception as exc:
         logger.error("summarise: batch call failed, using fallbacks: %s", exc)
         by_idx = {}
