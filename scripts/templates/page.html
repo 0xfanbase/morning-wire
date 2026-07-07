@@ -540,7 +540,9 @@ try {
   /* ============================================================
      FILTERS
      ============================================================ */
-  .filters { padding-top: 22px; }
+  .filters-sidebar { padding-top: 22px; }
+  .sidebar-toggle { display: none; } /* shown only in the wide-screen sidebar layout below */
+  .filters { padding-top: 0; }
   .filter-label {
     font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
     color: var(--ink-3); margin: 0 0 9px;
@@ -831,7 +833,7 @@ try {
     html[data-theme="matrix"] header.masthead { background: #fff !important; }
     .wordmark, .section-head h2 { text-shadow: none !important; }
     header.masthead { position: static; border-bottom: 2px solid #000; }
-    .theme-menu, .theme-toggle, .font-ctrl, .filters, .banner, .tabs, .toolbar,
+    .theme-menu, .theme-toggle, .font-ctrl, .filters-sidebar, .banner, .tabs, .toolbar,
     .copycite, .copy-briefing, .jumpnav, .fresh-dot, .foot-links,
     details.brief > summary .b-caret { display: none !important; }
     /* Print everything: a hidden tab's content still belongs in the PDF. */
@@ -859,13 +861,43 @@ try {
   /* ============================================================
      WIDE / DESKTOP — a phone-width column wastes a laptop screen.
      Same content, spread across the viewport: cards flow into a
-     2-column grid (3 on very wide screens) and the two filter
-     groups share one row, so a full day fits with far less scroll.
+     2-column grid (3 on very wide screens), and filters move to a
+     slim sticky left rail (vertical, not the old shared row) so the
+     content column keeps most of the width.
      ============================================================ */
   @media (min-width: 1100px) {
     .wrap, .mast-inner, .disclaimer-line { max-width: 1200px; }
-    .filters { display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap; }
-    .filters .filter-group + .filter-group { margin-top: 0; }
+    .digest-layout { display: flex; align-items: flex-start; gap: 28px; }
+    .digest-main { flex: 1 1 0; min-width: 0; }
+    .filters-sidebar {
+      flex: 0 0 190px; width: 190px;
+      position: sticky; top: 128px; align-self: flex-start;
+      border: 1px solid var(--border); border-radius: 10px;
+      background: var(--bg-2); padding: 16px;
+      transition: flex-basis .22s ease, width .22s ease, padding .22s ease;
+    }
+    .sidebar-toggle {
+      display: flex; align-items: center; gap: 7px; width: 100%;
+      appearance: none; cursor: pointer; border: none; background: none;
+      margin-bottom: 14px; padding: 0;
+      font-family: var(--sans); font-size: 12.5px; font-weight: 700;
+      letter-spacing: .05em; text-transform: uppercase; color: var(--ink-2);
+    }
+    .sidebar-toggle:hover { color: var(--accent); }
+    .sidebar-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-width: 17px; height: 17px; padding: 0 4px;
+      border-radius: 999px; background: var(--accent); color: #fff;
+      font-size: 10.5px; font-weight: 700;
+    }
+    .sidebar-badge[hidden] { display: none; }
+    /* Collapsed: a slim icon-only rail that reclaims the width for
+       content -- triggered by scroll (see the sidebarToggle JS), not a
+       fixed reader preference, so it never needs remembering. */
+    .filters-sidebar.collapsed { flex-basis: 46px; width: 46px; padding: 16px 8px; }
+    .filters-sidebar.collapsed .sidebar-toggle { flex-direction: column; justify-content: center; margin-bottom: 0; }
+    .filters-sidebar.collapsed .sidebar-toggle-label { display: none; }
+    .filters-sidebar.collapsed .filters { display: none; }
     .juris-group {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -953,28 +985,38 @@ try {
   </div>
 
   <div id="tab-digest">
-    <section class="filters" aria-label="Filters">
-      <div class="filter-group range-row">
-        <p class="filter-label">Range</p>
-        <div class="chips" id="rangeChips"></div>
-      </div>
-      <div class="filter-group">
-        <p class="filter-label">Jurisdiction <button type="button" class="clear-filter" data-clear="juris" hidden>✕ Clear</button></p>
-        <div class="chips" id="jurisChips"></div>
-      </div>
-      <div class="filter-group bucket-row">
-        <p class="filter-label">Category <button type="button" class="clear-filter" data-clear="bucket" hidden>✕ Clear</button></p>
-        <div class="chips" id="bucketChips"></div>
-      </div>
-    </section>
+    <div class="digest-layout">
+      <aside class="filters-sidebar" id="filtersSidebar">
+        <button type="button" class="sidebar-toggle" id="sidebarToggle" aria-expanded="true" aria-controls="filtersBody">
+          <span aria-hidden="true">▤</span> <span class="sidebar-toggle-label">Filters</span>
+          <span class="sidebar-badge" id="sidebarToggleBadge" hidden></span>
+        </button>
+        <section class="filters" id="filtersBody" aria-label="Filters">
+          <div class="filter-group range-row">
+            <p class="filter-label">Range</p>
+            <div class="chips" id="rangeChips"></div>
+          </div>
+          <div class="filter-group">
+            <p class="filter-label">Jurisdiction <button type="button" class="clear-filter" data-clear="juris" hidden>✕ Clear</button></p>
+            <div class="chips" id="jurisChips"></div>
+          </div>
+          <div class="filter-group bucket-row">
+            <p class="filter-label">Category <button type="button" class="clear-filter" data-clear="bucket" hidden>✕ Clear</button></p>
+            <div class="chips" id="bucketChips"></div>
+          </div>
+        </section>
+      </aside>
 
-    <div id="banner-slot"></div>
-    <div id="topmind-slot"></div>
-    <div id="jumpnav-slot"></div>
-    <div id="priority-slot"></div>
-    <div id="radar-slot"></div>
-    <div id="catchup-slot"></div>
-    <div id="feed"></div>
+      <div class="digest-main">
+        <div id="banner-slot"></div>
+        <div id="topmind-slot"></div>
+        <div id="jumpnav-slot"></div>
+        <div id="priority-slot"></div>
+        <div id="radar-slot"></div>
+        <div id="catchup-slot"></div>
+        <div id="feed"></div>
+      </div>
+    </div>
   </div>
 
   <div id="tab-health" hidden>
@@ -1286,6 +1328,13 @@ function renderChips() {
   document.querySelectorAll(".clear-filter").forEach(b => {
     b.hidden = state[b.dataset.clear] === "ALL";
   });
+
+  // Collapsed-rail badge: a count so a reader who scrolled past the
+  // sidebar still knows filters are active, not just hidden away.
+  const activeFilterCount = (state.juris !== "ALL" ? 1 : 0) + (state.bucket !== "ALL" ? 1 : 0);
+  const badge = document.getElementById("sidebarToggleBadge");
+  badge.textContent = activeFilterCount || "";
+  badge.hidden = !activeFilterCount;
 
   // renderChips() rebuilds these buttons via innerHTML, which drops keyboard
   // focus to <body> and loses the user's place. Restore focus to the chip that
@@ -1978,6 +2027,34 @@ searchInput.addEventListener("keydown", e => { if (e.key === "Escape") closeSear
 document.addEventListener("click", e => {
   if (isSearchOpen() && !e.target.closest(".search-wrap") && !searchInput.value.trim()) closeSearch();
 });
+
+/* ============================================================
+   FILTERS SIDEBAR -- collapses to a slim icon rail once the reader
+   scrolls past it (desktop only; the CSS gates .collapsed to the
+   wide-screen sidebar layout, so this is a harmless no-op on mobile).
+   `sidebarOverride` lets a manual click hold the opposite of whatever
+   scroll would otherwise pick, but only until the reader scrolls back
+   near the top -- a stale "I closed it once" choice shouldn't outlive
+   the reason it was made.
+   ============================================================ */
+const filtersSidebar = document.getElementById("filtersSidebar");
+const sidebarToggle = document.getElementById("sidebarToggle");
+const SIDEBAR_COLLAPSE_SCROLL_Y = 120;
+let sidebarOverride = null; // null = auto (scroll-driven); true/false = forced open/closed
+function updateSidebarCollapse() {
+  const collapsed = sidebarOverride !== null ? !sidebarOverride : window.scrollY > SIDEBAR_COLLAPSE_SCROLL_Y;
+  filtersSidebar.classList.toggle("collapsed", collapsed);
+  sidebarToggle.setAttribute("aria-expanded", String(!collapsed));
+}
+window.addEventListener("scroll", () => {
+  if (window.scrollY < 40) sidebarOverride = null;
+  requestAnimationFrame(updateSidebarCollapse);
+}, { passive: true });
+sidebarToggle.onclick = () => {
+  sidebarOverride = filtersSidebar.classList.contains("collapsed");
+  updateSidebarCollapse();
+};
+updateSidebarCollapse();
 
 /* ---------- print: a closed <details> won't expand via CSS alone ---------- */
 let printOpened = [];
