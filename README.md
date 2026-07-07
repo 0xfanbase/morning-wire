@@ -132,6 +132,12 @@ Each scheduled run (`scripts/run.py`):
   securities-at-large) are keyword-filtered to digital-asset-relevant items before
   anything else runs, so a CFTC or Federal Reserve press feed doesn't flood the digest
   with unrelated releases.
+- **Backlog cap.** Items published more than 10 days ago are ignored at ingest
+  (`MAX_ITEM_AGE_DAYS` in `scripts/fetch.py`) — feeds return their most recent N
+  entries regardless of age, so a source's first-ever run (or a newly added source)
+  would otherwise flood a *daily* digest with months-old items presented as new. The
+  page's priority strip is stricter still: it only admits items published within the
+  last 7 days, each row showing its publication date.
 - **Known scraping caveats.** FATF's public site 403s a plain HTTP client outright. MAS's
   press-release listing is fully client-rendered (no article markup in the server HTML at
   all), so it's gated with a `href_pattern` requiring an actual `/news/media-releases/...`

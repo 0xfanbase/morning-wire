@@ -405,6 +405,28 @@ try {
     .wordmark { font-size: 24px; }
     .card h4 { font-size: 18px; }
   }
+
+  /* ============================================================
+     WIDE / DESKTOP — a phone-width column wastes a laptop screen.
+     Same content, spread across the viewport: cards flow into a
+     2-column grid (3 on very wide screens) and the two filter
+     groups share one row, so a full day fits with far less scroll.
+     ============================================================ */
+  @media (min-width: 1100px) {
+    .wrap, .mast-inner, .disclaimer-line { max-width: 1200px; }
+    .filters { display: flex; align-items: flex-start; gap: 56px; }
+    .filters .bucket-row { margin-top: 0; }
+    .juris-group, .archive-body {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 14px;
+    }
+    .juris-title, .juris-sep, .archive-body .empty { grid-column: 1 / -1; }
+  }
+  @media (min-width: 1560px) {
+    .wrap, .mast-inner, .disclaimer-line { max-width: 1540px; }
+    .juris-group, .archive-body { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
 </style>
 </head>
 <body>
@@ -431,9 +453,11 @@ try {
 
 <main class="wrap">
   <section class="filters" aria-label="Filters">
-    <p class="filter-label">Jurisdiction</p>
-    <div class="chips" id="jurisChips"></div>
-    <div class="bucket-row">
+    <div class="filter-group">
+      <p class="filter-label">Jurisdiction</p>
+      <div class="chips" id="jurisChips"></div>
+    </div>
+    <div class="filter-group bucket-row">
       <p class="filter-label">Category</p>
       <div class="chips" id="bucketChips"></div>
     </div>
@@ -499,10 +523,13 @@ function fmtHeaderDate(iso) {
 function fmtTime(iso) {
   return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(iso)) + "\u00A0HKT";
 }
+function fmtDay(iso) {
+  return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, day: "numeric", month: "short" }).format(new Date(iso));
+}
 function fmtCardDate(iso) {
   const d = new Date(iso);
   const time = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false }).format(d);
-  const day = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, day: "numeric", month: "short" }).format(d);
+  const day = fmtDay(iso);
   // Date-only feeds land on midnight HKT -- showing "00:00" is noise.
   return time === "00:00" ? day : `${day}, ${time}`;
 }
@@ -618,9 +645,14 @@ function renderTopOfMind() {
 
 /* ---------- priority strip (capped -- a 12-row list isn't a priority) ---------- */
 const PRIORITY_CAP = 5;
+const PRIORITY_MAX_AGE_DAYS = 7;
 function renderPriority(items) {
   const slot = document.getElementById("priority-slot");
-  const high = items.filter(it => it.priority === "high");
+  // A month-old story is not a priority whatever its rating -- the strip only
+  // admits items published in the last 7 days (older ones stay in the feed).
+  const genMs = new Date(DIGEST.generated_at).getTime();
+  const fresh = it => genMs - new Date(it.published).getTime() <= PRIORITY_MAX_AGE_DAYS * 86400000;
+  const high = items.filter(it => it.priority === "high" && fresh(it));
   if (!high.length) { slot.innerHTML = ""; return; }
   // Round-robin across jurisdictions (HK/CN first per the reader's lens,
   // newest first within each) -- a single busy regulator must not evict
@@ -642,7 +674,7 @@ function renderPriority(items) {
        <span class="pj">${esc(JURIS_FULL[it.jurisdiction])}</span>
        <div>
          <a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
-         <div class="psrc">${esc(it.source)}</div>
+         <div class="psrc">${esc(it.source)} · ${fmtDay(it.published)}</div>
        </div>
      </div>`).join("");
   const more = high.length > PRIORITY_CAP

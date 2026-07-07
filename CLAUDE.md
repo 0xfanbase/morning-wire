@@ -37,7 +37,8 @@ do this:
    (max ~45 words) saying what is top of mind today for the reader, synthesising the
    day's high-priority items. Plain English, no acronyms, neutral voice. Set it to ""
    on quiet days. The page shows it as a callout above the priority list (which is
-   capped at 5 rows — jurisdiction order, then recency).
+   capped at 5 rows — jurisdiction order, then recency — and only admits items
+   published within the last 7 days, so a stale item marked `high` never headlines).
 5. Optional but valuable: for `tier`-industry items whose `verification.level` is
    `single_source`, use web search to look for an official source or a second
    independent reputable outlet (regulator site, Reuters, Bloomberg, FT or equivalent).
