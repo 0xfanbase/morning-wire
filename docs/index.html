@@ -1805,11 +1805,16 @@ function render() {
   renderChips();
   renderFreshness();
   renderScope();
-  renderTopOfMind();
+  updateSidebarCollapse();
+  // Top of mind is a "what matters overall" summary -- irrelevant once the
+  // reader has narrowed to a specific query, so it (and the filters sidebar,
+  // via updateSidebarCollapse above) steps out of the way during search.
   if (state.search.trim()) {
+    document.getElementById("topmind-slot").innerHTML = "";
     renderSearchResults();
     return;
   }
+  renderTopOfMind();
   const scoped = rangeItems(state.range).filter(matchesFilters);
   renderJumpnav(scoped);
   renderPriority(scoped);
@@ -2038,19 +2043,21 @@ document.addEventListener("click", e => {
 
 /* ============================================================
    FILTERS SIDEBAR -- collapses to a slim icon rail once the reader
-   scrolls past it (desktop only; the CSS gates .collapsed to the
-   wide-screen sidebar layout, so this is a harmless no-op on mobile).
-   `sidebarOverride` lets a manual click hold the opposite of whatever
-   scroll would otherwise pick, but only until the reader scrolls back
-   near the top -- a stale "I closed it once" choice shouldn't outlive
-   the reason it was made.
+   scrolls past it, or as soon as a search is active (desktop only; the
+   CSS gates .collapsed to the wide-screen sidebar layout, so this is a
+   harmless no-op on mobile). `sidebarOverride` lets a manual click hold
+   the opposite of whatever this would otherwise auto-pick -- e.g. to
+   change a filter mid-search without closing search first -- but only
+   until the reader scrolls back near the top, so a stale "I reopened it
+   once" choice doesn't outlive the reason it was made.
    ============================================================ */
 const filtersSidebar = document.getElementById("filtersSidebar");
 const sidebarToggle = document.getElementById("sidebarToggle");
 const SIDEBAR_COLLAPSE_SCROLL_Y = 120;
-let sidebarOverride = null; // null = auto (scroll-driven); true/false = forced open/closed
+let sidebarOverride = null; // null = auto (scroll/search-driven); true/false = forced open/closed
 function updateSidebarCollapse() {
-  const collapsed = sidebarOverride !== null ? !sidebarOverride : window.scrollY > SIDEBAR_COLLAPSE_SCROLL_Y;
+  const autoCollapse = window.scrollY > SIDEBAR_COLLAPSE_SCROLL_Y || !!state.search.trim();
+  const collapsed = sidebarOverride !== null ? !sidebarOverride : autoCollapse;
   filtersSidebar.classList.toggle("collapsed", collapsed);
   sidebarToggle.setAttribute("aria-expanded", String(!collapsed));
 }
