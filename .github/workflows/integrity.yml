@@ -1,0 +1,106 @@
+name: Integrity audit (daily tripwire)
+
+# Report-only. Runs the HARD subset of scripts/audit_checks/ (the checks
+# built from the 2026-07-07 first_seen/deletion incident -- see
+# audit/lessons.md and audit/PLAYBOOK.md) every day and, only on a HARD
+# failure, opens or updates ONE deduplicated issue so a human notices
+# well before the next weekly audit Routine runs. It never writes to
+# data/ or docs/, never blocks digest.yml or pages.yml, and is not a
+# required status check on anything -- it exists purely to shorten the
+# time-to-notice on the specific failure mode this repo has already hit
+# once in production.
+
+on:
+  schedule:
+    - cron: '30 22 * * *' # 06:30 HKT daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  tripwire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run HARD checks
+        id: audit
+        run: |
+          set +e
+          python scripts/audit.py --ci --json > audit-result.json
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          cat audit-result.json
+
+      - name: Open or update tripwire issue on HARD failure
+        if: steps.audit.outputs.exit_code != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const result = JSON.parse(fs.readFileSync('audit-result.json', 'utf8'));
+            const hard = result.findings.filter(f => f.mode === 'hard' && (f.severity === 'critical' || f.severity === 'could_not_run'));
+            const title = 'Integrity audit: HARD check failure';
+            const body = [
+              `Daily integrity tripwire found ${hard.length} HARD-check finding(s) as of ${new Date().toISOString()}.`,
+              '',
+              'This is report-only -- nothing was changed. See `audit/PLAYBOOK.md` for how the',
+              'weekly audit Routine should triage this, and `audit/lessons.md` (L1) for the',
+              'incident this check set exists to catch.',
+              '',
+              ...hard.map(f => `- **[${f.severity}]** \`${f.check}\`: ${f.title}\n  ${f.detail}`),
+            ].join('\n');
+
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'integrity-audit',
+            });
+            const match = existing.data.find(i => i.title === title);
+            if (match) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: match.number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['integrity-audit'],
+              });
+            }
+
+      - name: Close tripwire issue if clean
+        if: steps.audit.outputs.exit_code == '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Integrity audit: HARD check failure';
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'integrity-audit',
+            });
+            const match = existing.data.find(i => i.title === title);
+            if (match) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: match.number,
+                body: 'HARD checks are clean as of this run -- closing.',
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: match.number, state: 'closed',
+              });
+            }

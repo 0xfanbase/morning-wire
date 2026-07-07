@@ -1,0 +1,31 @@
+name: Audit guard
+
+# Blocks any PR that would defang the integrity-audit safety net (see
+# scripts/audit_guard.py for exactly what it checks) or hand-edit the two
+# paths that must only ever be written by the daily pipeline's own
+# commit-back. Read-only against the repo otherwise -- no fixes, no writes.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check protected core + forbidden paths
+        run: python scripts/audit_guard.py "origin/${{ github.event.pull_request.base.ref }}" "${{ github.event.pull_request.head.sha }}"

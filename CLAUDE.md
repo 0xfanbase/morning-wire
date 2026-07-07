@@ -105,6 +105,20 @@ Do NOT change the page template (`scripts/templates/page.html`) layout, the sche
 field names, or any enum values — `scripts/render.py` validates items and silently
 drops any that don't conform.
 
+## Task: "weekly integrity audit"
+
+When a weekly integrity-audit Routine fires (or a human asks to run/continue the
+audit), follow `audit/PLAYBOOK.md` in full — it is the canonical, self-contained
+runbook (phases, the permitted-fix whitelist, the never-list, the PR body template,
+and the deep-dive rotation) and takes precedence over any summary here. In short:
+run `python3 scripts/audit.py`, triage findings against `audit/lessons.md` and
+`audit/ledger.jsonl`, propose fixes only within the permitted whitelist on a branch
++ PR (never a direct commit, never a self-merge), run `--simulate` before any
+data-affecting fix, and write up any genuinely new failure class in
+`audit/lessons.md` with a red-fixture-backed check before marking it `absorbed`.
+Never hand-edit `data/registers/` or `data/seen-items.json`, and never remove,
+disable, or weaken a check in `scripts/audit.py`'s `PROTECTED_CHECK_IDS`.
+
 ## House rules
 
 - The published page must stay neutral: no employer names, no byline, no

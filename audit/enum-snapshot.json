@@ -1,0 +1,45 @@
+{
+  "VALID_TYPES": [
+    "consultation",
+    "designation",
+    "enforcement",
+    "final_rule",
+    "guidance",
+    "licensing",
+    "news",
+    "peer_move",
+    "speech"
+  ],
+  "VALID_PRIORITIES": [
+    "high",
+    "normal"
+  ],
+  "VALID_JURISDICTIONS": [
+    "CN",
+    "EU",
+    "GLOBAL",
+    "HK",
+    "SG",
+    "US"
+  ],
+  "VALID_STATUSES": [
+    "new",
+    "update"
+  ],
+  "VALID_VERIFY_LEVELS": [
+    "corroborated",
+    "official",
+    "single_source"
+  ],
+  "VALID_HEALTH_STATUSES": [
+    "dead",
+    "ok",
+    "replaced"
+  ],
+  "DIGEST_ITEMS_MAX_AGE_DAYS": 8,
+  "SEEN_ITEMS_MAX_AGE_DAYS": 90,
+  "MAX_ITEM_AGE_DAYS": 7,
+  "MAX_CHURN_FRACTION": 0.5,
+  "MAX_CHURN_FLOOR": 5,
+  "FAILURE_THRESHOLD": 5
+}
