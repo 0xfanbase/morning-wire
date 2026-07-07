@@ -5,6 +5,7 @@ import json
 import logging
 import os
 import re
+from datetime import datetime as _dt, timezone as _tz
 
 import anthropic
 
@@ -37,6 +38,22 @@ def _strip_fences(text):
     text = re.sub(r"^```(?:json)?\s*", "", text)
     text = re.sub(r"\s*```$", "", text)
     return text.strip()
+
+
+def _extract_json_object(text):
+    """Cut the outermost JSON object/array out of a model response. Responses
+    made WITH the web-search tool interleave narration around tool use ("I'll
+    search for confirmation..." before the JSON), so a bare json.loads on the
+    concatenated text fails even when the model answered correctly -- which
+    silently downgraded corroboration and killed self-heal in keyed mode."""
+    text = _strip_fences(text)
+    start_obj, start_arr = text.find("{"), text.find("[")
+    starts = [s for s in (start_obj, start_arr) if s != -1]
+    if not starts:
+        return text  # let json.loads raise its own error
+    start = min(starts)
+    end = text.rfind("}" if text[start] == "{" else "]")
+    return text[start:end + 1] if end > start else text
 
 
 def _extract_text(response):
@@ -106,7 +123,16 @@ def select_top(items, cap=MAX_ITEMS_PER_RUN):
     before either step, so every item that gets a verification badge also
     gets a summary (and vice versa).
     """
-    ordered = sorted(items, key=lambda it: it.get("published", ""), reverse=True)
+    # Sort on the parsed instant, not the raw string: published values carry
+    # mixed offsets (+00:00 feeds, +08:00 date-only page dates), and
+    # lexicographic order would mis-rank them at the cap boundary.
+    def instant(it):
+        try:
+            dt = _dt.fromisoformat(str(it.get("published", "")).replace("Z", "+00:00"))
+            return dt if dt.tzinfo else dt.replace(tzinfo=_tz.utc)
+        except ValueError:
+            return _dt.fromtimestamp(0, tz=_tz.utc)
+    ordered = sorted(items, key=instant, reverse=True)
     ordered = sorted(ordered, key=lambda it: it.get("tier") != "official")
     selected = ordered[:cap]
     dropped = len(ordered) - len(selected)
@@ -140,7 +166,7 @@ def summarise_items(items):
             system=SYSTEM_PROMPT,
             messages=[{"role": "user", "content": _build_batch_prompt(selected)}],
         )
-        raw = _strip_fences(_extract_text(response))
+        raw = _extract_json_object(_extract_text(response))
         parsed = json.loads(raw)
         if isinstance(parsed, list):  # tolerate the bare-array shape
             results = parsed
@@ -154,10 +180,12 @@ def summarise_items(items):
                     by_idx[int(r.get("idx"))] = r  # tolerate "0" for 0
                 except (TypeError, ValueError):
                     pass
-        if selected and not by_idx:
-            # A parseable response that matched no items is the same failure
-            # as an unparseable one -- surface it, don't degrade silently.
-            logger.error("summarise: response matched no items, using fallbacks")
+        if len(by_idx) < len(selected):
+            # PARTIAL coverage is also degradation: unmatched items publish
+            # with raw titles and "review the source directly" -- the reader
+            # must see a health flag, not silent title-as-summary cards.
+            logger.error("summarise: response matched %d of %d items, fallbacks for the rest",
+                         len(by_idx), len(selected))
             ok = False
     except Exception as exc:
         logger.error("summarise: batch call failed, using fallbacks: %s", exc)
@@ -214,7 +242,7 @@ def judge_material_update(old_title, new_item, calls_used):
             max_tokens=200,
             messages=[{"role": "user", "content": prompt}],
         )
-        raw = _strip_fences(_extract_text(response))
+        raw = _extract_json_object(_extract_text(response))
         return bool(json.loads(raw).get("material", False))
     except Exception as exc:
         logger.warning("judge_material_update failed, defaulting to skip: %s", exc)

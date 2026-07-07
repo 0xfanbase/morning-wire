@@ -25,31 +25,49 @@ MAX_RETRIES = 2
 # recent N entries regardless of age (some HKMA RSS feeds carry a year of
 # history), so a source's first-ever run -- or any newly added source -- would
 # otherwise flood the digest with months-old items presented as today's news.
-MAX_ITEM_AGE_DAYS = 10
+# 7 matches the page's priority-strip window exactly: anything the gate admits
+# is still young enough to headline on the day it is first seen.
+MAX_ITEM_AGE_DAYS = 7
 
+# Slash dates are inherently ambiguous; %m/%d/%Y is tried FIRST because the
+# only sources in the registry that render slash dates are US ones (FinCEN,
+# OFAC) -- with %d/%m/%Y first, "07/01/2026" (July 1, US) would parse as
+# 7 January and be silently dropped by the age gate as stale.
 DATE_FORMATS = [
     "%Y-%m-%d",
     "%d %B %Y",
     "%B %d, %Y",
     "%d %b %Y",
     "%b %d, %Y",
-    "%d/%m/%Y",
     "%m/%d/%Y",
+    "%d/%m/%Y",
     "%Y/%m/%d",
 ]
 
 # Simple topical gate so general-mandate regulator feeds (bank supervision,
 # futures, securities-at-large) don't flood the digest with non-digital-asset
 # items. Crypto-native outlets (CoinDesk/The Block) pass this trivially.
+# Substring-matched: multiword phrases and deliberate prefixes ("tokeni"
+# catches tokenise/tokenized/tokenisation; "stablecoin" catches plurals).
 RELEVANCE_KEYWORDS = [
     "crypto", "digital asset", "digital-asset", "virtual asset", "stablecoin",
-    "stable coin", "tokeni", "blockchain", "distributed ledger", "dlt",
-    "vasp", "casp", "vatp", "dpt", "web3", "web 3", "bitcoin", "btc",
-    "ethereum", "nft", "e-cny", "ecny", "cbdc", "mica", "travel rule",
+    "stable coin", "tokeni", "blockchain", "distributed ledger",
+    "vasp", "web3", "web 3", "bitcoin",
+    "ethereum", "e-cny", "ecny", "cbdc", "travel rule",
     "virtual currency", "defi", "decentralized finance", "decentralised finance",
     "crypto mixer", "crypto-asset", "cryptoasset",
     "e-hkd", "digital yuan", "digital renminbi", "digital currency",
     "project ensemble", "mbridge", "m-bridge", "wallet", "self-custody",
+    "cyber-related",
+]
+# Word-boundary-matched: short/ambiguous tokens that substring matching would
+# false-positive on ("mica" is inside chemical/economically/dynamically,
+# "casp" inside Caspian, "ether" inside whether/together, "dlt"/"btc"/"nft"
+# appear inside other codes). Also named assets whose headlines carry no
+# generic crypto term ("Ether ETF", Ripple/XRP, Solana).
+RELEVANCE_WORD_KEYWORDS = [
+    "mica", "casp", "vatp", "dpt", "dlt", "btc", "nft",
+    "ether", "xrp", "ripple", "solana",
 ]
 
 
@@ -87,11 +105,18 @@ def _get(url, use_cache=True):
     raise last_exc
 
 
+HKT = timezone(timedelta(hours=8))
+
+
 def _guess_date(text):
+    """Parse a date-only string. Anchored to midnight HONG KONG time, not UTC:
+    midnight UTC is 08:00 HKT, which the page would render as a fabricated
+    "08:00" timestamp on every date-only card -- and the template deliberately
+    hides a "00:00" HKT time as date-only noise."""
     text = text.strip()
     for fmt in DATE_FORMATS:
         try:
-            return datetime.strptime(text, fmt).replace(tzinfo=timezone.utc)
+            return datetime.strptime(text, fmt).replace(tzinfo=HKT)
         except ValueError:
             continue
     return None
@@ -99,7 +124,9 @@ def _guess_date(text):
 
 def is_relevant(*texts):
     haystack = " ".join(t for t in texts if t).lower()
-    return any(kw in haystack for kw in RELEVANCE_KEYWORDS)
+    if any(kw in haystack for kw in RELEVANCE_KEYWORDS):
+        return True
+    return _matches_any(haystack, RELEVANCE_WORD_KEYWORDS)
 
 
 def _matches_any(haystack, keywords):
@@ -115,26 +142,22 @@ def _matches_any(haystack, keywords):
 
 
 def _parse_feed(content, source):
+    """Structurally parse a feed into items (url + title present). Topic
+    filtering (source-level categories/keywords/exclude_keywords) is applied
+    LATER, in fetch_source behind require_relevant -- so the count this returns
+    reflects structural health, not how much on-topic news the feed carried
+    today. A working feed with no China-keyword items this week must NOT look
+    dead to heal.py (which would eventually mark it dead or auto-rewrite it).
+    Entry tags ride along as a private `_tags` field for the deferred category
+    gate and are stripped before the item leaves fetch_source.
+    """
     parsed = feedparser.parse(content)
     items = []
-    categories = [c.lower() for c in source.get("categories", [])]
-    keywords = [k.lower() for k in source.get("keywords", [])]
-    exclude_keywords = [k.lower() for k in source.get("exclude_keywords", [])]
-
     for entry in parsed.entries:
         url = (entry.get("link") or "").strip()
         title = _clean_title(entry.get("title") or "")
         summary = (entry.get("summary") or entry.get("description") or "").strip()
         if not url or not title:
-            continue
-
-        if categories:
-            tags = [t.get("term", "").lower() for t in entry.get("tags", [])]
-            if not any(cat in tag for cat in categories for tag in tags):
-                continue
-        if keywords and not _matches_any(f"{title} {summary}", keywords):
-            continue
-        if exclude_keywords and _matches_any(f"{title} {summary}", exclude_keywords):
             continue
 
         published = None
@@ -146,8 +169,30 @@ def _parse_feed(content, source):
         if published is None:
             published = datetime.now(timezone.utc)
 
-        items.append({"title": title, "url": url, "published": published.isoformat(), "summary": summary})
+        tags = [t.get("term", "").lower() for t in entry.get("tags", [])]
+        items.append({"title": title, "url": url, "published": published.isoformat(),
+                      "summary": summary, "_tags": tags})
     return items
+
+
+def _feed_topic_ok(item, source):
+    """Source-level topic gate for one feed item: `categories` must match an
+    entry tag, `keywords` must match title/summary, `exclude_keywords` must
+    not. Applied only when relevance filtering is on, so it never affects the
+    structural raw count. Page items (no `_tags`, no keyword config) pass."""
+    categories = [c.lower() for c in source.get("categories", [])]
+    keywords = [k.lower() for k in source.get("keywords", [])]
+    exclude_keywords = [k.lower() for k in source.get("exclude_keywords", [])]
+    text = f"{item['title']} {item.get('summary', '')}"
+    if categories:
+        tags = item.get("_tags", [])
+        if not any(cat in tag for cat in categories for tag in tags):
+            return False
+    if keywords and not _matches_any(text, keywords):
+        return False
+    if exclude_keywords and _matches_any(text, exclude_keywords):
+        return False
+    return True
 
 
 _ZERO_WIDTH_RE = re.compile(r"[​‌‍﻿]")
@@ -231,14 +276,26 @@ def _extract_page_items(html, base_url, selector=None, href_pattern=None):
         seen_urls.add(href)
 
         published = None
-        time_tag = node.find("time") if node.name != "a" else None
+        # Bare-anchor sources (href_pattern mode: ACAMS, TRM...) have no card
+        # container, so look for the date in the anchor's PARENT card element
+        # -- stamping published=now() would defeat the backfill age gate for
+        # exactly the sources that need it most.
+        date_scope = node if node.name != "a" else (node.parent or node)
+        time_tag = date_scope.find("time")
         if time_tag and time_tag.get("datetime"):
             try:
-                published = datetime.fromisoformat(time_tag["datetime"].replace("Z", "+00:00"))
+                raw = time_tag["datetime"].strip()
+                published = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+                if published.tzinfo is None:
+                    # Offset-less values embed as naive strings the browser
+                    # would read in the VIEWER'S timezone -- dates would shift
+                    # per reader. Date-only values anchor to midnight HKT
+                    # (consistent with _guess_date); date-times assume UTC.
+                    published = published.replace(tzinfo=HKT if len(raw) == 10 else timezone.utc)
             except ValueError:
                 published = None
         if published is None:
-            date_text = node.get_text(" ", strip=True) if node.name != "a" else ""
+            date_text = date_scope.get_text(" ", strip=True)
             match = re.search(
                 r"\d{1,2}\s+\w+\s+\d{4}|\w+\s+\d{1,2},\s+\d{4}|\d{4}-\d{2}-\d{2}|\d{1,2}/\d{1,2}/\d{4}",
                 date_text,
@@ -288,26 +345,42 @@ def fetch_source(source, require_relevant=True):
         if source["kind"] == "feed":
             items = _parse_feed(resp.content, source)
         else:
-            # base_url must be the RESOLVED url -- joining relative hrefs
-            # against a literal "{year}" path would publish broken links.
+            # base_url and href_pattern must both be RESOLVED: joining relative
+            # hrefs against a literal "{year}" path would publish broken links,
+            # and a {year}-scoped href_pattern (e.g. MAS media-releases) must
+            # match the current year, not the literal token.
+            href_pattern = source.get("href_pattern")
+            if href_pattern:
+                href_pattern = resolve_url(href_pattern)
             items = _extract_page_items(
-                resp.text, resolve_url(source["url"]), source.get("selector"), source.get("href_pattern")
+                resp.text, resolve_url(source["url"]), source.get("selector"), href_pattern
             )
     except Exception as exc:  # a parsing bug in one source must not kill the run
         return [], f"parse failed: {exc}", 0
 
-    raw_count = len(items)  # pre-relevance-filter -- a healthy source with no
-    # crypto news today must not look like a dead one to heal.py.
+    raw_count = len(items)  # structural (url+title present), BEFORE any topic
+    # filtering -- a healthy source with no crypto news today, or a filtered
+    # feed with no keyword hits this week, must not look dead to heal.py.
     if require_relevant:
-        # The age gate lives behind the same flag: heal.py validates candidate
-        # replacement URLs structurally, and a working source whose latest
-        # items happen to be old must still validate.
+        # Topic gate (source keyword/category), global relevance gate, and the
+        # age gate all live behind the same flag: heal.py validates candidate
+        # replacement URLs structurally with require_relevant=False, so a
+        # working source whose latest items are off-topic or old must validate.
+        # A source with its OWN curated keyword list (Institutional moves,
+        # Market news, China policy) is its own relevance filter: "Coinbase
+        # wins dismissal" or "Saylor's Strategy sells bitcoin" matches the
+        # source definition but contains no generic crypto term, and the
+        # global gate must not veto what the source was built to admit.
+        own_keywords = bool(source.get("keywords"))
         items = [
             it for it in items
-            if is_relevant(it["title"], it.get("summary", "")) and _is_recent(it)
+            if _feed_topic_ok(it, source)
+            and (own_keywords or is_relevant(it["title"], it.get("summary", "")))
+            and _is_recent(it)
         ]
 
     for item in items:
+        item.pop("_tags", None)  # private parse-time field, never surfaced
         item["source"] = source["name"]
         item["jurisdiction"] = source["jurisdiction"]
         item["tier"] = source["tier"]

@@ -8,8 +8,9 @@ otherwise they are flagged "single_source" so readers know to verify.
 import json
 import logging
 import re
+from urllib.parse import urlparse
 
-from summarise import get_client, MODEL, WEB_SEARCH_TYPE, _strip_fences, _extract_text  # noqa: F401 (reuse)
+from summarise import get_client, MODEL, WEB_SEARCH_TYPE, _extract_json_object, _extract_text  # noqa: F401 (reuse)
 
 logger = logging.getLogger(__name__)
 
@@ -24,6 +25,34 @@ def _base_source(item):
 
 def _looks_like_url(url):
     return bool(re.match(r"^https?://", url or "", re.IGNORECASE))
+
+
+def _domain(url):
+    try:
+        host = (urlparse(url).hostname or "").lower()
+    except ValueError:
+        return ""
+    return host[4:] if host.startswith("www.") else host
+
+
+def _is_distinct_confirmation(confirming, base):
+    """A confirming source must be genuinely independent of the original.
+    Name comparison alone is useless -- the internal config name is
+    "CoinDesk — Policy" while a model reports "CoinDesk", so the same outlet
+    (or even the same article) could mint a corroborated badge. Compare by
+    registrable domain and canonical URL, plus the outlet token of the
+    config name (the part before the " — " suffix)."""
+    conf_url = confirming.get("url", "")
+    if conf_url.strip().rstrip("/") == base["url"].strip().rstrip("/"):
+        return False
+    conf_dom, base_dom = _domain(conf_url), _domain(base["url"])
+    if conf_dom and base_dom and conf_dom == base_dom:
+        return False
+    outlet = base["name"].split("—")[0].strip().lower()
+    conf_name = confirming.get("name", "").strip().lower()
+    if outlet and (conf_name == outlet or conf_name == base["name"].strip().lower()):
+        return False
+    return True
 
 
 def verify_item(item, calls_used):
@@ -56,7 +85,7 @@ def verify_item(item, calls_used):
             tools=[WEB_SEARCH_TOOL],
             messages=[{"role": "user", "content": prompt}],
         )
-        raw = _strip_fences(_extract_text(response))
+        raw = _extract_json_object(_extract_text(response))
         result = json.loads(raw)
     except Exception as exc:
         logger.warning("verify_item failed for %s: %s", item.get("url"), exc)
@@ -67,7 +96,7 @@ def verify_item(item, calls_used):
         isinstance(confirming, dict)
         and confirming.get("name")
         and _looks_like_url(confirming.get("url"))
-        and confirming.get("name", "").strip().lower() != base["name"].strip().lower()
+        and _is_distinct_confirmation(confirming, base)
     ):
         return {"level": "corroborated", "sources": [base, {"name": confirming["name"], "url": confirming["url"]}]}, 1
 

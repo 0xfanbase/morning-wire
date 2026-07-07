@@ -592,8 +592,16 @@ function fmtHeaderDate(iso) {
 function fmtTime(iso) {
   return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(iso)) + "\u00A0HKT";
 }
+function hkYear(iso) {
+  return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, year: "numeric" }).format(new Date(iso));
+}
 function fmtDay(iso) {
-  return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, day: "numeric", month: "short" }).format(new Date(iso));
+  const day = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, day: "numeric", month: "short" }).format(new Date(iso));
+  // Early January, a card published late December would read "28 Dec" under
+  // a masthead saying January -- ambiguous without a year. Append it only
+  // when it differs from the digest's own year, so normal days stay clean.
+  const y = hkYear(iso);
+  return y === hkYear(DIGEST.generated_at) ? day : `${day} ${y}`;
 }
 function fmtCardDate(iso) {
   const d = new Date(iso);
@@ -608,6 +616,7 @@ function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<":
    STATE
    ============================================================ */
 const state = { juris: "ALL", bucket: "ALL" };
+let pendingFocus = null;  // [attr, value] of a chip to refocus after re-render
 const GEN_DAY = hkDayKey(DIGEST.generated_at);
 
 function bucketOf(type) {
@@ -653,8 +662,17 @@ function renderChips() {
     return `<button class="chip" type="button" aria-pressed="${state.bucket === val}" data-bucket="${val}">${esc(def.label)}<span class="count">${n}</span></button>`;
   }).join("");
 
-  jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; render(); });
-  bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; render(); });
+  jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; pendingFocus = ["data-juris", b.dataset.juris]; render(); });
+  bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; pendingFocus = ["data-bucket", b.dataset.bucket]; render(); });
+
+  // renderChips() rebuilds these buttons via innerHTML, which drops keyboard
+  // focus to <body> and loses the user's place. Restore focus to the chip that
+  // was just activated so a keyboard user stays on their control.
+  if (pendingFocus) {
+    const el = document.querySelector(`[${pendingFocus[0]}="${pendingFocus[1]}"]`);
+    if (el) el.focus({ preventScroll: true });
+    pendingFocus = null;
+  }
 }
 
 /* ---------- warning banner ---------- */
@@ -672,7 +690,7 @@ function renderBanner() {
 /* ---------- verification badge ---------- */
 function verifyBadge(v) {
   if (v.level === "official") return `<span class="verify official">✓ Official source</span>`;
-  if (v.level === "corroborated") return `<span class="verify corroborated">✓✓ Corroborated — ${v.sources.length} sources</span>`;
+  if (v.level === "corroborated") return `<span class="verify corroborated">✓✓ Corroborated — ${(v.sources || []).length} sources</span>`;
   return `<span class="verify single_source">⚠ Single source — verify</span>`;
 }
 function corroSources(v) {
@@ -757,10 +775,14 @@ function renderPriority(items) {
 function renderFeed(items) {
   const feed = document.getElementById("feed");
   if (!items.length) {
+    // With filters active the day is not necessarily quiet -- there may be 28
+    // items, just none matching this slice. Only claim a quiet day when the
+    // reader is looking at everything.
+    const unfiltered = state.juris === "ALL" && state.bucket === "ALL";
     feed.innerHTML = `<div class="empty">
-      <div class="e-mark" aria-hidden="true">☕</div>
-      <h3>Quiet day — no new items</h3>
-      <p>${state.juris === "ALL" && state.bucket === "ALL" ? "Nothing crossed the wires for today's digest." : "No items match the current filters. Try clearing them."}</p>
+      <div class="e-mark" aria-hidden="true">${unfiltered ? "☕" : "🔍"}</div>
+      <h3>${unfiltered ? "Quiet day — no new items" : "No items match these filters"}</h3>
+      <p>${unfiltered ? "Nothing crossed the wires for today's digest." : "Clear a filter to see the rest of today's " + todayItems().length + " items."}</p>
     </div>`;
     return;
   }

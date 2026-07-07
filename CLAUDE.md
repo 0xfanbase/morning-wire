@@ -11,9 +11,16 @@ of AI summaries, and industry items stay unverified.
 When asked to enrich the digest (the subscription-based alternative to an API key),
 do this:
 
-1. `git pull` the default branch first — the Action commits new data daily.
+1. FIRST make sure the day's pipeline run is finished — enriching mid-run loses
+   the race and one side's push fails on a guaranteed docs/index.html conflict:
+   use the GitHub MCP actions tools to check the latest "Daily digest" workflow
+   run; if it is queued/in_progress, wait for it to conclude (poll every couple
+   of minutes, up to ~20). Then `git pull` the default branch.
 2. Read `data/digest.json`. Find every item where enrichment is missing: `summary`
    equals `title`, or `so_what` starts with "Review the source directly".
+   **If there is nothing to enrich** (weekends, re-runs — the list is empty):
+   STOP here. Do not rewrite `top_of_mind`, do not touch `source_health` or
+   `run_log`, do not commit or push — a no-op run must leave no trace.
 3. For each such item, write the two lines yourself (you are the model — no API call
    is needed):
    - **summary**: one plain-English sentence describing what happened, readable by any

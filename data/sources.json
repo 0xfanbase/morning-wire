@@ -160,7 +160,7 @@
     "kind": "page",
     "url": "https://www.mas.gov.sg/news?content_type=Media+Releases",
     "tier": "official",
-    "href_pattern": "/news/(media-releases|speeches|monographs)/"
+    "href_pattern": "/news/(media-releases|speeches|monographs)/{year}/"
   },
   {
     "name": "Financial Action Task Force (FATF) — Publications",

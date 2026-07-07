@@ -1,11 +1,12 @@
 name: Deploy site to Pages
 
-# Publishes docs/ to GitHub Pages on every push to main that touches it,
-# self-enabling Pages on first run (enablement: true) so no Settings->Pages
-# click is ever needed. NOTE: this can only succeed once the repository is
-# PUBLIC -- GitHub Pages on the free plan is not available for private
-# repos, so runs before the visibility flip will fail with a 403 and can be
-# ignored.
+# Publishes docs/ to GitHub Pages. TWO one-time manual prerequisites (see
+# README "Setup"): the repository must be PUBLIC (free-plan Pages), and the
+# Pages site must be created once via Settings -> Pages -> Source: "GitHub
+# Actions" -- the workflow token CANNOT create the site itself (the REST
+# endpoint needs repo-admin rights GITHUB_TOKEN never gets; verified: the
+# first live run failed exactly there). `enablement: true` below only keeps
+# an already-created site configured on subsequent runs.
 on:
   # workflow_run is the trigger that matters for the daily pipeline: pushes
   # made with the Actions bot token (digest.yml's commit-back) deliberately
@@ -44,7 +45,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Pages (self-enabling)
+      - name: Configure Pages (site must already exist -- see header comment)
         uses: actions/configure-pages@v5
         with:
           enablement: true

@@ -13,9 +13,9 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from fetch import fetch_source
+from fetch import fetch_source, is_relevant
 from registers import _extract_entities, _get
-from summarise import get_client, MODEL, WEB_SEARCH_TYPE, _strip_fences, _extract_text
+from summarise import get_client, MODEL, WEB_SEARCH_TYPE, _extract_json_object, _extract_text
 
 logger = logging.getLogger(__name__)
 
@@ -62,7 +62,15 @@ def _validate_candidate(source, candidate):
             return False
 
     items, error, _ = fetch_source(synthetic, require_relevant=False)
-    return error is None and len(items) > 0
+    if error is not None or not items:
+        return False
+    # A no-selector "page" candidate scrapes every bare <a> on the page, so
+    # almost ANY homepage would "validate" -- and a wrong heal is permanent
+    # and invisible. Demand at least one topically relevant item in that mode:
+    # a fair bar for a replacement of a digital-asset source.
+    if synthetic["kind"] == "page" and not synthetic.get("selector"):
+        return any(is_relevant(it["title"], it.get("summary", "")) for it in items)
+    return True
 
 
 def _find_replacement(source):
@@ -86,7 +94,7 @@ def _find_replacement(source):
             tools=[WEB_SEARCH_TOOL],
             messages=[{"role": "user", "content": prompt}],
         )
-        raw = _strip_fences(_extract_text(response))
+        raw = _extract_json_object(_extract_text(response))
         candidate = json.loads(raw)
         if not candidate.get("url") or not re.match(r"^https?://", candidate["url"], re.IGNORECASE):
             return None
@@ -94,6 +102,23 @@ def _find_replacement(source):
     except Exception as exc:
         logger.warning("heal: replacement search failed for %s: %s", source["name"], exc)
         return None
+
+
+def _dead_note(failures, last_error):
+    """Honest, specific footer text for a source past the failure threshold,
+    so a reader can tell a site that blocks automated fetch (needs a manual
+    check) apart from one that has genuinely moved or gone empty."""
+    err = (last_error or "").lower()
+    runs = f"{failures} consecutive runs"
+    if "403" in err or "429" in err or "forbidden" in err:
+        return (f"Blocked by the site's bot protection for {runs} "
+                "(content is unavailable to an automated fetch) — check the source manually.")
+    if "no parseable items" in err or "zero" in err:
+        return (f"Reachable but returned no parseable items for {runs} "
+                "(the listing may be client-rendered or restructured) — check the source manually.")
+    if last_error:
+        return f"Failing for {runs} ({last_error}) — verify manually."
+    return f"No response for {runs}; verify manually."
 
 
 def health_check_and_heal(sources, fetch_results, register_health_notes):
@@ -111,10 +136,12 @@ def health_check_and_heal(sources, fetch_results, register_health_notes):
         name = source["name"]
         state = health.get(name, {"consecutive_failures": 0})
 
+        last_error = None
         if source.get("kind") == "register":
             note = register_notes_by_name.get(name)
             if note and note["status"] == "dead":
                 state["consecutive_failures"] = state.get("consecutive_failures", 0) + 1
+                last_error = note.get("note")
             else:
                 state["consecutive_failures"] = 0
         else:
@@ -126,18 +153,36 @@ def health_check_and_heal(sources, fetch_results, register_health_notes):
             # even before topical filtering), counts as a failure.
             if result["error"] or result.get("raw_count", 0) == 0:
                 state["consecutive_failures"] = state.get("consecutive_failures", 0) + 1
+                last_error = result["error"] or "no parseable items"
             else:
                 state["consecutive_failures"] = 0
+        state["last_error"] = last_error
 
         if state["consecutive_failures"] < FAILURE_THRESHOLD:
             status = "ok"
-            if source.get("kind") == "register":
+            failures = state["consecutive_failures"]
+            if failures:
+                # Sub-threshold failure must not read as "responding normally"
+                # -- the tab's own intro promises failures surface here.
+                note_text = (f"Fetch failed this run ({last_error}); {failures} consecutive "
+                             f"failure{'s' if failures > 1 else ''} — self-heal at {FAILURE_THRESHOLD}.")
+            elif source.get("kind") == "register":
                 reg_note = register_notes_by_name.get(name)
                 note_text = reg_note["note"] if reg_note else "Register responding normally"
             else:
                 note_text = "Feed responding normally"
         else:
-            candidate = _find_replacement(source)
+            err = (last_error or "").lower()
+            blocked = "403" in err or "429" in err or "forbidden" in err
+            # A bot-blocked source has the CORRECT url -- it is simply
+            # unfetchable from a datacenter IP. Never let heal swap in a
+            # Claude-proposed alternative (which could be a wrong or unofficial
+            # site that happens to fetch): that would corrupt a good source.
+            # Same for {year}-templated urls: a healed candidate would be a
+            # literal-year url that silently rots the following January --
+            # the exact failure the template exists to prevent.
+            no_heal = blocked or "{year}" in source.get("url", "")
+            candidate = None if no_heal else _find_replacement(source)
             if candidate and _validate_candidate(source, candidate):
                 old_url = source["url"]
                 source["url"] = candidate["url"]
@@ -151,7 +196,7 @@ def health_check_and_heal(sources, fetch_results, register_health_notes):
                 note_text = f"Auto-healed from {old_url}"
             else:
                 status = "dead"
-                note_text = f"No response for {state['consecutive_failures']} consecutive runs; verify manually"
+                note_text = _dead_note(state["consecutive_failures"], last_error)
 
         state["last_checked"] = datetime.now(timezone.utc).isoformat()
         state["last_status"] = status

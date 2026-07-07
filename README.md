@@ -94,7 +94,9 @@ Each scheduled run (`scripts/run.py`):
 ## Repo layout
 
 ```
-/.github/workflows/digest.yml   cron + workflow_dispatch
+/.github/workflows/digest.yml   cron + workflow_dispatch (the daily pipeline)
+/.github/workflows/pages.yml    deploys docs/ to Pages (workflow_run on "Daily
+                                digest" + push to docs/** + manual dispatch)
 /scripts/run.py                 orchestrator (fetch -> ... -> render)
 /scripts/fetch.py               feed/page fetching + parsing
 /scripts/registers.py           official-register snapshot + diff
