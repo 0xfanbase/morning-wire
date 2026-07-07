@@ -84,6 +84,7 @@ def sanitize_digest(digest):
     """
     clean = {
         "generated_at": digest.get("generated_at") or datetime.utcnow().isoformat() + "Z",
+        "top_of_mind": str(digest.get("top_of_mind") or "")[:400],
         "items": [it for it in digest.get("items", []) if _valid_item(it)],
         "source_health": [h for h in digest.get("source_health", []) if _valid_health_entry(h)],
     }

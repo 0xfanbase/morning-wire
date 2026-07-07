@@ -33,17 +33,22 @@ do this:
      licensing grants, and anything material touching HK/mainland China or the topic
      boosts (stablecoins, custody, tokenisation/RWA, prudential treatment of bank
      cryptoasset exposures, sanctions/travel rule, AML/CFT rulemaking); else `normal`.
-4. Optional but valuable: for `tier`-industry items whose `verification.level` is
+4. Write the top-level `top_of_mind` field in `data/digest.json`: one or two sentences
+   (max ~45 words) saying what is top of mind today for the reader, synthesising the
+   day's high-priority items. Plain English, no acronyms, neutral voice. Set it to ""
+   on quiet days. The page shows it as a callout above the priority list (which is
+   capped at 5 rows — jurisdiction order, then recency).
+5. Optional but valuable: for `tier`-industry items whose `verification.level` is
    `single_source`, use web search to look for an official source or a second
    independent reputable outlet (regulator site, Reuters, Bloomberg, FT or equivalent).
    If found, set `verification.level` to `corroborated` and make
    `verification.sources` exactly two entries: the original plus the confirming
    `{name, url}` (http/https URLs only). If nothing confirms it, leave it alone.
-5. In `source_health`, if there is a row named `Claude summarisation`, replace it with:
+6. In `source_health`, if there is a row named `Claude summarisation`, replace it with:
    `{"name": "Claude summarisation", "status": "ok", "note": "Summaries written via
    Claude Code session on <YYYY-MM-DD>"}`.
-6. Re-render: `python3 scripts/render.py` (stdlib only — no pip install needed).
-7. Commit `data/digest.json` and `docs/index.html` with a `[skip ci]` message and push
+7. Re-render: `python3 scripts/render.py` (stdlib only — no pip install needed).
+8. Commit `data/digest.json` and `docs/index.html` with a `[skip ci]` message and push
    to `main` (if pushing to `main` is blocked, push a branch, open a PR and merge it).
    GitHub Pages serves `docs/` from `main`, so the push IS the publish — the live site
    at https://lockout-fit.github.io/Reg-Radar/ updates a minute or two later. No
