@@ -122,8 +122,8 @@ Each scheduled run (`scripts/run.py`):
   header and footer of the page.
 - **`first_seen` vs `published`.** Each item carries both the source's own publish
   timestamp (`published`, shown on the card) and the HKT date this pipeline first
-  ingested it (`first_seen`, used to decide whether it lands in "Today" or the "Last 7
-  days" archive). Splitting on `published` alone would misfile most overnight US/EU
+  ingested it (`first_seen`, used to decide which Range-selector bucket — Today, Last 7
+  days, Last 30 days — an item falls into). Splitting on `published` alone would misfile most overnight US/EU
   news — items a US regulator posts in the evening ET land in the small hours HKT and
   are `published` on the *previous* HKT calendar day even on the run that surfaces them
   for the first time.

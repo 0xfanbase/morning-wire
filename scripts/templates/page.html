@@ -306,7 +306,11 @@ try {
     color: var(--ink-3); font-size: 15px;
   }
   #searchClear:hover { color: var(--accent); }
-  @media (max-width: 480px) {
+  /* 640px, not 480px: CSS zoom scales layout but not the viewport width media
+     queries evaluate against, so a reader using the font-size control at a
+     high step on a ~500px-wide screen needs this rule to still fire before
+     the toolbar runs out of room and wraps to a third sticky row. */
+  @media (max-width: 640px) {
     .toolbar.search-open .font-ctrl { display: none; }
   }
   .tab {
@@ -385,7 +389,10 @@ try {
   .jumpnav a { color: var(--ink-2); font-weight: 600; }
   .jumpnav a:hover { color: var(--accent); }
   .jumpnav .jn-count { color: var(--ink-3); font-weight: 400; font-variant-numeric: tabular-nums; }
-  .juris-group, .card, details.brief { scroll-margin-top: 66px; }
+  /* Measured sticky-bar height is ~117-127px now that it's two rows (tabs +
+     toolbar) instead of one -- 140px leaves headroom so an anchor jump never
+     lands partially hidden underneath it. */
+  .juris-group, .card, details.brief { scroll-margin-top: 140px; }
 
   .radar, .catchup {
     border: 1px solid var(--border);
@@ -555,7 +562,10 @@ try {
   }
   html[data-theme="dark"] .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
   .chip .count { margin-left: 7px; font-size: 12px; opacity: .85; font-variant-numeric: tabular-nums; }
-  .bucket-row { margin-top: 16px; }
+  /* Stacked mobile spacing between filter groups (Range / Jurisdiction /
+     Category) -- general sibling rule so a new middle group (Jurisdiction,
+     with no class of its own) still gets a gap above it, not just the last. */
+  .filter-group + .filter-group { margin-top: 16px; }
   .bucket-row .chip { min-height: 36px; font-size: 13px; padding: 0 13px; }
 
   /* ============================================================
@@ -758,13 +768,22 @@ try {
   .health-table th:nth-child(3), .health-table td:nth-child(3) { white-space: nowrap; }
   #tab-health { overflow-x: auto; }
   /* Source health reads better as a wide table than the normal prose column
-     width -- toggled via JS when that tab is selected (see TAB_PANELS), not a
-     plain @media rule, since only this one tab's content should get it. */
+     width. Breaks out of .wrap on its own (centered on the viewport, not on
+     .wrap's off-center position once wider) rather than widening .wrap
+     itself -- widening the shared container instead would shift the tab row
+     (and the just-clicked tab) sideways out from under the pointer, and
+     desync the masthead's alignment with the content below it, since the
+     masthead is a SEPARATE element that would be left at its normal width.
+     [hidden] already keeps this inert whenever the tab isn't selected. */
   @media (min-width: 1100px) {
-    .wrap.wrap-wide-health { max-width: 1400px; }
+    #tab-health {
+      width: 100vw; max-width: 1400px;
+      position: relative; left: 50%; transform: translateX(-50%);
+      padding: 0 20px;
+    }
   }
   @media (min-width: 1560px) {
-    .wrap.wrap-wide-health { max-width: 1600px; }
+    #tab-health { max-width: 1600px; }
   }
   .hstatus { font-weight: 700; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
   .hstatus.ok { color: var(--ok); }
@@ -826,7 +845,7 @@ try {
   @media (min-width: 1100px) {
     .wrap, .mast-inner, .disclaimer-line { max-width: 1200px; }
     .filters { display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap; }
-    .filters .bucket-row, .filters .range-row { margin-top: 0; }
+    .filters .filter-group + .filter-group { margin-top: 0; }
     .juris-group {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -841,13 +860,16 @@ try {
 
   /* About & method reads as prose, not cards -- it should use more of a wide
      screen than the 720px mobile-width column, but not stretch to the full
-     1200-1540px content width either (that would make lines too long to read
-     comfortably). A moderate bump keeps line length in the readable range. */
+     1200-1540px content width either (that would run past 110+ characters a
+     line at the base 14.5px size, well past the ~90-char comfortable-reading
+     ceiling). Pairing a moderate width bump with a slightly larger type size
+     keeps the measure in roughly the same ~90-100 characters/line range as
+     the original 720px column, just with more breathing room. */
   @media (min-width: 1100px) {
-    .about-body { max-width: 880px; }
+    .about-body { max-width: 800px; font-size: 15.5px; }
   }
   @media (min-width: 1560px) {
-    .about-body { max-width: 960px; }
+    .about-body { max-width: 860px; }
   }
 </style>
 </head>
@@ -989,7 +1011,11 @@ try {
       days and Last 30 days showing everything this page currently retains within that
       window (not a promise of a full 30 days of history — see below); the Audit log tab
       records the last 30 data updates. Items older than seven days at ingest are not
-      admitted — this is a daily wire, not a permanent archive.</p>
+      admitted — this is a daily wire, not a permanent archive. Your Range, Jurisdiction and
+      Category choices are remembered on this device across visits — if the page ever looks
+      unexpectedly empty or dated, check that a wider range or "All" isn't still selected
+      from a previous session, and use "Copy briefing" with that in mind (it copies whatever
+      range/filters are currently showing, not always just today).</p>
 
       <h3>Known limitations</h3>
       <p>Some official sites block automated fetching (they appear on the Source health tab
@@ -1134,7 +1160,12 @@ function restoreFilters() {
     if (JURIS_ORDER.includes(saved.juris) || saved.juris === "ALL") state.juris = saved.juris;
     if (BUCKETS[saved.bucket]) state.bucket = saved.bucket;
     if (RANGE_ORDER.includes(saved.range)) state.range = saved.range;
-    if (!rangeItems(state.range).filter(matchesFilters).length) {
+    // Check against the WIDEST range ("30"), not just the restored one: a
+    // saved {juris:"HK", range:"today"} lens with zero HK items today but
+    // some in the wider window is not stale, just quiet today -- the old
+    // code preserved this (checking the full retained window); only reset
+    // when the lens matches nothing anywhere the reader could see it.
+    if (!rangeItems("30").filter(matchesFilters).length) {
       state.juris = "ALL"; state.bucket = "ALL";  // stale lens: show everything (keep the remembered range)
     }
   } catch (e) {}
@@ -1160,19 +1191,22 @@ const todayItems   = () => DIGEST.items.filter(it => hkDayKey(it.first_seen || i
 const archiveItems = () => DIGEST.items.filter(it => hkDayKey(it.first_seen || it.published) !== GEN_DAY);
 /* Calendar-day distance (HKT) between an item and the digest's own
    generated_at day -- 0 = today, 1 = yesterday, etc. Used by the merged
-   range selector (todayItems/archiveItems above stay as-is; catch-up and the
-   stale-filter check still use them directly). */
+   range selector (todayItems above stays as-is and is still used directly by
+   the range selector's own "today" case and by catch-up's archiveItems). */
 function dayDiff(iso) {
   const d1 = Date.parse(hkDayKey(iso) + "T00:00:00Z");
   const d2 = Date.parse(GEN_DAY + "T00:00:00Z");
   return Math.round((d2 - d1) / 86400000);
 }
 /* "7"/"30" are inclusive of today (so "Last 7 days" = today + 6 prior days =
-   the same span the old archive's "Last 7 days" label already covered, given
-   the pipeline's own ~8-day retention window -- see RANGE_ORDER above). */
+   7 calendar days total, matching the chip's own label; "Last 30 days" =
+   today + 29 prior days). Both are upper bounds, not promises -- the
+   pipeline only retains ~8 days (run.DIGEST_ITEMS_MAX_AGE_DAYS), so in
+   practice "Last 30 days" shows whatever "Last 7 days" already shows until
+   more history accumulates -- honest behaviour, not a bug. */
 function rangeItems(range) {
   if (range === "today") return todayItems();
-  const maxDiff = range === "7" ? 7 : 29;
+  const maxDiff = range === "7" ? 6 : 29;
   return DIGEST.items.filter(it => dayDiff(it.first_seen || it.published) <= maxDiff);
 }
 
@@ -1420,7 +1454,11 @@ function renderFeed(items) {
 }
 
 /* ---------- search: client-side lookup over the items THIS digest has
-   retained (not a live web search) -- see the search toggle in the toolbar */
+   retained (not a live web search) -- see the search toggle in the toolbar.
+   Scoped to the CURRENTLY ACTIVE range/jurisdiction/category filters (the
+   pressed chips stay meaningful and stay live -- clicking one during a
+   search actually narrows the results, instead of looking pressed but
+   inert while quietly rewriting the reader's saved filters underneath). */
 function renderSearchResults() {
   document.getElementById("jumpnav-slot").innerHTML = "";
   document.getElementById("priority-slot").innerHTML = "";
@@ -1428,20 +1466,23 @@ function renderSearchResults() {
   document.getElementById("catchup-slot").innerHTML = "";
   const feed = document.getElementById("feed");
   const q = state.search.trim().toLowerCase();
-  const matches = DIGEST.items
+  const matches = rangeItems(state.range).filter(matchesFilters)
     .filter(it => `${it.title} ${it.summary} ${it.so_what} ${it.source}`.toLowerCase().includes(q))
     .sort((a, b) => new Date(b.published) - new Date(a.published));
+  const scopeNote = (state.juris !== "ALL" || state.bucket !== "ALL" || state.range !== "today")
+    ? ` within ${esc(RANGE_LABEL[state.range])}${state.juris !== "ALL" ? ` · ${esc(JURIS_FULL[state.juris])}` : ""}${state.bucket !== "ALL" ? ` · ${esc(BUCKETS[state.bucket].label)}` : ""}`
+    : "";
   if (!matches.length) {
     feed.innerHTML = `<div class="empty">
       <div class="e-mark" aria-hidden="true">🔍</div>
-      <h3>No matches for "${esc(state.search)}"</h3>
-      <p>Search covers the items currently retained in this digest, not the live web.</p>
+      <h3>No matches for "${esc(state.search.trim())}"${scopeNote}</h3>
+      <p>Search covers the items currently retained in this digest (within the selected range/filters above), not the live web.</p>
     </div>`;
     return;
   }
   const cards = matches.filter(it => !isBrief(it));
   const briefs = matches.filter(isBrief);
-  feed.innerHTML = `<div class="section-head"><h2>${matches.length} result${matches.length > 1 ? "s" : ""} for "${esc(state.search)}"</h2><span class="rule"></span></div>
+  feed.innerHTML = `<div class="section-head"><h2>${matches.length} result${matches.length > 1 ? "s" : ""} for "${esc(state.search.trim())}"${scopeNote}</h2><span class="rule"></span></div>
     ${cards.map(cardHTML).join("")}
     ${briefs.length ? `<div class="brief-block"><p class="brief-head">In brief — ${briefs.length} market headline${briefs.length > 1 ? "s" : ""}</p><div class="brief-list">${briefs.map(briefHTML).join("")}</div></div>` : ""}`;
 }
@@ -1492,9 +1533,6 @@ function selectTab(tabName) {
   for (const [tab, panelId] of Object.entries(TAB_PANELS)) {
     document.getElementById(panelId).hidden = tab !== tabName;
   }
-  // Source health reads better as a wide table -- widen the shared content
-  // column only while that tab is showing (see the .wrap-wide-health rule).
-  document.querySelector("main.wrap").classList.toggle("wrap-wide-health", tabName === "health");
 }
 document.querySelectorAll(".tabs .tab").forEach(btn => btn.onclick = () => selectTab(btn.dataset.tab));
 
@@ -1506,7 +1544,7 @@ function renderJumpnav(items) {
     .filter(([, n]) => n > 0)
     .map(([j, n]) => `<a href="#jsec-${esc(j)}">${esc(JURIS_FULL[j])}</a> <span class="jn-count">${n}</span>`);
   slot.innerHTML = parts.length > 1
-    ? `<p class="jumpnav">On today's wire: ${parts.join(" · ")}</p>` : "";
+    ? `<p class="jumpnav">On ${RANGE_WIRE[state.range]} wire: ${parts.join(" · ")}</p>` : "";
 }
 
 /* ---------- on the radar: forward-looking deadlines ---------- */
@@ -1648,10 +1686,14 @@ function briefingStrings() {
     lines.push("", `== ${JURIS_FULL[j].toUpperCase()} ==`);
     hparts.push(`<h4>${esc(JURIS_FULL[j])}</h4><ul>`);
     group.forEach(it => {
-      lines.push(`• ${it.title}${it.priority === "high" ? " [HIGH PRIORITY]" : ""}`,
+      // A per-item date matters here specifically because the range selector
+      // can make this a multi-day briefing -- without it, a week-old item is
+      // textually indistinguishable from one published this morning once
+      // pasted into an email.
+      lines.push(`• ${it.title} — ${fmtCardDate(it.published)}${it.priority === "high" ? " [HIGH PRIORITY]" : ""}`,
                  `  ${it.summary}`, `  So what: ${it.so_what}`,
                  `  ${(it.verification.level || "").replace("_", " ")} · ${it.url}`);
-      hparts.push(`<li><strong>${esc(it.title)}</strong>${it.priority === "high" ? " <em>[high priority]</em>" : ""}<br>${esc(it.summary)}<br><em>So what:</em> ${esc(it.so_what)}<br><a href="${esc(it.url)}">${esc(it.url)}</a></li>`);
+      hparts.push(`<li><strong>${esc(it.title)}</strong> — ${esc(fmtCardDate(it.published))}${it.priority === "high" ? " <em>[high priority]</em>" : ""}<br>${esc(it.summary)}<br><em>So what:</em> ${esc(it.so_what)}<br><a href="${esc(it.url)}">${esc(it.url)}</a></li>`);
     });
     hparts.push(`</ul>`);
   });
@@ -1685,7 +1727,7 @@ function render() {
   renderFreshness();
   renderScope();
   renderTopOfMind();
-  if (state.search) {
+  if (state.search.trim()) {
     renderSearchResults();
     return;
   }
@@ -1840,11 +1882,19 @@ const FONT_STEPS = [85, 92, 100, 108, 116, 125, 135];
 let fontStepIdx = FONT_STEPS.indexOf(100);
 const fontDecBtn = document.getElementById("fontDec");
 const fontIncBtn = document.getElementById("fontInc");
+const fontResetBtn = document.getElementById("fontReset");
 function applyFontScale() {
   const pct = FONT_STEPS[fontStepIdx];
   document.documentElement.style.zoom = pct + "%";
-  fontDecBtn.disabled = fontStepIdx === 0;
-  fontIncBtn.disabled = fontStepIdx === FONT_STEPS.length - 1;
+  const atMin = fontStepIdx === 0, atMax = fontStepIdx === FONT_STEPS.length - 1;
+  // Disabling a focused button silently drops focus to <body> with no
+  // visible indication of where it went -- move it to Reset first (always
+  // enabled) whenever the button about to be disabled currently has focus.
+  if ((atMin && document.activeElement === fontDecBtn) || (atMax && document.activeElement === fontIncBtn)) {
+    fontResetBtn.focus();
+  }
+  fontDecBtn.disabled = atMin;
+  fontIncBtn.disabled = atMax;
   try { localStorage.setItem("regradar-fontscale", String(pct)); } catch (e) {}
 }
 (function initFontScale() {
@@ -1867,6 +1917,9 @@ const searchBtn = document.getElementById("searchBtn");
 const searchInput = document.getElementById("searchInput");
 const searchClearBtn = document.getElementById("searchClear");
 function openSearch() {
+  // Results render into #tab-digest -- switch there first, or a reader on
+  // Source health/Audit log/About would type a query and see nothing happen.
+  selectTab("digest");
   searchBtn.hidden = true;
   searchInput.hidden = false;
   searchClearBtn.hidden = false;
@@ -1881,7 +1934,12 @@ function closeSearch() {
   searchInput.value = "";
   document.getElementById("toolbar").classList.remove("search-open");
   searchBtn.setAttribute("aria-expanded", "false");
-  if (state.search) { state.search = ""; render(); }
+  const wasSearching = !!state.search.trim();
+  state.search = "";
+  if (wasSearching) render();
+  // Hiding the input while it holds focus would otherwise drop keyboard
+  // focus to <body> with no visible indication of where it went.
+  searchBtn.focus();
 }
 searchBtn.onclick = openSearch;
 searchClearBtn.onclick = closeSearch;
@@ -1960,14 +2018,18 @@ document.addEventListener("toggle", e => {
 /* ---------- deep links: /#<item-id> scrolls to and highlights the card ---------- */
 // Widen the range (and clear juris/bucket/search) just enough for `id` to be
 // present in the merged feed -- e.g. a catch-up row or a shared link to an
-// item outside "Today" needs "Last 7/30 days" selected first.
+// item outside "Today" needs "Last 7/30 days" selected first. Deliberately
+// NOT persisted (no saveFilters()): this is a one-off "make this one item
+// reachable" nudge for the current view, not a standing preference change --
+// a reader's remembered jurisdiction/bucket/range lens must survive clicking
+// someone else's shared link.
 function ensureItemVisible(id) {
   const it = DIGEST.items.find(x => x.id === id);
   if (!it) return;
-  state.juris = "ALL"; state.bucket = "ALL"; state.search = "";
+  state.juris = "ALL"; state.bucket = "ALL";
+  if (!searchInput.hidden) closeSearch(); else state.search = "";
   const diff = dayDiff(it.first_seen || it.published);
-  if (diff > 0) state.range = diff <= 7 ? "7" : "30";
-  saveFilters();
+  if (diff > 0) state.range = diff <= 6 ? "7" : "30";
 }
 function gotoHash() {
   const id = decodeURIComponent(location.hash.slice(1));

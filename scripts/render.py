@@ -226,7 +226,7 @@ def _og_strings(clean):
     """Day-fresh Open Graph title/description so a pasted link unfurls in
     Teams/WhatsApp with today's synthesis instead of a bare URL."""
     gen = datetime.fromisoformat(clean["generated_at"].replace("Z", "+00:00"))
-    hkt_day = (gen.astimezone(timezone(timedelta(hours=8)))).strftime("%A %-d %B %Y")
+    hkt_day = (gen.astimezone(timezone(timedelta(hours=8)))).strftime("%Y-%m-%d")
     title = f"{SITE_TITLE} — {hkt_day}"
     desc = clean["top_of_mind"].strip()
     if not desc:
