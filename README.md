@@ -54,10 +54,18 @@ Each scheduled run (`scripts/run.py`):
 
 ## Setup
 
-1. **Secret** — add a repo secret named `ANTHROPIC_API_KEY` (Settings → Secrets and
-   variables → Actions) with a valid Anthropic API key.
+1. **Secret (optional)** — add a repo secret named `ANTHROPIC_API_KEY` (Settings →
+   Secrets and variables → Actions) for AI summaries, corroboration and source
+   self-healing. **The digest runs fine without it**: fetching, dedupe, register
+   diffs, jurisdiction grouping and official-source badges all work keyless; cards
+   simply show raw headlines and a banner notes that AI enrichment is off.
+   Subscription alternative: skip the key entirely and run a Claude Code session on
+   this repo saying "enrich today's digest" — `CLAUDE.md` contains the full recipe
+   (the session writes the summaries itself, re-renders and pushes; zero API cost).
 2. **Pages** — Settings → Pages → Build and deployment → Deploy from a branch → branch
-   `main`, folder `/docs`.
+   `main`, folder `/docs`. The site then serves at
+   `https://<owner>.github.io/<repo>/` (this repo:
+   `https://lockout-fit.github.io/Reg-Radar/`).
 3. **Cron** — the workflow (`.github/workflows/digest.yml`) runs `0 23 * * 0-4` UTC,
    i.e. 07:00 HKT Monday–Friday (HKT is UTC+8 with no DST, so 23:00 UTC rolls into the
    next HKT calendar day). It also supports manual runs via the Actions tab
