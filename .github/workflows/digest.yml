@@ -42,6 +42,9 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/run.py
 
+      # No [skip ci] here: this workflow has no push trigger (schedule +
+      # dispatch only), so its own commit cannot retrigger it -- and the
+      # commit MUST trigger pages.yml, which deploys docs/ to GitHub Pages.
       - name: Commit and push updated digest
         run: |
           git config user.name "reg-radar-bot"
@@ -51,5 +54,5 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "chore: update digest [skip ci]"
+          git commit -m "chore: update digest"
           git push || (git pull --rebase && git push)

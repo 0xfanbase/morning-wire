@@ -48,11 +48,12 @@ do this:
    `{"name": "Claude summarisation", "status": "ok", "note": "Summaries written via
    Claude Code session on <YYYY-MM-DD>"}`.
 7. Re-render: `python3 scripts/render.py` (stdlib only — no pip install needed).
-8. Commit `data/digest.json` and `docs/index.html` with a `[skip ci]` message and push
-   to `main` (if pushing to `main` is blocked, push a branch, open a PR and merge it).
-   GitHub Pages serves `docs/` from `main`, so the push IS the publish — the live site
-   at https://lockout-fit.github.io/Reg-Radar/ updates a minute or two later. No
-   artifact or other publishing step is needed.
+8. Commit `data/digest.json` and `docs/index.html` (plain message, e.g. "chore: enrich
+   digest" — do NOT add `[skip ci]`, the push must trigger the Pages deploy workflow)
+   and push to `main` (if pushing to `main` is blocked, push a branch, open a PR and
+   merge it). The push triggers `.github/workflows/pages.yml`, which publishes `docs/`
+   to https://lockout-fit.github.io/Reg-Radar/ a minute or two later. No artifact or
+   other publishing step is needed.
 
 Do NOT change the page template (`scripts/templates/page.html`) layout, the schema
 field names, or any enum values — `scripts/render.py` validates items and silently
