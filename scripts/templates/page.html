@@ -609,19 +609,18 @@ try {
   .banner strong { color: var(--ink); }
 
   /* ============================================================
-     TOP OF MIND
+     TOP OF MIND + PRIORITY -- side by side on wide screens (see the
+     row rule in the WIDE/DESKTOP section below), stacked on mobile.
      ============================================================ */
+  .tom-priority-row { display: flex; flex-direction: column; gap: 4px; }
+  #topmind-slot:empty, #priority-slot:empty { display: none; }
   .topmind {
-    margin-top: 22px; padding: 14px 16px;
+    padding: 12px 15px;
     background: color-mix(in srgb, var(--accent) 7%, var(--bg-2));
+    border: 1px solid var(--border);
     border-left: 3px solid var(--accent);
     border-radius: 0 10px 10px 0;
-    font-family: var(--serif); font-size: 17px; line-height: 1.55; color: var(--ink);
-  }
-  .topmind .lbl {
-    display: block; font-family: var(--sans); font-size: 11px; font-weight: 700;
-    letter-spacing: .09em; text-transform: uppercase; color: var(--accent-deep);
-    margin-bottom: 4px;
+    font-family: var(--serif); font-size: 15px; line-height: 1.5; color: var(--ink);
   }
 
   /* ============================================================
@@ -898,6 +897,12 @@ try {
     .filters-sidebar.collapsed .sidebar-toggle { flex-direction: column; justify-content: center; margin-bottom: 0; }
     .filters-sidebar.collapsed .sidebar-toggle-label { display: none; }
     .filters-sidebar.collapsed .filters { display: none; }
+    /* Top of mind stays a compact card at a fixed width; Priority takes
+       the rest -- both top-aligned since one is a short callout and the
+       other a capped 5-row list, not meant to match height. */
+    .tom-priority-row { flex-direction: row; align-items: flex-start; gap: 24px; }
+    .tom-priority-row > #topmind-slot { flex: 0 0 300px; max-width: 300px; }
+    .tom-priority-row > #priority-slot { flex: 1 1 auto; min-width: 0; }
     .juris-group {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1009,9 +1014,11 @@ try {
 
       <div class="digest-main">
         <div id="banner-slot"></div>
-        <div id="topmind-slot"></div>
+        <div class="tom-priority-row">
+          <div id="topmind-slot"></div>
+          <div id="priority-slot"></div>
+        </div>
         <div id="jumpnav-slot"></div>
-        <div id="priority-slot"></div>
         <div id="radar-slot"></div>
         <div id="catchup-slot"></div>
         <div id="feed"></div>
@@ -1431,7 +1438,8 @@ function renderTopOfMind() {
   const slot = document.getElementById("topmind-slot");
   const text = (DIGEST.top_of_mind || "").trim();
   if (!text) { slot.innerHTML = ""; return; }
-  slot.innerHTML = `<div class="topmind"><span class="lbl">Top of mind</span>${esc(text)}</div>`;
+  slot.innerHTML = `<div class="section-head"><h2>Top of mind</h2><span class="rule"></span></div>
+    <div class="topmind">${esc(text)}</div>`;
 }
 
 /* ---------- priority strip (capped -- a 12-row list isn't a priority) ---------- */
