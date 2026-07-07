@@ -1,34 +1,34 @@
 [
   {
-    "name": "HKMA — Press releases",
+    "name": "Hong Kong Monetary Authority — Press releases",
     "jurisdiction": "HK",
     "kind": "feed",
     "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_press-release.xml",
     "tier": "official"
   },
   {
-    "name": "HKMA — Circulars & guidance",
+    "name": "Hong Kong Monetary Authority — Circulars & guidance",
     "jurisdiction": "HK",
     "kind": "feed",
     "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_circulars.xml",
     "tier": "official"
   },
   {
-    "name": "SFC — News",
+    "name": "Securities and Futures Commission — News",
     "jurisdiction": "HK",
     "kind": "feed",
     "url": "https://www.sfc.hk/en/RSS-Feeds/Press-releases",
     "tier": "official"
   },
   {
-    "name": "SFC — Circulars",
+    "name": "Securities and Futures Commission — Circulars",
     "jurisdiction": "HK",
     "kind": "feed",
     "url": "https://www.sfc.hk/en/RSS-Feeds/Circulars",
     "tier": "official"
   },
   {
-    "name": "FSTB — Press releases",
+    "name": "Financial Services and the Treasury Bureau — Press releases",
     "jurisdiction": "HK",
     "kind": "page",
     "url": "https://www.fstb.gov.hk/en/news/press/index.php",
@@ -36,7 +36,7 @@
     "selector": ".record"
   },
   {
-    "name": "SFC — VATP register",
+    "name": "Securities and Futures Commission — Licensed virtual asset trading platforms register",
     "jurisdiction": "HK",
     "kind": "register",
     "url": "https://www.sfc.hk/en/Welcome-to-the-Fintech-Contact-Point/Virtual-assets/Virtual-asset-trading-platforms-operators/Lists-of-virtual-asset-trading-platforms",
@@ -45,7 +45,7 @@
     "column": 1
   },
   {
-    "name": "PBoC — Press releases",
+    "name": "People's Bank of China — Press releases",
     "jurisdiction": "CN",
     "kind": "page",
     "url": "https://www.pbc.gov.cn/en/3688110/3688172/2026/index.html",
@@ -89,7 +89,7 @@
     ]
   },
   {
-    "name": "FinCEN — Press releases",
+    "name": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
     "jurisdiction": "US",
     "kind": "page",
     "url": "https://www.fincen.gov/news/press-releases",
@@ -97,7 +97,7 @@
     "selector": ".fincen-news-article"
   },
   {
-    "name": "OFAC — Recent actions",
+    "name": "Office of Foreign Assets Control (OFAC) — Recent actions",
     "jurisdiction": "US",
     "kind": "page",
     "url": "https://ofac.treasury.gov/recent-actions",
@@ -105,21 +105,21 @@
     "selector": ".views-row"
   },
   {
-    "name": "SEC — Press releases",
+    "name": "US Securities and Exchange Commission — Press releases",
     "jurisdiction": "US",
     "kind": "feed",
     "url": "https://www.sec.gov/news/pressreleases.rss",
     "tier": "official"
   },
   {
-    "name": "CFTC — Press releases",
+    "name": "Commodity Futures Trading Commission — Press releases",
     "jurisdiction": "US",
     "kind": "feed",
     "url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml/all",
     "tier": "official"
   },
   {
-    "name": "OCC — News releases",
+    "name": "Office of the Comptroller of the Currency — News releases",
     "jurisdiction": "US",
     "kind": "feed",
     "url": "https://www.occ.gov/rss/occ_news.xml",
@@ -133,14 +133,14 @@
     "tier": "official"
   },
   {
-    "name": "DOJ — Press releases",
+    "name": "US Department of Justice — Press releases",
     "jurisdiction": "US",
     "kind": "feed",
     "url": "https://www.justice.gov/news/rss?type=press_release",
     "tier": "official"
   },
   {
-    "name": "ESMA — News",
+    "name": "European Securities and Markets Authority — News",
     "jurisdiction": "EU",
     "kind": "page",
     "url": "https://www.esma.europa.eu/press-news/esma-news",
@@ -148,14 +148,14 @@
     "selector": "article.node--type-news"
   },
   {
-    "name": "EBA — News",
+    "name": "European Banking Authority — News",
     "jurisdiction": "EU",
     "kind": "feed",
     "url": "https://eba.europa.eu/news-press/news/rss.xml",
     "tier": "official"
   },
   {
-    "name": "MAS — Media releases",
+    "name": "Monetary Authority of Singapore — Media releases",
     "jurisdiction": "SG",
     "kind": "page",
     "url": "https://www.mas.gov.sg/news?content_type=Media+Releases",
@@ -163,7 +163,7 @@
     "href_pattern": "/news/(media-releases|speeches|monographs)/"
   },
   {
-    "name": "FATF — Publications",
+    "name": "Financial Action Task Force (FATF) — Publications",
     "jurisdiction": "GLOBAL",
     "kind": "page",
     "url": "https://www.fatf-gafi.org/en/publications.html",
@@ -178,7 +178,7 @@
     "selector": "div:has(> a[href^=\"/news/\"])"
   },
   {
-    "name": "GDF — News",
+    "name": "Global Digital Finance (GDF) — News",
     "jurisdiction": "GLOBAL",
     "kind": "feed",
     "url": "https://www.gdf.io/feed/",
@@ -193,14 +193,14 @@
     "href_pattern": "/en/opinion/"
   },
   {
-    "name": "BIS / Basel Committee — Press releases",
+    "name": "Bank for International Settlements / Basel Committee — Press releases",
     "jurisdiction": "GLOBAL",
     "kind": "feed",
     "url": "https://www.bis.org/doclist/all_pressrels.rss",
     "tier": "official"
   },
   {
-    "name": "FSB — Press releases",
+    "name": "Financial Stability Board — Press releases",
     "jurisdiction": "GLOBAL",
     "kind": "page",
     "url": "https://www.fsb.org/press/press-releases/",
@@ -324,5 +324,27 @@
       "vaneck",
       "nomura"
     ]
+  },
+  {
+    "name": "Chainalysis — Blog",
+    "jurisdiction": "GLOBAL",
+    "kind": "feed",
+    "url": "https://www.chainalysis.com/blog/feed/",
+    "tier": "industry"
+  },
+  {
+    "name": "Elliptic — Blog",
+    "jurisdiction": "GLOBAL",
+    "kind": "feed",
+    "url": "https://www.elliptic.co/blog/rss.xml",
+    "tier": "industry"
+  },
+  {
+    "name": "TRM Labs — Insights",
+    "jurisdiction": "GLOBAL",
+    "kind": "page",
+    "url": "https://www.trmlabs.com/resources/blog",
+    "tier": "industry",
+    "href_pattern": "/resources/blog/"
   }
 ]

@@ -46,6 +46,11 @@ neutral wire-service copy usable by any compliance team -- never write in first 
 plural ("we", "our bank"), never name or imply a specific employer, never address "your \
 firm". Write plainly: no insider jargon, no hype, no speculation beyond the source.
 
+Spell out institution and instrument names in full -- "the Hong Kong Monetary \
+Authority", not "the HKMA"; "virtual-asset", not "VA". Avoid unexplained acronyms: \
+expand on first use, adding the acronym in parentheses only when it is the commonly \
+used name (e.g. "the Financial Action Task Force (FATF)").
+
 For each item, return:
 - summary: one plain-English sentence describing what happened, readable by any \
 compliance team member with no specialist crypto background.

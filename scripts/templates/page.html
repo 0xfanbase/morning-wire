@@ -199,10 +199,15 @@
   .priority-item:last-child { border-bottom: none; }
   .priority-item .pj {
     flex: 0 0 auto; font-size: 11px; font-weight: 700; letter-spacing: .06em;
-    color: var(--accent); min-width: 34px;
+    color: var(--accent); min-width: 96px; text-transform: uppercase;
   }
   .priority-item a { color: var(--ink); font-weight: 600; font-size: 15px; line-height: 1.35; }
   .priority-item a:hover { color: var(--accent); }
+  .priority-item .psrc { font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+  @media (max-width: 480px) {
+    .priority-item { flex-direction: column; gap: 3px; }
+    .priority-item .pj { min-width: 0; }
+  }
 
   /* ============================================================
      JURISDICTION GROUPS + CARDS
@@ -438,7 +443,6 @@ const TYPE_HUE = {
   licensing: 150, peer_move: 172, speech: 300, news: 95
 };
 const JURIS_ORDER = ["HK", "CN", "US", "EU", "SG", "GLOBAL"];
-const JURIS_LABEL = { HK: "HK", CN: "CN", US: "US", EU: "EU", SG: "SG", GLOBAL: "Global" };
 const JURIS_FULL  = { HK: "Hong Kong", CN: "Mainland China", US: "United States", EU: "European Union", SG: "Singapore", GLOBAL: "Global" };
 const BUCKETS = {
   ALL:        { label: "All", types: null },
@@ -495,7 +499,7 @@ function renderChips() {
   const today = todayItems();
   const jc = document.getElementById("jurisChips");
   const jurisPresent = JURIS_ORDER.filter(j => DIGEST.items.some(it => it.jurisdiction === j));
-  const jList = [["ALL", "All"], ...jurisPresent.map(j => [j, JURIS_LABEL[j]])];
+  const jList = [["ALL", "All"], ...jurisPresent.map(j => [j, JURIS_FULL[j]])];
   jc.innerHTML = jList.map(([val, lbl]) => {
     const n = today.filter(it => val === "ALL" ? true : it.jurisdiction === val).length;
     return `<button class="chip" role="button" aria-pressed="${state.juris === val}" data-juris="${val}">${esc(lbl)}<span class="count">${n}</span></button>`;
@@ -563,8 +567,11 @@ function renderPriority(items) {
   if (!high.length) { slot.innerHTML = ""; return; }
   const rows = high.map(it =>
     `<div class="priority-item">
-       <span class="pj">${esc(JURIS_LABEL[it.jurisdiction])}</span>
-       <a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+       <span class="pj">${esc(JURIS_FULL[it.jurisdiction])}</span>
+       <div>
+         <a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+         <div class="psrc">${esc(it.source)}</div>
+       </div>
      </div>`).join("");
   slot.innerHTML = `<div class="section-head"><h2>Priority — needs a look</h2><span class="rule"></span></div>
     <div class="priority">${rows}</div>`;

@@ -23,6 +23,10 @@ do this:
      digital-asset financial-crime-compliance function at an international bank.
      NEUTRAL VOICE ONLY — never "we"/"our bank"/"your firm", never name or imply any
      specific employer.
+   - **No unexplained acronyms** in either line: spell names out in full ("the Hong
+     Kong Monetary Authority", not "the HKMA"; "virtual-asset", not "VA"), adding the
+     acronym in parentheses only when it is the commonly used name (e.g. "the
+     Financial Action Task Force (FATF)").
    - **type**: exactly one of `enforcement`, `final_rule`, `consultation`, `guidance`,
      `designation`, `licensing`, `peer_move`, `speech`, `news`.
    - **priority**: `high` for enforcement actions, final rules, sanctions designations,
@@ -41,13 +45,9 @@ do this:
 6. Re-render: `python3 scripts/render.py` (stdlib only — no pip install needed).
 7. Commit `data/digest.json` and `docs/index.html` with a `[skip ci]` message and push
    to `main` (if pushing to `main` is blocked, push a branch, open a PR and merge it).
-8. **Republish the Claude Artifact** (the reader's daily URL). Transform
-   `docs/index.html` into artifact content: keep the `<title>…</title>`, the whole
-   `<style>…</style>` block and everything inside `<body>…</body>`, concatenated in
-   that order; drop the `<!DOCTYPE>`, `<html>`, `<head>`, `<body>` wrapper tags and
-   `<meta>` tags. Write it to a scratchpad file and publish with the Artifact tool,
-   passing `url: https://claude.ai/code/artifact/09355352-1a29-4e11-afbe-4b2c04b82d08`
-   so it updates the existing page (never mint a new URL), favicon `📡` (keep stable).
+   GitHub Pages serves `docs/` from `main`, so the push IS the publish — the live site
+   at https://lockout-fit.github.io/Reg-Radar/ updates a minute or two later. No
+   artifact or other publishing step is needed.
 
 Do NOT change the page template (`scripts/templates/page.html`) layout, the schema
 field names, or any enum values — `scripts/render.py` validates items and silently

@@ -1,35 +1,35 @@
 {
-  "HKMA — Press releases": {
+  "Hong Kong Monetary Authority — Press releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.463995+00:00",
     "last_status": "ok"
   },
-  "HKMA — Circulars & guidance": {
+  "Hong Kong Monetary Authority — Circulars & guidance": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464008+00:00",
     "last_status": "ok"
   },
-  "SFC — News": {
+  "Securities and Futures Commission — News": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464016+00:00",
     "last_status": "ok"
   },
-  "SFC — Circulars": {
+  "Securities and Futures Commission — Circulars": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464021+00:00",
     "last_status": "ok"
   },
-  "FSTB — Press releases": {
+  "Financial Services and the Treasury Bureau — Press releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464026+00:00",
     "last_status": "ok"
   },
-  "SFC — VATP register": {
+  "Securities and Futures Commission — Licensed virtual asset trading platforms register": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464031+00:00",
     "last_status": "ok"
   },
-  "PBoC — Press releases": {
+  "People's Bank of China — Press releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464036+00:00",
     "last_status": "ok"
@@ -44,27 +44,27 @@
     "last_checked": "2026-07-07T04:04:47.464047+00:00",
     "last_status": "ok"
   },
-  "FinCEN — Press releases": {
+  "Financial Crimes Enforcement Network (FinCEN) — Press releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464051+00:00",
     "last_status": "ok"
   },
-  "OFAC — Recent actions": {
+  "Office of Foreign Assets Control (OFAC) — Recent actions": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464056+00:00",
     "last_status": "ok"
   },
-  "SEC — Press releases": {
+  "US Securities and Exchange Commission — Press releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464060+00:00",
     "last_status": "ok"
   },
-  "CFTC — Press releases": {
+  "Commodity Futures Trading Commission — Press releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464065+00:00",
     "last_status": "ok"
   },
-  "OCC — News releases": {
+  "Office of the Comptroller of the Currency — News releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464069+00:00",
     "last_status": "ok"
@@ -74,27 +74,27 @@
     "last_checked": "2026-07-07T04:04:47.464074+00:00",
     "last_status": "ok"
   },
-  "DOJ — Press releases": {
+  "US Department of Justice — Press releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464078+00:00",
     "last_status": "ok"
   },
-  "ESMA — News": {
+  "European Securities and Markets Authority — News": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464083+00:00",
     "last_status": "ok"
   },
-  "EBA — News": {
+  "European Banking Authority — News": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464087+00:00",
     "last_status": "ok"
   },
-  "MAS — Media releases": {
+  "Monetary Authority of Singapore — Media releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464092+00:00",
     "last_status": "ok"
   },
-  "FATF — Publications": {
+  "Financial Action Task Force (FATF) — Publications": {
     "consecutive_failures": 2,
     "last_checked": "2026-07-07T04:04:47.464097+00:00",
     "last_status": "ok"
@@ -104,7 +104,7 @@
     "last_checked": "2026-07-07T04:04:47.464101+00:00",
     "last_status": "ok"
   },
-  "GDF — News": {
+  "Global Digital Finance (GDF) — News": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464106+00:00",
     "last_status": "ok"
@@ -114,12 +114,12 @@
     "last_checked": "2026-07-07T04:04:47.464111+00:00",
     "last_status": "ok"
   },
-  "BIS / Basel Committee — Press releases": {
+  "Bank for International Settlements / Basel Committee — Press releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464115+00:00",
     "last_status": "ok"
   },
-  "FSB — Press releases": {
+  "Financial Stability Board — Press releases": {
     "consecutive_failures": 0,
     "last_checked": "2026-07-07T04:04:47.464148+00:00",
     "last_status": "ok"

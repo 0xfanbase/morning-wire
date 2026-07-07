@@ -62,10 +62,13 @@ Each scheduled run (`scripts/run.py`):
    Subscription alternative: skip the key entirely and run a Claude Code session on
    this repo saying "enrich today's digest" — `CLAUDE.md` contains the full recipe
    (the session writes the summaries itself, re-renders and pushes; zero API cost).
-2. **Pages** — Settings → Pages → Build and deployment → Deploy from a branch → branch
-   `main`, folder `/docs`. The site then serves at
-   `https://<owner>.github.io/<repo>/` (this repo:
-   `https://lockout-fit.github.io/Reg-Radar/`).
+2. **Pages** — the repository must be **public** for GitHub Pages on the free plan
+   (Settings → General → Danger zone → Change visibility; the repo is deliberately
+   neutral, `noindex`ed, and safe to make public). Then Settings → Pages → Build and
+   deployment → Deploy from a branch → branch `main`, folder `/docs`. The site serves
+   at `https://<owner>.github.io/<repo>/` (this repo:
+   `https://lockout-fit.github.io/Reg-Radar/`) — publicly reachable, no login of any
+   kind needed to view it.
 3. **Cron** — the workflow (`.github/workflows/digest.yml`) runs `0 23 * * 0-4` UTC,
    i.e. 07:00 HKT Monday–Friday (HKT is UTC+8 with no DST, so 23:00 UTC rolls into the
    next HKT calendar day). It also supports manual runs via the Actions tab
