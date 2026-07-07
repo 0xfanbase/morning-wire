@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-07T04:04:47.464900+00:00",
-  "top_of_mind": "",
+  "generated_at": "2026-07-07T07:50:49.166227+00:00",
+  "top_of_mind": "The United States sanctions authority added more than one hundred terrorist-linked cryptocurrency wallets to its designations — screening lists need the update. Ripple won full European crypto authorisation, and bitcoin's largest corporate holder is now selling in size.",
   "items": [
     {
       "id": "hk-fstb-press-releases-cf3d3aabb6",
@@ -70,6 +70,589 @@
       "summary": "The European Banking Authority published updated validation rules for supervisory reporting, flagging corrections reporting institutions should apply.",
       "so_what": "Routine, but worth passing to regulatory-reporting teams handling EU entities, including MiCA-related returns.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
+    },
+    {
+      "id": "global-trm-labs-insights-f5039e43fc",
+      "jurisdiction": "GLOBAL",
+      "source": "TRM Labs — Insights",
+      "title": "Wallet Screening Best Practices for Compliance Teams",
+      "url": "https://www.trmlabs.com/resources/blog/wallet-screening-best-practices-for-compliance-teams",
+      "published": "2026-07-07T07:50:47.227133+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "TRM Labs — Insights",
+            "url": "https://www.trmlabs.com/resources/blog/wallet-screening-best-practices-for-compliance-teams"
+          }
+        ]
+      },
+      "summary": "TRM Labs published a guide on how compliance teams should screen cryptocurrency wallets for sanctions and financial-crime risk.",
+      "so_what": "A useful benchmark for reviewing whether existing wallet-screening controls cover sanctions exposure, indirect risk and re-screening frequency in line with current industry practice.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-trm-labs-insights-b35f07fd2d",
+      "jurisdiction": "GLOBAL",
+      "source": "TRM Labs — Insights",
+      "title": "H1 2026 Crypto Hacks Reach Record High as Losses Fall Below USD 1 Billion",
+      "url": "https://www.trmlabs.com/resources/blog/h1-2026-crypto-hacks-reach-record-high-as-losses-fall-below-usd-1-billion",
+      "published": "2026-07-07T07:50:47.226988+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "TRM Labs — Insights",
+            "url": "https://www.trmlabs.com/resources/blog/h1-2026-crypto-hacks-reach-record-high-as-losses-fall-below-usd-1-billion"
+          }
+        ]
+      },
+      "summary": "TRM Labs reported that the number of cryptocurrency hacks hit a record high in the first half of 2026, even though total losses fell below one billion United States dollars.",
+      "so_what": "More frequent hacks raise the odds that client funds or counterparty exchanges are affected, so stolen-fund tracing alerts and exchange due-diligence reviews deserve continued attention.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-trm-labs-insights-4fa35664b1",
+      "jurisdiction": "GLOBAL",
+      "source": "TRM Labs — Insights",
+      "title": "OFAC Sanctions 134 ISKP Cryptocurrency Addresses Tied to USD 2 Million in Terrorist Financing",
+      "url": "https://www.trmlabs.com/resources/blog/ofac-sanctions-134-iskp-cryptocurrency-addresses-tied-to-usd-2-million-in-terrorist-financing",
+      "published": "2026-07-07T07:50:47.226849+00:00",
+      "type": "designation",
+      "priority": "high",
+      "status": "new",
+      "verification": {
+        "level": "corroborated",
+        "sources": [
+          {
+            "name": "TRM Labs — Insights",
+            "url": "https://www.trmlabs.com/resources/blog/ofac-sanctions-134-iskp-cryptocurrency-addresses-tied-to-usd-2-million-in-terrorist-financing"
+          },
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026/"
+          }
+        ]
+      },
+      "summary": "The United States Office of Foreign Assets Control (OFAC) added 134 cryptocurrency addresses linked to Islamic State Khorasan Province to its sanctions list, tied to roughly two million United States dollars in terrorist financing.",
+      "so_what": "The newly listed addresses need to reach wallet-screening data promptly, and a retrospective exposure check against them can confirm no historical flows touched client accounts.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-acams-today-851504e812",
+      "jurisdiction": "GLOBAL",
+      "source": "ACAMS Today",
+      "title": "Crypto Threats, Vulnerabilities and What to Do Next",
+      "url": "https://www.acams.org/en/opinion/crypto-threats-vulnerabilities-and-what-do-next",
+      "published": "2026-07-07T07:50:39.198729+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "ACAMS Today",
+            "url": "https://www.acams.org/en/opinion/crypto-threats-vulnerabilities-and-what-do-next"
+          }
+        ]
+      },
+      "summary": "An ACAMS Today article surveys current criminal threats and control weaknesses in cryptocurrency and suggests practical next steps for compliance teams.",
+      "so_what": "A quick horizon-scanning read, useful when refreshing cryptocurrency risk assessments or training material for financial-crime teams.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-acams-today-2e465a9794",
+      "jurisdiction": "GLOBAL",
+      "source": "ACAMS Today",
+      "title": "What OFAC’s crypto mixer sanctions mean for financial crime compliance",
+      "url": "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance",
+      "published": "2026-07-07T07:50:39.197034+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "ACAMS Today",
+            "url": "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance"
+          }
+        ]
+      },
+      "summary": "An ACAMS Today article explains how the United States Office of Foreign Assets Control's sanctions on cryptocurrency mixing services affect financial-crime compliance programmes.",
+      "so_what": "Helpful framing for tightening controls on mixer exposure, including how indirect exposure several transaction hops away should be treated in monitoring and investigations.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-acams-today-2bea5a2bff",
+      "jurisdiction": "GLOBAL",
+      "source": "ACAMS Today",
+      "title": "Operation Prince: Inside a $15 billion crypto fraud takedown",
+      "url": "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown",
+      "published": "2026-07-07T07:50:39.196937+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "ACAMS Today",
+            "url": "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown"
+          }
+        ]
+      },
+      "summary": "An ACAMS Today feature goes inside \"Operation Prince\", a law-enforcement takedown of a cryptocurrency fraud network measuring about fifteen billion United States dollars.",
+      "so_what": "Case studies at this scale surface red-flag typologies — romance-investment fraud patterns and mule account networks — worth folding into monitoring scenarios and investigator training.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-coindesk-market-news-7146026493",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Live markets: Bitcoin and ether ETFs drew inflows on Monday",
+      "url": "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday",
+      "published": "2026-07-07T06:51:28+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday"
+          }
+        ]
+      },
+      "summary": "Exchange-traded funds holding bitcoin and ether recorded net investor inflows on Monday, according to CoinDesk market data.",
+      "so_what": "Steady fund inflows signal continuing institutional participation in digital assets, sustaining the volumes that flow through banks' brokerage, custody and payments relationships.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-market-news-8dcd10142f",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Grayscale says Strategy’s recent bitcoin sales should restore confidence in its financing structure",
+      "url": "https://www.theblock.co/post/407360/grayscale-strategy-bitcoin-sales-comments?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-06T22:10:15+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407360/grayscale-strategy-bitcoin-sales-comments?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Asset manager Grayscale said recent bitcoin sales by Strategy, the largest corporate holder of bitcoin, should reassure investors about the company's financing structure rather than alarm them.",
+      "so_what": "Large corporate bitcoin holders adjusting positions can move prices and sentiment sharply, which matters when assessing collateral values and client exposure to bitcoin-treasury companies.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-coindesk-policy-2c890e4264",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Bitcoin's U.S. reserve still a work-in-progress as federal agencies hash it out",
+      "url": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out",
+      "published": "2026-07-06T21:40:06+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out"
+          }
+        ]
+      },
+      "summary": "United States federal agencies are still working through legal and operational questions before the planned national bitcoin reserve becomes operational, CoinDesk reports.",
+      "so_what": "A sovereign bitcoin reserve would further legitimise state-level holdings, and the unresolved custody and jurisdiction questions mirror those banks face when holding digital assets.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-chainalysis-blog-e10d024105",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "Breadth, Depth, And Quality: Why Comparing Blockchain Analytics Vendors by Cluster Count Is Only Part of the Calculation",
+      "url": "https://www.chainalysis.com/blog/comparing-blockchain-analytics-vendors/",
+      "published": "2026-07-06T21:03:39+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/comparing-blockchain-analytics-vendors/"
+          }
+        ]
+      },
+      "summary": "Chainalysis argues that comparing blockchain-analytics vendors on the number of labelled address clusters tells only part of the story, with breadth, depth and attribution quality all mattering.",
+      "so_what": "Relevant when benchmarking or renewing blockchain-analytics contracts: procurement criteria should test attribution quality and coverage rather than headline cluster counts alone.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-policy-7ba8c24571",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "President Trump’s strategic bitcoin reserve hits a legal and jurisdictional snag: Bloomberg",
+      "url": "https://www.theblock.co/post/407356/trump-strategic-bitcoin-reserve-hits-legal-jurisdictional-snag-bloomberg?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-06T19:56:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407356/trump-strategic-bitcoin-reserve-hits-legal-jurisdictional-snag-bloomberg?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "The planned United States strategic bitcoin reserve has hit legal and jurisdictional obstacles between federal agencies, according to a Bloomberg report cited by The Block.",
+      "so_what": "The delays highlight unsettled United States federal authority over seized and state-held cryptoassets, with knock-on implications for custody and sanctions policy worth watching.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-policy-1f1f1d0ab9",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Judge revives fraud claim against Barry Silbert, DCG in Genesis Yield lawsuit",
+      "url": "https://www.theblock.co/post/407337/judge-revives-fraud-claim-against-barry-silbert-dcg-genesis-yield-lawsuit?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-06T18:55:49+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407337/judge-revives-fraud-claim-against-barry-silbert-dcg-genesis-yield-lawsuit?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "A United States judge revived a fraud claim against Digital Currency Group and its founder Barry Silbert in a lawsuit over the collapsed Genesis yield programme.",
+      "so_what": "Litigation from the 2022-23 crypto lending collapses keeps counterparty-failure risk visible; exposure reviews for clients tied to affected entities may need refreshing as claims progress.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-policy-45e49ff153",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Vitalik Buterin proposes ‘Extremely Lean’ Ethereum, shrinking the chain to near-zero state with ZK proofs",
+      "url": "https://www.theblock.co/post/407319/vitalik-buterin-extremely-lean-ethereum-shrinking-chain-to-near-zero-state-zk-proofs?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-06T16:34:32+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407319/vitalik-buterin-extremely-lean-ethereum-shrinking-chain-to-near-zero-state-zk-proofs?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Ethereum co-founder Vitalik Buterin proposed an \"extremely lean\" redesign that would shrink the blockchain's stored state to near zero using zero-knowledge cryptographic proofs.",
+      "so_what": "Protocol changes of this scale would eventually affect how transaction records used in investigations are stored and verified, though any practical impact is years away.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-19b547342f",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Circle’s USDC is leaving Tether behind in the stablecoin volume race, new data from Visa shows",
+      "url": "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race",
+      "published": "2026-07-06T16:00:15+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race"
+          }
+        ]
+      },
+      "summary": "New data published by Visa shows Circle's USDC stablecoin pulling ahead of rival Tether in on-chain transaction volume by a widening margin.",
+      "so_what": "A volume shift toward the more regulation-forward stablecoin issuer changes the counterparty mix in client transaction flows and is useful context for stablecoin risk assessments.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-policy-258fd6649e",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "President Trump says he’s a ‘big crypto guy,’ while distancing himself from family’s crypto ventures",
+      "url": "https://www.theblock.co/post/407312/president-trump-big-crypto-guy-distancing-familys-crypto-ventures?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-06T15:53:22+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407312/president-trump-big-crypto-guy-distancing-familys-crypto-ventures?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "United States President Trump described himself as strongly supportive of cryptocurrency while distancing himself from his family's commercial crypto ventures.",
+      "so_what": "Top-level political support continues to shape a permissive United States policy direction, while conflict-of-interest questions around official crypto ventures remain a reputational theme to monitor.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-coindesk-market-news-9cad11867e",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "DeFi protocol Summer.fi halts Lazy Summer vaults after $6 million exploit",
+      "url": "https://www.coindesk.com/web3/2026/07/06/defi-protocol-summer-fi-halts-lazy-summer-vaults-after-usd6-million-exploit",
+      "published": "2026-07-06T13:42:12+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/web3/2026/07/06/defi-protocol-summer-fi-halts-lazy-summer-vaults-after-usd6-million-exploit"
+          }
+        ]
+      },
+      "summary": "Decentralised-finance protocol Summer.fi suspended its \"Lazy Summer\" investment vaults after an exploit drained about six million United States dollars.",
+      "so_what": "Fresh exploit proceeds typically move fast through mixers and cross-chain bridges, so screening-provider alerts for exposure to the stolen funds are worth watching over the coming days.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-elliptic-blog-4edb359f95",
+      "jurisdiction": "GLOBAL",
+      "source": "Elliptic — Blog",
+      "title": "How the UK's stablecoin rules came together",
+      "url": "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together",
+      "published": "2026-07-06T13:00:02+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Elliptic — Blog",
+            "url": "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together"
+          }
+        ]
+      },
+      "summary": "Elliptic published an explainer tracing how the United Kingdom's newly finalised stablecoin regulatory regime was developed and what it covers.",
+      "so_what": "A concise map of the United Kingdom regime helps benchmark it against the Hong Kong and European Union stablecoin frameworks when advising on cross-border issuance and custody.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-coindesk-market-news-053cb92677",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Michael Saylor's Strategy dramatically ups pace of bitcoin sales, raising $216 million",
+      "url": "https://www.coindesk.com/markets/2026/07/06/michael-saylor-s-strategy-dramatically-ups-pace-of-bitcoin-sales-raising-usd216-million",
+      "published": "2026-07-06T12:16:28+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/07/06/michael-saylor-s-strategy-dramatically-ups-pace-of-bitcoin-sales-raising-usd216-million"
+          }
+        ]
+      },
+      "summary": "Strategy, the software company turned bitcoin holding vehicle led by Michael Saylor, sharply accelerated its bitcoin sales, raising about 216 million United States dollars.",
+      "so_what": "The largest corporate bitcoin holder switching from accumulation to sizeable sales is a market-sentiment signal relevant to collateral valuations and exposure to bitcoin-treasury companies.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-coindesk-policy-9559d96c92",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Ripple's preliminary crypto asset provider license in Luxembourg upgraded to fully compliant",
+      "url": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant",
+      "published": "2026-07-06T10:01:24+00:00",
+      "type": "licensing",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant"
+          }
+        ]
+      },
+      "summary": "CoinDesk reports that Ripple's preliminary crypto-asset service provider licence in Luxembourg has been upgraded to fully compliant status under the European Union's Markets in Crypto-Assets Regulation (MiCA).",
+      "so_what": "Full authorisation lets Ripple passport crypto services across the European Economic Area, adding a large licensed counterparty to the European payments and custody landscape.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-policy-a3f39bf606",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Ripple secures full MiCA CASP authorization for crypto services across 30 EEA countries",
+      "url": "https://www.theblock.co/post/407207/ripple-secures-full-mica-casp-authorization-for-crypto-services-across-30-eea-countries?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-06T09:30:56+00:00",
+      "type": "licensing",
+      "priority": "high",
+      "status": "new",
+      "verification": {
+        "level": "corroborated",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407207/ripple-secures-full-mica-casp-authorization-for-crypto-services-across-30-eea-countries?utm_source=rss&utm_medium=rss"
+          },
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant"
+          }
+        ]
+      },
+      "summary": "Ripple secured full authorisation as a crypto-asset service provider under the European Union's Markets in Crypto-Assets Regulation (MiCA), allowing it to offer crypto services across thirty European Economic Area countries.",
+      "so_what": "A major payments-focused crypto firm gaining authorisation across the whole European Economic Area expands the set of fully licensed counterparties and sharpens comparison with Hong Kong's licensing regime.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-policy-00a1b988af",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "South Korea develops crypto-specific procedures for asset seizures and liquidation: report",
+      "url": "https://www.theblock.co/post/407183/south-korea-crypto-specific-procedure?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-06T08:35:54+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407183/south-korea-crypto-specific-procedure?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "South Korean authorities are developing procedures specifically for seizing and liquidating cryptocurrency in criminal and tax cases, according to a report cited by The Block.",
+      "so_what": "Clearer seizure mechanics in a major Asian market offer a template regional peers may follow and affect how frozen-asset requests involving Korean counterparties are executed.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-market-news-2f266b7d60",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "How Sovereign Wealth Funds Invest in Digital Assets",
+      "url": "https://www.theblock.co/learn/407186/how-sovereign-wealth-funds-invest-in-digital-assets?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-06T06:14:32+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/learn/407186/how-sovereign-wealth-funds-invest-in-digital-assets?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "An explainer from The Block describes the channels sovereign wealth funds use to invest in digital assets, from exchange-traded products to direct holdings and venture stakes.",
+      "so_what": "Sovereign investors entering digital assets deepen institutional flows through regulated intermediaries — useful context for onboarding and source-of-funds conversations involving state-linked vehicles.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-policy-3a49a90f7e",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Nigel Farage failed to declare funding from crypto gambling figure convicted of fraud: Sunday Times",
+      "url": "https://www.theblock.co/post/407178/nigel-farage-failed-to-declare-funding-from-crypto-gambling-figure-convicted-of-fraud-sunday-times?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-05T22:53:05+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407178/nigel-farage-failed-to-declare-funding-from-crypto-gambling-figure-convicted-of-fraud-sunday-times?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "The Sunday Times reported that British politician Nigel Farage failed to declare funding from a cryptocurrency gambling figure previously convicted of fraud.",
+      "so_what": "Politically exposed persons with undisclosed crypto-linked funding illustrate the adverse-media and source-of-wealth checks that cryptocurrency exposure adds to customer due diligence.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-elliptic-blog-9f279187a9",
+      "jurisdiction": "GLOBAL",
+      "source": "Elliptic — Blog",
+      "title": "Introducing Continuous Monitoring: stay aware of changing crypto risk",
+      "url": "https://www.elliptic.co/blog/introducing-continuous-monitoring",
+      "published": "2026-07-02T13:00:01+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Elliptic — Blog",
+            "url": "https://www.elliptic.co/blog/introducing-continuous-monitoring"
+          }
+        ]
+      },
+      "summary": "Elliptic launched a continuous-monitoring capability that re-screens cryptocurrency wallets and transactions as risk information changes after the initial check.",
+      "so_what": "Point-in-time wallet screening ages quickly; continuous re-screening options are worth weighing when reviewing blockchain-analytics tooling against ongoing monitoring obligations.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-chainalysis-blog-987207320d",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "OFAC Updates ISIS-Khorasan Sanctions with Over 100 Cryptocurrency Wallets",
+      "url": "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026/",
+      "published": "2026-07-01T20:26:45+00:00",
+      "type": "designation",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026/"
+          }
+        ]
+      },
+      "summary": "Chainalysis analysed the United States Office of Foreign Assets Control's update adding more than one hundred cryptocurrency wallet addresses linked to Islamic State Khorasan to its sanctions designations.",
+      "so_what": "The attribution detail on the newly designated addresses supports retrospective exposure checks and tuning of sanctions-screening rules for indirect exposure.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
     }
   ],
   "source_health": [
@@ -219,9 +802,44 @@
       "note": "Feed responding normally"
     },
     {
+      "name": "CoinDesk — Market news",
+      "status": "ok",
+      "note": "Feed responding normally"
+    },
+    {
+      "name": "The Block — Market news",
+      "status": "ok",
+      "note": "Feed responding normally"
+    },
+    {
+      "name": "Chainalysis — Blog",
+      "status": "ok",
+      "note": "Feed responding normally"
+    },
+    {
+      "name": "Elliptic — Blog",
+      "status": "ok",
+      "note": "Feed responding normally"
+    },
+    {
+      "name": "TRM Labs — Insights",
+      "status": "ok",
+      "note": "Feed responding normally"
+    },
+    {
       "name": "Claude summarisation",
       "status": "ok",
       "note": "Summaries written via Claude Code session on 2026-07-07"
+    }
+  ],
+  "run_log": [
+    {
+      "at": "2026-07-07T07:50:49.166227+00:00",
+      "note": "Daily fetch: 25 new items surfaced; 34/35 sources ok"
+    },
+    {
+      "at": "2026-07-07T07:53:39.038684+00:00",
+      "note": "Enrichment: 25 items summarised and classified via Claude Code session; 2 stories corroborated"
     }
   ]
 }

@@ -1,147 +1,172 @@
 {
   "Hong Kong Monetary Authority — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.463995+00:00",
+    "last_checked": "2026-07-07T07:50:49.165367+00:00",
     "last_status": "ok"
   },
   "Hong Kong Monetary Authority — Circulars & guidance": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464008+00:00",
+    "last_checked": "2026-07-07T07:50:49.165379+00:00",
     "last_status": "ok"
   },
   "Securities and Futures Commission — News": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464016+00:00",
+    "last_checked": "2026-07-07T07:50:49.165383+00:00",
     "last_status": "ok"
   },
   "Securities and Futures Commission — Circulars": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464021+00:00",
+    "last_checked": "2026-07-07T07:50:49.165386+00:00",
     "last_status": "ok"
   },
   "Financial Services and the Treasury Bureau — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464026+00:00",
+    "last_checked": "2026-07-07T07:50:49.165390+00:00",
     "last_status": "ok"
   },
   "Securities and Futures Commission — Licensed virtual asset trading platforms register": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464031+00:00",
+    "last_checked": "2026-07-07T07:50:49.165393+00:00",
     "last_status": "ok"
   },
   "People's Bank of China — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464036+00:00",
+    "last_checked": "2026-07-07T07:50:49.165396+00:00",
     "last_status": "ok"
   },
   "CoinDesk — China policy": {
-    "consecutive_failures": 2,
-    "last_checked": "2026-07-07T04:04:47.464041+00:00",
+    "consecutive_failures": 3,
+    "last_checked": "2026-07-07T07:50:49.165404+00:00",
     "last_status": "ok"
   },
   "The Block — China policy": {
-    "consecutive_failures": 2,
-    "last_checked": "2026-07-07T04:04:47.464047+00:00",
+    "consecutive_failures": 3,
+    "last_checked": "2026-07-07T07:50:49.165408+00:00",
     "last_status": "ok"
   },
   "Financial Crimes Enforcement Network (FinCEN) — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464051+00:00",
+    "last_checked": "2026-07-07T07:50:49.165411+00:00",
     "last_status": "ok"
   },
   "Office of Foreign Assets Control (OFAC) — Recent actions": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464056+00:00",
+    "last_checked": "2026-07-07T07:50:49.165415+00:00",
     "last_status": "ok"
   },
   "US Securities and Exchange Commission — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464060+00:00",
+    "last_checked": "2026-07-07T07:50:49.165418+00:00",
     "last_status": "ok"
   },
   "Commodity Futures Trading Commission — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464065+00:00",
+    "last_checked": "2026-07-07T07:50:49.165421+00:00",
     "last_status": "ok"
   },
   "Office of the Comptroller of the Currency — News releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464069+00:00",
+    "last_checked": "2026-07-07T07:50:49.165423+00:00",
     "last_status": "ok"
   },
   "Federal Reserve — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464074+00:00",
+    "last_checked": "2026-07-07T07:50:49.165426+00:00",
     "last_status": "ok"
   },
   "US Department of Justice — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464078+00:00",
+    "last_checked": "2026-07-07T07:50:49.165429+00:00",
     "last_status": "ok"
   },
   "European Securities and Markets Authority — News": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464083+00:00",
+    "last_checked": "2026-07-07T07:50:49.165431+00:00",
     "last_status": "ok"
   },
   "European Banking Authority — News": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464087+00:00",
+    "last_checked": "2026-07-07T07:50:49.165454+00:00",
     "last_status": "ok"
   },
   "Monetary Authority of Singapore — Media releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464092+00:00",
+    "last_checked": "2026-07-07T07:50:49.165460+00:00",
     "last_status": "ok"
   },
   "Financial Action Task Force (FATF) — Publications": {
-    "consecutive_failures": 2,
-    "last_checked": "2026-07-07T04:04:47.464097+00:00",
+    "consecutive_failures": 3,
+    "last_checked": "2026-07-07T07:50:49.165464+00:00",
     "last_status": "ok"
   },
   "Wolfsberg Group — News & publications": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464101+00:00",
+    "last_checked": "2026-07-07T07:50:49.165467+00:00",
     "last_status": "ok"
   },
   "Global Digital Finance (GDF) — News": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464106+00:00",
+    "last_checked": "2026-07-07T07:50:49.165469+00:00",
     "last_status": "ok"
   },
   "ACAMS Today": {
-    "consecutive_failures": 1,
-    "last_checked": "2026-07-07T04:04:47.464111+00:00",
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T07:50:49.165472+00:00",
     "last_status": "ok"
   },
   "Bank for International Settlements / Basel Committee — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464115+00:00",
+    "last_checked": "2026-07-07T07:50:49.165475+00:00",
     "last_status": "ok"
   },
   "Financial Stability Board — Press releases": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464148+00:00",
+    "last_checked": "2026-07-07T07:50:49.165477+00:00",
     "last_status": "ok"
   },
   "CoinDesk — Policy": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464155+00:00",
+    "last_checked": "2026-07-07T07:50:49.165480+00:00",
     "last_status": "ok"
   },
   "The Block — Policy": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464159+00:00",
+    "last_checked": "2026-07-07T07:50:49.165483+00:00",
     "last_status": "ok"
   },
   "CoinDesk — Institutional moves": {
     "consecutive_failures": 0,
-    "last_checked": "2026-07-07T04:04:47.464164+00:00",
+    "last_checked": "2026-07-07T07:50:49.165485+00:00",
     "last_status": "ok"
   },
   "The Block — Institutional moves": {
-    "consecutive_failures": 2,
-    "last_checked": "2026-07-07T04:04:47.464169+00:00",
+    "consecutive_failures": 3,
+    "last_checked": "2026-07-07T07:50:49.165487+00:00",
+    "last_status": "ok"
+  },
+  "CoinDesk — Market news": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T07:50:49.165491+00:00",
+    "last_status": "ok"
+  },
+  "The Block — Market news": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T07:50:49.165493+00:00",
+    "last_status": "ok"
+  },
+  "Chainalysis — Blog": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T07:50:49.165495+00:00",
+    "last_status": "ok"
+  },
+  "Elliptic — Blog": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T07:50:49.165498+00:00",
+    "last_status": "ok"
+  },
+  "TRM Labs — Insights": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T07:50:49.165501+00:00",
     "last_status": "ok"
   }
 }

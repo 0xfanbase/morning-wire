@@ -92,6 +92,11 @@ def sanitize_digest(digest):
         "top_of_mind": str(digest.get("top_of_mind") or "")[:400],
         "items": [it for it in digest.get("items", []) if _valid_item(it)],
         "source_health": [h for h in digest.get("source_health", []) if _valid_health_entry(h)],
+        "run_log": [
+            {"at": e["at"], "note": str(e.get("note") or "")[:300]}
+            for e in (digest.get("run_log") or [])
+            if isinstance(e, dict) and _is_valid_iso8601(e.get("at"))
+        ][-30:],
     }
     dropped = len(digest.get("items", [])) - len(clean["items"])
     if dropped:

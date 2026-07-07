@@ -33,6 +33,7 @@ DIGEST_PATH = ROOT / "data" / "digest.json"
 
 SEEN_ITEMS_MAX_AGE_DAYS = 90
 DIGEST_ITEMS_MAX_AGE_DAYS = 8  # a little slack past the "last 7 days" UI label
+RUN_LOG_MAX_ENTRIES = 30  # the page's audit-log tab shows recent runs, not history forever
 
 
 def _canonical_url(url):
@@ -231,11 +232,17 @@ def main():
         source_health.append({"name": "Claude summarisation", "status": "dead", "note": note})
 
     merged_items = merge_digest_window(previous_digest.get("items", []), surfaced)
+
+    healthy = sum(1 for h in source_health if h["status"] == "ok")
+    run_note = f"Daily fetch: {len(surfaced)} new item{'' if len(surfaced) == 1 else 's'} surfaced; {healthy}/{len(source_health)} sources ok"
+    run_log = (previous_digest.get("run_log") or []) + [{"at": now_iso, "note": run_note}]
+
     digest = {
         "generated_at": now_iso,
         "top_of_mind": top_of_mind,
         "items": [finalize_item(it) for it in merged_items],
         "source_health": source_health,
+        "run_log": run_log[-RUN_LOG_MAX_ENTRIES:],
     }
 
     # Render before persisting -- a bad render must not corrupt seen-items.json

@@ -1,4 +1,4 @@
-# Reg Radar — session guide
+# Digital Assets Morning Wire — session guide
 
 This repo publishes a daily digital-asset regulatory digest to GitHub Pages
 (`docs/index.html`, generated from `data/digest.json`). The GitHub Action runs the
@@ -48,8 +48,12 @@ do this:
 6. In `source_health`, if there is a row named `Claude summarisation`, replace it with:
    `{"name": "Claude summarisation", "status": "ok", "note": "Summaries written via
    Claude Code session on <YYYY-MM-DD>"}`.
-7. Re-render: `python3 scripts/render.py` (stdlib only — no pip install needed).
-8. Commit `data/digest.json` and `docs/index.html` (plain message, e.g. "chore: enrich
+7. Append an entry to the top-level `run_log` list (the page's Audit log tab):
+   `{"at": "<now, UTC ISO-8601>", "note": "Enrichment: <N> items summarised and
+   classified via Claude Code session"}` — one short sentence; mention corroborations
+   if any were made. Keep the list as-is otherwise; the pipeline caps it at 30.
+8. Re-render: `python3 scripts/render.py` (stdlib only — no pip install needed).
+9. Commit `data/digest.json` and `docs/index.html` (plain message, e.g. "chore: enrich
    digest" — do NOT add `[skip ci]`, the push must trigger the Pages deploy workflow)
    and push to `main` (if pushing to `main` is blocked, push a branch, open a PR and
    merge it). The push triggers `.github/workflows/pages.yml`, which publishes `docs/`

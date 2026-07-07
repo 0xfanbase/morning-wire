@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
-<title>Reg Radar — Daily Digital-Asset Regulatory Digest</title>
+<title>Digital Assets Morning Wire — Daily Regulatory &amp; Market Digest</title>
 <script>
 /* Set the theme before first paint -- doing this at the end of <body> gives
    dark-OS readers a flash of the light palette on every load. */
@@ -101,6 +101,12 @@ try {
     margin: 0;
     display: flex; align-items: center; gap: 9px;
   }
+  .wm-stack { display: flex; flex-direction: column; gap: 2px; }
+  .wm-kicker {
+    font-family: var(--sans); font-size: 10.5px; font-weight: 700;
+    letter-spacing: .16em; text-transform: uppercase;
+    color: var(--accent-deep); line-height: 1;
+  }
   .radar-dot {
     width: 11px; height: 11px; border-radius: 50%;
     background: var(--accent);
@@ -133,6 +139,48 @@ try {
     display: flex; align-items: center; gap: 7px;
   }
   .disclaimer-line .bolt { color: var(--accent); }
+
+  /* ============================================================
+     TABS
+     ============================================================ */
+  .tabs {
+    display: flex; gap: 2px;
+    padding-top: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tab {
+    appearance: none; background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    padding: 10px 14px; min-height: 44px;
+    font-family: var(--sans); font-size: 14px; font-weight: 600;
+    color: var(--ink-3); cursor: pointer;
+    transition: color .16s ease;
+  }
+  .tab:hover { color: var(--accent); }
+  .tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+  .tab-intro { font-size: 13.5px; color: var(--ink-3); margin: 0 0 14px; }
+
+  /* ============================================================
+     AUDIT LOG
+     ============================================================ */
+  .audit-list { list-style: none; margin: 0; padding: 0; }
+  .audit-list li {
+    display: flex; gap: 16px; align-items: baseline;
+    padding: 10px 2px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+  }
+  .audit-list li:last-child { border-bottom: none; }
+  .audit-list .a-when {
+    flex: 0 0 auto; min-width: 175px;
+    color: var(--ink-3); font-variant-numeric: tabular-nums;
+  }
+  .audit-list .a-note { color: var(--ink-2); }
+  @media (max-width: 480px) {
+    .audit-list li { flex-direction: column; gap: 2px; }
+    .audit-list .a-when { min-width: 0; }
+  }
 
   /* ============================================================
      FILTERS
@@ -389,7 +437,9 @@ try {
       --border:#ddd; --border-2:#ccc; --shadow:none;
     }
     header.masthead { position: static; border-bottom: 2px solid #000; }
-    .theme-toggle, .filters, .banner, .archive summary .caret { display: none !important; }
+    .theme-toggle, .filters, .banner, .tabs, .archive summary .caret { display: none !important; }
+    /* Print everything: a hidden tab's content still belongs in the PDF. */
+    #tab-digest[hidden], #tab-health[hidden], #tab-audit[hidden] { display: block !important; }
     .archive[open] .archive-body, .archive .archive-body { display: block !important; }
     .archive summary { border: none; background: none; padding-left: 0; }
     .card, .priority { box-shadow: none; break-inside: avoid; page-break-inside: avoid; }
@@ -433,7 +483,7 @@ try {
 
 <noscript>
   <div style="max-width:720px;margin:40px auto;padding:0 20px;font-family:Georgia,serif;font-size:16px;line-height:1.6;">
-    <strong>Reg Radar</strong> needs JavaScript enabled to display the digest.
+    <strong>Digital Assets Morning Wire</strong> needs JavaScript enabled to display the digest.
     The raw data behind this page is available in the repository as <code>data/digest.json</code>.
   </div>
 </noscript>
@@ -441,7 +491,7 @@ try {
 <header class="masthead">
   <div class="mast-inner">
     <div>
-      <h1 class="wordmark"><span class="radar-dot" aria-hidden="true"></span>Reg Radar</h1>
+      <h1 class="wordmark"><span class="radar-dot" aria-hidden="true"></span><span class="wm-stack"><span class="wm-kicker">Digital Assets</span>Morning Wire</span></h1>
       <p class="mast-meta"><strong id="mast-date">—</strong> · generated <span id="mast-time">—</span></p>
     </div>
     <button class="theme-toggle" id="themeBtn" type="button" aria-label="Toggle colour theme">
@@ -452,29 +502,47 @@ try {
 </header>
 
 <main class="wrap">
-  <section class="filters" aria-label="Filters">
-    <div class="filter-group">
-      <p class="filter-label">Jurisdiction</p>
-      <div class="chips" id="jurisChips"></div>
-    </div>
-    <div class="filter-group bucket-row">
-      <p class="filter-label">Category</p>
-      <div class="chips" id="bucketChips"></div>
-    </div>
-  </section>
+  <nav class="tabs" aria-label="Sections">
+    <button class="tab" type="button" data-tab="digest" aria-selected="true">Digest</button>
+    <button class="tab" type="button" data-tab="health" aria-selected="false">Source health</button>
+    <button class="tab" type="button" data-tab="audit" aria-selected="false">Audit log</button>
+  </nav>
 
-  <div id="banner-slot"></div>
-  <div id="topmind-slot"></div>
-  <div id="priority-slot"></div>
-  <div id="feed"></div>
-  <div id="archive-slot"></div>
+  <div id="tab-digest">
+    <section class="filters" aria-label="Filters">
+      <div class="filter-group">
+        <p class="filter-label">Jurisdiction</p>
+        <div class="chips" id="jurisChips"></div>
+      </div>
+      <div class="filter-group bucket-row">
+        <p class="filter-label">Category</p>
+        <div class="chips" id="bucketChips"></div>
+      </div>
+    </section>
 
-  <footer>
-    <h4>Source health</h4>
+    <div id="banner-slot"></div>
+    <div id="topmind-slot"></div>
+    <div id="priority-slot"></div>
+    <div id="feed"></div>
+    <div id="archive-slot"></div>
+  </div>
+
+  <div id="tab-health" hidden>
+    <div class="section-head"><h2>Source health</h2><span class="rule"></span></div>
+    <p class="tab-intro">Per-source status from the latest pipeline run. A source is never silently dropped — failures surface here and self-heal retries each run.</p>
     <table class="health-table" id="healthTable">
       <thead><tr><th>Source</th><th>Status</th><th>Note</th></tr></thead>
       <tbody></tbody>
     </table>
+  </div>
+
+  <div id="tab-audit" hidden>
+    <div class="section-head"><h2>Audit log</h2><span class="rule"></span></div>
+    <p class="tab-intro">Every data update to this page, newest first (all times Hong Kong).</p>
+    <ol class="audit-list" id="auditLog"></ol>
+  </div>
+
+  <footer>
     <div class="foot-notes">
       <p><span class="strong">AI-sourced &amp; AI-generated.</span> Verify against official sources before acting.</p>
       <p>Automated aggregation — not advice.</p>
@@ -510,7 +578,8 @@ const BUCKETS = {
   enforce:    { label: "Enforcement", types: ["enforcement", "designation"] },
   rules:      { label: "Rules & guidance", types: ["final_rule", "guidance", "consultation"] },
   licpeer:    { label: "Licensing & peers", types: ["licensing", "peer_move"] },
-  other:      { label: "Other", types: ["speech", "news"] }
+  news:       { label: "Market news", types: ["news"] },
+  other:      { label: "Other", types: ["speech"] }
 };
 
 /* ---------- date helpers (all in Asia/Hong_Kong) ---------- */
@@ -726,7 +795,7 @@ function renderArchive() {
   </details>`;
 }
 
-/* ---------- source-health footer table ---------- */
+/* ---------- source-health table (Source health tab) ---------- */
 function renderHealth() {
   const tb = document.querySelector("#healthTable tbody");
   tb.innerHTML = DIGEST.source_health.map(s =>
@@ -736,6 +805,34 @@ function renderHealth() {
        <td>${esc(s.note)}</td>
      </tr>`).join("");
 }
+
+/* ---------- audit log (Audit log tab) ---------- */
+function fmtAudit(iso) {
+  return new Intl.DateTimeFormat("en-GB", {
+    timeZone: TZ, day: "numeric", month: "short", year: "numeric",
+    hour: "2-digit", minute: "2-digit", hour12: false,
+  }).format(new Date(iso)) + " HKT";
+}
+function renderAudit() {
+  const ol = document.getElementById("auditLog");
+  const entries = (DIGEST.run_log || []).slice().reverse();
+  if (!entries.length) {
+    ol.innerHTML = `<li><span class="a-note">No runs recorded yet — the log fills as the daily pipeline runs.</span></li>`;
+    return;
+  }
+  ol.innerHTML = entries.map(e =>
+    `<li><span class="a-when">${fmtAudit(e.at)}</span><span class="a-note">${esc(e.note)}</span></li>`).join("");
+}
+
+/* ---------- tabs ---------- */
+const TAB_PANELS = { digest: "tab-digest", health: "tab-health", audit: "tab-audit" };
+document.querySelectorAll(".tabs .tab").forEach(btn => btn.onclick = () => {
+  document.querySelectorAll(".tabs .tab").forEach(t =>
+    t.setAttribute("aria-selected", String(t === btn)));
+  for (const [tab, panelId] of Object.entries(TAB_PANELS)) {
+    document.getElementById(panelId).hidden = tab !== btn.dataset.tab;
+  }
+});
 
 /* ============================================================
    MASTER RENDER
@@ -790,6 +887,7 @@ window.addEventListener("afterprint", () => {
 
 /* ---------- boot ---------- */
 renderHealth();
+renderAudit();
 render();
 </script>
 
