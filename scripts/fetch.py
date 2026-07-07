@@ -21,6 +21,12 @@ USER_AGENT = (
 TIMEOUT_SECS = 15
 MAX_RETRIES = 2
 
+# Backlog gate for a *daily* digest: feeds and listing pages return their most
+# recent N entries regardless of age (some HKMA RSS feeds carry a year of
+# history), so a source's first-ever run -- or any newly added source -- would
+# otherwise flood the digest with months-old items presented as today's news.
+MAX_ITEM_AGE_DAYS = 10
+
 DATE_FORMATS = [
     "%Y-%m-%d",
     "%d %B %Y",
@@ -253,6 +259,19 @@ def _extract_page_items(html, base_url, selector=None, href_pattern=None):
     return items
 
 
+def _is_recent(item):
+    """True when the item's published date is within MAX_ITEM_AGE_DAYS.
+    Unparseable dates pass -- both parsers fall back to now() anyway, and a
+    date bug must degrade to 'maybe stale' rather than 'silently dropped'."""
+    try:
+        published = datetime.fromisoformat(item["published"])
+    except (KeyError, TypeError, ValueError):
+        return True
+    if published.tzinfo is None:
+        published = published.replace(tzinfo=timezone.utc)
+    return datetime.now(timezone.utc) - published <= timedelta(days=MAX_ITEM_AGE_DAYS)
+
+
 def fetch_source(source, require_relevant=True):
     """Fetch raw items for one source dict. Returns (items, error).
 
@@ -280,7 +299,13 @@ def fetch_source(source, require_relevant=True):
     raw_count = len(items)  # pre-relevance-filter -- a healthy source with no
     # crypto news today must not look like a dead one to heal.py.
     if require_relevant:
-        items = [it for it in items if is_relevant(it["title"], it.get("summary", ""))]
+        # The age gate lives behind the same flag: heal.py validates candidate
+        # replacement URLs structurally, and a working source whose latest
+        # items happen to be old must still validate.
+        items = [
+            it for it in items
+            if is_relevant(it["title"], it.get("summary", "")) and _is_recent(it)
+        ]
 
     for item in items:
         item["source"] = source["name"]
