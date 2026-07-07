@@ -765,7 +765,7 @@
       },
       "summary": "Chainalysis announced automatic token support for Robinhood's new blockchain, meaning assets on that chain can be traced in its analytics tools from launch.",
       "so_what": "Day-one analytics coverage of new chains matters for monitoring completeness — a gap between chain launch and tracing support is a window where flows go unseen.",
-      "first_seen": "2026-07-01T19:30:58+00:00",
+      "first_seen": "2026-07-07T12:05:14.831025+00:00",
       "date_source": "feed"
     },
     {
@@ -789,7 +789,7 @@
       },
       "summary": "Elliptic explains that the transitional window under the European Union's Markets in Crypto-Assets Regulation (MiCA) closed on 1 July 2026, after which only firms with full authorisation may serve European Union clients.",
       "so_what": "European counterparties still operating on lapsed national registrations are now unauthorised — worth reflecting in counterparty screening and periodic-review triggers.",
-      "first_seen": "2026-06-30T13:27:12+00:00",
+      "first_seen": "2026-07-07T12:05:14.831025+00:00",
       "date_source": "feed"
     },
     {
@@ -1166,6 +1166,10 @@
     {
       "at": "2026-07-07T12:34:03.270648+00:00",
       "note": "Recovered 4 item(s) (Hong Kong, European Union) wrongly deleted by an earlier maintenance step: a backfill script backdated their first_seen to their published date, which then made the 8-day retention prune remove them entirely. Restored from the last known-good snapshot with true first_seen intact."
+    },
+    {
+      "at": "2026-07-07T13:16:41.448454+00:00",
+      "note": "Corrected residual first_seen corruption on 2 item(s) that the earlier restoration missed (Chainalysis, Elliptic — freshly discovered items whose first_seen the backfill step had also wrongly backdated, but which weren't present in the git-history snapshot used for the first repair since they were added after it). Reconciled against data/seen-items.json, the pipeline's authoritative discovery-time record."
     }
   ]
 }
