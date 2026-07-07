@@ -294,5 +294,41 @@
 <category>GLOBAL</category>
 <category>news</category>
 </item>
+<item>
+<title>FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market</title>
+<link>https://www.info.gov.hk/gia/general/202606/29/P2026062900677.htm</link>
+<guid isPermaLink="false">hk-fstb-press-releases-cf3d3aabb6</guid>
+<pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+<description>The Financial Services and the Treasury Bureau and the Hong Kong Monetary Authority announced further measures to expand the use of distributed ledger technology in Hong Kong's fixed-income market. So what: Signals a continuing official push to make tokenised debt mainstream in Hong Kong — expect follow-on guidance touching settlement, custody and record-keeping controls. [official]</description>
+<category>HK</category>
+<category>news</category>
+</item>
+<item>
+<title>The European Banking Authority consults on a draft methodology for setting fines under the Markets in Crypto-Assets Regulation (MiCA)</title>
+<link>https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets</link>
+<guid isPermaLink="false">eu-eba-news-23fee21bfb</guid>
+<pubDate>Fri, 26 Jun 2026 13:27:24 +0000</pubDate>
+<description>The European Banking Authority is consulting on a draft methodology for setting fines on issuers it supervises under the EU's Markets in Crypto-Assets Regulation. So what: A concrete preview of how penalties under the EU Markets in Crypto-Assets Regulation will be sized — a useful benchmark when gauging the EU enforcement exposure of stablecoin and token issuers. [official]</description>
+<category>EU</category>
+<category>consultation</category>
+</item>
+<item>
+<title>The EBA updates validation rules for supervisory reporting</title>
+<link>https://www.eba.europa.eu/publications-and-media/press-releases/eba-updates-validation-rules-supervisory-reporting</link>
+<guid isPermaLink="false">eu-eba-news-e444efca6b</guid>
+<pubDate>Fri, 26 Jun 2026 11:17:02 +0000</pubDate>
+<description>The European Banking Authority published updated validation rules for supervisory reporting, flagging corrections reporting institutions should apply. So what: Routine, but worth passing to regulatory-reporting teams handling EU entities, including MiCA-related returns. [official]</description>
+<category>EU</category>
+<category>guidance</category>
+</item>
+<item>
+<title>Wallet Screening Best Practices for Compliance Teams</title>
+<link>https://www.trmlabs.com/resources/blog/wallet-screening-best-practices-for-compliance-teams</link>
+<guid isPermaLink="false">global-trm-labs-insights-f5039e43fc</guid>
+<pubDate>Tue, 07 Jul 2026 07:50:47 +0000</pubDate>
+<description>TRM Labs published a guide on how compliance teams should screen cryptocurrency wallets for sanctions and financial-crime risk. So what: A useful benchmark for reviewing whether existing wallet-screening controls cover sanctions exposure, indirect risk and re-screening frequency in line with current industry practice. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
 </channel>
 </rss>

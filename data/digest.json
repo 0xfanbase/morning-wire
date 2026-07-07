@@ -23,7 +23,7 @@
       },
       "summary": "TRM Labs reported that the number of cryptocurrency hacks hit a record high in the first half of 2026, even though total losses fell below one billion United States dollars.",
       "so_what": "More frequent hacks raise the odds that client funds or counterparty exchanges are affected, so stolen-fund tracing alerts and exchange due-diligence reviews deserve continued attention.",
-      "first_seen": "2026-07-01T12:57:00+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "verified"
     },
     {
@@ -57,7 +57,7 @@
       },
       "summary": "The United States Office of Foreign Assets Control (OFAC) added 134 cryptocurrency addresses linked to Islamic State Khorasan Province to its sanctions list, tied to roughly two million United States dollars in terrorist financing.",
       "so_what": "The newly listed addresses need to reach wallet-screening data promptly, and a retrospective exposure check against them can confirm no historical flows touched client accounts.",
-      "first_seen": "2026-07-01T16:15:00+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "verified"
     },
     {
@@ -345,7 +345,7 @@
       },
       "summary": "United States President Trump described himself as strongly supportive of cryptocurrency while distancing himself from his family's commercial crypto ventures.",
       "so_what": "Top-level political support continues to shape a permissive United States policy direction, while conflict-of-interest questions around official crypto ventures remain a reputational theme to monitor.",
-      "first_seen": "2026-07-06T15:53:22+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -369,7 +369,7 @@
       },
       "summary": "Decentralised-finance protocol Summer.fi suspended its \"Lazy Summer\" investment vaults after an exploit drained about six million United States dollars.",
       "so_what": "Fresh exploit proceeds typically move fast through mixers and cross-chain bridges, so screening-provider alerts for exposure to the stolen funds are worth watching over the coming days.",
-      "first_seen": "2026-07-06T13:42:12+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -393,7 +393,7 @@
       },
       "summary": "Elliptic published an explainer tracing how the United Kingdom's newly finalised stablecoin regulatory regime was developed and what it covers.",
       "so_what": "A concise map of the United Kingdom regime helps benchmark it against the Hong Kong and European Union stablecoin frameworks when advising on cross-border issuance and custody.",
-      "first_seen": "2026-07-06T13:00:02+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -417,7 +417,7 @@
       },
       "summary": "Strategy, the software company turned bitcoin holding vehicle led by Michael Saylor, sharply accelerated its bitcoin sales, raising about 216 million United States dollars.",
       "so_what": "The largest corporate bitcoin holder switching from accumulation to sizeable sales is a market-sentiment signal relevant to collateral valuations and exposure to bitcoin-treasury companies.",
-      "first_seen": "2026-07-06T12:16:28+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -441,7 +441,7 @@
       },
       "summary": "CoinDesk reports that Ripple's preliminary crypto-asset service provider licence in Luxembourg has been upgraded to fully compliant status under the European Union's Markets in Crypto-Assets Regulation (MiCA).",
       "so_what": "Full authorisation lets Ripple passport crypto services across the European Economic Area, adding a large licensed counterparty to the European payments and custody landscape.",
-      "first_seen": "2026-07-06T10:01:24+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -469,7 +469,7 @@
       },
       "summary": "Ripple secured full authorisation as a crypto-asset service provider under the European Union's Markets in Crypto-Assets Regulation (MiCA), allowing it to offer crypto services across thirty European Economic Area countries.",
       "so_what": "A major payments-focused crypto firm gaining authorisation across the whole European Economic Area expands the set of fully licensed counterparties and sharpens comparison with Hong Kong's licensing regime.",
-      "first_seen": "2026-07-06T09:30:56+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -493,7 +493,7 @@
       },
       "summary": "South Korean authorities are developing procedures specifically for seizing and liquidating cryptocurrency in criminal and tax cases, according to a report cited by The Block.",
       "so_what": "Clearer seizure mechanics in a major Asian market offer a template regional peers may follow and affect how frozen-asset requests involving Korean counterparties are executed.",
-      "first_seen": "2026-07-06T08:35:54+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -517,7 +517,7 @@
       },
       "summary": "An explainer from The Block describes the channels sovereign wealth funds use to invest in digital assets, from exchange-traded products to direct holdings and venture stakes.",
       "so_what": "Sovereign investors entering digital assets deepen institutional flows through regulated intermediaries — useful context for onboarding and source-of-funds conversations involving state-linked vehicles.",
-      "first_seen": "2026-07-06T06:14:32+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -541,7 +541,7 @@
       },
       "summary": "The Sunday Times reported that British politician Nigel Farage failed to declare funding from a cryptocurrency gambling figure previously convicted of fraud.",
       "so_what": "Politically exposed persons with undisclosed crypto-linked funding illustrate the adverse-media and source-of-wealth checks that cryptocurrency exposure adds to customer due diligence.",
-      "first_seen": "2026-07-05T22:53:05+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -565,7 +565,7 @@
       },
       "summary": "Elliptic launched a continuous-monitoring capability that re-screens cryptocurrency wallets and transactions as risk information changes after the initial check.",
       "so_what": "Point-in-time wallet screening ages quickly; continuous re-screening options are worth weighing when reviewing blockchain-analytics tooling against ongoing monitoring obligations.",
-      "first_seen": "2026-07-02T13:00:01+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -589,7 +589,7 @@
       },
       "summary": "Chainalysis analysed the United States Office of Foreign Assets Control's update adding more than one hundred cryptocurrency wallet addresses linked to Islamic State Khorasan to its sanctions designations.",
       "so_what": "The attribution detail on the newly designated addresses supports retrospective exposure checks and tuning of sanctions-screening rules for indirect exposure.",
-      "first_seen": "2026-07-01T20:26:45+00:00",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00",
       "date_source": "page"
     },
     {
@@ -791,6 +791,98 @@
       "so_what": "European counterparties still operating on lapsed national registrations are now unauthorised — worth reflecting in counterparty screening and periodic-review triggers.",
       "first_seen": "2026-06-30T13:27:12+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "hk-fstb-press-releases-cf3d3aabb6",
+      "jurisdiction": "HK",
+      "source": "Financial Services and the Treasury Bureau — Press releases",
+      "title": "FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market",
+      "url": "https://www.info.gov.hk/gia/general/202606/29/P2026062900677.htm",
+      "published": "2026-06-29T00:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Financial Services and the Treasury Bureau — Press releases",
+            "url": "https://www.info.gov.hk/gia/general/202606/29/P2026062900677.htm"
+          }
+        ]
+      },
+      "summary": "The Financial Services and the Treasury Bureau and the Hong Kong Monetary Authority announced further measures to expand the use of distributed ledger technology in Hong Kong's fixed-income market.",
+      "so_what": "Signals a continuing official push to make tokenised debt mainstream in Hong Kong — expect follow-on guidance touching settlement, custody and record-keeping controls.",
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
+    },
+    {
+      "id": "eu-eba-news-23fee21bfb",
+      "jurisdiction": "EU",
+      "source": "European Banking Authority — News",
+      "title": "The European Banking Authority consults on a draft methodology for setting fines under the Markets in Crypto-Assets Regulation (MiCA)",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets",
+      "published": "2026-06-26T13:27:24+00:00",
+      "type": "consultation",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "European Banking Authority — News",
+            "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets"
+          }
+        ]
+      },
+      "summary": "The European Banking Authority is consulting on a draft methodology for setting fines on issuers it supervises under the EU's Markets in Crypto-Assets Regulation.",
+      "so_what": "A concrete preview of how penalties under the EU Markets in Crypto-Assets Regulation will be sized — a useful benchmark when gauging the EU enforcement exposure of stablecoin and token issuers.",
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
+    },
+    {
+      "id": "eu-eba-news-e444efca6b",
+      "jurisdiction": "EU",
+      "source": "European Banking Authority — News",
+      "title": "The EBA updates validation rules for supervisory reporting",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-updates-validation-rules-supervisory-reporting",
+      "published": "2026-06-26T11:17:02+00:00",
+      "type": "guidance",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "European Banking Authority — News",
+            "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-updates-validation-rules-supervisory-reporting"
+          }
+        ]
+      },
+      "summary": "The European Banking Authority published updated validation rules for supervisory reporting, flagging corrections reporting institutions should apply.",
+      "so_what": "Routine, but worth passing to regulatory-reporting teams handling EU entities, including MiCA-related returns.",
+      "first_seen": "2026-07-07T03:54:47.072828+00:00"
+    },
+    {
+      "id": "global-trm-labs-insights-f5039e43fc",
+      "jurisdiction": "GLOBAL",
+      "source": "TRM Labs — Insights",
+      "title": "Wallet Screening Best Practices for Compliance Teams",
+      "url": "https://www.trmlabs.com/resources/blog/wallet-screening-best-practices-for-compliance-teams",
+      "published": "2026-07-07T07:50:47.227133+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "TRM Labs — Insights",
+            "url": "https://www.trmlabs.com/resources/blog/wallet-screening-best-practices-for-compliance-teams"
+          }
+        ]
+      },
+      "summary": "TRM Labs published a guide on how compliance teams should screen cryptocurrency wallets for sanctions and financial-crime risk.",
+      "so_what": "A useful benchmark for reviewing whether existing wallet-screening controls cover sanctions exposure, indirect risk and re-screening frequency in line with current industry practice.",
+      "first_seen": "2026-07-07T07:50:49.166227+00:00"
     }
   ],
   "source_health": [
@@ -1066,6 +1158,14 @@
     {
       "at": "2026-07-07T12:10:08.994730+00:00",
       "note": "Backfill: filed 19 items under their publication days so the last-7-days archive reflects the week (3 on 2026-06-26, 1 on 2026-06-29, 1 on 2026-06-30, 1 on 2026-07-01, 4 on 2026-07-02, 9 on 2026-07-06)."
+    },
+    {
+      "at": "2026-07-07T12:33:15.805137+00:00",
+      "note": "Corrected 13 item(s) whose first_seen was wrongly backdated to their published date by an earlier maintenance step -- this had incorrectly evicted genuinely-discovered-today items (Hong Kong, European Union) from the Digest tab into the archive. first_seen now reflects true discovery time again, per the pipeline's documented first_seen-vs-published design."
+    },
+    {
+      "at": "2026-07-07T12:34:03.270648+00:00",
+      "note": "Recovered 4 item(s) (Hong Kong, European Union) wrongly deleted by an earlier maintenance step: a backfill script backdated their first_seen to their published date, which then made the 8-day retention prune remove them entirely. Restored from the last known-good snapshot with true first_seen intact."
     }
   ]
 }
