@@ -1,0 +1,55 @@
+name: Daily digest
+
+on:
+  # '0 23 * * 0-4' UTC = 07:00 HKT Mon-Fri.
+  # HKT is UTC+8 with no DST, so 23:00 UTC rolls into the next calendar day
+  # in Hong Kong. Day-of-week 0-4 (Sun-Thu UTC) is therefore Mon-Fri HKT.
+  # GitHub's cron scheduler can drift 5-15 minutes at peak load, and a
+  # schedule trigger is auto-disabled after 60 days with no commits to the
+  # repo -- the daily commit-back in this workflow keeps it active.
+  schedule:
+    - cron: '0 23 * * 0-4'
+  workflow_dispatch: {}
+
+concurrency:
+  group: reg-radar-digest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run digest pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/run.py
+
+      - name: Commit and push updated digest
+        run: |
+          git config user.name "reg-radar-bot"
+          git config user.email "reg-radar-bot@users.noreply.github.com"
+          git add data/ docs/ CHANGELOG-sources.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: update digest [skip ci]"
+          git push || (git pull --rebase && git push)

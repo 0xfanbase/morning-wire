@@ -1,0 +1,127 @@
+{
+  "HKMA — Press releases": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885518+00:00",
+    "last_status": "ok"
+  },
+  "HKMA — Circulars & guidance": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885530+00:00",
+    "last_status": "ok"
+  },
+  "SFC — News": {
+    "consecutive_failures": 1,
+    "last_checked": "2026-07-07T02:33:40.885535+00:00",
+    "last_status": "ok"
+  },
+  "SFC — Circulars": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885538+00:00",
+    "last_status": "ok"
+  },
+  "FSTB — Press releases": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885542+00:00",
+    "last_status": "ok"
+  },
+  "SFC — VATP register": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885545+00:00",
+    "last_status": "ok"
+  },
+  "PBoC — Press releases": {
+    "consecutive_failures": 1,
+    "last_checked": "2026-07-07T02:33:40.885549+00:00",
+    "last_status": "ok"
+  },
+  "CoinDesk — China policy": {
+    "consecutive_failures": 1,
+    "last_checked": "2026-07-07T02:33:40.885558+00:00",
+    "last_status": "ok"
+  },
+  "The Block — China policy": {
+    "consecutive_failures": 1,
+    "last_checked": "2026-07-07T02:33:40.885562+00:00",
+    "last_status": "ok"
+  },
+  "FinCEN — Press releases": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885566+00:00",
+    "last_status": "ok"
+  },
+  "OFAC — Recent actions": {
+    "consecutive_failures": 1,
+    "last_checked": "2026-07-07T02:33:40.885570+00:00",
+    "last_status": "ok"
+  },
+  "SEC — Press releases": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885573+00:00",
+    "last_status": "ok"
+  },
+  "CFTC — Press releases": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885576+00:00",
+    "last_status": "ok"
+  },
+  "OCC — News releases": {
+    "consecutive_failures": 1,
+    "last_checked": "2026-07-07T02:33:40.885579+00:00",
+    "last_status": "ok"
+  },
+  "Federal Reserve — Press releases": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885583+00:00",
+    "last_status": "ok"
+  },
+  "ESMA — News": {
+    "consecutive_failures": 1,
+    "last_checked": "2026-07-07T02:33:40.885586+00:00",
+    "last_status": "ok"
+  },
+  "EBA — News": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885588+00:00",
+    "last_status": "ok"
+  },
+  "MAS — Media releases": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885591+00:00",
+    "last_status": "ok"
+  },
+  "FATF — Publications": {
+    "consecutive_failures": 1,
+    "last_checked": "2026-07-07T02:33:40.885595+00:00",
+    "last_status": "ok"
+  },
+  "BIS / Basel Committee — Press releases": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885598+00:00",
+    "last_status": "ok"
+  },
+  "FSB — Press releases": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885607+00:00",
+    "last_status": "ok"
+  },
+  "CoinDesk — Policy": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885610+00:00",
+    "last_status": "ok"
+  },
+  "The Block — Policy": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885613+00:00",
+    "last_status": "ok"
+  },
+  "CoinDesk — Institutional moves": {
+    "consecutive_failures": 0,
+    "last_checked": "2026-07-07T02:33:40.885616+00:00",
+    "last_status": "ok"
+  },
+  "The Block — Institutional moves": {
+    "consecutive_failures": 1,
+    "last_checked": "2026-07-07T02:33:40.885619+00:00",
+    "last_status": "ok"
+  }
+}

@@ -1,0 +1,297 @@
+[
+  {
+    "name": "HKMA — Press releases",
+    "jurisdiction": "HK",
+    "kind": "feed",
+    "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_press-release.xml",
+    "tier": "official"
+  },
+  {
+    "name": "HKMA — Circulars & guidance",
+    "jurisdiction": "HK",
+    "kind": "feed",
+    "url": "https://www.hkma.gov.hk/eng/other-information/rss/rss_circulars.xml",
+    "tier": "official"
+  },
+  {
+    "name": "SFC — News",
+    "jurisdiction": "HK",
+    "kind": "feed",
+    "url": "https://www.sfc.hk/en/RSS-Feeds/Press-releases",
+    "tier": "official"
+  },
+  {
+    "name": "SFC — Circulars",
+    "jurisdiction": "HK",
+    "kind": "feed",
+    "url": "https://www.sfc.hk/en/RSS-Feeds/Circulars",
+    "tier": "official"
+  },
+  {
+    "name": "FSTB — Press releases",
+    "jurisdiction": "HK",
+    "kind": "page",
+    "url": "https://www.fstb.gov.hk/en/news/press/index.php",
+    "tier": "official"
+  },
+  {
+    "name": "SFC — VATP register",
+    "jurisdiction": "HK",
+    "kind": "register",
+    "url": "https://www.sfc.hk/en/Welcome-to-the-Fintech-Contact-Point/Virtual-assets/Virtual-asset-trading-platforms-operators/Lists-of-virtual-asset-trading-platforms",
+    "tier": "official",
+    "selector": ".table-vatp-licensed tr",
+    "column": 1
+  },
+  {
+    "name": "PBoC — Press releases",
+    "jurisdiction": "CN",
+    "kind": "page",
+    "url": "https://www.pbc.gov.cn/en/3688110/3688172/2026/index.html",
+    "tier": "official",
+    "selector": "ul.prhhul li"
+  },
+  {
+    "name": "CoinDesk — China policy",
+    "jurisdiction": "CN",
+    "kind": "feed",
+    "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "tier": "industry",
+    "keywords": [
+      "china",
+      "chinese",
+      "beijing",
+      "hong kong",
+      "pboc",
+      "mainland",
+      "shanghai",
+      "hk sfc",
+      "hkma"
+    ]
+  },
+  {
+    "name": "The Block — China policy",
+    "jurisdiction": "CN",
+    "kind": "feed",
+    "url": "https://www.theblock.co/rss.xml",
+    "tier": "industry",
+    "keywords": [
+      "china",
+      "chinese",
+      "beijing",
+      "hong kong",
+      "pboc",
+      "mainland",
+      "shanghai",
+      "hk sfc",
+      "hkma"
+    ]
+  },
+  {
+    "name": "FinCEN — Press releases",
+    "jurisdiction": "US",
+    "kind": "page",
+    "url": "https://www.fincen.gov/news/press-releases",
+    "tier": "official",
+    "selector": ".fincen-news-article"
+  },
+  {
+    "name": "OFAC — Recent actions",
+    "jurisdiction": "US",
+    "kind": "page",
+    "url": "https://ofac.treasury.gov/recent-actions",
+    "tier": "official",
+    "selector": ".views-row"
+  },
+  {
+    "name": "SEC — Press releases",
+    "jurisdiction": "US",
+    "kind": "feed",
+    "url": "https://www.sec.gov/news/pressreleases.rss",
+    "tier": "official"
+  },
+  {
+    "name": "CFTC — Press releases",
+    "jurisdiction": "US",
+    "kind": "feed",
+    "url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml/all",
+    "tier": "official"
+  },
+  {
+    "name": "OCC — News releases",
+    "jurisdiction": "US",
+    "kind": "feed",
+    "url": "https://www.occ.gov/rss/occ_news.xml",
+    "tier": "official"
+  },
+  {
+    "name": "Federal Reserve — Press releases",
+    "jurisdiction": "US",
+    "kind": "feed",
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "tier": "official"
+  },
+  {
+    "name": "ESMA — News",
+    "jurisdiction": "EU",
+    "kind": "page",
+    "url": "https://www.esma.europa.eu/press-news/esma-news",
+    "tier": "official",
+    "selector": "article.node--type-news"
+  },
+  {
+    "name": "EBA — News",
+    "jurisdiction": "EU",
+    "kind": "feed",
+    "url": "https://eba.europa.eu/news-press/news/rss.xml",
+    "tier": "official"
+  },
+  {
+    "name": "MAS — Media releases",
+    "jurisdiction": "SG",
+    "kind": "page",
+    "url": "https://www.mas.gov.sg/news?content_type=Media+Releases",
+    "tier": "official"
+  },
+  {
+    "name": "FATF — Publications",
+    "jurisdiction": "GLOBAL",
+    "kind": "page",
+    "url": "https://www.fatf-gafi.org/en/publications.html",
+    "tier": "official"
+  },
+  {
+    "name": "BIS / Basel Committee — Press releases",
+    "jurisdiction": "GLOBAL",
+    "kind": "feed",
+    "url": "https://www.bis.org/doclist/all_pressrels.rss",
+    "tier": "official"
+  },
+  {
+    "name": "FSB — Press releases",
+    "jurisdiction": "GLOBAL",
+    "kind": "page",
+    "url": "https://www.fsb.org/press/press-releases/",
+    "tier": "official"
+  },
+  {
+    "name": "CoinDesk — Policy",
+    "jurisdiction": "GLOBAL",
+    "kind": "feed",
+    "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "tier": "industry",
+    "categories": [
+      "policy",
+      "regulation"
+    ],
+    "exclude_keywords": [
+      "china",
+      "chinese",
+      "beijing",
+      "hong kong",
+      "pboc",
+      "mainland",
+      "shanghai",
+      "hk sfc",
+      "hkma"
+    ]
+  },
+  {
+    "name": "The Block — Policy",
+    "jurisdiction": "GLOBAL",
+    "kind": "feed",
+    "url": "https://www.theblock.co/rss.xml",
+    "tier": "industry",
+    "categories": [
+      "policy",
+      "regulation"
+    ],
+    "exclude_keywords": [
+      "china",
+      "chinese",
+      "beijing",
+      "hong kong",
+      "pboc",
+      "mainland",
+      "shanghai",
+      "hk sfc",
+      "hkma"
+    ]
+  },
+  {
+    "name": "CoinDesk — Institutional moves",
+    "jurisdiction": "GLOBAL",
+    "kind": "feed",
+    "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "tier": "industry",
+    "keywords": [
+      "jpmorgan",
+      "jp morgan",
+      "j.p. morgan",
+      "dbs bank",
+      "dbs group",
+      "hsbc",
+      "standard chartered",
+      "citigroup",
+      "citibank",
+      "goldman sachs",
+      "morgan stanley",
+      "blackrock",
+      "fidelity",
+      "bny mellon",
+      "state street",
+      "ubs",
+      "deutsche bank",
+      "barclays",
+      "bnp paribas",
+      "societe generale",
+      "bank of america",
+      "wells fargo",
+      "visa",
+      "mastercard",
+      "swift",
+      "franklin templeton",
+      "vaneck",
+      "nomura",
+      "dbs bank"
+    ]
+  },
+  {
+    "name": "The Block — Institutional moves",
+    "jurisdiction": "GLOBAL",
+    "kind": "feed",
+    "url": "https://www.theblock.co/rss.xml",
+    "tier": "industry",
+    "keywords": [
+      "jpmorgan",
+      "jp morgan",
+      "j.p. morgan",
+      "dbs bank",
+      "dbs group",
+      "hsbc",
+      "standard chartered",
+      "citigroup",
+      "citibank",
+      "goldman sachs",
+      "morgan stanley",
+      "blackrock",
+      "fidelity",
+      "bny mellon",
+      "state street",
+      "ubs",
+      "deutsche bank",
+      "barclays",
+      "bnp paribas",
+      "societe generale",
+      "bank of america",
+      "wells fargo",
+      "visa",
+      "mastercard",
+      "swift",
+      "franklin templeton",
+      "vaneck",
+      "nomura",
+      "dbs bank"
+    ]
+  }
+]

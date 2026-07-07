@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Reg Radar — Daily Digital-Asset Regulatory Digest</title>
+
+<style>
+  /* ============================================================
+     THEME TOKENS
+     ============================================================ */
+  :root {
+    --bg:        #FAF9F5;   /* warm ivory */
+    --bg-2:      #F5F0E8;   /* deeper cream for panels */
+    --bg-inset:  #F0EADF;   /* inset / archive */
+    --ink:       #1F1E1D;   /* primary text */
+    --ink-2:     #3D3929;   /* secondary text */
+    --ink-3:     #6B6558;   /* muted / meta */
+    --accent:    #C15F3C;   /* terracotta */
+    --accent-h:  #DA7756;   /* terracotta hover */
+    --border:    #E6DFD2;   /* soft warm border */
+    --border-2:  #D8CFBE;   /* firmer border */
+    --card:      #FFFDF9;   /* card surface, slightly above bg */
+    --shadow:    0 1px 2px rgba(31,30,29,.04), 0 1px 8px rgba(31,30,29,.03);
+    --ok:        #4F7A52;   /* muted green */
+    --warn:      #B4762A;   /* muted amber */
+    --danger:    #B0503C;   /* muted red */
+    --serif: Georgia, 'Iowan Old Style', Charter, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  html[data-theme="dark"] {
+    --bg:        #1F1E1D;
+    --bg-2:      #262624;
+    --bg-inset:  #201F1D;
+    --ink:       #F3EFE6;
+    --ink-2:     #D6CFC0;
+    --ink-3:     #9A9384;
+    --accent:    #DA7756;
+    --accent-h:  #E8906F;
+    --border:    #35332F;
+    --border-2:  #423F39;
+    --card:      #262624;
+    --shadow:    0 1px 2px rgba(0,0,0,.25), 0 1px 10px rgba(0,0,0,.18);
+    --ok:        #7DA97F;
+    --warn:      #D6A25B;
+    --danger:    #D98A73;
+  }
+
+  /* ============================================================
+     BASE
+     ============================================================ */
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    transition: background .25s ease, color .25s ease;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-h); text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px 64px; }
+
+  /* ============================================================
+     HEADER
+     ============================================================ */
+  header.masthead {
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky; top: 0; z-index: 20;
+    backdrop-filter: saturate(1.1);
+  }
+  .mast-inner {
+    max-width: 720px; margin: 0 auto;
+    padding: 18px 20px 14px;
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+  }
+  .wordmark {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 27px;
+    letter-spacing: -.01em;
+    line-height: 1.05;
+    margin: 0;
+    display: flex; align-items: center; gap: 9px;
+  }
+  .radar-dot {
+    width: 11px; height: 11px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent);
+    flex: 0 0 auto;
+  }
+  .mast-meta { font-size: 13.5px; color: var(--ink-3); margin: 5px 0 0; }
+  .mast-meta strong { color: var(--ink-2); font-weight: 600; }
+
+  .theme-toggle {
+    flex: 0 0 auto;
+    min-width: 44px; min-height: 44px;
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    padding: 0 12px;
+    border: 1px solid var(--border-2);
+    border-radius: 999px;
+    background: var(--card);
+    color: var(--ink-2);
+    font-family: var(--sans); font-size: 13px; font-weight: 600;
+    cursor: pointer;
+    transition: border-color .2s, color .2s;
+  }
+  .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+  .theme-toggle .ico { font-size: 15px; }
+
+  .disclaimer-line {
+    max-width: 720px; margin: 0 auto;
+    padding: 0 20px 12px;
+    font-size: 12.5px; color: var(--ink-3);
+    display: flex; align-items: center; gap: 7px;
+  }
+  .disclaimer-line .bolt { color: var(--accent); }
+
+  /* ============================================================
+     FILTERS
+     ============================================================ */
+  .filters { padding-top: 22px; }
+  .filter-label {
+    font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--ink-3); margin: 0 0 9px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    min-height: 40px;
+    display: inline-flex; align-items: center;
+    padding: 0 15px;
+    border: 1px solid var(--border-2);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink-2);
+    font-family: var(--sans); font-size: 14px; font-weight: 500;
+    cursor: pointer; white-space: nowrap;
+    transition: all .16s ease;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .chip[aria-pressed="true"] {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--bg);
+    font-weight: 600;
+  }
+  html[data-theme="dark"] .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .chip .count { margin-left: 7px; font-size: 12px; opacity: .6; font-variant-numeric: tabular-nums; }
+  .bucket-row { margin-top: 16px; }
+  .bucket-row .chip { min-height: 36px; font-size: 13px; padding: 0 13px; }
+
+  /* ============================================================
+     WARNING BANNER
+     ============================================================ */
+  .banner {
+    display: flex; gap: 11px; align-items: flex-start;
+    margin-top: 22px; padding: 13px 15px;
+    border: 1px solid color-mix(in srgb, var(--warn) 45%, var(--border));
+    background: color-mix(in srgb, var(--warn) 10%, var(--bg));
+    border-radius: 10px;
+    font-size: 13.5px; color: var(--ink-2);
+  }
+  .banner .b-ico { color: var(--warn); font-size: 15px; line-height: 1.4; }
+  .banner strong { color: var(--ink); }
+
+  /* ============================================================
+     PRIORITY STRIP
+     ============================================================ */
+  .section-head {
+    display: flex; align-items: baseline; gap: 10px;
+    margin: 34px 0 14px;
+  }
+  .section-head h2 {
+    font-family: var(--serif); font-weight: 700; font-size: 15px;
+    letter-spacing: .01em; margin: 0; color: var(--ink);
+  }
+  .section-head .rule { flex: 1; height: 1px; background: var(--border); }
+
+  .priority {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    background: var(--card);
+    padding: 6px 4px;
+    box-shadow: var(--shadow);
+  }
+  .priority-item {
+    display: flex; gap: 11px; align-items: baseline;
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .priority-item:last-child { border-bottom: none; }
+  .priority-item .pj {
+    flex: 0 0 auto; font-size: 11px; font-weight: 700; letter-spacing: .06em;
+    color: var(--accent); min-width: 34px;
+  }
+  .priority-item a { color: var(--ink); font-weight: 600; font-size: 15px; line-height: 1.35; }
+  .priority-item a:hover { color: var(--accent); }
+
+  /* ============================================================
+     JURISDICTION GROUPS + CARDS
+     ============================================================ */
+  .juris-group { margin-top: 30px; }
+  .juris-title {
+    font-family: var(--serif); font-weight: 700; font-size: 21px;
+    letter-spacing: -.01em; margin: 0 0 3px; color: var(--ink);
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  .juris-title .jt-count { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--ink-3); }
+  .juris-sep { height: 2px; background: var(--border-2); margin: 6px 0 16px; border-radius: 2px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 17px;
+    margin-bottom: 13px;
+    box-shadow: var(--shadow);
+  }
+  .card.is-high { border-left: 3px solid var(--accent); }
+
+  .card-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .src-badge {
+    font-size: 11.5px; font-weight: 700; letter-spacing: .03em;
+    color: var(--ink-2);
+    border: 1px solid var(--border-2); border-radius: 5px;
+    padding: 2px 7px;
+    background: var(--bg-2);
+  }
+  .type-tag {
+    font-size: 11.5px; font-weight: 600;
+    border-radius: 5px; padding: 2px 8px;
+    background: oklch(0.93 0.035 var(--h));
+    color: oklch(0.42 0.09 var(--h));
+  }
+  html[data-theme="dark"] .type-tag {
+    background: oklch(0.32 0.035 var(--h));
+    color: oklch(0.82 0.06 var(--h));
+  }
+  .card-date { font-size: 12.5px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .pill {
+    font-size: 10.5px; font-weight: 700; letter-spacing: .06em;
+    border-radius: 999px; padding: 2px 8px; text-transform: uppercase;
+  }
+  .pill.new { background: color-mix(in srgb, var(--accent) 15%, transparent); color: var(--accent); }
+  .pill.update { background: color-mix(in srgb, var(--ink-3) 18%, transparent); color: var(--ink-2); }
+  .card-top .spacer { flex: 1; }
+
+  .card h3 {
+    font-family: var(--serif); font-weight: 700;
+    font-size: 19px; line-height: 1.3; letter-spacing: -.005em;
+    margin: 0 0 8px;
+  }
+  .card h3 a { color: var(--ink); }
+  .card h3 a:hover { color: var(--accent); text-decoration: none; }
+  .card h3 a .ext { font-size: 12px; color: var(--ink-3); vertical-align: middle; margin-left: 3px; }
+
+  .summary { font-size: 15.5px; color: var(--ink-2); margin: 0 0 12px; line-height: 1.55; }
+
+  .sowhat {
+    font-family: var(--serif);
+    font-size: 16px; line-height: 1.5;
+    color: var(--ink);
+    padding: 10px 13px;
+    background: color-mix(in srgb, var(--accent) 7%, var(--bg-2));
+    border-left: 2px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    margin: 0 0 13px;
+  }
+  .sowhat .lbl { color: var(--accent); font-weight: 700; font-style: italic; }
+
+  .verify {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12.5px; font-weight: 600;
+    padding: 4px 10px; border-radius: 999px;
+  }
+  .verify.official     { color: var(--ok);   background: color-mix(in srgb, var(--ok) 13%, transparent); }
+  .verify.corroborated { color: var(--ok);   background: color-mix(in srgb, var(--ok) 13%, transparent); }
+  .verify.single_source{ color: var(--warn); background: color-mix(in srgb, var(--warn) 15%, transparent); }
+
+  .corro-sources { margin: 10px 0 0; font-size: 12.5px; color: var(--ink-3); }
+  .corro-sources .cs-lbl { font-weight: 600; }
+  .corro-sources a { margin-right: 4px; }
+
+  /* ============================================================
+     EMPTY STATE
+     ============================================================ */
+  .empty {
+    text-align: center; padding: 56px 20px;
+    border: 1px dashed var(--border-2); border-radius: 14px;
+    background: var(--bg-2); margin-top: 28px;
+  }
+  .empty .e-mark { font-size: 30px; color: var(--accent); opacity: .7; }
+  .empty h3 { font-family: var(--serif); font-size: 21px; margin: 12px 0 6px; color: var(--ink); }
+  .empty p { color: var(--ink-3); font-size: 14.5px; margin: 0; }
+
+  /* ============================================================
+     ARCHIVE
+     ============================================================ */
+  .archive { margin-top: 40px; }
+  .archive summary {
+    list-style: none; cursor: pointer;
+    display: flex; align-items: center; gap: 10px;
+    padding: 15px 16px; min-height: 44px;
+    border: 1px solid var(--border); border-radius: 12px;
+    background: var(--bg-2);
+    font-family: var(--serif); font-weight: 700; font-size: 16px; color: var(--ink);
+    user-select: none;
+  }
+  .archive summary::-webkit-details-marker { display: none; }
+  .archive summary .caret { color: var(--accent); transition: transform .2s; font-size: 13px; }
+  .archive[open] summary .caret { transform: rotate(90deg); }
+  .archive summary .a-count { margin-left: auto; font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--ink-3); }
+  .archive-body { padding-top: 14px; }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  footer {
+    margin-top: 52px; padding-top: 26px;
+    border-top: 1px solid var(--border);
+    font-size: 13px; color: var(--ink-3);
+  }
+  footer h4 {
+    font-family: var(--serif); font-size: 14px; color: var(--ink-2);
+    margin: 0 0 12px; letter-spacing: .01em;
+  }
+  .health-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+  .health-table th, .health-table td {
+    text-align: left; padding: 8px 10px; font-size: 12.5px;
+    border-bottom: 1px solid var(--border);
+  }
+  .health-table th { color: var(--ink-3); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 10.5px; }
+  .health-table td { color: var(--ink-2); }
+  .hstatus { font-weight: 700; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
+  .hstatus.ok { color: var(--ok); }
+  .hstatus.replaced { color: var(--warn); }
+  .hstatus.dead { color: var(--danger); }
+  .foot-notes p { margin: 4px 0; }
+  .foot-notes .strong { color: var(--ink-2); font-weight: 600; }
+
+  /* ============================================================
+     PRINT — clean one-column digest for PDF / forwarding
+     ============================================================ */
+  @media print {
+    :root {
+      --bg:#fff; --bg-2:#fff; --bg-inset:#fff; --card:#fff;
+      --ink:#111; --ink-2:#333; --ink-3:#666;
+      --border:#ddd; --border-2:#ccc; --shadow:none;
+    }
+    header.masthead { position: static; border-bottom: 2px solid #000; }
+    .theme-toggle, .filters, .banner, .archive summary .caret { display: none !important; }
+    .archive[open] .archive-body, .archive .archive-body { display: block !important; }
+    .archive summary { border: none; background: none; padding-left: 0; }
+    .card, .priority { box-shadow: none; break-inside: avoid; page-break-inside: avoid; }
+    .juris-group, .priority-item { break-inside: avoid; }
+    a { color: #111; text-decoration: none; }
+    a[href]::after { content: ""; }
+    body { font-size: 11pt; }
+    .wrap { max-width: 100%; padding: 0; }
+  }
+
+  @media (max-width: 480px) {
+    .wordmark { font-size: 24px; }
+    .card h3 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="mast-inner">
+    <div>
+      <h1 class="wordmark"><span class="radar-dot" aria-hidden="true"></span>Reg Radar</h1>
+      <p class="mast-meta"><strong id="mast-date">—</strong> · generated <span id="mast-time">—</span></p>
+    </div>
+    <button class="theme-toggle" id="themeBtn" type="button" aria-label="Toggle colour theme">
+      <span class="ico" id="themeIco">☾</span><span id="themeLbl">Dark</span>
+    </button>
+  </div>
+  <p class="disclaimer-line"><span class="bolt" aria-hidden="true">✦</span> AI-sourced &amp; AI-generated. Verify against official sources before acting.</p>
+</header>
+
+<main class="wrap">
+  <section class="filters" aria-label="Filters">
+    <p class="filter-label">Jurisdiction</p>
+    <div class="chips" id="jurisChips"></div>
+    <div class="bucket-row">
+      <p class="filter-label">Category</p>
+      <div class="chips" id="bucketChips"></div>
+    </div>
+  </section>
+
+  <div id="banner-slot"></div>
+  <div id="priority-slot"></div>
+  <div id="feed"></div>
+  <div id="archive-slot"></div>
+
+  <footer>
+    <h4>Source health</h4>
+    <table class="health-table" id="healthTable">
+      <thead><tr><th>Source</th><th>Status</th><th>Note</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <div class="foot-notes">
+      <p><span class="strong">AI-sourced &amp; AI-generated.</span> Verify against official sources before acting.</p>
+      <p>Automated aggregation — not advice.</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+/* ============================================================
+   DIGEST — single embedded data object.
+   A downstream pipeline replaces this const with live data
+   matching the same schema; nothing below reads anything else.
+   ============================================================ */
+const DIGEST = __DIGEST_JSON__;
+
+/* ============================================================
+   LABEL MAPS — plain English in all UI chrome
+   ============================================================ */
+const TZ = "Asia/Hong_Kong";
+const TYPE_LABEL = {
+  enforcement: "Enforcement", final_rule: "Final rule", consultation: "Consultation",
+  guidance: "Guidance", designation: "Designation", licensing: "Licensing",
+  peer_move: "Peer move", speech: "Speech", news: "News"
+};
+const TYPE_HUE = {
+  enforcement: 27, designation: 15, final_rule: 255, guidance: 232, consultation: 205,
+  licensing: 150, peer_move: 172, speech: 300, news: 95
+};
+const JURIS_ORDER = ["HK", "CN", "US", "EU", "SG", "GLOBAL"];
+const JURIS_LABEL = { HK: "HK", CN: "CN", US: "US", EU: "EU", SG: "SG", GLOBAL: "Global" };
+const JURIS_FULL  = { HK: "Hong Kong", CN: "Mainland China", US: "United States", EU: "European Union", SG: "Singapore", GLOBAL: "Global" };
+const BUCKETS = {
+  ALL:        { label: "All", types: null },
+  enforce:    { label: "Enforcement", types: ["enforcement", "designation"] },
+  rules:      { label: "Rules & guidance", types: ["final_rule", "guidance", "consultation"] },
+  licpeer:    { label: "Licensing & peers", types: ["licensing", "peer_move"] },
+  other:      { label: "Other", types: ["speech", "news"] }
+};
+
+/* ---------- date helpers (all in Asia/Hong_Kong) ---------- */
+function hkDayKey(iso) {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(iso));
+}
+function fmtHeaderDate(iso) {
+  return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "long", day: "numeric", month: "long", year: "numeric" }).format(new Date(iso));
+}
+function fmtTime(iso) {
+  return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(iso)) + " HKT";
+}
+function fmtCardDate(iso) {
+  return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(iso));
+}
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+/* ============================================================
+   STATE
+   ============================================================ */
+const state = { juris: "ALL", bucket: "ALL" };
+const GEN_DAY = hkDayKey(DIGEST.generated_at);
+
+function bucketOf(type) {
+  for (const [k, v] of Object.entries(BUCKETS)) {
+    if (v.types && v.types.includes(type)) return k;
+  }
+  return "other";
+}
+function matchesFilters(it) {
+  if (state.juris !== "ALL" && it.jurisdiction !== state.juris) return false;
+  if (state.bucket !== "ALL" && !BUCKETS[state.bucket].types.includes(it.type)) return false;
+  return true;
+}
+/* Bucketing uses first_seen (the HKT date this run first ingested the item),
+   not published -- overnight US/EU items are frequently published on the
+   prior HKT calendar day and would otherwise be misfiled into the archive
+   on the very digest run that surfaces them. published is still shown as
+   the card date; first_seen only decides which section an item lands in. */
+const todayItems   = () => DIGEST.items.filter(it => hkDayKey(it.first_seen || it.published) === GEN_DAY);
+const archiveItems = () => DIGEST.items.filter(it => hkDayKey(it.first_seen || it.published) !== GEN_DAY);
+
+/* ============================================================
+   RENDER — filters
+   ============================================================ */
+function renderChips() {
+  const today = todayItems();
+  const jc = document.getElementById("jurisChips");
+  const jurisPresent = JURIS_ORDER.filter(j => DIGEST.items.some(it => it.jurisdiction === j));
+  const jList = [["ALL", "All"], ...jurisPresent.map(j => [j, JURIS_LABEL[j]])];
+  jc.innerHTML = jList.map(([val, lbl]) => {
+    const n = today.filter(it => val === "ALL" ? true : it.jurisdiction === val).length;
+    return `<button class="chip" role="button" aria-pressed="${state.juris === val}" data-juris="${val}">${esc(lbl)}<span class="count">${n}</span></button>`;
+  }).join("");
+
+  const bc = document.getElementById("bucketChips");
+  bc.innerHTML = Object.entries(BUCKETS).map(([val, def]) => {
+    const n = today.filter(it => val === "ALL" ? true : def.types.includes(it.type)).length;
+    return `<button class="chip" role="button" aria-pressed="${state.bucket === val}" data-bucket="${val}">${esc(def.label)}<span class="count">${n}</span></button>`;
+  }).join("");
+
+  jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; render(); });
+  bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; render(); });
+}
+
+/* ---------- warning banner ---------- */
+function renderBanner() {
+  const bad = DIGEST.source_health.filter(s => s.status !== "ok");
+  const slot = document.getElementById("banner-slot");
+  if (!bad.length) { slot.innerHTML = ""; return; }
+  const names = bad.map(s => `${esc(s.name)} (${s.status})`).join(", ");
+  slot.innerHTML = `<div class="banner" role="status">
+    <span class="b-ico" aria-hidden="true">⚠</span>
+    <div><strong>${bad.length} source${bad.length > 1 ? "s" : ""} need attention.</strong> ${names}. Affected items may rely on cached data — verify manually. See source-health table below.</div>
+  </div>`;
+}
+
+/* ---------- verification badge ---------- */
+function verifyBadge(v) {
+  if (v.level === "official") return `<span class="verify official">✓ Official source</span>`;
+  if (v.level === "corroborated") return `<span class="verify corroborated">✓✓ Corroborated — ${v.sources.length} sources</span>`;
+  return `<span class="verify single_source">⚠ Single source — verify</span>`;
+}
+function corroSources(v) {
+  if (v.level !== "corroborated" || !v.sources || v.sources.length < 2) return "";
+  const links = v.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ");
+  return `<div class="corro-sources"><span class="cs-lbl">Sources:</span> ${links}</div>`;
+}
+
+/* ---------- card ---------- */
+function cardHTML(it) {
+  const pill = it.status === "update"
+    ? `<span class="pill update">Updated</span>`
+    : `<span class="pill new">New</span>`;
+  return `<article class="card${it.priority === "high" ? " is-high" : ""}">
+    <div class="card-top">
+      <span class="src-badge">${esc(it.source)}</span>
+      <span class="type-tag" style="--h:${TYPE_HUE[it.type] || 90}">${esc(TYPE_LABEL[it.type] || it.type)}</span>
+      <span class="card-date">${fmtCardDate(it.published)}</span>
+      <span class="spacer"></span>
+      ${pill}
+    </div>
+    <h3><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}<span class="ext" aria-hidden="true">↗</span></a></h3>
+    <p class="summary">${esc(it.summary)}</p>
+    <p class="sowhat"><span class="lbl">→ So what:</span> ${esc(it.so_what)}</p>
+    ${verifyBadge(it.verification)}
+    ${corroSources(it.verification)}
+  </article>`;
+}
+
+/* ---------- priority strip ---------- */
+function renderPriority(items) {
+  const slot = document.getElementById("priority-slot");
+  const high = items.filter(it => it.priority === "high");
+  if (!high.length) { slot.innerHTML = ""; return; }
+  const rows = high.map(it =>
+    `<div class="priority-item">
+       <span class="pj">${esc(JURIS_LABEL[it.jurisdiction])}</span>
+       <a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+     </div>`).join("");
+  slot.innerHTML = `<div class="section-head"><h2>Priority — needs a look</h2><span class="rule"></span></div>
+    <div class="priority">${rows}</div>`;
+}
+
+/* ---------- feed grouped by jurisdiction ---------- */
+function renderFeed(items) {
+  const feed = document.getElementById("feed");
+  if (!items.length) {
+    feed.innerHTML = `<div class="empty">
+      <div class="e-mark" aria-hidden="true">☕</div>
+      <h3>Quiet day — no new items</h3>
+      <p>${state.juris === "ALL" && state.bucket === "ALL" ? "Nothing crossed the wires for today's digest." : "No items match the current filters. Try clearing them."}</p>
+    </div>`;
+    return;
+  }
+  let html = `<div class="section-head"><h2>Today · by jurisdiction</h2><span class="rule"></span></div>`;
+  JURIS_ORDER.forEach(j => {
+    const group = items.filter(it => it.jurisdiction === j)
+      .sort((a, b) => (b.priority === "high") - (a.priority === "high") || new Date(b.published) - new Date(a.published));
+    if (!group.length) return;
+    html += `<section class="juris-group">
+      <h2 class="juris-title">${esc(JURIS_FULL[j])} <span class="jt-count">${group.length} item${group.length > 1 ? "s" : ""}</span></h2>
+      <div class="juris-sep"></div>
+      ${group.map(cardHTML).join("")}
+    </section>`;
+  });
+  feed.innerHTML = html;
+}
+
+/* ---------- archive ---------- */
+function renderArchive() {
+  const slot = document.getElementById("archive-slot");
+  const arch = archiveItems().filter(matchesFilters)
+    .sort((a, b) => new Date(b.published) - new Date(a.published));
+  slot.innerHTML = `<details class="archive">
+    <summary><span class="caret" aria-hidden="true">▶</span> Last 7 days<span class="a-count">${arch.length} item${arch.length === 1 ? "" : "s"}</span></summary>
+    <div class="archive-body">
+      ${arch.length ? arch.map(cardHTML).join("") : `<div class="empty"><p>No earlier items match the current filters.</p></div>`}
+    </div>
+  </details>`;
+}
+
+/* ---------- source-health footer table ---------- */
+function renderHealth() {
+  const tb = document.querySelector("#healthTable tbody");
+  tb.innerHTML = DIGEST.source_health.map(s =>
+    `<tr>
+       <td>${esc(s.name)}</td>
+       <td><span class="hstatus ${s.status}">${s.status === "ok" ? "OK" : esc(s.status)}</span></td>
+       <td>${esc(s.note)}</td>
+     </tr>`).join("");
+}
+
+/* ============================================================
+   MASTER RENDER
+   ============================================================ */
+function render() {
+  renderChips();
+  renderBanner();
+  const today = todayItems().filter(matchesFilters);
+  renderPriority(today);
+  renderFeed(today);
+  renderArchive();
+}
+
+/* ---------- header meta ---------- */
+document.getElementById("mast-date").textContent = fmtHeaderDate(DIGEST.generated_at);
+document.getElementById("mast-time").textContent = fmtTime(DIGEST.generated_at);
+
+/* ============================================================
+   THEME — default follows prefers-color-scheme, light fallback
+   ============================================================ */
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  const dark = theme === "dark";
+  document.getElementById("themeIco").textContent = dark ? "☀" : "☾";
+  document.getElementById("themeLbl").textContent = dark ? "Light" : "Dark";
+}
+(function initTheme() {
+  // Only an explicit manual toggle is persisted (below). Auto-detection is
+  // never written back to storage -- otherwise the very first automatic
+  // load would permanently pin the theme and stop following a live OS
+  // prefers-color-scheme change on every later visit.
+  let saved = null;
+  try { saved = localStorage.getItem("regradar-theme"); } catch (e) {}
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  applyTheme(saved || (prefersDark ? "dark" : "light")); // light is the fallback
+})();
+document.getElementById("themeBtn").onclick = () => {
+  const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  applyTheme(next);
+  try { localStorage.setItem("regradar-theme", next); } catch (e) {}
+};
+
+/* ---------- boot ---------- */
+renderHealth();
+render();
+</script>
+
+
+</body></html>
