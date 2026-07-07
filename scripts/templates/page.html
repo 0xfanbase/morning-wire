@@ -1080,7 +1080,8 @@ try {
       <p>The pipeline runs each weekday around 07:00 Hong Kong time; AI enrichment follows
       within the hour. The Range selector on the Digest tab defaults to Today, with Last 7
       days and Last 30 days showing everything this page currently retains within that
-      window (not a promise of a full 30 days of history — see below); the Audit log tab
+      window, and All showing everything retained with no cutoff at all (none of these are
+      a promise of a full 30 days of history — see below); the Audit log tab
       records the last 30 data updates. Items older than seven days at ingest are not
       admitted — this is a daily wire, not a permanent archive. Your Range, Jurisdiction and
       Category choices are remembered on this device across visits — if the page ever looks
@@ -1147,8 +1148,8 @@ const BUCKETS = {
 // same items as "Last 7 days" until more history accumulates; that's honest
 // behaviour, not a bug, the same way a 30-day search filter over a week-old
 // dataset naturally returns a week's worth of results.
-const RANGE_ORDER = ["today", "7", "30"];
-const RANGE_LABEL = { today: "Today", "7": "Last 7 days", "30": "Last 30 days" };
+const RANGE_ORDER = ["today", "7", "30", "all"];
+const RANGE_LABEL = { today: "Today", "7": "Last 7 days", "30": "Last 30 days", all: "All" };
 
 /* ---------- date helpers (all in Asia/Hong_Kong) ---------- */
 function hkDayKey(iso) {
@@ -1288,9 +1289,12 @@ function discoveryNote(it) {
    today + 29 prior days). Both are upper bounds, not promises -- the
    pipeline only retains ~8 days (run.DIGEST_ITEMS_MAX_AGE_DAYS), so in
    practice "Last 30 days" shows whatever "Last 7 days" already shows until
-   more history accumulates -- honest behaviour, not a bug. */
+   more history accumulates -- honest behaviour, not a bug. "All" has no
+   cutoff at all -- everything this digest currently retains, which will
+   keep growing past 30 days as more daily history accumulates. */
 function rangeItems(range) {
   if (range === "today") return todayItems();
+  if (range === "all") return DIGEST.items.slice();
   const maxDiff = range === "7" ? 6 : 29;
   return DIGEST.items.filter(it => dayDiff(it.first_seen || it.published) <= maxDiff);
 }
@@ -1488,7 +1492,11 @@ function renderPriority(items) {
 // "Today" and the old collapsed "Last 7 days" disclosure are ONE feed now,
 // scoped by the range chips (see RANGE_ORDER/rangeItems) -- no separate
 // expand-to-see-older-items step.
-const RANGE_WIRE = { today: "today's", "7": "the last 7 days'", "30": "the last 30 days'" };
+const RANGE_WIRE = { today: "today's", "7": "the last 7 days'", "30": "the last 30 days'", all: "the full history's" };
+const RANGE_QUIET_LABEL = {
+  today: "Quiet day — no new items", "7": "No items in the last 7 days",
+  "30": "No items in the last 30 days", all: "No items yet",
+};
 function renderFeed(items) {
   const feed = document.getElementById("feed");
   const rangeScope = rangeItems(state.range);
@@ -1497,7 +1505,7 @@ function renderFeed(items) {
     // 28 items, just none matching this slice. Only claim quiet when the
     // reader is looking at everything in the selected range.
     const unfiltered = state.juris === "ALL" && state.bucket === "ALL";
-    const quietLabel = state.range === "today" ? "Quiet day — no new items" : `No items in ${RANGE_LABEL[state.range].toLowerCase()}`;
+    const quietLabel = RANGE_QUIET_LABEL[state.range];
     feed.innerHTML = `<div class="empty">
       <div class="e-mark" aria-hidden="true">${unfiltered ? "☕" : "🔍"}</div>
       <h3>${unfiltered ? quietLabel : "No items match these filters"}</h3>
