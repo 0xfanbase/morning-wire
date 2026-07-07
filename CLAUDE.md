@@ -39,7 +39,15 @@ do this:
    `{"name": "Claude summarisation", "status": "ok", "note": "Summaries written via
    Claude Code session on <YYYY-MM-DD>"}`.
 6. Re-render: `python3 scripts/render.py` (stdlib only — no pip install needed).
-7. Commit `data/digest.json` and `docs/index.html` with a `[skip ci]` message and push.
+7. Commit `data/digest.json` and `docs/index.html` with a `[skip ci]` message and push
+   to `main` (if pushing to `main` is blocked, push a branch, open a PR and merge it).
+8. **Republish the Claude Artifact** (the reader's daily URL). Transform
+   `docs/index.html` into artifact content: keep the `<title>…</title>`, the whole
+   `<style>…</style>` block and everything inside `<body>…</body>`, concatenated in
+   that order; drop the `<!DOCTYPE>`, `<html>`, `<head>`, `<body>` wrapper tags and
+   `<meta>` tags. Write it to a scratchpad file and publish with the Artifact tool,
+   passing `url: https://claude.ai/code/artifact/09355352-1a29-4e11-afbe-4b2c04b82d08`
+   so it updates the existing page (never mint a new URL), favicon `📡` (keep stable).
 
 Do NOT change the page template (`scripts/templates/page.html`) layout, the schema
 field names, or any enum values — `scripts/render.py` validates items and silently

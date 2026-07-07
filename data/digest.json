@@ -20,31 +20,8 @@
           }
         ]
       },
-      "summary": "FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:54:47.072828+00:00"
-    },
-    {
-      "id": "hk-hkma-press-releases-f0b13a24fb",
-      "jurisdiction": "HK",
-      "source": "HKMA — Press releases",
-      "title": "FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market",
-      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260629-4/",
-      "published": "2026-06-28T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "HKMA — Press releases",
-            "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/06/20260629-4/"
-          }
-        ]
-      },
-      "summary": "FSTB and HKMA to further unlock potential of distributed ledger technology in Hong Kong's fixed income market",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The FSTB and HKMA announced further measures to expand the use of distributed ledger technology in Hong Kong's fixed-income market.",
+      "so_what": "Signals a continuing official push to make tokenised debt mainstream in Hong Kong — expect follow-on guidance touching settlement, custody and record-keeping controls.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -54,7 +31,7 @@
       "title": "​The European Banking Authority consults on a draft methodology for setting fines under the Markets in Crypto-Assets Regulation (MiCA)",
       "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets",
       "published": "2026-06-26T13:27:24+00:00",
-      "type": "news",
+      "type": "consultation",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -66,8 +43,8 @@
           }
         ]
       },
-      "summary": "​The European Banking Authority consults on a draft methodology for setting fines under the Markets in Crypto-Assets Regulation (MiCA)",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The EBA is consulting on a draft methodology for setting fines on issuers it supervises under the EU's Markets in Crypto-Assets Regulation.",
+      "so_what": "A concrete preview of how MiCA penalties will be sized — a useful benchmark when gauging the EU enforcement exposure of stablecoin and token issuers.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -77,7 +54,7 @@
       "title": "​The EBA updates validation rules for supervisory reporting ​",
       "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-updates-validation-rules-supervisory-reporting",
       "published": "2026-06-26T11:17:02+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -89,31 +66,8 @@
           }
         ]
       },
-      "summary": "​The EBA updates validation rules for supervisory reporting ​",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T03:54:47.072828+00:00"
-    },
-    {
-      "id": "us-cftc-press-releases-378f480267",
-      "jurisdiction": "US",
-      "source": "CFTC — Press releases",
-      "title": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
-      "url": "https://www.cftc.gov/PressRoom/PressReleases/9258-26",
-      "published": "2026-06-18T19:59:43+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "CFTC — Press releases",
-            "url": "https://www.cftc.gov/PressRoom/PressReleases/9258-26"
-          }
-        ]
-      },
-      "summary": "CFTC, SEC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The EBA published updated validation rules for supervisory reporting, flagging corrections reporting institutions should apply.",
+      "so_what": "Routine, but worth passing to regulatory-reporting teams handling EU entities, including MiCA-related returns.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -123,7 +77,7 @@
       "title": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-57-sec-cftc-seek-public-comment-further-clarify-harmonize-derivatives-product-definitions",
       "published": "2026-06-18T18:42:47+00:00",
-      "type": "news",
+      "type": "consultation",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -135,8 +89,8 @@
           }
         ]
       },
-      "summary": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The SEC and CFTC jointly asked for public comment on clarifying and harmonising their derivatives product definitions, which shape which agency oversees digital-asset derivatives.",
+      "so_what": "Where the definitional lines land will affect how crypto derivatives are regulated and surveilled in the US — worth tracking for jurisdictional and market-conduct questions.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -146,8 +100,8 @@
       "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
       "published": "2026-06-18T13:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "consultation",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -158,8 +112,8 @@
           }
         ]
       },
-      "summary": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Federal Reserve proposed requiring certain payment-stablecoin issuers to maintain an effective customer identification programme, with a comment period now open.",
+      "so_what": "US regulators are extending core KYC obligations to stablecoin issuers — a template other regimes may mirror and a direct input for onboarding-standard comparisons.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -181,8 +135,8 @@
           }
         ]
       },
-      "summary": "GDF and Block Release Landmark Report on Self-Custody Wallets",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Global Digital Finance and Block published a joint report on self-custody wallets and their place in the digital-asset ecosystem.",
+      "so_what": "Industry positioning on self-custody feeds directly into travel-rule and unhosted-wallet risk debates — useful context when framing policy responses.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -204,8 +158,8 @@
           }
         ]
       },
-      "summary": "HKMA demonstrates potential of tokenisation to corporate treasury community",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA showcased tokenisation use cases to the corporate treasury community, continuing its promotion of tokenised money and assets.",
+      "so_what": "Growing official sponsorship means corporate clients may raise tokenised-product questions sooner than product roadmaps assume.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -227,8 +181,8 @@
           }
         ]
       },
-      "summary": "HKMA establishes Tokenised Bond Expert Group",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA established a Tokenised Bond Expert Group to advise on developing Hong Kong's tokenised bond market.",
+      "so_what": "Another institutional building block for HK tokenisation — expect standards and market-practice outputs that compliance frameworks will need to track.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -238,8 +192,8 @@
       "title": "SPM CRP-1: update on cryptoassets classification conditions",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260603-1-EN",
       "published": "2026-06-02T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "guidance",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -250,18 +204,18 @@
           }
         ]
       },
-      "summary": "SPM CRP-1: update on cryptoassets classification conditions",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA updated Supervisory Policy Manual module CRP-1 on the conditions for classifying banks' cryptoasset exposures.",
+      "so_what": "Classification drives the capital treatment of bank crypto exposures — prudential and risk teams should re-check current classifications against the update.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
       "id": "hk-sfc-circulars-5d6918c746",
       "jurisdiction": "HK",
       "source": "SFC — Circulars",
-      "title": "Circular to licensed corporations, SFC-licensed virtual asset service providers and associated entities\nEnhanced cybersecurity measures to address evolving risks arising from artificial intelligence-enabled cyberattacks",
+      "title": "Circular to licensed corporations, SFC-licensed virtual asset service providers and associated entities — Enhanced cybersecurity measures to address evolving risks arising from artificial intelligence-enabled cyberattacks",
       "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC32",
       "published": "2026-06-02T09:15:19+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -273,8 +227,8 @@
           }
         ]
       },
-      "summary": "Circular to licensed corporations, SFC-licensed virtual asset service providers and associated entities\nEnhanced cybersecurity measures to address evolving risks arising from artificial intelligence-enabled cyberattacks",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The SFC directed licensed firms, including virtual-asset service providers, to strengthen cybersecurity controls against AI-enabled attacks.",
+      "so_what": "Expect supervisory questions on AI-attack readiness at VA platforms — worth confirming vendor and platform assessments cover the circular's expectations.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -296,8 +250,8 @@
           }
         ]
       },
-      "summary": "Project Agorá shows how tokenisation can improve wholesale cross-border payments; work will advance to real-value testing",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The BIS reported that Project Agorá demonstrated how tokenisation can improve wholesale cross-border payments, with work advancing to real-value testing.",
+      "so_what": "Central-bank-grade tokenised settlement moving to real value keeps correspondent-banking modernisation on the strategic agenda.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -307,8 +261,8 @@
       "title": "Circular on provision of Relevant Stablecoin service by virtual asset trading platforms and licensed corporations",
       "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC26",
       "published": "2026-05-27T11:11:46+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "guidance",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -319,8 +273,8 @@
           }
         ]
       },
-      "summary": "Circular on provision of Relevant Stablecoin service by virtual asset trading platforms and licensed corporations",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The SFC issued a circular on how virtual asset trading platforms and licensed corporations may provide services in 'relevant stablecoins' issued by licensed issuers.",
+      "so_what": "Defines the permitted distribution channel for HK-licensed stablecoins — a key input for product-approval and intermediary-oversight checklists.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -330,7 +284,7 @@
       "title": "Circular on SFC-authorised funds with exposure to virtual assets",
       "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC31",
       "published": "2026-05-27T09:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -342,8 +296,8 @@
           }
         ]
       },
-      "summary": "Circular on SFC-authorised funds with exposure to virtual assets",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The SFC set out requirements for SFC-authorised funds seeking exposure to virtual assets.",
+      "so_what": "Widens the regulated fund wrapper for VA exposure — fund-distribution and suitability controls should reflect the updated conditions.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -353,7 +307,7 @@
       "title": "Guidance on Offering of Financing for Virtual Asset Dealing, Shared Order Book, and Client Virtual Asset Withdrawals",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-1-EN",
       "published": "2026-05-26T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -365,8 +319,8 @@
           }
         ]
       },
-      "summary": "Guidance on Offering of Financing for Virtual Asset Dealing, Shared Order Book, and Client Virtual Asset Withdrawals",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA issued guidance covering banks offering financing for virtual-asset dealing, shared order books, and client virtual-asset withdrawals.",
+      "so_what": "Directly shapes what banking services can be offered around VA dealing — relevant to product sign-off and credit-risk policy for digital-asset clients.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -376,8 +330,8 @@
       "title": "Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-2-EN",
       "published": "2026-05-26T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "guidance",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -388,8 +342,8 @@
           }
         ]
       },
-      "summary": "Virtual asset-related activities in relation to relevant stablecoins issued by licensed stablecoin issuers",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA set expectations for banks' virtual-asset activities involving relevant stablecoins issued by licensed stablecoin issuers.",
+      "so_what": "Clarifies the banking-side perimeter for handling HK-licensed stablecoins — a foundation for onboarding and monitoring rules around issuer and distribution relationships.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -399,8 +353,8 @@
       "title": "Updated Guidance on Provision of Custodial Services for Digital Assets",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-6-EN",
       "published": "2026-05-26T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "guidance",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -411,8 +365,8 @@
           }
         ]
       },
-      "summary": "Updated Guidance on Provision of Custodial Services for Digital Assets",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA updated its guidance on banks providing custodial services for digital assets.",
+      "so_what": "Custody control frameworks mapped to the earlier guidance need refreshing — safekeeping, key-management and client-asset segregation expectations may have moved.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -422,7 +376,7 @@
       "title": "Relevant Stablecoin-related Activities",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20260527-4-EN",
       "published": "2026-05-26T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -434,8 +388,8 @@
           }
         ]
       },
-      "summary": "Relevant Stablecoin-related Activities",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA issued a circular on banks' involvement in relevant stablecoin-related activities.",
+      "so_what": "Part of the HK stablecoin regime rollout — read alongside the SFC's distribution circular when mapping permissible activities.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -445,8 +399,8 @@
       "title": "FSTB and SFC publish consultation conclusions on legislative proposals for regulating virtual asset advisory and management services",
       "url": "https://www.info.gov.hk/gia/general/202605/26/P2026052600567.htm",
       "published": "2026-05-26T00:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "consultation",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -457,8 +411,8 @@
           }
         ]
       },
-      "summary": "FSTB and SFC publish consultation conclusions on legislative proposals for regulating virtual asset advisory and management services",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The FSTB and SFC published consultation conclusions on legislative proposals to regulate virtual-asset advisory and asset-management services.",
+      "so_what": "Confirms Hong Kong will extend licensing beyond trading platforms — firms advising on or managing VA portfolios should begin gap-assessing against the concluded framework.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -480,8 +434,8 @@
           }
         ]
       },
-      "summary": "Basel Committee agrees to publish report on information and communication technology risk management, progresses cryptoasset targeted review, considers targeted updates on liquidity risk principles",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Basel Committee agreed to publish a report on ICT risk management and progressed its targeted review of the cryptoasset prudential standard.",
+      "so_what": "The cryptoasset-standard review could recalibrate the capital treatment of bank crypto exposures — a slow-burn item for prudential watchers.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -492,7 +446,7 @@
       "url": "https://www.info.gov.hk/gia/general/202605/20/P2026052000240.htm",
       "published": "2026-05-20T00:00:00+00:00",
       "type": "news",
-      "priority": "normal",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -503,8 +457,8 @@
           }
         ]
       },
-      "summary": "Inland Revenue (Amendment) (Crypto-Asset Reporting Framework and Amended Common Reporting Standard) Bill 2026 to be gazetted",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Hong Kong announced that a bill implementing the OECD Crypto-Asset Reporting Framework and the amended Common Reporting Standard will be gazetted.",
+      "so_what": "CARF brings mandatory tax-transparency reporting for crypto — data, onboarding and reporting pipelines will need to identify in-scope crypto assets and users.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -526,8 +480,8 @@
           }
         ]
       },
-      "summary": "Beware of tokens purported to be associated with licensed stablecoin issuers",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA warned the public about tokens falsely claiming association with licensed stablecoin issuers.",
+      "so_what": "Fraudsters are already free-riding on the licensing regime's credibility — a scenario worth adding to scam-typology and client-communication playbooks.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -549,8 +503,8 @@
           }
         ]
       },
-      "summary": "CPMI-IOSCO assesses that the United Kingdom has implemented the Principles for financial market infrastructures for two FMI types, but recommends some improvements",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "A CPMI-IOSCO assessment found the UK has implemented the Principles for Financial Market Infrastructures for two FMI types, while recommending improvements.",
+      "so_what": "Background for FMI due diligence; limited direct digital-asset impact.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -560,8 +514,8 @@
       "title": "Granting of stablecoin issuer licences",
       "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/",
       "published": "2026-04-09T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "licensing",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -572,8 +526,8 @@
           }
         ]
       },
-      "summary": "Granting of stablecoin issuer licences",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA announced the granting of stablecoin issuer licences under Hong Kong's new regime.",
+      "so_what": "Licensed issuers now exist — screening lists, product approvals and counterparty assessments should distinguish licensed HK issuers from unlicensed lookalikes.",
       "first_seen": "2026-07-07T03:54:47.072828+00:00"
     },
     {
@@ -583,8 +537,8 @@
       "title": "Treasury Proposes Rule to Implement the GENIUS Act’s Requirements to Counter Illicit Finance",
       "url": "https://www.fincen.gov/news/news-releases/treasury-proposes-rule-implement-genius-acts-requirements-counter-illicit",
       "published": "2026-04-08T12:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "consultation",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -595,8 +549,8 @@
           }
         ]
       },
-      "summary": "Treasury Proposes Rule to Implement the GENIUS Act’s Requirements to Counter Illicit Finance",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The US Treasury proposed a rule implementing the GENIUS Act's requirements to counter illicit finance in the payment-stablecoin sector.",
+      "so_what": "Sets the AML/CFT baseline for US stablecoin issuers — a key comparator for the HK and Singapore regimes and for assessing US issuer counterparties.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -618,8 +572,8 @@
           }
         ]
       },
-      "summary": "Basel III liquidity indicators increase slightly while risk-based capital and leverage ratios are stable for large internationally active banks, latest Basel III monitoring exercise shows",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Basel Committee's latest monitoring exercise shows liquidity indicators slightly up and capital ratios stable for large internationally active banks.",
+      "so_what": "Context only; no direct digital-asset action required.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -641,8 +595,8 @@
           }
         ]
       },
-      "summary": "Governors and Heads of Supervision welcome progress to implement Basel III and discuss elements of the Basel Committee's work programme",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Governors and Heads of Supervision welcomed Basel III implementation progress and discussed the Basel Committee's work programme.",
+      "so_what": "Work-programme signals often preview future cryptoasset-standard attention — one to skim, not action.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -664,8 +618,8 @@
           }
         ]
       },
-      "summary": "Hong Kong Monetary Authority, Shanghai Data Bureau, and National Technology Innovation Center for Blockchain sign MoU to strengthen Shanghai-Hong Kong cooperation in digitised cargo trade and finance",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA, Shanghai Data Bureau and China's National Technology Innovation Center for Blockchain signed an MoU on Shanghai–Hong Kong cooperation in digitised cargo trade and finance.",
+      "so_what": "A rare formal HK–mainland blockchain channel — relevant to trade-finance digitisation and cross-border data-flow considerations.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -687,8 +641,8 @@
           }
         ]
       },
-      "summary": "Basel Committee discusses recent market developments and targeted review of cryptoasset standard",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Basel Committee discussed recent market developments and its targeted review of the cryptoasset prudential standard.",
+      "so_what": "Keep watching: changes here flow straight into the capital treatment of bank crypto exposures.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -710,8 +664,8 @@
           }
         ]
       },
-      "summary": "Designation of Domestic Systemically Important Authorized Institutions",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA published its updated designation of domestic systemically important authorised institutions.",
+      "so_what": "Prudential housekeeping; minimal direct digital-asset impact.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -721,8 +675,8 @@
       "title": "Cryptoassets standard: gazettal of revised SPM modules and code of practice",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251218-2-EN",
       "published": "2025-12-18T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "final_rule",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -733,8 +687,8 @@
           }
         ]
       },
-      "summary": "Cryptoassets standard: gazettal of revised SPM modules and code of practice",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Hong Kong gazetted revised Supervisory Policy Manual modules and a code of practice implementing the cryptoassets prudential standard.",
+      "so_what": "The Basel cryptoasset standard is now hard law in Hong Kong — capital, disclosure and booking-model implications for any bank crypto exposure.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -756,8 +710,8 @@
           }
         ]
       },
-      "summary": "Basel Committee publishes more details on the 2025 assessment of global systemically important banks",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Basel Committee published further details of its 2025 assessment of global systemically important banks.",
+      "so_what": "Reference material for prudential teams; no digital-asset-specific action.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -767,7 +721,7 @@
       "title": "Cryptoassets Standard: SPM Modules, Code of Practice, Disclosure Templates and Tables, and Banking Returns",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20251127-1-EN",
       "published": "2025-11-26T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -779,8 +733,8 @@
           }
         ]
       },
-      "summary": "Cryptoassets Standard: SPM Modules, Code of Practice, Disclosure Templates and Tables, and Banking Returns",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA issued the cryptoassets-standard package: SPM modules, code of practice, disclosure templates and banking returns.",
+      "so_what": "The operational toolkit for the new prudential regime — reporting and disclosure teams should schedule the new returns and templates.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -802,8 +756,8 @@
           }
         ]
       },
-      "summary": "HKMA announces the new phase of Project Ensemble to support real-value transactions in tokenised deposits and digital assets",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA launched a new phase of Project Ensemble supporting real-value transactions in tokenised deposits and digital assets.",
+      "so_what": "Tokenised deposits moving to real value in HK — banks participating or competing will need settlement, custody and monitoring controls ready.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -825,8 +779,8 @@
           }
         ]
       },
-      "summary": "HKMA completes e-HKD Pilot Programme and outlines future direction of e-HKD",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA completed its e-HKD pilot programme and set out the future direction for a potential retail digital Hong Kong dollar.",
+      "so_what": "No launch decision, but the direction-setting shapes long-term payments and CBDC planning assumptions.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -836,7 +790,7 @@
       "title": "Supplemental joint circular on intermediaries’ virtual asset-related activities",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250930-1-EN",
       "published": "2025-09-29T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -848,8 +802,8 @@
           }
         ]
       },
-      "summary": "Supplemental joint circular on intermediaries’ virtual asset-related activities",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The SFC and HKMA issued a supplemental joint circular on intermediaries' virtual-asset-related activities.",
+      "so_what": "Updates the core rulebook for banks and brokers distributing VA products in HK — compliance manuals citing the earlier joint circular need a version check.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -859,8 +813,8 @@
       "title": "The Wolfsberg Group issues guidance on the provision of banking services to stablecoin issuers",
       "url": "https://www.wolfsberg-group.org/news/guidance-on-the-provision-of-banking-services-to-fiat-backed-stablecoin-issuers",
       "published": "2025-09-08T00:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "guidance",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -871,8 +825,8 @@
           }
         ]
       },
-      "summary": "The Wolfsberg Group issues guidance on the provision of banking services to stablecoin issuers",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Wolfsberg Group issued guidance for banks on providing banking services to stablecoin issuers.",
+      "so_what": "The de facto industry benchmark for onboarding and monitoring stablecoin-issuer clients — a ready-made reference for policy and risk-appetite reviews.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -882,7 +836,7 @@
       "title": "Rules on cryptoassets standard and other updates",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250815-1-EN",
       "published": "2025-08-14T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -894,8 +848,8 @@
           }
         ]
       },
-      "summary": "Rules on cryptoassets standard and other updates",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA notified banks of new rules implementing the cryptoassets standard and related updates.",
+      "so_what": "Companion notification to the gazettal — confirm implementation timelines against the rules as made.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -917,8 +871,8 @@
           }
         ]
       },
-      "summary": "Joint Statement by the HKMA and the SFC on Stablecoin-related Market Movements",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA and SFC issued a joint statement responding to stablecoin-related market movements.",
+      "so_what": "Regulators publicly managing stablecoin market froth — a useful signal of supervisory temperature around the new regime.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -928,8 +882,8 @@
       "title": "Implementation of regulatory regime for stablecoin issuers",
       "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/07/20250729-4/",
       "published": "2025-07-28T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "final_rule",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -940,8 +894,8 @@
           }
         ]
       },
-      "summary": "Implementation of regulatory regime for stablecoin issuers",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA announced the implementation of Hong Kong's regulatory regime for stablecoin issuers.",
+      "so_what": "The regime is live — issuer licensing status becomes a hard gating item for any stablecoin-related product, client or listing decision in HK.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -951,7 +905,7 @@
       "title": "Gazettal of rules: cryptoassets standard and other updates",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250711-1-EN",
       "published": "2025-07-10T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -963,8 +917,8 @@
           }
         ]
       },
-      "summary": "Gazettal of rules: cryptoassets standard and other updates",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Hong Kong gazetted rules on the cryptoassets standard and related updates.",
+      "so_what": "Legal-effect confirmation of the prudential package; align capital-reporting timelines accordingly.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -974,7 +928,7 @@
       "title": "Provision of Staking Services for Virtual Assets from Custodial Services",
       "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250407-1-EN",
       "published": "2025-04-06T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -986,54 +940,8 @@
           }
         ]
       },
-      "summary": "Provision of Staking Services for Virtual Assets from Custodial Services",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T04:04:47.464900+00:00"
-    },
-    {
-      "id": "hk-hkma-circulars-guidance-68138e0212",
-      "jurisdiction": "HK",
-      "source": "HKMA — Circulars & guidance",
-      "title": "Provision of Staking Services for Virtual Assets from Custodial Services (PDF File, 131.0 KB)",
-      "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250407e1.pdf",
-      "published": "2025-04-06T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "HKMA — Circulars & guidance",
-            "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250407e1.pdf"
-          }
-        ]
-      },
-      "summary": "Provision of Staking Services for Virtual Assets from Custodial Services (PDF File, 131.0 KB)",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T04:04:47.464900+00:00"
-    },
-    {
-      "id": "hk-hkma-circulars-guidance-c4f1d46430",
-      "jurisdiction": "HK",
-      "source": "HKMA — Circulars & guidance",
-      "title": "Research Paper on Distributed Ledger Technology in the Financial Sector Annex: Distributed Ledger Technology in the Financial Sector - A Study on the Opportunities and Challenges",
-      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250319-2-EN",
-      "published": "2025-03-18T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "HKMA — Circulars & guidance",
-            "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/current/20250319-2-EN"
-          }
-        ]
-      },
-      "summary": "Research Paper on Distributed Ledger Technology in the Financial Sector Annex: Distributed Ledger Technology in the Financial Sector - A Study on the Opportunities and Challenges",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA issued a circular on banks providing staking services for virtual assets from custodial services.",
+      "so_what": "Defines how far HK bank custodians can go into staking — product and operational-risk assessments should track the stated conditions.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -1055,31 +963,8 @@
           }
         ]
       },
-      "summary": "Research Paper on Distributed Ledger Technology in the Financial Sector",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-07T04:04:47.464900+00:00"
-    },
-    {
-      "id": "hk-hkma-circulars-guidance-6ce04adcf2",
-      "jurisdiction": "HK",
-      "source": "HKMA — Circulars & guidance",
-      "title": "Research Paper on Distributed Ledger Technology in the Financial Sector (PDF File, 122.5 KB)",
-      "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250319e1.pdf",
-      "published": "2025-03-18T16:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "HKMA — Circulars & guidance",
-            "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250319e1.pdf"
-          }
-        ]
-      },
-      "summary": "Research Paper on Distributed Ledger Technology in the Financial Sector (PDF File, 122.5 KB)",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA published a research paper on distributed ledger technology in the financial sector, covering opportunities and challenges.",
+      "so_what": "Signals where official thinking on DLT adoption is heading; background reading rather than action.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -1089,7 +974,7 @@
       "title": "Circular Issued by the Securities and Futures Commission on Deficiencies and Substandard Conduct Noted in the Management of Private Funds and Discretionary Accounts (PDF File, 142.8 KB)",
       "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250128e1.pdf",
       "published": "2025-01-27T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -1101,8 +986,8 @@
           }
         ]
       },
-      "summary": "Circular Issued by the Securities and Futures Commission on Deficiencies and Substandard Conduct Noted in the Management of Private Funds and Discretionary Accounts (PDF File, 142.8 KB)",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The SFC circulated findings on deficiencies and substandard conduct in the management of private funds and discretionary accounts.",
+      "so_what": "Supervisory expectations for private-fund managers, including those running VA strategies — worth a read-across for asset-management oversight.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -1112,7 +997,7 @@
       "title": "Supervisory Incubator for Distributed Ledger Technology (DLT) (PDF File, 172.4 KB)",
       "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2025/20250108e1.pdf",
       "published": "2025-01-07T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -1124,8 +1009,8 @@
           }
         ]
       },
-      "summary": "Supervisory Incubator for Distributed Ledger Technology (DLT) (PDF File, 172.4 KB)",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA launched a Supervisory Incubator for distributed ledger technology to support banks adopting DLT safely.",
+      "so_what": "A structured channel to derisk DLT projects with the regulator — teams planning tokenisation builds should factor it into engagement plans.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     },
     {
@@ -1135,7 +1020,7 @@
       "title": "Cryptoasset disclosure requirements and standard amendments (PDF File, 189.2 KB)",
       "url": "https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/2024/20240723e1.pdf",
       "published": "2024-07-22T16:00:00+00:00",
-      "type": "news",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -1147,8 +1032,8 @@
           }
         ]
       },
-      "summary": "Cryptoasset disclosure requirements and standard amendments (PDF File, 189.2 KB)",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The HKMA issued cryptoasset disclosure requirements and standard amendments for banks.",
+      "so_what": "New disclosure line items for bank crypto exposures — finance and reporting teams should map data availability early.",
       "first_seen": "2026-07-07T04:04:47.464900+00:00"
     }
   ],
@@ -1300,8 +1185,8 @@
     },
     {
       "name": "Claude summarisation",
-      "status": "dead",
-      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
+      "status": "ok",
+      "note": "Summaries written via Claude Code session on 2026-07-07"
     }
   ]
 }
