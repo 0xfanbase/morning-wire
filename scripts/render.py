@@ -31,6 +31,29 @@ def _is_valid_iso8601(value):
         return False
 
 
+def _normalize_iso(value):
+    """Return a canonical, offset-carrying ISO string, or None if unparseable.
+
+    Two failure modes this prevents on the public page:
+    - Python's fromisoformat is far more lenient than JS Date ("20260707",
+      "2026-07-07T08", week dates) -- an accepted-but-JS-unparseable string
+      makes Intl.DateTimeFormat throw and blanks the whole digest.
+    - An offset-LESS date-time is read by JS in the VIEWER'S local timezone,
+      so the same card would show different dates to readers in different
+      countries on a page that promises Hong Kong time everywhere.
+    Naive values are assumed UTC (the pipeline's internal convention).
+    """
+    if not isinstance(value, str):
+        return None
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.isoformat()
+
+
 def _is_http_url(value):
     return isinstance(value, str) and re.match(r"^https?://", value, re.IGNORECASE) is not None
 
@@ -46,8 +69,17 @@ def _valid_item(item):
                 "priority", "status", "verification", "summary", "so_what", "first_seen")
     if not all(k in item for k in required):
         return False
-    if not _is_valid_iso8601(item["published"]) or not _is_valid_iso8601(item["first_seen"]):
-        return False
+    # Identity/text fields must be real non-empty strings: a null title would
+    # otherwise publish the literal word "null" on the public page.
+    for key in ("id", "title", "url", "source"):
+        if not isinstance(item[key], str) or not item[key].strip():
+            return False
+    # Normalize dates to canonical offset-carrying ISO (drop if unparseable).
+    for key in ("published", "first_seen"):
+        normalized = _normalize_iso(item[key])
+        if normalized is None:
+            return False
+        item[key] = normalized
     if item["type"] not in VALID_TYPES:
         return False
     if item["priority"] not in VALID_PRIORITIES:
@@ -71,6 +103,16 @@ def _valid_item(item):
     for src in sources:
         if not isinstance(src, dict) or not _is_http_url(src.get("url", "")):
             return False
+    if verification["level"] == "corroborated" and len(sources) < 2:
+        # The badge text asserts "N sources" and the client dereferences the
+        # list -- a corroborated claim without its evidence is invalid.
+        return False
+    # Degrade gracefully on missing/non-string prose rather than dropping:
+    # keyless-mode convention is summary == title.
+    if not isinstance(item["summary"], str) or not item["summary"].strip():
+        item["summary"] = item["title"]
+    if not isinstance(item["so_what"], str) or not item["so_what"].strip():
+        item["so_what"] = "Review the source directly; automated analysis unavailable."
     if item["jurisdiction"] not in VALID_JURISDICTIONS:
         item["jurisdiction"] = "GLOBAL"  # unknown jurisdiction -> fold into Global rather than drop
     return True
@@ -91,23 +133,24 @@ def sanitize_digest(digest):
     the public page. Drops individually malformed items/health rows instead
     of failing the whole render.
     """
-    generated_at = digest.get("generated_at")
-    if not _is_valid_iso8601(generated_at):
-        # hkDayKey() throws client-side on an unparseable date, blanking the
-        # whole page -- never embed a generated_at we haven't validated.
-        generated_at = datetime.now(timezone.utc).isoformat()
+    # hkDayKey() throws client-side on an unparseable date, blanking the
+    # whole page -- never embed a generated_at we haven't normalized.
+    generated_at = _normalize_iso(digest.get("generated_at")) or datetime.now(timezone.utc).isoformat()
+    # `or []` on every list: a hand-edited digest with "items": null must
+    # degrade to an empty page, not crash the render.
+    items_in = digest.get("items") or []
     clean = {
         "generated_at": generated_at,
         "top_of_mind": str(digest.get("top_of_mind") or "")[:400],
-        "items": [it for it in digest.get("items", []) if _valid_item(it)],
-        "source_health": [h for h in digest.get("source_health", []) if _valid_health_entry(h)],
+        "items": [it for it in items_in if _valid_item(it)],
+        "source_health": [h for h in (digest.get("source_health") or []) if _valid_health_entry(h)],
         "run_log": [
-            {"at": e["at"], "note": str(e.get("note") or "")[:300]}
+            {"at": _normalize_iso(e.get("at")), "note": str(e.get("note") or "")[:300]}
             for e in (digest.get("run_log") or [])
-            if isinstance(e, dict) and _is_valid_iso8601(e.get("at"))
+            if isinstance(e, dict) and _normalize_iso(e.get("at"))
         ][-30:],
     }
-    dropped = len(digest.get("items", [])) - len(clean["items"])
+    dropped = len(items_in) - len(clean["items"])
     if dropped:
         print(f"[render] dropped {dropped} malformed item(s) before publishing")
     return clean

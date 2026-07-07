@@ -13,9 +13,9 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from fetch import fetch_source
+from fetch import fetch_source, is_relevant
 from registers import _extract_entities, _get
-from summarise import get_client, MODEL, WEB_SEARCH_TYPE, _strip_fences, _extract_text
+from summarise import get_client, MODEL, WEB_SEARCH_TYPE, _extract_json_object, _extract_text
 
 logger = logging.getLogger(__name__)
 
@@ -62,7 +62,15 @@ def _validate_candidate(source, candidate):
             return False
 
     items, error, _ = fetch_source(synthetic, require_relevant=False)
-    return error is None and len(items) > 0
+    if error is not None or not items:
+        return False
+    # A no-selector "page" candidate scrapes every bare <a> on the page, so
+    # almost ANY homepage would "validate" -- and a wrong heal is permanent
+    # and invisible. Demand at least one topically relevant item in that mode:
+    # a fair bar for a replacement of a digital-asset source.
+    if synthetic["kind"] == "page" and not synthetic.get("selector"):
+        return any(is_relevant(it["title"], it.get("summary", "")) for it in items)
+    return True
 
 
 def _find_replacement(source):
@@ -86,7 +94,7 @@ def _find_replacement(source):
             tools=[WEB_SEARCH_TOOL],
             messages=[{"role": "user", "content": prompt}],
         )
-        raw = _strip_fences(_extract_text(response))
+        raw = _extract_json_object(_extract_text(response))
         candidate = json.loads(raw)
         if not candidate.get("url") or not re.match(r"^https?://", candidate["url"], re.IGNORECASE):
             return None
@@ -152,7 +160,13 @@ def health_check_and_heal(sources, fetch_results, register_health_notes):
 
         if state["consecutive_failures"] < FAILURE_THRESHOLD:
             status = "ok"
-            if source.get("kind") == "register":
+            failures = state["consecutive_failures"]
+            if failures:
+                # Sub-threshold failure must not read as "responding normally"
+                # -- the tab's own intro promises failures surface here.
+                note_text = (f"Fetch failed this run ({last_error}); {failures} consecutive "
+                             f"failure{'s' if failures > 1 else ''} — self-heal at {FAILURE_THRESHOLD}.")
+            elif source.get("kind") == "register":
                 reg_note = register_notes_by_name.get(name)
                 note_text = reg_note["note"] if reg_note else "Register responding normally"
             else:
@@ -164,7 +178,11 @@ def health_check_and_heal(sources, fetch_results, register_health_notes):
             # unfetchable from a datacenter IP. Never let heal swap in a
             # Claude-proposed alternative (which could be a wrong or unofficial
             # site that happens to fetch): that would corrupt a good source.
-            candidate = None if blocked else _find_replacement(source)
+            # Same for {year}-templated urls: a healed candidate would be a
+            # literal-year url that silently rots the following January --
+            # the exact failure the template exists to prevent.
+            no_heal = blocked or "{year}" in source.get("url", "")
+            candidate = None if no_heal else _find_replacement(source)
             if candidate and _validate_candidate(source, candidate):
                 old_url = source["url"]
                 source["url"] = candidate["url"]

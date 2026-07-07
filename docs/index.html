@@ -592,8 +592,16 @@ function fmtHeaderDate(iso) {
 function fmtTime(iso) {
   return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(iso)) + "\u00A0HKT";
 }
+function hkYear(iso) {
+  return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, year: "numeric" }).format(new Date(iso));
+}
 function fmtDay(iso) {
-  return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, day: "numeric", month: "short" }).format(new Date(iso));
+  const day = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, day: "numeric", month: "short" }).format(new Date(iso));
+  // Early January, a card published late December would read "28 Dec" under
+  // a masthead saying January -- ambiguous without a year. Append it only
+  // when it differs from the digest's own year, so normal days stay clean.
+  const y = hkYear(iso);
+  return y === hkYear(DIGEST.generated_at) ? day : `${day} ${y}`;
 }
 function fmtCardDate(iso) {
   const d = new Date(iso);
@@ -682,7 +690,7 @@ function renderBanner() {
 /* ---------- verification badge ---------- */
 function verifyBadge(v) {
   if (v.level === "official") return `<span class="verify official">✓ Official source</span>`;
-  if (v.level === "corroborated") return `<span class="verify corroborated">✓✓ Corroborated — ${v.sources.length} sources</span>`;
+  if (v.level === "corroborated") return `<span class="verify corroborated">✓✓ Corroborated — ${(v.sources || []).length} sources</span>`;
   return `<span class="verify single_source">⚠ Single source — verify</span>`;
 }
 function corroSources(v) {

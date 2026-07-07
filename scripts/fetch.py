@@ -25,36 +25,49 @@ MAX_RETRIES = 2
 # recent N entries regardless of age (some HKMA RSS feeds carry a year of
 # history), so a source's first-ever run -- or any newly added source -- would
 # otherwise flood the digest with months-old items presented as today's news.
-MAX_ITEM_AGE_DAYS = 10
+# 7 matches the page's priority-strip window exactly: anything the gate admits
+# is still young enough to headline on the day it is first seen.
+MAX_ITEM_AGE_DAYS = 7
 
+# Slash dates are inherently ambiguous; %m/%d/%Y is tried FIRST because the
+# only sources in the registry that render slash dates are US ones (FinCEN,
+# OFAC) -- with %d/%m/%Y first, "07/01/2026" (July 1, US) would parse as
+# 7 January and be silently dropped by the age gate as stale.
 DATE_FORMATS = [
     "%Y-%m-%d",
     "%d %B %Y",
     "%B %d, %Y",
     "%d %b %Y",
     "%b %d, %Y",
-    "%d/%m/%Y",
     "%m/%d/%Y",
+    "%d/%m/%Y",
     "%Y/%m/%d",
 ]
 
 # Simple topical gate so general-mandate regulator feeds (bank supervision,
 # futures, securities-at-large) don't flood the digest with non-digital-asset
 # items. Crypto-native outlets (CoinDesk/The Block) pass this trivially.
+# Substring-matched: multiword phrases and deliberate prefixes ("tokeni"
+# catches tokenise/tokenized/tokenisation; "stablecoin" catches plurals).
 RELEVANCE_KEYWORDS = [
     "crypto", "digital asset", "digital-asset", "virtual asset", "stablecoin",
-    "stable coin", "tokeni", "blockchain", "distributed ledger", "dlt",
-    "vasp", "casp", "vatp", "dpt", "web3", "web 3", "bitcoin", "btc",
-    "ethereum", "nft", "e-cny", "ecny", "cbdc", "mica", "travel rule",
+    "stable coin", "tokeni", "blockchain", "distributed ledger",
+    "vasp", "web3", "web 3", "bitcoin",
+    "ethereum", "e-cny", "ecny", "cbdc", "travel rule",
     "virtual currency", "defi", "decentralized finance", "decentralised finance",
     "crypto mixer", "crypto-asset", "cryptoasset",
     "e-hkd", "digital yuan", "digital renminbi", "digital currency",
     "project ensemble", "mbridge", "m-bridge", "wallet", "self-custody",
-    # Named assets/tickers that appear in headlines without a generic term
-    # ("Ether ETF", "Ripple/XRP", "Solana"), and OFAC's standard title for
-    # mixer/ransomware/exchange sanctions ("Cyber-related Designations") --
-    # exactly the actions this sanctions-focused digest most needs.
-    "ether", "xrp", "ripple", "solana", "cyber-related",
+    "cyber-related",
+]
+# Word-boundary-matched: short/ambiguous tokens that substring matching would
+# false-positive on ("mica" is inside chemical/economically/dynamically,
+# "casp" inside Caspian, "ether" inside whether/together, "dlt"/"btc"/"nft"
+# appear inside other codes). Also named assets whose headlines carry no
+# generic crypto term ("Ether ETF", Ripple/XRP, Solana).
+RELEVANCE_WORD_KEYWORDS = [
+    "mica", "casp", "vatp", "dpt", "dlt", "btc", "nft",
+    "ether", "xrp", "ripple", "solana",
 ]
 
 
@@ -92,11 +105,18 @@ def _get(url, use_cache=True):
     raise last_exc
 
 
+HKT = timezone(timedelta(hours=8))
+
+
 def _guess_date(text):
+    """Parse a date-only string. Anchored to midnight HONG KONG time, not UTC:
+    midnight UTC is 08:00 HKT, which the page would render as a fabricated
+    "08:00" timestamp on every date-only card -- and the template deliberately
+    hides a "00:00" HKT time as date-only noise."""
     text = text.strip()
     for fmt in DATE_FORMATS:
         try:
-            return datetime.strptime(text, fmt).replace(tzinfo=timezone.utc)
+            return datetime.strptime(text, fmt).replace(tzinfo=HKT)
         except ValueError:
             continue
     return None
@@ -104,7 +124,9 @@ def _guess_date(text):
 
 def is_relevant(*texts):
     haystack = " ".join(t for t in texts if t).lower()
-    return any(kw in haystack for kw in RELEVANCE_KEYWORDS)
+    if any(kw in haystack for kw in RELEVANCE_KEYWORDS):
+        return True
+    return _matches_any(haystack, RELEVANCE_WORD_KEYWORDS)
 
 
 def _matches_any(haystack, keywords):
@@ -254,14 +276,26 @@ def _extract_page_items(html, base_url, selector=None, href_pattern=None):
         seen_urls.add(href)
 
         published = None
-        time_tag = node.find("time") if node.name != "a" else None
+        # Bare-anchor sources (href_pattern mode: ACAMS, TRM...) have no card
+        # container, so look for the date in the anchor's PARENT card element
+        # -- stamping published=now() would defeat the backfill age gate for
+        # exactly the sources that need it most.
+        date_scope = node if node.name != "a" else (node.parent or node)
+        time_tag = date_scope.find("time")
         if time_tag and time_tag.get("datetime"):
             try:
-                published = datetime.fromisoformat(time_tag["datetime"].replace("Z", "+00:00"))
+                raw = time_tag["datetime"].strip()
+                published = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+                if published.tzinfo is None:
+                    # Offset-less values embed as naive strings the browser
+                    # would read in the VIEWER'S timezone -- dates would shift
+                    # per reader. Date-only values anchor to midnight HKT
+                    # (consistent with _guess_date); date-times assume UTC.
+                    published = published.replace(tzinfo=HKT if len(raw) == 10 else timezone.utc)
             except ValueError:
                 published = None
         if published is None:
-            date_text = node.get_text(" ", strip=True) if node.name != "a" else ""
+            date_text = date_scope.get_text(" ", strip=True)
             match = re.search(
                 r"\d{1,2}\s+\w+\s+\d{4}|\w+\s+\d{1,2},\s+\d{4}|\d{4}-\d{2}-\d{2}|\d{1,2}/\d{1,2}/\d{4}",
                 date_text,
@@ -332,10 +366,16 @@ def fetch_source(source, require_relevant=True):
         # age gate all live behind the same flag: heal.py validates candidate
         # replacement URLs structurally with require_relevant=False, so a
         # working source whose latest items are off-topic or old must validate.
+        # A source with its OWN curated keyword list (Institutional moves,
+        # Market news, China policy) is its own relevance filter: "Coinbase
+        # wins dismissal" or "Saylor's Strategy sells bitcoin" matches the
+        # source definition but contains no generic crypto term, and the
+        # global gate must not veto what the source was built to admit.
+        own_keywords = bool(source.get("keywords"))
         items = [
             it for it in items
             if _feed_topic_ok(it, source)
-            and is_relevant(it["title"], it.get("summary", ""))
+            and (own_keywords or is_relevant(it["title"], it.get("summary", "")))
             and _is_recent(it)
         ]
 

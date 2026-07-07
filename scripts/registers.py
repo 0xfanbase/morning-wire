@@ -1,5 +1,7 @@
 """Official-register snapshot + diff (e.g. SFC's list of licensed VATPs)."""
+import hashlib
 import json
+import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -10,6 +12,13 @@ from fetch import _get
 
 REGISTERS_DIR = Path(__file__).resolve().parent.parent / "data" / "registers"
 
+# A diff bigger than this fraction of the previous snapshot is treated as an
+# extraction failure (page redesign, column reorder), NOT as news -- otherwise
+# one layout change fires a flood of bogus official "licensing" items that
+# monopolise the daily item cap and permanently corrupt the baseline.
+MAX_CHURN_FRACTION = 0.5
+MAX_CHURN_FLOOR = 5  # small registers: always allow up to this many changes
+
 # Skip obvious header/nav rows and cells that are clearly not entity names.
 _SKIP_TEXT = {"", "ce reference", "company name", "platform name", "licence date",
               "license date", "application date", "closure deadline", "english", "chinese"}
@@ -17,7 +26,13 @@ _SKIP_SUBSTRINGS = ("company name",)
 
 
 def _slug(name):
-    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+    slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+    if not slug:
+        # A fully non-Latin name (e.g. a Chinese company name) slugs to "" --
+        # two such entities added the same day would share one id and the
+        # second event would be silently dropped by dedupe. Hash instead.
+        slug = hashlib.sha1(name.encode("utf-8")).hexdigest()[:10]
+    return slug
 
 
 def _extract_entities(html, selector=None, column=None):
@@ -78,17 +93,37 @@ def diff_register(source):
 
     previous = []
     if not first_run:
-        previous = json.loads(snapshot_path.read_text(encoding="utf-8")).get("entities", [])
+        try:
+            previous = json.loads(snapshot_path.read_text(encoding="utf-8")).get("entities", [])
+        except (ValueError, OSError):
+            # A truncated/corrupt snapshot must not kill the whole daily run.
+            # Re-baseline like a first run (no events) and heal the file.
+            first_run = True
 
     added = [] if first_run else sorted(set(current) - set(previous))
     removed = [] if first_run else sorted(set(previous) - set(current))
+
+    # Mass-change guard: a real register changes a few entries at a time. A
+    # wholesale diff means the extraction shifted (redesign/column reorder) --
+    # publishing it would flood the digest with bogus official items. Leave
+    # the snapshot UNTOUCHED so a fixed selector diffs against the last good
+    # baseline instead of a corrupted one.
+    if previous:
+        churn_limit = max(MAX_CHURN_FLOOR, int(len(previous) * MAX_CHURN_FRACTION))
+        if len(added) + len(removed) > churn_limit:
+            return [], [], (
+                f"register diff implausibly large ({len(added)} added, {len(removed)} removed "
+                f"vs {len(previous)} baseline) — layout change? Snapshot kept; verify manually"
+            )
 
     # Known tradeoff: the snapshot is updated NOW, before run.py's item cap
     # runs, so a register event that later falls past the 25-item cap would
     # not refire. In practice register items sort official-tier + newest and
     # land at the top of the cap; accepted for simplicity.
 
-    snapshot_path.write_text(
+    # Atomic write: a run killed mid-write must not leave a truncated snapshot.
+    tmp_path = snapshot_path.with_suffix(".json.tmp")
+    tmp_path.write_text(
         json.dumps(
             {"entities": current, "updated_at": datetime.now(timezone.utc).isoformat()},
             indent=2,
@@ -96,6 +131,7 @@ def diff_register(source):
         ),
         encoding="utf-8",
     )
+    os.replace(tmp_path, snapshot_path)
 
     return added, removed, None
 
@@ -146,7 +182,10 @@ def run_registers(sources):
     for source in sources:
         if source.get("kind") != "register":
             continue
-        added, removed, error = diff_register(source)
+        try:
+            added, removed, error = diff_register(source)
+        except Exception as exc:  # one register must never kill the whole run
+            added, removed, error = [], [], f"register processing failed: {exc}"
         if error:
             health_notes.append({"name": source["name"], "status": "dead", "note": error})
             continue

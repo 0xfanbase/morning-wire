@@ -43,12 +43,17 @@ def _canonical_url(url):
 def _dedupe_key(item):
     """Register-diff items (multiple licences added/removed in one run) all
     share the same register page as their display `url` -- keying dedupe on
-    url alone would collapse distinct entity events into one. Registers.py
-    already assigns each such item a unique, stable `id`; prefer that when
-    present and fall back to canonical URL for ordinary fetched items (which
-    don't get an `id` until after dedupe runs).
+    url alone would collapse distinct entity events into one, so they key on
+    their unique, stable `id`. Ordinary items key on canonical URL even when
+    they carry an id: _stable_id embeds the source name, and eight source
+    entries share two physical feeds -- if a story resurfaces via a different
+    source entry than the one that first won it, an id-based key would let
+    the same URL sit in the digest twice.
     """
-    return item.get("id") or _canonical_url(item.get("url"))
+    item_id = item.get("id") or ""
+    if item_id.startswith("register-"):
+        return item_id
+    return _canonical_url(item.get("url")) or item_id
 
 
 def _title_hash(title):
@@ -227,6 +232,19 @@ def main():
 
     logger.info("6/6 summarise (%d candidate items)", len(surfaced))
     summarise_ok, top_of_mind = summarise.summarise_items(surfaced)
+    if not top_of_mind:
+        # Don't wipe a same-HKT-day callout the enrichment session wrote: a
+        # keyless run (or a quiet re-run) always produces "", and overwriting
+        # would blank the page's headline synthesis until the next enrichment.
+        # Cross-day, "" stands -- yesterday's callout must not headline today.
+        try:
+            prev_gen = datetime.fromisoformat(str(previous_digest.get("generated_at", "")).replace("Z", "+00:00"))
+            prev_day = (prev_gen + timedelta(hours=8)).date()
+        except ValueError:
+            prev_day = None
+        today_hkt = (datetime.now(timezone.utc) + timedelta(hours=8)).date()
+        if prev_day == today_hkt:
+            top_of_mind = previous_digest.get("top_of_mind", "")
     if not summarise_ok:
         # Don't let a failed AI-enrichment call pass silently as if every
         # card's summary/so-what were genuinely Claude-generated -- reuse
