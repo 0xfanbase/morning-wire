@@ -64,12 +64,17 @@ Each scheduled run (`scripts/run.py`):
    Subscription alternative: skip the key entirely and run a Claude Code session on
    this repo saying "enrich today's digest" — `CLAUDE.md` contains the full recipe
    (the session writes the summaries itself, re-renders and pushes; zero API cost).
-2. **Pages** — the repository must be **public** for GitHub Pages on the free plan
-   (Settings → General → Danger zone → Change visibility; the repo is deliberately
-   neutral, `noindex`ed, and safe to make public). That is the ONLY manual step:
-   `.github/workflows/pages.yml` self-enables Pages (`configure-pages` with
-   `enablement: true`) and deploys `docs/` on every push to `main`, so no
-   Settings → Pages configuration is needed. The site serves at
+2. **Pages** — two one-time manual steps, both free:
+   1. The repository must be **public** for GitHub Pages on the free plan
+      (Settings → General → Danger zone → Change visibility; the repo is deliberately
+      neutral, `noindex`ed, and safe to make public).
+   2. Enable Pages once: Settings → Pages → under "Build and deployment", set
+      **Source: GitHub Actions**. (The workflow token cannot create the Pages site
+      itself — the REST endpoint needs repo-admin rights that `GITHUB_TOKEN` never
+      gets, so `configure-pages`' `enablement: true` alone is not enough.)
+
+   After that, `.github/workflows/pages.yml` deploys `docs/` automatically after
+   every daily digest run and on every push to `main`. The site serves at
    `https://<owner>.github.io/<repo>/` (this repo:
    `https://fandamentals.github.io/morning-wire/`) — publicly reachable, no login of
    any kind needed to view it.
