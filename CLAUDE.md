@@ -52,7 +52,7 @@ do this:
    digest" — do NOT add `[skip ci]`, the push must trigger the Pages deploy workflow)
    and push to `main` (if pushing to `main` is blocked, push a branch, open a PR and
    merge it). The push triggers `.github/workflows/pages.yml`, which publishes `docs/`
-   to https://lockout-fit.github.io/Reg-Radar/ a minute or two later. No artifact or
+   to https://fandamentals.github.io/morning-wire/ a minute or two later. No artifact or
    other publishing step is needed. Belt-and-braces: afterwards, use the GitHub MCP
    actions tools to confirm a "Deploy site to Pages" run started for your commit; if
    it didn't, dispatch `pages.yml` on `main` via `actions_run_trigger`.

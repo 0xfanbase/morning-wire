@@ -71,8 +71,8 @@ Each scheduled run (`scripts/run.py`):
    `enablement: true`) and deploys `docs/` on every push to `main`, so no
    Settings → Pages configuration is needed. The site serves at
    `https://<owner>.github.io/<repo>/` (this repo:
-   `https://lockout-fit.github.io/Reg-Radar/`) — publicly reachable, no login of any
-   kind needed to view it.
+   `https://fandamentals.github.io/morning-wire/`) — publicly reachable, no login of
+   any kind needed to view it.
 3. **Cron** — the workflow (`.github/workflows/digest.yml`) runs `0 23 * * 0-4` UTC,
    i.e. 07:00 HKT Monday–Friday (HKT is UTC+8 with no DST, so 23:00 UTC rolls into the
    next HKT calendar day). It also supports manual runs via the Actions tab
