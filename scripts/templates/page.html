@@ -423,6 +423,11 @@ try {
     color: var(--ink-3); cursor: pointer; transition: color .15s, border-color .15s;
   }
   .copycite:hover { color: var(--accent); border-color: var(--accent); }
+  /* Cards pin Copy cite to the top-right corner (uniform position on every
+     card); the meta row reserves space so badges never slide under it. */
+  .card { position: relative; }
+  .card .card-cite { position: absolute; top: 13px; right: 13px; margin-left: 0; background: var(--card); }
+  .card .card-top { padding-right: 86px; }
   .copy-briefing {
     appearance: none; border: 1px solid var(--border-2); background: var(--card);
     border-radius: 999px; padding: 5px 13px; margin-left: auto;
@@ -455,7 +460,26 @@ try {
   .filter-label {
     font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
     color: var(--ink-3); margin: 0 0 9px;
+    display: flex; align-items: center; gap: 10px;
   }
+  .clear-filter {
+    appearance: none; cursor: pointer;
+    border: 1px solid var(--accent); border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    color: var(--accent-deep);
+    font-family: var(--sans); font-size: 11px; font-weight: 700;
+    letter-spacing: .04em; text-transform: none;
+    padding: 3px 11px; min-height: 24px;
+  }
+  .clear-filter:hover { background: var(--accent); color: var(--bg); }
+  .clear-all {
+    appearance: none; cursor: pointer; margin-top: 14px;
+    border: none; border-radius: 999px;
+    background: var(--accent); color: #fff;
+    font-family: var(--sans); font-size: 14px; font-weight: 700;
+    padding: 10px 22px; min-height: 44px;
+  }
+  .clear-all:hover { background: var(--accent-h); }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; }
   .chip {
     min-height: 40px;
@@ -816,11 +840,11 @@ try {
   <div id="tab-digest">
     <section class="filters" aria-label="Filters">
       <div class="filter-group">
-        <p class="filter-label">Jurisdiction</p>
+        <p class="filter-label">Jurisdiction <button type="button" class="clear-filter" data-clear="juris" hidden>✕ Clear</button></p>
         <div class="chips" id="jurisChips"></div>
       </div>
       <div class="filter-group bucket-row">
-        <p class="filter-label">Category</p>
+        <p class="filter-label">Category <button type="button" class="clear-filter" data-clear="bucket" hidden>✕ Clear</button></p>
         <div class="chips" id="bucketChips"></div>
       </div>
     </section>
@@ -938,7 +962,8 @@ const BUCKETS = {
   ALL:        { label: "All", types: null },
   enforce:    { label: "Enforcement", types: ["enforcement", "designation"] },
   rules:      { label: "Rules & guidance", types: ["final_rule", "guidance", "consultation"] },
-  licpeer:    { label: "Licensing & peers", types: ["licensing", "peer_move"] },
+  licensing:  { label: "Licensing", types: ["licensing"] },
+  industry:   { label: "Industry intel", types: ["peer_move"] },
   news:       { label: "Market news", types: ["news"] },
   other:      { label: "Other", types: ["speech"] }
 };
@@ -965,11 +990,15 @@ function fmtDay(iso) {
   return y === hkYear(DIGEST.generated_at) ? day : `${day} ${y}`;
 }
 function fmtCardDate(iso) {
-  const d = new Date(iso);
-  const time = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false }).format(d);
   const day = fmtDay(iso);
-  // Date-only feeds land on midnight HKT -- showing "00:00" is noise.
-  return time === "00:00" ? day : `${day}, ${time}`;
+  // Date-only publishes are anchored to midnight HKT (+08:00) by the
+  // pipeline and carry no real time -- show just the day for those.
+  // Detect from the RAW value, not the rendered clock: inferring from a
+  // rendered "00:00" used to swallow GENUINE midnight-HKT times (an item
+  // published 16:00 UTC is exactly 00:00 HKT and must keep its time).
+  if (/T00:00:00(\.0+)?\+08:?00$/.test(iso)) return day;
+  const time = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(iso));
+  return `${day}, ${time}`;
 }
 function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
 
@@ -1074,6 +1103,12 @@ function renderChips() {
   jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; saveFilters(); pendingFocus = ["data-juris", b.dataset.juris]; render(); });
   bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; saveFilters(); pendingFocus = ["data-bucket", b.dataset.bucket]; render(); });
 
+  // The obvious way out of a filtered view: per-group "✕ Clear" buttons,
+  // visible only while that dimension is actually filtering.
+  document.querySelectorAll(".clear-filter").forEach(b => {
+    b.hidden = state[b.dataset.clear] === "ALL";
+  });
+
   // renderChips() rebuilds these buttons via innerHTML, which drops keyboard
   // focus to <body> and loses the user's place. Restore focus to the chip that
   // was just activated so a keyboard user stays on their control.
@@ -1092,7 +1127,7 @@ function renderBanner() {
   const names = bad.map(s => `${esc(s.name)} (${s.status})`).join(", ");
   slot.innerHTML = `<div class="banner" role="status">
     <span class="b-ico" aria-hidden="true">⚠</span>
-    <div><strong>${bad.length} source${bad.length > 1 ? "s" : ""} ${bad.length > 1 ? "need" : "needs"} attention.</strong> ${names}. Affected items may rely on cached data — verify manually. See source-health table below.</div>
+    <div><strong>${bad.length} source${bad.length > 1 ? "s" : ""} ${bad.length > 1 ? "need" : "needs"} attention.</strong> ${names}. Affected items may rely on cached data — verify manually. Details on the <button type="button" class="linklike" data-goto="health">Source health</button> tab.</div>
   </div>`;
 }
 
@@ -1136,13 +1171,13 @@ function cardHTML(it) {
     : (isNewSinceVisit(it) ? `<span class="pill new">New</span>` : "");
   return `<article class="card${it.priority === "high" ? " is-high" : ""}${READ.has(it.id) ? " is-read" : ""}"
       id="${esc(it.id)}" data-id="${esc(it.id)}">
+    <button class="copycite card-cite" type="button" data-cite="${esc(it.id)}" aria-label="Copy a citation for this item">Copy cite</button>
     <div class="card-top">
       <span class="src-badge">${esc(it.source)}</span>
       <span class="type-tag" style="--h:${TYPE_HUE[it.type] || 90}">${esc(TYPE_LABEL[it.type] || it.type)}</span>
       <span class="card-date" title="First logged ${esc(fmtAudit(it.first_seen || it.published))}">${fmtCardDate(it.published)}</span>
       <span class="spacer"></span>
       ${pill}
-      <button class="copycite" type="button" data-cite="${esc(it.id)}" aria-label="Copy a citation for this item">Copy cite</button>
     </div>
     <h4><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}<span class="ext" aria-hidden="true">↗</span></a></h4>
     <p class="summary">${esc(it.summary)}</p>
@@ -1238,7 +1273,8 @@ function renderFeed(items) {
     feed.innerHTML = `<div class="empty">
       <div class="e-mark" aria-hidden="true">${unfiltered ? "☕" : "🔍"}</div>
       <h3>${unfiltered ? "Quiet day — no new items" : "No items match these filters"}</h3>
-      <p>${unfiltered ? "Nothing crossed the wires for today's digest." : "Clear a filter to see the rest of today's " + todayItems().length + " items."}</p>
+      <p>${unfiltered ? "Nothing crossed the wires for today's digest." : "Today has " + todayItems().length + " items outside this selection."}</p>
+      ${unfiltered ? "" : `<button type="button" class="clear-all" data-clear="all">✕ Clear filters</button>`}
     </div>`;
     return;
   }
@@ -1264,7 +1300,7 @@ function renderFeed(items) {
   const filtered = state.juris !== "ALL" || state.bucket !== "ALL";
   const nSources = DIGEST.source_health.filter(s => s.name !== "Claude summarisation").length;
   html += `<p class="signoff">${filtered
-    ? `— End of matching items · ${items.length} shown — clear filters to see all ${todayItems().length} —`
+    ? `— End of matching items · ${items.length} shown · <button type="button" class="linklike" data-clear="all">clear filters</button> to see all ${todayItems().length} —`
     : `— End of today's wire · ${items.length} new item${items.length > 1 ? "s" : ""} from ${nSources} monitored sources · updated each weekday morning, Hong Kong time —`}</p>`;
   feed.innerHTML = html;
 }
@@ -1682,6 +1718,14 @@ window.addEventListener("afterprint", () => {
 
 /* ---------- delegated interactions ---------- */
 document.addEventListener("click", e => {
+  // Clear filters (per-group buttons, empty-state button, sign-off link)
+  const clr = e.target.closest("[data-clear]");
+  if (clr) {
+    if (clr.dataset.clear !== "bucket") state.juris = "ALL";
+    if (clr.dataset.clear !== "juris") state.bucket = "ALL";
+    saveFilters(); render();
+    return;
+  }
   // Copy cite
   const cite = e.target.closest(".copycite");
   if (cite) {

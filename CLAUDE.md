@@ -35,7 +35,10 @@ do this:
      acronym in parentheses only when it is the commonly used name (e.g. "the
      Financial Action Task Force (FATF)").
    - **type**: exactly one of `enforcement`, `final_rule`, `consultation`, `guidance`,
-     `designation`, `licensing`, `peer_move`, `speech`, `news`.
+     `designation`, `licensing`, `peer_move`, `speech`, `news`. Use `peer_move` for
+     digital-asset initiatives by banks, exchanges and financial institutions (HKEX,
+     DBS, HSBC, Standard Chartered, OCBC, Mox Bank, custody/tokenisation launches,
+     exchange product moves) — the page shows these under "Industry intel".
    - **priority**: `high` for enforcement actions, final rules, sanctions designations,
      licensing grants, and anything material touching HK/mainland China or the topic
      boosts (stablecoins, custody, tokenisation/RWA, prudential treatment of bank
