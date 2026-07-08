@@ -90,6 +90,10 @@ def run(repo_root):
                     {"only_in_feed": sorted(feed_guids - exp_ids), "only_in_current": sorted(exp_ids - feed_guids)},
                 ))
         except Exception as exc:
-            findings.append(finding(CHECK_ID, "warn", "docs/feed.xml could not be parsed", str(exc), {}))
+            # An unparseable feed is a total breakage for every RSS reader
+            # (Outlook, feedparser, etc.), not a soft signal -- one poisoned
+            # title can take down the whole feed for every subscriber. See
+            # audit/lessons.md L5.
+            findings.append(finding(CHECK_ID, "critical", "docs/feed.xml could not be parsed", str(exc), {}))
 
     return findings

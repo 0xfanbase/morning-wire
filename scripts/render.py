@@ -86,6 +86,25 @@ def _truncate_gracefully(text, limit):
     return cut + "…" if cut else text[:limit]
 
 
+# C0 controls other than tab/newline/CR, plus DEL, plus any surrogate code
+# point, are illegal in XML 1.0 (they break docs/feed.xml outright for every
+# reader) and a lone/unpaired surrogate additionally crashes UTF-8 encoding
+# (str.encode raises), which would crash the ENTIRE render, not just the
+# feed. json.loads happily accepts an unpaired \uD800-\uDFFF escape from a
+# scraped title into a plain Python str, so this must be scrubbed here,
+# before any such string reaches either output -- see audit/lessons.md L5.
+_ILLEGAL_TEXT_CHARS_RE = re.compile("[\x00-\x08\x0b\x0c\x0e-\x1f\x7f\ud800-\udfff]")
+
+
+def _clean_text(value):
+    """Strip characters that are illegal in XML 1.0 or that crash UTF-8
+    encoding outright, from a free-text field. Non-strings pass through
+    unchanged (callers that need a string coerce first)."""
+    if not isinstance(value, str):
+        return value
+    return _ILLEGAL_TEXT_CHARS_RE.sub("", value)
+
+
 def _valid_item(item):
     """Defensive schema gate: one malformed item must never break render for
     everyone else (a single bad date/enum used to crash the client-side
@@ -102,6 +121,10 @@ def _valid_item(item):
     for key in ("id", "title", "url", "source"):
         if not isinstance(item[key], str) or not item[key].strip():
             return False
+    for key in ("title", "source"):
+        item[key] = _clean_text(item[key])
+    if not item["title"].strip() or not item["source"].strip():
+        return False  # cleaning removed everything -- e.g. a title of only control chars
     # Normalize dates to canonical offset-carrying ISO (drop if unparseable).
     for key in ("published", "first_seen"):
         normalized = _normalize_iso(item[key])
@@ -147,7 +170,8 @@ def _valid_item(item):
             verification.pop("checked", None)
         else:
             checked["at"] = checked_at
-            checked["note"] = _truncate_gracefully(str(checked.get("note") or ""), 300)
+            checked["against"] = _clean_text(checked["against"])
+            checked["note"] = _truncate_gracefully(_clean_text(str(checked.get("note") or "")), 300)
     # Optional date provenance: whitelist or drop.
     if item.get("date_source") not in ("feed", "page", "fetch_time", "verified"):
         item.pop("date_source", None)
@@ -155,8 +179,13 @@ def _valid_item(item):
     # keyless-mode convention is summary == title.
     if not isinstance(item["summary"], str) or not item["summary"].strip():
         item["summary"] = item["title"]
+    else:
+        item["summary"] = _clean_text(item["summary"]) or item["title"]
     if not isinstance(item["so_what"], str) or not item["so_what"].strip():
         item["so_what"] = "Review the source directly; automated analysis unavailable."
+    else:
+        item["so_what"] = (_clean_text(item["so_what"]) or
+                            "Review the source directly; automated analysis unavailable.")
     if item["jurisdiction"] not in VALID_JURISDICTIONS:
         item["jurisdiction"] = "GLOBAL"  # unknown jurisdiction -> fold into Global rather than drop
     return True
@@ -173,6 +202,9 @@ def _valid_radar_entry(entry, generated_at):
         return False
     if not isinstance(entry.get("label"), str) or not entry["label"].strip():
         return False
+    entry["label"] = _clean_text(entry["label"])
+    if not entry["label"].strip():
+        return False
     if entry.get("jurisdiction") not in VALID_JURISDICTIONS:
         entry["jurisdiction"] = "GLOBAL"
     if entry.get("url") is not None and not _is_http_url(entry["url"]):
@@ -188,8 +220,8 @@ def _valid_health_entry(entry):
         return False
     if entry.get("status") not in VALID_HEALTH_STATUSES:
         return False
-    entry["note"] = str(entry.get("note") or "")
-    entry["name"] = str(entry.get("name") or "unknown source")
+    entry["note"] = _clean_text(str(entry.get("note") or ""))
+    entry["name"] = _clean_text(str(entry.get("name") or "")) or "unknown source"
     return True
 
 
@@ -206,11 +238,12 @@ def sanitize_digest(digest):
     items_in = digest.get("items") or []
     clean = {
         "generated_at": generated_at,
-        "top_of_mind": str(digest.get("top_of_mind") or "")[:400],
+        "top_of_mind": _clean_text(str(digest.get("top_of_mind") or "")[:400]),
         "items": [it for it in items_in if _valid_item(it)],
         "source_health": [h for h in (digest.get("source_health") or []) if _valid_health_entry(h)],
         "run_log": [
-            {"at": _normalize_iso(e.get("at")), "note": _truncate_gracefully(str(e.get("note") or ""), RUN_LOG_NOTE_MAX_CHARS)}
+            {"at": _normalize_iso(e.get("at")),
+             "note": _truncate_gracefully(_clean_text(str(e.get("note") or "")), RUN_LOG_NOTE_MAX_CHARS)}
             for e in (digest.get("run_log") or [])
             if isinstance(e, dict) and _normalize_iso(e.get("at"))
         ][-RUN_LOG_MAX_ENTRIES:],
@@ -253,7 +286,7 @@ def _og_strings(clean):
         desc = (f"{n} item{'s' if n != 1 else ''} across Hong Kong, mainland China, the United "
                 "States, the United Kingdom, the European Union, Singapore and global "
                 "standard-setters. AI-sourced and AI-generated — verify against official sources.")
-    return title[:200], desc[:200]
+    return _truncate_gracefully(title, 200), _truncate_gracefully(desc, 200)
 
 
 def render_feed(clean):

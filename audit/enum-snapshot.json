@@ -75,5 +75,15 @@
     "news",
     "peer_move",
     "speech"
-  ]
+  ],
+  "PAGE_HTML_JURIS_ORDER": ["HK", "CN", "US", "UK", "EU", "SG", "GLOBAL"],
+  "PAGE_HTML_JURIS_FULL": {
+    "HK": "Hong Kong",
+    "CN": "Mainland China",
+    "US": "United States",
+    "UK": "United Kingdom",
+    "EU": "European Union",
+    "SG": "Singapore",
+    "GLOBAL": "Global"
+  }
 }

@@ -8,7 +8,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://fandamentals.github.io/morning-wire/">
 <meta property="og:title" content="Digital Assets Morning Wire — 2026-07-08">
-<meta property="og:description" content="Today&#x27;s top compliance items: the United States derivatives regulator charged a North Carolina fund manager with a $14 million crypto-linked fraud, and the United Kingdom&#x27;s markets regulator published">
+<meta property="og:description" content="Today&#x27;s top compliance items: the United States derivatives regulator charged a North Carolina fund manager with a $14 million crypto-linked fraud, and the United Kingdom&#x27;s markets regulator…">
 <meta property="og:image" content="https://fandamentals.github.io/morning-wire/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="Digital Assets Morning Wire" href="https://fandamentals.github.io/morning-wire/feed.xml">
@@ -2042,7 +2042,10 @@ function briefingStrings() {
 function buildWeekView() {
   const wk = document.getElementById("weekview");
   const byDay = {};
-  DIGEST.items.forEach(it => { const k = hkDayKey(it.first_seen || it.published); (byDay[k] = byDay[k] || []).push(it); });
+  // Same 7-day window as the "Last 7 days" chip (rangeItems("7")) -- this
+  // print view exists specifically to match that on-screen range, not
+  // whatever the pipeline happens to still retain (up to ~8 days).
+  rangeItems("7").forEach(it => { const k = hkDayKey(it.first_seen || it.published); (byDay[k] = byDay[k] || []).push(it); });
   wk.innerHTML = `<h2>Week in review — ${esc(fmtHeaderDate(DIGEST.generated_at))}</h2>` +
     Object.keys(byDay).sort().reverse().map(k =>
       `<h3 class="wk-day">${esc(fmtHeaderDate(byDay[k][0].first_seen || byDay[k][0].published))}</h3>` +

