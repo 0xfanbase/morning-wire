@@ -45,6 +45,7 @@ PROTECTED_CHECK_IDS = {
     "render_drops",
     "docs_feed_parity",
     "enum_constant_freeze",
+    "workflow_injection",
 }
 
 

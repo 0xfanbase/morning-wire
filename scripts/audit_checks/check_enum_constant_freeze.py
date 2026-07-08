@@ -49,6 +49,27 @@ def _page_html_type_keys(repo_root):
     return sorted(label_keys), sorted(bucket_types)
 
 
+def _page_html_juris_maps(repo_root):
+    """A jurisdiction code's MEANING -- its display order and its full name --
+    lives only in page.html's JURIS_ORDER/JURIS_FULL, client-side, with no
+    render.py-side gate. VALID_JURISDICTIONS (frozen above) only freezes the
+    set of valid CODES; it says nothing about what "UK" is displayed as or
+    where it sorts. Silently reordering JURIS_ORDER or relabeling a
+    JURIS_FULL entry (e.g. "HK": "United States") would be a real, high-impact
+    bug on this project's central editorial focus (jurisdiction correctness)
+    with zero warning anywhere -- see audit/lessons.md L5. Same narrow-regex
+    tradeoff as _page_html_type_keys above."""
+    text = (repo_root / "scripts" / "templates" / "page.html").read_text(encoding="utf-8")
+
+    order_m = re.search(r"const JURIS_ORDER\s*=\s*\[(.*?)\];", text)
+    order = re.findall(r"[\"'](\w+)[\"']", order_m.group(1)) if order_m else []
+
+    full_m = re.search(r"const JURIS_FULL\s*=\s*\{(.*?)\};", text, re.DOTALL)
+    full = dict(re.findall(r"(\w+):\s*[\"']([^\"']*)[\"']", full_m.group(1))) if full_m else {}
+
+    return order, full
+
+
 def _current_values(repo_root):
     import sys
     sys.path.insert(0, str(repo_root / "scripts"))
@@ -60,6 +81,7 @@ def _current_values(repo_root):
     import summarise as summarise_mod
 
     page_labels, page_bucket_types = _page_html_type_keys(repo_root)
+    page_juris_order, page_juris_full = _page_html_juris_maps(repo_root)
 
     return {
         "VALID_TYPES": sorted(render_mod.VALID_TYPES),
@@ -79,6 +101,8 @@ def _current_values(repo_root):
         "SUMMARISE_VALID_TYPES": sorted(summarise_mod.VALID_TYPES),
         "PAGE_HTML_TYPE_LABEL_KEYS": page_labels,
         "PAGE_HTML_BUCKET_TYPES": page_bucket_types,
+        "PAGE_HTML_JURIS_ORDER": page_juris_order,
+        "PAGE_HTML_JURIS_FULL": page_juris_full,
     }
 
 
