@@ -713,8 +713,14 @@ try {
     border-radius: 10px; background: var(--bg-2);
   }
   @media (max-width: 480px) {
-    .priority-item { flex-direction: column; gap: 3px; }
+    /* Keep the number and jurisdiction label together on their own line --
+       flex-direction:column used to stack all three children (number,
+       jurisdiction, title) separately, leaving the number orphaned above
+       the jurisdiction label. flex-wrap + a full-width title/source block
+       gives "1  UNITED STATES" on one line, title+source on the next. */
+    .priority-item { flex-wrap: wrap; row-gap: 3px; }
     .priority-item .pj { min-width: 0; }
+    .priority-item > div { flex-basis: 100%; }
   }
 
   /* ============================================================
@@ -773,7 +779,6 @@ try {
   }
   .pill.new { background: color-mix(in srgb, var(--accent) 15%, transparent); color: var(--accent); }
   .pill.update { background: color-mix(in srgb, var(--ink-3) 18%, transparent); color: var(--ink-2); }
-  .pill.unenriched { background: color-mix(in srgb, var(--warn) 16%, transparent); color: var(--warn); }
   .card-top .spacer { flex: 1; }
 
   .card h4 {
@@ -798,14 +803,6 @@ try {
     margin: 0 0 13px;
   }
   .sowhat .lbl { color: var(--accent-deep); font-weight: 700; font-style: italic; }
-
-  .unenriched {
-    font-size: 13.5px; font-style: italic; color: var(--ink-3);
-    margin: 0 0 12px; padding: 8px 12px;
-    border-left: 2px solid var(--border-2);
-    background: var(--bg-2);
-    border-radius: 0 8px 8px 0;
-  }
 
   .verify {
     display: inline-flex; align-items: center; gap: 6px;
@@ -1534,9 +1531,9 @@ const isBrief = it => it.type === "news" && it.priority !== "high";
 const isUnenriched = it => it.summary === it.title
   || (it.so_what || "").startsWith("Review the source directly");
 function unenrichedOrSummaryHTML(it) {
-  if (isUnenriched(it)) {
-    return `<p class="unenriched">No AI summary yet — this card shows the raw source headline. Read the linked source for details.</p>`;
-  }
+  // No summary yet -- say nothing rather than filling the space with a
+  // placeholder note; the title/link/source above already stand on their own.
+  if (isUnenriched(it)) return "";
   return `<p class="summary">${esc(it.summary)}</p>
     <p class="sowhat"><span class="lbl">→ So what:</span> ${esc(it.so_what)}</p>`;
 }
@@ -1545,7 +1542,7 @@ function briefHTML(it) {
   return `<details class="brief${READ.has(it.id) ? " is-read" : ""}" id="${esc(it.id)}" data-id="${esc(it.id)}">
     <summary>
       <span class="b-caret" aria-hidden="true">▶</span>
-      <span class="b-title">${esc(it.title)}${isNewSinceVisit(it) ? ` <span class="pill new">New</span>` : ""}${isUnenriched(it) ? ` <span class="pill unenriched">No summary</span>` : ""}</span>
+      <span class="b-title">${esc(it.title)}${isNewSinceVisit(it) ? ` <span class="pill new">New</span>` : ""}</span>
       <span class="b-meta">${esc(it.source.split("—")[0].trim())} · ${fmtCardDate(it.published)}${discoveryNote(it)}</span>
     </summary>
     <div class="brief-body">
