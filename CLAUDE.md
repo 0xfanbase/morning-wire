@@ -101,10 +101,14 @@ this:
    `summary`/`so_what` already in this digest — never generalise, extrapolate, or add
    an implication the source items don't themselves support. Plain English, no
    acronyms, neutral voice. Set it to "" on quiet days. The page shows it as a callout
-   beside the priority list (which is capped at 3 rows — jurisdiction order, then
-   recency — and only admits items first seen (or published) within the currently
-   selected range, so a stale item marked `high` never headlines; it is hidden
-   entirely under "All", which has no coherent sense of "priority right now").
+   beside the priority list (capped at 3 rows, ranked by compliance materiality — a
+   structural regulatory change, e.g. a finalised rule or a sanctions/entity
+   designation, generally outranks a routine single-defendant enforcement case, unless
+   that enforcement action is itself sanctions/systemic in scale — then recency as a
+   tiebreak). Both callouts only render on the exact, unfiltered Today view: they
+   disappear the instant any filter — range, jurisdiction, or category — moves off
+   Today/All/All, since a stale item marked `high`, or a "top 3" computed over a
+   narrowed slice, would no longer mean what it claims to mean.
 5. While summarising, capture any EXPLICIT future dates the items mention —
    consultation comment deadlines, rule effective dates, licence application
    windows — into the top-level `radar` list (the page's "On the radar" strip):

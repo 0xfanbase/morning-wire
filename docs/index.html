@@ -711,7 +711,6 @@ try {
   .priority-item a { color: var(--ink); font-weight: 600; font-size: 15px; line-height: 1.35; }
   .priority-item a:hover { color: var(--accent); }
   .priority-item .psrc { font-size: 12px; color: var(--ink-3); margin-top: 2px; }
-  .priority-more { padding: 10px 14px; font-size: 12.5px; color: var(--ink-3); }
   .priority-quiet {
     font-size: 13.5px; color: var(--ink-3); margin: 0;
     padding: 12px 14px; border: 1px dashed var(--border-2);
@@ -1216,9 +1215,10 @@ const TYPE_HUE = {
 // compliance reader, so HK and mainland China sit first in ties. This is a
 // single tunable list, not a hardcoded "if jurisdiction === HK" branch --
 // swapping the reader's home market means reordering this array, nothing
-// else. It only breaks ties: renderPriority()'s round-robin still gives
-// every jurisdiction a fair shot per round, so a jurisdiction with several
-// genuinely high-priority items isn't crowded out once HK/CN run dry.
+// else. renderPriority()'s scoring reads the FIRST TWO entries as the
+// reader-lens jurisdictions (a small additive bonus, never enough to let a
+// lower-materiality item leapfrog a genuinely more material one) -- see
+// READER_LENS_JURISDICTIONS below.
 const JURIS_ORDER = ["HK", "CN", "US", "UK", "EU", "SG", "GLOBAL"];
 const JURIS_FULL  = { HK: "Hong Kong", CN: "Mainland China", US: "United States", UK: "United Kingdom", EU: "European Union", SG: "Singapore", GLOBAL: "Global" };
 const BUCKETS = {
@@ -1605,14 +1605,23 @@ function syncBriefToggleButtons() {
   });
 }
 
+/* ---------- top of mind + priority: both are a "what matters right now"
+   snapshot written fresh for today's exact pool -- they only mean what they
+   claim to mean against the unfiltered Today view. Narrowing to a single
+   jurisdiction/category silently re-scopes what "priority" would even mean
+   (top 3 out of one jurisdiction's items is not the same claim as top 3
+   overall), and widening past Today mixes in older items a reader may have
+   already seen. Neither block is worth half-truthing under a filter, so both
+   step out of the way entirely -- rendering nothing, not a re-scoped version
+   of themselves -- the instant ANY filter moves off Today/All/All. ---------- */
+function inTodayAllAllView() {
+  return state.range === "today" && state.juris === "ALL" && state.bucket === "ALL";
+}
+
 /* ---------- top of mind ---------- */
 function renderTopOfMind() {
   const slot = document.getElementById("topmind-slot");
-  // Same reasoning as Priority (see renderPriority below): top_of_mind is a
-  // "what matters right now" callout written fresh each day, not a durable
-  // fact about the archive -- showing it under "All" would present a stale
-  // day's framing as if it applied to the whole retained history.
-  if (state.range === "all") { slot.innerHTML = ""; return; }
+  if (!inTodayAllAllView()) { slot.innerHTML = ""; return; }
   const text = (DIGEST.top_of_mind || "").trim();
   if (!text) { slot.innerHTML = ""; return; }
   slot.innerHTML = `<div class="section-head"><h2>Top of mind</h2><span class="rule"></span></div>
@@ -1625,69 +1634,80 @@ const PRIORITY_CAP = 3;
    instead of a fixed, range-blind window -- an item admitted into a given
    range's feed is now, by construction, exactly the same item admitted into
    that range's Priority strip. Takes `range` explicitly (not read from
-   state.range) so a caller checking a DIFFERENT range's window (see the
-   Today quiet-state's own "check the 7-day window" below) can't accidentally
-   pick up the wrong cutoff. */
+   state.range) so the "still open this week" nudge below (a DIFFERENT
+   range's window than the one being rendered) can't accidentally pick up
+   the wrong cutoff. */
 function withinRangeWindow(it, range) {
   return dayDiff(it.first_seen || it.published) <= (range === "7" ? 6 : 29);
 }
+
+/* Materiality scoring for the capped strip: ranks by how much a senior
+   compliance officer at a globally systemically important bank (a G-SIB)
+   actually needs to act on this, not by recency or which jurisdiction's
+   turn it is. A structural regulatory change -- a rule that has taken
+   effect, a sanctions/entity designation that changes a screening list --
+   generally outranks a routine enforcement case naming a single defendant
+   or firm, which carries precedent value but narrow direct impact. The
+   exception is an enforcement action that is ITSELF sanctions/systemic in
+   scale (a major OFAC-type action, a bank-wide AML-program failure, a
+   billion-dollar-scale case) -- that carries the same screening-list /
+   control-framework weight as a structural change, so it is never
+   relegated with routine enforcement just because of its `type`. */
+const TYPE_MATERIALITY = {
+  final_rule:   100,  // a binding rule -- every reader in scope must comply
+  designation:  100,  // sanctions/entity designation -- changes a screening list directly
+  consultation:  75,  // a proposed rule -- structural, not yet binding
+  guidance:      75,  // regulator interpretation of existing rules
+  licensing:     60,  // a licence/registration grant or withdrawal -- usually scoped to one firm
+  enforcement:   40,  // a single case -- boosted below when it is sanctions/systemic in scale
+  peer_move:     30,  // industry intel -- context, not a regulatory obligation
+  speech:        20,
+  news:          10,
+};
+const MAJOR_ENFORCEMENT_RE =
+  /\bofac\b|office of foreign assets control|specially designated national|\bsdn\b|sanctions?\s+(evasion|violation|breach)|(anti-money laundering|aml) program (failure|deficienc)|\$\s?\d[\d,.]*\s?(billion|bn)\b/i;
+// First two entries of JURIS_ORDER are the reader-lens jurisdictions (see
+// the comment on JURIS_ORDER) -- a small additive nudge, applied AFTER the
+// materiality tier above, so it can only ever decide between items that are
+// already comparably material, never let a low-tier item outrank a
+// genuinely more material one from elsewhere.
+const READER_LENS_JURISDICTIONS = new Set(JURIS_ORDER.slice(0, 2));
+const READER_LENS_BONUS = 8;
+function priorityScore(it) {
+  let score = TYPE_MATERIALITY[it.type] ?? 10;
+  if (it.type === "enforcement" && MAJOR_ENFORCEMENT_RE.test(`${it.title} ${it.summary} ${it.so_what}`)) {
+    score = TYPE_MATERIALITY.designation;  // matches a structural change's weight
+  }
+  return score + (READER_LENS_JURISDICTIONS.has(it.jurisdiction) ? READER_LENS_BONUS : 0);
+}
+
 function renderPriority(items) {
   const slot = document.getElementById("priority-slot");
-  // "All" has no admission ceiling of its own -- rangeItems("all") is the
-  // entire retained archive, so a "Priority" strip built from it wouldn't be
-  // a priority strip, just the high-priority subset of everything ever kept.
-  // Render nothing, no message, no exception.
-  if (state.range === "all") { slot.innerHTML = ""; return; }
+  if (!inTodayAllAllView()) { slot.innerHTML = ""; return; }
 
-  // "today": todayItems() already restricts to the exact current HKT
-  // calendar day, so withinRangeWindow(it,"today")'s 29-day fallback is a
-  // no-op here -- every item in the pool already has dayDiff === 0. Bit-for-
-  // bit unchanged behaviour vs. the old fixed-7-day gate for this range.
-  const fresh = it => withinRangeWindow(it, state.range);
-  const high = items.filter(it => it.priority === "high" && fresh(it));
+  // Today (inTodayAllAllView) is an exact HKT-calendar-day, unfiltered pool --
+  // items is already exactly that pool (rangeItems("today")), so no further
+  // window/filter check is needed here.
+  const high = items.filter(it => it.priority === "high");
   if (!high.length) {
-    // "Today" is an exact HKT-calendar-day match -- a much narrower pool
-    // than the rolling 7/30-day windows -- so a quiet morning legitimately
-    // has nothing here even when the same high-priority items still qualify
-    // under Last 7 days. A silently blank block reads as broken, not quiet:
-    // say so, and point at the week's items if any exist. Never fabricate or
-    // promote a non-priority item to fill the gap.
-    if (state.range === "today" && state.juris === "ALL" && state.bucket === "ALL") {
-      // Explicitly re-derive the 7-day window here (not `fresh`, which is
-      // closed over state.range === "today" and would otherwise resolve to
-      // the 29-day fallback for this specific check).
-      const weekHigh = rangeItems("7").filter(it => it.priority === "high" && withinRangeWindow(it, "7")).length;
-      slot.innerHTML = `<div class="section-head"><h2>Priority</h2><span class="rule"></span></div>
-        <p class="priority-quiet">No high-priority items so far today.${weekHigh
-          ? ` ${weekHigh} from the last 7 days ${weekHigh > 1 ? "are" : "is"} still open — <button type="button" class="linklike" data-set-range="7">show Last 7 days</button>.`
-          : " The wire is quiet."}</p>`;
-    } else if (state.range === "7" || state.range === "30") {
-      // Same honesty pattern as Today, minus the nudge button -- the reader
-      // already deliberately picked this range via the toolbar above, so a
-      // duplicate "try a wider range" prompt isn't needed the way it was
-      // for Today's narrower default view.
-      slot.innerHTML = `<div class="section-head"><h2>Priority</h2><span class="rule"></span></div>
-        <p class="priority-quiet">No high-priority items in the ${state.range === "7" ? "last 7 days" : "last 30 days"}.</p>`;
-    } else {
-      slot.innerHTML = "";
-    }
+    // A much narrower pool than the rolling 7/30-day windows, so a quiet
+    // morning legitimately has nothing here even when the same high-priority
+    // items still qualify under Last 7 days. A silently blank block reads as
+    // broken, not quiet: say so, and point at the week's items if any exist.
+    // Never fabricate or promote a non-priority item to fill the gap.
+    const weekHigh = rangeItems("7").filter(it => it.priority === "high" && withinRangeWindow(it, "7")).length;
+    slot.innerHTML = `<div class="section-head"><h2>Priority</h2><span class="rule"></span></div>
+      <p class="priority-quiet">No high-priority items so far today.${weekHigh
+        ? ` ${weekHigh} from the last 7 days ${weekHigh > 1 ? "are" : "is"} still open — <button type="button" class="linklike" data-set-range="7">show Last 7 days</button>.`
+        : " The wire is quiet."}</p>`;
     return;
   }
-  // Round-robin across jurisdictions (HK/CN first per the reader's lens,
-  // newest first within each) -- a single busy regulator must not evict
-  // every other jurisdiction's high-priority items from the capped strip.
-  const byJuris = new Map(JURIS_ORDER.map(j => [j, []]));
-  high.sort((a, b) => new Date(b.published) - new Date(a.published))
-      .forEach(it => (byJuris.get(it.jurisdiction) || byJuris.get("GLOBAL")).push(it));
-  const ordered = [];
-  for (let round = 0; ordered.length < high.length; round++) {
-    let took = false;
-    for (const j of JURIS_ORDER) {
-      const arr = byJuris.get(j);
-      if (arr[round]) { ordered.push(arr[round]); took = true; }
-    }
-    if (!took) break;
-  }
+  // Rank by materiality first, recency only as a tiebreak between otherwise
+  // comparably important items -- see priorityScore() above. "Top 3" means
+  // the 3 most material items, full stop: no "+N more" footnote pretending
+  // a capped list is still the complete picture.
+  const ordered = high.slice()
+    .sort((a, b) => priorityScore(b) - priorityScore(a) || new Date(b.published) - new Date(a.published));
   const rows = ordered.slice(0, PRIORITY_CAP).map(it =>
     `<div class="priority-item">
        <span class="pj">${esc(JURIS_FULL[it.jurisdiction])}</span>
@@ -1696,12 +1716,9 @@ function renderPriority(items) {
          <div class="psrc">${esc(it.source)} · ${fmtDay(it.published)}</div>
        </div>
      </div>`).join("");
-  const more = high.length > PRIORITY_CAP
-    ? `<div class="priority-more">+ ${high.length - PRIORITY_CAP} more high-priority item${high.length - PRIORITY_CAP > 1 ? "s" : ""} flagged in the feed below</div>`
-    : "";
-  const n = Math.min(high.length, PRIORITY_CAP);
+  const n = Math.min(ordered.length, PRIORITY_CAP);
   slot.innerHTML = `<div class="section-head"><h2>Priority — ${n} thing${n > 1 ? "s" : ""} that need${n > 1 ? "" : "s"} a look</h2><span class="rule"></span></div>
-    <div class="priority">${rows}${more}</div>`;
+    <div class="priority">${rows}</div>`;
 }
 
 /* ---------- feed grouped by jurisdiction ---------- */
