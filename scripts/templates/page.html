@@ -878,6 +878,13 @@ try {
      room. overflow-x:auto is kept for very narrow/high-zoom cases where the
      table still doesn't fit. */
   #tab-health { overflow-x: auto; }
+  /* On phones the table needs that scroll far more often than "very narrow"
+     implies -- every common phone width still doesn't fit it. Without a
+     hint, "Last checked"/"Note" values simply cut off at the viewport edge
+     with no indication there's more to see by swiping. Shown/hidden by
+     measuring actual overflow (see syncHealthScrollHint()), not a hardcoded
+     breakpoint, since the table's own width shifts with font-size zoom. */
+  .table-scroll-hint { font-size: 12px; color: var(--ink-3); margin: 0 0 8px; font-style: italic; }
   .hstatus { font-weight: 700; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
   .hstatus.ok { color: var(--ok); }
   .hstatus.replaced { color: var(--warn); }
@@ -1093,6 +1100,7 @@ try {
   <div id="tab-health" role="tabpanel" aria-labelledby="tabbtn-health" hidden>
     <div class="section-head"><h2>Source health</h2><span class="rule"></span></div>
     <p class="tab-intro">Per-source status from the latest pipeline run. A source is never silently dropped — failures surface here and self-heal retries each run.</p>
+    <p class="table-scroll-hint" id="healthScrollHint" hidden>Swipe sideways to see the full table →</p>
     <table class="health-table" id="healthTable">
       <thead><tr>
         <th scope="col"><button type="button" class="sort-btn" data-sort="name">Source<span class="sort-caret"></span></button></th>
@@ -2477,6 +2485,26 @@ stickyRO.observe(mastStickyEl);
 stickyRO.observe(filterToolbarEl);
 window.addEventListener("resize", syncStickyOffsets);
 syncStickyOffsets();
+
+/* ---------- Source health scroll hint ----------
+   Measured the same way as the sticky offsets above, for the same reason:
+   the table's own content-driven width (and the font-size zoom) decide
+   whether #tab-health actually needs to scroll, so a fixed breakpoint would
+   either nag on widths that fit or stay silent on ones that don't. */
+const healthTabEl = document.getElementById("tab-health");
+const healthTableEl = document.getElementById("healthTable");
+const healthHintEl = document.getElementById("healthScrollHint");
+function syncHealthScrollHint() {
+  healthHintEl.hidden = healthTabEl.scrollWidth <= healthTabEl.clientWidth + 1;
+}
+// Observe both: #tab-health's own box reacts to viewport/layout changes,
+// but content-driven width changes (initial population, sorting, font-zoom
+// reflow) only resize the table inside it, not the (already full-width)
+// container -- missing either leaves the hint stale after some triggers.
+const healthRO = new ResizeObserver(syncHealthScrollHint);
+healthRO.observe(healthTabEl);
+healthRO.observe(healthTableEl);
+window.addEventListener("resize", syncHealthScrollHint);
 
 /* ---------- keep the freshness state honest on a long-lived tab ---------- */
 document.addEventListener("visibilitychange", () => { if (!document.hidden) renderFreshness(); });
