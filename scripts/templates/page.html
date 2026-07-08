@@ -700,8 +700,13 @@ try {
   }
   .priority-item:last-child { border-bottom: none; }
   .priority-item .pj {
-    flex: 0 0 auto; font-size: 11px; font-weight: 700; letter-spacing: .06em;
-    color: var(--accent-deep); min-width: 96px; text-transform: uppercase;
+    /* Fixed width, not min-width -- flex-basis:auto sizes the label to its
+       OWN text otherwise, so a wider label ("UNITED KINGDOM") pushes the
+       title after it further right than a shorter one ("UNITED STATES"),
+       leaving the title column ragged row to row. */
+    flex: 0 0 112px; font-size: 11px; font-weight: 700; letter-spacing: .06em;
+    color: var(--accent-deep); width: 112px; text-transform: uppercase;
+    white-space: nowrap;
   }
   .priority-item a { color: var(--ink); font-weight: 600; font-size: 15px; line-height: 1.35; }
   .priority-item a:hover { color: var(--accent); }
@@ -719,7 +724,7 @@ try {
        the jurisdiction label. flex-wrap + a full-width title/source block
        gives "1  UNITED STATES" on one line, title+source on the next. */
     .priority-item { flex-wrap: wrap; row-gap: 3px; }
-    .priority-item .pj { min-width: 0; }
+    .priority-item .pj { flex: 0 0 auto; width: auto; }
     .priority-item > div { flex-basis: 100%; }
   }
 

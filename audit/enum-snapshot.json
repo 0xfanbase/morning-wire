@@ -42,7 +42,7 @@
   "MAX_ITEM_AGE_DAYS": 7,
   "MAX_CHURN_FRACTION": 0.5,
   "MAX_CHURN_FLOOR": 5,
-  "FAILURE_THRESHOLD": 5,
+  "FAILURE_THRESHOLD": 3,
   "SUMMARISE_VALID_TYPES": [
     "consultation",
     "designation",

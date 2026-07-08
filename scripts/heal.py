@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 HEALTH_PATH = Path(__file__).resolve().parent.parent / "data" / "source-health.json"
 CHANGELOG_PATH = Path(__file__).resolve().parent.parent / "CHANGELOG-sources.md"
 
-FAILURE_THRESHOLD = 5
+FAILURE_THRESHOLD = 3
 WEB_SEARCH_TOOL = {"type": WEB_SEARCH_TYPE, "name": "web_search", "max_uses": 4}
 
 

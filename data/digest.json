@@ -1093,6 +1093,30 @@
       "so_what": "Pure price-movement commentary with no direct regulatory or compliance angle; useful only as market-context background rather than an item requiring any control or filing action.",
       "first_seen": "2026-07-07T23:44:19.555129+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "eu-autorit-des-march-s-financiers-amf-news-releases-82813a2d05",
+      "jurisdiction": "EU",
+      "source": "Autorité des marchés financiers (AMF) — News releases",
+      "title": "AMF withdraws AUTOMATA France SAS digital-asset-service-provider registration",
+      "url": "https://www.amf-france.org/en/news-publications/news-releases/amf-news-releases/amf-announces-withdrawal-automata-france-sass-registration-digital-asset-service-provider-effective",
+      "published": "2026-07-01T00:00:00+00:00",
+      "type": "enforcement",
+      "priority": "high",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Autorité des marchés financiers (AMF) — News releases",
+            "url": "https://www.amf-france.org/en/news-publications/news-releases/amf-news-releases/amf-announces-withdrawal-automata-france-sass-registration-digital-asset-service-provider-effective"
+          }
+        ]
+      },
+      "summary": "France's securities regulator, the Autorité des marchés financiers, withdrew the digital-asset-service-provider registration of AUTOMATA France SAS (trading as Vancelian), a Board decision effective 30 June 2026, after finding the firm had carried out unlicensed crowdfunding activity that breached senior-manager fitness requirements. This is a national registration withdrawal tied to the wind-down of the transitional Markets in Crypto-Assets Regulation registration regime, not a fine issued for a Markets in Crypto-Assets Regulation conduct-rule breach.",
+      "so_what": "A concrete, recent example of a European Union regulator actively enforcing fitness-and-propriety standards during the transitional Markets in Crypto-Assets Regulation registration period is a useful reference point when assessing counterparty and correspondent-relationship risk with European digital-asset-service providers going through their own re-registration.",
+      "first_seen": "2026-07-08T07:56:32.337764+00:00",
+      "date_source": "verified"
     }
   ],
   "source_health": [
@@ -1101,231 +1125,231 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.553924+00:00"
+      "checked_at": "2026-07-08T07:54:04.297791+00:00"
     },
     {
       "name": "Hong Kong Monetary Authority — Circulars & guidance",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.553939+00:00"
+      "checked_at": "2026-07-08T07:54:04.297800+00:00"
     },
     {
       "name": "Securities and Futures Commission — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.553947+00:00"
+      "checked_at": "2026-07-08T07:54:04.297805+00:00"
     },
     {
       "name": "Securities and Futures Commission — Circulars",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.553953+00:00"
+      "checked_at": "2026-07-08T07:54:04.297809+00:00"
     },
     {
       "name": "Financial Services and the Treasury Bureau — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.553959+00:00"
+      "checked_at": "2026-07-08T07:54:04.297813+00:00"
     },
     {
       "name": "Securities and Futures Commission — Licensed virtual asset trading platforms register",
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.553966+00:00"
+      "checked_at": "2026-07-08T07:54:04.297816+00:00"
     },
     {
       "name": "People's Bank of China — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.553972+00:00"
+      "checked_at": "2026-07-08T07:54:04.297820+00:00"
     },
     {
       "name": "CoinDesk — China policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.553977+00:00"
+      "checked_at": "2026-07-08T07:54:04.297830+00:00"
     },
     {
       "name": "The Block — China policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.553982+00:00"
+      "checked_at": "2026-07-08T07:54:04.297834+00:00"
     },
     {
       "name": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.553992+00:00"
+      "checked_at": "2026-07-08T07:54:04.297838+00:00"
     },
     {
       "name": "Office of Foreign Assets Control (OFAC) — Recent actions",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.553997+00:00"
+      "checked_at": "2026-07-08T07:54:04.297841+00:00"
     },
     {
       "name": "US Securities and Exchange Commission — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554003+00:00"
+      "checked_at": "2026-07-08T07:54:04.297844+00:00"
     },
     {
       "name": "Commodity Futures Trading Commission — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554008+00:00"
+      "checked_at": "2026-07-08T07:54:04.297846+00:00"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554013+00:00"
+      "checked_at": "2026-07-08T07:54:04.297849+00:00"
     },
     {
       "name": "Federal Reserve — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554018+00:00"
+      "checked_at": "2026-07-08T07:54:04.297852+00:00"
     },
     {
       "name": "US Department of Justice — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554023+00:00"
+      "checked_at": "2026-07-08T07:54:04.297855+00:00"
     },
     {
       "name": "European Securities and Markets Authority — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554028+00:00"
+      "checked_at": "2026-07-08T07:54:04.297857+00:00"
     },
     {
       "name": "European Banking Authority — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554034+00:00"
+      "checked_at": "2026-07-08T07:54:04.297861+00:00"
     },
     {
       "name": "Monetary Authority of Singapore — Media releases",
-      "status": "ok",
-      "note": "Fetch failed this run (no parseable items); 3 consecutive failures — self-heal at 5.",
+      "status": "dead",
+      "note": "Reachable but returned no parseable items for 5 consecutive runs (the listing may be client-rendered or restructured) — check the source manually.",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554043+00:00"
+      "checked_at": "2026-07-08T07:54:04.370865+00:00"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='wolfsberg-group.org', port=443): Read timed out. (read timeout=15)); 1 consecutive failure — self-heal at 5.",
+      "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554060+00:00"
+      "checked_at": "2026-07-08T07:54:04.370888+00:00"
     },
     {
       "name": "Global Digital Finance (GDF) — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554065+00:00"
+      "checked_at": "2026-07-08T07:54:04.370893+00:00"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 1 consecutive failure — self-heal at 5.",
+      "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554071+00:00"
+      "checked_at": "2026-07-08T07:54:04.370896+00:00"
     },
     {
       "name": "Bank for International Settlements / Basel Committee — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554076+00:00"
+      "checked_at": "2026-07-08T07:54:04.370900+00:00"
     },
     {
       "name": "Financial Stability Board — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T23:44:19.554081+00:00"
+      "checked_at": "2026-07-08T07:54:04.370903+00:00"
     },
     {
       "name": "CoinDesk — Policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554086+00:00"
+      "checked_at": "2026-07-08T07:54:04.370906+00:00"
     },
     {
       "name": "The Block — Policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554091+00:00"
+      "checked_at": "2026-07-08T07:54:04.370909+00:00"
     },
     {
       "name": "CoinDesk — Institutional moves",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554096+00:00"
+      "checked_at": "2026-07-08T07:54:04.370920+00:00"
     },
     {
       "name": "The Block — Institutional moves",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554101+00:00"
+      "checked_at": "2026-07-08T07:54:04.370923+00:00"
     },
     {
       "name": "CoinDesk — Market news",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554107+00:00"
+      "checked_at": "2026-07-08T07:54:04.370927+00:00"
     },
     {
       "name": "The Block — Market news",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554112+00:00"
+      "checked_at": "2026-07-08T07:54:04.370930+00:00"
     },
     {
       "name": "Chainalysis — Blog",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554117+00:00"
+      "checked_at": "2026-07-08T07:54:04.370934+00:00"
     },
     {
       "name": "Elliptic — Blog",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554122+00:00"
+      "checked_at": "2026-07-08T07:54:04.370937+00:00"
     },
     {
       "name": "TRM Labs — Insights",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T23:44:19.554127+00:00"
+      "checked_at": "2026-07-08T07:54:04.370940+00:00"
     },
     {
       "name": "Claude summarisation",
@@ -1403,6 +1427,12 @@
       "label": "FCA cryptoasset regime fully in force (stablecoin issuers)",
       "jurisdiction": "UK",
       "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
+    },
+    {
+      "date": "2026-09-28",
+      "label": "Comments close: EBA consultation on MiCA fines methodology",
+      "jurisdiction": "EU",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets"
     }
   ]
 }

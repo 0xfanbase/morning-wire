@@ -23,7 +23,7 @@ Each scheduled run (`scripts/run.py`):
    `data/registers/`, turning additions/removals into `licensing` items
    (`scripts/registers.py`).
 3. **Health check + self-heal** — tracks consecutive failures per source in
-   `data/source-health.json`; after 5 consecutive failed/empty runs, asks Claude (with
+   `data/source-health.json`; after 3 consecutive failed/empty runs, asks Claude (with
    the web-search tool) to find and validate a replacement URL, updates
    `data/sources.json` in place, and logs the change to `CHANGELOG-sources.md`. A source
    is never silently dropped — if nothing validates, it's marked `dead` and surfaced in

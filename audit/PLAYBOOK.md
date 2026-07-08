@@ -21,6 +21,32 @@ version of that mistake gets caught before it reaches the public site.
    findings, so this run doesn't rediscover something already known and
    accepted, or re-flag something already fixed.
 
+## Phase 0.5 — self-heal sweep
+
+Run `python3 scripts/self_heal.py` before Phase 1's detect step, so this
+run's own `check_source_health`/`check_jurisdiction_coverage` findings
+reflect freshly-checked source state rather than whatever the last daily
+run happened to record. This performs a REAL fetch against every configured
+source (there is no cached artifact to replay this from) plus the register
+diff, then health-checks and — if `ANTHROPIC_API_KEY` is available in this
+session's environment — attempts a Claude-assisted repair of any source
+that just crossed `heal.FAILURE_THRESHOLD` consecutive failures. Without the
+key, the sweep still updates real failure counts and re-checks liveness
+correctly; it just can't attempt a repair that run (same graceful
+degradation the daily pipeline already has in keyless mode).
+
+This writes directly to `data/sources.json`, `data/source-health.json`,
+`CHANGELOG-sources.md`, and `data/digest.json`'s `source_health` field (plus
+re-rendering `docs/index.html`/`docs/feed.xml`) — commit these directly to
+main afterward (no branch/PR), same as Phase 7's `run_log`-entry carve-out:
+this is the same mechanical, already-machine-validated mechanism (a
+candidate replacement URL is actually fetched and validated before use) the
+daily pipeline already performs unsupervised, just running on a different
+cadence. It also bumps a `data/registers/*.json` snapshot's `updated_at`
+timestamp as an ordinary side effect of the register-diff step — this is
+not a hand-edit of pipeline memory, just the same mechanical refresh the
+daily pipeline performs every day.
+
 ## Phase 1 — detect (ground truth)
 
 Run `python3 scripts/audit.py --json` (see `scripts/audit.py` and
