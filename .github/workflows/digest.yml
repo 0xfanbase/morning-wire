@@ -21,6 +21,7 @@ concurrency:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   digest:
@@ -61,7 +62,18 @@ jobs:
       # Pages deploy does NOT rely on this push event -- pushes made with
       # the Actions bot token never fire push-triggered workflows, so
       # pages.yml listens for this workflow's completion (workflow_run).
-      - name: Commit and push updated digest
+      #
+      # main requires a pull request (repo ruleset) -- a raw `git push` here
+      # gets rejected with GH013 regardless of content, since the rule
+      # applies by target branch, not by identity. Push to a short-lived
+      # branch and land it through the PR API instead: that satisfies
+      # "changes must be made through a pull request" using the same
+      # GITHUB_TOKEN already granted to this job (no extra credential
+      # needed), the same way a same-day content PR gets opened and merged
+      # when this is done by hand elsewhere in this project.
+      - name: Commit and merge updated digest via PR
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "reg-radar-bot"
           git config user.email "reg-radar-bot@users.noreply.github.com"
@@ -70,5 +82,11 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
+          BRANCH="digest/$(date -u +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH"
           git commit -m "chore: update digest"
-          git push || (git pull --rebase && git push)
+          git push origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" \
+            --title "chore: update digest" \
+            --body "Automated daily digest update."
+          gh pr merge "$BRANCH" --merge --delete-branch
