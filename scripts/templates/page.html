@@ -1603,6 +1603,11 @@ function syncBriefToggleButtons() {
 /* ---------- top of mind ---------- */
 function renderTopOfMind() {
   const slot = document.getElementById("topmind-slot");
+  // Same reasoning as Priority (see renderPriority below): top_of_mind is a
+  // "what matters right now" callout written fresh each day, not a durable
+  // fact about the archive -- showing it under "All" would present a stale
+  // day's framing as if it applied to the whole retained history.
+  if (state.range === "all") { slot.innerHTML = ""; return; }
   const text = (DIGEST.top_of_mind || "").trim();
   if (!text) { slot.innerHTML = ""; return; }
   slot.innerHTML = `<div class="section-head"><h2>Top of mind</h2><span class="rule"></span></div>
