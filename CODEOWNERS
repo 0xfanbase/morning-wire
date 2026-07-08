@@ -1,7 +1,8 @@
-# Requires branch protection on main with "Require review from Code Owners"
-# enabled (Settings -> Branches -> main -> a repo-admin action, not something
-# a CI workflow or agent session can turn on) for these entries to actually
-# block a merge. Until that's enabled, this file is documentation only.
+# Enforced by the "Require a pull request before merging" ruleset on main
+# (Require review from Code Owners is checked there) -- a PR touching any
+# path below needs an approving review from the listed owner before it can
+# merge, with no exception for the Repository-admin bypass actor's own PRs
+# authored under a different identity.
 
 # The integrity-audit safety net itself: any PR touching these must be
 # reviewed by a human before merge, per audit/PLAYBOOK.md's never-list
@@ -13,6 +14,14 @@
 /.github/workflows/audit-guard.yml   @fandamentals
 /.github/workflows/integrity.yml     @fandamentals
 
-# Pipeline memory -- never hand-edited, per CLAUDE.md house rules.
-/data/registers/               @fandamentals
-/data/seen-items.json          @fandamentals
+# NOTE: /data/registers/ and /data/seen-items.json are deliberately NOT
+# listed here, despite being pipeline memory per CLAUDE.md's "never
+# hand-edited" house rule. digest.yml's daily commit legitimately rewrites
+# both on almost every run and lands via its own PR authored as
+# github-actions[bot] -- an identity with no Code-Owners bypass and no human
+# who will ever review it. A CODEOWNERS entry here would block every
+# automated daily PR pending a review that never comes. Hand-edit protection
+# for these two paths is enforced instead by scripts/audit_guard.py's
+# FORBIDDEN_PATH_PREFIXES check, which is actor/branch-aware and only
+# exempts the daily pipeline's own PR -- a human or any other automation
+# touching these paths is still blocked exactly as before.

@@ -11,6 +11,16 @@ can't catch its own detection logic being quietly narrowed in the same PR
 that also removes the file, or narrowed on its own with the file kept but
 neutered.
 
+The forbidden-path check exempts exactly one case: the daily pipeline's own
+PR (digest.yml), which legitimately rewrites data/registers/ and
+data/seen-items.json on almost every run and lands them via a PR authored as
+github-actions[bot] on a digest/<timestamp> branch. Matching BOTH that exact
+actor AND that branch pattern is deliberate -- neither signal alone is safe:
+a human can't forge the actor (GitHub attributes PR authorship from the
+token used, not the local git commit author/email), but pairing it with the
+branch-name convention means this carve-out can only ever match that one
+workflow's own PR, not e.g. a human pushing a same-named branch by hand.
+
 Exit 0 = clean. Exit 1 = blocked; prints exactly what and why.
 """
 import re
@@ -21,6 +31,8 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 FORBIDDEN_PATH_PREFIXES = ("data/registers/", "data/seen-items.json")
+PIPELINE_BOT_ACTORS = {"github-actions[bot]"}
+PIPELINE_BRANCH_RE = re.compile(r"^digest/\d{8}-\d{6}$")
 
 
 def _git(args):
@@ -62,6 +74,9 @@ def _hard_check_ids_at(ref):
 def main():
     base_ref = sys.argv[1] if len(sys.argv) > 1 else "origin/main"
     head_ref = sys.argv[2] if len(sys.argv) > 2 else "HEAD"
+    pr_actor = sys.argv[3] if len(sys.argv) > 3 else ""
+    pr_branch = sys.argv[4] if len(sys.argv) > 4 else ""
+    is_pipeline_pr = pr_actor in PIPELINE_BOT_ACTORS and bool(PIPELINE_BRANCH_RE.match(pr_branch))
 
     problems = []
 
@@ -90,7 +105,7 @@ def main():
         diff_files = []
 
     forbidden_touched = [f for f in diff_files if f.startswith(FORBIDDEN_PATH_PREFIXES)]
-    if forbidden_touched:
+    if forbidden_touched and not is_pipeline_pr:
         problems.append(
             "PR touches pipeline-memory paths that must never be hand-edited via PR "
             f"(only the daily pipeline's own commit-back may write them): {forbidden_touched}"

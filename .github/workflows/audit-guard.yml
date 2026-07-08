@@ -28,4 +28,4 @@ jobs:
           python-version: '3.12'
 
       - name: Check protected core + forbidden paths
-        run: python scripts/audit_guard.py "origin/${{ github.event.pull_request.base.ref }}" "${{ github.event.pull_request.head.sha }}"
+        run: python scripts/audit_guard.py "origin/${{ github.event.pull_request.base.ref }}" "${{ github.event.pull_request.head.sha }}" "${{ github.event.pull_request.user.login }}" "${{ github.head_ref }}"
