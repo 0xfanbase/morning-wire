@@ -78,12 +78,12 @@ Each scheduled run (`scripts/run.py`):
    `https://<owner>.github.io/<repo>/` (this repo:
    `https://fandamentals.github.io/morning-wire/`) — publicly reachable, no login of
    any kind needed to view it.
-3. **Cron** — the workflow (`.github/workflows/digest.yml`) runs `0 23 * * 0-4` UTC,
-   i.e. 07:00 HKT Monday–Friday (HKT is UTC+8 with no DST, so 23:00 UTC rolls into the
+3. **Cron** — the workflow (`.github/workflows/digest.yml`) runs `0 21 * * 0-4` UTC,
+   i.e. 05:00 HKT Monday–Friday (HKT is UTC+8 with no DST, so 21:00 UTC rolls into the
    next HKT calendar day). It also supports manual runs via the Actions tab
    (`workflow_dispatch`). Two things to expect:
-   - GitHub's cron scheduler can drift 5–15 minutes at peak load — the 07:00 target
-     leaves headroom before a ~07:15 check.
+   - GitHub's cron scheduler can drift 5–15 minutes at peak load — the 05:00 target
+     leaves headroom before a ~05:15 check.
    - GitHub auto-disables a schedule trigger after 60 days with no commits to the repo.
      This workflow's own daily commit-back keeps it alive; if the repo is ever paused
      for 2+ months, re-enable the schedule manually under Actions → Daily digest.
