@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-07T12:06:13.362510+00:00",
-  "top_of_mind": "The United States sanctions authority added more than one hundred terrorist-linked cryptocurrency wallets to its designations — screening lists need the update. Ripple won full European authorisation, and Coinbase gained United Kingdom approval to offer traditional investments alongside crypto.",
+  "generated_at": "2026-07-08T00:21:22.992710+00:00",
+  "top_of_mind": "",
   "items": [
     {
       "id": "global-trm-labs-insights-b35f07fd2d",
@@ -811,6 +811,270 @@
       "summary": "TRM Labs published a guide on how compliance teams should screen cryptocurrency wallets for sanctions and financial-crime risk.",
       "so_what": "A useful benchmark for reviewing whether existing wallet-screening controls cover sanctions exposure, indirect risk and re-screening frequency in line with current industry practice.",
       "first_seen": "2026-07-07T07:50:49.166227+00:00"
+    },
+    {
+      "id": "global-the-block-market-news-a6c5d8514f",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Kraken wins $22 million arbitration against auditor Mazars for ditching the firm during Operation Choke Point 2.0",
+      "url": "https://www.theblock.co/post/407524/kraken-wins-22-million-arbitration-auditor-mazars-for-ditching-during-operation-choke-point-2-0?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-07T21:30:10+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407524/kraken-wins-22-million-arbitration-auditor-mazars-for-ditching-during-operation-choke-point-2-0?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Kraken wins $22 million arbitration against auditor Mazars for ditching the firm during Operation Choke Point 2.0",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-d319101a3e",
+      "jurisdiction": "US",
+      "source": "The Block — Policy",
+      "title": "CFTC charges North Carolina man over alleged $14 million crypto, futures fraud",
+      "url": "https://www.theblock.co/post/407516/cftc-charges-north-carolina-man-alleged-14-million-crypto-futures-fraud?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-07T20:58:49+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407516/cftc-charges-north-carolina-man-alleged-14-million-crypto-futures-fraud?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "CFTC charges North Carolina man over alleged $14 million crypto, futures fraud",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-dfff743d35",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "BlackRock-backed Securitize slides 40% after SPAC debut despite tokenization boom",
+      "url": "https://www.coindesk.com/markets/2026/07/07/blackrock-backed-securitize-slides-40-after-spac-debut-despite-tokenization-boom",
+      "published": "2026-07-07T19:35:14+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/markets/2026/07/07/blackrock-backed-securitize-slides-40-after-spac-debut-despite-tokenization-boom"
+          }
+        ]
+      },
+      "summary": "BlackRock-backed Securitize slides 40% after SPAC debut despite tokenization boom",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-130ece762e",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Crypto exchange Kraken is trying to become a bank in Europe",
+      "url": "https://www.coindesk.com/business/2026/07/07/crypto-exchange-kraken-is-trying-to-become-a-bank-in-europe",
+      "published": "2026-07-07T18:38:10+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/07/07/crypto-exchange-kraken-is-trying-to-become-a-bank-in-europe"
+          }
+        ]
+      },
+      "summary": "Crypto exchange Kraken is trying to become a bank in Europe",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-084ac14fda",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Ondo Finance says tokenized stocks can now be used as collateral for perp trading",
+      "url": "https://www.theblock.co/post/407452/ondo-finance-says-tokenized-stocks-now-used-as-collateral-perp-trading?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-07T16:29:46+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407452/ondo-finance-says-tokenized-stocks-now-used-as-collateral-perp-trading?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Ondo Finance says tokenized stocks can now be used as collateral for perp trading",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-ba638fc27d",
+      "jurisdiction": "US",
+      "source": "CoinDesk — Policy",
+      "title": "U.S. SEC to propose crypto rule as soon as this month to ease startups, fundraising",
+      "url": "https://www.coindesk.com/policy/2026/07/07/u-s-sec-to-propose-crypto-rule-as-soon-as-this-month-to-ease-startups-fundraising",
+      "published": "2026-07-07T16:08:19+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/07/u-s-sec-to-propose-crypto-rule-as-soon-as-this-month-to-ease-startups-fundraising"
+          }
+        ]
+      },
+      "summary": "U.S. SEC to propose crypto rule as soon as this month to ease startups, fundraising",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-3cc6e3754c",
+      "jurisdiction": "US",
+      "source": "The Block — Policy",
+      "title": "SEC plans crypto rule changes for exchanges and broker dealers in 2026 regulatory agenda",
+      "url": "https://www.theblock.co/post/407468/sec-plans-crypto-rule-changes-for-exchanges-broker-dealers-2026-regulatory-agenda?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-07T16:03:54+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407468/sec-plans-crypto-rule-changes-for-exchanges-broker-dealers-2026-regulatory-agenda?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "SEC plans crypto rule changes for exchanges and broker dealers in 2026 regulatory agenda",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-d3085b7af6",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Tether puts $20 million behind Mercado Bitcoin amid Latin America’s tokenization boom",
+      "url": "https://www.theblock.co/post/407463/tether-20-million-behind-mercado-bitcoin-latin-america-tokenization-boom?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-07T15:57:17+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407463/tether-20-million-behind-mercado-bitcoin-latin-america-tokenization-boom?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Tether puts $20 million behind Mercado Bitcoin amid Latin America’s tokenization boom",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-abc46eb9fb",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Former Tether investment chief is looking to sell part of his stake in the stablecoin giant: Bloomberg",
+      "url": "https://www.coindesk.com/business/2026/07/07/former-tether-investment-chief-is-looking-to-sell-part-of-his-stake-in-the-stablecoin-giant-bloomberg",
+      "published": "2026-07-07T13:46:25+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/07/07/former-tether-investment-chief-is-looking-to-sell-part-of-his-stake-in-the-stablecoin-giant-bloomberg"
+          }
+        ]
+      },
+      "summary": "Former Tether investment chief is looking to sell part of his stake in the stablecoin giant: Bloomberg",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-elliptic-blog-e7ff592dfb",
+      "jurisdiction": "GLOBAL",
+      "source": "Elliptic — Blog",
+      "title": "Crypto regulatory affairs: UK sets out final stablecoin rules",
+      "url": "https://www.elliptic.co/blog/crypto-regulatory-affairs-uk-sets-out-stablecoin-rules",
+      "published": "2026-07-07T13:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Elliptic — Blog",
+            "url": "https://www.elliptic.co/blog/crypto-regulatory-affairs-uk-sets-out-stablecoin-rules"
+          }
+        ]
+      },
+      "summary": "Crypto regulatory affairs: UK sets out final stablecoin rules",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-adf3c275a9",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Bitcoin’s early July bounce rides thin summer liquidity as half of supply still sits underwater: analysts",
+      "url": "https://www.theblock.co/post/407414/bitcoins-early-july-bounce-rides-thin-summer-liquidity-as-half-of-supply-still-sits-underwater-analysts?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-07T12:43:32+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407414/bitcoins-early-july-bounce-rides-thin-summer-liquidity-as-half-of-supply-still-sits-underwater-analysts?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Bitcoin’s early July bounce rides thin summer liquidity as half of supply still sits underwater: analysts",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-07T23:44:19.555129+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -819,236 +1083,236 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361481+00:00"
+      "checked_at": "2026-07-07T23:44:19.553924+00:00"
     },
     {
       "name": "Hong Kong Monetary Authority — Circulars & guidance",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361490+00:00"
+      "checked_at": "2026-07-07T23:44:19.553939+00:00"
     },
     {
       "name": "Securities and Futures Commission — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361494+00:00"
+      "checked_at": "2026-07-07T23:44:19.553947+00:00"
     },
     {
       "name": "Securities and Futures Commission — Circulars",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361498+00:00"
+      "checked_at": "2026-07-07T23:44:19.553953+00:00"
     },
     {
       "name": "Financial Services and the Treasury Bureau — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361501+00:00"
+      "checked_at": "2026-07-07T23:44:19.553959+00:00"
     },
     {
       "name": "Securities and Futures Commission — Licensed virtual asset trading platforms register",
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361506+00:00"
+      "checked_at": "2026-07-07T23:44:19.553966+00:00"
     },
     {
       "name": "People's Bank of China — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361509+00:00"
+      "checked_at": "2026-07-07T23:44:19.553972+00:00"
     },
     {
       "name": "CoinDesk — China policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361518+00:00"
+      "checked_at": "2026-07-07T23:44:19.553977+00:00"
     },
     {
       "name": "The Block — China policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361522+00:00"
+      "checked_at": "2026-07-07T23:44:19.553982+00:00"
     },
     {
       "name": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361526+00:00"
+      "checked_at": "2026-07-07T23:44:19.553992+00:00"
     },
     {
       "name": "Office of Foreign Assets Control (OFAC) — Recent actions",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361529+00:00"
+      "checked_at": "2026-07-07T23:44:19.553997+00:00"
     },
     {
       "name": "US Securities and Exchange Commission — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361536+00:00"
+      "checked_at": "2026-07-07T23:44:19.554003+00:00"
     },
     {
       "name": "Commodity Futures Trading Commission — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361540+00:00"
+      "checked_at": "2026-07-07T23:44:19.554008+00:00"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361542+00:00"
+      "checked_at": "2026-07-07T23:44:19.554013+00:00"
     },
     {
       "name": "Federal Reserve — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361545+00:00"
+      "checked_at": "2026-07-07T23:44:19.554018+00:00"
     },
     {
       "name": "US Department of Justice — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361548+00:00"
+      "checked_at": "2026-07-07T23:44:19.554023+00:00"
     },
     {
       "name": "European Securities and Markets Authority — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361551+00:00"
+      "checked_at": "2026-07-07T23:44:19.554028+00:00"
     },
     {
       "name": "European Banking Authority — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361554+00:00"
+      "checked_at": "2026-07-07T23:44:19.554034+00:00"
     },
     {
       "name": "Monetary Authority of Singapore — Media releases",
       "status": "ok",
-      "note": "Fetch failed this run (no parseable items); 2 consecutive failures — self-heal at 5.",
+      "note": "Fetch failed this run (no parseable items); 3 consecutive failures — self-heal at 5.",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361560+00:00"
+      "checked_at": "2026-07-07T23:44:19.554043+00:00"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='wolfsberg-group.org', port=443): Read timed out. (read timeout=15)); 1 consecutive failure — self-heal at 5.",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361571+00:00"
+      "checked_at": "2026-07-07T23:44:19.554060+00:00"
     },
     {
       "name": "Global Digital Finance (GDF) — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361574+00:00"
+      "checked_at": "2026-07-07T23:44:19.554065+00:00"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 1 consecutive failure — self-heal at 5.",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361580+00:00"
+      "checked_at": "2026-07-07T23:44:19.554071+00:00"
     },
     {
       "name": "Bank for International Settlements / Basel Committee — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361585+00:00"
+      "checked_at": "2026-07-07T23:44:19.554076+00:00"
     },
     {
       "name": "Financial Stability Board — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-07T12:06:13.361587+00:00"
+      "checked_at": "2026-07-07T23:44:19.554081+00:00"
     },
     {
       "name": "CoinDesk — Policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361590+00:00"
+      "checked_at": "2026-07-07T23:44:19.554086+00:00"
     },
     {
       "name": "The Block — Policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361593+00:00"
+      "checked_at": "2026-07-07T23:44:19.554091+00:00"
     },
     {
       "name": "CoinDesk — Institutional moves",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361596+00:00"
+      "checked_at": "2026-07-07T23:44:19.554096+00:00"
     },
     {
       "name": "The Block — Institutional moves",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361598+00:00"
+      "checked_at": "2026-07-07T23:44:19.554101+00:00"
     },
     {
       "name": "CoinDesk — Market news",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361601+00:00"
+      "checked_at": "2026-07-07T23:44:19.554107+00:00"
     },
     {
       "name": "The Block — Market news",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361604+00:00"
+      "checked_at": "2026-07-07T23:44:19.554112+00:00"
     },
     {
       "name": "Chainalysis — Blog",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361606+00:00"
+      "checked_at": "2026-07-07T23:44:19.554117+00:00"
     },
     {
       "name": "Elliptic — Blog",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361609+00:00"
+      "checked_at": "2026-07-07T23:44:19.554122+00:00"
     },
     {
       "name": "TRM Labs — Insights",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-07T12:06:13.361612+00:00"
+      "checked_at": "2026-07-07T23:44:19.554127+00:00"
     },
     {
       "name": "Claude summarisation",
       "status": "ok",
-      "note": "Sonnet — Claude Code session on 2026-07-07"
+      "note": "Sonnet — Claude Code session on 2026-07-08"
     }
   ],
   "run_log": [
@@ -1095,6 +1359,14 @@
     {
       "at": "2026-07-07T20:55:12.313700+00:00",
       "note": "Corrected 3 article dates, removed 3 vendor-promotional posts, and refined jurisdiction tagging on 5 items. Today's summaries were written with Sonnet."
+    },
+    {
+      "at": "2026-07-07T23:44:19.555129+00:00",
+      "note": "Daily fetch: 11 new items surfaced; 33/35 sources ok"
+    },
+    {
+      "at": "2026-07-08T00:21:22.992710+00:00",
+      "note": "Reconciled with a same-day pipeline run: merged its newly surfaced items and re-applied this session's date/jurisdiction/marketing-screening fixes."
     }
   ]
 }

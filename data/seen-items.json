@@ -320,7 +320,7 @@
   "https://www.coindesk.com/policy/2026/07/06/bitcoin-s-u-s-reserve-still-a-work-in-progress-as-federal-agencies-hash-it-out": {
     "title_hash": "689b98309fb4f2babc417547e0848853d3c9f67bade036e52e85eede17246584",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Bitcoin's U.S. reserve still a work-in-progress as federal agencies hash it out"
   },
   "https://www.coindesk.com/policy/2026/07/06/ripple-s-preliminary-crypto-asset-provider-license-in-luxembourg-upgraded-to-fully-compliant": {
@@ -374,7 +374,7 @@
   "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race": {
     "title_hash": "0fed8ca06c79f0b679f94097ff8ea0f6b9a10270544eb611edec7b18dd8346fa",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Circle’s USDC is leaving Tether behind in the stablecoin volume race, new data from Visa shows"
   },
   "https://www.coindesk.com/tech/2026/07/07/live-markets-bitcoin-and-ether-etfs-drew-inflows-on-monday": {
@@ -398,7 +398,7 @@
   "https://www.theblock.co/post/407360/grayscale-strategy-bitcoin-sales-comments?utm_source=rss&utm_medium=rss": {
     "title_hash": "2da59ed1db5d14c7f0ca1a923cc78eb853727ae085e6ce7a0b2977fb4148af52",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Grayscale says Strategy’s recent bitcoin sales should restore confidence in its financing structure"
   },
   "https://www.theblock.co/learn/407186/how-sovereign-wealth-funds-invest-in-digital-assets?utm_source=rss&utm_medium=rss": {
@@ -410,25 +410,25 @@
   "https://www.chainalysis.com/blog/comparing-blockchain-analytics-vendors": {
     "title_hash": "3eeb5f8ded3a8b28cb760a49393b0d7a9c3d416cdc0656a777f2a7fe38d5b65d",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Breadth, Depth, And Quality: Why Comparing Blockchain Analytics Vendors by Cluster Count Is Only Part of the Calculation"
   },
   "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026": {
     "title_hash": "ebcc37d26314244fc091d396c6bd43815cfc62f8b45b25e959d2d6c2f58c74c5",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "OFAC Updates ISIS-Khorasan Sanctions with Over 100 Cryptocurrency Wallets"
   },
   "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together": {
     "title_hash": "5360fb2c7fdacd5820870ecd06fcdf66be5eb957f62531354965e5f8e34acaa7",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "How the UK's stablecoin rules came together"
   },
   "https://www.elliptic.co/blog/introducing-continuous-monitoring": {
     "title_hash": "2b6595a5f09a22bcebec7406ca1a957264a91e117b6a31c134ff1874eb21cf03",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Introducing Continuous Monitoring: stay aware of changing crypto risk"
   },
   "https://www.trmlabs.com/resources/blog/ofac-sanctions-134-iskp-cryptocurrency-addresses-tied-to-usd-2-million-in-terrorist-financing": {
@@ -452,43 +452,43 @@
   "https://www.theblock.co/post/407410/coinbase-secures-uk-investment-services-license-to-add-derivatives-and-equities-trading?utm_source=rss&utm_medium=rss": {
     "title_hash": "b4c3e629bdca7ebd31bb2fff9855d6c6cb3dd044e21735925cd2d04805536a0f",
     "first_seen": "2026-07-07T12:05:14.831025+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Coinbase secures UK investment services license to add derivatives and equities trading"
   },
   "https://www.theblock.co/post/407389/upbit-naver-stock-swap-deal-delay?utm_source=rss&utm_medium=rss": {
     "title_hash": "8a8314d6ddf8b5d85d7e17d2ed6377a5eead0e891316d9f2f0c01cafe01d40ba",
     "first_seen": "2026-07-07T12:05:14.831025+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Upbit, Naver stock-swap deal faces second delay amid proposed crypto law debate"
   },
   "https://www.theblock.co/post/407368/two-traders-sue-polymarket-strategy-bitcoin-sale?utm_source=rss&utm_medium=rss": {
     "title_hash": "9612f47b138e284d474cb99ab73c33510c7327d3f14f1d3e81114ef31a81db04",
     "first_seen": "2026-07-07T12:05:14.831025+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Two traders sue Polymarket over disputed resolution of Strategy bitcoin sale market"
   },
   "https://www.coindesk.com/business/2026/07/07/coinbase-secures-uk-authorization-to-offer-traditional-investments-alongside-crypto": {
     "title_hash": "d45826dd8e2c0f5d736632d943aff1a998ed622f6c273652edeec71542db2b66",
     "first_seen": "2026-07-07T12:05:14.831025+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Coinbase secures UK authorization to offer traditional investments alongside crypto"
   },
   "https://www.coindesk.com/markets/2026/07/07/binance-taps-into-bitcoin-holders-hunger-for-yield-with-new-covered-call-yield-play": {
     "title_hash": "6328b3d3135f4f7fffd2999c35b5e225c75ac079b8accc07a4eaa9b9575ab245",
     "first_seen": "2026-07-07T12:05:14.831025+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Binance taps into Bitcoin holders’ hunger for yield with new covered call yield play"
   },
   "https://www.theblock.co/post/407394/tethers-former-cio-seeks-buyers-for-part-of-his-stake-in-the-firm-bloomberg?utm_source=rss&utm_medium=rss": {
     "title_hash": "b3a20daff227d12a8d58c19d6a4eb4e60fd5f92ecb76be7ce8b1b3ff57b92638",
     "first_seen": "2026-07-07T12:05:14.831025+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Tether’s former CIO seeks buyers for part of his stake in the firm: Bloomberg"
   },
   "https://www.chainalysis.com/blog/robinhood-chain-automatic-token-support": {
     "title_hash": "28e30259ea4a0ce661ff7b49cdee307f0c28bc5d13c4d09372fbf8931d4a0c74",
     "first_seen": "2026-07-07T12:05:14.831025+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
     "title": "Chainalysis Supports Robinhood Chain with Automatic Token Support"
   },
   "https://www.elliptic.co/blog/the-end-of-micas-transitional-period": {
@@ -496,5 +496,71 @@
     "first_seen": "2026-07-07T12:05:14.831025+00:00",
     "last_seen": "2026-07-07T12:06:13.362519+00:00",
     "title": "What the end of MiCA's transitional period means for crypto businesses"
+  },
+  "https://www.coindesk.com/policy/2026/07/07/u-s-sec-to-propose-crypto-rule-as-soon-as-this-month-to-ease-startups-fundraising": {
+    "title_hash": "4dbced47c3abd00b7e830c3739f5c116b9b7a85f5a497ec820cc749f54ee45e5",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "U.S. SEC to propose crypto rule as soon as this month to ease startups, fundraising"
+  },
+  "https://www.theblock.co/post/407516/cftc-charges-north-carolina-man-alleged-14-million-crypto-futures-fraud?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f641b032bb69c88f6bdfd7a928988568b06318a974461db6a378584e567b09e7",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "CFTC charges North Carolina man over alleged $14 million crypto, futures fraud"
+  },
+  "https://www.theblock.co/post/407468/sec-plans-crypto-rule-changes-for-exchanges-broker-dealers-2026-regulatory-agenda?utm_source=rss&utm_medium=rss": {
+    "title_hash": "929f81b1fd32fda12a5b1934e831a02629e06afe8f286d28a479a65b358d51a7",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "SEC plans crypto rule changes for exchanges and broker dealers in 2026 regulatory agenda"
+  },
+  "https://www.coindesk.com/markets/2026/07/07/blackrock-backed-securitize-slides-40-after-spac-debut-despite-tokenization-boom": {
+    "title_hash": "a31d2553241e6881869536963f2c58327e5e670d243ef54873e5e9169af173b8",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "BlackRock-backed Securitize slides 40% after SPAC debut despite tokenization boom"
+  },
+  "https://www.coindesk.com/business/2026/07/07/crypto-exchange-kraken-is-trying-to-become-a-bank-in-europe": {
+    "title_hash": "19327af6c4b1e75014d35c7e74d22f0ee45ee67f5d8d477b98ac5a83e7b9b009",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "Crypto exchange Kraken is trying to become a bank in Europe"
+  },
+  "https://www.coindesk.com/business/2026/07/07/former-tether-investment-chief-is-looking-to-sell-part-of-his-stake-in-the-stablecoin-giant-bloomberg": {
+    "title_hash": "0d89c73a9e27bb3f6b8c69a8409fdbeda787c0c2266e7419124521cc9279e3f9",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "Former Tether investment chief is looking to sell part of his stake in the stablecoin giant: Bloomberg"
+  },
+  "https://www.theblock.co/post/407524/kraken-wins-22-million-arbitration-auditor-mazars-for-ditching-during-operation-choke-point-2-0?utm_source=rss&utm_medium=rss": {
+    "title_hash": "a13dc717e358a84aff5a8392f39d021886f949ff7f82ab7a3095a1878d19a112",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "Kraken wins $22 million arbitration against auditor Mazars for ditching the firm during Operation Choke Point 2.0"
+  },
+  "https://www.theblock.co/post/407452/ondo-finance-says-tokenized-stocks-now-used-as-collateral-perp-trading?utm_source=rss&utm_medium=rss": {
+    "title_hash": "2f0ea9f44509b4c5639d397a44b69558097499e62e3b94a778cf9fb801b56c47",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "Ondo Finance says tokenized stocks can now be used as collateral for perp trading"
+  },
+  "https://www.theblock.co/post/407463/tether-20-million-behind-mercado-bitcoin-latin-america-tokenization-boom?utm_source=rss&utm_medium=rss": {
+    "title_hash": "23ec934ee8cf98e940b7aa35516e8b5e1caa43e38a2421ae14772df392f214c5",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "Tether puts $20 million behind Mercado Bitcoin amid Latin America’s tokenization boom"
+  },
+  "https://www.theblock.co/post/407414/bitcoins-early-july-bounce-rides-thin-summer-liquidity-as-half-of-supply-still-sits-underwater-analysts?utm_source=rss&utm_medium=rss": {
+    "title_hash": "fde2d3a7326da5e82d3e8b4e21c35bfcdbbe931af1277c5d79cf7eacd49b6cd4",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "Bitcoin’s early July bounce rides thin summer liquidity as half of supply still sits underwater: analysts"
+  },
+  "https://www.elliptic.co/blog/crypto-regulatory-affairs-uk-sets-out-stablecoin-rules": {
+    "title_hash": "eea819e2c9f7f15c788fe5b7e2d64efde74fc66d262ce87ae6c26b09947bd62d",
+    "first_seen": "2026-07-07T23:44:19.555139+00:00",
+    "last_seen": "2026-07-07T23:44:19.555139+00:00",
+    "title": "Crypto regulatory affairs: UK sets out final stablecoin rules"
   }
 }
