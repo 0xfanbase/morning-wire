@@ -1,14 +1,18 @@
 name: Daily digest
 
 on:
-  # '0 23 * * 0-4' UTC = 07:00 HKT Mon-Fri.
-  # HKT is UTC+8 with no DST, so 23:00 UTC rolls into the next calendar day
+  # '0 21 * * 0-4' UTC = 05:00 HKT Mon-Fri.
+  # HKT is UTC+8 with no DST, so 21:00 UTC rolls into the next calendar day
   # in Hong Kong. Day-of-week 0-4 (Sun-Thu UTC) is therefore Mon-Fri HKT.
+  # Runs 2 hours ahead of the old 07:00 HKT slot so the separately-scheduled
+  # Claude Code enrichment Routine (fires 06:00 HKT) has a full hour of
+  # runway after this pipeline to fact-check items before the normal 7am
+  # reading time, instead of trailing behind it.
   # GitHub's cron scheduler can drift 5-15 minutes at peak load, and a
   # schedule trigger is auto-disabled after 60 days with no commits to the
   # repo -- the daily commit-back in this workflow keeps it active.
   schedule:
-    - cron: '0 23 * * 0-4'
+    - cron: '0 21 * * 0-4'
   workflow_dispatch: {}
 
 concurrency:
