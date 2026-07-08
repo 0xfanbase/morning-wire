@@ -16,18 +16,44 @@ seen", none of which trusts the others:
      but this is MUTABLE and WAS hand-edited during the incident, so it is
      corroborating evidence, never the sole oracle)
   3. the first_seen value AS RECORDED in the EARLIEST git commit that ever
-     contained this item's dedupe key -- the one value nothing after the
-     fact can rewrite, because git history is append-only
+     contained this item -- the one value nothing after the fact can
+     rewrite, because git history is append-only
 
 A backward move against the git anchor, with no legitimate 'update' status
 explaining a resurfacing, is CRITICAL: it is precisely the incident pattern.
+
+Anchored primarily on item `id` (base.earliest_first_seen_by_id), not the
+dedupe key alone (a URL for ordinary items) -- see audit/lessons.md L2. `id`
+is assigned once and never reassigned, so it survives a `url` edit; the
+dedupe key does not, and a check that anchors on it alone can be orphaned
+from an item's real history by nothing more than an edited link. The
+key-based anchor is kept as a fallback for the (should not happen in
+practice) case of an item with no `id`.
 """
 import json
+from datetime import datetime, timedelta, timezone
 
-from base import commits_touching, file_at_commit, finding, could_not_run, BOOTSTRAP_CUTOFF
+from base import commits_touching, earliest_first_seen_by_id, file_at_commit, finding, could_not_run, BOOTSTRAP_CUTOFF
 
 CHECK_ID = "first_seen_3way"
 MODE = "hard"
+
+# A genuine "update" (run.dedupe(): same URL, materially changed title) only
+# ever moves an item's first_seen FORWARD, to the run that noticed the
+# change -- never backward. Blanket-exempting status="update" from the
+# backdating check (as this check originally did) would let a manipulated
+# item dodge detection just by carrying that status; the tolerance below
+# still allows same-day clock/dedupe timing noise without opening that gap
+# back up for anything beyond it (see audit/lessons.md L2, item 5).
+UPDATE_BACKDATE_TOLERANCE = timedelta(hours=6)
+
+
+def _parse(value):
+    try:
+        dt = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except (ValueError, TypeError):
+        return None
+    return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
 
 
 def run(repo_root, bootstrap_cutoff=BOOTSTRAP_CUTOFF):
@@ -64,6 +90,8 @@ def run(repo_root, bootstrap_cutoff=BOOTSTRAP_CUTOFF):
             if key and key not in anchor:
                 anchor[key] = it.get("first_seen")
 
+    anchor_by_id = earliest_first_seen_by_id(repo_root, since_days=90, after=bootstrap_cutoff)
+
     try:
         current = json.loads((repo_root / "data" / "digest.json").read_text(encoding="utf-8"))
         seen = json.loads((repo_root / "data" / "seen-items.json").read_text(encoding="utf-8"))
@@ -81,16 +109,30 @@ def run(repo_root, bootstrap_cutoff=BOOTSTRAP_CUTOFF):
             continue
         is_update = it.get("status") == "update"
 
-        anc_fs = anchor.get(key)
-        if anc_fs and cur_fs < anc_fs and not is_update:
-            findings.append(finding(
-                CHECK_ID, "critical",
-                f"first_seen backdated for '{it.get('title', '')[:60]}'",
-                f"digest.json shows first_seen={cur_fs}, but the earliest git commit that ever "
-                f"contained this item recorded first_seen={anc_fs}. A backward move with no "
-                f"status='update' signature is the exact pattern of the 2026-07-07 incident.",
-                {"id": it.get("id"), "key": key, "current_first_seen": cur_fs, "git_anchor_first_seen": anc_fs},
-            ))
+        # Prefer the id-anchored value: it survives a `url` edit, the
+        # dedupe-key-based `anchor` does not (see module docstring / L2).
+        anc_fs = anchor_by_id.get(it.get("id")) or anchor.get(key)
+        if anc_fs and cur_fs < anc_fs:
+            cur_dt, anc_dt = _parse(cur_fs), _parse(anc_fs)
+            backdate_amount = (anc_dt - cur_dt) if (cur_dt and anc_dt) else None
+            # A genuine update's first_seen only ever moves forward (see
+            # UPDATE_BACKDATE_TOLERANCE above) -- status="update" excuses a
+            # small backward move (same-run timing noise), never a large one.
+            excused = is_update and backdate_amount is not None and backdate_amount <= UPDATE_BACKDATE_TOLERANCE
+            if not excused:
+                findings.append(finding(
+                    CHECK_ID, "critical",
+                    f"first_seen backdated for '{it.get('title', '')[:60]}'",
+                    f"digest.json shows first_seen={cur_fs}, but the earliest git commit that ever "
+                    f"contained this item recorded first_seen={anc_fs}. "
+                    + (f"status='update' but the backward move ({backdate_amount}) exceeds the "
+                       f"{UPDATE_BACKDATE_TOLERANCE} tolerance a genuine same-run update can explain."
+                       if is_update else
+                       "A backward move with no status='update' signature is the exact pattern of "
+                       "the 2026-07-07 incident."),
+                    {"id": it.get("id"), "key": key, "current_first_seen": cur_fs, "git_anchor_first_seen": anc_fs,
+                     "status": it.get("status")},
+                ))
 
         s = seen.get(key)
         if s and s.get("first_seen") and cur_fs[:16] != s["first_seen"][:16] and not is_update:

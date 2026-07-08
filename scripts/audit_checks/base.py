@@ -101,3 +101,39 @@ def file_at_commit(repo_root, sha, path):
         return json.loads(raw)
     except ValueError:
         return None
+
+
+def earliest_first_seen_by_id(repo_root, since_days=90, after=None):
+    """{item id: first_seen at that id's EARLIEST git appearance}, scanning
+    data/digest.json history oldest-first.
+
+    Anchoring on `id` rather than the dedupe key (canonical URL for ordinary
+    items -- see run._dedupe_key) matters because `id` is assigned exactly
+    once, via `item.setdefault("id", ...)` in run.py, and is never
+    reassigned afterward -- unlike the dedupe key, which is recomputed from
+    the item's CURRENT `url` every time it's read. An item whose `url` is
+    edited gets a brand-new dedupe key with no history under the old one,
+    silently orphaning it from any check that anchors on that key alone (see
+    audit/lessons.md L2). `id` survives a `url` edit unchanged, so anchoring
+    on it closes that gap for both first_seen_3way and deletion_diff.
+
+    since_days defaults wide (90, vs the ~10-12 day windows the two PROTECTED
+    checks otherwise use for their own commit-pair walks) because an id's
+    TRUE earliest appearance -- the whole point of an anchor -- may predate
+    the narrower window either check uses to look for a recent deletion.
+    """
+    import json
+    try:
+        commits = commits_touching(repo_root, "data/digest.json", since_days=since_days, after=after)
+    except Exception:
+        return {}
+    anchor = {}
+    for sha, _date in commits:
+        snap = file_at_commit(repo_root, sha, "data/digest.json")
+        if not snap:
+            continue
+        for it in snap.get("items", []):
+            item_id = it.get("id")
+            if item_id and item_id not in anchor:
+                anchor[item_id] = it.get("first_seen")
+    return anchor

@@ -102,23 +102,43 @@ of what mutable fields (`url`, `first_seen`, `status`) change along the way.
 5. An item with `status: "update"` is exempt from both of `first_seen_3way`'s
    backdating-detection branches.
 
-**CHECK:** none yet — this is exactly why STATUS is `open` below, not `absorbed`.
+**CHECK:** `scripts/audit_checks/fixtures/test_l2_mutable_key_evasion.py` — a
+synthetic red/green fixture (there is no real historical incident for L2, this
+was found by inspection before it could cause one) built the same way
+`test_against_incident.py` was built from the real `cd206e3` incident:
+- `test_backdate_then_delete_evasion`: url edit + backdate, then delete —
+  proven to evade the ORIGINAL code (verified by hand against a copy of the
+  pre-fix checks) and proven caught by the fixed code (gaps 1, 2, 3).
+- `test_url_edit_alone_is_not_a_false_deletion`: a legitimate url fix with no
+  backdating is correctly NOT reported as a deletion (green case for gap 1's
+  fix).
+- `test_update_status_no_longer_excuses_large_backdate` /
+  `test_update_status_small_backdate_still_excused`: gap 5's fix closes the
+  large-backdate bypass while still tolerating small, same-run timing noise.
 
-**RULE (proposed, not yet implemented):** Anchor identity on something immutable
-per item — e.g. a content hash of `(source, canonical title at first ingest)`, or
-simply also indexing by `id` as a fallback key when the URL-keyed lookup misses —
-so a `url` edit can't orphan an item from its own history. Add a check (or extend
-`first_seen_3way`) that walks *every* commit pair for `generated_at` parseability
-and treats an unparseable value as `could_not_run` (loud), never a silent skip.
-Consider a check that specifically looks for the two-commit backdate-then-delete
-pattern as its own signature, rather than relying on the weekly cadence to land
-between the two commits by chance.
+**RULE (implemented):**
+1. `base.earliest_first_seen_by_id` anchors on item `id` (assigned once in
+   `run.py`, never reassigned — unlike the dedupe key, recomputed from the
+   CURRENT `url` every time). Both `first_seen_3way` (backdating check) and
+   `deletion_diff` (legality-of-deletion check) now prefer this id-anchored,
+   full-history value over the dedupe-key-based one. This closes gaps 1, 2,
+   and 4 together: a `url` edit no longer orphans an item from its history,
+   and a deletion's legality is judged against the TRUE earliest-ever-recorded
+   first_seen, not just the immediately preceding (possibly already-falsified)
+   commit's value.
+2. `deletion_diff` now also matches old-vs-new items by `id`: if the same id
+   is present in the newer commit under a different key, that's a `url` edit,
+   recorded as an `info` finding, never mistaken for a deletion.
+3. `deletion_diff` reports an unparseable `generated_at` as `could_not_run`
+   (loud) instead of silently skipping that commit pair.
+4. `first_seen_3way`'s `status="update"` exemption is now bounded by
+   `UPDATE_BACKDATE_TOLERANCE` (6 hours) instead of excusing any backward
+   move unconditionally — a genuine update only ever moves first_seen
+   forward, so a large backward move can no longer hide behind that status.
 
-**STATUS:** open. No red-fixture-backed check exists for any of the five gaps
-above yet — do not mark this `absorbed` until at least the `url`-as-dedupe-key
-gap (the most severe: it defeats both PROTECTED checks in one edit) has a
-red-fixture test built the same way `test_against_incident.py` was built from
-the real `cd206e3` incident.
+**STATUS:** absorbed (all five gaps have a red-fixture-backed check; verified
+against `test_against_incident.py`'s original red/green fixture too, with no
+regression).
 
 ---
 
@@ -129,37 +149,50 @@ in the same four-round review. None have caused a known incident; recorded here
 so they aren't silently rediscovered, and so a future session has a concrete list
 to work from rather than needing to re-run the same audit from scratch.
 
-**EVIDENCE:**
-- `verify.py`'s corroboration prompt embeds attacker-influenceable `title`/
-  `summary` text verbatim into a Claude prompt with web-search access; a crafted
-  feed item could attempt to induce a false "confirmed" corroboration. The
-  same-publisher domain check was hardened this session (subdomain relationships
-  now correctly detected), which closes the most likely FALSE corroboration
-  vector, but the underlying "attacker-influenced content reaches a prompt that
-  can mint a public trust badge" shape remains and deserves a closer look
-  (e.g. requiring the confirming source to be independently web-searched for,
-  never merely accepted from the same response that read the original item).
-- `scripts/run.py`'s `merge_digest_window`/`prune_seen_items` silently discard
-  any item/entry whose `first_seen`/`last_seen` fails to parse, rather than
-  logging or failing loud — a malformed timestamp currently means quiet data
-  loss with no trace anywhere.
-- `scripts/heal.py` validates a candidate replacement source on liveness alone
-  (an actual fetch succeeds) for feed-kind sources; only page-kind sources with a
-  selector get a relevance check. A live-but-wrong feed could self-heal in
-  undetected.
-- `scripts/audit.py --simulate` can exit 0 even when `sanitize_digest` itself
-  raises inside the simulation (a broad exception handler falls back to
-  `after_ids`), which is the exact "mandatory proof" step L1's RULE requires —
-  it should never be able to report success on a crash.
-- `.github/workflows/*.yml` pin third-party actions (`actions/checkout`,
-  `actions/setup-python`, etc.) to mutable major-version tags, not commit SHAs —
-  standard supply-chain hardening advice, low urgency here since these are all
-  first-party GitHub actions, but worth doing eventually.
+**EVIDENCE / STATUS per item:**
+- **Fixed:** `scripts/run.py`'s `merge_digest_window`/`prune_seen_items` used to
+  silently discard any item/entry whose `first_seen`/`last_seen` fails to parse.
+  Both now log a warning naming the id/key before dropping it, so a malformed
+  timestamp leaves a trace in the Action logs instead of quiet, untraceable loss.
+  No dedicated red fixture (this is a logging change, not a detection-logic
+  change) — verified by reading the diff and confirming the normal
+  `--simulate`/full-audit paths still report zero unexpected loss.
+- **Fixed:** `scripts/audit.py --simulate` used to exit 0 even when
+  `sanitize_digest` itself raised inside the simulation (a broad exception
+  handler fell back to treating the pre-sanitize id set as the answer, which
+  is the exact "mandatory proof" step L1's RULE requires — it must never be
+  able to report success on a crash). Now a crash is tracked separately
+  (`sanitize_crashed`), printed as an explicit FAILED line saying the output
+  is not proof of anything, and forces a non-zero exit. Verified: the normal
+  (non-crashing) path still prints "zero unexpected item loss" and exits 0.
+- **Still open:** `verify.py`'s corroboration prompt embeds attacker-
+  influenceable `title`/`summary` text verbatim into a Claude prompt with
+  web-search access; a crafted feed item could attempt to induce a false
+  "confirmed" corroboration. The same-publisher domain check was hardened
+  this session (subdomain relationships now correctly detected, closing the
+  most likely FALSE-corroboration vector), but the underlying
+  "attacker-influenced content reaches a prompt that can mint a public trust
+  badge" shape remains and deserves a closer look (e.g. requiring the
+  confirming source to be independently web-searched for, never merely
+  accepted from the same response that read the original item).
+- **Still open:** `scripts/heal.py` validates a candidate replacement source
+  on liveness alone (an actual fetch succeeds) for feed-kind sources; only
+  page-kind sources with a selector get a relevance check. A live-but-wrong
+  feed could self-heal in undetected.
+- **Still open, low priority:** `.github/workflows/*.yml` pin third-party
+  actions (`actions/checkout`, `actions/setup-python`, etc.) to mutable
+  major-version tags, not commit SHAs — standard supply-chain hardening
+  advice, low urgency here since these are all first-party GitHub actions,
+  but worth doing eventually.
 
-**CHECK:** none yet.
+**CHECK:** none of the still-open items have a red-fixture-backed check yet.
 
-**RULE:** none yet — these are findings to triage, not absorbed rules. A future
-session (this or the next weekly audit) should pick one, build the red-fixture
-check, and move it from this list into its own lesson with STATUS `absorbed`.
+**RULE:** none yet for the still-open items — these remain findings to
+triage, not absorbed rules. A future session (this or the next weekly audit)
+should pick one, build the red-fixture check, and move it into its own
+lesson with STATUS `absorbed`.
 
-**STATUS:** open.
+**STATUS:** partially absorbed — 2 of 5 items fixed and verified (no
+detection-logic red fixture needed for either, per the reasoning above); the
+remaining 3 (verify.py prompt-injection design, heal.py relevance validation,
+workflow SHA pinning) are still open.

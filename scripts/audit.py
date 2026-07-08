@@ -174,13 +174,19 @@ def _simulate(repo_root):
 
     pruned_seen = run_mod.prune_seen_items(copy.deepcopy(seen))
 
+    sanitize_crashed = False
     try:
         import render as render_mod
         clean = render_mod.sanitize_digest({**digest, "items": merged})
         sanitized_ids = {it["id"] for it in clean["items"]}
     except Exception as exc:
-        print(f"--simulate: sanitize_digest raised: {exc}")
+        # This is the exact "mandatory proof" step L1's RULE requires before
+        # a data-affecting fix ships -- a crash here must never read as
+        # "zero loss" just because there's nothing to diff against. Treated
+        # as its own failure below, never silently folded into lost_in_sanitize.
+        print(f"--simulate: sanitize_digest RAISED (could not verify item loss): {exc}")
         sanitized_ids = after_ids
+        sanitize_crashed = True
 
     lost_in_prune = before_ids - after_ids
     lost_in_sanitize = after_ids - sanitized_ids
@@ -195,9 +201,12 @@ def _simulate(repo_root):
         print("  (Expected only for items already outside the retention window -- verify each one's first_seen.)")
     if lost_in_sanitize:
         print(f"  ATTENTION -- sanitize_digest would drop {len(lost_in_sanitize)} item(s): {sorted(lost_in_sanitize)}")
-    if not lost_in_prune and not lost_in_sanitize:
+    if sanitize_crashed:
+        print("  FAILED -- sanitize_digest raised, so item loss could not be verified (see above). "
+              "This is NOT proof of zero loss -- do not attach this output to a PR as if it were.")
+    elif not lost_in_prune and not lost_in_sanitize:
         print("  zero unexpected item loss")
-    return 1 if lost_in_sanitize else 0
+    return 1 if (lost_in_sanitize or sanitize_crashed) else 0
 
 
 def main():

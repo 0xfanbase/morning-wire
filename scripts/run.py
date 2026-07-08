@@ -155,6 +155,10 @@ def prune_seen_items(seen):
         try:
             last_seen = datetime.fromisoformat(entry["last_seen"].replace("Z", "+00:00"))
         except (KeyError, ValueError):
+            # A malformed last_seen means this entry silently vanishes from
+            # dedupe memory -- log it so a bad write is at least visible in
+            # the Action logs, instead of a bare, untraceable data loss.
+            logger.warning("prune_seen_items: dropping entry with malformed last_seen: key=%r entry=%r", key, entry)
             continue
         if last_seen >= cutoff:
             kept[key] = entry
@@ -174,6 +178,10 @@ def merge_digest_window(previous_items, fresh_items):
         try:
             first_seen = datetime.fromisoformat(item["first_seen"].replace("Z", "+00:00"))
         except (KeyError, ValueError):
+            # Same reasoning as prune_seen_items above -- a malformed
+            # first_seen must not silently drop a real item from the digest.
+            logger.warning("merge_digest_window: dropping previous item with malformed first_seen: id=%r first_seen=%r",
+                            item.get("id"), item.get("first_seen"))
             continue
         if first_seen >= cutoff:
             by_key[_dedupe_key(item)] = item
