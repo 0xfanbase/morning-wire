@@ -110,7 +110,7 @@ this coverage map, one area per week, recorded as a `run_log`-style note in
 the ledger so the next run picks up the next one (check the last few
 `audit/ledger.jsonl` entries for which area was last deep-dived):
 
-1. Source coverage, keyword tuning, and reassessment. Are HK/CN/US/EU/SG
+1. Source coverage, keyword tuning, and reassessment. Are HK/CN/US/UK/EU/SG
    official sources and the tracked institutions still being caught?
    Reassess whether `data/sources.json` still serves the reader CLAUDE.md
    defines this page for — an HK/China-focused digital-asset
@@ -120,7 +120,7 @@ the ledger so the next run picks up the next one (check the last few
    makes) when a source would be genuinely useful to that reader:
    - A regulator, central bank, or standard-setter with digital-asset
      remit that isn't covered yet (check for gaps across HK, mainland
-     China, the US, the EU, Singapore, and global bodies).
+     China, the US, the UK, the EU, Singapore, and global bodies).
    - A bank, exchange, or custody/tokenisation initiative that's become
      material enough to track as a recurring "Industry intel" source,
      not just a one-off item.

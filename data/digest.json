@@ -350,7 +350,7 @@
     },
     {
       "id": "global-elliptic-blog-4edb359f95",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "UK",
       "source": "Elliptic — Blog",
       "title": "How the UK's stablecoin rules came together",
       "url": "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together",
@@ -1038,7 +1038,7 @@
     },
     {
       "id": "global-elliptic-blog-e7ff592dfb",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "UK",
       "source": "Elliptic — Blog",
       "title": "Crypto regulatory affairs: UK sets out final stablecoin rules",
       "url": "https://www.elliptic.co/blog/crypto-regulatory-affairs-uk-sets-out-stablecoin-rules",
@@ -1395,13 +1395,13 @@
     {
       "date": "2026-09-30",
       "label": "FCA stablecoin-issuer licence application window opens",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "UK",
       "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
     },
     {
       "date": "2027-10-25",
       "label": "FCA cryptoasset regime fully in force (stablecoin issuers)",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "UK",
       "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
     }
   ]

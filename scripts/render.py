@@ -28,7 +28,7 @@ RADAR_MAX_ENTRIES = 8
 RUN_LOG_MAX_ENTRIES = 10
 RUN_LOG_NOTE_MAX_CHARS = 220
 
-VALID_JURISDICTIONS = {"HK", "CN", "US", "EU", "SG", "GLOBAL"}
+VALID_JURISDICTIONS = {"HK", "CN", "US", "UK", "EU", "SG", "GLOBAL"}
 VALID_TYPES = {
     "enforcement", "final_rule", "consultation", "guidance", "designation",
     "licensing", "peer_move", "speech", "news",
@@ -251,8 +251,8 @@ def _og_strings(clean):
     if not desc:
         n = len(clean["items"])
         desc = (f"{n} item{'s' if n != 1 else ''} across Hong Kong, mainland China, the United "
-                "States, the European Union, Singapore and global standard-setters. "
-                "AI-sourced and AI-generated — verify against official sources.")
+                "States, the United Kingdom, the European Union, Singapore and global "
+                "standard-setters. AI-sourced and AI-generated — verify against official sources.")
     return title[:200], desc[:200]
 
 

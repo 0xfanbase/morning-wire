@@ -70,7 +70,8 @@ this:
      clearly about one specific jurisdiction's regulator/agency action, even if the
      reporting source itself is configured `GLOBAL` in `data/sources.json` (e.g. an
      industry blog's write-up of an OFAC sanctions action is US news, not global
-     news; a MiCA explainer is EU news). `scripts/audit_checks/
+     news; a MiCA explainer is EU news; an FCA rulebook explainer is UK news).
+     `scripts/audit_checks/
      check_item_jurisdiction_signal.py` flags likely mistags as a soft, `info`-level
      nudge each run — treat its suggestions as a prompt for judgment, never
      auto-apply them mechanically, and never invent a jurisdiction the story doesn't
@@ -81,7 +82,7 @@ this:
      cryptoasset exposures, sanctions/travel rule, AML/CFT rulemaking); else `normal`.
      This is the mechanism that keeps the page's Hong Kong/mainland China focus real
      without hardcoding it: HK/CN items get an extra path to `high` on top of the
-     type-based rules everyone gets, but a sufficiently material US/EU/SG/global
+     type-based rules everyone gets, but a sufficiently material US/UK/EU/SG/global
      story (e.g. a major sanctions action or final rule) still earns `high` on its
      own terms — the reader-lens bias is additive, never exclusionary.
 4. Write the top-level `top_of_mind` field in `data/digest.json`: one or two sentences
@@ -108,7 +109,7 @@ this:
    consultation comment deadlines, rule effective dates, licence application
    windows — into the top-level `radar` list (the page's "On the radar" strip):
    `{"date": "YYYY-MM-DD", "label": "Comments close: <what>", "jurisdiction":
-   "HK|CN|US|EU|SG|GLOBAL", "url": "<source url, optional>"}`. Only dates stated
+   "HK|CN|US|UK|EU|SG|GLOBAL", "url": "<source url, optional>"}`. Only dates stated
    in the source — never inferred. Keep at most ~6 rows, nearest first; leave
    existing rows alone (the renderer auto-drops past dates).
 6. Optional but valuable: for `tier`-industry items whose `verification.level` is

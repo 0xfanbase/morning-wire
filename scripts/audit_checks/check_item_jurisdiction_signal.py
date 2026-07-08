@@ -28,6 +28,8 @@ JURISDICTION_SIGNALS = {
     "CN": [r"\bPBOC\b", r"\bPeople's Bank of China\b", r"\bCSRC\b"],
     "SG": [r"\bMAS\b", r"\bMonetary Authority of Singapore\b"],
     "EU": [r"\bESMA\b", r"\bEBA\b", r"\bMiCA\b", r"\bEuropean (Banking|Securities)\b"],
+    "UK": [r"\bFCA\b", r"\bFinancial Conduct Authority\b", r"\bBank of England\b",
+           r"\bHM Treasury\b", r"\bPRA\b", r"\bPrudential Regulation Authority\b"],
 }
 
 

@@ -20,7 +20,7 @@ from base import finding, could_not_run
 CHECK_ID = "jurisdiction_coverage"
 MODE = "soft"
 
-JURISDICTIONS = ["HK", "CN", "US", "EU", "SG"]  # GLOBAL excluded: no single-jurisdiction bar applies
+JURISDICTIONS = ["HK", "CN", "US", "EU", "SG", "UK"]  # GLOBAL excluded: no single-jurisdiction bar applies
 
 
 def run(repo_root):
