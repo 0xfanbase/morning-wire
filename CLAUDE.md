@@ -9,7 +9,8 @@ of AI summaries, and industry items stay unverified.
 ## Task: "enrich today's digest"
 
 When asked to enrich the digest (the subscription-based alternative to an API key),
-do this:
+or when a daily digest-enrichment Routine fires shortly after the pipeline runs, do
+this:
 
 1. FIRST make sure the day's pipeline run is finished — enriching mid-run loses
    the race and one side's push fails on a guaranteed docs/index.html conflict:
@@ -99,9 +100,10 @@ do this:
    `summary`/`so_what` already in this digest — never generalise, extrapolate, or add
    an implication the source items don't themselves support. Plain English, no
    acronyms, neutral voice. Set it to "" on quiet days. The page shows it as a callout
-   beside the priority list (which is capped at 5 rows — jurisdiction order, then
-   recency — and only admits items first seen (or published) within the last 7 days,
-   so a stale item marked `high` never headlines).
+   beside the priority list (which is capped at 3 rows — jurisdiction order, then
+   recency — and only admits items first seen (or published) within the currently
+   selected range, so a stale item marked `high` never headlines; it is hidden
+   entirely under "All", which has no coherent sense of "priority right now").
 5. While summarising, capture any EXPLICIT future dates the items mention —
    consultation comment deadlines, rule effective dates, licence application
    windows — into the top-level `radar` list (the page's "On the radar" strip):

@@ -150,18 +150,43 @@ try {
   /* ============================================================
      HEADER
      ============================================================ */
-  /* The masthead (incl. section tabs, font-size control, theme picker)
-     scrolls away with the page; the Digest tab's own filter toolbar is the
-     one sticky/frozen element (see .filter-toolbar) -- tabs are occasional
-     secondary destinations, not something that needs to stay pinned. */
+  /* .mast-sticky (wordmark + section tabs + font-size control + theme
+     picker) is pinned across scroll AND across every tab -- it lives inside
+     <header>, a sibling of <main class="wrap"> which holds all four
+     #tab-* panels, so selectTab()'s hidden-attribute toggling never touches
+     it: one element, shared by construction, no per-tab duplication.
+     position:fixed (not sticky) -- header.masthead is only as tall as its
+     own content (a couple of short meta lines), so a *sticky* child can only
+     stay stuck while scrolling through that short containing block, then
+     un-sticks and scrolls away once the header itself has scrolled past.
+     Fixed positioning anchors to the viewport instead, with header.masthead
+     given matching top padding below so the in-flow content (the meta line,
+     the disclaimer line) isn't hidden underneath it. The date/generated/
+     freshness line and the AI-disclaimer line scroll away normally.
+     --mast-h is MEASURED at runtime (see syncStickyOffsets in the script):
+     a hand-tuned constant here broke at 720-1100px widths and at larger
+     font sizes, where the bar wraps taller and hid the meta line under it.
+     The 78px fallback only covers the instant before first measurement. */
   header.masthead {
     border-bottom: 1px solid var(--border);
     background: var(--bg);
+    padding-top: var(--mast-h, 78px);
   }
+  .mast-sticky {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 35;   /* between .filter-toolbar's 30 and .theme-options' 40 */
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  html[data-theme="matrix"] .mast-sticky { background: rgba(2,9,4,.97); }
   .mast-inner {
     max-width: 720px; margin: 0 auto;
     padding: 18px 20px 14px;
-    display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .mast-meta {
+    max-width: 720px; margin: 8px auto 0;
+    padding: 0 20px;
+    font-size: 13.5px; color: var(--ink-3);
   }
   .wordmark {
     font-family: var(--serif);
@@ -184,7 +209,6 @@ try {
     box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent);
     flex: 0 0 auto;
   }
-  .mast-meta { font-size: 13.5px; color: var(--ink-3); margin: 5px 0 0; }
   .mast-meta strong { color: var(--ink-2); font-weight: 600; }
 
   .mast-controls {
@@ -281,7 +305,11 @@ try {
      strip), replacing a collapsible sidebar that could get stuck hidden.
      ============================================================ */
   .filter-toolbar {
-    position: sticky; top: 0; z-index: 30;
+    /* Sticks directly below .mast-sticky (the pinned wordmark+tabs+font+
+       theme row), not underneath/overlapping it -- --mast-h is that row's
+       runtime-measured height (see syncStickyOffsets), so the toolbar can
+       never slide underneath a masthead that wrapped taller than expected. */
+    position: sticky; top: var(--mast-h, 78px); z-index: 30;
     background: var(--bg);
     padding: 14px 0 10px;
     border-bottom: 1px solid var(--border);
@@ -417,8 +445,6 @@ try {
   .fresh-dot.ok    { background: var(--ok); }
   .fresh-dot.warn  { background: var(--warn); }
   .fresh-dot.stale { background: var(--danger); }
-  #mast-scope { font-variant-numeric: tabular-nums; }
-  #mast-scope .hi { color: var(--accent-deep); font-weight: 600; }
 
   /* ============================================================
      ABOUT TAB + LEGEND + FOOTER LINKS
@@ -451,11 +477,13 @@ try {
   .jumpnav a { color: var(--ink-2); font-weight: 600; }
   .jumpnav a:hover { color: var(--accent); }
   .jumpnav .jn-count { color: var(--ink-3); font-weight: 400; font-variant-numeric: tabular-nums; }
-  /* The sticky element is now .filter-toolbar (two chip rows, plus a
-     conditional applied-filters strip) -- 140px leaves headroom so an
-     anchor jump never lands partially hidden underneath it; re-measure and
-     trim if a browser pass shows too much/too little clearance. */
-  .juris-group, .card, details.brief { scroll-margin-top: 140px; }
+  /* Two sticky elements now stack above the feed: .mast-sticky (pinned
+     wordmark/tabs/font/theme) and .filter-toolbar (two chip rows, plus a
+     conditional applied-filters strip) pinned below it -- --stack-h is the
+     runtime-measured height of both plus breathing room (see
+     syncStickyOffsets), so an anchor jump never lands partially hidden
+     underneath either, whatever the viewport width or font size. */
+  .juris-group, .card, details.brief { scroll-margin-top: var(--stack-h, 220px); }
 
   .radar, .catchup {
     border: 1px solid var(--border);
@@ -500,10 +528,18 @@ try {
   /* ============================================================
      IN-BRIEF ROWS (tiered feed)
      ============================================================ */
+  .brief-head-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
   .brief-head {
     font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
     color: var(--ink-3); margin: 4px 0 6px;
   }
+  .brief-toggle-all {
+    appearance: none; background: none; border: none; padding: 0;
+    font-family: var(--sans); font-size: 11px; font-weight: 700;
+    letter-spacing: .04em; color: var(--accent); cursor: pointer;
+    white-space: nowrap;
+  }
+  .brief-toggle-all:hover { color: var(--accent-h); text-decoration: underline; }
   .brief-list { border-top: 1px solid var(--border); margin-bottom: 13px; }
   details.brief { border-bottom: 1px solid var(--border); }
   details.brief > summary {
@@ -640,7 +676,7 @@ try {
      PRIORITY STRIP
      ============================================================ */
   .section-head {
-    display: flex; align-items: baseline; gap: 10px;
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
     margin: 34px 0 14px;
   }
   .section-head h2 {
@@ -684,13 +720,21 @@ try {
   /* ============================================================
      JURISDICTION GROUPS + CARDS
      ============================================================ */
-  .juris-group { margin-top: 30px; }
+  .juris-group {
+    margin-top: 34px;
+    padding-top: 24px;
+    border-top: 3px solid var(--border-2);
+  }
+  /* Skip the border on the very first group -- it sits directly under
+     .section-head's own rule (margin: 34px 0 14px), so a second rule
+     stacked immediately below would double up, not strengthen. */
+  .juris-group:first-of-type { margin-top: 18px; padding-top: 0; border-top: none; }
   .juris-title {
-    font-family: var(--serif); font-weight: 700; font-size: 21px;
+    font-family: var(--serif); font-weight: 800; font-size: 25px;
     letter-spacing: -.01em; margin: 0 0 3px; color: var(--ink);
     display: flex; align-items: baseline; gap: 10px;
   }
-  .juris-title .jt-count { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--ink-3); }
+  .juris-title .jt-count { font-family: var(--sans); font-size: 12px; font-weight: 700; color: var(--ink-3); letter-spacing: .02em; }
   .juris-sep { height: 2px; background: var(--border-2); margin: 6px 0 16px; border-radius: 2px; }
 
   .card {
@@ -729,6 +773,7 @@ try {
   }
   .pill.new { background: color-mix(in srgb, var(--accent) 15%, transparent); color: var(--accent); }
   .pill.update { background: color-mix(in srgb, var(--ink-3) 18%, transparent); color: var(--ink-2); }
+  .pill.unenriched { background: color-mix(in srgb, var(--warn) 16%, transparent); color: var(--warn); }
   .card-top .spacer { flex: 1; }
 
   .card h4 {
@@ -861,9 +906,10 @@ try {
     html[data-theme="matrix"] body, html[data-theme="matrix"] main.wrap,
     html[data-theme="matrix"] header.masthead { background: #fff !important; }
     .wordmark, .section-head h2 { text-shadow: none !important; }
-    header.masthead { position: static; border-bottom: 2px solid #000; }
+    header.masthead { position: static; padding-top: 0; border-bottom: 2px solid #000; }
+    .mast-sticky { position: static; }
     .theme-menu, .theme-toggle, .font-ctrl, .filter-toolbar, .banner, .tabs,
-    .copycite, .copy-briefing, .jumpnav, .fresh-dot, .foot-links,
+    .copycite, .copy-briefing, .brief-toggle-all, .jumpnav, .fresh-dot, .foot-links,
     details.brief > summary .b-caret { display: none !important; }
     /* Print everything: a hidden tab's content still belongs in the PDF. */
     #tab-digest[hidden], #tab-health[hidden], #tab-audit[hidden], #tab-about[hidden] { display: block !important; }
@@ -884,10 +930,22 @@ try {
 
   /* .mast-controls now holds the section tabs plus the font-size control and
      theme picker -- wrap it onto its own full-width row once the masthead
-     gets tight, rather than letting everything crowd onto one line. */
+     gets tight, rather than letting everything crowd onto one line. At this
+     width .mast-sticky would be ~2 rows tall on top of .filter-toolbar's own
+     up-to-3 chip rows -- two multi-row sticky blocks would eat most of a
+     small phone's viewport, so both revert to normal scrolls-away flow here. */
   @media (max-width: 720px) {
     .mast-inner { flex-wrap: wrap; }
     .mast-controls { flex-basis: 100%; justify-content: flex-start; }
+    header.masthead { padding-top: 0; }
+    .mast-sticky { position: static; }
+    /* position:static, not just top:0 -- the toolbar's stacked chip rows are
+       ~450px tall at phone widths, and a sticky block that size pinned to a
+       ~670px viewport left barely a third of the screen for actual content.
+       Both bars scroll away normally here, exactly as stated above. */
+    .filter-toolbar { position: static; }
+    /* No fixed scroll-margin override needed: syncStickyOffsets measures a
+       ~0 sticky stack at this width and sets --stack-h accordingly. */
   }
   @media (max-width: 480px) {
     .wordmark { font-size: 24px; }
@@ -903,10 +961,10 @@ try {
      room from the wider .wrap.
      ============================================================ */
   @media (min-width: 1100px) {
-    .wrap, .mast-inner, .disclaimer-line { max-width: 1200px; }
+    .wrap, .mast-inner, .disclaimer-line, .mast-meta { max-width: 1200px; }
     /* Top of mind stays a compact card at a fixed width; Priority takes
        the rest -- both top-aligned since one is a short callout and the
-       other a capped 5-row list, not meant to match height. */
+       other a capped 3-row list, not meant to match height. */
     .tom-priority-row { flex-direction: row; align-items: flex-start; gap: 24px; }
     .tom-priority-row > #topmind-slot { flex: 0 0 300px; max-width: 300px; }
     .tom-priority-row > #priority-slot { flex: 1 1 auto; min-width: 0; }
@@ -918,7 +976,7 @@ try {
     .juris-title, .juris-sep, .brief-block { grid-column: 1 / -1; }
   }
   @media (min-width: 1560px) {
-    .wrap, .mast-inner, .disclaimer-line { max-width: 1540px; }
+    .wrap, .mast-inner, .disclaimer-line, .mast-meta { max-width: 1540px; }
     .juris-group { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   }
 
@@ -959,38 +1017,37 @@ try {
 </noscript>
 
 <header class="masthead">
-  <div class="mast-inner">
-    <div>
+  <div class="mast-sticky">
+    <div class="mast-inner">
       <h1 class="wordmark"><span class="radar-dot" aria-hidden="true"></span><span class="wm-stack"><span class="wm-kicker">Digital Assets</span>Morning Wire</span></h1>
-      <p class="mast-meta"><strong id="mast-date">—</strong> · generated <span id="mast-time">—</span><span id="mast-fresh"></span></p>
-      <p class="mast-meta" id="mast-scope"></p>
-    </div>
-    <div class="mast-controls">
-      <nav class="tabs" role="tablist" aria-label="Sections">
-        <button class="tab" type="button" role="tab" id="tabbtn-digest" data-tab="digest" aria-selected="true" aria-controls="tab-digest">Digest</button>
-        <button class="tab" type="button" role="tab" id="tabbtn-health" data-tab="health" aria-selected="false" aria-controls="tab-health">Source health</button>
-        <button class="tab" type="button" role="tab" id="tabbtn-audit" data-tab="audit" aria-selected="false" aria-controls="tab-audit">Audit log</button>
-        <button class="tab" type="button" role="tab" id="tabbtn-about" data-tab="about" aria-selected="false" aria-controls="tab-about">About &amp; method</button>
-      </nav>
-      <div class="font-ctrl" role="group" aria-label="Text size">
-        <button type="button" id="fontDec" aria-label="Decrease text size">A−</button>
-        <button type="button" id="fontReset" aria-label="Reset text size to default">Reset</button>
-        <button type="button" id="fontInc" aria-label="Increase text size">A+</button>
-      </div>
-      <div class="theme-menu" id="themeMenu">
-        <button class="theme-toggle" id="themeBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose theme">
-          <span class="ico" id="themeIco">☀</span><span id="themeLbl">Light</span><span class="caret" aria-hidden="true">▾</span>
-        </button>
-        <div class="theme-options">
-          <div class="theme-options-list" role="menu" aria-label="Theme">
-            <button type="button" role="menuitemradio" aria-checked="true" data-theme-opt="light"><span class="ico">☀</span>Light</button>
-            <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="dark"><span class="ico">☾</span>Dark</button>
-            <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="matrix"><span class="ico">ﾏ</span>Matrix</button>
+      <div class="mast-controls">
+        <nav class="tabs" role="tablist" aria-label="Sections">
+          <button class="tab" type="button" role="tab" id="tabbtn-digest" data-tab="digest" aria-selected="true" aria-controls="tab-digest">Digest</button>
+          <button class="tab" type="button" role="tab" id="tabbtn-health" data-tab="health" aria-selected="false" aria-controls="tab-health">Source health</button>
+          <button class="tab" type="button" role="tab" id="tabbtn-audit" data-tab="audit" aria-selected="false" aria-controls="tab-audit">Audit log</button>
+          <button class="tab" type="button" role="tab" id="tabbtn-about" data-tab="about" aria-selected="false" aria-controls="tab-about">About &amp; method</button>
+        </nav>
+        <div class="font-ctrl" role="group" aria-label="Text size">
+          <button type="button" id="fontDec" aria-label="Decrease text size">A−</button>
+          <button type="button" id="fontReset" aria-label="Reset text size to default">Reset</button>
+          <button type="button" id="fontInc" aria-label="Increase text size">A+</button>
+        </div>
+        <div class="theme-menu" id="themeMenu">
+          <button class="theme-toggle" id="themeBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose theme">
+            <span class="ico" id="themeIco">☀</span><span id="themeLbl">Light</span><span class="caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="theme-options">
+            <div class="theme-options-list" role="menu" aria-label="Theme">
+              <button type="button" role="menuitemradio" aria-checked="true" data-theme-opt="light"><span class="ico">☀</span>Light</button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="dark"><span class="ico">☾</span>Dark</button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="matrix"><span class="ico">ﾏ</span>Matrix</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <p class="mast-meta"><strong id="mast-date">—</strong> · generated <span id="mast-time">—</span><span id="mast-fresh"></span></p>
   <p class="disclaimer-line"><span class="bolt" aria-hidden="true">✦</span> AI-sourced &amp; AI-generated. Verify against official sources before acting.</p>
 </header>
 
@@ -1488,7 +1545,7 @@ function briefHTML(it) {
   return `<details class="brief${READ.has(it.id) ? " is-read" : ""}" id="${esc(it.id)}" data-id="${esc(it.id)}">
     <summary>
       <span class="b-caret" aria-hidden="true">▶</span>
-      <span class="b-title">${esc(it.title)}${isNewSinceVisit(it) ? ` <span class="pill new">New</span>` : ""}</span>
+      <span class="b-title">${esc(it.title)}${isNewSinceVisit(it) ? ` <span class="pill new">New</span>` : ""}${isUnenriched(it) ? ` <span class="pill unenriched">No summary</span>` : ""}</span>
       <span class="b-meta">${esc(it.source.split("—")[0].trim())} · ${fmtCardDate(it.published)}${discoveryNote(it)}</span>
     </summary>
     <div class="brief-body">
@@ -1498,6 +1555,44 @@ function briefHTML(it) {
       <div>${verifyDetails(it.verification, it)}</div>
     </div>
   </details>`;
+}
+
+/* Shared by renderFeed() (per jurisdiction) and renderSearchResults() (one
+   flat list) -- scoped off .brief-block (not .juris-group, which search
+   results don't have) so a "section" expand/collapse-all control works
+   identically at both call sites with no special-casing. The toggle button
+   itself is only worth showing once there's more than one row to save a
+   click on -- a lone row's own caret click is already the one-click action. */
+function briefBlockHTML(briefs) {
+  if (!briefs.length) return "";
+  const head = `In brief — ${briefs.length} market headline${briefs.length > 1 ? "s" : ""}`;
+  const toggle = briefs.length > 1
+    ? `<button type="button" class="brief-toggle-all" data-toggle-briefs="section">Expand all</button>`
+    : "";
+  return `<div class="brief-block">
+    <div class="brief-head-row">
+      <p class="brief-head">${head}</p>
+      ${toggle}
+    </div>
+    <div class="brief-list">${briefs.map(briefHTML).join("")}</div>
+  </div>`;
+}
+
+/* ---------- brief rows: expand-all / collapse-all ---------- */
+function briefRowsFor(btn) {
+  return (btn.dataset.toggleBriefs === "all" ? document : btn.closest(".brief-block"))
+    ?.querySelectorAll("details.brief") || [];
+}
+function syncBriefToggleButtons() {
+  document.querySelectorAll("[data-toggle-briefs]").forEach(btn => {
+    const rows = briefRowsFor(btn);
+    const allOpen = rows.length && [...rows].every(d => d.open);
+    // The global button reads "... briefs" (it sits next to "Copy briefing",
+    // out of context of any one section); per-section buttons don't need the
+    // extra word since they're already inside their own .brief-block.
+    const suffix = btn.dataset.toggleBriefs === "all" ? " briefs" : "";
+    btn.textContent = (allOpen ? "Collapse all" : "Expand all") + suffix;
+  });
 }
 
 /* ---------- top of mind ---------- */
@@ -1510,17 +1605,30 @@ function renderTopOfMind() {
 }
 
 /* ---------- priority strip (capped -- a 12-row list isn't a priority) ---------- */
-const PRIORITY_CAP = 5;
-const PRIORITY_MAX_AGE_DAYS = 7;
+const PRIORITY_CAP = 3;
+/* Mirrors rangeItems()'s own day-cutoff (dayDiff<=6 for "7", <=29 for "30")
+   instead of a fixed, range-blind window -- an item admitted into a given
+   range's feed is now, by construction, exactly the same item admitted into
+   that range's Priority strip. Takes `range` explicitly (not read from
+   state.range) so a caller checking a DIFFERENT range's window (see the
+   Today quiet-state's own "check the 7-day window" below) can't accidentally
+   pick up the wrong cutoff. */
+function withinRangeWindow(it, range) {
+  return dayDiff(it.first_seen || it.published) <= (range === "7" ? 6 : 29);
+}
 function renderPriority(items) {
   const slot = document.getElementById("priority-slot");
-  // A month-old story is not a priority whatever its rating -- the strip only
-  // admits items first seen (or published) in the last 7 days (older ones
-  // stay in the feed). first_seen||published matches rangeItems/
-  // discoveryNote's own fallback, so a delayed-publication item visible in
-  // Today's feed can't be silently excluded here by a field mismatch.
-  const genMs = new Date(DIGEST.generated_at).getTime();
-  const fresh = it => genMs - new Date(it.first_seen || it.published).getTime() <= PRIORITY_MAX_AGE_DAYS * 86400000;
+  // "All" has no admission ceiling of its own -- rangeItems("all") is the
+  // entire retained archive, so a "Priority" strip built from it wouldn't be
+  // a priority strip, just the high-priority subset of everything ever kept.
+  // Render nothing, no message, no exception.
+  if (state.range === "all") { slot.innerHTML = ""; return; }
+
+  // "today": todayItems() already restricts to the exact current HKT
+  // calendar day, so withinRangeWindow(it,"today")'s 29-day fallback is a
+  // no-op here -- every item in the pool already has dayDiff === 0. Bit-for-
+  // bit unchanged behaviour vs. the old fixed-7-day gate for this range.
+  const fresh = it => withinRangeWindow(it, state.range);
   const high = items.filter(it => it.priority === "high" && fresh(it));
   if (!high.length) {
     // "Today" is an exact HKT-calendar-day match -- a much narrower pool
@@ -1530,11 +1638,21 @@ function renderPriority(items) {
     // say so, and point at the week's items if any exist. Never fabricate or
     // promote a non-priority item to fill the gap.
     if (state.range === "today" && state.juris === "ALL" && state.bucket === "ALL") {
-      const weekHigh = rangeItems("7").filter(it => it.priority === "high" && fresh(it)).length;
+      // Explicitly re-derive the 7-day window here (not `fresh`, which is
+      // closed over state.range === "today" and would otherwise resolve to
+      // the 29-day fallback for this specific check).
+      const weekHigh = rangeItems("7").filter(it => it.priority === "high" && withinRangeWindow(it, "7")).length;
       slot.innerHTML = `<div class="section-head"><h2>Priority</h2><span class="rule"></span></div>
         <p class="priority-quiet">No high-priority items so far today.${weekHigh
           ? ` ${weekHigh} from the last 7 days ${weekHigh > 1 ? "are" : "is"} still open — <button type="button" class="linklike" data-set-range="7">show Last 7 days</button>.`
           : " The wire is quiet."}</p>`;
+    } else if (state.range === "7" || state.range === "30") {
+      // Same honesty pattern as Today, minus the nudge button -- the reader
+      // already deliberately picked this range via the toolbar above, so a
+      // duplicate "try a wider range" prompt isn't needed the way it was
+      // for Today's narrower default view.
+      slot.innerHTML = `<div class="section-head"><h2>Priority</h2><span class="rule"></span></div>
+        <p class="priority-quiet">No high-priority items in the ${state.range === "7" ? "last 7 days" : "last 30 days"}.</p>`;
     } else {
       slot.innerHTML = "";
     }
@@ -1591,12 +1709,14 @@ function renderFeed(items) {
     feed.innerHTML = `<div class="empty">
       <div class="e-mark" aria-hidden="true">${unfiltered ? "☕" : "🔍"}</div>
       <h3>${unfiltered ? quietLabel : "No items match these filters"}</h3>
-      <p>${unfiltered ? (state.range === "today" ? "Nothing crossed the wires for today's digest." : "Nothing crossed the wires in this window.") : RANGE_LABEL[state.range] + " has " + rangeScope.length + " items outside this selection."}</p>
+      <p>${unfiltered ? (state.range === "today" ? "Nothing crossed the wires for today's digest." : "Nothing crossed the wires in this window.") : `${RANGE_LABEL[state.range]} has ${rangeScope.length} item${rangeScope.length !== 1 ? "s" : ""} outside this selection.`}</p>
       ${unfiltered ? "" : `<button type="button" class="clear-all" data-clear="all">✕ Clear filters</button>`}
     </div>`;
     return;
   }
+  const anyBriefs = items.some(isBrief);
   let html = `<div class="section-head"><h2>${esc(RANGE_LABEL[state.range])} · by jurisdiction</h2><span class="rule"></span>
+    ${anyBriefs ? `<button class="copy-briefing brief-toggle-all" type="button" data-toggle-briefs="all">Expand all briefs</button>` : ""}
     <button class="copy-briefing" type="button" id="copyBriefingBtn" aria-label="Copy this briefing as text">⧉ Copy briefing</button></div>`;
   JURIS_ORDER.forEach(j => {
     const group = items.filter(it => it.jurisdiction === j)
@@ -1608,10 +1728,7 @@ function renderFeed(items) {
       <h3 class="juris-title">${esc(JURIS_FULL[j])} <span class="jt-count">${group.length} item${group.length > 1 ? "s" : ""}</span></h3>
       <div class="juris-sep"></div>
       ${cards.map(cardHTML).join("")}
-      ${briefs.length ? `<div class="brief-block">
-        <p class="brief-head">In brief — ${briefs.length} market headline${briefs.length > 1 ? "s" : ""}</p>
-        <div class="brief-list">${briefs.map(briefHTML).join("")}</div>
-      </div>` : ""}
+      ${briefBlockHTML(briefs)}
     </section>`;
   });
   // No end-of-feed sign-off: it was a leftover completion flourish from
@@ -1653,7 +1770,7 @@ function renderSearchResults() {
   const briefs = matches.filter(isBrief);
   feed.innerHTML = `<div class="section-head"><h2>${matches.length} result${matches.length > 1 ? "s" : ""} for "${esc(state.search.trim())}"${scopeNote}</h2><span class="rule"></span></div>
     ${cards.map(cardHTML).join("")}
-    ${briefs.length ? `<div class="brief-block"><p class="brief-head">In brief — ${briefs.length} market headline${briefs.length > 1 ? "s" : ""}</p><div class="brief-list">${briefs.map(briefHTML).join("")}</div></div>` : ""}`;
+    ${briefBlockHTML(briefs)}`;
   announce(`${matches.length} result${matches.length > 1 ? "s" : ""} for ${state.search.trim()}`);
 }
 
@@ -1664,9 +1781,12 @@ function renderSearchResults() {
    "order", so mixing them would be confusing. */
 function renderHealth() {
   const tb = document.querySelector("#healthTable tbody");
+  // esc() on the class interpolation too: render.py whitelists status values
+  // today, but this template must not be one schema change away from letting
+  // a crafted status string break out of the attribute.
   const row = s => `<tr>
        <td>${esc(s.name)}</td>
-       <td><span class="hstatus ${s.status}">${s.status === "ok" ? "OK" : esc(s.status)}</span></td>
+       <td><span class="hstatus ${esc(s.status)}">${s.status === "ok" ? "OK" : esc(s.status)}</span></td>
        <td>${s.checked_at ? esc(fmtAudit(s.checked_at)) : "—"}</td>
        <td>${esc(s.note)}</td>
      </tr>`;
@@ -1720,11 +1840,18 @@ const TAB_PANELS = { digest: "tab-digest", health: "tab-health", audit: "tab-aud
 function selectTab(tabName) {
   const btn = document.querySelector(`.tab[data-tab="${tabName}"]`);
   if (!btn) return;
+  const switching = btn.getAttribute("aria-selected") !== "true";
   document.querySelectorAll(".tabs .tab").forEach(t =>
     t.setAttribute("aria-selected", String(t === btn)));
   for (const [tab, panelId] of Object.entries(TAB_PANELS)) {
     document.getElementById(panelId).hidden = tab !== tabName;
   }
+  // A tab is a fresh page, so start it at the top. Without this, switching
+  // while scrolled deep left the reader at a browser-clamped position
+  // partway down the new panel (and their old position was lost to that
+  // same clamping anyway). Re-clicking the already-active tab does nothing.
+  // gotoHash() still lands on its card: its scrollIntoView runs after this.
+  if (switching) window.scrollTo(0, 0);
 }
 document.querySelectorAll(".tabs .tab").forEach(btn => btn.onclick = () => selectTab(btn.dataset.tab));
 
@@ -1796,30 +1923,6 @@ function renderFreshness() {
   }
 }
 
-/* ---------- read-budget line: state the size of the ask up front ---------- */
-function renderScope() {
-  const el = document.getElementById("mast-scope");
-  const today = todayItems();
-  if (!today.length) { el.textContent = ""; return; }
-  const words = today.reduce((n, it) =>
-    n + `${it.title} ${it.summary} ${it.so_what}`.split(/\s+/).length, 0);
-  const mins = Math.max(1, Math.round(words / 220));
-  const high = today.filter(it => it.priority === "high").length;
-  const newN = today.filter(isNewSinceVisit).length;
-  // Previous digest day's volume (most recent HKT day before today in the window).
-  const days = {};
-  DIGEST.items.forEach(it => { const k = hkDayKey(it.first_seen || it.published); if (k !== GEN_DAY) days[k] = (days[k] || 0) + 1; });
-  const prevKey = Object.keys(days).sort().pop();
-  const parts = [
-    `${today.length} item${today.length > 1 ? "s" : ""} today`,
-    high ? `<span class="hi">${high} high priority</span>` : "nothing high priority",
-    `~${mins} min full read`,
-  ];
-  if (newN && VISIT_BASELINE !== null) parts.splice(1, 0, `<span class="hi">${newN} new since your last visit</span>`);
-  if (prevKey) parts.push(`${days[prevKey]} on the previous digest day`);
-  el.innerHTML = parts.join(" · ");
-}
-
 /* ---------- about tab: live source counts ---------- */
 function renderAbout() {
   const rows = DIGEST.source_health.filter(s => s.name !== "Claude summarisation");
@@ -1851,10 +1954,18 @@ function toClipboard(text, html) {
   return fallback();
 }
 function flashButton(btn, label) {
-  const prev = btn.textContent;
+  // Re-entrant-safe: a second click while the flash is still showing must
+  // not capture "Copied ✓" as the label to restore -- that used to leave the
+  // button reading Copied ✓ forever after a double-click. Capture the
+  // resting label once, and let the newest click own the restore timer.
+  if (btn._flashTimer) clearTimeout(btn._flashTimer);
+  else btn._flashLabel = btn.textContent;
   btn.textContent = label;
   announce(label);
-  setTimeout(() => { btn.textContent = prev; }, 1500);
+  btn._flashTimer = setTimeout(() => {
+    btn.textContent = btn._flashLabel;
+    btn._flashTimer = null;
+  }, 1500);
 }
 /* ---------- screen-reader announcements for state changes that are only
    otherwise visible (search result counts, sort order, copy confirmations)
@@ -1938,7 +2049,6 @@ function buildWeekView() {
 function render() {
   renderChips();
   renderFreshness();
-  renderScope();
   // Top of mind is a "what matters overall" summary -- irrelevant once the
   // reader has narrowed to a specific query, so it steps out of the way
   // during search (the filter toolbar itself always stays visible now).
@@ -2071,8 +2181,15 @@ function applyTheme(theme) {
 })();
 const themeMenu = document.getElementById("themeMenu");
 function setThemeMenuOpen(open) {
+  const btn = document.getElementById("themeBtn");
+  // Closing the menu display:none-s its options; if a keyboard user's focus
+  // is on one of them (Escape, or Enter on a choice) it would silently drop
+  // to <body>. Hand it back to the toggle button before hiding.
+  if (!open && themeMenu.contains(document.activeElement) && document.activeElement !== btn) {
+    btn.focus();
+  }
   themeMenu.classList.toggle("open", open);
-  document.getElementById("themeBtn").setAttribute("aria-expanded", String(open));
+  btn.setAttribute("aria-expanded", String(open));
 }
 document.getElementById("themeBtn").onclick = () =>
   setThemeMenuOpen(!themeMenu.classList.contains("open"));
@@ -2205,7 +2322,10 @@ document.addEventListener("click", e => {
   if (clr) {
     state.juris = "ALL"; state.bucket = "ALL";
     saveFilters();
-    if (isSearchOpen()) closeSearch(); else render();
+    // The clicked button disappears with the strip/empty-state it lives in;
+    // land keyboard focus on the "All" jurisdiction chip instead of <body>.
+    // (closeSearch() has its own focus handling: back to the search button.)
+    if (isSearchOpen()) closeSearch(); else { pendingFocus = ["data-juris", "ALL"]; render(); }
     return;
   }
   // Remove one applied-strip chip at a time (jurisdiction, category, or
@@ -2222,7 +2342,27 @@ document.addEventListener("click", e => {
   const rangeBtn = e.target.closest("[data-set-range]");
   if (rangeBtn) {
     state.range = rangeBtn.dataset.setRange;
+    // The shortcut button itself is re-rendered away -- move keyboard focus
+    // to the now-pressed range chip rather than dropping it to <body>.
+    pendingFocus = ["data-range", state.range];
     saveFilters(); render();
+    return;
+  }
+  // Expand all / collapse all "in brief" rows -- "section" scopes to the
+  // clicked button's own .brief-block, "all" targets the whole document.
+  // A direct, deliberate user action (unlike the print-mode toggle below,
+  // which remembers and restores prior per-row state around a temporary
+  // detour) -- nothing needs to be remembered afterwards.
+  const toggleBtn = e.target.closest("[data-toggle-briefs]");
+  if (toggleBtn) {
+    // Derived straight from the rows' own state, never from the button's
+    // current label text -- the global button's "Expand all briefs" wording
+    // (vs. a per-section button's plain "Expand all") would make any
+    // text-based comparison fragile.
+    const rows = briefRowsFor(toggleBtn);
+    const allOpen = rows.length && [...rows].every(d => d.open);
+    rows.forEach(d => { d.open = !allOpen; });
+    syncBriefToggleButtons();
     return;
   }
   // Copy cite
@@ -2275,10 +2415,14 @@ function toggleHealthSort(key) {
     ? `Sorted by ${HEALTH_SORT_LABEL[healthSort.key]}, ${healthSort.dir === 1 ? "ascending" : "descending"}`
     : "Sort cleared, showing default grouping");
 }
-// Brief rows count as read once expanded.
+// Brief rows count as read once expanded; also keep any expand/collapse-all
+// button's label honest after a reader opens/closes one row by hand.
 document.addEventListener("toggle", e => {
   const d = e.target;
-  if (d.matches && d.matches("details.brief") && d.open) markRead(d.dataset.id);
+  if (d.matches && d.matches("details.brief")) {
+    if (d.open) markRead(d.dataset.id);
+    syncBriefToggleButtons();
+  }
 }, true);
 
 /* ---------- deep links: /#<item-id> scrolls to and highlights the card ---------- */
@@ -2312,6 +2456,30 @@ function gotoHash() {
   }
 }
 window.addEventListener("hashchange", gotoHash);
+
+/* ---------- measured sticky offsets ----------
+   .mast-sticky (position:fixed) and .filter-toolbar (sticky below it) used
+   to be spaced with a hand-tuned 78px constant, which broke whenever the
+   bar wrapped taller than that (720-1100px viewports, larger font sizes):
+   the masthead date line rendered hidden underneath, the toolbar slid under
+   the fixed bar, and anchor jumps landed under the stack. Measure the real
+   heights instead and publish them as CSS vars. offsetHeight deliberately,
+   not getBoundingClientRect(): the CSS zoom set by the font-size control
+   scales rect heights into viewport space, while these vars are consumed
+   back in the zoomed layout space that offsetHeight reports. */
+const mastStickyEl = document.querySelector(".mast-sticky");
+const filterToolbarEl = document.getElementById("filterToolbar");
+function syncStickyOffsets() {
+  const mastH = getComputedStyle(mastStickyEl).position === "fixed" ? mastStickyEl.offsetHeight : 0;
+  const tbH = getComputedStyle(filterToolbarEl).position === "sticky" ? filterToolbarEl.offsetHeight : 0;
+  document.documentElement.style.setProperty("--mast-h", mastH + "px");
+  document.documentElement.style.setProperty("--stack-h", (mastH + tbH + 12) + "px");
+}
+const stickyRO = new ResizeObserver(syncStickyOffsets);
+stickyRO.observe(mastStickyEl);
+stickyRO.observe(filterToolbarEl);
+window.addEventListener("resize", syncStickyOffsets);
+syncStickyOffsets();
 
 /* ---------- keep the freshness state honest on a long-lived tab ---------- */
 document.addEventListener("visibilitychange", () => { if (!document.hidden) renderFreshness(); });
