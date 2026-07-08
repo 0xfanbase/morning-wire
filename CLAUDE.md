@@ -196,6 +196,51 @@ data-affecting fix, and write up any genuinely new failure class in
 Never hand-edit `data/registers/` or `data/seen-items.json`, and never remove,
 disable, or weaken a check in `scripts/audit.py`'s `PROTECTED_CHECK_IDS`.
 
+## Task: "nightly UI regression audit"
+
+When a nightly UI-regression-audit Routine fires, this is a narrow, template/
+rendering-layer health check of the LIVE page — distinct from the weekly integrity
+audit (`audit/PLAYBOOK.md`, data/pipeline integrity) and the digest-enrichment recipe
+above (content). Scope is strictly `scripts/templates/page.html` and `scripts/render.py`
+(and their generated `docs/index.html` / `docs/feed.xml`). Never edit `data/digest.json`
+content, `data/registers/`, `data/seen-items.json`, or `scripts/audit.py` under this
+recipe — a data/content problem belongs to one of the other two recipes, not here.
+
+1. Load `https://fandamentals.github.io/morning-wire/` (the live page) with Playwright.
+   Chromium is pre-installed under `/opt/pw-browsers` — discover the exact executable
+   path there rather than assuming a fixed version folder, and do not run
+   `playwright install` (the npm package itself still needs a standalone
+   `npm install playwright`, just not the browser download). If the live URL is
+   unreachable, fall back to running `python3 scripts/render.py` locally against the
+   committed `data/digest.json` and audit that output instead, and say so in the report.
+2. Checks to run:
+   - Light, dark, and matrix themes: no console/page errors, no unexpected layout
+     overflow.
+   - Mobile (~390×844), desktop (1280×800), and wide-desktop (1600×900) viewports: no
+     horizontal overflow on the body; the sticky masthead/filter-toolbar and the
+     Priority/Top of mind blocks render without clipping.
+   - An automated accessibility scan (e.g. axe-core, installed standalone) for
+     WCAG-level violations.
+   - Every item's `url`, `verification.sources[].url`, and `verification.checked.url`
+     (when present) resolve without a 404/5xx. A source that blocks bots or times out
+     is inconclusive, not broken — never fail the run, let alone open a PR, over one
+     flaky external site.
+   - Top of mind and Priority render ONLY when Range=Today, Jurisdiction=All, and
+     Category=All simultaneously, and blank under every other filter/search state; the
+     Priority strip's materiality-based ranking (`priorityScore` in page.html — see its
+     inline comments for the intended tiering) hasn't regressed.
+   - `docs/feed.xml` still parses as valid XML with a sane item count.
+3. A clean night leaves no trace: no commit, no push, no PR, no log entry — the same
+   "no-op leaves no trace" discipline as the enrichment recipe's quiet days. Continuity
+   across nightly runs is unnecessary for a pass; only a real finding needs a durable
+   record, and the PR itself (step 4) is that record.
+4. If a genuine, narrowly-scoped issue is found in the template/render layer: branch,
+   fix it, regenerate `docs/index.html` and `docs/feed.xml` via `scripts/render.py`,
+   verify the specific finding is actually resolved (before/after), commit, push, and
+   open a PR describing the finding, the fix, and how it was verified. Never merge this
+   PR automatically — always leave it for human review, same as every other change to
+   the published page.
+
 ## House rules
 
 - The published page must stay neutral: no employer names, no byline, no
