@@ -2244,8 +2244,15 @@ document.addEventListener("keydown", e => {
    FONT SIZE -- the whole page is sized in px, not rem, so there is no
    root-font-size trick to lean on; CSS zoom scales everything (text,
    spacing, images) together without needing to touch any of that CSS,
-   and -- unlike transform:scale -- doesn't break position:fixed (the
-   Matrix rain canvas) or force manual width compensation.
+   and -- unlike transform:scale -- doesn't break position:fixed layout
+   (.mast-sticky's left:0/right:0 tracks the real viewport at any step).
+   One exception: a *replaced* fixed element with its own width/height --
+   the Matrix rain <canvas> -- is sized by Chromium from its zoom-scaled
+   intrinsic attributes rather than stretched to fill via inset:0, so it
+   shrinks toward the top-left corner below 100% and leaves the rest of
+   the viewport unpainted. applyFontScale() below counter-zooms the
+   canvas so its on-screen size stays pinned to the true viewport no
+   matter what step is active.
    ============================================================ */
 const FONT_STEPS = [85, 92, 100, 108, 116, 125, 135];
 let fontStepIdx = FONT_STEPS.indexOf(100);
@@ -2255,6 +2262,9 @@ const fontResetBtn = document.getElementById("fontReset");
 function applyFontScale() {
   const pct = FONT_STEPS[fontStepIdx];
   document.documentElement.style.zoom = pct + "%";
+  // Cancel the ancestor zoom for the rain canvas -- see comment above.
+  const matrixCanvasEl = document.getElementById("matrixCanvas");
+  if (matrixCanvasEl) matrixCanvasEl.style.zoom = (10000 / pct) + "%";
   const atMin = fontStepIdx === 0, atMax = fontStepIdx === FONT_STEPS.length - 1;
   // Disabling a focused button silently drops focus to <body> with no
   // visible indication of where it went -- move it to Reset first (always
