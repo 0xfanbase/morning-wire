@@ -7,12 +7,12 @@
 # The integrity-audit safety net itself: any PR touching these must be
 # reviewed by a human before merge, per audit/PLAYBOOK.md's never-list
 # (never self-merge an audit PR).
-/scripts/audit.py            @fandamentals
-/scripts/audit_guard.py       @fandamentals
-/scripts/audit_checks/        @fandamentals
-/audit/                       @fandamentals
-/.github/workflows/audit-guard.yml   @fandamentals
-/.github/workflows/integrity.yml     @fandamentals
+/scripts/audit.py            @0xfanbase
+/scripts/audit_guard.py       @0xfanbase
+/scripts/audit_checks/        @0xfanbase
+/audit/                       @0xfanbase
+/.github/workflows/audit-guard.yml   @0xfanbase
+/.github/workflows/integrity.yml     @0xfanbase
 
 # NOTE: /data/registers/ and /data/seen-items.json are deliberately NOT
 # listed here, despite being pipeline memory per CLAUDE.md's "never

@@ -76,7 +76,7 @@ Each scheduled run (`scripts/run.py`):
    After that, `.github/workflows/pages.yml` deploys `docs/` automatically after
    every daily digest run and on every push to `main`. The site serves at
    `https://<owner>.github.io/<repo>/` (this repo:
-   `https://fandamentals.github.io/morning-wire/`) — publicly reachable, no login of
+   `https://0xfanbase.github.io/morning-wire/`) — publicly reachable, no login of
    any kind needed to view it.
 3. **Cron** — the workflow (`.github/workflows/digest.yml`) runs `0 21 * * 0-4` UTC,
    i.e. 05:00 HKT Monday–Friday (HKT is UTC+8 with no DST, so 21:00 UTC rolls into the

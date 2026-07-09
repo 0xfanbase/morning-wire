@@ -15,7 +15,7 @@ TEMPLATE_PATH = ROOT / "scripts" / "templates" / "page.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
 FEED_PATH = ROOT / "docs" / "feed.xml"
 
-SITE_URL = "https://fandamentals.github.io/morning-wire/"
+SITE_URL = "https://0xfanbase.github.io/morning-wire/"
 SITE_TITLE = "Digital Assets Morning Wire"
 RADAR_MAX_ENTRIES = 8
 # The Audit log is a public, unauthenticated page -- it should read as "the
