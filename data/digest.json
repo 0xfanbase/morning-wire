@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-08T00:21:22.992710+00:00",
-  "top_of_mind": "Today's top compliance items: the United States derivatives regulator charged a North Carolina fund manager with a $14 million crypto-linked fraud, and the United Kingdom's markets regulator published final stablecoin-issuer rules, with a licence window opening in September 2026 and full implementation due October 2027.",
+  "generated_at": "2026-07-09T01:32:57.094427+00:00",
+  "top_of_mind": "",
   "items": [
     {
       "id": "global-trm-labs-insights-b35f07fd2d",
@@ -1117,6 +1117,246 @@
       "so_what": "A concrete, recent example of a European Union regulator actively enforcing fitness-and-propriety standards during the transitional Markets in Crypto-Assets Regulation registration period is a useful reference point when assessing counterparty and correspondent-relationship risk with European digital-asset-service providers going through their own re-registration.",
       "first_seen": "2026-07-08T07:56:32.337764+00:00",
       "date_source": "verified"
+    },
+    {
+      "id": "global-the-block-policy-2fab6a40af",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Sen. Wyden urges Senate leaders to preserve contested blockchain developer protections in broader crypto bill",
+      "url": "https://www.theblock.co/post/407648/wyden-urges-senate-leaders-preserve-contested-blockchain-developer-protections-in-broader-crypto-bill?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-08T22:01:09+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407648/wyden-urges-senate-leaders-preserve-contested-blockchain-developer-protections-in-broader-crypto-bill?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Sen. Wyden urges Senate leaders to preserve contested blockchain developer protections in broader crypto bill",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-0e045cf4bb",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Binance Wallet adds Plume’s yield vault offering access to Invesco and Bitwise funds",
+      "url": "https://www.theblock.co/post/407632/binance-wallet-plume-yield-vault-invesco-bitwise-funds?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-08T21:00:02+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407632/binance-wallet-plume-yield-vault-invesco-bitwise-funds?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Binance Wallet adds Plume’s yield vault offering access to Invesco and Bitwise funds",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-d791b1667b",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "European Commission looks to expand MiCA to cover emergence of tokenization, non-EU stablecoin issuers: report",
+      "url": "https://www.theblock.co/post/407613/european-commission-expand-mica-tokenization-non-eu-stablecoin-report?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-08T15:32:22+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407613/european-commission-expand-mica-tokenization-non-eu-stablecoin-report?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "European Commission looks to expand MiCA to cover emergence of tokenization, non-EU stablecoin issuers: report",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-6e344a1397",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Cardano founding entity EMURGO steps down from Pentad governance role after wallet exploit",
+      "url": "https://www.theblock.co/post/407593/cardano-founding-entity-emurgo-steps-down-pentad-governance-role-wallet-exploit?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-08T15:08:31+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407593/cardano-founding-entity-emurgo-steps-down-pentad-governance-role-wallet-exploit?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Cardano founding entity EMURGO steps down from Pentad governance role after wallet exploit",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-5bc18d5582",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Adam Back's bitcoin treasury firm scraps SPAC merger, seeks new deal",
+      "url": "https://www.coindesk.com/markets/2026/07/08/adam-back-s-bstr-scraps-original-spac-terms-seeks-new-deal",
+      "published": "2026-07-08T14:17:26+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/07/08/adam-back-s-bstr-scraps-original-spac-terms-seeks-new-deal"
+          }
+        ]
+      },
+      "summary": "Adam Back's bitcoin treasury firm scraps SPAC merger, seeks new deal",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-0b9fd328c0",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Citadel abandons multi-year crypto lawsuit to focus on bankruptcy order against an ex-employee",
+      "url": "https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk",
+      "published": "2026-07-08T12:45:30+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk"
+          }
+        ]
+      },
+      "summary": "Citadel abandons multi-year crypto lawsuit to focus on bankruptcy order against an ex-employee",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-a56398d84c",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "India central bank seeks to bar financial institutions from exposure to crypto assets: Reuters",
+      "url": "https://www.theblock.co/post/407549/india-central-bank-seeks-to-bar-financial-institutions-from-exposure-to-crypto-assets-reuters?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-08T10:29:36+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407549/india-central-bank-seeks-to-bar-financial-institutions-from-exposure-to-crypto-assets-reuters?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "India central bank seeks to bar financial institutions from exposure to crypto assets: Reuters",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-d147cdcab1",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Reserve Bank of India still favors crypto prohibition to curtail tax evasion: Reuters",
+      "url": "https://www.coindesk.com/policy/2026/07/08/reserve-bank-of-india-still-favors-crypto-prohibition-to-curtail-tax-evasion-reuters",
+      "published": "2026-07-08T09:45:24+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/08/reserve-bank-of-india-still-favors-crypto-prohibition-to-curtail-tax-evasion-reuters"
+          }
+        ]
+      },
+      "summary": "Reserve Bank of India still favors crypto prohibition to curtail tax evasion: Reuters",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-bf4f5f7b10",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Nigel Farage to quit UK Parliament, seek new mandate amid probes into crypto-linked gifts",
+      "url": "https://www.theblock.co/post/407542/nigel-farage-to-quit-uk-parliament-seek-new-mandate-amid-probes-into-crypto-linked-gifts?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-08T09:04:59+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407542/nigel-farage-to-quit-uk-parliament-seek-new-mandate-amid-probes-into-crypto-linked-gifts?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Nigel Farage to quit UK Parliament, seek new mandate amid probes into crypto-linked gifts",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-trm-labs-insights-8fcc18ca6a",
+      "jurisdiction": "GLOBAL",
+      "source": "TRM Labs — Insights",
+      "title": "How Financial Institutions Can Build a Strong Crypto Transaction Monitoring Program",
+      "url": "https://www.trmlabs.com/resources/blog/how-financial-institutions-can-build-a-strong-crypto-transaction-monitoring-program",
+      "published": "2026-07-08T00:00:00+08:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "TRM Labs — Insights",
+            "url": "https://www.trmlabs.com/resources/blog/how-financial-institutions-can-build-a-strong-crypto-transaction-monitoring-program"
+          }
+        ]
+      },
+      "summary": "How Financial Institutions Can Build a Strong Crypto Transaction Monitoring Program",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T01:32:57.094427+00:00",
+      "date_source": "page"
     }
   ],
   "source_health": [
@@ -1125,259 +1365,239 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297791+00:00"
+      "checked_at": "2026-07-09T01:32:57.053176+00:00"
     },
     {
       "name": "Hong Kong Monetary Authority — Circulars & guidance",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297800+00:00"
+      "checked_at": "2026-07-09T01:32:57.053191+00:00"
     },
     {
       "name": "Securities and Futures Commission — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297805+00:00"
+      "checked_at": "2026-07-09T01:32:57.053197+00:00"
     },
     {
       "name": "Securities and Futures Commission — Circulars",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297809+00:00"
+      "checked_at": "2026-07-09T01:32:57.053201+00:00"
     },
     {
       "name": "Financial Services and the Treasury Bureau — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297813+00:00"
+      "checked_at": "2026-07-09T01:32:57.053205+00:00"
     },
     {
       "name": "Securities and Futures Commission — Licensed virtual asset trading platforms register",
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297816+00:00"
+      "checked_at": "2026-07-09T01:32:57.053210+00:00"
     },
     {
       "name": "People's Bank of China — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297820+00:00"
+      "checked_at": "2026-07-09T01:32:57.053213+00:00"
     },
     {
       "name": "CoinDesk — China policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.297830+00:00"
+      "checked_at": "2026-07-09T01:32:57.053216+00:00"
     },
     {
       "name": "The Block — China policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.297834+00:00"
+      "checked_at": "2026-07-09T01:32:57.053220+00:00"
     },
     {
       "name": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297838+00:00"
+      "checked_at": "2026-07-09T01:32:57.053223+00:00"
     },
     {
       "name": "Office of Foreign Assets Control (OFAC) — Recent actions",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297841+00:00"
+      "checked_at": "2026-07-09T01:32:57.053227+00:00"
     },
     {
       "name": "US Securities and Exchange Commission — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297844+00:00"
+      "checked_at": "2026-07-09T01:32:57.053230+00:00"
     },
     {
       "name": "Commodity Futures Trading Commission — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297846+00:00"
+      "checked_at": "2026-07-09T01:32:57.053233+00:00"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297849+00:00"
+      "checked_at": "2026-07-09T01:32:57.053238+00:00"
     },
     {
       "name": "Federal Reserve — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297852+00:00"
+      "checked_at": "2026-07-09T01:32:57.053241+00:00"
     },
     {
       "name": "US Department of Justice — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297855+00:00"
+      "checked_at": "2026-07-09T01:32:57.053244+00:00"
     },
     {
       "name": "European Securities and Markets Authority — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297857+00:00"
+      "checked_at": "2026-07-09T01:32:57.053247+00:00"
     },
     {
       "name": "European Banking Authority — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.297861+00:00"
+      "checked_at": "2026-07-09T01:32:57.053250+00:00"
     },
     {
       "name": "Monetary Authority of Singapore — Media releases",
       "status": "dead",
-      "note": "Reachable but returned no parseable items for 5 consecutive runs (the listing may be client-rendered or restructured) — check the source manually.",
+      "note": "Reachable but returned no parseable items for 6 consecutive runs (the listing may be client-rendered or restructured) — check the source manually.",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.370865+00:00"
+      "checked_at": "2026-07-09T01:32:57.093485+00:00"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.370888+00:00"
+      "checked_at": "2026-07-09T01:32:57.093502+00:00"
     },
     {
       "name": "Global Digital Finance (GDF) — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.370893+00:00"
+      "checked_at": "2026-07-09T01:32:57.093510+00:00"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 1 consecutive failure — self-heal at 3.",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370896+00:00"
+      "checked_at": "2026-07-09T01:32:57.093519+00:00"
     },
     {
       "name": "Bank for International Settlements / Basel Committee — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.370900+00:00"
+      "checked_at": "2026-07-09T01:32:57.093525+00:00"
     },
     {
       "name": "Financial Stability Board — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-08T07:54:04.370903+00:00"
+      "checked_at": "2026-07-09T01:32:57.093529+00:00"
     },
     {
       "name": "CoinDesk — Policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370906+00:00"
+      "checked_at": "2026-07-09T01:32:57.093534+00:00"
     },
     {
       "name": "The Block — Policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370909+00:00"
+      "checked_at": "2026-07-09T01:32:57.093539+00:00"
     },
     {
       "name": "CoinDesk — Institutional moves",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370920+00:00"
+      "checked_at": "2026-07-09T01:32:57.093559+00:00"
     },
     {
       "name": "The Block — Institutional moves",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370923+00:00"
+      "checked_at": "2026-07-09T01:32:57.093565+00:00"
     },
     {
       "name": "CoinDesk — Market news",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370927+00:00"
+      "checked_at": "2026-07-09T01:32:57.093570+00:00"
     },
     {
       "name": "The Block — Market news",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370930+00:00"
+      "checked_at": "2026-07-09T01:32:57.093575+00:00"
     },
     {
       "name": "Chainalysis — Blog",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370934+00:00"
+      "checked_at": "2026-07-09T01:32:57.093580+00:00"
     },
     {
       "name": "Elliptic — Blog",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370937+00:00"
+      "checked_at": "2026-07-09T01:32:57.093585+00:00"
     },
     {
       "name": "TRM Labs — Insights",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-08T07:54:04.370940+00:00"
+      "checked_at": "2026-07-09T01:32:57.093590+00:00"
     },
     {
       "name": "Claude summarisation",
-      "status": "ok",
-      "note": "Sonnet — Claude Code session on 2026-07-08"
+      "status": "dead",
+      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
     }
   ],
   "run_log": [
-    {
-      "at": "2026-07-07T07:50:49.166227+00:00",
-      "note": "Daily fetch: 25 new items surfaced; 34/35 sources ok"
-    },
-    {
-      "at": "2026-07-07T07:53:39.038684+00:00",
-      "note": "Enrichment: 25 items summarised and classified via Claude Code session; 2 stories corroborated"
-    },
-    {
-      "at": "2026-07-07T12:02:20.644884+00:00",
-      "note": "Fact-check pass: corrected 3 publication dates from source data. One high-priority item was verified against its official source."
-    },
-    {
-      "at": "2026-07-07T12:05:14.831018+00:00",
-      "note": "Daily fetch: 8 new items surfaced; 34/35 sources ok"
-    },
-    {
-      "at": "2026-07-07T12:06:13.362510+00:00",
-      "note": "Daily fetch: 0 new items surfaced; 33/34 sources ok"
-    },
     {
       "at": "2026-07-07T12:08:12.183955+00:00",
       "note": "Enrichment: 8 items summarised and classified via Claude Code session; 1 item cross-corroborated."
@@ -1413,6 +1633,10 @@
     {
       "at": "2026-07-08T05:10:00+00:00",
       "note": "Enrichment: 11 items summarised and classified via Claude Code session, with jurisdiction corrected on 2 items. One high-priority item was checked directly against an official regulator source, and two more were corroborated against independent reporting."
+    },
+    {
+      "at": "2026-07-09T01:32:57.094427+00:00",
+      "note": "Daily fetch: 10 new items surfaced; 32/34 sources ok"
     }
   ],
   "radar": [

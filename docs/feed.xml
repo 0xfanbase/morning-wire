@@ -4,7 +4,7 @@
 <title>Digital Assets Morning Wire</title>
 <link>https://fandamentals.github.io/morning-wire/</link>
 <description>Daily digital-asset regulatory and market digest. AI-sourced and AI-generated — verify against official sources before acting.</description>
-<lastBuildDate>Wed, 08 Jul 2026 00:21:22 +0000</lastBuildDate>
+<lastBuildDate>Thu, 09 Jul 2026 01:32:57 +0000</lastBuildDate>
 <atom:link href="https://fandamentals.github.io/morning-wire/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
 <title>H1 2026 Crypto Hacks Reach Record High as Losses Fall Below USD 1 Billion</title>
@@ -410,6 +410,96 @@
 <description>France's securities regulator, the Autorité des marchés financiers, withdrew the digital-asset-service-provider registration of AUTOMATA France SAS (trading as Vancelian), a Board decision effective 30 June 2026, after finding the firm had carried out unlicensed crowdfunding activity that breached senior-manager fitness requirements. This is a national registration withdrawal tied to the wind-down of the transitional Markets in Crypto-Assets Regulation registration regime, not a fine issued for a Markets in Crypto-Assets Regulation conduct-rule breach. So what: A concrete, recent example of a European Union regulator actively enforcing fitness-and-propriety standards during the transitional Markets in Crypto-Assets Regulation registration period is a useful reference point when assessing counterparty and correspondent-relationship risk with European digital-asset-service providers going through their own re-registration. [official]</description>
 <category>EU</category>
 <category>enforcement</category>
+</item>
+<item>
+<title>Sen. Wyden urges Senate leaders to preserve contested blockchain developer protections in broader crypto bill</title>
+<link>https://www.theblock.co/post/407648/wyden-urges-senate-leaders-preserve-contested-blockchain-developer-protections-in-broader-crypto-bill?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-2fab6a40af</guid>
+<pubDate>Wed, 08 Jul 2026 22:01:09 +0000</pubDate>
+<description>Sen. Wyden urges Senate leaders to preserve contested blockchain developer protections in broader crypto bill So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
+<item>
+<title>Binance Wallet adds Plume’s yield vault offering access to Invesco and Bitwise funds</title>
+<link>https://www.theblock.co/post/407632/binance-wallet-plume-yield-vault-invesco-bitwise-funds?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-0e045cf4bb</guid>
+<pubDate>Wed, 08 Jul 2026 21:00:02 +0000</pubDate>
+<description>Binance Wallet adds Plume’s yield vault offering access to Invesco and Bitwise funds So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
+<item>
+<title>European Commission looks to expand MiCA to cover emergence of tokenization, non-EU stablecoin issuers: report</title>
+<link>https://www.theblock.co/post/407613/european-commission-expand-mica-tokenization-non-eu-stablecoin-report?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-d791b1667b</guid>
+<pubDate>Wed, 08 Jul 2026 15:32:22 +0000</pubDate>
+<description>European Commission looks to expand MiCA to cover emergence of tokenization, non-EU stablecoin issuers: report So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
+<item>
+<title>Cardano founding entity EMURGO steps down from Pentad governance role after wallet exploit</title>
+<link>https://www.theblock.co/post/407593/cardano-founding-entity-emurgo-steps-down-pentad-governance-role-wallet-exploit?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-6e344a1397</guid>
+<pubDate>Wed, 08 Jul 2026 15:08:31 +0000</pubDate>
+<description>Cardano founding entity EMURGO steps down from Pentad governance role after wallet exploit So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
+<item>
+<title>Adam Back's bitcoin treasury firm scraps SPAC merger, seeks new deal</title>
+<link>https://www.coindesk.com/markets/2026/07/08/adam-back-s-bstr-scraps-original-spac-terms-seeks-new-deal</link>
+<guid isPermaLink="false">global-coindesk-market-news-5bc18d5582</guid>
+<pubDate>Wed, 08 Jul 2026 14:17:26 +0000</pubDate>
+<description>Adam Back's bitcoin treasury firm scraps SPAC merger, seeks new deal So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
+<item>
+<title>Citadel abandons multi-year crypto lawsuit to focus on bankruptcy order against an ex-employee</title>
+<link>https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk</link>
+<guid isPermaLink="false">global-coindesk-policy-0b9fd328c0</guid>
+<pubDate>Wed, 08 Jul 2026 12:45:30 +0000</pubDate>
+<description>Citadel abandons multi-year crypto lawsuit to focus on bankruptcy order against an ex-employee So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
+<item>
+<title>India central bank seeks to bar financial institutions from exposure to crypto assets: Reuters</title>
+<link>https://www.theblock.co/post/407549/india-central-bank-seeks-to-bar-financial-institutions-from-exposure-to-crypto-assets-reuters?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-a56398d84c</guid>
+<pubDate>Wed, 08 Jul 2026 10:29:36 +0000</pubDate>
+<description>India central bank seeks to bar financial institutions from exposure to crypto assets: Reuters So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
+<item>
+<title>Reserve Bank of India still favors crypto prohibition to curtail tax evasion: Reuters</title>
+<link>https://www.coindesk.com/policy/2026/07/08/reserve-bank-of-india-still-favors-crypto-prohibition-to-curtail-tax-evasion-reuters</link>
+<guid isPermaLink="false">global-coindesk-policy-d147cdcab1</guid>
+<pubDate>Wed, 08 Jul 2026 09:45:24 +0000</pubDate>
+<description>Reserve Bank of India still favors crypto prohibition to curtail tax evasion: Reuters So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
+<item>
+<title>Nigel Farage to quit UK Parliament, seek new mandate amid probes into crypto-linked gifts</title>
+<link>https://www.theblock.co/post/407542/nigel-farage-to-quit-uk-parliament-seek-new-mandate-amid-probes-into-crypto-linked-gifts?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-bf4f5f7b10</guid>
+<pubDate>Wed, 08 Jul 2026 09:04:59 +0000</pubDate>
+<description>Nigel Farage to quit UK Parliament, seek new mandate amid probes into crypto-linked gifts So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
+</item>
+<item>
+<title>How Financial Institutions Can Build a Strong Crypto Transaction Monitoring Program</title>
+<link>https://www.trmlabs.com/resources/blog/how-financial-institutions-can-build-a-strong-crypto-transaction-monitoring-program</link>
+<guid isPermaLink="false">global-trm-labs-insights-8fcc18ca6a</guid>
+<pubDate>Wed, 08 Jul 2026 00:00:00 +0800</pubDate>
+<description>How Financial Institutions Can Build a Strong Crypto Transaction Monitoring Program So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>GLOBAL</category>
+<category>news</category>
 </item>
 </channel>
 </rss>
