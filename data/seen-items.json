@@ -410,7 +410,7 @@
   "https://www.chainalysis.com/blog/comparing-blockchain-analytics-vendors": {
     "title_hash": "3eeb5f8ded3a8b28cb760a49393b0d7a9c3d416cdc0656a777f2a7fe38d5b65d",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-09T01:40:34.240528+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
     "title": "Breadth, Depth, And Quality: Why Comparing Blockchain Analytics Vendors by Cluster Count Is Only Part of the Calculation"
   },
   "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026": {
@@ -422,7 +422,7 @@
   "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together": {
     "title_hash": "5360fb2c7fdacd5820870ecd06fcdf66be5eb957f62531354965e5f8e34acaa7",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-09T01:40:34.240528+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
     "title": "How the UK's stablecoin rules came together"
   },
   "https://www.elliptic.co/blog/introducing-continuous-monitoring": {
@@ -560,7 +560,7 @@
   "https://www.elliptic.co/blog/crypto-regulatory-affairs-uk-sets-out-stablecoin-rules": {
     "title_hash": "eea819e2c9f7f15c788fe5b7e2d64efde74fc66d262ce87ae6c26b09947bd62d",
     "first_seen": "2026-07-07T23:44:19.555139+00:00",
-    "last_seen": "2026-07-09T01:40:34.240528+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
     "title": "Crypto regulatory affairs: UK sets out final stablecoin rules"
   },
   "https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk": {
@@ -620,7 +620,109 @@
   "https://www.trmlabs.com/resources/blog/how-financial-institutions-can-build-a-strong-crypto-transaction-monitoring-program": {
     "title_hash": "49f76fb6d2881e64ed91ade0de42f088714fd07164a781e63e070c33dcec39e2",
     "first_seen": "2026-07-09T01:32:57.094436+00:00",
-    "last_seen": "2026-07-09T01:40:34.240528+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
     "title": "How Financial Institutions Can Build a Strong Crypto Transaction Monitoring Program"
+  },
+  "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35": {
+    "title_hash": "9b63dbf2762516b197fdf0d2f515bc576fe78d45c2d46a2d6b9bb6413ca1b61d",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities"
+  },
+  "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss": {
+    "title_hash": "67deac167a9b3e624e4d49676541f6a9fa509df6758e1ddda33eab7e2eb6df10",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Hong Kong SFC orders crypto platforms, online brokers to phase out OTP logins"
+  },
+  "https://www.justice.gov/opa/pr/man-serving-federal-prison-sentence-charged-theft-forfeited-cryptocurrency": {
+    "title_hash": "ae3a6bb6d4c621c9d384d4d89f038c132ef2ec29d69c055f4d9a7b7e4d908b55",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Man Serving Federal Prison Sentence Charged with Theft of Forfeited Cryptocurrency"
+  },
+  "https://www.coindesk.com/policy/2026/07/09/newest-version-of-crypto-clarity-act-may-drop-as-soon-as-next-week-sources-say": {
+    "title_hash": "420e80df4ca0d1be48e9e4f73bf9e8812e99f78dee7347099f751e75aa0589e6",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Newest version of crypto Clarity Act may drop as soon as next week, sources say"
+  },
+  "https://www.coindesk.com/business/2026/07/09/sony-secures-conditional-approval-to-set-up-u-s-stablecoin-trust-bank": {
+    "title_hash": "ed0a0d593fe854af2cdf17855d6ec686b418e205f9b4b5900b5b51d93ee85801",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Sony secures conditional approval to set up U.S. stablecoin trust bank"
+  },
+  "https://www.theblock.co/post/407790/bitwise-says-bitcoins-floor-rising-despite-ai-boom-regulatory-delays?utm_source=rss&utm_medium=rss": {
+    "title_hash": "0cf68822a91bc474e65a7870eb8d2d427226fdbdfd522cecff29f778fc905152",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Bitwise says bitcoin’s ‘floor is rising’ despite AI boom and regulatory delays"
+  },
+  "https://www.theblock.co/post/407785/white-house-defends-trumps-regulatory-appointments-as-cftc-vacancies-complicate-crypto-bill-push?utm_source=rss&utm_medium=rss": {
+    "title_hash": "4488f95e56bd2c24fa41f257d55ee0597afbdbe22cefae89210b34b6d319d804",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "White House defends Trump’s regulatory appointments as CFTC vacancies complicate crypto bill push"
+  },
+  "https://www.theblock.co/post/407750/supreme-court-ruling-expanding-trumps-authority-over-federal-agencies-raises-questions-for-sec-cftc-as-crypto-rulemaking-advances?utm_source=rss&utm_medium=rss": {
+    "title_hash": "c0083f03d4648c3b756d241e0c9d5f6f1be49f74d033085056d4f843ce5b60b4",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Supreme Court ruling expanding Trump’s authority over federal agencies raises questions for SEC, CFTC as crypto rulemaking advances"
+  },
+  "https://www.theblock.co/post/407703/cftc-chair-selig-warns-regulators-will-end-up-writing-all-the-rules-for-crypto-if-clarity-act-stalls?utm_source=rss&utm_medium=rss": {
+    "title_hash": "cbfa16a46dd60b917e7d13caaacc797b02d2c70abe22bd211fa2ae7a15749af7",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "CFTC Chair Selig warns regulators will end up ‘writing all the rules’ for crypto if Clarity Act stalls"
+  },
+  "https://www.coindesk.com/business/2026/07/09/swift-rolls-out-24-7-blockchain-payment-systems-with-17-global-banks-across-six-continents": {
+    "title_hash": "77e69cb326ffa025ce42147ac99f618b26bf4ae825678e13d936677d8df6e203",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Swift rolls out new blockchain ledger to bring 24/7 banking to 17 global giants"
+  },
+  "https://www.theblock.co/post/407776/jpmorgan-bitcoin-risk-strategy-blockchain-tokens-crypto?utm_source=rss&utm_medium=rss": {
+    "title_hash": "d4d6ba2437c6bf1d367759468a8959eb483339ab9cd5f12c01e071faf1a64aa9",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "JPMorgan says bitcoin’s main risk isn’t Strategy, but blockchain adoption that doesn’t benefit public chains and tokens"
+  },
+  "https://www.coindesk.com/business/2026/07/09/grayscale-s-cfo-exits-after-7-years-with-crypto-asset-manager": {
+    "title_hash": "7d2918350a1f827ee2ab2b05beb234a2db413594a7a98fed9df21230c02cdbf2",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Grayscale's CFO exits after 7 years with crypto asset manager"
+  },
+  "https://www.coindesk.com/policy/2026/07/09/with-sec-fight-over-coinbase-s-top-legal-exec-grewal-moves-on-and-others-reassigned": {
+    "title_hash": "5f0f3723663f5611fa06e6f3fc0c78712a92c2fdac45a5d465d6598a7f6344ce",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "With SEC fight over, Coinbase's top legal exec Grewal moves on, and others reassigned"
+  },
+  "https://www.coindesk.com/markets/2026/07/09/billions-flowing-out-of-bitcoin-etfs-and-private-credit-funds-suggest-rising-market-risks": {
+    "title_hash": "2c676e775933e157e110999410dffabdf5b9926d1a3250cdf75c338eac4b8381",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Billions flowing out of bitcoin ETFs and private credit funds suggest rising market risks"
+  },
+  "https://www.theblock.co/post/407809/coinbase-chief-legal-officer-paul-grewal-steps-down?utm_source=rss&utm_medium=rss": {
+    "title_hash": "820cfad7318cd3c830b17ed02538da0060050dd11670764ff425bdadbe54ac61",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Coinbase Chief Legal Officer Paul Grewal steps down, remains in advisory role"
+  },
+  "https://www.theblock.co/post/407752/why-this-wall-street-veteran-is-betting-on-avalanche?utm_source=rss&utm_medium=rss": {
+    "title_hash": "c1eda9e2460027f18ba66c16a5e67f5638b52568f73c7e081610caeb0cb2cde9",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Why this Wall Street veteran is betting on Avalanche"
+  },
+  "https://www.theblock.co/post/407707/crypto-hack-losses-fall-below-1-billion-in-h1-2026-even-as-attack-volume-hits-record-immunefi?utm_source=rss&utm_medium=rss": {
+    "title_hash": "61566f5082e2937ce38deec96dacd584d1cdceaf6fa55cf36db7c9e28a478598",
+    "first_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "title": "Crypto hack losses fall below $1 billion in H1 2026 despite record attack volume: Immunefi"
   }
 }

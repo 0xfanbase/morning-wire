@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T01:40:34.240521+00:00",
+  "generated_at": "2026-07-09T22:15:47.258258+00:00",
   "top_of_mind": "",
   "items": [
     {
@@ -1357,6 +1357,414 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "page"
+    },
+    {
+      "id": "us-us-department-of-justice-press-releases-42bedfc58b",
+      "jurisdiction": "US",
+      "source": "US Department of Justice — Press releases",
+      "title": "Man Serving Federal Prison Sentence Charged with Theft of Forfeited Cryptocurrency",
+      "url": "https://www.justice.gov/opa/pr/man-serving-federal-prison-sentence-charged-theft-forfeited-cryptocurrency",
+      "published": "2026-07-09T12:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "US Department of Justice — Press releases",
+            "url": "https://www.justice.gov/opa/pr/man-serving-federal-prison-sentence-charged-theft-forfeited-cryptocurrency"
+          }
+        ]
+      },
+      "summary": "Man Serving Federal Prison Sentence Charged with Theft of Forfeited Cryptocurrency",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "hk-securities-and-futures-commission-circulars-fd10a4f596",
+      "jurisdiction": "HK",
+      "source": "Securities and Futures Commission — Circulars",
+      "title": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities",
+      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35",
+      "published": "2026-07-09T08:48:34+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Securities and Futures Commission — Circulars",
+            "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35"
+          }
+        ]
+      },
+      "summary": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-51fafbd243",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Bitwise says bitcoin’s ‘floor is rising’ despite AI boom and regulatory delays",
+      "url": "https://www.theblock.co/post/407790/bitwise-says-bitcoins-floor-rising-despite-ai-boom-regulatory-delays?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-09T21:54:35+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407790/bitwise-says-bitcoins-floor-rising-despite-ai-boom-regulatory-delays?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Bitwise says bitcoin’s ‘floor is rising’ despite AI boom and regulatory delays",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-ec6a71f8df",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Coinbase Chief Legal Officer Paul Grewal steps down, remains in advisory role",
+      "url": "https://www.theblock.co/post/407809/coinbase-chief-legal-officer-paul-grewal-steps-down?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-09T21:13:44+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407809/coinbase-chief-legal-officer-paul-grewal-steps-down?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Coinbase Chief Legal Officer Paul Grewal steps down, remains in advisory role",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-2bbfdc17f8",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Grayscale's CFO exits after 7 years with crypto asset manager",
+      "url": "https://www.coindesk.com/business/2026/07/09/grayscale-s-cfo-exits-after-7-years-with-crypto-asset-manager",
+      "published": "2026-07-09T20:42:49+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/07/09/grayscale-s-cfo-exits-after-7-years-with-crypto-asset-manager"
+          }
+        ]
+      },
+      "summary": "Grayscale's CFO exits after 7 years with crypto asset manager",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-c1f1a38db0",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "With SEC fight over, Coinbase's top legal exec Grewal moves on, and others reassigned",
+      "url": "https://www.coindesk.com/policy/2026/07/09/with-sec-fight-over-coinbase-s-top-legal-exec-grewal-moves-on-and-others-reassigned",
+      "published": "2026-07-09T20:31:39+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/policy/2026/07/09/with-sec-fight-over-coinbase-s-top-legal-exec-grewal-moves-on-and-others-reassigned"
+          }
+        ]
+      },
+      "summary": "With SEC fight over, Coinbase's top legal exec Grewal moves on, and others reassigned",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-d18aa78abc",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Newest version of crypto Clarity Act may drop as soon as next week, sources say",
+      "url": "https://www.coindesk.com/policy/2026/07/09/newest-version-of-crypto-clarity-act-may-drop-as-soon-as-next-week-sources-say",
+      "published": "2026-07-09T19:34:24+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/09/newest-version-of-crypto-clarity-act-may-drop-as-soon-as-next-week-sources-say"
+          }
+        ]
+      },
+      "summary": "Newest version of crypto Clarity Act may drop as soon as next week, sources say",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-433288c895",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Billions flowing out of bitcoin ETFs and private credit funds suggest rising market risks",
+      "url": "https://www.coindesk.com/markets/2026/07/09/billions-flowing-out-of-bitcoin-etfs-and-private-credit-funds-suggest-rising-market-risks",
+      "published": "2026-07-09T18:13:04+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/07/09/billions-flowing-out-of-bitcoin-etfs-and-private-credit-funds-suggest-rising-market-risks"
+          }
+        ]
+      },
+      "summary": "Billions flowing out of bitcoin ETFs and private credit funds suggest rising market risks",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-c55b9a8f23",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "White House defends Trump’s regulatory appointments as CFTC vacancies complicate crypto bill push",
+      "url": "https://www.theblock.co/post/407785/white-house-defends-trumps-regulatory-appointments-as-cftc-vacancies-complicate-crypto-bill-push?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-09T17:53:16+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407785/white-house-defends-trumps-regulatory-appointments-as-cftc-vacancies-complicate-crypto-bill-push?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "White House defends Trump’s regulatory appointments as CFTC vacancies complicate crypto bill push",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-c02d77bd68",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "JPMorgan says bitcoin’s main risk isn’t Strategy, but blockchain adoption that doesn’t benefit public chains and tokens",
+      "url": "https://www.theblock.co/post/407776/jpmorgan-bitcoin-risk-strategy-blockchain-tokens-crypto?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-09T15:44:13+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/post/407776/jpmorgan-bitcoin-risk-strategy-blockchain-tokens-crypto?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "JPMorgan says bitcoin’s main risk isn’t Strategy, but blockchain adoption that doesn’t benefit public chains and tokens",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-e7c1f07c5a",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Why this Wall Street veteran is betting on Avalanche",
+      "url": "https://www.theblock.co/post/407752/why-this-wall-street-veteran-is-betting-on-avalanche?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-09T15:03:40+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407752/why-this-wall-street-veteran-is-betting-on-avalanche?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Why this Wall Street veteran is betting on Avalanche",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-9d81830c08",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Supreme Court ruling expanding Trump’s authority over federal agencies raises questions for SEC, CFTC as crypto rulemaking advances",
+      "url": "https://www.theblock.co/post/407750/supreme-court-ruling-expanding-trumps-authority-over-federal-agencies-raises-questions-for-sec-cftc-as-crypto-rulemaking-advances?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-09T14:56:38+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407750/supreme-court-ruling-expanding-trumps-authority-over-federal-agencies-raises-questions-for-sec-cftc-as-crypto-rulemaking-advances?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Supreme Court ruling expanding Trump’s authority over federal agencies raises questions for SEC, CFTC as crypto rulemaking advances",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-the-block-china-policy-c32a545b5a",
+      "jurisdiction": "CN",
+      "source": "The Block — China policy",
+      "title": "Hong Kong SFC orders crypto platforms, online brokers to phase out OTP logins",
+      "url": "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-09T14:01:43+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — China policy",
+            "url": "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Hong Kong SFC orders crypto platforms, online brokers to phase out OTP logins",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-0b227bacbe",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Crypto hack losses fall below $1 billion in H1 2026 despite record attack volume: Immunefi",
+      "url": "https://www.theblock.co/post/407707/crypto-hack-losses-fall-below-1-billion-in-h1-2026-even-as-attack-volume-hits-record-immunefi?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-09T13:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407707/crypto-hack-losses-fall-below-1-billion-in-h1-2026-even-as-attack-volume-hits-record-immunefi?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Crypto hack losses fall below $1 billion in H1 2026 despite record attack volume: Immunefi",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-fc1a6c3d39",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "CFTC Chair Selig warns regulators will end up ‘writing all the rules’ for crypto if Clarity Act stalls",
+      "url": "https://www.theblock.co/post/407703/cftc-chair-selig-warns-regulators-will-end-up-writing-all-the-rules-for-crypto-if-clarity-act-stalls?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-09T11:42:34+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407703/cftc-chair-selig-warns-regulators-will-end-up-writing-all-the-rules-for-crypto-if-clarity-act-stalls?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "CFTC Chair Selig warns regulators will end up ‘writing all the rules’ for crypto if Clarity Act stalls",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-c253b8dade",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Swift rolls out new blockchain ledger to bring 24/7 banking to 17 global giants",
+      "url": "https://www.coindesk.com/business/2026/07/09/swift-rolls-out-24-7-blockchain-payment-systems-with-17-global-banks-across-six-continents",
+      "published": "2026-07-09T11:08:37+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/07/09/swift-rolls-out-24-7-blockchain-payment-systems-with-17-global-banks-across-six-continents"
+          }
+        ]
+      },
+      "summary": "Swift rolls out new blockchain ledger to bring 24/7 banking to 17 global giants",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-fb27fbfe70",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Sony secures conditional approval to set up U.S. stablecoin trust bank",
+      "url": "https://www.coindesk.com/business/2026/07/09/sony-secures-conditional-approval-to-set-up-u-s-stablecoin-trust-bank",
+      "published": "2026-07-09T09:49:26+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/business/2026/07/09/sony-secures-conditional-approval-to-set-up-u-s-stablecoin-trust-bank"
+          }
+        ]
+      },
+      "summary": "Sony secures conditional approval to set up U.S. stablecoin trust bank",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-09T22:15:47.258258+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -1365,238 +1773,239 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199135+00:00"
+      "checked_at": "2026-07-09T22:15:47.217830+00:00"
     },
     {
       "name": "Hong Kong Monetary Authority — Circulars & guidance",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199149+00:00"
+      "checked_at": "2026-07-09T22:15:47.217841+00:00"
     },
     {
       "name": "Securities and Futures Commission — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199156+00:00"
+      "checked_at": "2026-07-09T22:15:47.217847+00:00"
     },
     {
       "name": "Securities and Futures Commission — Circulars",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199162+00:00"
+      "checked_at": "2026-07-09T22:15:47.217851+00:00"
     },
     {
       "name": "Financial Services and the Treasury Bureau — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199167+00:00"
+      "checked_at": "2026-07-09T22:15:47.217855+00:00"
     },
     {
       "name": "Securities and Futures Commission — Licensed virtual asset trading platforms register",
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199176+00:00"
+      "checked_at": "2026-07-09T22:15:47.217859+00:00"
     },
     {
       "name": "People's Bank of China — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199181+00:00"
+      "checked_at": "2026-07-09T22:15:47.217862+00:00"
     },
     {
       "name": "CoinDesk — China policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.199187+00:00"
+      "checked_at": "2026-07-09T22:15:47.217864+00:00"
     },
     {
       "name": "The Block — China policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.199192+00:00"
+      "checked_at": "2026-07-09T22:15:47.217868+00:00"
     },
     {
       "name": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199197+00:00"
+      "checked_at": "2026-07-09T22:15:47.217871+00:00"
     },
     {
       "name": "Office of Foreign Assets Control (OFAC) — Recent actions",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199200+00:00"
+      "checked_at": "2026-07-09T22:15:47.217874+00:00"
     },
     {
       "name": "US Securities and Exchange Commission — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199203+00:00"
+      "checked_at": "2026-07-09T22:15:47.217879+00:00"
     },
     {
       "name": "Commodity Futures Trading Commission — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199207+00:00"
+      "checked_at": "2026-07-09T22:15:47.217882+00:00"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199209+00:00"
+      "checked_at": "2026-07-09T22:15:47.217885+00:00"
     },
     {
       "name": "Federal Reserve — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199215+00:00"
+      "checked_at": "2026-07-09T22:15:47.217888+00:00"
     },
     {
       "name": "US Department of Justice — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199218+00:00"
+      "checked_at": "2026-07-09T22:15:47.217892+00:00"
     },
     {
       "name": "European Securities and Markets Authority — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199221+00:00"
+      "checked_at": "2026-07-09T22:15:47.217896+00:00"
     },
     {
       "name": "European Banking Authority — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.199224+00:00"
+      "checked_at": "2026-07-09T22:15:47.217899+00:00"
     },
     {
       "name": "Monetary Authority of Singapore — Media releases",
       "status": "dead",
-      "note": "Reachable but returned no parseable items for 7 consecutive runs (the listing may be client-rendered or restructured) — check the source manually.",
+      "note": "Reachable but returned no parseable items for 8 consecutive runs (the listing may be client-rendered or restructured) — check the source manually.",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.239586+00:00"
+      "checked_at": "2026-07-09T22:15:47.257181+00:00"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.239601+00:00"
+      "checked_at": "2026-07-09T22:15:47.257197+00:00"
     },
     {
       "name": "Global Digital Finance (GDF) — News",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.239607+00:00"
+      "checked_at": "2026-07-09T22:15:47.257201+00:00"
     },
     {
       "name": "ACAMS Today",
-      "status": "ok",
-      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 2 consecutive failures — self-heal at 3.",
+      "status": "dead",
+      "note": "Blocked by the site's bot protection for 3 consecutive runs (content is unavailable to an automated fetch) — check the source manually.",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239614+00:00"
+      "checked_at": "2026-07-09T22:15:47.257208+00:00"
     },
     {
       "name": "Bank for International Settlements / Basel Committee — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.239617+00:00"
+      "checked_at": "2026-07-09T22:15:47.257213+00:00"
     },
     {
       "name": "Financial Stability Board — Press releases",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-09T01:40:34.239620+00:00"
+      "checked_at": "2026-07-09T22:15:47.257219+00:00"
     },
     {
       "name": "CoinDesk — Policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239625+00:00"
+      "checked_at": "2026-07-09T22:15:47.257224+00:00"
     },
     {
       "name": "The Block — Policy",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239634+00:00"
+      "checked_at": "2026-07-09T22:15:47.257229+00:00"
     },
     {
       "name": "CoinDesk — Institutional moves",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239639+00:00"
+      "checked_at": "2026-07-09T22:15:47.257234+00:00"
     },
     {
       "name": "The Block — Institutional moves",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239645+00:00"
+      "checked_at": "2026-07-09T22:15:47.257239+00:00"
     },
     {
       "name": "CoinDesk — Market news",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239650+00:00"
+      "checked_at": "2026-07-09T22:15:47.257244+00:00"
     },
     {
       "name": "The Block — Market news",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239655+00:00"
+      "checked_at": "2026-07-09T22:15:47.257248+00:00"
     },
     {
       "name": "Chainalysis — Blog",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239660+00:00"
+      "checked_at": "2026-07-09T22:15:47.257252+00:00"
     },
     {
       "name": "Elliptic — Blog",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239664+00:00"
+      "checked_at": "2026-07-09T22:15:47.257257+00:00"
     },
     {
       "name": "TRM Labs — Insights",
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-09T01:40:34.239668+00:00"
+      "checked_at": "2026-07-09T22:15:47.257262+00:00"
+    },
+    {
+      "name": "Claude summarisation",
+      "status": "dead",
+      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
     }
   ],
   "run_log": [
-    {
-      "at": "2026-07-07T12:10:08.994730+00:00",
-      "note": "Backfill: filed 19 items under their true publication days across the past week."
-    },
     {
       "at": "2026-07-07T12:33:15.805137+00:00",
       "note": "Corrected a data display issue affecting 13 items."
@@ -1632,6 +2041,10 @@
     {
       "at": "2026-07-09T01:40:34.240521+00:00",
       "note": "Daily fetch: 0 new items surfaced; 32/33 sources ok"
+    },
+    {
+      "at": "2026-07-09T22:15:47.258258+00:00",
+      "note": "Daily fetch: 17 new items surfaced; 31/34 sources ok"
     }
   ],
   "radar": [
