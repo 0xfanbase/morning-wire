@@ -195,3 +195,7 @@ Each scheduled run (`scripts/run.py`):
   actual fetch/parse error or zero *raw* items (before the topical relevance filter) --
   a general-mandate feed (OCC, ESMA, DOJ...) having no crypto news on a given day is not
   a failure and won't trigger self-heal.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
