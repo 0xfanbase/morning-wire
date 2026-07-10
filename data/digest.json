@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-09T22:15:47.258258+00:00",
-  "top_of_mind": "",
+  "top_of_mind": "Hong Kong's securities regulator is requiring licensed virtual-asset platforms and brokers to strengthen login authentication and monitor for suspicious activity. United States prosecutors also charged a fraudster with laundering forfeited cryptocurrency, and Sony's banking arm won conditional approval for a stablecoin trust bank.",
   "items": [
     {
       "id": "global-trm-labs-insights-b35f07fd2d",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": "global-the-block-policy-2fab6a40af",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "Sen. Wyden urges Senate leaders to preserve contested blockchain developer protections in broader crypto bill",
       "url": "https://www.theblock.co/post/407648/wyden-urges-senate-leaders-preserve-contested-blockchain-developer-protections-in-broader-crypto-bill?utm_source=rss&utm_medium=rss",
@@ -1137,8 +1137,8 @@
           }
         ]
       },
-      "summary": "Sen. Wyden urges Senate leaders to preserve contested blockchain developer protections in broader crypto bill",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "United States Senator Ron Wyden wrote to Senate leaders urging them to keep a provision in a broad cryptocurrency bill that would shield developers of non-custodial blockchain software from being classified as money transmitters.",
+      "so_what": "A carve-out exempting non-custodial software developers from money-transmitter status would narrow where United States anti-money-laundering registration and controls apply, a distinction relevant when assessing digital-asset service providers and counterparties.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "feed"
     },
@@ -1149,7 +1149,7 @@
       "title": "Binance Wallet adds Plume’s yield vault offering access to Invesco and Bitwise funds",
       "url": "https://www.theblock.co/post/407632/binance-wallet-plume-yield-vault-invesco-bitwise-funds?utm_source=rss&utm_medium=rss",
       "published": "2026-07-08T21:00:02+00:00",
-      "type": "news",
+      "type": "peer_move",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -1161,20 +1161,20 @@
           }
         ]
       },
-      "summary": "Binance Wallet adds Plume’s yield vault offering access to Invesco and Bitwise funds",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Binance Wallet added access to a tokenised yield product from Plume that routes users into tokenised versions of an Invesco government-securities fund and a Bitwise fund, each yielding roughly 3.5 percent.",
+      "so_what": "Wallets channelling retail users into tokenised real-world-asset funds blur the line between crypto platforms and regulated fund distribution, a pattern worth tracking when assessing how tokenised securities reach customers across jurisdictions.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-d791b1667b",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "EU",
       "source": "The Block — Policy",
       "title": "European Commission looks to expand MiCA to cover emergence of tokenization, non-EU stablecoin issuers: report",
       "url": "https://www.theblock.co/post/407613/european-commission-expand-mica-tokenization-non-eu-stablecoin-report?utm_source=rss&utm_medium=rss",
       "published": "2026-07-08T15:32:22+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "consultation",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "single_source",
@@ -1185,8 +1185,8 @@
           }
         ]
       },
-      "summary": "European Commission looks to expand MiCA to cover emergence of tokenization, non-EU stablecoin issuers: report",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The European Commission is considering widening its Markets in Crypto-Assets Regulation (MiCA) to cover tokenised securities and stablecoin issuers based outside the European Union, and has opened a stakeholder comment period that closes on 30 September 2026.",
+      "so_what": "Extending the European Union's crypto rulebook to reach non-European-Union stablecoin issuers and tokenised securities could pull firms serving European customers from abroad into its compliance perimeter, relevant for cross-border product and correspondent-relationship assessments.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "feed"
     },
@@ -1209,8 +1209,8 @@
           }
         ]
       },
-      "summary": "Cardano founding entity EMURGO steps down from Pentad governance role after wallet exploit",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "EMURGO, one of the founding organisations of the Cardano blockchain, withdrew from Cardano's Pentad governance group to focus on reimbursing users after a flaw in its SecondFi wallet let attackers take about 16 million ADA tokens (roughly 2.4 million United States dollars) from 374 wallets.",
+      "so_what": "Wallet-software vulnerabilities that drain customer funds underline custody and technology risk in self-custody products, a consideration when evaluating exposure to crypto service providers and the operational resilience of digital-asset counterparties.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "feed"
     },
@@ -1233,8 +1233,8 @@
           }
         ]
       },
-      "summary": "Adam Back's bitcoin treasury firm scraps SPAC merger, seeks new deal",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Bitcoin Standard Treasury Company, a bitcoin-holding venture backed by Blockstream's Adam Back, scrapped the original terms of its planned merger with a Cantor-linked shell company, cancelled a private financing round of up to 1.5 billion United States dollars, postponed its shareholder vote, and is now seeking a new deal.",
+      "so_what": "The unravelling of a planned public listing for a bitcoin-treasury company illustrates the funding and execution risk around firms whose balance sheets are concentrated in cryptoassets, relevant when assessing the financial stability of such counterparties.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "feed"
     },
@@ -1257,8 +1257,8 @@
           }
         ]
       },
-      "summary": "Citadel abandons multi-year crypto lawsuit to focus on bankruptcy order against an ex-employee",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Citadel Securities dropped its nearly three-year United States trade-secrets lawsuit against Swiss crypto trading firm Portofino Technologies and instead asked England's High Court to declare co-founder Leonard Lancia bankrupt over an unpaid arbitration award of about 6 million pounds.",
+      "so_what": "Pursuing a civil judgment through cross-border bankruptcy proceedings shows how disputes involving crypto trading firms and their principals can move between jurisdictions, relevant when tracing the assets and legal exposure of individuals and firms in the sector.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "feed"
     },
@@ -1270,7 +1270,7 @@
       "url": "https://www.theblock.co/post/407549/india-central-bank-seeks-to-bar-financial-institutions-from-exposure-to-crypto-assets-reuters?utm_source=rss&utm_medium=rss",
       "published": "2026-07-08T10:29:36+00:00",
       "type": "news",
-      "priority": "normal",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "single_source",
@@ -1281,8 +1281,8 @@
           }
         ]
       },
-      "summary": "India central bank seeks to bar financial institutions from exposure to crypto assets: Reuters",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Reserve Bank of India reaffirmed a policy stance leaning towards prohibition and, according to a Reuters report, wants banks and other financial institutions barred from holding, trading, or otherwise taking on exposure to cryptoassets.",
+      "so_what": "A central bank moving to prohibit regulated financial institutions from any cryptoasset exposure signals a hard-line prudential approach in a major market, relevant when calibrating group-wide risk appetite and cross-border activity involving jurisdictions that restrict bank crypto exposure.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "feed"
     },
@@ -1294,7 +1294,7 @@
       "url": "https://www.coindesk.com/policy/2026/07/08/reserve-bank-of-india-still-favors-crypto-prohibition-to-curtail-tax-evasion-reuters",
       "published": "2026-07-08T09:45:24+00:00",
       "type": "news",
-      "priority": "normal",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "single_source",
@@ -1305,14 +1305,14 @@
           }
         ]
       },
-      "summary": "Reserve Bank of India still favors crypto prohibition to curtail tax evasion: Reuters",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "According to government documents reviewed by Reuters, India's central bank, the Reserve Bank of India, told the government it continues to favour prohibiting cryptocurrency and opposes banks holding crypto assets or the use of private and rupee-pegged stablecoins, citing tax-evasion, financial-stability and capital-flight risks.",
+      "so_what": "A major economy's central bank maintaining a prohibition stance means institutions with Indian exposure should expect continued restrictions on cryptoasset and stablecoin activity there, and cross-border virtual-asset flows involving India warrant heightened monitoring for tax-evasion and capital-flight typologies.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-bf4f5f7b10",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "UK",
       "source": "The Block — Policy",
       "title": "Nigel Farage to quit UK Parliament, seek new mandate amid probes into crypto-linked gifts",
       "url": "https://www.theblock.co/post/407542/nigel-farage-to-quit-uk-parliament-seek-new-mandate-amid-probes-into-crypto-linked-gifts?utm_source=rss&utm_medium=rss",
@@ -1329,34 +1329,10 @@
           }
         ]
       },
-      "summary": "Nigel Farage to quit UK Parliament, seek new mandate amid probes into crypto-linked gifts",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Nigel Farage, leader of the United Kingdom's Reform UK party, said he will resign his House of Commons seat and stand again in the resulting by-election, following two parliamentary standards investigations into his failure to declare cryptocurrency-linked gifts and support from crypto-industry figures.",
+      "so_what": "The case shows how undisclosed benefits from cryptocurrency-industry figures create financial-crime and reputational exposure, reinforcing the value of enhanced due diligence on politically exposed persons with crypto-sector connections.",
       "first_seen": "2026-07-09T01:32:57.094427+00:00",
       "date_source": "feed"
-    },
-    {
-      "id": "global-trm-labs-insights-8fcc18ca6a",
-      "jurisdiction": "GLOBAL",
-      "source": "TRM Labs — Insights",
-      "title": "How Financial Institutions Can Build a Strong Crypto Transaction Monitoring Program",
-      "url": "https://www.trmlabs.com/resources/blog/how-financial-institutions-can-build-a-strong-crypto-transaction-monitoring-program",
-      "published": "2026-07-08T00:00:00+08:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "TRM Labs — Insights",
-            "url": "https://www.trmlabs.com/resources/blog/how-financial-institutions-can-build-a-strong-crypto-transaction-monitoring-program"
-          }
-        ]
-      },
-      "summary": "How Financial Institutions Can Build a Strong Crypto Transaction Monitoring Program",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-09T01:32:57.094427+00:00",
-      "date_source": "page"
     },
     {
       "id": "us-us-department-of-justice-press-releases-42bedfc58b",
@@ -1365,8 +1341,8 @@
       "title": "Man Serving Federal Prison Sentence Charged with Theft of Forfeited Cryptocurrency",
       "url": "https://www.justice.gov/opa/pr/man-serving-federal-prison-sentence-charged-theft-forfeited-cryptocurrency",
       "published": "2026-07-09T12:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "enforcement",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -1377,8 +1353,8 @@
           }
         ]
       },
-      "summary": "Man Serving Federal Prison Sentence Charged with Theft of Forfeited Cryptocurrency",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The United States Department of Justice charged Rossen G. Iossifov, a Bulgarian national already serving a 111-month federal sentence for online-auction fraud, with conspiring in January 2024 to move roughly 290,000 United States dollars in cryptocurrency that the government had seized and forfeited, allegedly routing it through multiple exchanges and mixing services to launder it.",
+      "so_what": "The alleged use of cryptocurrency exchanges and mixing services to move already-forfeited criminal proceeds highlights the mixer and layering typologies that virtual-asset transaction-monitoring controls are expected to detect and report.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1389,8 +1365,8 @@
       "title": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities",
       "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35",
       "published": "2026-07-09T08:48:34+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "guidance",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -1401,8 +1377,8 @@
           }
         ]
       },
-      "summary": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Hong Kong Securities and Futures Commission (SFC) issued a circular directing licensed brokers and licensed virtual-asset service providers to strengthen customer login security against phishing attacks and to put in place monitoring and surveillance measures that can identify suspicious account activity.",
+      "so_what": "Compliance teams overseeing Hong Kong virtual-asset business should expect the regulator to treat phishing-resistant customer authentication and suspicious-activity monitoring as a baseline supervisory standard and confirm that in-scope platforms and brokers are on track to meet it.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1425,8 +1401,8 @@
           }
         ]
       },
-      "summary": "Bitwise says bitcoin’s ‘floor is rising’ despite AI boom and regulatory delays",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The asset manager Bitwise published commentary arguing that bitcoin's price 'floor' is rising with each market cycle as ownership shifts from retail speculators to institutional investors, noting the current roughly 50 percent price decline is milder than the 78 percent and 84 percent falls seen in past downturns.",
+      "so_what": "This is market commentary with no regulatory or enforcement content and limited direct relevance to financial-crime compliance beyond general awareness of growing institutional participation in cryptoasset markets.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1449,8 +1425,8 @@
           }
         ]
       },
-      "summary": "Coinbase Chief Legal Officer Paul Grewal steps down, remains in advisory role",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The cryptocurrency exchange Coinbase announced that its Chief Legal Officer, Paul Grewal, will step down on 31 July 2026 after about six years and move to a three-month advisory role, with Molly Abraham expected to become general counsel.",
+      "so_what": "A senior legal leadership change at a major cryptocurrency exchange is largely a corporate-governance matter with limited direct financial-crime-compliance impact, though counterparties may watch for continuity in the firm's regulatory and legal posture.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1473,8 +1449,8 @@
           }
         ]
       },
-      "summary": "Grayscale's CFO exits after 7 years with crypto asset manager",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Grayscale, a United States digital-asset investment manager, said its chief financial officer stepped down after seven years for personal reasons and named two interim co-chief-financial-officers in his place.",
+      "so_what": "Senior-finance turnover at a large digital-asset manager is a routine governance signal rather than a regulatory event, but it is worth noting when assessing the stability of fund providers or counterparties in the virtual-asset sector.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1497,14 +1473,14 @@
           }
         ]
       },
-      "summary": "With SEC fight over, Coinbase's top legal exec Grewal moves on, and others reassigned",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Coinbase, a United States cryptocurrency exchange, said its chief legal officer is departing now that its legal dispute with the United States Securities and Exchange Commission has ended, and it promoted a new general counsel and named a new vice chairman to reshuffle its legal leadership.",
+      "so_what": "Legal-leadership changes at a major exchange after the close of a landmark regulatory case point to a more settled United States enforcement posture, which is relevant when reassessing the regulatory-risk profile of large virtual-asset counterparties.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-d18aa78abc",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Policy",
       "title": "Newest version of crypto Clarity Act may drop as soon as next week, sources say",
       "url": "https://www.coindesk.com/policy/2026/07/09/newest-version-of-crypto-clarity-act-may-drop-as-soon-as-next-week-sources-say",
@@ -1521,8 +1497,8 @@
           }
         ]
       },
-      "summary": "Newest version of crypto Clarity Act may drop as soon as next week, sources say",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Citing unnamed sources, CoinDesk reported that United States senators may release a new draft of the Digital Asset Market Clarity Act, a bill setting market-structure rules for cryptocurrency, as soon as the week of 16 July 2026, with possible Senate floor action the following week, though a dispute over ethics rules barring senior officials from crypto business ties remains unresolved.",
+      "so_what": "Progress on comprehensive United States cryptocurrency market-structure legislation would clarify how digital-asset firms are supervised and could reshape compliance expectations for institutions dealing with United States-based cryptoasset businesses, warranting monitoring as the draft advances.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1545,14 +1521,14 @@
           }
         ]
       },
-      "summary": "Billions flowing out of bitcoin ETFs and private credit funds suggest rising market risks",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Market commentators reported that roughly five billion United States dollars flowed out of bitcoin exchange-traded funds and about fifteen billion United States dollars in redemption requests hit private credit funds during the second quarter of 2026, alongside a fall of around fourteen percent in bitcoin's price, which they read as a sign of rising market-liquidity stress.",
+      "so_what": "Simultaneous outflows across bitcoin funds and private credit indicate broader liquidity pressure, which is relevant for monitoring redemption and funding risk in any virtual-asset investment products held or serviced.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-c55b9a8f23",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "White House defends Trump’s regulatory appointments as CFTC vacancies complicate crypto bill push",
       "url": "https://www.theblock.co/post/407785/white-house-defends-trumps-regulatory-appointments-as-cftc-vacancies-complicate-crypto-bill-push?utm_source=rss&utm_medium=rss",
@@ -1569,8 +1545,8 @@
           }
         ]
       },
-      "summary": "White House defends Trump’s regulatory appointments as CFTC vacancies complicate crypto bill push",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The White House sent a letter to United States Senate leaders defending its record on filling financial-regulator posts, as unfilled seats at the Commodity Futures Trading Commission, now down to a single commissioner, slow progress on proposed cryptocurrency market-structure legislation known as the Clarity Act.",
+      "so_what": "Delays in staffing the United States Commodity Futures Trading Commission hold back the market-structure rulemaking that would set federal oversight of digital assets, prolonging the current period of United States regulatory uncertainty for firms tracking those rules.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1593,8 +1569,8 @@
           }
         ]
       },
-      "summary": "JPMorgan says bitcoin’s main risk isn’t Strategy, but blockchain adoption that doesn’t benefit public chains and tokens",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Analysts at the United States bank JPMorgan argued in a research note that bitcoin's main long-term risk is not asset sales by the company Strategy but the prospect of mainstream financial institutions adopting private, permissioned blockchains that bypass public cryptocurrency networks.",
+      "so_what": "A large bank's view that tokenisation and settlement may shift onto permissioned rather than public blockchains is relevant for anticipating where institutional digital-asset activity, and the financial-crime controls attached to it, will actually take place.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1617,14 +1593,14 @@
           }
         ]
       },
-      "summary": "Why this Wall Street veteran is betting on Avalanche",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "In a podcast interview, the chief executive of Avalanche Treasury Company, a former Wall Street executive, laid out his case for investing in the Avalanche blockchain and its AVAX token through a listed vehicle designed to give regulated, long-term exposure to that ecosystem.",
+      "so_what": "The rise of listed treasury vehicles offering regulated exposure to a specific blockchain is a market-structure trend worth tracking when assessing new forms of institutional digital-asset exposure.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-9d81830c08",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "Supreme Court ruling expanding Trump’s authority over federal agencies raises questions for SEC, CFTC as crypto rulemaking advances",
       "url": "https://www.theblock.co/post/407750/supreme-court-ruling-expanding-trumps-authority-over-federal-agencies-raises-questions-for-sec-cftc-as-crypto-rulemaking-advances?utm_source=rss&utm_medium=rss",
@@ -1641,8 +1617,8 @@
           }
         ]
       },
-      "summary": "Supreme Court ruling expanding Trump’s authority over federal agencies raises questions for SEC, CFTC as crypto rulemaking advances",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The United States Supreme Court ruled six to three to broaden the president's power to remove leaders of independent federal agencies, a decision that legal observers say could make cryptocurrency rules written by the Securities and Exchange Commission and the Commodity Futures Trading Commission easier for future administrations to reverse.",
+      "so_what": "A ruling that weakens the independence of United States financial regulators raises the risk that today's industry-friendly digital-asset rules could be undone later, which matters for the durability of any United States regulatory framework that compliance planning relies on.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1653,8 +1629,8 @@
       "title": "Hong Kong SFC orders crypto platforms, online brokers to phase out OTP logins",
       "url": "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss",
       "published": "2026-07-09T14:01:43+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "guidance",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "single_source",
@@ -1665,8 +1641,8 @@
           }
         ]
       },
-      "summary": "Hong Kong SFC orders crypto platforms, online brokers to phase out OTP logins",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Block reported that the Hong Kong Securities and Futures Commission (SFC) is requiring licensed virtual-asset trading platforms and online brokers to phase out one-time passwords for customer logins in favour of stronger authentication such as passkeys, and to add monitoring that flags suspicious logins, trades and withdrawals.",
+      "so_what": "Compliance functions covering Hong Kong virtual-asset and online-brokerage clients should track the shift away from one-time-password logins toward phishing-resistant authentication and the buildout of account-activity monitoring, since these are becoming the regulator's expected defences against account-takeover fraud.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1689,19 +1665,19 @@
           }
         ]
       },
-      "summary": "Crypto hack losses fall below $1 billion in H1 2026 despite record attack volume: Immunefi",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "A blockchain-security firm reported that cryptocurrency theft losses fell below one billion United States dollars, to about 972 million, in the first half of 2026 even as the number of attacks hit a record 207, with attackers shifting away from smart-contract flaws toward stolen private keys and infrastructure failures.",
+      "so_what": "The persistently high volume of thefts, now driven more by stolen private keys and infrastructure compromise than code flaws, keeps the proceeds of virtual-asset hacks a live concern for transaction monitoring and blocked-address screening at institutions handling digital-asset flows.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-fc1a6c3d39",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "CFTC Chair Selig warns regulators will end up ‘writing all the rules’ for crypto if Clarity Act stalls",
       "url": "https://www.theblock.co/post/407703/cftc-chair-selig-warns-regulators-will-end-up-writing-all-the-rules-for-crypto-if-clarity-act-stalls?utm_source=rss&utm_medium=rss",
       "published": "2026-07-09T11:42:34+00:00",
-      "type": "news",
+      "type": "speech",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -1713,8 +1689,8 @@
           }
         ]
       },
-      "summary": "CFTC Chair Selig warns regulators will end up ‘writing all the rules’ for crypto if Clarity Act stalls",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The chair of the United States Commodity Futures Trading Commission (CFTC) warned that his agency and the Securities and Exchange Commission (SEC) would end up writing cryptocurrency market rules on their own if Congress fails to pass the pending Clarity Act market-structure bill before the Senate's August recess.",
+      "so_what": "Continued uncertainty over which United States regulator oversees crypto markets, and whether the rules arrive via legislation or unilateral agency action, complicates forward compliance planning for firms with United States digital-asset exposure and warrants close monitoring of the bill's progress.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
@@ -1725,8 +1701,8 @@
       "title": "Swift rolls out new blockchain ledger to bring 24/7 banking to 17 global giants",
       "url": "https://www.coindesk.com/business/2026/07/09/swift-rolls-out-24-7-blockchain-payment-systems-with-17-global-banks-across-six-continents",
       "published": "2026-07-09T11:08:37+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "peer_move",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "single_source",
@@ -1737,20 +1713,20 @@
           }
         ]
       },
-      "summary": "Swift rolls out new blockchain ledger to bring 24/7 banking to 17 global giants",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The interbank messaging network Swift announced a shared blockchain ledger, now ready for live testing with seventeen major global banks including HSBC, that would let member banks move tokenised customer deposits for round-the-clock cross-border payments alongside existing settlement systems.",
+      "so_what": "A bank-operated tokenised-deposit rail spanning major global institutions signals that on-chain payment settlement is moving into regulated banking infrastructure, raising forward-looking questions about transaction monitoring, travel-rule data capture and settlement-finality controls for tokenised money.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-fb27fbfe70",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Policy",
       "title": "Sony secures conditional approval to set up U.S. stablecoin trust bank",
       "url": "https://www.coindesk.com/business/2026/07/09/sony-secures-conditional-approval-to-set-up-u-s-stablecoin-trust-bank",
       "published": "2026-07-09T09:49:26+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "licensing",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "single_source",
@@ -1761,8 +1737,8 @@
           }
         ]
       },
-      "summary": "Sony secures conditional approval to set up U.S. stablecoin trust bank",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The banking arm of Sony received preliminary conditional approval from the United States Office of the Comptroller of the Currency (OCC) to set up a national trust bank, to be called Connectia Trust and capitalised at forty million United States dollars, to manage dollar-denominated stablecoins, though it cannot begin operations until further regulatory approvals are granted.",
+      "so_what": "Another major corporate entrant winning a United States trust-bank charter for stablecoin activity indicates that regulated, bank-grade stablecoin issuance is broadening, which is relevant to counterparty due diligence and reserve-backing assessments for institutions exposed to dollar-denominated stablecoins.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
     }
@@ -2001,8 +1977,8 @@
     },
     {
       "name": "Claude summarisation",
-      "status": "dead",
-      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
+      "status": "ok",
+      "note": "Opus (escalated: 27-item backlog) — Claude Code session on 2026-07-10"
     }
   ],
   "run_log": [
@@ -2045,9 +2021,19 @@
     {
       "at": "2026-07-09T22:15:47.258258+00:00",
       "note": "Daily fetch: 17 new items surfaced; 31/34 sources ok"
+    },
+    {
+      "at": "2026-07-10T02:51:55+00:00",
+      "note": "Enrichment: 26 items summarised and classified via Claude Code session (Opus, escalated for a 27-item backlog); one industry item was removed as vendor self-promotion rather than news."
     }
   ],
   "radar": [
+    {
+      "date": "2026-09-28",
+      "label": "Comments close: EBA consultation on MiCA fines methodology",
+      "jurisdiction": "EU",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets"
+    },
     {
       "date": "2026-09-30",
       "label": "FCA stablecoin-issuer licence application window opens",
@@ -2055,16 +2041,16 @@
       "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
     },
     {
+      "date": "2026-09-30",
+      "label": "Comments close: European Commission review of expanding the Markets in Crypto-Assets Regulation to tokenised securities and non-EU stablecoin issuers",
+      "jurisdiction": "EU",
+      "url": "https://www.theblock.co/post/407613/european-commission-expand-mica-tokenization-non-eu-stablecoin-report?utm_source=rss&utm_medium=rss"
+    },
+    {
       "date": "2027-10-25",
       "label": "FCA cryptoasset regime fully in force (stablecoin issuers)",
       "jurisdiction": "UK",
       "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
-    },
-    {
-      "date": "2026-09-28",
-      "label": "Comments close: EBA consultation on MiCA fines methodology",
-      "jurisdiction": "EU",
-      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-banking-authority-consults-draft-methodology-setting-fines-under-markets-crypto-assets"
     }
   ]
 }
