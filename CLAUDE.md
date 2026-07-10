@@ -15,12 +15,26 @@ this:
 1. FIRST make sure the day's pipeline run is finished — enriching mid-run loses
    the race and one side's push fails on a guaranteed docs/index.html conflict:
    use the GitHub MCP actions tools to check the latest "Daily digest" workflow
-   run; if it is queued/in_progress, wait for it to conclude (poll every couple
-   of minutes, up to ~20). Then `git pull` the default branch. If the GitHub MCP
-   tools aren't authenticated in this session, fall back to `git log -1
-   --format=%cI` on the default branch as a best-effort proxy for "is a run
-   mid-flight", and say plainly in your final report that the Actions check
-   was skipped for this reason.
+   run. Treat BOTH of the following as "not ready yet" and wait (poll every
+   couple of minutes, up to ~20): the run is queued/in_progress, OR the most
+   recent run you can see predates today's expected fetch window. GitHub's own
+   cron scheduler can drift well past its nominal slot, and the paired
+   enrichment Routine fires on a fixed clock time regardless of how long that
+   day's fetch actually takes — a Routine firing before the day's workflow run
+   has even been created is exactly as unready as one firing mid-run, but if
+   you only check for queued/in_progress it instead reads as "nothing to
+   enrich" against yesterday's still-current digest.json, and the day's real
+   backlog goes unenriched with no further automated attempt until the next
+   scheduled firing. Only once a genuinely fresh, completed run for today is
+   visible should you `git pull` the default branch and move to step 2. If
+   after ~20 rounds there is still no completed run for today, stop and report
+   this plainly rather than falling through to "nothing to enrich" — that
+   silent-no-op failure mode is exactly what this step exists to prevent. If
+   the GitHub MCP tools aren't authenticated in this session, fall back to
+   `git log -1 --format=%cI` on the default branch as a best-effort proxy for
+   "is a run mid-flight" (apply the same freshness reasoning to the commit
+   timestamp), and say plainly in your final report that the Actions check was
+   skipped for this reason.
 2. Read `data/digest.json`. Find every item where enrichment is missing: `summary`
    equals `title`, or `so_what` starts with "Review the source directly".
    **If there is nothing to enrich** (weekends, re-runs — the list is empty):
