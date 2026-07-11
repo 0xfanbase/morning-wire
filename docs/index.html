@@ -57,7 +57,10 @@ try {
     --ink-3:     #9A9384;
     --accent:    #DA7756;
     --accent-h:  #E8906F;
-    --accent-deep: #DA7756; /* the base accent already passes on dark ground */
+    /* The base accent clears AA against plain --card (4.88:1) but not
+       against .sowhat's own 7%-tinted background (4.41:1, axe-core:
+       color-contrast) -- needs its own value, same as light theme. */
+    --accent-deep: #E8946F;
     --border:    #35332F;
     --border-2:  #423F39;
     --card:      #262624;
@@ -94,6 +97,14 @@ try {
     --ok:        #00FF41;
     --warn:      #E8E34B;
     --danger:    #FF5C7A;
+    /* Matrix never defined these (added for light/dark in THEME TOKENS
+       above) -- badge/status TEXT silently inherited :root's LIGHT-tuned dark-brown
+       values, ~2.1-2.4:1 against this near-black card (axe-core:
+       color-contrast, serious). Matrix's own bright --warn/--ok already
+       clear >10:1 against their own tinted pills, so alias rather than
+       invent new values. */
+    --ok-deep:   #00FF41;
+    --warn-deep: #E8E34B;
     --serif: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
     --sans:  ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
   }
@@ -119,10 +130,18 @@ try {
     background: #00FF41;
     box-shadow: 0 0 0 4px rgba(0,255,65,.22), 0 0 16px rgba(0,255,65,.8);
   }
+  /* Was a flat green fill/text regardless of --h, discarding the per-type
+     hue coding (enforcement vs. routine news) the other two themes rely on
+     for a fast pre-attentive scan -- uniform green also conventionally
+     reads as "fine", working against urgency rather than staying neutral.
+     Keeps var(--h) at matrix-appropriate lightness/chroma instead. This
+     selector is already more specific than the shared .type-tag rule below
+     (html[data-theme="matrix"] adds a type + attribute selector), so it
+     wins on specificity alone -- no !important needed. */
   html[data-theme="matrix"] .type-tag {
-    background: rgba(0,255,65,.10) !important;
-    color: #8FE8A5 !important;
-    border: 1px solid rgba(0,255,65,.25);
+    background: oklch(0.22 0.05 var(--h));
+    color: oklch(0.78 0.16 var(--h));
+    border: 1px solid oklch(0.4 0.08 var(--h));
   }
   html[data-theme="matrix"] .topmind,
   html[data-theme="matrix"] .sowhat { background: rgba(0,255,65,.06); }
@@ -250,12 +269,10 @@ try {
     min-width: 140px; z-index: 40;
   }
   .theme-menu.open .theme-options { display: block; }
-  /* Hover-open for mouse users only; keyboard users toggle with Enter on the
-     button (focus-within would fight Escape/selection-close, since the
-     focused button keeps the menu pinned open). */
-  @media (hover: hover) and (pointer: fine) {
-    .theme-menu:hover .theme-options { display: block; }
-  }
+  /* Hover-open for mouse users, driven from JS (mouseenter/mouseleave calling
+     setThemeMenuOpen) rather than a plain CSS :hover rule -- a CSS-only
+     hover-open left aria-expanded and the .open class (and therefore
+     Escape-to-close) completely unaware the menu was visually open. */
   .theme-options-list {
     background: var(--card);
     border: 1px solid var(--border-2);
@@ -472,10 +489,18 @@ try {
   .legend .verify { margin-right: 8px; }
   .linklike {
     appearance: none; background: none; border: none; padding: 0;
-    font: inherit; color: var(--accent); cursor: pointer;
+    /* --accent-deep, not the base --accent: this class is always used at
+       small (font: inherit, typically 11-13px) sizes, where plain --accent
+       measured ~4.0:1 (axe-core: color-contrast, serious) -- below the
+       4.5:1 AA minimum small text needs. Larger/bold text elsewhere (card
+       headlines, etc.) already clears the 3:1 large-text threshold on
+       --accent alone, so only the classes actually used at small sizes are
+       repointed here rather than the global `a` rule. */
+    font: inherit; color: var(--accent-deep); cursor: pointer;
   }
   .linklike:hover { color: var(--accent-h); text-decoration: underline; }
   .foot-links { margin-top: 10px; }
+  .foot-links a { color: var(--accent-deep); }
 
   /* ============================================================
      JUMP-NAV, RADAR, CATCH-UP, SIGN-OFF
@@ -557,7 +582,10 @@ try {
   .brief-toggle-all {
     appearance: none; background: none; border: none; padding: 0;
     font-family: var(--sans); font-size: 11px; font-weight: 700;
-    letter-spacing: .04em; color: var(--accent); cursor: pointer;
+    /* --accent-deep: at 11px, plain --accent measured ~4.0:1 (axe-core:
+       color-contrast, serious) against the page background -- below the
+       4.5:1 AA minimum for small text. */
+    letter-spacing: .04em; color: var(--accent-deep); cursor: pointer;
     white-space: nowrap;
     /* 28px touch target without adding visual density -- the negative
        margin pulls the extra box height back out of the surrounding flow. */
@@ -588,7 +616,12 @@ try {
      READ-STATE + DEEP LINKS + COPY ACTIONS
      ============================================================ */
   .card.is-read h4 a, details.brief.is-read > summary .b-title { color: var(--ink-3); }
-  .card.is-read { opacity: .85; }
+  /* Two dimming mechanisms stacked (the ink-3 recolor above AND this
+     opacity) pushed 12.5px meta text (.card-date, .corro-sources -- already
+     colored --ink-3 by their own rules) below AA in both themes -- exactly
+     what a returning reader re-checks. .94 keeps a visible read/unread
+     distinction while restoring >=4.5:1 against the page background. */
+  .card.is-read { opacity: .94; }
   .card h4 a:visited { color: var(--ink-3); } /* zero-storage fallback */
   .card:target { outline: 2px solid var(--accent); outline-offset: 3px; }
   .copycite {
@@ -1112,10 +1145,10 @@ try {
       <h1 class="wordmark"><span class="radar-dot" aria-hidden="true"></span><span class="wm-stack"><span class="wm-kicker">Digital Assets</span>Morning Wire</span></h1>
       <div class="mast-controls">
         <nav class="tabs" role="tablist" aria-label="Sections">
-          <button class="tab" type="button" role="tab" id="tabbtn-digest" data-tab="digest" aria-selected="true" aria-controls="tab-digest">Digest</button>
-          <button class="tab" type="button" role="tab" id="tabbtn-health" data-tab="health" aria-selected="false" aria-controls="tab-health">Source health</button>
-          <button class="tab" type="button" role="tab" id="tabbtn-audit" data-tab="audit" aria-selected="false" aria-controls="tab-audit">Audit log</button>
-          <button class="tab" type="button" role="tab" id="tabbtn-about" data-tab="about" aria-selected="false" aria-controls="tab-about">About &amp; method</button>
+          <button class="tab" type="button" role="tab" id="tabbtn-digest" data-tab="digest" aria-selected="true" aria-controls="tab-digest" tabindex="0">Digest</button>
+          <button class="tab" type="button" role="tab" id="tabbtn-health" data-tab="health" aria-selected="false" aria-controls="tab-health" tabindex="-1">Source health</button>
+          <button class="tab" type="button" role="tab" id="tabbtn-audit" data-tab="audit" aria-selected="false" aria-controls="tab-audit" tabindex="-1">Audit log</button>
+          <button class="tab" type="button" role="tab" id="tabbtn-about" data-tab="about" aria-selected="false" aria-controls="tab-about" tabindex="-1">About &amp; method</button>
         </nav>
         <div class="font-ctrl" role="group" aria-label="Text size">
           <button type="button" id="fontDec" aria-label="Decrease text size">A−</button>
@@ -1123,14 +1156,14 @@ try {
           <button type="button" id="fontInc" aria-label="Increase text size">A+</button>
         </div>
         <div class="theme-menu" id="themeMenu">
-          <button class="theme-toggle" id="themeBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose theme">
-            <span class="ico" id="themeIco">☀</span><span id="themeLbl">Light</span><span class="caret" aria-hidden="true">▾</span>
+          <button class="theme-toggle" id="themeBtn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="ico" id="themeIco" aria-hidden="true">☀</span><span id="themeLbl">Light</span><span class="caret" aria-hidden="true">▾</span>
           </button>
           <div class="theme-options">
             <div class="theme-options-list" role="menu" aria-label="Theme">
-              <button type="button" role="menuitemradio" aria-checked="true" data-theme-opt="light"><span class="ico">☀</span>Light</button>
-              <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="dark"><span class="ico">☾</span>Dark</button>
-              <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="matrix"><span class="ico">ﾏ</span>Matrix</button>
+              <button type="button" role="menuitemradio" aria-checked="true" data-theme-opt="light"><span class="ico" aria-hidden="true">☀</span>Light</button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="dark"><span class="ico" aria-hidden="true">☾</span>Dark</button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-theme-opt="matrix"><span class="ico" aria-hidden="true">ﾏ</span>Matrix</button>
             </div>
           </div>
         </div>
@@ -2019,8 +2052,14 @@ function selectTab(tabName) {
   const btn = document.querySelector(`.tab[data-tab="${tabName}"]`);
   if (!btn) return;
   const switching = btn.getAttribute("aria-selected") !== "true";
-  document.querySelectorAll(".tabs .tab").forEach(t =>
-    t.setAttribute("aria-selected", String(t === btn)));
+  document.querySelectorAll(".tabs .tab").forEach(t => {
+    const active = t === btn;
+    t.setAttribute("aria-selected", String(active));
+    // Roving tabindex: only the active tab is Tab-reachable, matching the
+    // standard tablist keyboard pattern (arrow keys move focus WITHIN the
+    // list below; Tab itself moves past the whole widget in one stop).
+    t.tabIndex = active ? 0 : -1;
+  });
   for (const [tab, panelId] of Object.entries(TAB_PANELS)) {
     document.getElementById(panelId).hidden = tab !== tabName;
   }
@@ -2032,6 +2071,22 @@ function selectTab(tabName) {
   if (switching) window.scrollTo(0, 0);
 }
 document.querySelectorAll(".tabs .tab").forEach(btn => btn.onclick = () => selectTab(btn.dataset.tab));
+// Arrow-key navigation among tabs (WAI-ARIA APG tablist pattern, automatic
+// activation -- switching is cheap here, same cost as a click). Previously
+// only Tab/click worked at all: a screen reader announces "tab, 1 of 4" and
+// primes exactly these keystrokes, which silently did nothing.
+document.querySelector(".tabs").addEventListener("keydown", e => {
+  if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+  const tabs = [...document.querySelectorAll(".tabs .tab")];
+  const i = tabs.indexOf(document.activeElement);
+  if (i === -1) return;
+  e.preventDefault();
+  const next = e.key === "ArrowRight" ? tabs[(i + 1) % tabs.length]
+    : e.key === "ArrowLeft" ? tabs[(i - 1 + tabs.length) % tabs.length]
+    : e.key === "Home" ? tabs[0] : tabs[tabs.length - 1];
+  next.focus();
+  selectTab(next.dataset.tab);
+});
 
 /* ---------- jump-nav: "take me there" on a long column ---------- */
 function renderJumpnav(items) {
@@ -2425,10 +2480,16 @@ function applyTheme(theme) {
   if (!THEME_ORDER.includes(theme)) theme = "light";
   document.documentElement.setAttribute("data-theme", theme);
   // The button always states the CURRENT theme -- reading "Light" while the
-  // page is green-on-black is a lie; the menu is where you change it.
+  // page is green-on-black is a lie; the menu is where you change it. The
+  // accessible name (aria-label) is kept in sync too -- a static "Choose
+  // theme" label previously overrode the visible text entirely, so a
+  // screen-reader user never heard the current theme, only sighted ones saw
+  // it, and voice-control users saying the visible label ("Light") couldn't
+  // find a matching accessible name (WCAG 2.5.3).
   const [ico, lbl] = THEME_UI[theme];
   document.getElementById("themeIco").textContent = ico;
   document.getElementById("themeLbl").textContent = lbl;
+  document.getElementById("themeBtn").setAttribute("aria-label", `Theme: ${lbl}`);
   document.querySelectorAll("[data-theme-opt]").forEach(b =>
     b.setAttribute("aria-checked", String(b.dataset.themeOpt === theme)));
   if (theme === "matrix") matrixRain.start(); else matrixRain.stop();
@@ -2465,6 +2526,36 @@ document.addEventListener("click", e => {
 });
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") setThemeMenuOpen(false);
+});
+// Hover-open for mouse users, driven from JS rather than a plain CSS :hover
+// rule -- routing it through setThemeMenuOpen keeps aria-expanded and the
+// .open class (and therefore Escape-to-close) honest about hover-triggered
+// visibility too, which a CSS-only rule left completely out of sync.
+const themeHoverCapable = () => matchMedia("(hover: hover) and (pointer: fine)").matches;
+themeMenu.addEventListener("mouseenter", () => { if (themeHoverCapable()) setThemeMenuOpen(true); });
+themeMenu.addEventListener("mouseleave", () => { if (themeHoverCapable()) setThemeMenuOpen(false); });
+// WAI-ARIA APG menu-button pattern: ArrowDown/Up on the closed button opens
+// the menu and moves focus to the first/last item; within the open menu,
+// Up/Down/Home/End move among items. Previously only Escape and a plain
+// Enter/click on the button worked -- arrow keys (which a screen reader
+// primes by announcing "menu") silently did nothing.
+document.getElementById("themeBtn").addEventListener("keydown", e => {
+  if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+  e.preventDefault();
+  const opts = [...themeMenu.querySelectorAll("[data-theme-opt]")];
+  setThemeMenuOpen(true);
+  opts[e.key === "ArrowDown" ? 0 : opts.length - 1].focus();
+});
+document.querySelector(".theme-options-list").addEventListener("keydown", e => {
+  if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(e.key)) return;
+  const opts = [...themeMenu.querySelectorAll("[data-theme-opt]")];
+  const i = opts.indexOf(document.activeElement);
+  if (i === -1) return;
+  e.preventDefault();
+  const next = e.key === "ArrowDown" ? opts[(i + 1) % opts.length]
+    : e.key === "ArrowUp" ? opts[(i - 1 + opts.length) % opts.length]
+    : e.key === "Home" ? opts[0] : opts[opts.length - 1];
+  next.focus();
 });
 
 /* ============================================================
