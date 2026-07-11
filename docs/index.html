@@ -600,9 +600,17 @@ try {
   details.verify-d { display: inline-block; }
   details.verify-d > summary {
     list-style: none; cursor: pointer; display: inline-flex;
-    min-height: 28px; align-items: center;
+    min-height: 28px; align-items: center; gap: 5px;
   }
   details.verify-d > summary::-webkit-details-marker { display: none; }
+  /* Mirrors details.brief's .b-caret pattern -- without it, the strongest
+     evidence the pipeline produces (corroborating links, a "checked against
+     OFAC..." record) sat behind a pill that looked like static decoration,
+     with only a hover-only cursor change (invisible to touch users) hinting
+     it was expandable. */
+  .verify-d .vd-caret { color: var(--accent); font-size: 9px; flex: 0 0 auto; transition: transform .15s; }
+  details.verify-d[open] > summary .vd-caret { transform: rotate(90deg); }
+  .verify-d .vd-checked { font-size: 11px; color: var(--ok-deep); font-weight: 600; }
   details.verify-d .verify-body {
     margin: 8px 0 2px; padding: 9px 12px;
     border-left: 2px solid var(--border-2);
@@ -1063,9 +1071,12 @@ try {
 <canvas id="matrixCanvas" aria-hidden="true"></canvas>
 
 <noscript>
+  <style>header.masthead, main.wrap { display: none !important; }</style>
   <div style="max-width:720px;margin:40px auto;padding:0 20px;font-family:Georgia,serif;font-size:16px;line-height:1.6;">
     <strong>Digital Assets Morning Wire</strong> needs JavaScript enabled to display the digest.
-    The raw data behind this page is available in the repository as <code>data/digest.json</code>.
+    The raw data is available as <a href="https://raw.githubusercontent.com/0xfanbase/morning-wire/main/data/digest.json">data/digest.json</a>
+    in the <a href="https://github.com/0xfanbase/morning-wire">repository</a>, or as an RSS feed at
+    <a href="feed.xml">feed.xml</a> (works without JavaScript).
   </div>
 </noscript>
 
@@ -1191,7 +1202,7 @@ try {
         <li><span class="verify official">✓ Official source</span> Published directly by the regulator or
         standard-setter named on the card — the statement itself is the primary source.</li>
         <li><span class="verify corroborated">✓✓ Corroborated</span> An industry-media report confirmed by a
-        second, independent source (an official body or another reputable outlet). Both links appear on the card.</li>
+        second, independent source (an official body or another reputable outlet). Click the badge to inspect them.</li>
         <li><span class="verify single_source">⚠ Single source — verify</span> Reported by one industry outlet with
         no independent confirmation found at publish time. Treat as unverified.</li>
       </ul>
@@ -1554,12 +1565,17 @@ function verifyDetails(v, it) {
   const srcs = v.sources || [];
   const links = srcs.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ");
   const c = v.checked;
+  // A fact-checked item was pixel-identical, collapsed, to a merely
+  // corroborated one -- the strongest evidence the pipeline produces was
+  // undiscoverable without opening every single badge to check.
+  const checkedMark = c ? `<span class="vd-checked">· fact-checked</span>` : "";
   return `<details class="verify-d">
-    <summary aria-label="${esc(verifyBadgeText(v))} — expand for sources and what this means">${verifyBadge(v)}</summary>
+    <summary aria-label="${esc(verifyBadgeText(v))}${c ? " — fact-checked" : ""} — expand for sources and what this means">${verifyBadge(v)}${checkedMark}<span class="vd-caret" aria-hidden="true">▶</span></summary>
     <div class="verify-body">${VERIFY_EXPLAIN[v.level] || ""}
       ${links ? `<div class="corro-sources"><span class="cs-lbl">Source${srcs.length > 1 ? "s" : ""}:</span> ${links}</div>` : ""}
       ${c ? `<div class="corro-sources"><span class="cs-lbl">Fact-checked:</span> against ${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.against)}</a>` : esc(c.against)} · ${esc(fmtAudit(c.at))}${c.note ? `<br>${esc(c.note)}` : ""}</div>` : ""}
       ${it && it.date_source === "verified" ? `<div class="corro-sources"><span class="cs-lbl">Date:</span> publication date verified against the source article.</div>` : ""}
+      ${it && it.date_source === "fetch_time" ? `<div class="corro-sources"><span class="cs-lbl">Date:</span> not published on the source page — shown as first-seen time.</div>` : ""}
     </div>
   </details>`;
 }
@@ -1604,19 +1620,26 @@ function cardHTML(it) {
    purely because of their source's tier. */
 const isBrief = it => it.type === "news" && it.priority !== "high";
 
-/* Keyless/fallback enrichment publishes summary === title and a boilerplate
-   so_what (see scripts/summarise.py's fallback and CLAUDE.md's own
-   needs-enrichment detector) -- render that state as one honest line
+/* Keyless/fallback enrichment publishes summary === title and/or a
+   boilerplate so_what (see scripts/summarise.py's fallback and CLAUDE.md's
+   own needs-enrichment detector) -- render that state as one honest line
    instead of printing the same sentence twice (title, then a "summary"
-   that's just the title again). */
-const isUnenriched = it => it.summary === it.title
-  || (it.so_what || "").startsWith("Review the source directly");
+   that's just the title again). The two checks are independent: a
+   half-enriched item (real summary, boilerplate so_what, or vice versa)
+   must keep whichever half is genuinely written -- suppressing BOTH
+   whenever EITHER was fallback used to discard published analysis. */
+const isUnenrichedSummary = it => it.summary === it.title;
+const isUnenrichedSoWhat = it => (it.so_what || "").startsWith("Review the source directly");
+const isUnenriched = it => isUnenrichedSummary(it) && isUnenrichedSoWhat(it);
 function unenrichedOrSummaryHTML(it) {
-  // No summary yet -- say nothing rather than filling the space with a
-  // placeholder note; the title/link/source above already stand on their own.
-  if (isUnenriched(it)) return "";
-  return `<p class="summary">${esc(it.summary)}</p>
-    <p class="sowhat"><span class="lbl">→ So what:</span> ${esc(it.so_what)}</p>`;
+  if (isUnenriched(it)) {
+    // The About tab and Copy-briefing both say an unenriched card "says
+    // so" -- this used to return "" instead, contradicting that outright;
+    // the title/link/source above still stand on their own either way.
+    return `<p class="summary unenriched"><em>No AI summary yet — see the source link.</em></p>`;
+  }
+  return `${isUnenrichedSummary(it) ? "" : `<p class="summary">${esc(it.summary)}</p>`}
+    ${isUnenrichedSoWhat(it) ? "" : `<p class="sowhat"><span class="lbl">→ So what:</span> ${esc(it.so_what)}</p>`}`;
 }
 
 function briefHTML(it) {
