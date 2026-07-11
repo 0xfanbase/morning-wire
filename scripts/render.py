@@ -248,7 +248,25 @@ def _valid_radar_entry(entry, generated_at):
     return date >= gen_day_hkt
 
 
-def _valid_health_entry(entry):
+def _source_jurisdiction_map():
+    """name -> jurisdiction, cross-referenced from data/sources.json.
+
+    source_health rows are populated by the pipeline's health-check step and
+    carry no jurisdiction field of their own; the client needs one to detect
+    a jurisdiction whose official coverage has gone dark (see audit finding
+    E3). Best-effort: an unreadable/missing sources.json just yields no
+    jurisdiction annotations rather than failing the render.
+    """
+    path = ROOT / "data" / "sources.json"
+    try:
+        sources = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return {s["name"]: s.get("jurisdiction") for s in sources
+            if isinstance(s, dict) and isinstance(s.get("name"), str)}
+
+
+def _valid_health_entry(entry, source_jurisdictions):
     if not isinstance(entry, dict):
         print(f"[render] dropped a malformed source_health entry: {entry!r}")
         return False
@@ -264,6 +282,9 @@ def _valid_health_entry(entry):
         entry["status"] = "dead"
     entry["note"] = _clean_text(str(entry.get("note") or ""))
     entry["name"] = _clean_text(str(entry.get("name") or "")) or "unknown source"
+    jurisdiction = source_jurisdictions.get(entry["name"])
+    if jurisdiction in VALID_JURISDICTIONS:
+        entry["jurisdiction"] = jurisdiction
     return True
 
 
@@ -278,6 +299,7 @@ def sanitize_digest(digest):
     # `or []` on every list: a hand-edited digest with "items": null must
     # degrade to an empty page, not crash the render.
     items_in = digest.get("items") or []
+    source_jurisdictions = _source_jurisdiction_map()
     clean_run_log = []
     for e in (digest.get("run_log") or []):
         at = _normalize_iso(e.get("at")) if isinstance(e, dict) else None
@@ -301,7 +323,8 @@ def sanitize_digest(digest):
         # fails every item must never render identically to a genuinely
         # quiet day (see audit finding A3).
         "item_drop_count": item_drop_count,
-        "source_health": [h for h in (digest.get("source_health") or []) if _valid_health_entry(h)],
+        "source_health": [h for h in (digest.get("source_health") or [])
+                           if _valid_health_entry(h, source_jurisdictions)],
         "run_log": clean_run_log[-RUN_LOG_MAX_ENTRIES:],
         "radar": sorted(
             [e for e in (digest.get("radar") or []) if _valid_radar_entry(e, generated_at)],
