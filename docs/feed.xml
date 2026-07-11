@@ -506,7 +506,7 @@
 <link>https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35</link>
 <guid isPermaLink="false">hk-securities-and-futures-commission-circulars-fd10a4f596</guid>
 <pubDate>Thu, 09 Jul 2026 08:48:34 +0000</pubDate>
-<description>The Hong Kong Securities and Futures Commission (SFC) issued a circular directing licensed brokers and licensed virtual-asset service providers to strengthen customer login security against phishing attacks and to put in place monitoring and surveillance measures that can identify suspicious account activity. So what: Compliance teams overseeing Hong Kong virtual-asset business should expect the regulator to treat phishing-resistant customer authentication and suspicious-activity monitoring as a baseline supervisory standard and confirm that in-scope platforms and brokers are on track to meet it. [official]</description>
+<description>The Hong Kong Securities and Futures Commission (SFC) issued a circular directing licensed brokers and licensed virtual-asset service providers to strengthen customer login security against phishing attacks and to put in place monitoring and surveillance measures that can identify suspicious account activity. So what: Compliance teams overseeing Hong Kong virtual-asset business should expect the regulator to treat phishing-resistant customer authentication and suspicious-activity monitoring as a baseline supervisory standard and confirm that in-scope platforms and brokers are on track to meet it. [corroborated]</description>
 <category>Hong Kong</category>
 <category>Guidance</category>
 </item>
@@ -607,7 +607,7 @@
 <pubDate>Thu, 09 Jul 2026 14:01:43 +0000</pubDate>
 <description>The Block reported that the Hong Kong Securities and Futures Commission (SFC) is requiring licensed virtual-asset trading platforms and online brokers to phase out one-time passwords for customer logins in favour of stronger authentication such as passkeys, and to add monitoring that flags suspicious logins, trades and withdrawals. So what: Compliance functions covering Hong Kong virtual-asset and online-brokerage clients should track the shift away from one-time-password logins toward phishing-resistant authentication and the buildout of account-activity monitoring, since these are becoming the regulator's expected defences against account-takeover fraud. [single source]</description>
 <category>Hong Kong</category>
-<category>Guidance</category>
+<category>News</category>
 </item>
 <item>
 <title>Crypto hack losses fall below $1 billion in H1 2026 despite record attack volume: Immunefi</title>

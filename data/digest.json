@@ -1062,7 +1062,7 @@
           "at": "2026-07-08T05:05:00+00:00",
           "against": "UK Financial Conduct Authority — cryptoasset regime policy statements page (PS26/10, stablecoin issuance final rules)",
           "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime",
-          "note": "Confirmed the 30 June 2026 publication date and the 25 October 2027 full-regime implementation deadline directly against the FCA's own page."
+          "note": "Confirmed the 30 June 2026 publication date and the 25 October 2027 full-regime implementation deadline directly against the FCA's own page; also confirmed the 30 September 2026 savings-provisions application window (for firms already registered under the prior regime, not new issuers generally)."
         }
       },
       "summary": "The United Kingdom's Financial Conduct Authority published final rules for stablecoin issuers on 30 June 2026, covering backing-asset composition, redemption rights, and custody safeguarding, with the licence application window opening in September 2026 and the full regime becoming binding on 25 October 2027.",
@@ -1369,11 +1369,15 @@
       "priority": "high",
       "status": "new",
       "verification": {
-        "level": "official",
+        "level": "corroborated",
         "sources": [
           {
             "name": "Securities and Futures Commission — Circulars",
             "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35"
+          },
+          {
+            "name": "The Block — China policy",
+            "url": "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss"
           }
         ]
       },
@@ -1629,8 +1633,8 @@
       "title": "Hong Kong SFC orders crypto platforms, online brokers to phase out OTP logins",
       "url": "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss",
       "published": "2026-07-09T14:01:43+00:00",
-      "type": "guidance",
-      "priority": "high",
+      "type": "news",
+      "priority": "normal",
       "status": "new",
       "verification": {
         "level": "single_source",
@@ -2008,7 +2012,7 @@
     },
     {
       "at": "2026-07-08T05:10:00+00:00",
-      "note": "Enrichment: 11 items summarised and classified via Claude Code session, with jurisdiction corrected on 2 items. One high-priority item was checked directly against an official regulator source, and two more were corroborated against independent reporting."
+      "note": "Enrichment: 11 items summarised and classified via Claude Code session, with jurisdiction corrected on 2 items. One high-priority item was fact-checked against an official source; two more were corroborated."
     },
     {
       "at": "2026-07-09T01:32:57.094427+00:00",
@@ -2025,6 +2029,10 @@
     {
       "at": "2026-07-10T02:51:55+00:00",
       "note": "Enrichment: 26 items summarised and classified via Claude Code session (Opus, escalated for a 27-item backlog); one industry item was removed as vendor self-promotion rather than news."
+    },
+    {
+      "at": "2026-07-11T12:45:27+00:00",
+      "note": "Corrected a duplicate-coverage item in today's priority ranking, verified an on-the-radar deadline directly against the regulator, and shortened an over-length audit-log entry."
     }
   ],
   "radar": [
@@ -2036,7 +2044,7 @@
     },
     {
       "date": "2026-09-30",
-      "label": "FCA stablecoin-issuer licence application window opens",
+      "label": "FCA stablecoin savings-provisions application window opens (already-registered firms)",
       "jurisdiction": "UK",
       "url": "https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime"
     },
