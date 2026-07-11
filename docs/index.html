@@ -909,10 +909,26 @@ try {
       --border:#ddd; --border-2:#ccc; --shadow:none;
       --serif: Georgia, 'Times New Roman', serif;
       --sans: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      /* The neutrals above were reset for print, but --ok/--warn/--danger/
+         --accent/--accent-deep were not -- printing from dark or matrix theme
+         left THOSE at the theme's own values (e.g. matrix's pale yellow
+         --warn), so the verification/status colors the reader most needs on
+         a forwarded PDF survived as near-illegible on white paper. Pin them
+         to the light-theme (print-safe) values regardless of active theme. */
+      --ok:#4F7A52; --warn:#B4762A; --danger:#B0503C;
+      --accent:#C15F3C; --accent-deep:#A34E30;
     }
     #matrixCanvas { display: none !important; }
     html[data-theme="matrix"] body, html[data-theme="matrix"] main.wrap,
     html[data-theme="matrix"] header.masthead { background: #fff !important; }
+    /* Matrix's .type-tag rule hardcodes its own color/background with
+       !important, bypassing --h entirely -- the print reset above can't
+       touch it via custom properties, so it needs its own print override.
+       Values match the light theme's own (non-matrix) .type-tag rule below. */
+    html[data-theme="matrix"] .type-tag {
+      background: oklch(0.93 0.035 var(--h)) !important;
+      color: oklch(0.42 0.09 var(--h)) !important;
+    }
     .wordmark, .section-head h2 { text-shadow: none !important; }
     header.masthead { position: static; padding-top: 0; border-bottom: 2px solid #000; }
     .mast-sticky { position: static; }
