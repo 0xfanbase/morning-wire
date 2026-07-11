@@ -221,20 +221,26 @@ def _valid_item(item):
 def _valid_radar_entry(entry, generated_at):
     """Radar rows are forward-looking deadlines/effective dates maintained by
     the enrichment session: {date, label, jurisdiction, url?}. Past-dated rows
-    are dropped automatically so the strip self-prunes as deadlines pass."""
+    are dropped automatically so the strip self-prunes as deadlines pass --
+    that pruning is intentional and NOT logged; only genuine malformation is."""
     if not isinstance(entry, dict):
+        print(f"[render] dropped a malformed radar entry: {entry!r}")
         return False
     date = entry.get("date")
     if not isinstance(date, str) or not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
+        print(f"[render] dropped a radar entry with a bad date: {entry.get('date')!r} ({entry.get('label')!r})")
         return False
     if not isinstance(entry.get("label"), str) or not entry["label"].strip():
+        print(f"[render] dropped a radar entry with no label: {entry!r}")
         return False
     entry["label"] = _clean_text(entry["label"])
     if not entry["label"].strip():
+        print(f"[render] dropped a radar entry whose label was only illegal characters: {entry!r}")
         return False
     if entry.get("jurisdiction") not in VALID_JURISDICTIONS:
         entry["jurisdiction"] = "GLOBAL"
     if entry.get("url") is not None and not _is_http_url(entry["url"]):
+        print(f"[render] dropped radar entry {entry['label']!r} with a bad url: {entry.get('url')!r}")
         return False
     # Keep rows dated today (HKT) or later.
     gen_day_hkt = (datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
@@ -244,9 +250,18 @@ def _valid_radar_entry(entry, generated_at):
 
 def _valid_health_entry(entry):
     if not isinstance(entry, dict):
+        print(f"[render] dropped a malformed source_health entry: {entry!r}")
         return False
     if entry.get("status") not in VALID_HEALTH_STATUSES:
-        return False
+        # Degrade rather than drop -- matching how name/note already degrade
+        # below -- so a row with a merely-invalid status still shows up in
+        # the very tab whose intro promises "a source is never silently
+        # dropped", instead of vanishing from it. "dead" is the conservative
+        # default: an unrecognised status is itself a signal something needs
+        # attention, not evidence the source is actually healthy.
+        print(f"[render] source_health entry {entry.get('name')!r} has invalid status "
+              f"{entry.get('status')!r} -- degraded to 'dead'")
+        entry["status"] = "dead"
     entry["note"] = _clean_text(str(entry.get("note") or ""))
     entry["name"] = _clean_text(str(entry.get("name") or "")) or "unknown source"
     return True
@@ -263,25 +278,38 @@ def sanitize_digest(digest):
     # `or []` on every list: a hand-edited digest with "items": null must
     # degrade to an empty page, not crash the render.
     items_in = digest.get("items") or []
+    clean_run_log = []
+    for e in (digest.get("run_log") or []):
+        at = _normalize_iso(e.get("at")) if isinstance(e, dict) else None
+        if not at:
+            print(f"[render] dropped a malformed run_log entry: {e!r}")
+            continue
+        clean_run_log.append({
+            "at": at,
+            "note": _truncate_gracefully(_clean_text(str(e.get("note") or "")), RUN_LOG_NOTE_MAX_CHARS),
+        })
+    clean_items = [it for it in items_in if _valid_item(it)]
+    item_drop_count = len(items_in) - len(clean_items)
     clean = {
         "generated_at": generated_at,
         "top_of_mind": _truncate_gracefully(_clean_text(str(digest.get("top_of_mind") or "")), 400),
-        "items": [it for it in items_in if _valid_item(it)],
+        "items": clean_items,
+        # Reader-facing count of items dropped by the schema gate THIS run --
+        # not cumulative, not a history. page.html shows a same-day notice
+        # when this is nonzero, and the empty state stops claiming a
+        # confirmed-quiet day when it isn't one -- a schema regression that
+        # fails every item must never render identically to a genuinely
+        # quiet day (see audit finding A3).
+        "item_drop_count": item_drop_count,
         "source_health": [h for h in (digest.get("source_health") or []) if _valid_health_entry(h)],
-        "run_log": [
-            {"at": _normalize_iso(e.get("at")),
-             "note": _truncate_gracefully(_clean_text(str(e.get("note") or "")), RUN_LOG_NOTE_MAX_CHARS)}
-            for e in (digest.get("run_log") or [])
-            if isinstance(e, dict) and _normalize_iso(e.get("at"))
-        ][-RUN_LOG_MAX_ENTRIES:],
+        "run_log": clean_run_log[-RUN_LOG_MAX_ENTRIES:],
         "radar": sorted(
             [e for e in (digest.get("radar") or []) if _valid_radar_entry(e, generated_at)],
             key=lambda e: e["date"],
         )[:RADAR_MAX_ENTRIES],
     }
-    dropped = len(items_in) - len(clean["items"])
-    if dropped:
-        print(f"[render] dropped {dropped} malformed item(s) before publishing")
+    if item_drop_count:
+        print(f"[render] dropped {item_drop_count} malformed item(s) before publishing")
     return clean
 
 

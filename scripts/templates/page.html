@@ -1786,10 +1786,15 @@ function renderFeed(items) {
     // reader is looking at everything in the selected range.
     const unfiltered = state.juris === "ALL" && state.bucket === "ALL";
     const quietLabel = RANGE_QUIET_LABEL[state.range];
+    // item_drop_count is THIS generation's schema-gate drop count -- it only
+    // speaks to "today", never to a wider historical range. A total-wipeout
+    // day must not render as the same confident "Quiet day" copy as a
+    // genuinely empty one (see the drop-count banner above, renderDropNotice).
+    const todayAffected = unfiltered && state.range === "today" && (DIGEST.item_drop_count || 0) > 0;
     feed.innerHTML = `<div class="empty">
-      <div class="e-mark" aria-hidden="true">${unfiltered ? "☕" : "🔍"}</div>
-      <h3>${unfiltered ? quietLabel : "No items match these filters"}</h3>
-      <p>${unfiltered ? (state.range === "today" ? "Nothing crossed the wires for today's digest." : "Nothing crossed the wires in this window.") : `${RANGE_LABEL[state.range]} has ${rangeScope.length} item${rangeScope.length !== 1 ? "s" : ""} outside this selection.`}</p>
+      <div class="e-mark" aria-hidden="true">${unfiltered ? (todayAffected ? "⚠" : "☕") : "🔍"}</div>
+      <h3>${unfiltered ? (todayAffected ? "Today's digest may be incomplete" : quietLabel) : "No items match these filters"}</h3>
+      <p>${unfiltered ? (todayAffected ? "Some items failed validation and could not be published — this is not necessarily a quiet day." : (state.range === "today" ? "Nothing crossed the wires for today's digest." : "Nothing crossed the wires in this window.")) : `${RANGE_LABEL[state.range]} has ${rangeScope.length} item${rangeScope.length !== 1 ? "s" : ""} outside this selection.`}</p>
       ${unfiltered ? "" : `<button type="button" class="clear-all" data-clear="all">✕ Clear filters</button>`}
     </div>`;
     return;
@@ -1982,6 +1987,23 @@ function renderCatchup() {
         <span><a href="#${esc(it.id)}" data-ensure-visible="1">${esc(it.title)}</a>
           <span class="cdate">· ${fmtDay(it.published)}</span></span>
       </div>`).join("")}</div>`;
+}
+
+/* ---------- drop-count notice: a schema regression that fails every item
+   must never look identical to a genuinely quiet day. Static for the
+   session (item_drop_count reflects THIS generation, not a live count), so
+   unlike renderFreshness this only needs to run once at boot. ---------- */
+function renderDropNotice() {
+  const slot = document.getElementById("banner-slot");
+  const existing = slot.querySelector(".banner.dropnotice");
+  if (existing) existing.remove();
+  const n = DIGEST.item_drop_count || 0;
+  if (!n) return;
+  slot.insertAdjacentHTML("beforeend", `<div class="banner dropnotice" role="status">
+    <span class="b-ico" aria-hidden="true">⚠</span>
+    <div><strong>${n} item${n !== 1 ? "s" : ""} failed validation and could not be published today.</strong>
+    This is not necessarily a quiet day — some content may be missing.</div>
+  </div>`);
 }
 
 /* ---------- masthead freshness: the page's one silent failure mode ----------
@@ -2649,6 +2671,7 @@ restoreFilters();
 renderHealth();
 renderAudit();
 renderAbout();
+renderDropNotice();
 render();
 if (location.hash) gotoHash();
 </script>
