@@ -663,6 +663,10 @@ try {
   }
   .banner .b-ico { color: var(--warn-deep); font-size: 15px; line-height: 1.4; }
   .banner strong { color: var(--ink); }
+  /* Print-only: names any active jurisdiction/category filter under the feed
+     header, so a forwarded PDF of a filtered view can't present itself as
+     the complete digest -- see @media print below for the visible style. */
+  .print-filter-scope { display: none; }
 
   /* ============================================================
      TOP OF MIND + PRIORITY -- side by side on wide screens (see the
@@ -941,9 +945,25 @@ try {
     .wordmark, .section-head h2 { text-shadow: none !important; }
     header.masthead { position: static; padding-top: 0; border-bottom: 2px solid #000; }
     .mast-sticky { position: static; }
-    .theme-menu, .theme-toggle, .font-ctrl, .filter-toolbar, .banner, .tabs,
+    .theme-menu, .theme-toggle, .font-ctrl, .filter-toolbar, .tabs,
     .copycite, .copy-briefing, .brief-toggle-all, .jumpnav, .fresh-dot, .foot-links,
     details.brief > summary .b-caret { display: none !important; }
+    /* .banner is deliberately NOT in the hide-list above: unlike every other
+       selector there (interactive chrome), it's substantive content -- a
+       stale-pipeline or dropped-items notice a reader forwarding this as a
+       PDF needs to see, not lose to the same sweep as the theme picker.
+       Toner-friendly treatment: outlined, no color tint, keep the icon and
+       bold lead sentence. */
+    .banner {
+      border: 1.5px solid #000; background: #fff; border-radius: 0;
+    }
+    .banner .b-ico { color: #111; }
+    .print-filter-scope {
+      display: block; margin: 4px 0 0; font-size: 11px; font-style: italic; color: #333;
+    }
+    .card h4 a[href]::after, .brief-body > a[href]::after {
+      content: " — " attr(href); font-size: 10px; color: #555; word-break: break-all;
+    }
     /* Print everything: a hidden tab's content still belongs in the PDF. */
     #tab-digest[hidden], #tab-health[hidden], #tab-audit[hidden], #tab-about[hidden] { display: block !important; }
     /* Week-in-review mode: the footer button prints ONLY the 7-day view,
@@ -1800,9 +1820,11 @@ function renderFeed(items) {
     return;
   }
   const anyBriefs = items.some(isBrief);
+  const filterScope = state.juris !== "ALL" || state.bucket !== "ALL";
   let html = `<div class="section-head"><h2>${esc(RANGE_LABEL[state.range])} · by jurisdiction</h2><span class="rule"></span>
     ${anyBriefs ? `<button class="copy-briefing brief-toggle-all" type="button" data-toggle-briefs="all">Expand all briefs</button>` : ""}
-    <button class="copy-briefing" type="button" id="copyBriefingBtn" aria-label="Copy this briefing as text">⧉ Copy briefing</button></div>`;
+    <button class="copy-briefing" type="button" id="copyBriefingBtn" aria-label="Copy this briefing as text">⧉ Copy briefing</button></div>
+    ${filterScope ? `<p class="print-filter-scope">Filtered to ${state.juris !== "ALL" ? esc(JURIS_FULL[state.juris]) : "all jurisdictions"}${state.bucket !== "ALL" ? ` · ${esc(BUCKETS[state.bucket].label)}` : ""} — this is not the complete digest.</p>` : ""}`;
   JURIS_ORDER.forEach(j => {
     const group = items.filter(it => it.jurisdiction === j)
       .sort((a, b) => (b.priority === "high") - (a.priority === "high") || new Date(b.published) - new Date(a.published));
