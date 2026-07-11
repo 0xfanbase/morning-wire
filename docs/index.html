@@ -1128,7 +1128,7 @@ try {
 
   <div id="tab-health" role="tabpanel" aria-labelledby="tabbtn-health" hidden>
     <div class="section-head"><h2>Source health</h2><span class="rule"></span></div>
-    <p class="tab-intro">Per-source status from the latest pipeline run. A source is never silently dropped — failures surface here and self-heal retries each run.</p>
+    <p class="tab-intro">Per-source status from the latest pipeline run. A source is never silently dropped — failures surface here, and failed sources are retried automatically on the next run.</p>
     <p class="table-scroll-hint" id="healthScrollHint" hidden>Swipe sideways to see the full table →</p>
     <table class="health-table" id="healthTable">
       <thead><tr>
@@ -1143,7 +1143,7 @@ try {
 
   <div id="tab-audit" role="tabpanel" aria-labelledby="tabbtn-audit" hidden>
     <div class="section-head"><h2>Audit log</h2><span class="rule"></span></div>
-    <p class="tab-intro">Every data update to this page, newest first (all times Hong Kong).</p>
+    <p class="tab-intro">The last 10 data updates to this page, newest first (all times Hong Kong). Older entries roll off.</p>
     <ol class="audit-list" id="auditLog"></ol>
   </div>
 
@@ -1230,7 +1230,7 @@ const TZ = "Asia/Hong_Kong";
 const TYPE_LABEL = {
   enforcement: "Enforcement", final_rule: "Final rule", consultation: "Consultation",
   guidance: "Guidance", designation: "Designation", licensing: "Licensing",
-  peer_move: "Peer move", speech: "Speech", news: "News"
+  peer_move: "Industry move", speech: "Speech", news: "News"
 };
 const TYPE_HUE = {
   enforcement: 27, designation: 15, final_rule: 255, guidance: 232, consultation: 205,
@@ -1347,12 +1347,15 @@ function restoreFilters() {
     if (JURIS_ORDER.includes(saved.juris) || saved.juris === "ALL") state.juris = saved.juris;
     if (BUCKETS[saved.bucket]) state.bucket = saved.bucket;
     if (RANGE_ORDER.includes(saved.range)) state.range = saved.range;
-    // Check against the WIDEST range ("30"), not just the restored one: a
+    // Check against the WIDEST range ("all"), not just the restored one: a
     // saved {juris:"HK", range:"today"} lens with zero HK items today but
     // some in the wider window is not stale, just quiet today -- the old
     // code preserved this (checking the full retained window); only reset
-    // when the lens matches nothing anywhere the reader could see it.
-    if (!rangeItems("30").filter(matchesFilters).length) {
+    // when the lens matches nothing anywhere the reader could see it. "all"
+    // is genuinely unbounded (unlike "30", an upper bound the pipeline's
+    // retention window rarely reaches -- see rangeItems()'s own doc comment)
+    // so a lens still reachable via the "All" chip is never discarded here.
+    if (!rangeItems("all").filter(matchesFilters).length) {
       state.juris = "ALL"; state.bucket = "ALL";  // stale lens: show everything (keep the remembered range)
     }
   } catch (e) {}
@@ -2032,7 +2035,7 @@ function renderAbout() {
   const official = rows.filter(s => s.tier === "official").length;
   const industry = rows.filter(s => s.tier === "industry").length;
   document.getElementById("about-sources").textContent =
-    `${rows.length} sources are monitored every run: ${official || "—"} official (regulators, central banks, standard-setters — including licence registers that are diffed for changes) and ${industry || "—"} industry (crypto press and blockchain-analytics firms). Official items are trusted as primary sources; industry items must earn corroboration.`;
+    `${rows.length} sources are monitored every run: ${official || "—"} official (regulators, central banks, standard-setters — including licence registers that are compared against the previous day's copy to catch changes) and ${industry || "—"} industry (crypto press and blockchain-analytics firms). Official items are trusted as primary sources; industry items must earn corroboration.`;
 }
 
 /* ---------- clipboard: copy cite + copy briefing ---------- */
