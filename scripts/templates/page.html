@@ -442,13 +442,18 @@ try {
      FRESHNESS + READ-BUDGET (masthead)
      ============================================================ */
   #mast-fresh { margin-left: 8px; }
+  .coverage-gap { color: var(--warn-deep); }
+  .coverage-gap .linklike { color: var(--warn-deep); text-decoration: underline; font-weight: 600; }
   .fresh-dot {
     display: inline-block; width: 8px; height: 8px; border-radius: 50%;
     margin-right: 5px; vertical-align: baseline;
   }
   .fresh-dot.ok    { background: var(--ok); }
   .fresh-dot.warn  { background: var(--warn); }
-  .fresh-dot.stale { background: var(--danger); }
+  /* Color alone (--warn vs --danger, both mid-value amber/red) is a weak
+     cue for red-green color-blind readers at 8px -- the ring is a shape
+     difference that survives regardless of color perception. */
+  .fresh-dot.stale { background: var(--danger); outline: 1.5px solid var(--ink-3); outline-offset: 1.5px; }
 
   /* ============================================================
      ABOUT TAB + LEGEND + FOOTER LINKS
@@ -513,6 +518,18 @@ try {
   }
   .radar-item a, .catchup-item a { color: var(--ink); font-weight: 500; }
   .radar-item a:hover, .catchup-item a:hover { color: var(--accent); }
+  /* A deadline that passed since this digest was generated (most often over
+     the Mon-Fri pipeline's weekend gap) is re-checked client-side against
+     the reader's current date -- struck through rather than silently
+     dropped, so a row that was genuinely on the radar this week doesn't
+     just vanish with no trace of having existed. */
+  .radar-item.is-closed { opacity: .6; }
+  .radar-item.is-closed a, .radar-item.is-closed span:not(.rd):not(.rj) { text-decoration: line-through; }
+  .radar-closed-tag {
+    text-decoration: none !important; font-size: 10.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .04em; color: var(--ink-3);
+    margin-left: 4px;
+  }
   .catchup-item .cdate { font-size: 12px; color: var(--ink-3); }
   @media (max-width: 480px) {
     .radar-item, .catchup-item { flex-wrap: wrap; gap: 4px 10px; }
@@ -671,6 +688,15 @@ try {
   }
   .banner .b-ico { color: var(--warn-deep); font-size: 15px; line-height: 1.4; }
   .banner strong { color: var(--ink); }
+  /* The stale tier (weeklong-dead vs. two-hours-late) escalates to --danger
+     -- the banner was previously hardcoded to warn styling and identical
+     wording regardless of computed tier, under-communicating exactly the
+     escalated state it exists to signal. */
+  .banner.stale {
+    border-color: color-mix(in srgb, var(--danger) 55%, var(--border));
+    background: color-mix(in srgb, var(--danger) 12%, var(--bg));
+  }
+  .banner.stale .b-ico { color: var(--danger); }
   /* Print-only: names any active jurisdiction/category filter under the feed
      header, so a forwarded PDF of a filtered view can't present itself as
      the complete digest -- see @media print below for the visible style. */
@@ -1214,8 +1240,11 @@ try {
       headline and say so.</p>
 
       <h3>Schedule &amp; retention</h3>
-      <p>The pipeline runs each weekday around 07:00 Hong Kong time; AI enrichment follows
-      within the hour. The Range selector on the Digest tab defaults to Today, with Last 7
+      <p>The pipeline runs each weekday around 07:00 Hong Kong time; when AI enrichment is
+      enabled it typically follows within the hour. Keyless operation is a supported mode —
+      until enrichment runs (or on a day it isn't configured), cards show the raw source
+      headline and say so, rather than anything being broken. The Range selector on the
+      Digest tab defaults to Today, with Last 7
       days and Last 30 days showing everything this page currently retains within that
       window, and All showing everything retained with no cutoff at all (none of these are
       a promise of a full 30 days of history — see below); the Audit log tab
@@ -1333,6 +1362,16 @@ const state = { juris: "ALL", bucket: "ALL", range: "today", search: "" };
 let pendingFocus = null;  // [attr, value] of a chip to refocus after re-render
 let healthSort = { key: null, dir: 1 };  // null key -> default tier-grouped view
 const GEN_DAY = hkDayKey(DIGEST.generated_at);
+// "Today" means the digest's generation day, not the reader's day -- a
+// Saturday reader sees a masthead reading "1 day ago" (easy to miss) right
+// next to a Range chip flatly labelled "Today" (the thing actually
+// scanned) describing Friday's digest. GEN_DAY is fixed for the whole
+// session, so this relabels once at boot; every existing consumer of
+// RANGE_LABEL["today"] (chips, the feed section header) picks it up with
+// no call-site changes.
+if (hkDayKey(new Date().toISOString()) !== GEN_DAY) {
+  RANGE_LABEL.today = `Latest issue (${GEN_DAY})`;
+}
 
 /* ---------- returning-reader state (all client-side, all optional) ---------- */
 /* Visit baseline: items first seen after your previous session get a "New"
@@ -1537,7 +1576,12 @@ function renderAppliedStrip() {
    wrong" signal to a reader with no way to act on it. The Source health tab
    is the dedicated, always-accurate place for that detail; the freshness
    banner below (renderFreshness) is what actually affects whether TODAY'S
-   content is trustworthy and stays as the one Digest-tab warning. */
+   content is trustworthy. The one deliberate exception is the narrow,
+   aggregate-only coverage-gap line renderFreshness also renders (see
+   coverageGaps() below) -- a whole jurisdiction's official coverage going
+   dark is exactly the kind of thing that must not hide behind "check the
+   Source health tab yourself"; it names which JURISDICTION, never which
+   source, so it stays a single actionable signal rather than per-source noise. */
 
 /* ---------- verification badge: an inspectable claim, not decoration ---------- */
 const VERIFY_EXPLAIN = {
@@ -2007,13 +2051,25 @@ function renderRadar() {
   const slot = document.getElementById("radar-slot");
   const rows = DIGEST.radar || [];
   if (!rows.length) { slot.innerHTML = ""; return; }
+  // Radar rows are pruned server-side at GENERATION time only -- the
+  // pipeline is Mon-Fri, so a deadline that passes on a Saturday sits in
+  // the static HTML looking exactly as "open" as a live one until Monday's
+  // run regenerates the page. Re-check against the READER's current HK
+  // date on every render (same structural fix as the freshness banner: a
+  // generation-time-only computation can't stay honest between runs).
+  // Struck through rather than dropped -- more honest than a row that was
+  // genuinely on the radar this week just vanishing with no trace.
+  const todayKey = hkDayKey(new Date().toISOString());
   slot.innerHTML = `<div class="section-head"><h2>On the radar — dates that matter</h2><span class="rule"></span></div>
-    <div class="radar">${rows.map(r => `
-      <div class="radar-item">
+    <div class="radar">${rows.map(r => {
+      const closed = r.date < todayKey;
+      return `
+      <div class="radar-item${closed ? " is-closed" : ""}">
         <span class="rd">${fmtDay(r.date + "T00:00:00+08:00")}</span>
         <span class="rj">${esc(JURIS_FULL[r.jurisdiction] || r.jurisdiction)}</span>
-        <span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.label)}</a>` : esc(r.label)}</span>
-      </div>`).join("")}</div>`;
+        <span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.label)}</a>` : esc(r.label)}${closed ? `<span class="radar-closed-tag">Closed</span>` : ""}</span>
+      </div>`;
+    }).join("")}</div>`;
 }
 
 /* ---------- while you were away: missed high-priority items ---------- */
@@ -2071,6 +2127,20 @@ function nextExpectedGenAt(genAtMs) {
   else if (hktDow === 0) next += DAY_MS;     // Sun -> Mon
   return next;
 }
+/* Every official source for one jurisdiction can be `dead` while the
+   pipeline still runs on time, leaving the freshness dot green with no
+   live-page signal at all -- the weekly audit check that would otherwise
+   catch this never reaches the public page. One narrow, aggregate-only
+   line closes that gap without reintroducing the per-source noise
+   deliberately kept off the Digest tab (see the comment above the
+   verification-badge section): which jurisdiction, never which source. */
+function coverageGaps() {
+  const official = (DIGEST.source_health || [])
+    .filter(s => s.tier === "official" && s.jurisdiction);
+  const byJuris = {};
+  official.forEach(s => (byJuris[s.jurisdiction] = byJuris[s.jurisdiction] || []).push(s));
+  return Object.keys(byJuris).filter(j => byJuris[j].every(s => s.status === "dead"));
+}
 function renderFreshness() {
   const el = document.getElementById("mast-fresh");
   const genAtMs = new Date(DIGEST.generated_at).getTime();
@@ -2078,25 +2148,32 @@ function renderFreshness() {
   const overdueH = (Date.now() - nextExpectedGenAt(genAtMs)) / 3600000;
   const cls = overdueH < 2 ? "ok" : overdueH < 26 ? "warn" : "stale";
   const rel = ageH < 1 ? "just now" : ageH < 26 ? `${Math.round(ageH)}h ago` : `${Math.floor(ageH / 24)} day${ageH >= 48 ? "s" : ""} ago`;
-  el.innerHTML = ` · <span class="fresh-dot ${cls}" aria-hidden="true"></span>as of ${rel}`;
+  const gaps = coverageGaps();
+  const gapNote = gaps.length
+    ? ` · <span class="coverage-gap">⚠ Coverage gap: ${gaps.map(j => esc(JURIS_FULL[j] || j)).join(", ")} official sources unreachable — <button type="button" class="linklike" data-goto="health">see Source health</button></span>`
+    : "";
+  el.innerHTML = ` · <span class="fresh-dot ${cls}" aria-hidden="true"></span>as of ${rel}${gapNote}`;
   const slot = document.getElementById("banner-slot");
   const existing = slot.querySelector(".banner.freshness");
-  // Idempotent: a role="status" region re-announces to screen readers on
-  // every DOM mutation inside it, so tearing this down and reinserting it on
-  // every render() (a 10-minute tick, any filter/search keystroke, tab
-  // refocus) used to re-announce "pipeline may have stalled" every single
-  // time, not just when the staleness state actually changed. The message
-  // itself never changes while shown, so only touch the DOM on an actual
-  // show/hide transition.
-  if (overdueH < 2) {
+  // Idempotent PER TIER: a role="status" region re-announces to screen
+  // readers on every DOM mutation inside it, so tearing this down and
+  // reinserting it on every render() (a 10-minute tick, any filter/search
+  // keystroke, tab refocus) used to re-announce "pipeline may have stalled"
+  // every single time, not just when the staleness state actually changed.
+  // warn -> stale IS a real escalation the reader should hear about, so
+  // that transition still updates the DOM; the SAME tier persisting across
+  // a render() does not.
+  if (cls === "ok") {
     if (existing) existing.remove();
     return;
   }
-  if (existing) return;
-  slot.insertAdjacentHTML("afterbegin", `<div class="banner freshness" role="status">
+  if (existing && existing.dataset.tier === cls) return;
+  if (existing) existing.remove();
+  const stale = cls === "stale";
+  slot.insertAdjacentHTML("afterbegin", `<div class="banner freshness ${cls}" data-tier="${cls}" role="status">
     <span class="b-ico" aria-hidden="true">⚠</span>
     <div><strong>This digest has not updated since ${fmtAudit(DIGEST.generated_at)}.</strong>
-    The daily pipeline may have stalled — items below may be out of date.</div>
+    ${stale ? "The daily pipeline appears to have stalled — treat everything below as unconfirmed until it resumes." : "The daily pipeline may have stalled — items below may be out of date."}</div>
   </div>`);
 }
 
@@ -2726,8 +2803,8 @@ healthRO.observe(healthTableEl);
 window.addEventListener("resize", syncHealthScrollHint);
 
 /* ---------- keep the freshness state honest on a long-lived tab ---------- */
-document.addEventListener("visibilitychange", () => { if (!document.hidden) renderFreshness(); });
-setInterval(renderFreshness, 10 * 60000);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) { renderFreshness(); renderRadar(); } });
+setInterval(() => { renderFreshness(); renderRadar(); }, 10 * 60000);
 
 /* ---------- boot ---------- */
 restoreFilters();
