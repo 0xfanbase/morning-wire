@@ -38,6 +38,21 @@ VALID_STATUSES = {"new", "update"}
 VALID_VERIFY_LEVELS = {"official", "corroborated", "single_source"}
 VALID_HEALTH_STATUSES = {"ok", "replaced", "dead"}
 
+# Plain-English labels for the RSS feed's <category> tags, mirroring
+# JURIS_FULL / TYPE_LABEL in scripts/templates/page.html -- the feed's own
+# docstring targets Outlook on locked-down bank desktops, the same reader the
+# no-jargon standard protects everywhere else on the page; raw enum codes
+# ("CN", "peer_move") are never shown to a reader anywhere but here.
+JURIS_LABEL = {
+    "HK": "Hong Kong", "CN": "Mainland China", "US": "United States",
+    "UK": "United Kingdom", "EU": "European Union", "SG": "Singapore", "GLOBAL": "Global",
+}
+TYPE_LABEL = {
+    "enforcement": "Enforcement", "final_rule": "Final rule", "consultation": "Consultation",
+    "guidance": "Guidance", "designation": "Designation", "licensing": "Licensing",
+    "peer_move": "Peer move", "speech": "Speech", "news": "News",
+}
+
 
 def _is_valid_iso8601(value):
     if not isinstance(value, str):
@@ -73,7 +88,16 @@ def _normalize_iso(value):
 
 
 def _is_http_url(value):
-    return isinstance(value, str) and re.match(r"^https?://", value, re.IGNORECASE) is not None
+    # URL fields skip _clean_text (a URL can't have its illegal characters
+    # silently stripped the way free text can -- that would just corrupt the
+    # link), so this gate must reject them itself: an unscrubbed control
+    # character or lone surrogate here used to reach feed.xml unescaped
+    # (breaking XML parsing for every subscriber) or crash write_text()'s
+    # UTF-8 encoding outright, taking down the whole day's render for one bad
+    # scraped item -- see audit/lessons.md L5.
+    return (isinstance(value, str)
+            and re.match(r"^https?://", value, re.IGNORECASE) is not None
+            and not _ILLEGAL_TEXT_CHARS_RE.search(value))
 
 
 def _truncate_gracefully(text, limit):
@@ -152,8 +176,10 @@ def _valid_item(item):
     if not isinstance(sources, list):
         return False
     for src in sources:
-        if not isinstance(src, dict) or not _is_http_url(src.get("url", "")):
+        if (not isinstance(src, dict) or not _is_http_url(src.get("url", ""))
+                or not isinstance(src.get("name"), str) or not src["name"].strip()):
             return False
+        src["name"] = _clean_text(src["name"])
     if verification["level"] == "corroborated" and len(sources) < 2:
         # The badge text asserts "N sources" and the client dereferences the
         # list -- a corroborated claim without its evidence is invalid.
@@ -187,6 +213,7 @@ def _valid_item(item):
         item["so_what"] = (_clean_text(item["so_what"]) or
                             "Review the source directly; automated analysis unavailable.")
     if item["jurisdiction"] not in VALID_JURISDICTIONS:
+        print(f"[render] item {item['id']!r} has unknown jurisdiction {item['jurisdiction']!r} -- folded to GLOBAL")
         item["jurisdiction"] = "GLOBAL"  # unknown jurisdiction -> fold into Global rather than drop
     return True
 
@@ -238,7 +265,7 @@ def sanitize_digest(digest):
     items_in = digest.get("items") or []
     clean = {
         "generated_at": generated_at,
-        "top_of_mind": _clean_text(str(digest.get("top_of_mind") or "")[:400]),
+        "top_of_mind": _truncate_gracefully(_clean_text(str(digest.get("top_of_mind") or "")), 400),
         "items": [it for it in items_in if _valid_item(it)],
         "source_health": [h for h in (digest.get("source_health") or []) if _valid_health_entry(h)],
         "run_log": [
@@ -318,8 +345,8 @@ def render_feed(clean):
             f'<guid isPermaLink="false">{xml_escape(it["id"])}</guid>',
             f"<pubDate>{rfc822(it['published'])}</pubDate>",
             f"<description>{xml_escape(desc)}</description>",
-            f"<category>{xml_escape(it['jurisdiction'])}</category>",
-            f"<category>{xml_escape(it['type'])}</category>",
+            f"<category>{xml_escape(JURIS_LABEL.get(it['jurisdiction'], it['jurisdiction']))}</category>",
+            f"<category>{xml_escape(TYPE_LABEL.get(it['type'], it['type']))}</category>",
             "</item>",
         ]
     parts += ["</channel>", "</rss>", ""]
