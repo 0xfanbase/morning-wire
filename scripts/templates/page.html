@@ -43,6 +43,8 @@ try {
     --ok:        #4F7A52;   /* muted green */
     --warn:      #B4762A;   /* muted amber */
     --danger:    #B0503C;   /* muted red */
+    --ok-deep:   #3E6141;   /* darker ok for badge/status TEXT on light ground (AA vs tinted pills) */
+    --warn-deep: #8A5A1E;   /* darker warn for badge/status TEXT on light ground (AA vs tinted pills) */
     --serif: Georgia, 'Iowan Old Style', Charter, 'Times New Roman', serif;
     --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   }
@@ -63,6 +65,8 @@ try {
     --ok:        #7DA97F;
     --warn:      #D6A25B;
     --danger:    #D98A73;
+    --ok-deep:   #7DA97F;   /* the base tone already passes AA on dark ground */
+    --warn-deep: #D6A25B;   /* the base tone already passes AA on dark ground */
   }
 
   /* ============================================================
@@ -538,6 +542,9 @@ try {
     font-family: var(--sans); font-size: 11px; font-weight: 700;
     letter-spacing: .04em; color: var(--accent); cursor: pointer;
     white-space: nowrap;
+    /* 28px touch target without adding visual density -- the negative
+       margin pulls the extra box height back out of the surrounding flow. */
+    min-height: 28px; display: inline-flex; align-items: center; margin: -6px 0;
   }
   .brief-toggle-all:hover { color: var(--accent-h); text-decoration: underline; }
   .brief-list { border-top: 1px solid var(--border); margin-bottom: 13px; }
@@ -569,7 +576,7 @@ try {
   .card:target { outline: 2px solid var(--accent); outline-offset: 3px; }
   .copycite {
     appearance: none; border: 1px solid var(--border-2); background: transparent;
-    border-radius: 6px; padding: 3px 9px; margin-left: 8px;
+    border-radius: 6px; padding: 3px 9px; margin-left: 8px; min-height: 24px;
     font-family: var(--sans); font-size: 11.5px; font-weight: 600;
     color: var(--ink-3); cursor: pointer; transition: color .15s, border-color .15s;
   }
@@ -654,7 +661,7 @@ try {
     border-radius: 10px;
     font-size: 13.5px; color: var(--ink-2);
   }
-  .banner .b-ico { color: var(--warn); font-size: 15px; line-height: 1.4; }
+  .banner .b-ico { color: var(--warn-deep); font-size: 15px; line-height: 1.4; }
   .banner strong { color: var(--ink); }
 
   /* ============================================================
@@ -813,9 +820,11 @@ try {
     font-size: 12.5px; font-weight: 600;
     padding: 4px 10px; border-radius: 999px;
   }
-  .verify.official     { color: var(--ok);   background: color-mix(in srgb, var(--ok) 13%, transparent); }
-  .verify.corroborated { color: var(--ok);   background: color-mix(in srgb, var(--ok) 13%, transparent); }
-  .verify.single_source{ color: var(--warn); background: color-mix(in srgb, var(--warn) 15%, transparent); }
+  /* Text color uses the *-deep tokens (AA against this tinted pill itself,
+     not just the card behind it) -- fills stay on the lighter base tone. */
+  .verify.official     { color: var(--ok-deep);   background: color-mix(in srgb, var(--ok) 13%, transparent); }
+  .verify.corroborated { color: var(--ok-deep);   background: color-mix(in srgb, var(--ok) 13%, transparent); }
+  .verify.single_source{ color: var(--warn-deep); background: color-mix(in srgb, var(--warn) 15%, transparent); }
 
   .corro-sources { margin: 10px 0 0; font-size: 12.5px; color: var(--ink-3); }
   .corro-sources .cs-lbl { font-weight: 600; }
@@ -891,7 +900,7 @@ try {
   .table-scroll-hint { font-size: 12px; color: var(--ink-3); margin: 0 0 8px; font-style: italic; }
   .hstatus { font-weight: 700; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
   .hstatus.ok { color: var(--ok); }
-  .hstatus.replaced { color: var(--warn); }
+  .hstatus.replaced { color: var(--warn-deep); }
   .hstatus.dead { color: var(--danger); }
   .foot-notes p { margin: 4px 0; }
   .foot-notes .strong { color: var(--ink-2); font-weight: 600; }
@@ -1067,8 +1076,8 @@ try {
           <button type="button" class="search-toggle" id="searchBtn" aria-expanded="false" aria-controls="searchInput" aria-label="Search past digest items">
             <span aria-hidden="true">🔍</span> Search
           </button>
-          <input type="search" id="searchInput" placeholder="Search past items…" aria-label="Search past digest items" tabindex="-1">
-          <button type="button" id="searchClear" aria-label="Close search" tabindex="-1">✕</button>
+          <input type="search" id="searchInput" placeholder="Search past items…" aria-label="Search past digest items" tabindex="-1" aria-hidden="true">
+          <button type="button" id="searchClear" aria-label="Close search" tabindex="-1" aria-hidden="true">✕</button>
         </div>
         <div class="tb-group range-row">
           <span class="tb-label" id="rangeLbl">Range</span>
@@ -1391,6 +1400,15 @@ function rangeItems(range) {
   return DIGEST.items.filter(it => dayDiff(it.first_seen || it.published) <= maxDiff);
 }
 
+/* Search's result count is announced to screen readers (see announce() /
+   VERIFY below) but a filter/range chip change never was -- the silence read
+   as breakage rather than "nothing changed" for a screen-reader user. */
+function announceFilterChange(label) {
+  const pool = rangeItems(state.range);
+  const shown = pool.filter(matchesFilters);
+  announce(`${shown.length} of ${pool.length} item${pool.length !== 1 ? "s" : ""} — ${label}`);
+}
+
 /* ============================================================
    RENDER — filters
    ============================================================ */
@@ -1422,9 +1440,9 @@ function renderChips() {
     return `<button class="chip" type="button" aria-pressed="${state.bucket === val}" data-bucket="${val}">${esc(def.label)}<span class="count">${n}</span></button>`;
   }).join("");
 
-  rc.querySelectorAll("[data-range]").forEach(b => b.onclick = () => { state.range = b.dataset.range; saveFilters(); pendingFocus = ["data-range", b.dataset.range]; render(); });
-  jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; saveFilters(); pendingFocus = ["data-juris", b.dataset.juris]; render(); });
-  bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; saveFilters(); pendingFocus = ["data-bucket", b.dataset.bucket]; render(); });
+  rc.querySelectorAll("[data-range]").forEach(b => b.onclick = () => { state.range = b.dataset.range; saveFilters(); pendingFocus = ["data-range", b.dataset.range]; render(); announceFilterChange(RANGE_LABEL[b.dataset.range]); });
+  jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; saveFilters(); pendingFocus = ["data-juris", b.dataset.juris]; render(); announceFilterChange(b.dataset.juris === "ALL" ? "All" : JURIS_FULL[b.dataset.juris]); });
+  bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; saveFilters(); pendingFocus = ["data-bucket", b.dataset.bucket]; render(); announceFilterChange(b.dataset.bucket === "ALL" ? "All" : BUCKETS[b.dataset.bucket].label); });
 
   renderAppliedStrip();
 
@@ -1477,6 +1495,17 @@ const VERIFY_EXPLAIN = {
   corroborated: "An industry-media report confirmed by a second, independent source — an official body or another reputable outlet. Both links are below.",
   single_source: "Reported by one industry outlet; no independent confirmation was found at publish time. Treat as unverified and check the original source.",
 };
+// Plain-text mirror of verifyBadge()'s visible label, used as the disclosure's
+// accessible name -- a static "What this verification level means" label used
+// to replace the badge text entirely for screen-reader users, so "Official
+// source", "Corroborated — 2 sources" and "Single source — verify" (the
+// page's core confidence gradient) were indistinguishable without expanding
+// each one individually.
+function verifyBadgeText(v) {
+  if (v.level === "official") return "Official source";
+  if (v.level === "corroborated") return `Corroborated — ${(v.sources || []).length} sources`;
+  return "Single source — verify";
+}
 function verifyBadge(v) {
   if (v.level === "official") return `<span class="verify official">✓ Official source</span>`;
   if (v.level === "corroborated") return `<span class="verify corroborated">✓✓ Corroborated — ${(v.sources || []).length} sources</span>`;
@@ -1487,7 +1516,7 @@ function verifyDetails(v, it) {
   const links = srcs.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ");
   const c = v.checked;
   return `<details class="verify-d">
-    <summary aria-label="What this verification level means">${verifyBadge(v)}</summary>
+    <summary aria-label="${esc(verifyBadgeText(v))} — expand for sources and what this means">${verifyBadge(v)}</summary>
     <div class="verify-body">${VERIFY_EXPLAIN[v.level] || ""}
       ${links ? `<div class="corro-sources"><span class="cs-lbl">Source${srcs.length > 1 ? "s" : ""}:</span> ${links}</div>` : ""}
       ${c ? `<div class="corro-sources"><span class="cs-lbl">Fact-checked:</span> against ${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.against)}</a>` : esc(c.against)} · ${esc(fmtAudit(c.at))}${c.note ? `<br>${esc(c.note)}` : ""}</div>` : ""}
@@ -1555,7 +1584,7 @@ function briefHTML(it) {
   return `<details class="brief${READ.has(it.id) ? " is-read" : ""}" id="${esc(it.id)}" data-id="${esc(it.id)}">
     <summary>
       <span class="b-caret" aria-hidden="true">▶</span>
-      <span class="b-title">${esc(it.title)}${isNewSinceVisit(it) ? ` <span class="pill new">New</span>` : ""}</span>
+      <span class="b-title">${esc(it.title)}${it.status === "update" ? ` <span class="pill update">Updated</span>` : (isNewSinceVisit(it) ? ` <span class="pill new">New</span>` : "")}</span>
       <span class="b-meta">${esc(it.source.split("—")[0].trim())} · ${fmtCardDate(it.published)}${discoveryNote(it)}</span>
     </summary>
     <div class="brief-body">
@@ -1962,14 +1991,23 @@ function renderFreshness() {
   el.innerHTML = ` · <span class="fresh-dot ${cls}" aria-hidden="true"></span>as of ${rel}`;
   const slot = document.getElementById("banner-slot");
   const existing = slot.querySelector(".banner.freshness");
-  if (existing) existing.remove();
-  if (overdueH >= 2) {
-    slot.insertAdjacentHTML("afterbegin", `<div class="banner freshness" role="status">
-      <span class="b-ico" aria-hidden="true">⚠</span>
-      <div><strong>This digest has not updated since ${fmtAudit(DIGEST.generated_at)}.</strong>
-      The daily pipeline may have stalled — items below may be out of date.</div>
-    </div>`);
+  // Idempotent: a role="status" region re-announces to screen readers on
+  // every DOM mutation inside it, so tearing this down and reinserting it on
+  // every render() (a 10-minute tick, any filter/search keystroke, tab
+  // refocus) used to re-announce "pipeline may have stalled" every single
+  // time, not just when the staleness state actually changed. The message
+  // itself never changes while shown, so only touch the DOM on an actual
+  // show/hide transition.
+  if (overdueH < 2) {
+    if (existing) existing.remove();
+    return;
   }
+  if (existing) return;
+  slot.insertAdjacentHTML("afterbegin", `<div class="banner freshness" role="status">
+    <span class="b-ico" aria-hidden="true">⚠</span>
+    <div><strong>This digest has not updated since ${fmtAudit(DIGEST.generated_at)}.</strong>
+    The daily pipeline may have stalled — items below may be out of date.</div>
+  </div>`);
 }
 
 /* ---------- about tab: live source counts ---------- */
@@ -2184,8 +2222,11 @@ const matrixRain = (() => {
       ctx = canvas.getContext("2d");
       resize();
       running = true;
-      if (reduced) { staticFrame(); return; }
-      raf = requestAnimationFrame(frame);
+      // Register listeners BEFORE the reduced-motion early return -- the
+      // static frame still needs to redraw at the new size on rotate/resize,
+      // otherwise a reduced-motion reader (exactly the audience that opted
+      // out of the rain animation) sees stale/wrongly-sized content, e.g.
+      // bright white margins around dark surfaces after a phone rotation.
       this._onResize = () => { resize(); if (reduced) staticFrame(); };
       this._onVis = () => {
         if (document.hidden) { if (raf) cancelAnimationFrame(raf); raf = null; }
@@ -2193,6 +2234,8 @@ const matrixRain = (() => {
       };
       window.addEventListener("resize", this._onResize);
       document.addEventListener("visibilitychange", this._onVis);
+      if (reduced) { staticFrame(); return; }
+      raf = requestAnimationFrame(frame);
     },
     stop() {
       if (!running) return;
@@ -2301,9 +2344,17 @@ function applyFontScale() {
   } catch (e) {}
   applyFontScale();
 })();
-fontDecBtn.onclick = () => { fontStepIdx = Math.max(0, fontStepIdx - 1); applyFontScale(); };
-fontIncBtn.onclick = () => { fontStepIdx = Math.min(FONT_STEPS.length - 1, fontStepIdx + 1); applyFontScale(); };
-document.getElementById("fontReset").onclick = () => { fontStepIdx = FONT_STEPS.indexOf(100); applyFontScale(); };
+// Announced only on an actual button press, not on initFontScale()'s
+// page-load restore -- that would announce a size change the reader didn't
+// just ask for.
+function announceFontScale() {
+  const pct = FONT_STEPS[fontStepIdx];
+  const atMin = fontStepIdx === 0, atMax = fontStepIdx === FONT_STEPS.length - 1;
+  announce(`Text size ${pct}%${atMin ? " — smallest" : atMax ? " — largest" : ""}`);
+}
+fontDecBtn.onclick = () => { fontStepIdx = Math.max(0, fontStepIdx - 1); applyFontScale(); announceFontScale(); };
+fontIncBtn.onclick = () => { fontStepIdx = Math.min(FONT_STEPS.length - 1, fontStepIdx + 1); applyFontScale(); announceFontScale(); };
+document.getElementById("fontReset").onclick = () => { fontStepIdx = FONT_STEPS.indexOf(100); applyFontScale(); announceFontScale(); };
 
 /* ============================================================
    SEARCH -- client-side lookup over the items THIS digest currently
@@ -2320,6 +2371,8 @@ function openSearch() {
   selectTab("digest");
   searchInput.removeAttribute("tabindex");
   searchClearBtn.removeAttribute("tabindex");
+  searchInput.removeAttribute("aria-hidden");
+  searchClearBtn.removeAttribute("aria-hidden");
   document.getElementById("toolbar").classList.add("search-open");
   searchBtn.setAttribute("aria-expanded", "true");
   // A frame after tabindex is cleared (so the field is truly interactive),
@@ -2333,15 +2386,20 @@ function closeSearch() {
   searchWrap.classList.remove("open");
   searchInput.setAttribute("tabindex", "-1");
   searchClearBtn.setAttribute("tabindex", "-1");
+  searchInput.setAttribute("aria-hidden", "true");
+  searchClearBtn.setAttribute("aria-hidden", "true");
   searchInput.value = "";
   document.getElementById("toolbar").classList.remove("search-open");
   searchBtn.setAttribute("aria-expanded", "false");
   const wasSearching = !!state.search.trim();
   state.search = "";
   if (wasSearching) render();
-  // Hiding the input while it holds focus would otherwise drop keyboard
-  // focus to <body> with no visible indication of where it went.
-  searchBtn.focus();
+  // Hiding the input while IT holds focus would otherwise drop keyboard
+  // focus to <body> with no visible indication of where it went -- but
+  // closeSearch() is also called from ensureItemVisible() while focus is
+  // elsewhere (e.g. a filter chip that was just activated), and stealing it
+  // back to the search button there defeats that pendingFocus restoration.
+  if (searchWrap.contains(document.activeElement)) searchBtn.focus();
 }
 searchBtn.onclick = openSearch;
 searchClearBtn.onclick = closeSearch;
