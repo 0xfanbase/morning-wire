@@ -410,7 +410,7 @@
   "https://www.chainalysis.com/blog/comparing-blockchain-analytics-vendors": {
     "title_hash": "3eeb5f8ded3a8b28cb760a49393b0d7a9c3d416cdc0656a777f2a7fe38d5b65d",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
     "title": "Breadth, Depth, And Quality: Why Comparing Blockchain Analytics Vendors by Cluster Count Is Only Part of the Calculation"
   },
   "https://www.chainalysis.com/blog/isis-designation-crypto-addresses-july-2026": {
@@ -422,7 +422,7 @@
   "https://www.elliptic.co/blog/how-uk-stablecoin-rules-came-together": {
     "title_hash": "5360fb2c7fdacd5820870ecd06fcdf66be5eb957f62531354965e5f8e34acaa7",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
     "title": "How the UK's stablecoin rules came together"
   },
   "https://www.elliptic.co/blog/introducing-continuous-monitoring": {
@@ -560,7 +560,7 @@
   "https://www.elliptic.co/blog/crypto-regulatory-affairs-uk-sets-out-stablecoin-rules": {
     "title_hash": "eea819e2c9f7f15c788fe5b7e2d64efde74fc66d262ce87ae6c26b09947bd62d",
     "first_seen": "2026-07-07T23:44:19.555139+00:00",
-    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
     "title": "Crypto regulatory affairs: UK sets out final stablecoin rules"
   },
   "https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk": {
@@ -620,13 +620,13 @@
   "https://www.trmlabs.com/resources/blog/how-financial-institutions-can-build-a-strong-crypto-transaction-monitoring-program": {
     "title_hash": "49f76fb6d2881e64ed91ade0de42f088714fd07164a781e63e070c33dcec39e2",
     "first_seen": "2026-07-09T01:32:57.094436+00:00",
-    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
     "title": "How Financial Institutions Can Build a Strong Crypto Transaction Monitoring Program"
   },
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35": {
     "title_hash": "9b63dbf2762516b197fdf0d2f515bc576fe78d45c2d46a2d6b9bb6413ca1b61d",
     "first_seen": "2026-07-09T22:15:47.258266+00:00",
-    "last_seen": "2026-07-09T22:15:47.258266+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
     "title": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities"
   },
   "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss": {
@@ -724,5 +724,137 @@
     "first_seen": "2026-07-09T22:15:47.258266+00:00",
     "last_seen": "2026-07-09T22:15:47.258266+00:00",
     "title": "Crypto hack losses fall below $1 billion in H1 2026 despite record attack volume: Immunefi"
+  },
+  "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40": {
+    "title_hash": "b3d861995dd47ea555f91c8424353dcbf66c4b4403787505dfa50038ca429360",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar"
+  },
+  "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto": {
+    "title_hash": "14eee8aa21cae74263ec5ebe240949eb29cea016dca4bc5d64efdfffcf948f0b",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Signs of life?: State of Crypto"
+  },
+  "https://www.coindesk.com/policy/2026/07/10/u-s-government-digital-dollar-set-to-be-banned-tonight-under-housing-law-s-cbdc-limit": {
+    "title_hash": "68980408da7cd8c709754016ab8390b708b85dbba67961835295122fad2e7395",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "U.S. government digital dollar set to be banned tonight under housing law's CBDC limit"
+  },
+  "https://www.theblock.co/post/407969/crypto-fatwa-sparks-debate-over-pakistans-digital-asset-framework?utm_source=rss&utm_medium=rss": {
+    "title_hash": "768c5b75600eaf42a7606a0b0744cb288d061b52ee93b9900d13dbb412788ff5",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Crypto fatwa sparks debate over Pakistan’s digital asset framework"
+  },
+  "https://www.theblock.co/post/406548/housing-bill-cbdc-ban-passed-into-law-without-trump-signature?utm_source=rss&utm_medium=rss": {
+    "title_hash": "4e37ba814366eae06dcb7a04001363054639a1cff224d19e486e90efe18207c5",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Housing bill that includes a CBDC ban passed into law without Trump’s signature"
+  },
+  "https://www.theblock.co/post/407931/doj-drop-charges-against-man-accused-722-million-bitclub-crypto-ponzi-scheme-bloomberg?utm_source=rss&utm_medium=rss": {
+    "title_hash": "a810d75a3645a7b12222aa5b78efa9f72c58cfbb45ef848b1b9be0e72493211b",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "DOJ to drop charges against man accused in $722 million BitClub crypto Ponzi scheme: Bloomberg"
+  },
+  "https://www.theblock.co/post/407930/whats-next-for-clarity-act-congress-returns-to-washington?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f810c2d74895d0cbc50e53d9b1b2982eb9e69fbc40340c60da9026ef9c2e5f00",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Here’s what’s next for the Clarity Act as Congress returns to Washington"
+  },
+  "https://www.theblock.co/post/407888/binance-co-ceo-says-70-of-eu-withdrawals-went-to-self-custody-after-mica-deadline-with-just-30-going-to-licensed-platforms?utm_source=rss&utm_medium=rss": {
+    "title_hash": "8d4ee347e975c3633d843c899b990176890e15a804df347757cd177e88af4882",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Binance co-CEO says 70% of EU withdrawals went to self-custody after MiCA deadline, with just 30% going to licensed platforms"
+  },
+  "https://www.theblock.co/post/407876/stablecoin-firm-circle-wins-final-occ-approval-to-open-national-trust-bank?utm_source=rss&utm_medium=rss": {
+    "title_hash": "053f058613e864e5be53772e20445d7e1ce90553b7c27068a194f6e15ff172ac",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Stablecoin firm Circle wins final OCC approval to open national trust bank"
+  },
+  "https://www.theblock.co/post/407867/new-hampshire-bitcoin-backed-bond-fails?utm_source=rss&utm_medium=rss": {
+    "title_hash": "0a17c7990dcee9805cde8a01f20eb0a5bdb2e6e7c19e5fb7a42b76cb4c244061",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "New Hampshire’s $100 million bitcoin bond proposal fails to pass final vote"
+  },
+  "https://www.theblock.co/post/407854/doj-charges-federal-inmate-over-alleged-theft-of-290000-in-crypto-forfeited-to-us-government?utm_source=rss&utm_medium=rss": {
+    "title_hash": "ab0ca8b81d33345b82abbc348fa9b822fdafcbed68b7b90091544a04ff16ff32",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "DOJ charges federal inmate over alleged theft of $290,000 in crypto forfeited to US government"
+  },
+  "https://www.theblock.co/post/407842/uk-labour-mps-crypto-ban?utm_source=rss&utm_medium=rss": {
+    "title_hash": "438ecf95ec049e872760f2c5d257f9060a674f67eb82449f9c2d393e72207b10",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "UK Labour MPs push to permanently ban crypto political donations"
+  },
+  "https://www.coindesk.com/markets/2026/07/12/bitcoin-is-nearing-a-power-law-support-line-fidelity-has-tracked-since-2015": {
+    "title_hash": "b237cbab3f1c6c8f1fadf8739d25baec55dbf8c2530048d9137cd44c91cad8d3",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Bitcoin is nearing a power law support line Fidelity has tracked since 2015"
+  },
+  "https://www.theblock.co/post/407884/communication-challenge-nothing-more-standard-chartered-keeps-100000-bitcoin-target-calls-strategy-selloff-a-signaling-problem?utm_source=rss&utm_medium=rss": {
+    "title_hash": "c3178d43c9652af563b2f6cdbcd4d8b92d0dd78821e9c929ace0ab2c9eb701df",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "‘Communication challenge, nothing more’: Standard Chartered keeps $100,000 bitcoin target, calls Strategy selloff a signaling problem"
+  },
+  "https://www.coindesk.com/web3/2026/07/11/lending-protocol-bonzo-loses-77-of-value-locked-as-usd9-million-oracle-exploit-rattles-hedera": {
+    "title_hash": "9c2c799c7da2358b4aeeaafcabbc81c875d1e8c0b176e16ac44075366ffbfb7b",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Lending protocol Bonzo loses 77% of value locked as $9 million oracle exploit rattles Hedera"
+  },
+  "https://www.coindesk.com/markets/2026/07/11/bitcoin-treasury-company-empery-digital-sold-about-half-of-btc-stack": {
+    "title_hash": "a5b7e8b741d978619aa01c0fe1d87e6538312b3a8f243e5638b9b17899e16bba",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Bitcoin treasury company Empery Digital sold about half of its BTC stack"
+  },
+  "https://www.coindesk.com/business/2026/07/10/circle-secures-u-s-trust-bank-approval-in-crypto-expansion": {
+    "title_hash": "a3dd71b58794a226eaa56dde8b51677ae369eaec05d79667a19212473016d367",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Circle soars after securing U.S. trust bank approval in crypto expansion"
+  },
+  "https://www.theblock.co/post/407965/michael-saylor-posts-cryptic-strategy-chart-after-216-million-bitcoin-sale-orange-dots-tell-only-part-of-the-story?utm_source=rss&utm_medium=rss": {
+    "title_hash": "9d6cd9d9538bcbfa3bba209832dcc9c09c0f28e7adef7aa95893820540b0e690",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Michael Saylor posts cryptic Strategy chart after $216 million bitcoin sale: ‘Orange dots tell only part of the story’"
+  },
+  "https://www.theblock.co/post/407957/bitcoin-ether-etfs-snap-eight-week-outflow-streaks-with-282-million-combined-inflow?utm_source=rss&utm_medium=rss": {
+    "title_hash": "d22a345b722d09afc4d738f7dd458e7e2301fca8599d8aeeb5fca01ede0a1e2b",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Bitcoin, ether ETFs snap eight-week outflow streaks with $282 million combined inflow"
+  },
+  "https://www.theblock.co/post/407899/kraken-to-relaunch-its-mobile-app-with-agentic-trading-and-advise-at-the-center?utm_source=rss&utm_medium=rss": {
+    "title_hash": "c068639acc0d27995c9e50e0f1a06b4e265db524d1f6ddb4817535ec911bd1da",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Kraken to relaunch its mobile app with agentic trading and advice at the center"
+  },
+  "https://www.theblock.co/post/407853/ark-invest-buys-14-million-worth-circle?utm_source=rss&utm_medium=rss": {
+    "title_hash": "b7113f23cf4c816bfa1d9eed78a9ed322ce275b80485c308fd5ec08992e79ff1",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Cathie Wood’s Ark Invest buys $14 million worth of Circle, offloads Robinhood shares"
+  },
+  "https://www.trmlabs.com/resources/blog/blockchain-evidence-in-court-a-framework-for-investigators": {
+    "title_hash": "88ab5bcb8f8caa97a174390594ebe3d1ee915679d774741fbb751fd6e24df31e",
+    "first_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "title": "Blockchain Evidence in Court: A Framework for Investigators"
   }
 }

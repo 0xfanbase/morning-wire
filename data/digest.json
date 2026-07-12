@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-09T22:15:47.258258+00:00",
-  "top_of_mind": "Hong Kong's securities regulator is requiring licensed virtual-asset platforms and brokers to strengthen login authentication and monitor for suspicious activity. United States prosecutors also charged a fraudster with laundering forfeited cryptocurrency, and Sony's banking arm won conditional approval for a stablecoin trust bank.",
+  "generated_at": "2026-07-12T21:42:40.430082+00:00",
+  "top_of_mind": "",
   "items": [
     {
       "id": "global-trm-labs-insights-b35f07fd2d",
@@ -1745,6 +1745,534 @@
       "so_what": "Another major corporate entrant winning a United States trust-bank charter for stablecoin activity indicates that regulated, bank-grade stablecoin issuance is broadening, which is relevant to counterparty due diligence and reserve-backing assessments for institutions exposed to dollar-denominated stablecoins.",
       "first_seen": "2026-07-09T22:15:47.258258+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "hk-securities-and-futures-commission-circulars-0b25353313",
+      "jurisdiction": "HK",
+      "source": "Securities and Futures Commission — Circulars",
+      "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar",
+      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40",
+      "published": "2026-07-10T04:31:33+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Securities and Futures Commission — Circulars",
+            "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40"
+          }
+        ]
+      },
+      "summary": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-85b1aea8ad",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Crypto fatwa sparks debate over Pakistan’s digital asset framework",
+      "url": "https://www.theblock.co/post/407969/crypto-fatwa-sparks-debate-over-pakistans-digital-asset-framework?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-12T21:23:57+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407969/crypto-fatwa-sparks-debate-over-pakistans-digital-asset-framework?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Crypto fatwa sparks debate over Pakistan’s digital asset framework",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-b2de77e6e9",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Michael Saylor posts cryptic Strategy chart after $216 million bitcoin sale: ‘Orange dots tell only part of the story’",
+      "url": "https://www.theblock.co/post/407965/michael-saylor-posts-cryptic-strategy-chart-after-216-million-bitcoin-sale-orange-dots-tell-only-part-of-the-story?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-12T18:43:15+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407965/michael-saylor-posts-cryptic-strategy-chart-after-216-million-bitcoin-sale-orange-dots-tell-only-part-of-the-story?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Michael Saylor posts cryptic Strategy chart after $216 million bitcoin sale: ‘Orange dots tell only part of the story’",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-21ac515931",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Signs of life?: State of Crypto",
+      "url": "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto",
+      "published": "2026-07-12T18:30:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto"
+          }
+        ]
+      },
+      "summary": "Signs of life?: State of Crypto",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-9372483a69",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Bitcoin is nearing a power law support line Fidelity has tracked since 2015",
+      "url": "https://www.coindesk.com/markets/2026/07/12/bitcoin-is-nearing-a-power-law-support-line-fidelity-has-tracked-since-2015",
+      "published": "2026-07-12T11:30:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/markets/2026/07/12/bitcoin-is-nearing-a-power-law-support-line-fidelity-has-tracked-since-2015"
+          }
+        ]
+      },
+      "summary": "Bitcoin is nearing a power law support line Fidelity has tracked since 2015",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-eb1e1f12c3",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Lending protocol Bonzo loses 77% of value locked as $9 million oracle exploit rattles Hedera",
+      "url": "https://www.coindesk.com/web3/2026/07/11/lending-protocol-bonzo-loses-77-of-value-locked-as-usd9-million-oracle-exploit-rattles-hedera",
+      "published": "2026-07-11T18:06:58+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/web3/2026/07/11/lending-protocol-bonzo-loses-77-of-value-locked-as-usd9-million-oracle-exploit-rattles-hedera"
+          }
+        ]
+      },
+      "summary": "Lending protocol Bonzo loses 77% of value locked as $9 million oracle exploit rattles Hedera",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-85492f5271",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Bitcoin, ether ETFs snap eight-week outflow streaks with $282 million combined inflow",
+      "url": "https://www.theblock.co/post/407957/bitcoin-ether-etfs-snap-eight-week-outflow-streaks-with-282-million-combined-inflow?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-11T15:19:15+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407957/bitcoin-ether-etfs-snap-eight-week-outflow-streaks-with-282-million-combined-inflow?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Bitcoin, ether ETFs snap eight-week outflow streaks with $282 million combined inflow",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-0742385204",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Bitcoin treasury company Empery Digital sold about half of its BTC stack",
+      "url": "https://www.coindesk.com/markets/2026/07/11/bitcoin-treasury-company-empery-digital-sold-about-half-of-btc-stack",
+      "published": "2026-07-11T12:25:05+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/07/11/bitcoin-treasury-company-empery-digital-sold-about-half-of-btc-stack"
+          }
+        ]
+      },
+      "summary": "Bitcoin treasury company Empery Digital sold about half of its BTC stack",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-0136ec92fe",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Housing bill that includes a CBDC ban passed into law without Trump’s signature",
+      "url": "https://www.theblock.co/post/406548/housing-bill-cbdc-ban-passed-into-law-without-trump-signature?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-11T04:08:36+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/406548/housing-bill-cbdc-ban-passed-into-law-without-trump-signature?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Housing bill that includes a CBDC ban passed into law without Trump’s signature",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-73740be9ba",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "DOJ to drop charges against man accused in $722 million BitClub crypto Ponzi scheme: Bloomberg",
+      "url": "https://www.theblock.co/post/407931/doj-drop-charges-against-man-accused-722-million-bitclub-crypto-ponzi-scheme-bloomberg?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T20:12:46+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407931/doj-drop-charges-against-man-accused-722-million-bitclub-crypto-ponzi-scheme-bloomberg?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "DOJ to drop charges against man accused in $722 million BitClub crypto Ponzi scheme: Bloomberg",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-6565f49b19",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Here’s what’s next for the Clarity Act as Congress returns to Washington",
+      "url": "https://www.theblock.co/post/407930/whats-next-for-clarity-act-congress-returns-to-washington?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T19:50:57+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407930/whats-next-for-clarity-act-congress-returns-to-washington?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Here’s what’s next for the Clarity Act as Congress returns to Washington",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-450deae6bb",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Kraken to relaunch its mobile app with agentic trading and advice at the center",
+      "url": "https://www.theblock.co/post/407899/kraken-to-relaunch-its-mobile-app-with-agentic-trading-and-advise-at-the-center?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T16:27:23+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407899/kraken-to-relaunch-its-mobile-app-with-agentic-trading-and-advise-at-the-center?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Kraken to relaunch its mobile app with agentic trading and advice at the center",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-598f2e8422",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "U.S. government digital dollar set to be banned tonight under housing law's CBDC limit",
+      "url": "https://www.coindesk.com/policy/2026/07/10/u-s-government-digital-dollar-set-to-be-banned-tonight-under-housing-law-s-cbdc-limit",
+      "published": "2026-07-10T16:02:21+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/10/u-s-government-digital-dollar-set-to-be-banned-tonight-under-housing-law-s-cbdc-limit"
+          }
+        ]
+      },
+      "summary": "U.S. government digital dollar set to be banned tonight under housing law's CBDC limit",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-a09f67f32a",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Binance co-CEO says 70% of EU withdrawals went to self-custody after MiCA deadline, with just 30% going to licensed platforms",
+      "url": "https://www.theblock.co/post/407888/binance-co-ceo-says-70-of-eu-withdrawals-went-to-self-custody-after-mica-deadline-with-just-30-going-to-licensed-platforms?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T13:17:52+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407888/binance-co-ceo-says-70-of-eu-withdrawals-went-to-self-custody-after-mica-deadline-with-just-30-going-to-licensed-platforms?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Binance co-CEO says 70% of EU withdrawals went to self-custody after MiCA deadline, with just 30% going to licensed platforms",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-1c2a8a6e48",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "‘Communication challenge, nothing more’: Standard Chartered keeps $100,000 bitcoin target, calls Strategy selloff a signaling problem",
+      "url": "https://www.theblock.co/post/407884/communication-challenge-nothing-more-standard-chartered-keeps-100000-bitcoin-target-calls-strategy-selloff-a-signaling-problem?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T12:46:18+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/post/407884/communication-challenge-nothing-more-standard-chartered-keeps-100000-bitcoin-target-calls-strategy-selloff-a-signaling-problem?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "‘Communication challenge, nothing more’: Standard Chartered keeps $100,000 bitcoin target, calls Strategy selloff a signaling problem",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-a28efa5560",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Circle soars after securing U.S. trust bank approval in crypto expansion",
+      "url": "https://www.coindesk.com/business/2026/07/10/circle-secures-u-s-trust-bank-approval-in-crypto-expansion",
+      "published": "2026-07-10T11:41:47+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/07/10/circle-secures-u-s-trust-bank-approval-in-crypto-expansion"
+          }
+        ]
+      },
+      "summary": "Circle soars after securing U.S. trust bank approval in crypto expansion",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-f94ee2415e",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Stablecoin firm Circle wins final OCC approval to open national trust bank",
+      "url": "https://www.theblock.co/post/407876/stablecoin-firm-circle-wins-final-occ-approval-to-open-national-trust-bank?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T11:25:14+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407876/stablecoin-firm-circle-wins-final-occ-approval-to-open-national-trust-bank?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Stablecoin firm Circle wins final OCC approval to open national trust bank",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-2f271fed57",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "New Hampshire’s $100 million bitcoin bond proposal fails to pass final vote",
+      "url": "https://www.theblock.co/post/407867/new-hampshire-bitcoin-backed-bond-fails?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T10:29:07+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407867/new-hampshire-bitcoin-backed-bond-fails?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "New Hampshire’s $100 million bitcoin bond proposal fails to pass final vote",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-405db86ef4",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "DOJ charges federal inmate over alleged theft of $290,000 in crypto forfeited to US government",
+      "url": "https://www.theblock.co/post/407854/doj-charges-federal-inmate-over-alleged-theft-of-290000-in-crypto-forfeited-to-us-government?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T09:13:08+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407854/doj-charges-federal-inmate-over-alleged-theft-of-290000-in-crypto-forfeited-to-us-government?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "DOJ charges federal inmate over alleged theft of $290,000 in crypto forfeited to US government",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-ae8db61b24",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Cathie Wood’s Ark Invest buys $14 million worth of Circle, offloads Robinhood shares",
+      "url": "https://www.theblock.co/post/407853/ark-invest-buys-14-million-worth-circle?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T09:09:24+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/407853/ark-invest-buys-14-million-worth-circle?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Cathie Wood’s Ark Invest buys $14 million worth of Circle, offloads Robinhood shares",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-d7d2a44e88",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "UK Labour MPs push to permanently ban crypto political donations",
+      "url": "https://www.theblock.co/post/407842/uk-labour-mps-crypto-ban?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-10T08:44:30+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407842/uk-labour-mps-crypto-ban?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "UK Labour MPs push to permanently ban crypto political donations",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-trm-labs-insights-3bba3ed8ec",
+      "jurisdiction": "GLOBAL",
+      "source": "TRM Labs — Insights",
+      "title": "Blockchain Evidence in Court: A Framework for Investigators",
+      "url": "https://www.trmlabs.com/resources/blog/blockchain-evidence-in-court-a-framework-for-investigators",
+      "published": "2026-07-10T00:00:00+08:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "TRM Labs — Insights",
+            "url": "https://www.trmlabs.com/resources/blog/blockchain-evidence-in-court-a-framework-for-investigators"
+          }
+        ]
+      },
+      "summary": "Blockchain Evidence in Court: A Framework for Investigators",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-12T21:42:40.430082+00:00",
+      "date_source": "page"
     }
   ],
   "source_health": [
@@ -1753,7 +2281,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585889+00:00",
+      "checked_at": "2026-07-12T21:42:40.429404+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1761,7 +2289,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585898+00:00",
+      "checked_at": "2026-07-12T21:42:40.429413+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1769,7 +2297,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585902+00:00",
+      "checked_at": "2026-07-12T21:42:40.429418+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1777,7 +2305,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585905+00:00",
+      "checked_at": "2026-07-12T21:42:40.429422+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1785,7 +2313,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585910+00:00",
+      "checked_at": "2026-07-12T21:42:40.429425+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1793,7 +2321,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585913+00:00",
+      "checked_at": "2026-07-12T21:42:40.429429+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1801,7 +2329,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585917+00:00",
+      "checked_at": "2026-07-12T21:42:40.429431+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1809,7 +2337,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585926+00:00",
+      "checked_at": "2026-07-12T21:42:40.429434+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1817,7 +2345,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585930+00:00",
+      "checked_at": "2026-07-12T21:42:40.429436+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1825,7 +2353,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585934+00:00",
+      "checked_at": "2026-07-12T21:42:40.429439+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1833,7 +2361,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585938+00:00",
+      "checked_at": "2026-07-12T21:42:40.429442+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1841,7 +2369,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585941+00:00",
+      "checked_at": "2026-07-12T21:42:40.429444+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1849,7 +2377,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585944+00:00",
+      "checked_at": "2026-07-12T21:42:40.429447+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1857,7 +2385,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585947+00:00",
+      "checked_at": "2026-07-12T21:42:40.429449+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1865,7 +2393,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585949+00:00",
+      "checked_at": "2026-07-12T21:42:40.429452+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1873,7 +2401,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585952+00:00",
+      "checked_at": "2026-07-12T21:42:40.429455+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1881,7 +2409,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585955+00:00",
+      "checked_at": "2026-07-12T21:42:40.429457+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -1889,7 +2417,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585958+00:00",
+      "checked_at": "2026-07-12T21:42:40.429460+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -1897,7 +2425,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585961+00:00",
+      "checked_at": "2026-07-12T21:42:40.429462+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -1905,7 +2433,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585964+00:00",
+      "checked_at": "2026-07-12T21:42:40.429465+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1913,15 +2441,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585967+00:00",
+      "checked_at": "2026-07-12T21:42:40.429467+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 1 consecutive failure — self-heal at 3.",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585971+00:00",
+      "checked_at": "2026-07-12T21:42:40.429472+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1929,7 +2457,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585974+00:00",
+      "checked_at": "2026-07-12T21:42:40.429475+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1937,7 +2465,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-11T13:34:13.585977+00:00",
+      "checked_at": "2026-07-12T21:42:40.429477+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1945,7 +2473,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585981+00:00",
+      "checked_at": "2026-07-12T21:42:40.429479+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1953,7 +2481,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585984+00:00",
+      "checked_at": "2026-07-12T21:42:40.429481+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1961,7 +2489,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585987+00:00",
+      "checked_at": "2026-07-12T21:42:40.429484+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1969,7 +2497,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585990+00:00",
+      "checked_at": "2026-07-12T21:42:40.429486+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1977,7 +2505,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585993+00:00",
+      "checked_at": "2026-07-12T21:42:40.429488+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1985,7 +2513,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585996+00:00",
+      "checked_at": "2026-07-12T21:42:40.429490+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1993,7 +2521,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.585999+00:00",
+      "checked_at": "2026-07-12T21:42:40.429492+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2001,7 +2529,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.586002+00:00",
+      "checked_at": "2026-07-12T21:42:40.429495+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2009,28 +2537,16 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-11T13:34:13.586005+00:00",
+      "checked_at": "2026-07-12T21:42:40.429497+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Claude summarisation",
-      "status": "ok",
-      "note": "Opus (escalated: 27-item backlog) — Claude Code session on 2026-07-10"
+      "status": "dead",
+      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
     }
   ],
   "run_log": [
-    {
-      "at": "2026-07-07T12:33:15.805137+00:00",
-      "note": "Corrected a data display issue affecting 13 items."
-    },
-    {
-      "at": "2026-07-07T12:34:03.270648+00:00",
-      "note": "Restored 4 items that had been temporarily unavailable."
-    },
-    {
-      "at": "2026-07-07T13:16:41.448454+00:00",
-      "note": "Corrected a residual data issue affecting 2 items."
-    },
     {
       "at": "2026-07-07T20:55:12.313700+00:00",
       "note": "Corrected 3 article dates, removed 3 vendor-promotional posts, and refined jurisdiction tagging on 5 items. Today's summaries were written with Sonnet."
@@ -2066,6 +2582,10 @@
     {
       "at": "2026-07-11T12:45:27+00:00",
       "note": "Corrected a duplicate-coverage item in today's priority ranking, verified an on-the-radar deadline directly against the regulator, and shortened an over-length audit-log entry."
+    },
+    {
+      "at": "2026-07-12T21:42:40.430082+00:00",
+      "note": "Daily fetch: 22 new items surfaced; 33/34 sources ok"
     }
   ],
   "radar": [
