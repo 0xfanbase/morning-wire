@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-12T21:42:40.430082+00:00",
-  "top_of_mind": "Today's standout is a United States regulator granting a major stablecoin issuer final approval for a national trust bank dedicated to digital-asset custody, a sign that bank-grade, federally supervised custody of dollar stablecoins is widening and worth fresh counterparty and reserve-safekeeping checks.",
+  "generated_at": "2026-07-13T21:48:58.486072+00:00",
+  "top_of_mind": "",
   "items": [
     {
       "id": "global-trm-labs-insights-b35f07fd2d",
@@ -2283,6 +2283,366 @@
       "so_what": "The framework is a useful reference for strengthening how digital-asset investigation findings are documented so they withstand legal challenge, relevant to teams whose crypto-tracing work may support law-enforcement referrals or litigation.",
       "first_seen": "2026-07-12T21:42:40.430082+00:00",
       "date_source": "page"
+    },
+    {
+      "id": "us-office-of-foreign-assets-control-ofac-recent-actions-c7df200446",
+      "jurisdiction": "US",
+      "source": "Office of Foreign Assets Control (OFAC) — Recent actions",
+      "title": "Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question",
+      "url": "https://ofac.treasury.gov/recent-actions/20260713",
+      "published": "2026-07-13T00:00:00+08:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Office of Foreign Assets Control (OFAC) — Recent actions",
+            "url": "https://ofac.treasury.gov/recent-actions/20260713"
+          }
+        ]
+      },
+      "summary": "Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "page"
+    },
+    {
+      "id": "global-coindesk-market-news-8eceb7c86a",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Binance.US CEO says exchange is rebuilding, eyes return to 20% U.S. market share",
+      "url": "https://www.coindesk.com/coindesk-news/2026/07/13/binance-us-ceo-says-exchange-is-rebuilding-eyes-return-to-20-u-s-market-share",
+      "published": "2026-07-13T20:27:47+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/coindesk-news/2026/07/13/binance-us-ceo-says-exchange-is-rebuilding-eyes-return-to-20-u-s-market-share"
+          }
+        ]
+      },
+      "summary": "Binance.US CEO says exchange is rebuilding, eyes return to 20% U.S. market share",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-d5a49db8c9",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Trump's crypto riches loom over Clarity Act talks to ban conflicts for U.S. officials",
+      "url": "https://www.coindesk.com/policy/2026/07/13/trump-s-crypto-riches-loom-over-clarity-act-talks-to-ban-conflicts-for-u-s-officials",
+      "published": "2026-07-13T17:49:10+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/13/trump-s-crypto-riches-loom-over-clarity-act-talks-to-ban-conflicts-for-u-s-officials"
+          }
+        ]
+      },
+      "summary": "Trump's crypto riches loom over Clarity Act talks to ban conflicts for U.S. officials",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-7faaa359a9",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "UK lays out tokenized finance roadmap with projected £33 billion annual boost",
+      "url": "https://www.theblock.co/post/408046/uk-lays-out-tokenized-finance-roadmap-projected-33-billion-annual-boost?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-13T16:42:36+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/408046/uk-lays-out-tokenized-finance-roadmap-projected-33-billion-annual-boost?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "UK lays out tokenized finance roadmap with projected £33 billion annual boost",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-f704af1c07",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Mizuho says Circle bank approval doesn't solve USDC growth, stablecoin competition risks",
+      "url": "https://www.coindesk.com/business/2026/07/13/mizuho-says-circle-bank-approval-doesn-t-solve-usdc-growth-stablecoin-competition-risks",
+      "published": "2026-07-13T16:34:48+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/07/13/mizuho-says-circle-bank-approval-doesn-t-solve-usdc-growth-stablecoin-competition-risks"
+          }
+        ]
+      },
+      "summary": "Mizuho says Circle bank approval doesn't solve USDC growth, stablecoin competition risks",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-1ea6facb2d",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "President Trump, White House press Senate to advance the Clarity Act while ethics fight looms",
+      "url": "https://www.theblock.co/post/408054/trump-white-house-press-senate-advance-clarity-act-ethics-fight-looms?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-13T15:51:09+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/408054/trump-white-house-press-senate-advance-clarity-act-ethics-fight-looms?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "President Trump, White House press Senate to advance the Clarity Act while ethics fight looms",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-the-block-china-policy-a27cafca6a",
+      "jurisdiction": "CN",
+      "source": "The Block — China policy",
+      "title": "Chinese prosecutors call for more proactive approach to investigating crypto money laundering",
+      "url": "https://www.theblock.co/post/408035/chinese-prosecutors-call-for-more-proactive-approach-to-investigating-crypto-money-laundering?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-13T14:58:33+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — China policy",
+            "url": "https://www.theblock.co/post/408035/chinese-prosecutors-call-for-more-proactive-approach-to-investigating-crypto-money-laundering?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Chinese prosecutors call for more proactive approach to investigating crypto money laundering",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-5377860e69",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Bolivia weighs adding Tether's USDT to its national payments system",
+      "url": "https://www.coindesk.com/business/2026/07/13/bolivia-weighs-adding-tether-s-usdt-to-its-national-payments-system",
+      "published": "2026-07-13T14:47:52+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/07/13/bolivia-weighs-adding-tether-s-usdt-to-its-national-payments-system"
+          }
+        ]
+      },
+      "summary": "Bolivia weighs adding Tether's USDT to its national payments system",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-07bce5b584",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "UK Treasury report on tokenization cites Ripple as convergence model",
+      "url": "https://www.coindesk.com/policy/2026/07/13/ripple-lands-inside-uk-plan-for-tokenized-repo-bonds-and-funds",
+      "published": "2026-07-13T14:06:53+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/13/ripple-lands-inside-uk-plan-for-tokenized-repo-bonds-and-funds"
+          }
+        ]
+      },
+      "summary": "UK Treasury report on tokenization cites Ripple as convergence model",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-chainalysis-blog-42979a4343",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "Courtroom-Ready Analytics: How Chainalysis Met the Daubert Standard",
+      "url": "https://www.chainalysis.com/blog/chainalysis-daubert-standard-sterlingov/",
+      "published": "2026-07-13T13:56:28+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/chainalysis-daubert-standard-sterlingov/"
+          }
+        ]
+      },
+      "summary": "Courtroom-Ready Analytics: How Chainalysis Met the Daubert Standard",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-6d1de03521",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Michael Saylor’s Strategy added $467 million in cash, made no changes to bitcoin holdings",
+      "url": "https://www.coindesk.com/markets/2026/07/13/michael-saylor-s-strategy-added-usd467-million-in-cash-made-no-changes-to-bitcoin-holdings",
+      "published": "2026-07-13T12:15:17+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/07/13/michael-saylor-s-strategy-added-usd467-million-in-cash-made-no-changes-to-bitcoin-holdings"
+          }
+        ]
+      },
+      "summary": "Michael Saylor’s Strategy added $467 million in cash, made no changes to bitcoin holdings",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-555966d6fd",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "BlackRock, Goldman Sachs, JPMorgan, Morgan Stanley join UK government's tokenization taskforce",
+      "url": "https://www.coindesk.com/business/2026/07/13/uk-government-unveils-tokenization-taskforce-with-blackrock-goldman-jpmorgan-morgan-stanley",
+      "published": "2026-07-13T11:40:21+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/07/13/uk-government-unveils-tokenization-taskforce-with-blackrock-goldman-jpmorgan-morgan-stanley"
+          }
+        ]
+      },
+      "summary": "BlackRock, Goldman Sachs, JPMorgan, Morgan Stanley join UK government's tokenization taskforce",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-e0e5145754",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Resurgent U.S.-Iran hostilities send bitcoin lower even as ETF flows show demand",
+      "url": "https://www.coindesk.com/daybook-us/2026/07/13/resurgent-u-s-iran-hostilities-send-bitcoin-lower-even-as-etf-flows-show-demand",
+      "published": "2026-07-13T11:20:49+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/daybook-us/2026/07/13/resurgent-u-s-iran-hostilities-send-bitcoin-lower-even-as-etf-flows-show-demand"
+          }
+        ]
+      },
+      "summary": "Resurgent U.S.-Iran hostilities send bitcoin lower even as ETF flows show demand",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-113449030d",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Bank of Thailand audits high-volume stablecoin trades to crack down on illicit finance: report",
+      "url": "https://www.theblock.co/post/407998/bank-of-thailand-audits-stablecoin?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-13T08:19:26+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407998/bank-of-thailand-audits-stablecoin?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Bank of Thailand audits high-volume stablecoin trades to crack down on illicit finance: report",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-3767188816",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "The Funding: Why Japan’s SBI Holdings is investing big in crypto",
+      "url": "https://www.theblock.co/post/407977/the-funding-why-japan-sbi-holdings-is-investing-big-in-crypto?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-13T02:12:42+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/407977/the-funding-why-japan-sbi-holdings-is-investing-big-in-crypto?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "The Funding: Why Japan’s SBI Holdings is investing big in crypto",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-13T21:48:58.486072+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -2291,7 +2651,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429404+00:00",
+      "checked_at": "2026-07-13T21:48:58.485366+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2299,7 +2659,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429413+00:00",
+      "checked_at": "2026-07-13T21:48:58.485378+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2307,7 +2667,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429418+00:00",
+      "checked_at": "2026-07-13T21:48:58.485383+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2315,7 +2675,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429422+00:00",
+      "checked_at": "2026-07-13T21:48:58.485387+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2323,7 +2683,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429425+00:00",
+      "checked_at": "2026-07-13T21:48:58.485390+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2331,7 +2691,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429429+00:00",
+      "checked_at": "2026-07-13T21:48:58.485393+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2339,7 +2699,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429431+00:00",
+      "checked_at": "2026-07-13T21:48:58.485396+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2347,7 +2707,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429434+00:00",
+      "checked_at": "2026-07-13T21:48:58.485399+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2355,7 +2715,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429436+00:00",
+      "checked_at": "2026-07-13T21:48:58.485401+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2363,7 +2723,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429439+00:00",
+      "checked_at": "2026-07-13T21:48:58.485404+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2371,7 +2731,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429442+00:00",
+      "checked_at": "2026-07-13T21:48:58.485407+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2379,7 +2739,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429444+00:00",
+      "checked_at": "2026-07-13T21:48:58.485410+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2387,7 +2747,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429447+00:00",
+      "checked_at": "2026-07-13T21:48:58.485412+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2395,7 +2755,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429449+00:00",
+      "checked_at": "2026-07-13T21:48:58.485414+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2403,7 +2763,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429452+00:00",
+      "checked_at": "2026-07-13T21:48:58.485417+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2411,7 +2771,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429455+00:00",
+      "checked_at": "2026-07-13T21:48:58.485420+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2419,7 +2779,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429457+00:00",
+      "checked_at": "2026-07-13T21:48:58.485423+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2427,7 +2787,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429460+00:00",
+      "checked_at": "2026-07-13T21:48:58.485425+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2435,7 +2795,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429462+00:00",
+      "checked_at": "2026-07-13T21:48:58.485428+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -2443,7 +2803,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429465+00:00",
+      "checked_at": "2026-07-13T21:48:58.485430+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2451,15 +2811,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429467+00:00",
+      "checked_at": "2026-07-13T21:48:58.485432+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 1 consecutive failure — self-heal at 3.",
+      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 2 consecutive failures — self-heal at 3.",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429472+00:00",
+      "checked_at": "2026-07-13T21:48:58.485437+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2467,7 +2827,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429475+00:00",
+      "checked_at": "2026-07-13T21:48:58.485440+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2475,7 +2835,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-12T21:42:40.429477+00:00",
+      "checked_at": "2026-07-13T21:48:58.485442+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2483,7 +2843,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429479+00:00",
+      "checked_at": "2026-07-13T21:48:58.485445+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2491,7 +2851,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429481+00:00",
+      "checked_at": "2026-07-13T21:48:58.485447+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2499,7 +2859,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429484+00:00",
+      "checked_at": "2026-07-13T21:48:58.485449+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2507,7 +2867,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429486+00:00",
+      "checked_at": "2026-07-13T21:48:58.485452+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2515,7 +2875,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429488+00:00",
+      "checked_at": "2026-07-13T21:48:58.485454+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2523,7 +2883,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429490+00:00",
+      "checked_at": "2026-07-13T21:48:58.485456+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2531,7 +2891,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429492+00:00",
+      "checked_at": "2026-07-13T21:48:58.485458+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2539,7 +2899,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429495+00:00",
+      "checked_at": "2026-07-13T21:48:58.485461+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2547,24 +2907,16 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-12T21:42:40.429497+00:00",
+      "checked_at": "2026-07-13T21:48:58.485463+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Claude summarisation",
-      "status": "ok",
-      "note": "Opus — Claude Code session on 2026-07-13"
+      "status": "dead",
+      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
     }
   ],
   "run_log": [
-    {
-      "at": "2026-07-07T20:55:12.313700+00:00",
-      "note": "Corrected 3 article dates, removed 3 vendor-promotional posts, and refined jurisdiction tagging on 5 items. Today's summaries were written with Sonnet."
-    },
-    {
-      "at": "2026-07-07T23:44:19.555129+00:00",
-      "note": "Daily fetch: 11 new items surfaced; 33/35 sources ok"
-    },
     {
       "at": "2026-07-08T00:21:22.992710+00:00",
       "note": "Reconciled with a same-day pipeline run: merged its newly surfaced items and re-applied this session's date/jurisdiction/marketing-screening fixes."
@@ -2600,6 +2952,10 @@
     {
       "at": "2026-07-13T02:58:14.287837+00:00",
       "note": "Enrichment: 22 items summarised and classified via Claude Code session (Opus, for a large backlog); one licensing item was corroborated and fact-checked against an official release."
+    },
+    {
+      "at": "2026-07-13T21:48:58.486072+00:00",
+      "note": "Daily fetch: 15 new items surfaced; 33/34 sources ok"
     }
   ],
   "radar": [

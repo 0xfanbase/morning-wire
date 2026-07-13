@@ -560,7 +560,7 @@
   "https://www.elliptic.co/blog/crypto-regulatory-affairs-uk-sets-out-stablecoin-rules": {
     "title_hash": "eea819e2c9f7f15c788fe5b7e2d64efde74fc66d262ce87ae6c26b09947bd62d",
     "first_seen": "2026-07-07T23:44:19.555139+00:00",
-    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
     "title": "Crypto regulatory affairs: UK sets out final stablecoin rules"
   },
   "https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk": {
@@ -620,13 +620,13 @@
   "https://www.trmlabs.com/resources/blog/how-financial-institutions-can-build-a-strong-crypto-transaction-monitoring-program": {
     "title_hash": "49f76fb6d2881e64ed91ade0de42f088714fd07164a781e63e070c33dcec39e2",
     "first_seen": "2026-07-09T01:32:57.094436+00:00",
-    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
     "title": "How Financial Institutions Can Build a Strong Crypto Transaction Monitoring Program"
   },
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35": {
     "title_hash": "9b63dbf2762516b197fdf0d2f515bc576fe78d45c2d46a2d6b9bb6413ca1b61d",
     "first_seen": "2026-07-09T22:15:47.258266+00:00",
-    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
     "title": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities"
   },
   "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss": {
@@ -728,13 +728,13 @@
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40": {
     "title_hash": "b3d861995dd47ea555f91c8424353dcbf66c4b4403787505dfa50038ca429360",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar"
   },
   "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto": {
     "title_hash": "14eee8aa21cae74263ec5ebe240949eb29cea016dca4bc5d64efdfffcf948f0b",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
     "title": "Signs of life?: State of Crypto"
   },
   "https://www.coindesk.com/policy/2026/07/10/u-s-government-digital-dollar-set-to-be-banned-tonight-under-housing-law-s-cbdc-limit": {
@@ -746,7 +746,7 @@
   "https://www.theblock.co/post/407969/crypto-fatwa-sparks-debate-over-pakistans-digital-asset-framework?utm_source=rss&utm_medium=rss": {
     "title_hash": "768c5b75600eaf42a7606a0b0744cb288d061b52ee93b9900d13dbb412788ff5",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
     "title": "Crypto fatwa sparks debate over Pakistan’s digital asset framework"
   },
   "https://www.theblock.co/post/406548/housing-bill-cbdc-ban-passed-into-law-without-trump-signature?utm_source=rss&utm_medium=rss": {
@@ -800,7 +800,7 @@
   "https://www.coindesk.com/markets/2026/07/12/bitcoin-is-nearing-a-power-law-support-line-fidelity-has-tracked-since-2015": {
     "title_hash": "b237cbab3f1c6c8f1fadf8739d25baec55dbf8c2530048d9137cd44c91cad8d3",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
     "title": "Bitcoin is nearing a power law support line Fidelity has tracked since 2015"
   },
   "https://www.theblock.co/post/407884/communication-challenge-nothing-more-standard-chartered-keeps-100000-bitcoin-target-calls-strategy-selloff-a-signaling-problem?utm_source=rss&utm_medium=rss": {
@@ -854,7 +854,97 @@
   "https://www.trmlabs.com/resources/blog/blockchain-evidence-in-court-a-framework-for-investigators": {
     "title_hash": "88ab5bcb8f8caa97a174390594ebe3d1ee915679d774741fbb751fd6e24df31e",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-12T21:42:40.430089+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
     "title": "Blockchain Evidence in Court: A Framework for Investigators"
+  },
+  "https://www.theblock.co/post/408035/chinese-prosecutors-call-for-more-proactive-approach-to-investigating-crypto-money-laundering?utm_source=rss&utm_medium=rss": {
+    "title_hash": "1a2012f0c22260d6b7ec998761fbdd31a4572f33248e72fdeea4e2ffad904fcb",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Chinese prosecutors call for more proactive approach to investigating crypto money laundering"
+  },
+  "https://ofac.treasury.gov/recent-actions/20260713": {
+    "title_hash": "e7c1fa093a3ec8100e2566bac55c7b4449017da14d88d198fb3b1eeedce0e6f1",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question"
+  },
+  "https://www.coindesk.com/policy/2026/07/13/trump-s-crypto-riches-loom-over-clarity-act-talks-to-ban-conflicts-for-u-s-officials": {
+    "title_hash": "90544a58599a242479b78037a188b8f8de53b841153e100b2cd654d177b4ac3d",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Trump's crypto riches loom over Clarity Act talks to ban conflicts for U.S. officials"
+  },
+  "https://www.coindesk.com/policy/2026/07/13/ripple-lands-inside-uk-plan-for-tokenized-repo-bonds-and-funds": {
+    "title_hash": "bec101b438a385a1863e0045d8d84d43ee7a844580a221e0cf01bda4777dcdcc",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "UK Treasury report on tokenization cites Ripple as convergence model"
+  },
+  "https://www.theblock.co/post/408046/uk-lays-out-tokenized-finance-roadmap-projected-33-billion-annual-boost?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f5e6a2895f2b1c115a7833b1ab1ed7d9216a2d4fd62c5d8d5ecab96b2e7facee",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "UK lays out tokenized finance roadmap with projected £33 billion annual boost"
+  },
+  "https://www.theblock.co/post/408054/trump-white-house-press-senate-advance-clarity-act-ethics-fight-looms?utm_source=rss&utm_medium=rss": {
+    "title_hash": "9ceb0228f6c843943e36951424bb090a60599e38f8678662642715ee63788f07",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "President Trump, White House press Senate to advance the Clarity Act while ethics fight looms"
+  },
+  "https://www.theblock.co/post/407998/bank-of-thailand-audits-stablecoin?utm_source=rss&utm_medium=rss": {
+    "title_hash": "c4c23c446f946c6bca4224a1c18a3485b8f65c1e58de45d37f953864e3dc0197",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Bank of Thailand audits high-volume stablecoin trades to crack down on illicit finance: report"
+  },
+  "https://www.theblock.co/post/407977/the-funding-why-japan-sbi-holdings-is-investing-big-in-crypto?utm_source=rss&utm_medium=rss": {
+    "title_hash": "a92b8f7e4313289bdb96063ceed8ef651206d347c75c0471a1adf61329055307",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "The Funding: Why Japan’s SBI Holdings is investing big in crypto"
+  },
+  "https://www.coindesk.com/business/2026/07/13/mizuho-says-circle-bank-approval-doesn-t-solve-usdc-growth-stablecoin-competition-risks": {
+    "title_hash": "007c103a5d8b209fb0fa74652cdfb39305a22faaa76e849d2b22d0e55dfb341f",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Mizuho says Circle bank approval doesn't solve USDC growth, stablecoin competition risks"
+  },
+  "https://www.coindesk.com/business/2026/07/13/uk-government-unveils-tokenization-taskforce-with-blackrock-goldman-jpmorgan-morgan-stanley": {
+    "title_hash": "457b9da1198ab229b4cc794adfb68c95c4b8d6b6af0e645787129897c8995286",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "BlackRock, Goldman Sachs, JPMorgan, Morgan Stanley join UK government's tokenization taskforce"
+  },
+  "https://www.coindesk.com/coindesk-news/2026/07/13/binance-us-ceo-says-exchange-is-rebuilding-eyes-return-to-20-u-s-market-share": {
+    "title_hash": "6b2d72f574608c7975ce4aaae6098043e7b86d08f0339dcc6603a3c860ad6edc",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Binance.US CEO says exchange is rebuilding, eyes return to 20% U.S. market share"
+  },
+  "https://www.coindesk.com/business/2026/07/13/bolivia-weighs-adding-tether-s-usdt-to-its-national-payments-system": {
+    "title_hash": "2f1feb32f0b97216adb7c6d751488b632e7b42910806093b2ec31158500a9f67",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Bolivia weighs adding Tether's USDT to its national payments system"
+  },
+  "https://www.coindesk.com/markets/2026/07/13/michael-saylor-s-strategy-added-usd467-million-in-cash-made-no-changes-to-bitcoin-holdings": {
+    "title_hash": "8372f3337e33aeb7ae0c48e0ffd73315e27e4eb610df2ca9885841a65be37e73",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Michael Saylor’s Strategy added $467 million in cash, made no changes to bitcoin holdings"
+  },
+  "https://www.coindesk.com/daybook-us/2026/07/13/resurgent-u-s-iran-hostilities-send-bitcoin-lower-even-as-etf-flows-show-demand": {
+    "title_hash": "ccb959590b01d8bad0e29f3d9f6c4e984f8a77fc9b6ba7c725fbbe7b10a57176",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Resurgent U.S.-Iran hostilities send bitcoin lower even as ETF flows show demand"
+  },
+  "https://www.chainalysis.com/blog/chainalysis-daubert-standard-sterlingov": {
+    "title_hash": "0252b936cb5bf9737c7434cbcf69406af86ac9d36ae58538db81e1dd354b0cc1",
+    "first_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "title": "Courtroom-Ready Analytics: How Chainalysis Met the Daubert Standard"
   }
 }
