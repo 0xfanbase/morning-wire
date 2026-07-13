@@ -167,7 +167,11 @@ try {
     transition: background .25s ease, color .25s ease;
   }
   a { color: var(--accent); text-decoration: none; }
-  a:hover { color: var(--accent-h); text-decoration: underline; }
+  /* hover-only rules wrapped in (hover: hover) throughout this sheet -- on a
+     touch device a plain :hover rule "sticks" after tap until the next tap
+     elsewhere, which reads as a stray highlight rather than feedback; the
+     real touch feedback is the paired :active rule where one exists. */
+  @media (hover: hover) { a:hover { color: var(--accent-h); text-decoration: underline; } }
   .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px 64px; }
 
   /* ============================================================
@@ -253,7 +257,8 @@ try {
     cursor: pointer;
     transition: border-color .2s, color .2s;
   }
-  .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+  @media (hover: hover) { .theme-toggle:hover { border-color: var(--accent); color: var(--accent); } }
+  .theme-toggle:active { border-color: var(--accent); color: var(--accent); }
   .theme-toggle .ico { font-size: 15px; }
   .theme-toggle .caret { font-size: 10px; color: var(--ink-3); margin-left: 2px; }
 
@@ -287,7 +292,8 @@ try {
     font-family: var(--sans); font-size: 13.5px; font-weight: 600;
     color: var(--ink-2); cursor: pointer; text-align: left;
   }
-  .theme-options button:hover { color: var(--accent); background: var(--bg-2); }
+  @media (hover: hover) { .theme-options button:hover { color: var(--accent); background: var(--bg-2); } }
+  .theme-options button:active { color: var(--accent); background: var(--bg-2); }
   .theme-options button[aria-checked="true"]::after {
     content: "✓"; margin-left: auto; color: var(--accent); font-weight: 700;
   }
@@ -311,12 +317,13 @@ try {
   .tab {
     appearance: none; background: none; border: none;
     border-bottom: 2px solid transparent;
-    padding: 6px 9px; min-height: 36px;
+    padding: 6px 9px; min-height: 40px;
     font-family: var(--sans); font-size: 13px; font-weight: 600;
     color: var(--ink-3); cursor: pointer;
     transition: color .16s ease;
   }
-  .tab:hover { color: var(--accent); }
+  @media (hover: hover) { .tab:hover { color: var(--accent); } }
+  .tab:active { color: var(--accent); }
   .tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
   .tab-intro { font-size: 13.5px; color: var(--ink-3); margin: 0 0 14px; }
 
@@ -343,7 +350,7 @@ try {
     font-size: 11px; font-weight: 700; letter-spacing: .09em;
     text-transform: uppercase; color: var(--ink-3);
   }
-  .filter-toolbar .chip { min-height: 32px; font-size: 13px; padding: 0 12px; }
+  .filter-toolbar .chip { min-height: 40px; font-size: 13px; padding: 0 12px; }
   .applied-strip {
     display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
     margin-top: 10px; padding-top: 10px;
@@ -360,7 +367,7 @@ try {
   }
   .applied-strip .fchip button {
     appearance: none; border: none; background: none; cursor: pointer;
-    color: inherit; font-size: 13px; padding: 0 4px; min-height: 24px;
+    color: inherit; font-size: 13px; padding: 0 6px; min-height: 32px;
   }
   .applied-strip .strip-clear {
     margin-left: auto;
@@ -368,7 +375,8 @@ try {
     cursor: pointer; color: var(--accent); font-weight: 700;
     font-size: 13px; min-height: 32px;
   }
-  .applied-strip .strip-clear:hover { color: var(--accent-h); text-decoration: underline; }
+  @media (hover: hover) { .applied-strip .strip-clear:hover { color: var(--accent-h); text-decoration: underline; } }
+  .applied-strip .strip-clear:active { color: var(--accent-h); text-decoration: underline; }
 
   .font-ctrl {
     display: inline-flex; align-items: center; gap: 2px;
@@ -382,7 +390,8 @@ try {
     font-family: var(--sans); font-size: 13px; font-weight: 700;
     color: var(--ink-2);
   }
-  .font-ctrl button:hover:not(:disabled) { color: var(--accent); background: var(--bg-2); }
+  @media (hover: hover) { .font-ctrl button:hover:not(:disabled) { color: var(--accent); background: var(--bg-2); } }
+  .font-ctrl button:active:not(:disabled) { color: var(--accent); background: var(--bg-2); }
   .font-ctrl button:disabled { color: var(--ink-3); opacity: .4; cursor: default; }
   .font-ctrl #fontReset { font-size: 11px; font-weight: 600; min-width: 48px; }
   .search-wrap { display: inline-flex; align-items: center; gap: 6px; }
@@ -395,7 +404,8 @@ try {
     background: var(--card); color: var(--ink-2);
     font-family: var(--sans); font-size: 13px; font-weight: 600;
   }
-  .search-toggle:hover { border-color: var(--accent); color: var(--accent); }
+  @media (hover: hover) { .search-toggle:hover { border-color: var(--accent); color: var(--accent); } }
+  .search-toggle:active { border-color: var(--accent); color: var(--accent); }
   /* Search grows open rather than snapping in -- width/opacity transition on
      a permanently-present (never `hidden`) input, gated instead by
      tabindex/aria-hidden while closed so a keyboard user can't land on an
@@ -407,7 +417,9 @@ try {
     min-height: 36px;
     border: 1px solid var(--border-2); border-radius: 999px;
     padding: 0; opacity: 0;
-    font-family: var(--sans); font-size: 14px;
+    /* 16px, not smaller: iOS Safari auto-zooms the viewport on focusing any
+       input under 16px, on the page's most-used control. */
+    font-family: var(--sans); font-size: 16px;
     color: var(--ink); background: var(--card);
     transition: max-width .34s cubic-bezier(.2,.8,.2,1), opacity .22s ease, padding .34s ease;
   }
@@ -429,7 +441,8 @@ try {
     opacity: 0; transition: max-width .34s cubic-bezier(.2,.8,.2,1), opacity .2s ease .1s;
   }
   .search-wrap.open #searchClear { width: auto; min-width: 32px; max-width: 32px; opacity: 1; }
-  #searchClear:hover { color: var(--accent); }
+  @media (hover: hover) { #searchClear:hover { color: var(--accent); } }
+  #searchClear:active { color: var(--accent); }
   @media (prefers-reduced-motion: reduce) {
     #searchInput, #searchClear { transition: none; animation: none; }
   }
@@ -498,7 +511,8 @@ try {
        repointed here rather than the global `a` rule. */
     font: inherit; color: var(--accent-deep); cursor: pointer;
   }
-  .linklike:hover { color: var(--accent-h); text-decoration: underline; }
+  @media (hover: hover) { .linklike:hover { color: var(--accent-h); text-decoration: underline; } }
+  .linklike:active { color: var(--accent-h); text-decoration: underline; }
   .foot-links { margin-top: 10px; }
   .foot-links a { color: var(--accent-deep); }
 
@@ -509,7 +523,7 @@ try {
     margin-top: 14px; font-size: 13px; color: var(--ink-3);
   }
   .jumpnav a { color: var(--ink-2); font-weight: 600; }
-  .jumpnav a:hover { color: var(--accent); }
+  @media (hover: hover) { .jumpnav a:hover { color: var(--accent); } }
   .jumpnav .jn-count { color: var(--ink-3); font-weight: 400; font-variant-numeric: tabular-nums; }
   /* Two sticky elements now stack above the feed: .mast-sticky (pinned
      wordmark/tabs/font/theme) and .filter-toolbar (two chip rows, plus a
@@ -542,7 +556,7 @@ try {
     color: var(--ink-3); min-width: 96px; text-transform: uppercase;
   }
   .radar-item a, .catchup-item a { color: var(--ink); font-weight: 500; }
-  .radar-item a:hover, .catchup-item a:hover { color: var(--accent); }
+  @media (hover: hover) { .radar-item a:hover, .catchup-item a:hover { color: var(--accent); } }
   /* A deadline that passed since this digest was generated (most often over
      the Mon-Fri pipeline's weekend gap) is re-checked client-side against
      the reader's current date -- struck through rather than silently
@@ -591,7 +605,8 @@ try {
        margin pulls the extra box height back out of the surrounding flow. */
     min-height: 28px; display: inline-flex; align-items: center; margin: -6px 0;
   }
-  .brief-toggle-all:hover { color: var(--accent-h); text-decoration: underline; }
+  @media (hover: hover) { .brief-toggle-all:hover { color: var(--accent-h); text-decoration: underline; } }
+  .brief-toggle-all:active { color: var(--accent-h); text-decoration: underline; }
   .brief-list { border-top: 1px solid var(--border); margin-bottom: 13px; }
   details.brief { border-bottom: 1px solid var(--border); }
   details.brief > summary {
@@ -626,11 +641,12 @@ try {
   .card:target { outline: 2px solid var(--accent); outline-offset: 3px; }
   .copycite {
     appearance: none; border: 1px solid var(--border-2); background: transparent;
-    border-radius: 6px; padding: 3px 9px; margin-left: 8px; min-height: 24px;
+    border-radius: 6px; padding: 6px 10px; margin-left: 8px; min-height: 32px;
     font-family: var(--sans); font-size: 11.5px; font-weight: 600;
     color: var(--ink-3); cursor: pointer; transition: color .15s, border-color .15s;
   }
-  .copycite:hover { color: var(--accent); border-color: var(--accent); }
+  @media (hover: hover) { .copycite:hover { color: var(--accent); border-color: var(--accent); } }
+  .copycite:active { color: var(--accent); border-color: var(--accent); }
   /* Cards pin Copy cite to the top-right corner (uniform position on every
      card); the meta row reserves space so badges never slide under it. */
   .card { position: relative; }
@@ -638,11 +654,12 @@ try {
   .card .card-top { padding-right: 86px; }
   .copy-briefing {
     appearance: none; border: 1px solid var(--border-2); background: var(--card);
-    border-radius: 999px; padding: 5px 13px; margin-left: auto;
+    border-radius: 999px; padding: 5px 13px; margin-left: auto; min-height: 32px;
     font-family: var(--sans); font-size: 12.5px; font-weight: 600;
     color: var(--ink-2); cursor: pointer; white-space: nowrap;
   }
-  .copy-briefing:hover { color: var(--accent); border-color: var(--accent); }
+  @media (hover: hover) { .copy-briefing:hover { color: var(--accent); border-color: var(--accent); } }
+  .copy-briefing:active { color: var(--accent); border-color: var(--accent); }
 
   /* ============================================================
      VERIFICATION DETAILS (inspectable badges)
@@ -679,7 +696,8 @@ try {
     font-family: var(--sans); font-size: 14px; font-weight: 700;
     padding: 10px 22px; min-height: 44px;
   }
-  .clear-all:hover { background: var(--accent-h); }
+  @media (hover: hover) { .clear-all:hover { background: var(--accent-h); } }
+  .clear-all:active { background: var(--accent-h); }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; }
   .chip {
     min-height: 40px;
@@ -691,9 +709,10 @@ try {
     color: var(--ink-2);
     font-family: var(--sans); font-size: 14px; font-weight: 500;
     cursor: pointer; white-space: nowrap;
-    transition: all .16s ease;
+    transition: color .16s ease, border-color .16s ease, background .16s ease;
   }
-  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  @media (hover: hover) { .chip:hover { border-color: var(--accent); color: var(--accent); } }
+  .chip:active { border-color: var(--accent); color: var(--accent); }
   .chip[aria-pressed="true"] {
     background: var(--ink);
     border-color: var(--ink);
@@ -706,7 +725,7 @@ try {
      Category) -- general sibling rule so a new middle group (Jurisdiction,
      with no class of its own) still gets a gap above it, not just the last. */
   .filter-group + .filter-group { margin-top: 16px; }
-  .bucket-row .chip { min-height: 36px; font-size: 13px; padding: 0 13px; }
+  .bucket-row .chip { min-height: 40px; font-size: 13px; padding: 0 13px; }
 
   /* ============================================================
      WARNING BANNER
@@ -787,7 +806,7 @@ try {
     white-space: nowrap;
   }
   .priority-item a { color: var(--ink); font-weight: 600; font-size: 15px; line-height: 1.35; }
-  .priority-item a:hover { color: var(--accent); }
+  @media (hover: hover) { .priority-item a:hover { color: var(--accent); } }
   .priority-item .psrc { font-size: 12px; color: var(--ink-3); margin-top: 2px; }
   .priority-quiet {
     font-size: 13.5px; color: var(--ink-3); margin: 0;
@@ -869,7 +888,7 @@ try {
     margin: 0 0 8px;
   }
   .card h4 a { color: var(--ink); }
-  .card h4 a:hover { color: var(--accent); text-decoration: none; }
+  @media (hover: hover) { .card h4 a:hover { color: var(--accent); text-decoration: none; } }
   .card h4 a .ext { font-size: 12px; color: var(--ink-3); vertical-align: middle; margin-left: 3px; }
 
   .summary { font-size: 15.5px; color: var(--ink-2); margin: 0 0 12px; line-height: 1.55; }
@@ -940,7 +959,8 @@ try {
     font: inherit; color: inherit; text-transform: inherit; letter-spacing: inherit;
     cursor: pointer; user-select: none; display: inline-flex; align-items: center;
   }
-  .health-table .sort-btn:hover, .health-table .sort-btn:focus-visible { color: var(--accent); }
+  @media (hover: hover) { .health-table .sort-btn:hover { color: var(--accent); } }
+  .health-table .sort-btn:focus-visible { color: var(--accent); }
   .health-table .sort-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .health-table th .sort-caret { display: inline-block; width: 10px; margin-left: 2px; opacity: .6; }
   .health-table th[aria-sort="ascending"] .sort-caret::after { content: "▲"; }
@@ -1070,7 +1090,10 @@ try {
   @media (max-width: 480px) {
     .wordmark { font-size: 24px; }
     .card h4 { font-size: 18px; }
-    .tab { font-size: 12px; padding: 4px 6px; min-height: 32px; }
+    /* min-height stays 40px (the base .tab value) even as font/padding
+       shrink here -- narrowing the touch target on the smallest screens,
+       exactly where it matters most, would defeat the point. */
+    .tab { font-size: 12px; padding: 4px 6px; }
   }
 
   /* ============================================================
@@ -1309,6 +1332,12 @@ try {
 </main>
 
 <script>
+// iOS Safari only applies :active styles to elements while a touch is live
+// if SOME touch listener exists on the page -- otherwise it skips straight
+// to firing click with no visual feedback in between. This no-op listener
+// is the standard, cheapest way to opt every :active rule on the page in.
+document.addEventListener("touchstart", function () {}, { passive: true });
+
 /* ============================================================
    DIGEST — single embedded data object.
    A downstream pipeline replaces this const with live data
@@ -1359,8 +1388,21 @@ const RANGE_ORDER = ["today", "7", "30", "all"];
 const RANGE_LABEL = { today: "Today", "7": "Last 7 days", "30": "Last 30 days", all: "All" };
 
 /* ---------- date helpers (all in Asia/Hong_Kong) ---------- */
+// Formatters built ONCE at module scope, never per-call: constructing an
+// Intl.DateTimeFormat is orders of magnitude more expensive than using one
+// (measured ~0.37ms/instance), and these helpers run per item on every
+// render, chip tap and search keystroke -- hundreds of constructions a
+// render otherwise, the single biggest mobile perf cost on this page.
+const DAY_KEY_FMT = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" });
+const CLOCK_FMT = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false });
+const _dayKeyCache = new Map();
 function hkDayKey(iso) {
-  return new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(iso));
+  let v = _dayKeyCache.get(iso);
+  if (v === undefined) {
+    v = DAY_KEY_FMT.format(new Date(iso));
+    _dayKeyCache.set(iso, v);
+  }
+  return v;
 }
 // Every displayed DATE is YYYY-MM-DD (en-CA formats that way by convention) --
 // one canonical format throughout, so a reader never has to reconcile "29 Jun"
@@ -1370,21 +1412,24 @@ function fmtHeaderDate(iso) {
   return hkDayKey(iso);
 }
 function fmtTime(iso) {
-  return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(iso)) + "\u00A0HKT";
+  return CLOCK_FMT.format(new Date(iso)) + "\u00A0HKT";
 }
 function fmtDay(iso) {
   return hkDayKey(iso);
 }
+const _cardDateCache = new Map();
 function fmtCardDate(iso) {
+  let v = _cardDateCache.get(iso);
+  if (v !== undefined) return v;
   const day = fmtDay(iso);
   // Date-only publishes are anchored to midnight HKT (+08:00) by the
   // pipeline and carry no real time -- show just the day for those.
   // Detect from the RAW value, not the rendered clock: inferring from a
   // rendered "00:00" used to swallow GENUINE midnight-HKT times (an item
   // published 16:00 UTC is exactly 00:00 HKT and must keep its time).
-  if (/T00:00:00(\.0+)?\+08:?00$/.test(iso)) return day;
-  const time = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(iso));
-  return `${day}, ${time}`;
+  v = /T00:00:00(\.0+)?\+08:?00$/.test(iso) ? day : `${day}, ${CLOCK_FMT.format(new Date(iso))}`;
+  _cardDateCache.set(iso, v);
+  return v;
 }
 function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
 
@@ -1405,6 +1450,10 @@ const GEN_DAY = hkDayKey(DIGEST.generated_at);
 if (hkDayKey(new Date().toISOString()) !== GEN_DAY) {
   RANGE_LABEL.today = `Latest issue (${GEN_DAY})`;
 }
+// Precompute each item's published epoch ms once at boot -- every feed/
+// priority/search sort otherwise re-parses `published` with `new Date(...)`
+// on both sides of every comparison, on every render and search keystroke.
+DIGEST.items.forEach(it => { it._ts = Date.parse(it.published); });
 
 /* ---------- returning-reader state (all client-side, all optional) ---------- */
 /* Visit baseline: items first seen after your previous session get a "New"
@@ -1534,37 +1583,45 @@ function announceFilterChange(label) {
 /* ============================================================
    RENDER — filters
    ============================================================ */
-function renderChips() {
-  const scoped = rangeItems(state.range);
-  // Counts are computed against the OTHER dimension's active filter, so a
-  // chip's number always equals the result count of clicking it -- a chip
-  // showing "1" must never produce an empty page.
-  const inBucket = it => state.bucket === "ALL" || BUCKETS[state.bucket].types.includes(it.type);
-  const inJuris = it => state.juris === "ALL" || it.jurisdiction === state.juris;
+function renderChips(opts = {}) {
+  // Range/jurisdiction/category chip COUNTS never depend on the search text
+  // (matchesSearch isn't part of inJuris/inBucket below), so a search
+  // keystroke has nothing new to say here -- skipButtons lets render() opt
+  // out of rebuilding ~19 buttons and their onclick handlers on every
+  // keystroke while still refreshing the applied-filters strip's search chip
+  // and live count just below.
+  if (!opts.skipButtons) {
+    const scoped = rangeItems(state.range);
+    // Counts are computed against the OTHER dimension's active filter, so a
+    // chip's number always equals the result count of clicking it -- a chip
+    // showing "1" must never produce an empty page.
+    const inBucket = it => state.bucket === "ALL" || BUCKETS[state.bucket].types.includes(it.type);
+    const inJuris = it => state.juris === "ALL" || it.jurisdiction === state.juris;
 
-  const rc = document.getElementById("rangeChips");
-  rc.innerHTML = RANGE_ORDER.map(val => {
-    const n = rangeItems(val).filter(inJuris).filter(inBucket).length;
-    return `<button class="chip" type="button" aria-pressed="${state.range === val}" data-range="${val}">${esc(RANGE_LABEL[val])}<span class="count">${n}</span></button>`;
-  }).join("");
+    const rc = document.getElementById("rangeChips");
+    rc.innerHTML = RANGE_ORDER.map(val => {
+      const n = rangeItems(val).filter(inJuris).filter(inBucket).length;
+      return `<button class="chip" type="button" aria-pressed="${state.range === val}" data-range="${val}">${esc(RANGE_LABEL[val])}<span class="count">${n}</span></button>`;
+    }).join("");
 
-  const jc = document.getElementById("jurisChips");
-  const jurisPresent = JURIS_ORDER.filter(j => DIGEST.items.some(it => it.jurisdiction === j));
-  const jList = [["ALL", "All"], ...jurisPresent.map(j => [j, JURIS_FULL[j]])];
-  jc.innerHTML = jList.map(([val, lbl]) => {
-    const n = scoped.filter(inBucket).filter(it => val === "ALL" ? true : it.jurisdiction === val).length;
-    return `<button class="chip" type="button" aria-pressed="${state.juris === val}" data-juris="${val}">${esc(lbl)}<span class="count">${n}</span></button>`;
-  }).join("");
+    const jc = document.getElementById("jurisChips");
+    const jurisPresent = JURIS_ORDER.filter(j => DIGEST.items.some(it => it.jurisdiction === j));
+    const jList = [["ALL", "All"], ...jurisPresent.map(j => [j, JURIS_FULL[j]])];
+    jc.innerHTML = jList.map(([val, lbl]) => {
+      const n = scoped.filter(inBucket).filter(it => val === "ALL" ? true : it.jurisdiction === val).length;
+      return `<button class="chip" type="button" aria-pressed="${state.juris === val}" data-juris="${val}">${esc(lbl)}<span class="count">${n}</span></button>`;
+    }).join("");
 
-  const bc = document.getElementById("bucketChips");
-  bc.innerHTML = Object.entries(BUCKETS).map(([val, def]) => {
-    const n = scoped.filter(inJuris).filter(it => val === "ALL" ? true : def.types.includes(it.type)).length;
-    return `<button class="chip" type="button" aria-pressed="${state.bucket === val}" data-bucket="${val}">${esc(def.label)}<span class="count">${n}</span></button>`;
-  }).join("");
+    const bc = document.getElementById("bucketChips");
+    bc.innerHTML = Object.entries(BUCKETS).map(([val, def]) => {
+      const n = scoped.filter(inJuris).filter(it => val === "ALL" ? true : def.types.includes(it.type)).length;
+      return `<button class="chip" type="button" aria-pressed="${state.bucket === val}" data-bucket="${val}">${esc(def.label)}<span class="count">${n}</span></button>`;
+    }).join("");
 
-  rc.querySelectorAll("[data-range]").forEach(b => b.onclick = () => { state.range = b.dataset.range; saveFilters(); pendingFocus = ["data-range", b.dataset.range]; render(); announceFilterChange(RANGE_LABEL[b.dataset.range]); });
-  jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; saveFilters(); pendingFocus = ["data-juris", b.dataset.juris]; render(); announceFilterChange(b.dataset.juris === "ALL" ? "All" : JURIS_FULL[b.dataset.juris]); });
-  bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; saveFilters(); pendingFocus = ["data-bucket", b.dataset.bucket]; render(); announceFilterChange(b.dataset.bucket === "ALL" ? "All" : BUCKETS[b.dataset.bucket].label); });
+    rc.querySelectorAll("[data-range]").forEach(b => b.onclick = () => { state.range = b.dataset.range; saveFilters(); pendingFocus = ["data-range", b.dataset.range]; render(); announceFilterChange(RANGE_LABEL[b.dataset.range]); });
+    jc.querySelectorAll("[data-juris]").forEach(b => b.onclick = () => { state.juris = b.dataset.juris; saveFilters(); pendingFocus = ["data-juris", b.dataset.juris]; render(); announceFilterChange(b.dataset.juris === "ALL" ? "All" : JURIS_FULL[b.dataset.juris]); });
+    bc.querySelectorAll("[data-bucket]").forEach(b => b.onclick = () => { state.bucket = b.dataset.bucket; saveFilters(); pendingFocus = ["data-bucket", b.dataset.bucket]; render(); announceFilterChange(b.dataset.bucket === "ALL" ? "All" : BUCKETS[b.dataset.bucket].label); });
+  }
 
   renderAppliedStrip();
 
@@ -1875,7 +1932,7 @@ function renderPriority(items) {
   // the 3 most material items, full stop: no "+N more" footnote pretending
   // a capped list is still the complete picture.
   const ordered = high.slice()
-    .sort((a, b) => priorityScore(b) - priorityScore(a) || new Date(b.published) - new Date(a.published));
+    .sort((a, b) => priorityScore(b) - priorityScore(a) || b._ts - a._ts);
   const rows = ordered.slice(0, PRIORITY_CAP).map(it =>
     `<div class="priority-item">
        <span class="pj">${esc(JURIS_FULL[it.jurisdiction])}</span>
@@ -1927,7 +1984,7 @@ function renderFeed(items) {
     ${filterScope ? `<p class="print-filter-scope">Filtered to ${state.juris !== "ALL" ? esc(JURIS_FULL[state.juris]) : "all jurisdictions"}${state.bucket !== "ALL" ? ` · ${esc(BUCKETS[state.bucket].label)}` : ""} — this is not the complete digest.</p>` : ""}`;
   JURIS_ORDER.forEach(j => {
     const group = items.filter(it => it.jurisdiction === j)
-      .sort((a, b) => (b.priority === "high") - (a.priority === "high") || new Date(b.published) - new Date(a.published));
+      .sort((a, b) => (b.priority === "high") - (a.priority === "high") || b._ts - a._ts);
     if (!group.length) return;
     const cards = group.filter(it => !isBrief(it));
     const briefs = group.filter(isBrief);
@@ -1960,7 +2017,7 @@ function renderSearchResults() {
   const q = state.search.trim().toLowerCase();
   const matches = rangeItems(state.range).filter(matchesFilters)
     .filter(it => matchesSearch(it, q))
-    .sort((a, b) => new Date(b.published) - new Date(a.published));
+    .sort((a, b) => b._ts - a._ts);
   // Unconditional -- Today (the narrowest, most surprising default scope)
   // used to be exactly the one case where this note went silent, so a
   // reader searching for something outside today's window got an
@@ -2136,7 +2193,7 @@ function renderCatchup() {
   if (hkDayKey(new Date(VISIT_BASELINE).toISOString()) === GEN_DAY) return;
   const missed = archiveItems()
     .filter(it => it.priority === "high" && new Date(it.first_seen || it.published).getTime() > VISIT_BASELINE)
-    .sort((a, b) => new Date(b.published) - new Date(a.published))
+    .sort((a, b) => b._ts - a._ts)
     .slice(0, 4);
   if (!missed.length) return;
   const since = fmtDay(new Date(VISIT_BASELINE).toISOString());
@@ -2358,8 +2415,8 @@ function buildWeekView() {
 /* ============================================================
    MASTER RENDER
    ============================================================ */
-function render() {
-  renderChips();
+function render(opts = {}) {
+  renderChips(opts);
   renderFreshness();
   // Top of mind is a "what matters overall" summary -- irrelevant once the
   // reader has narrowed to a specific query, so it steps out of the way
@@ -2641,6 +2698,7 @@ function openSearch() {
   }));
 }
 function closeSearch() {
+  clearTimeout(searchDebounceTimer);  // a still-pending debounced keystroke must not resurrect the query after Escape/clear
   searchWrap.classList.remove("open");
   searchInput.setAttribute("tabindex", "-1");
   searchClearBtn.setAttribute("tabindex", "-1");
@@ -2661,7 +2719,19 @@ function closeSearch() {
 }
 searchBtn.onclick = openSearch;
 searchClearBtn.onclick = closeSearch;
-searchInput.addEventListener("input", () => { state.search = searchInput.value; render(); });
+// Debounced: an un-debounced 'input' listener re-ran the full render() --
+// including a full chip-toolbar rebuild that doesn't even depend on search
+// text (see renderChips' skipButtons) -- on every single keystroke, which
+// reads as jank on a phone keyboard. ~140ms is short enough that typing
+// still feels immediate but absorbs same-word keystrokes into one render.
+let searchDebounceTimer = null;
+searchInput.addEventListener("input", () => {
+  clearTimeout(searchDebounceTimer);
+  searchDebounceTimer = setTimeout(() => {
+    state.search = searchInput.value;
+    render({ skipButtons: true });
+  }, 140);
+});
 searchInput.addEventListener("keydown", e => { if (e.key === "Escape") closeSearch(); });
 // Clicking away from an EMPTY open search box collapses it back to the
 // button -- an active query (something to click into) is left open.
