@@ -6,9 +6,10 @@ the retention window and asserts every disappearance was legal.
 A deletion is legal ONLY when the item's first_seen (as recorded in the
 OLDER commit -- never the possibly-falsified current value) is already
 outside DIGEST_ITEMS_MAX_AGE_DAYS relative to the newer commit's
-generated_at. This is exactly run.merge_digest_window's own rule, checked
-independently against history so a future confused audit run, a human
-mistake, or a data-repair script cannot silently evade it.
+generated_at (plus LEGALITY_SKEW_TOLERANCE -- see below). This is exactly
+run.merge_digest_window's own rule, checked independently against history
+so a future confused audit run, a human mistake, or a data-repair script
+cannot silently evade it.
 
 An illegal deletion found in HISTORY (the item vanished between two old
 commits) but where the item is PRESENT AGAIN in the current digest.json is
@@ -43,7 +44,26 @@ from base import commits_touching, earliest_first_seen_by_id, file_at_commit, fi
 CHECK_ID = "deletion_diff"
 MODE = "hard"
 
-RETENTION_SLACK_DAYS = 10  # the pipeline's own window (8) plus slack for clock skew
+# How far back to WALK commit pairs looking for deletions: the pipeline's
+# own retention window plus slack, so a deletion commit stays visible to
+# this check (and the daily tripwire) for several days after it lands.
+# This is a *visibility* window only -- it must never double as the
+# *legality* threshold below, which belongs to the pipeline's own
+# DIGEST_ITEMS_MAX_AGE_DAYS. (An earlier version reused this constant for
+# both, which branded every routine age-out of an item 8-10 days old an
+# "illegal deletion": the pipeline prunes at 8 days, so judging legality
+# against 10 flags the pipeline's own normal behaviour. See
+# fixtures/test_deletion_diff_ageout_boundary.py.)
+RETENTION_SLACK_DAYS = 10
+
+# run.py stamps generated_at BEFORE the verify/summarise steps run, and
+# merge_digest_window computes its prune cutoff from its own, LATER "now" --
+# so an item the pipeline legally pruned can measure a few minutes younger
+# than the full retention window when re-measured against generated_at.
+# This tolerance absorbs exactly that same-run skew and nothing more: a
+# backdated-then-deleted item is hours-to-days inside the window, far
+# beyond it.
+LEGALITY_SKEW_TOLERANCE = timedelta(hours=1)
 
 
 def _parse_iso(value):
@@ -136,7 +156,12 @@ def run(repo_root, bootstrap_cutoff=BOOTSTRAP_CUTOFF):
             if it.get("id"):
                 new_ids.add(it["id"])
 
-        cutoff = new_gen - timedelta(days=RETENTION_SLACK_DAYS)
+        # Legality is judged by the pipeline's OWN retention rule (read live
+        # from run.py so a retention change can't silently re-drift this
+        # check), softened only by the same-run clock skew tolerance above.
+        # An item at least this old at generated_at is a legitimate age-out.
+        retention_days = getattr(run_mod, "DIGEST_ITEMS_MAX_AGE_DAYS", 8)
+        cutoff = new_gen - timedelta(days=retention_days) + LEGALITY_SKEW_TOLERANCE
         for key, old_it in old_by_key.items():
             if key in new_keys:
                 continue

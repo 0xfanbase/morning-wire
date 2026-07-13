@@ -360,7 +360,7 @@ _ARTICLE_DATE_RE = re.compile(
 )
 
 
-def _extract_sitemap_urls(xml_text, href_pattern, cap=60):
+def _extract_sitemap_urls(xml_text, href_pattern, cap=200):
     """Pull candidate article URLs straight out of a sitemap.xml -- for a
     listing page whose article links only ever appear after client-side JS
     runs (e.g. MAS's "News" page), the sitemap is the only place a plain
@@ -368,6 +368,15 @@ def _extract_sitemap_urls(xml_text, href_pattern, cap=60):
     an XML parser for one flat <loc> list) and href_pattern reuses the same
     filter _extract_page_items applies, so only the listing this source
     actually cares about (e.g. this year's media releases) is kept.
+
+    The cap must comfortably exceed a full YEAR of matching pages, because
+    sitemap order carries no recency signal to prefer (MAS's is
+    alphabetical, with no <lastmod>): with a too-small cap, the year's
+    cumulative pages eventually push the newest ones past the cutoff and
+    the source silently stops seeing new items while still looking healthy
+    (raw_count > 0). MAS had already accumulated 56 matching pages by
+    mid-July 2026; 200 covers a year with margin. Hitting the cap is
+    logged, since it means exactly that silent-miss risk has arrived.
     """
     urls = []
     seen = set()
@@ -378,6 +387,11 @@ def _extract_sitemap_urls(xml_text, href_pattern, cap=60):
         seen.add(loc)
         urls.append(loc)
         if len(urls) >= cap:
+            logger.warning(
+                "sitemap has more than %d urls matching %r -- later matches are "
+                "silently skipped and new articles may be missed; raise the cap",
+                cap, href_pattern,
+            )
             break
     return urls
 
@@ -411,6 +425,20 @@ def _extract_article_title_date(html):
     return title, published
 
 
+# Bail-outs for _fetch_sitemap_items: each dead article URL costs the full
+# retry ladder ((MAX_RETRIES+1) x TIMEOUT_SECS plus backoff sleeps, ~50s), so
+# a site that serves its sitemap but times out on articles would otherwise
+# burn ~50s x every candidate URL -- enough to blow digest.yml's whole
+# 30-minute job timeout on this one source and kill the day's run outright.
+# Consecutive failures end the sweep early (the site is telling us it won't
+# serve articles right now); the elapsed budget separately bounds a
+# slow-but-not-failing crawl. Either exit leaves a normal partial result:
+# zero items keeps the health-check failure signal, some items count as a
+# working source.
+MAX_SITEMAP_CONSECUTIVE_FAILURES = 3
+SITEMAP_TIME_BUDGET_SECS = 300
+
+
 def _fetch_sitemap_items(sitemap_url, href_pattern):
     """Fallback for a "page" source whose primary listing URL returns zero
     structural items -- fetch each candidate article directly instead. This
@@ -422,11 +450,28 @@ def _fetch_sitemap_items(sitemap_url, href_pattern):
     resp = _get(sitemap_url)
     urls = _extract_sitemap_urls(resp.text, href_pattern)
     items = []
+    consecutive_failures = 0
+    started = time.monotonic()
     for url in urls:
+        if consecutive_failures >= MAX_SITEMAP_CONSECUTIVE_FAILURES:
+            logger.warning(
+                "sitemap sweep of %s aborted after %d consecutive article fetch "
+                "failures (%d item(s) collected so far)",
+                sitemap_url, consecutive_failures, len(items),
+            )
+            break
+        if time.monotonic() - started > SITEMAP_TIME_BUDGET_SECS:
+            logger.warning(
+                "sitemap sweep of %s stopped at its %ds time budget (%d item(s) collected)",
+                sitemap_url, SITEMAP_TIME_BUDGET_SECS, len(items),
+            )
+            break
         try:
             article = _get(url)
         except requests.RequestException:
+            consecutive_failures += 1
             continue
+        consecutive_failures = 0
         title, published = _extract_article_title_date(article.text)
         if not title:
             continue

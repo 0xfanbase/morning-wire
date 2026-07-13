@@ -1,11 +1,11 @@
 """Dead-source detection + self-healing.
 
-A source is considered dead if it errors or returns zero items for 5
-consecutive runs. On death, Claude (with web_search) is asked to find the
-current official equivalent URL; the candidate is validated by actually
-fetching it before sources.json is updated. A source is never silently
-dropped -- if no replacement validates, it is marked "dead" and surfaces on
-the Source health tab.
+A source is considered dead if it errors or returns zero items for
+FAILURE_THRESHOLD consecutive runs. On death, Claude (with web_search) is
+asked to find the current official equivalent URL; the candidate is
+validated by actually fetching it before sources.json is updated. A source
+is never silently dropped -- if no replacement validates, it is marked
+"dead" and surfaces on the Source health tab.
 """
 import json
 import logging
@@ -191,7 +191,8 @@ def health_check_and_heal(sources, fetch_results, register_health_notes):
                     source["kind"] = candidate["kind"]
                 if candidate.get("selector"):
                     source["selector"] = candidate["selector"]
-                _append_changelog(name, old_url, candidate["url"], "Auto-healed: old URL failed 5+ consecutive runs")
+                _append_changelog(name, old_url, candidate["url"],
+                                  f"Auto-healed: old URL failed {FAILURE_THRESHOLD}+ consecutive runs")
                 state["consecutive_failures"] = 0
                 status = "replaced"
                 note_text = f"Auto-healed from {old_url}"

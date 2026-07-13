@@ -1,9 +1,9 @@
 """SOFT. Reconciles data/source-health.json against data/sources.json: a
 source rename silently orphans its health-tracking row and starts a FRESH
-one at consecutive_failures=0 -- deferring self-heal by up to 5 more runs
-for a source that may already be broken. Also flags sources sitting just
-below the self-heal threshold, so a slow-motion failure is visible before
-it actually trips.
+one at consecutive_failures=0 -- deferring self-heal by up to
+heal.FAILURE_THRESHOLD more runs for a source that may already be broken.
+Also flags sources sitting just below the self-heal threshold, so a
+slow-motion failure is visible before it actually trips.
 """
 import json
 
