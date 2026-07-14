@@ -626,7 +626,7 @@
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35": {
     "title_hash": "9b63dbf2762516b197fdf0d2f515bc576fe78d45c2d46a2d6b9bb6413ca1b61d",
     "first_seen": "2026-07-09T22:15:47.258266+00:00",
-    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
     "title": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities"
   },
   "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss": {
@@ -728,7 +728,7 @@
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40": {
     "title_hash": "b3d861995dd47ea555f91c8424353dcbf66c4b4403787505dfa50038ca429360",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar"
   },
   "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto": {
@@ -854,7 +854,7 @@
   "https://www.trmlabs.com/resources/blog/blockchain-evidence-in-court-a-framework-for-investigators": {
     "title_hash": "88ab5bcb8f8caa97a174390594ebe3d1ee915679d774741fbb751fd6e24df31e",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
     "title": "Blockchain Evidence in Court: A Framework for Investigators"
   },
   "https://www.theblock.co/post/408035/chinese-prosecutors-call-for-more-proactive-approach-to-investigating-crypto-money-laundering?utm_source=rss&utm_medium=rss": {
@@ -866,7 +866,7 @@
   "https://ofac.treasury.gov/recent-actions/20260713": {
     "title_hash": "e7c1fa093a3ec8100e2566bac55c7b4449017da14d88d198fb3b1eeedce0e6f1",
     "first_seen": "2026-07-13T21:48:58.486078+00:00",
-    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
     "title": "Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question"
   },
   "https://www.coindesk.com/policy/2026/07/13/trump-s-crypto-riches-loom-over-clarity-act-talks-to-ban-conflicts-for-u-s-officials": {
@@ -920,7 +920,7 @@
   "https://www.coindesk.com/coindesk-news/2026/07/13/binance-us-ceo-says-exchange-is-rebuilding-eyes-return-to-20-u-s-market-share": {
     "title_hash": "6b2d72f574608c7975ce4aaae6098043e7b86d08f0339dcc6603a3c860ad6edc",
     "first_seen": "2026-07-13T21:48:58.486078+00:00",
-    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
     "title": "Binance.US CEO says exchange is rebuilding, eyes return to 20% U.S. market share"
   },
   "https://www.coindesk.com/business/2026/07/13/bolivia-weighs-adding-tether-s-usdt-to-its-national-payments-system": {
@@ -944,7 +944,133 @@
   "https://www.chainalysis.com/blog/chainalysis-daubert-standard-sterlingov": {
     "title_hash": "0252b936cb5bf9737c7434cbcf69406af86ac9d36ae58538db81e1dd354b0cc1",
     "first_seen": "2026-07-13T21:48:58.486078+00:00",
-    "last_seen": "2026-07-13T21:48:58.486078+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
     "title": "Courtroom-Ready Analytics: How Chainalysis Met the Daubert Standard"
+  },
+  "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39": {
+    "title_hash": "26b1e32cfa784b6d76d12bb2f3309997142069c9a017f8d6d6072b5109f49f30",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism (1) FATF Statement on High-Risk Jurisdictions subject to a Call for Action (2) FATF Statement on Jurisdictions under Increased Monitoring (3) Outcomes from the FATF Plenary, 17-19 June 2026"
+  },
+  "https://www.coindesk.com/policy/2026/07/14/wikipedia-blackout-could-hurt-how-ai-engines-like-chatgpt-understand-crypto": {
+    "title_hash": "52c7f87003eda4b1c05a279f7639a00b51d9e22ff9ff72284a43b634e6b01095",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Wikipedia blackout could hurt how AI engines like ChatGPT understand crypto"
+  },
+  "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets": {
+    "title_hash": "0c8d03b3382dec0503a1e9f80e5a17d03919c84b284da8241d94db53d8080e3a",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "U.S., UK move to align rules for tokenized finance across world's largest financial markets"
+  },
+  "https://www.theblock.co/post/408331/ethereum-foundation-privacy-team-spins-out-as-for-profit-ethsystems-to-serve-institutions-with-lubin-bitmine-backing?utm_source=rss&utm_medium=rss": {
+    "title_hash": "1efe44a36541303d86e4bdb4115b2e45d6b70f4fba10a3a282f7146f7f3c076d",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Ethereum Foundation privacy team spins out as for-profit EthSystems to serve institutions with Lubin, Bitmine backing"
+  },
+  "https://www.theblock.co/post/408305/us-uk-transatlantic-taskforce-unveils-digital-asset-roadmap-promoting-stablecoin-innovation?utm_source=rss&utm_medium=rss": {
+    "title_hash": "e21a1bdc05b35f6fe903496d8659be04ddc7ad73c1e286fb0226a7ef3ea066d1",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "US-UK transatlantic taskforce unveils digital asset roadmap promoting stablecoin innovation"
+  },
+  "https://www.theblock.co/post/408206/uk-hmrc-adopts-no-gain-no-loss-tax-treatment-for-crypto-lending-liquidity-pools?utm_source=rss&utm_medium=rss": {
+    "title_hash": "9da6490a1b8830e89eccc66a4003822e4f5c7754c8bec102821d7858385a6448",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "UK HMRC adopts ‘no gain, no loss’ tax treatment for crypto lending, liquidity pools"
+  },
+  "https://www.theblock.co/post/408202/us-government-moves-288-million-bitcoin-ether?utm_source=rss&utm_medium=rss": {
+    "title_hash": "411b485fdb022b576a03911d2bd574c0de3b340b856c2eff17a77f0de9ce47b1",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "US government moves over $288 million in seized bitcoin, ether to Coinbase Prime: Arkham"
+  },
+  "https://www.theblock.co/post/408193/former-lasd-deputy-jailed-for-obstructing-crypto-mogul-adam-iza-extortion-probe?utm_source=rss&utm_medium=rss": {
+    "title_hash": "eac82aacdff5c97b65db1f26f4f98593b306cf847fe9253fc0a56a2d4936603f",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Former LASD deputy jailed for obstructing crypto ‘mogul’ Adam Iza extortion probe"
+  },
+  "https://www.theblock.co/post/408180/south-korea-blockchain-economy-h2-2026?utm_source=rss&utm_medium=rss": {
+    "title_hash": "5d4c22257361d9f6c586a5bb681bb2ee1b701bf36dd067c3c20887c1aa3edbf5",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "South Korea maintains blockchain economy push as AI takes center stage"
+  },
+  "https://www.coindesk.com/business/2026/07/14/jpmorgan-says-hyperliquid-s-rise-threatens-circle-s-usdc-economics": {
+    "title_hash": "6813da9693883c0106e3806f74b3ea223198e40f16f3af200bc1e231fd7a6a6a",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "JPMorgan says Hyperliquid's rise threatens Circle's USDC economics"
+  },
+  "https://www.coindesk.com/markets/2026/07/14/for-pension-funds-tokenization-s-real-play-is-balance-sheet-management-fidelity-s-lai-says": {
+    "title_hash": "c756e2575d16f9713e8dd3e92f7fa396831764c25a8f5af9125d29daf40bc69b",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "For pension funds, tokenization’s real play is balance-sheet management, Fidelity’s Lai says"
+  },
+  "https://www.coindesk.com/business/2026/07/14/ecb-picks-firms-including-deutsche-bank-revolut-for-digital-euro-pilot": {
+    "title_hash": "72969ef61284ab13d0377efc4d5acba8be7323a057c4b94b9420287c1162494d",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "ECB picks firms including Deutsche Bank, Revolut for digital euro pilot"
+  },
+  "https://www.coindesk.com/business/2026/07/14/circle-signs-mou-with-japan-s-largest-card-network-to-explore-stablecoin-payments": {
+    "title_hash": "09b9e2c3cd7fd58459f891eb3a1a74e0b3e10b180c1e0a6553fbc4834eb0eea4",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Japan’s biggest card network taps Circle to bring stablecoins to 40 million merchants"
+  },
+  "https://www.theblock.co/post/408280/wall-street-cautious-circle-warn-usdc-economics?utm_source=rss&utm_medium=rss": {
+    "title_hash": "8e708d360b92ed4169f6b7665f4cbabdcb816b140cebf6d40d484b45a98ed7a1",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Wall Street turns cautious on Circle as analysts warn USDC economics face mounting pressure"
+  },
+  "https://www.coindesk.com/business/2026/07/14/binance-bets-on-becoming-a-crypto-super-app-as-stablecoins-reshape-growth": {
+    "title_hash": "9c55d9fe4983833a8a166325267c21a4e87c289b44cefe49eed19e0c1876bc98",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Binance bets on becoming a crypto 'super app' as stablecoins reshape growth"
+  },
+  "https://www.coindesk.com/business/2026/07/14/mizuho-downgrades-circle-to-underperform-cuts-price-target-to-usd50-on-open-usd-threat": {
+    "title_hash": "83edb2fde323a746770280ad7d6cae1133485729a403bb105872f472da98e1b1",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Mizuho downgrades Circle to underperform, cuts price target to $50 on Open USD threat"
+  },
+  "https://www.coindesk.com/markets/2026/07/14/u-s-government-moves-usd288-million-in-seized-bitcoin-ether-to-coinbase-prime": {
+    "title_hash": "eaa7a09ca1df190936a5fb90f936fc30cd876eb0e0f066fd0e2a4a2176cb2594",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "U.S. government moves $288 million in seized bitcoin, ether to Coinbase Prime"
+  },
+  "https://www.theblock.co/post/408239/tether-leads-7-million-round-in-pact-labs-to-boost-usat-stablecoin-adoption?utm_source=rss&utm_medium=rss": {
+    "title_hash": "92a436377cace4591266c7859266769ff9d898808ed15f80f13aaeaf511a318f",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Tether leads $7 million round in Pact Labs to boost USAT stablecoin adoption"
+  },
+  "https://www.theblock.co/post/408242/dragonfly-firstmark-series-a-stablecoin-velocity-coinbase-ripple-capital-one-ventures?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f233bdc98371d0e155f37b46fdb67a153761ff05d65c38d68cd2a504799f2b70",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Dragonfly, FirstMark lead $38 million Series A for stablecoin startup Velocity with support from Coinbase, Ripple and more"
+  },
+  "https://www.chainalysis.com/blog/stable-automatic-token-support": {
+    "title_hash": "678e1a98353b71f4e79ef22e9ce1f0d2bb4bfc5e87003ddf15f936eb5740beba",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Chainalysis Supports Stable with Automatic Token Support"
+  },
+  "https://www.trmlabs.com/resources/blog/blockchain-analysis-tools-for-public-blockchains-an-evaluation-guide-for-compliance-teams-and-investigators": {
+    "title_hash": "66a08a8595ad218dd47006e5b2c6390ec991359aefae3d41074c7d806d7f902e",
+    "first_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "title": "Blockchain Analysis Tools for Public Blockchains: An Evaluation Guide for Compliance Teams and Investigators"
   }
 }
