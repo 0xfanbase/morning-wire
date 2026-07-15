@@ -626,7 +626,7 @@
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC35": {
     "title_hash": "9b63dbf2762516b197fdf0d2f515bc576fe78d45c2d46a2d6b9bb6413ca1b61d",
     "first_seen": "2026-07-09T22:15:47.258266+00:00",
-    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Circular to licensed corporations and SFC-licensed virtual asset service providers Implementing (i) robust authentication methods to reduce and mitigate hacking risks from phishing attacks and (ii) adequate monitoring and surveillance measures to identify suspicious activities"
   },
   "https://www.theblock.co/post/407732/hong-kong-sfc-orders-crypto-platforms-online-brokers-to-phase-out-otp-logins?utm_source=rss&utm_medium=rss": {
@@ -728,7 +728,7 @@
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40": {
     "title_hash": "b3d861995dd47ea555f91c8424353dcbf66c4b4403787505dfa50038ca429360",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar"
   },
   "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto": {
@@ -854,7 +854,7 @@
   "https://www.trmlabs.com/resources/blog/blockchain-evidence-in-court-a-framework-for-investigators": {
     "title_hash": "88ab5bcb8f8caa97a174390594ebe3d1ee915679d774741fbb751fd6e24df31e",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Blockchain Evidence in Court: A Framework for Investigators"
   },
   "https://www.theblock.co/post/408035/chinese-prosecutors-call-for-more-proactive-approach-to-investigating-crypto-money-laundering?utm_source=rss&utm_medium=rss": {
@@ -866,7 +866,7 @@
   "https://ofac.treasury.gov/recent-actions/20260713": {
     "title_hash": "e7c1fa093a3ec8100e2566bac55c7b4449017da14d88d198fb3b1eeedce0e6f1",
     "first_seen": "2026-07-13T21:48:58.486078+00:00",
-    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question"
   },
   "https://www.coindesk.com/policy/2026/07/13/trump-s-crypto-riches-loom-over-clarity-act-talks-to-ban-conflicts-for-u-s-officials": {
@@ -944,13 +944,13 @@
   "https://www.chainalysis.com/blog/chainalysis-daubert-standard-sterlingov": {
     "title_hash": "0252b936cb5bf9737c7434cbcf69406af86ac9d36ae58538db81e1dd354b0cc1",
     "first_seen": "2026-07-13T21:48:58.486078+00:00",
-    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Courtroom-Ready Analytics: How Chainalysis Met the Daubert Standard"
   },
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39": {
     "title_hash": "26b1e32cfa784b6d76d12bb2f3309997142069c9a017f8d6d6072b5109f49f30",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism (1) FATF Statement on High-Risk Jurisdictions subject to a Call for Action (2) FATF Statement on Jurisdictions under Increased Monitoring (3) Outcomes from the FATF Plenary, 17-19 June 2026"
   },
   "https://www.coindesk.com/policy/2026/07/14/wikipedia-blackout-could-hurt-how-ai-engines-like-chatgpt-understand-crypto": {
@@ -1034,7 +1034,7 @@
   "https://www.coindesk.com/business/2026/07/14/binance-bets-on-becoming-a-crypto-super-app-as-stablecoins-reshape-growth": {
     "title_hash": "9c55d9fe4983833a8a166325267c21a4e87c289b44cefe49eed19e0c1876bc98",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Binance bets on becoming a crypto 'super app' as stablecoins reshape growth"
   },
   "https://www.coindesk.com/business/2026/07/14/mizuho-downgrades-circle-to-underperform-cuts-price-target-to-usd50-on-open-usd-threat": {
@@ -1064,13 +1064,121 @@
   "https://www.chainalysis.com/blog/stable-automatic-token-support": {
     "title_hash": "678e1a98353b71f4e79ef22e9ce1f0d2bb4bfc5e87003ddf15f936eb5740beba",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Chainalysis Supports Stable with Automatic Token Support"
   },
   "https://www.trmlabs.com/resources/blog/blockchain-analysis-tools-for-public-blockchains-an-evaluation-guide-for-compliance-teams-and-investigators": {
     "title_hash": "66a08a8595ad218dd47006e5b2c6390ec991359aefae3d41074c7d806d7f902e",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-14T21:51:46.650466+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Blockchain Analysis Tools for Public Blockchains: An Evaluation Guide for Compliance Teams and Investigators"
+  },
+  "https://www.coindesk.com/policy/2026/07/15/high-level-white-house-meeting-said-to-be-planned-to-hash-out-clarity-act-ethics-section": {
+    "title_hash": "1952279872256b99f0b1493a760b6850da7c3ca0bbce0063e0279be502396b52",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "President Trump expected to meet with senators to work on ethics concerns in crypto bill"
+  },
+  "https://www.coindesk.com/policy/2026/07/15/south-korea-to-modify-76-year-old-law-to-classify-cryptocurrencies-as-national-assets": {
+    "title_hash": "1968f2da2c862131525d1f92aa0dbf5e7f1e3529962695ae20443da23e18203e",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "South Korea to modify 76-year-old law to classify cryptocurrencies as national assets"
+  },
+  "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts": {
+    "title_hash": "1cea5d1e4c63f6dc0a2b07417cb74eb4f15dcee0fb707646d082696d1ff6316b",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "Japan reclassifies crypto as a financial asset, paves way for tax cuts"
+  },
+  "https://www.theblock.co/post/408517/hugely-positive-meeting-thursday-trump-ethics-raises-hopes-passage-crypto-legislation?utm_source=rss&utm_medium=rss": {
+    "title_hash": "d34ee1ebed4a5ade1ae20a1b40412f8acb6d466c64c5c4dcf276b299e8128569",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "‘Hugely positive’ meeting on Thursday with Trump to discuss ethics raises hopes for passage of sweeping crypto legislation"
+  },
+  "https://www.theblock.co/post/408419/dtcc-begins-first-tokenized-stock-and-treasury-production-trades-involving-jpmorgan-blackrock-and-goldman-wsj?utm_source=rss&utm_medium=rss": {
+    "title_hash": "1cb11a000319065cd3c73646036810409c475c34ea54c4ce20659ce1e234df2e",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "DTCC begins first tokenized stock and Treasury production trades involving JPMorgan, BlackRock and Goldman"
+  },
+  "https://www.coindesk.com/markets/2026/07/15/blackrock-s-crypto-assets-fall-39-despite-usd15-billion-of-net-inflows": {
+    "title_hash": "462f19c401fe944db5b81a6419cdf2d48c982f1bf8f431986c408eebbe2cdfbf",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "BlackRock's crypto assets fall 39% despite $15 billion of net inflows"
+  },
+  "https://www.coindesk.com/tech/2026/07/15/visa-mastercard-and-ripple-join-the-standard-letting-ai-agents-pay-in-stablecoins": {
+    "title_hash": "d354e6b6532b87de36d3389c6aad794c8ba3bcaca30ab36ea192cf8a6259471d",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "AI agentic payments enter mainstream as Visa, Mastercard, Ripple back x402 standard"
+  },
+  "https://www.theblock.co/post/408436/blackrock-outlines-vision-crypto-tradfi-convergence-product-pipeline-grows?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f0210cf38e22e0575c71c39ee5b05f445ab4388c015b05dbb1d32915f932c152",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "BlackRock outlines vision for crypto-TradFi convergence as product pipeline grows"
+  },
+  "https://www.theblock.co/post/408399/tokenization-startup-tradable-plans-bring-1-billion-private-credit-assets-stellar?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f67b5599cdafe8f1e9c458e0b06d36fce07f3fe8554cd58c93b723171fdf42b7",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "Tokenization startup Tradable plans to bring $1 billion worth of private credit assets to Stellar"
+  },
+  "https://www.coindesk.com/business/2026/07/15/coinbase-s-jesse-pollak-steps-back-from-base-app-leadership-after-admitting-his-crypto-social-strategy-failed": {
+    "title_hash": "f84c03f136e00ca044c8b5ae876ff691edd28b66dc038b111e987765bbc04c39",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "Coinbase's Jesse Pollak steps back from Base app leadership after admitting his crypto social strategy failed"
+  },
+  "https://www.coindesk.com/business/2026/07/15/ostium-suffers-usd18-million-exploit-as-oracle-attack-wave-continues-to-hit-defi": {
+    "title_hash": "ca19c7fce9d3cfa1f25cecb03891479cbeff12b85457e14c96325da6f08d4e7a",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "Ostium suffers $18 million exploit as oracle attack wave continues to hit DeFi"
+  },
+  "https://www.coindesk.com/business/2026/07/15/open-usd-poses-biggest-threat-yet-to-circle-s-usdc-coinshares-says": {
+    "title_hash": "2b89dbb0600ade51a864db73454405536799e67eb66a7cf4e434b6d65ebd1326",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "Open USD poses biggest threat yet to Circle's USDC, CoinShares says"
+  },
+  "https://www.theblock.co/post/408504/coinbases-jesse-pollak-hands-base-app-leadership-cobie-social-bets-fell-short?utm_source=rss&utm_medium=rss": {
+    "title_hash": "303a6e1360d60d2ff612c44f92eec4e3d7ffc3e16ef5e0286db6c11e29b51832",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "Coinbase’s Jesse Pollak hands Base app leadership to Cobie after admitting social bets fell short"
+  },
+  "https://www.theblock.co/post/408448/kraken-institutional-taps-upshift-to-build-vaults-that-earn-yield-on-idle-bitcoin-eth-and-stablecoins?utm_source=rss&utm_medium=rss": {
+    "title_hash": "276f862e58efae8e89224902135aeb5b61c6c6353c9fb21f21d9ffe5b23feae4",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "Kraken Institutional taps Upshift to build vaults that earn yield on idle bitcoin, ETH and stablecoins"
+  },
+  "https://www.theblock.co/post/408450/ostium-pauses-trading-after-apparent-18-million-vault-exploit?utm_source=rss&utm_medium=rss": {
+    "title_hash": "c559f7f6e925305f51eebe8ba9d19553ac42bcfb75bcca4e00ac1ec24ad5257a",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "Ostium pauses trading after apparent $18 million vault exploit"
+  },
+  "https://www.theblock.co/post/408423/blair-cuts-coinbase-forecasts-but-crypto-downturn-nearing-bottom?utm_source=rss&utm_medium=rss": {
+    "title_hash": "80604bb6902f2da6f6610b5c17084d2de8d8c3cb7d62c5bc5bad085793a84d50",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "William Blair cuts Coinbase forecasts but says crypto downturn nearing a bottom"
+  },
+  "https://www.theblock.co/post/408308/how-crypto-venues-are-building-financial-operating-systems-binance-as-a-super-app?utm_source=rss&utm_medium=rss": {
+    "title_hash": "b185ae3a5d6c4ba4e8d1569079408de91239015695b3a15144aab82f9ea8f1c5",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "How Crypto Venues Are Building Financial Operating Systems: Binance as a Super App"
+  },
+  "https://www.theblock.co/post/408377/circle-suspended-tether-backed-fund-over-market-manipulation-concerns-arbitration-filings-show?utm_source=rss&utm_medium=rss": {
+    "title_hash": "b441aac162d1b4d7be25e2fc76f05a4a7c43bc1653fb2d67d5ce9f30bac0756c",
+    "first_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "title": "Circle suspended Tether-backed fund over market manipulation concerns, arbitration filings show"
   }
 }
