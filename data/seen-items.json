@@ -728,7 +728,7 @@
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/intermediaries/supervision/doc?refNo=26EC40": {
     "title_hash": "b3d861995dd47ea555f91c8424353dcbf66c4b4403787505dfa50038ca429360",
     "first_seen": "2026-07-12T21:42:40.430089+00:00",
-    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Cybersecurity Webinar"
   },
   "https://www.coindesk.com/policy/2026/07/12/signs-of-life-state-of-crypto": {
@@ -866,7 +866,7 @@
   "https://ofac.treasury.gov/recent-actions/20260713": {
     "title_hash": "e7c1fa093a3ec8100e2566bac55c7b4449017da14d88d198fb3b1eeedce0e6f1",
     "first_seen": "2026-07-13T21:48:58.486078+00:00",
-    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
     "title": "Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question"
   },
   "https://www.coindesk.com/policy/2026/07/13/trump-s-crypto-riches-loom-over-clarity-act-talks-to-ban-conflicts-for-u-s-officials": {
@@ -944,13 +944,13 @@
   "https://www.chainalysis.com/blog/chainalysis-daubert-standard-sterlingov": {
     "title_hash": "0252b936cb5bf9737c7434cbcf69406af86ac9d36ae58538db81e1dd354b0cc1",
     "first_seen": "2026-07-13T21:48:58.486078+00:00",
-    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
     "title": "Courtroom-Ready Analytics: How Chainalysis Met the Daubert Standard"
   },
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39": {
     "title_hash": "26b1e32cfa784b6d76d12bb2f3309997142069c9a017f8d6d6072b5109f49f30",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism (1) FATF Statement on High-Risk Jurisdictions subject to a Call for Action (2) FATF Statement on Jurisdictions under Increased Monitoring (3) Outcomes from the FATF Plenary, 17-19 June 2026"
   },
   "https://www.coindesk.com/policy/2026/07/14/wikipedia-blackout-could-hurt-how-ai-engines-like-chatgpt-understand-crypto": {
@@ -1064,13 +1064,13 @@
   "https://www.chainalysis.com/blog/stable-automatic-token-support": {
     "title_hash": "678e1a98353b71f4e79ef22e9ce1f0d2bb4bfc5e87003ddf15f936eb5740beba",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
     "title": "Chainalysis Supports Stable with Automatic Token Support"
   },
   "https://www.trmlabs.com/resources/blog/blockchain-analysis-tools-for-public-blockchains-an-evaluation-guide-for-compliance-teams-and-investigators": {
     "title_hash": "66a08a8595ad218dd47006e5b2c6390ec991359aefae3d41074c7d806d7f902e",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
     "title": "Blockchain Analysis Tools for Public Blockchains: An Evaluation Guide for Compliance Teams and Investigators"
   },
   "https://www.coindesk.com/policy/2026/07/15/high-level-white-house-meeting-said-to-be-planned-to-hash-out-clarity-act-ethics-section": {
@@ -1130,13 +1130,13 @@
   "https://www.coindesk.com/business/2026/07/15/coinbase-s-jesse-pollak-steps-back-from-base-app-leadership-after-admitting-his-crypto-social-strategy-failed": {
     "title_hash": "f84c03f136e00ca044c8b5ae876ff691edd28b66dc038b111e987765bbc04c39",
     "first_seen": "2026-07-15T21:52:28.876405+00:00",
-    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
     "title": "Coinbase's Jesse Pollak steps back from Base app leadership after admitting his crypto social strategy failed"
   },
   "https://www.coindesk.com/business/2026/07/15/ostium-suffers-usd18-million-exploit-as-oracle-attack-wave-continues-to-hit-defi": {
     "title_hash": "ca19c7fce9d3cfa1f25cecb03891479cbeff12b85457e14c96325da6f08d4e7a",
     "first_seen": "2026-07-15T21:52:28.876405+00:00",
-    "last_seen": "2026-07-15T21:52:28.876405+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
     "title": "Ostium suffers $18 million exploit as oracle attack wave continues to hit DeFi"
   },
   "https://www.coindesk.com/business/2026/07/15/open-usd-poses-biggest-threat-yet-to-circle-s-usdc-coinshares-says": {
@@ -1180,5 +1180,107 @@
     "first_seen": "2026-07-15T21:52:28.876405+00:00",
     "last_seen": "2026-07-15T21:52:28.876405+00:00",
     "title": "Circle suspended Tether-backed fund over market manipulation concerns, arbitration filings show"
+  },
+  "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260716-3": {
+    "title_hash": "530e5fcc7fa49f4d0db29468baace64df87c6261e6fe062763f304efc1ec1c17",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "Website alert: trustwallet[.]uk[.]com"
+  },
+  "https://www.theblock.co/post/408706/were-going-get-it-done-crypto-bill-faces-could-be-final-test-trump-conflicts-interest?utm_source=rss&utm_medium=rss": {
+    "title_hash": "965c4ec6d2a360f366d4160772673117a662319efbbee4f68218b6cde6455bd5",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "‘We’re going to get it done’: Crypto bill faces what could be final test over Trump conflicts of interest"
+  },
+  "https://www.theblock.co/post/408654/us-jury-indicts-south-dakota-crypto-investor-29-counts-alleged-20m-investor-fraud?utm_source=rss&utm_medium=rss": {
+    "title_hash": "ff7db07713e0226d2d0f7720eabaecbfdc30a54df1d584e70684259857ac02c7",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "US jury indicts South Dakota crypto investor on 29 counts over alleged $20 million investor fraud"
+  },
+  "https://www.theblock.co/post/408594/jeff-booth-lyn-alden-backed-orange-juice-raises-40-million-to-launch-permanent-capital-firm-with-bitcoin-treasury-strategy?utm_source=rss&utm_medium=rss": {
+    "title_hash": "87053c83245f8e3c286f60fd775ba0701a75386d958c97c98f40cc1a2c10f28a",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "Jeff Booth, Lyn Alden-backed ORANGE JUICE raises $40 million to launch permanent capital firm with bitcoin treasury strategy"
+  },
+  "https://www.coindesk.com/business/2026/07/16/visa-backs-open-usd-with-new-stablecoin-platform-as-circle-faces-fresh-competition": {
+    "title_hash": "0e51fc42c4eef08edc14532dafebc3437d6d2c24a8127418ffe2059029fd6dce",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "Visa backs Open USD with new stablecoin platform as Circle faces fresh competition"
+  },
+  "https://www.coindesk.com/business/2026/07/16/crypto-brokerage-firm-alpaca-raises-usd135-million-for-tokenized-stock-infrastructure": {
+    "title_hash": "ecc9c1183365e6252e587d9972908998645a1b61024d0cf9bb1fbff5db698baf",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "Crypto brokerage firm Alpaca raises $135 million for tokenized stock infrastructure"
+  },
+  "https://www.coindesk.com/markets/2026/07/16/ether-outruns-bitcoin-as-etf-money-returns-almost-all-of-from-blackrock-s-fund": {
+    "title_hash": "1155c603470a5326cff3b581230353c738f2e181c2d15aa3b1b2994c2cb83cb3",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "Ether outruns bitcoin as ETF money returns, almost all of from BlackRock's fund"
+  },
+  "https://www.theblock.co/post/408712/jpmorgan-bitcoin-outlook-encouraging-sign-strategy-cash-reserves?utm_source=rss&utm_medium=rss": {
+    "title_hash": "488a77b262df227a7a20b056c4a91b029811ea8cc5d87c4065eedb8e62801d4f",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "JPMorgan says bitcoin outlook sees ‘encouraging sign’ as Strategy boosts cash reserves"
+  },
+  "https://www.theblock.co/post/408645/visa-launching-internal-stablecoin-platform-provides-access-ousd-fortune?utm_source=rss&utm_medium=rss": {
+    "title_hash": "b642bc6238b040ad77ec64660324cfa87eaa43fcaf234ad479ede879d68fb1ed",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "Visa launching internal stablecoin platform for clients that provides access to OUSD: report"
+  },
+  "https://www.theblock.co/post/408574/visa-stablecoins-agentic-ai-commerce?utm_source=rss&utm_medium=rss": {
+    "title_hash": "9a40847de18c559f30db8c45e27b75cd7757edec8feb68cc44d5399cf06dd92b",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "Visa says stablecoins will power micro-commerce in AI agentic economy"
+  },
+  "https://www.coindesk.com/markets/2026/07/16/usd1-9-trillion-asset-manager-t-rowe-price-bets-on-active-management-with-first-multi-token-crypto-etf": {
+    "title_hash": "33d14f48ddc620f9f3993dff80f046358814fc4a0419ea15b18a1dcdca36a7f2",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "$1.9 trillion asset manager T. Rowe Price bets on active management with first multi-token crypto ETF"
+  },
+  "https://www.coindesk.com/business/2026/07/16/tether-invests-usd20-million-in-argentine-neobank-uala-as-it-expands-latin-america-push": {
+    "title_hash": "1e8fc7530412d6949f5cb1a2caf1e882a7acffb39f66ad0ed214c7a54809b4e2",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "Tether invests $20 million in Argentine neobank Ualá as it expands Latin America push"
+  },
+  "https://www.coindesk.com/business/2026/07/16/u-s-adds-four-iran-central-bank-crypto-wallets-to-sanctions-tether-freezes-usd131-million-of-contents": {
+    "title_hash": "a6465f28bf8b1c7d445ddfafcccf765381fb90d8ee68cc8edf28eb007fe5da23",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "U.S. adds four Iran central bank crypto wallets to sanctions, Tether freezes $131 million of contents"
+  },
+  "https://www.theblock.co/post/408667/t-rowe-price-launches-first-actively-managed-multi-token-crypto-etf?utm_source=rss&utm_medium=rss": {
+    "title_hash": "c59ad02111955dbf3b8e3c960b3c7044449684b1e687d327919a9b3f025dea75",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "$1.9 trillion asset manager T. Rowe Price launches first actively managed multi-token crypto ETF"
+  },
+  "https://www.theblock.co/post/408604/tether-invests-20-million-in-uala-as-the-fintech-firm-reaches-3-2-billion-valuation?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f034d81ec5e769fbdf36ab83ecfc43adf1f16af19282c90c446b7e2e6740a39a",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "Tether invests $20 million in Ualá as the fintech firm reaches $3.2 billion valuation"
+  },
+  "https://www.chainalysis.com/blog/ofac-sanctions-iran-central-bank-crypto-wallets-freezing-131m-in-stablecoins": {
+    "title_hash": "b50b690f7cc4c5a43d2271d702442c680472a090268eb0362ffc9b530245dbf6",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "OFAC Sanctions Iran Central Bank Crypto Wallets, Freezing $131M in Stablecoins"
+  },
+  "https://www.elliptic.co/blog/why-crypto-risk-doesnt-require-a-separate-compliance-program": {
+    "title_hash": "58b40ce83249b4a5ff0d10ae86e4e2cbcd8b08a9fb3465519b1baddad012d96a",
+    "first_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "title": "A crypto risk management framework for financial institutions"
   }
 }
