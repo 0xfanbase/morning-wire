@@ -944,13 +944,13 @@
   "https://www.chainalysis.com/blog/chainalysis-daubert-standard-sterlingov": {
     "title_hash": "0252b936cb5bf9737c7434cbcf69406af86ac9d36ae58538db81e1dd354b0cc1",
     "first_seen": "2026-07-13T21:48:58.486078+00:00",
-    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
     "title": "Courtroom-Ready Analytics: How Chainalysis Met the Daubert Standard"
   },
   "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39": {
     "title_hash": "26b1e32cfa784b6d76d12bb2f3309997142069c9a017f8d6d6072b5109f49f30",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
     "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism (1) FATF Statement on High-Risk Jurisdictions subject to a Call for Action (2) FATF Statement on Jurisdictions under Increased Monitoring (3) Outcomes from the FATF Plenary, 17-19 June 2026"
   },
   "https://www.coindesk.com/policy/2026/07/14/wikipedia-blackout-could-hurt-how-ai-engines-like-chatgpt-understand-crypto": {
@@ -1064,13 +1064,13 @@
   "https://www.chainalysis.com/blog/stable-automatic-token-support": {
     "title_hash": "678e1a98353b71f4e79ef22e9ce1f0d2bb4bfc5e87003ddf15f936eb5740beba",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
     "title": "Chainalysis Supports Stable with Automatic Token Support"
   },
   "https://www.trmlabs.com/resources/blog/blockchain-analysis-tools-for-public-blockchains-an-evaluation-guide-for-compliance-teams-and-investigators": {
     "title_hash": "66a08a8595ad218dd47006e5b2c6390ec991359aefae3d41074c7d806d7f902e",
     "first_seen": "2026-07-14T21:51:46.650466+00:00",
-    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
     "title": "Blockchain Analysis Tools for Public Blockchains: An Evaluation Guide for Compliance Teams and Investigators"
   },
   "https://www.coindesk.com/policy/2026/07/15/high-level-white-house-meeting-said-to-be-planned-to-hash-out-clarity-act-ethics-section": {
@@ -1184,7 +1184,7 @@
   "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260716-3": {
     "title_hash": "530e5fcc7fa49f4d0db29468baace64df87c6261e6fe062763f304efc1ec1c17",
     "first_seen": "2026-07-16T21:58:51.014593+00:00",
-    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
     "title": "Website alert: trustwallet[.]uk[.]com"
   },
   "https://www.theblock.co/post/408706/were-going-get-it-done-crypto-bill-faces-could-be-final-test-trump-conflicts-interest?utm_source=rss&utm_medium=rss": {
@@ -1226,7 +1226,7 @@
   "https://www.theblock.co/post/408712/jpmorgan-bitcoin-outlook-encouraging-sign-strategy-cash-reserves?utm_source=rss&utm_medium=rss": {
     "title_hash": "488a77b262df227a7a20b056c4a91b029811ea8cc5d87c4065eedb8e62801d4f",
     "first_seen": "2026-07-16T21:58:51.014593+00:00",
-    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
     "title": "JPMorgan says bitcoin outlook sees ‘encouraging sign’ as Strategy boosts cash reserves"
   },
   "https://www.theblock.co/post/408645/visa-launching-internal-stablecoin-platform-provides-access-ousd-fortune?utm_source=rss&utm_medium=rss": {
@@ -1274,13 +1274,115 @@
   "https://www.chainalysis.com/blog/ofac-sanctions-iran-central-bank-crypto-wallets-freezing-131m-in-stablecoins": {
     "title_hash": "b50b690f7cc4c5a43d2271d702442c680472a090268eb0362ffc9b530245dbf6",
     "first_seen": "2026-07-16T21:58:51.014593+00:00",
-    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
     "title": "OFAC Sanctions Iran Central Bank Crypto Wallets, Freezing $131M in Stablecoins"
   },
   "https://www.elliptic.co/blog/why-crypto-risk-doesnt-require-a-separate-compliance-program": {
     "title_hash": "58b40ce83249b4a5ff0d10ae86e4e2cbcd8b08a9fb3465519b1baddad012d96a",
     "first_seen": "2026-07-16T21:58:51.014593+00:00",
-    "last_seen": "2026-07-16T21:58:51.014593+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
     "title": "A crypto risk management framework for financial institutions"
+  },
+  "https://www.coindesk.com/markets/2026/07/17/bitcoin-faces-fresh-headwinds-as-china-s-kimi-beats-claude-gpt-in-coding-benchmark": {
+    "title_hash": "463aa5afdd349985eb88a66fb6d61e531a2c47327d7d47cf8b179f7a3cf634eb",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Bitcoin faces fresh headwinds as China’s Kimi beats Claude, GPT in coding benchmark"
+  },
+  "https://www.coindesk.com/policy/2026/07/19/the-genius-act-turns-1-state-of-crypto": {
+    "title_hash": "132507cb5bfd6891c09b280648dbb14ed859206d367832a74105b10a5ae710ce",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "The GENIUS Act turns 1: State of Crypto"
+  },
+  "https://www.coindesk.com/news-analysis/2026/07/17/tether-s-usdt-hits-2-year-countdown-threatening-its-position-on-u-s-crypto-platforms": {
+    "title_hash": "c0060c67e6de168b9a7776a4774e9a2168a232085f465bbe26e562e86fe36083",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Tether's USDT hits 2-year countdown threatening its position on U.S. crypto platforms"
+  },
+  "https://www.theblock.co/post/408848/upbit-parent-dunamu-faces-sanction-process-nearly-eight-months-after-30-million-hack-report?utm_source=rss&utm_medium=rss": {
+    "title_hash": "07fbcf02f2d01bb349b12ef8b07fac68e0bee02af3d1a5bfa4fed671b2db70b3",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Upbit parent Dunamu faces sanction process nearly eight months after $30 million hack: report"
+  },
+  "https://www.theblock.co/post/408843/us-regulators-miss-genius-acts-one-year-deadline-for-final-stablecoin-rules?utm_source=rss&utm_medium=rss": {
+    "title_hash": "15ef94bdfabfafc4ea9d06c55ef37e2124e7e9c97c19a67b922202b0944f3155",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "US regulators miss GENIUS Act’s one-year deadline for final stablecoin rules"
+  },
+  "https://www.theblock.co/post/408748/taiwan-sentences-bitshine-crypto-exchange-ringleader-22-years?utm_source=rss&utm_medium=rss": {
+    "title_hash": "8d5b847ffb7e87ea84b4d4871145cfd27c98c7116c89a0ed569239b1e852d468",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Taiwan sentences BitShine crypto exchange ringleader to 22 years in $39 million fraud case: reports"
+  },
+  "https://www.theblock.co/post/408745/uk-gang-jailed-crypto-scam?utm_source=rss&utm_medium=rss": {
+    "title_hash": "a9bb0e0331e2920e2d9c503bdde2f939d4b903498a19a879c489843804efa228",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "UK gang jailed over $5.4 million crypto scam posing as police"
+  },
+  "https://www.coindesk.com/tech/2026/07/16/inside-zcash-s-new-node-that-targets-visa-scale-privacy-at-50-000-transactions-per-second": {
+    "title_hash": "c754389142c51c5eb647c451df68281aef3786a0227363dc0aee374a3e3adc5f",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Inside Zcash's new node that targets Visa-scale privacy at 50,000 transactions per second"
+  },
+  "https://www.coindesk.com/business/2026/07/17/stripe-and-swift-race-to-control-the-next-generation-of-global-payments-infrastructure": {
+    "title_hash": "939e692ba565c1c95b2d174116ead8f0742817b466aca4a66b20b004da0bd028",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Stripe and Swift race to control the next generation of global payments infrastructure"
+  },
+  "https://www.theblock.co/post/408830/bank-america-taps-new-leaders-bridge-crypto-ai-traditional-finance?utm_source=rss&utm_medium=rss": {
+    "title_hash": "d5d839767b1879ff495b57cbd039b658b50b62759683c6327e4ffe4104c97a28",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Bank of America taps new leaders to bridge crypto, AI and traditional finance"
+  },
+  "https://www.coindesk.com/tech/2026/07/19/bitcoin-s-biggest-advocate-michael-saylor-says-new-plan-to-clean-up-the-blockchain-is-a-bad-idea": {
+    "title_hash": "bd77acafbce14e95053efcdb2e3d4b75d1c19b4e8806dc8e6061e77b6df423cf",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Bitcoin's biggest advocate, Michael Saylor, says new plan to clean up the blockchain is 'a bad idea'"
+  },
+  "https://www.coindesk.com/business/2026/07/19/kraken-says-simpler-options-can-unlock-crypto-s-next-derivatives-market": {
+    "title_hash": "7d1f17628a12ce47bb04d9b192457277b7e365659950338fca982a4ab9579f18",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Kraken says simpler options can unlock crypto's next derivatives market"
+  },
+  "https://www.coindesk.com/web3/2026/07/17/airbnb-ceo-says-x-account-was-hacked-attacker-posted-ai-slop-thread-on-tokenization": {
+    "title_hash": "584aaa4403299483baca5990c435a9a39754f7b11cb28f84cca5b95292171c61",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Airbnb CEO says X account was hacked, attacker posted AI-slop on tokenization"
+  },
+  "https://www.theblock.co/post/408825/cryptoquant-strategy-bitcoin-buying-selling-framework-mstr?utm_source=rss&utm_medium=rss": {
+    "title_hash": "4d68cc59e1d16e1b49b7f4986aa0787148db472a17665c9460d4d5d8eebac7f4",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "CryptoQuant says Strategy still needs disciplined bitcoin buying and selling framework"
+  },
+  "https://www.theblock.co/post/408793/bitcoin-slides-63000-coinbase-premium-stays-negative-record-60-days?utm_source=rss&utm_medium=rss": {
+    "title_hash": "e4598f14553e6083f5acee8ef29506b03c8e1bcad2a357b9e0403961fb6f72d7",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Bitcoin slides toward $63,000 as Coinbase premium stays negative for a record 60 days"
+  },
+  "https://www.theblock.co/post/408782/bitcoin-etfs-ibit-mirror-golds-history-spectacular-gains-painful-drawdowns-analyst?utm_source=rss&utm_medium=rss": {
+    "title_hash": "ffe8ff6c152df2b35f3a0498cfa3e422083c8eeeec63aa3bc4bf016bd6345d20",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "Bitcoin ETFs could mirror gold’s history of ‘spectacular gains’ and ‘painful drawdowns,’ analyst says"
+  },
+  "https://www.theblock.co/learn/408738/usdt-vs-usdc-comparing-the-two-largest-stablecoins?utm_source=rss&utm_medium=rss": {
+    "title_hash": "68b6a146b3b7ed98a3d33db3f0e721f3e04ec1ca7b5fcab60b8ab0c85ae4232c",
+    "first_seen": "2026-07-19T21:43:43.273210+00:00",
+    "last_seen": "2026-07-19T21:43:43.273210+00:00",
+    "title": "USDT vs USDC: Comparing the Two Largest Stablecoins"
   }
 }
