@@ -302,13 +302,13 @@
   "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown": {
     "title_hash": "8c3b80518513189fa8c2a73e13e7bb89731b2167c8f87f52dd05924c8d2b1f37",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
     "title": "Operation Prince: Inside a $15 billion crypto fraud takedown"
   },
   "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance": {
     "title_hash": "845f69cfb33b768889d3284ccfca72c2ffb52666caedf185fa77ff391743f8f2",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-07T12:06:13.362519+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
     "title": "What OFAC’s crypto mixer sanctions mean for financial crime compliance"
   },
   "https://www.acams.org/en/opinion/crypto-threats-vulnerabilities-and-what-do-next": {
@@ -1184,7 +1184,7 @@
   "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/07/20260716-3": {
     "title_hash": "530e5fcc7fa49f4d0db29468baace64df87c6261e6fe062763f304efc1ec1c17",
     "first_seen": "2026-07-16T21:58:51.014593+00:00",
-    "last_seen": "2026-07-20T21:57:20.544598+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
     "title": "Website alert: trustwallet[.]uk[.]com"
   },
   "https://www.theblock.co/post/408706/were-going-get-it-done-crypto-bill-faces-could-be-final-test-trump-conflicts-interest?utm_source=rss&utm_medium=rss": {
@@ -1274,13 +1274,13 @@
   "https://www.chainalysis.com/blog/ofac-sanctions-iran-central-bank-crypto-wallets-freezing-131m-in-stablecoins": {
     "title_hash": "b50b690f7cc4c5a43d2271d702442c680472a090268eb0362ffc9b530245dbf6",
     "first_seen": "2026-07-16T21:58:51.014593+00:00",
-    "last_seen": "2026-07-20T21:57:20.544598+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
     "title": "OFAC Sanctions Iran Central Bank Crypto Wallets, Freezing $131M in Stablecoins"
   },
   "https://www.elliptic.co/blog/why-crypto-risk-doesnt-require-a-separate-compliance-program": {
     "title_hash": "58b40ce83249b4a5ff0d10ae86e4e2cbcd8b08a9fb3465519b1baddad012d96a",
     "first_seen": "2026-07-16T21:58:51.014593+00:00",
-    "last_seen": "2026-07-20T21:57:20.544598+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
     "title": "A crypto risk management framework for financial institutions"
   },
   "https://www.coindesk.com/markets/2026/07/17/bitcoin-faces-fresh-headwinds-as-china-s-kimi-beats-claude-gpt-in-coding-benchmark": {
@@ -1388,7 +1388,7 @@
   "https://www.coindesk.com/policy/2026/07/20/brazil-s-securities-regulator-sets-up-task-force-with-60-day-deadline-for-tokenization-proposal": {
     "title_hash": "ad1ef9e70c1126f057db8131cb504c1ddecd375011b73ea2acc8544359bdc1b0",
     "first_seen": "2026-07-20T21:57:20.544598+00:00",
-    "last_seen": "2026-07-20T21:57:20.544598+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
     "title": "Brazil’s securities regulator sets up task force with 60-day deadline for tokenization proposal"
   },
   "https://www.theblock.co/post/408804/president-trump-agrees-some-level-ethics-language-potentially-clearing-hurdles-pass-crypto-bill?utm_source=rss&utm_medium=rss": {
@@ -1418,7 +1418,7 @@
   "https://www.coindesk.com/business/2026/07/20/saylor-s-strategy-raises-cash-reserves-to-usd3-225-billion-leaving-bitcoin-holdings-unchanged": {
     "title_hash": "8543cd0ac9246ddd88422bcdd2bf62b2b778c9c8bd601581926db400a1a59271",
     "first_seen": "2026-07-20T21:57:20.544598+00:00",
-    "last_seen": "2026-07-20T21:57:20.544598+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
     "title": "Saylor's Strategy raises cash reserves to $3.2 billion, leaving bitcoin holdings unchanged"
   },
   "https://www.coindesk.com/business/2026/07/20/cross-chain-protocol-allbridge-halts-after-usd1-65-million-flash-loan-exploit": {
@@ -1454,13 +1454,133 @@
   "https://www.elliptic.co/blog/where-crypto-fits-in-fatfs-new-public-private-partnership-report": {
     "title_hash": "893f2c2f3d812639caaff312d6983fb1ed88f4fa66e2a548bf98d062b4afceba",
     "first_seen": "2026-07-20T21:57:20.544598+00:00",
-    "last_seen": "2026-07-20T21:57:20.544598+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
     "title": "Where crypto fits in the FATF’s new public-private partnership report"
   },
   "https://www.trmlabs.com/resources/blog/crypto-aml-software-for-detecting-money-laundering-a-buyers-guide": {
     "title_hash": "41729e51b750f4feb90af8d5e483a7b41164cc47de2ce401c7822343312cbab8",
     "first_seen": "2026-07-20T21:57:20.544598+00:00",
-    "last_seen": "2026-07-20T21:57:20.544598+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
     "title": "Crypto AML Software for Detecting Money Laundering: A Buyer's Guide"
+  },
+  "https://www.acams.org/en/opinion/next-blind-spot-financial-crime-compliance-crypto-and-fiat-convergence": {
+    "title_hash": "2a73a954bd30215bbff877ee41225e4fb8535d58c26d38c95a0a7d6710b14150",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "The next blind spot in financial crime compliance: Crypto and fiat convergence"
+  },
+  "https://www.coindesk.com/policy/2026/07/21/crypto-clarity-act-still-at-mercy-of-ethics-section-as-democrats-balk-at-trump-deal": {
+    "title_hash": "ebe5b1cc8ed08028f8be3303069dd36de80becd2b1577e824ed12b1a6b518900",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Crypto Clarity Act still at mercy of ethics section as Democrats balk at Trump deal"
+  },
+  "https://www.coindesk.com/policy/2026/07/21/white-house-pushes-senate-democrats-to-take-historic-crypto-clarity-act-ethics-deal": {
+    "title_hash": "ae631674bc57b3ca3813c632530916e6030c12286d35d3bc76fb0b9b587759ef",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "White House pushes Senate Democrats to take 'historic' crypto Clarity Act ethics deal"
+  },
+  "https://www.coindesk.com/policy/2026/07/21/russia-s-parliament-passes-crypto-market-law-rules-to-take-effect-sept-1": {
+    "title_hash": "bc7562a8ce639dbf7c6b12e75531d364265d93133e359ed89c6ec0e9642d30a7",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Russia’s parliament passes crypto market law with $3,800 annual cap for retail investors"
+  },
+  "https://www.coindesk.com/policy/2026/07/21/uk-parliamentary-group-begins-inquiry-into-banking-chokepoint-for-crypto-businesses": {
+    "title_hash": "926db01f37228b00ba94f0b13455c67f7322dcb3b6ad2cbd39f55c7061f86d97",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "UK Parliament begins inquiry into banking chokepoint for crypto businesses"
+  },
+  "https://www.theblock.co/post/409173/trump-backed-crypto-ethics-rule-doj-enforcement-prohibits-federal-officials-issuing-cryptocurrencies?utm_source=rss&utm_medium=rss": {
+    "title_hash": "c9f0fee43dcc4c6a314dae5633e8b13ec213c47e7cb6c386635a0074c06066d5",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Trump-backed crypto ethics rule puts DOJ in charge of enforcement, prohibits federal officials from issuing cryptocurrencies"
+  },
+  "https://www.theblock.co/post/409160/the-digital-chamber-sues-illinois-over-incoming-crypto-transaction-tax?utm_source=rss&utm_medium=rss": {
+    "title_hash": "9ec7dfee346f532e82cec992e49fa62014cb88d37fe54c3b0e1e55a9afceb053",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "The Digital Chamber sues Illinois over incoming crypto transaction tax"
+  },
+  "https://www.theblock.co/post/409121/russia-passes-landmark-crypto-bill-allowing-regulated-retail-trading?utm_source=rss&utm_medium=rss": {
+    "title_hash": "3d7fb726ad632825558c561ddb753f638d24dcdd8610e745722229441472222b",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Russia passes landmark crypto bill allowing regulated retail trading"
+  },
+  "https://www.theblock.co/post/409100/bitget-plans-us-expansion-with-without-clarity-act-ceo-says?utm_source=rss&utm_medium=rss": {
+    "title_hash": "a80bd2c543b9f21b499631f29b245e759f14c23e27365bd982191050f408d7c2",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Bitget plans US expansion ‘with or without’ Clarity Act, CEO says"
+  },
+  "https://www.coindesk.com/business/2026/07/21/augustus-raises-usd180-million-to-build-a-clearing-bank-for-the-ai-and-stablecoin-era": {
+    "title_hash": "2293bb12da335f6e3274f3fd25d0e0d88c2efafde0dc328efdb3bb4c8fa19fdb",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Augustus raises $180 million to build a clearing bank for the AI and stablecoin era"
+  },
+  "https://www.theblock.co/post/408987/ripplex-sees-xrp-ledger-agentic-transactions-hitting-10-million-mark-soon?utm_source=rss&utm_medium=rss": {
+    "title_hash": "1abf70289808a2379eca721cb36cf8b3420f421c051bb77bf68c11d44042abf8",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "RippleX sees XRP Ledger agentic transactions hitting 10-million mark soon"
+  },
+  "https://www.theblock.co/post/409119/augustus-raises-180-million-series-b-global-dollar-bank?utm_source=rss&utm_medium=rss": {
+    "title_hash": "cb338bfeced5ac0da867e57c5ef7753713785f3c0d346b83a3fe0b72a85c4f3a",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Augustus raises $180 million Series B at $1 billion valuation to build the ‘Global Dollar Bank’"
+  },
+  "https://www.coindesk.com/business/2026/07/21/jack-mallers-steps-down-as-xxi-capital-ceo-as-tether-s-plans-to-merge-three-bitcoin-firms-falls": {
+    "title_hash": "1c427dcc90a5c1d89b8d4a3bf1212d3a2fbea93d76589550ca83e110664f2be2",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Jack Mallers steps down as XXI Capital CEO as Tether's plans to merge three bitcoin firms falls"
+  },
+  "https://www.theblock.co/post/409155/satsuma-shareholders-approve-bitcoin-treasury-liquidation-london-delisting?utm_source=rss&utm_medium=rss": {
+    "title_hash": "044ebfb7b39082ff95524a6d77d625b326cf24dcc753c8f21965669a2c488720",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Satsuma shareholders approve bitcoin treasury liquidation and London delisting"
+  },
+  "https://www.theblock.co/post/408963/solana-hyperliquid-etfs-dominate-altcoin-fund-flows-despite-flying-under-the-radar?utm_source=rss&utm_medium=rss": {
+    "title_hash": "210ce4288ed352292d5650f16d68db40356631254301c8332a2a7312552c7e52",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Solana, Hyperliquid ETFs dominate altcoin fund flows despite flying under the radar"
+  },
+  "https://www.theblock.co/post/409087/uphold-launches-fractional-share-trading-4000-stocks-and-etfs?utm_source=rss&utm_medium=rss": {
+    "title_hash": "4ace079d96c6eb76bb1ade484bda13908cbbede02586c64c82b8dc323d4fdccd",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Uphold launches fractional share trading in US for more than 4,000 stocks and ETFs"
+  },
+  "https://www.theblock.co/post/409105/coinbase-says-low-risk-config-change-behind-50-minute-july-14-outage-impacting-trading-card-transactions?utm_source=rss&utm_medium=rss": {
+    "title_hash": "50eb137df5a07001f756df54318eafba682f6b2ed28e225ab1f7030b09e4fda6",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Coinbase says ‘low-risk’ config change behind 50-minute July 14 outage impacting trading, card transactions"
+  },
+  "https://www.theblock.co/post/409075/jack-mallers-leaves-twenty-one-as-strike-exits-tethers-three-way-bitcoin-merger?utm_source=rss&utm_medium=rss": {
+    "title_hash": "df1df6f124087fffaabe13045903f12d9adff554d64d16598591395759f68468",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Jack Mallers leaves Twenty One as Strike exits Tether’s three-way bitcoin merger"
+  },
+  "https://www.elliptic.co/blog/crypto-regulatory-affairs-new-regulatory-future": {
+    "title_hash": "67a95af589142d66159a2788696c6f06ae064418a0fa8ad0f8c19d3d6d101a38",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Crypto regulatory affairs: a new regulatory future in the age of AI"
+  },
+  "https://www.trmlabs.com/resources/blog/screening-htx-beyond-the-uk-designation-why-blockchain-intelligence-matters": {
+    "title_hash": "26624da8b9b45f70fb497cb3f5dcef88870a546136d852a6c806ffb0d53724e7",
+    "first_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "title": "Screening HTX Beyond the UK Designation: Why Blockchain Intelligence Matters"
   }
 }
