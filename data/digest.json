@@ -805,13 +805,23 @@
       "priority": "normal",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "The Block — Policy",
             "url": "https://www.theblock.co/post/408193/former-lasd-deputy-jailed-for-obstructing-crypto-mogul-adam-iza-extortion-probe?utm_source=rss&utm_medium=rss"
+          },
+          {
+            "name": "US Attorney's Office, Central District of California (via Wayback Machine + federal court record)",
+            "url": "https://www.justice.gov/usao-cdca/pr/former-la-county-sheriffs-deputy-sentenced-18-months-federal-prison-obstructing"
           }
-        ]
+        ],
+        "checked": {
+          "at": "2026-07-21T08:22:54Z",
+          "against": "US Attorney's Office, Central District of California -- press release (via Wayback Machine archive, 2026-07-14); corroborated by the signed plea agreement in US v. Simpkins, C.D. Cal. No. 2:26-cr-00133-PA (public federal court record via RECAP)",
+          "url": "https://www.justice.gov/usao-cdca/pr/former-la-county-sheriffs-deputy-sentenced-18-months-federal-prison-obstructing",
+          "note": "Official release headline and the plea agreement both confirm Scott Allen Simpkins, a former LA County Sheriff's deputy, received an 18-month federal sentence for obstructing the Adam Iza extortion/fraud investigation; the fine amount is press-corroborated only, not stated in the release."
+        }
       },
       "summary": "A former Los Angeles County sheriff's deputy, Scott Simpkins, was sentenced to eighteen months in United States federal prison and fined for lying to investigators to obstruct the extortion and fraud investigation into crypto entrepreneur Adam Iza.",
       "so_what": "United States prosecutors are pursuing facilitators as well as principals in crypto-linked extortion cases, useful context when adverse-media screening surfaces parties connected to the Adam Iza matter.",
@@ -2774,8 +2784,8 @@
     },
     {
       "name": "Claude summarisation",
-      "status": "dead",
-      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
+      "status": "ok",
+      "note": "Fable -- Claude Code session on 2026-07-21 (101-item backlog spanning 8 unenriched days; used as project director per live instruction)"
     }
   ],
   "run_log": [
@@ -2818,6 +2828,10 @@
     {
       "at": "2026-07-20T21:57:20.544589+00:00",
       "note": "Daily fetch: 13 new items surfaced; 32/34 sources ok"
+    },
+    {
+      "at": "2026-07-21T08:24:40Z",
+      "note": "Enrichment: 97 items summarised and classified (Fable; 101-item backlog from 8 unenriched days). 4 vendor-marketing items removed (expect a deletion_diff critical); 18 corroborated, one summary corrected."
     }
   ],
   "radar": [
