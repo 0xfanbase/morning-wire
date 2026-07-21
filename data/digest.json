@@ -829,13 +829,23 @@
       "priority": "normal",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "The Block — Policy",
             "url": "https://www.theblock.co/post/408180/south-korea-blockchain-economy-h2-2026?utm_source=rss&utm_medium=rss"
+          },
+          {
+            "name": "Government of the Republic of Korea",
+            "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156770707"
           }
-        ]
+        ],
+        "checked": {
+          "at": "2026-07-21T08:04:45Z",
+          "against": "Republic of Korea government -- '2026 Second-Half Economic Growth Strategy', confirmed at the 30th State Council meeting, announced 2026-07-14",
+          "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156770707",
+          "note": "Official strategy document (p.26) confirms pursuing the Digital Asset Basic Act in H2 2026 covering stablecoin institutionalisation and cross-border stablecoin transaction rules; the document says 'stablecoins' generally rather than specifically 'Korean-won-pegged'."
+        }
       },
       "summary": "South Korea's government reaffirmed plans to enact a Digital Asset Basic Act in the second half of 2026, covering business conduct rules and a regime for Korean-won-pegged stablecoins including cross-border transactions, alongside a 2027 central bank digital currency and tokenised government bond pilot and support for spot crypto exchange-traded funds.",
       "so_what": "A statutory framework for won-denominated stablecoins and cross-border stablecoin transactions in South Korea would add another Asia-Pacific regulatory regime for compliance teams to track when assessing regional counterparties and payment corridors.",
@@ -1281,15 +1291,25 @@
       "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — Policy",
             "url": "https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts"
+          },
+          {
+            "name": "Japan Financial Services Agency",
+            "url": "https://www.fsa.go.jp/common/diet/221/02/03.pdf"
           }
-        ]
+        ],
+        "checked": {
+          "at": "2026-07-21T08:04:45Z",
+          "against": "Japan Financial Services Agency -- 221st Diet bill explanatory materials for the Act amending the Financial Instruments and Exchange Act and Payment Services Act, enacted 2026-07-15",
+          "url": "https://www.fsa.go.jp/common/diet/221/02/03.pdf",
+          "note": "Official materials confirm the reclassification, new insider-trading rules, and unregistered-operator penalties raised from 3 to 10 years; corrected the summary after finding the amendments contain no tax provisions -- the 20 percent tax is separate legislation enacted 2026-03-31."
+        }
       },
-      "summary": "Japan's parliament passed amendments to the Financial Instruments and Exchange Act and the Payment Services Act that reclassify cryptoassets as financial instruments rather than payment tools, adding insider-trading rules, heavier penalties for unregistered operators, and a flat 20 percent tax on crypto gains from 2028.",
+      "summary": "Japan's parliament passed amendments to the Financial Instruments and Exchange Act and the Payment Services Act that reclassify cryptoassets as financial instruments rather than payment tools, adding insider-trading rules and heavier penalties for unregistered operators; a separate law enacted earlier in 2026 sets a flat 20 percent tax on crypto gains starting in 2028.",
       "so_what": "Japan's shift to securities-style regulation of cryptoassets, with the new framework due to take effect in 2027, will change disclosure and market-conduct expectations for Japanese exchanges and counterparties that Asia-Pacific-focused compliance teams deal with.",
       "first_seen": "2026-07-15T21:52:28.876396+00:00",
       "date_source": "feed"
