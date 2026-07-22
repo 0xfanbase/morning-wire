@@ -1274,13 +1274,13 @@
   "https://www.chainalysis.com/blog/ofac-sanctions-iran-central-bank-crypto-wallets-freezing-131m-in-stablecoins": {
     "title_hash": "b50b690f7cc4c5a43d2271d702442c680472a090268eb0362ffc9b530245dbf6",
     "first_seen": "2026-07-16T21:58:51.014593+00:00",
-    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
     "title": "OFAC Sanctions Iran Central Bank Crypto Wallets, Freezing $131M in Stablecoins"
   },
   "https://www.elliptic.co/blog/why-crypto-risk-doesnt-require-a-separate-compliance-program": {
     "title_hash": "58b40ce83249b4a5ff0d10ae86e4e2cbcd8b08a9fb3465519b1baddad012d96a",
     "first_seen": "2026-07-16T21:58:51.014593+00:00",
-    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
     "title": "A crypto risk management framework for financial institutions"
   },
   "https://www.coindesk.com/markets/2026/07/17/bitcoin-faces-fresh-headwinds-as-china-s-kimi-beats-claude-gpt-in-coding-benchmark": {
@@ -1454,13 +1454,13 @@
   "https://www.elliptic.co/blog/where-crypto-fits-in-fatfs-new-public-private-partnership-report": {
     "title_hash": "893f2c2f3d812639caaff312d6983fb1ed88f4fa66e2a548bf98d062b4afceba",
     "first_seen": "2026-07-20T21:57:20.544598+00:00",
-    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
     "title": "Where crypto fits in the FATF’s new public-private partnership report"
   },
   "https://www.trmlabs.com/resources/blog/crypto-aml-software-for-detecting-money-laundering-a-buyers-guide": {
     "title_hash": "41729e51b750f4feb90af8d5e483a7b41164cc47de2ce401c7822343312cbab8",
     "first_seen": "2026-07-20T21:57:20.544598+00:00",
-    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
     "title": "Crypto AML Software for Detecting Money Laundering: A Buyer's Guide"
   },
   "https://www.acams.org/en/opinion/next-blind-spot-financial-crime-compliance-crypto-and-fiat-convergence": {
@@ -1472,13 +1472,13 @@
   "https://www.coindesk.com/policy/2026/07/21/crypto-clarity-act-still-at-mercy-of-ethics-section-as-democrats-balk-at-trump-deal": {
     "title_hash": "ebe5b1cc8ed08028f8be3303069dd36de80becd2b1577e824ed12b1a6b518900",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
     "title": "Crypto Clarity Act still at mercy of ethics section as Democrats balk at Trump deal"
   },
   "https://www.coindesk.com/policy/2026/07/21/white-house-pushes-senate-democrats-to-take-historic-crypto-clarity-act-ethics-deal": {
     "title_hash": "ae631674bc57b3ca3813c632530916e6030c12286d35d3bc76fb0b9b587759ef",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
     "title": "White House pushes Senate Democrats to take 'historic' crypto Clarity Act ethics deal"
   },
   "https://www.coindesk.com/policy/2026/07/21/russia-s-parliament-passes-crypto-market-law-rules-to-take-effect-sept-1": {
@@ -1494,10 +1494,10 @@
     "title": "UK Parliament begins inquiry into banking chokepoint for crypto businesses"
   },
   "https://www.theblock.co/post/409173/trump-backed-crypto-ethics-rule-doj-enforcement-prohibits-federal-officials-issuing-cryptocurrencies?utm_source=rss&utm_medium=rss": {
-    "title_hash": "c9f0fee43dcc4c6a314dae5633e8b13ec213c47e7cb6c386635a0074c06066d5",
+    "title_hash": "56b5c1b6b6b4a3e8d2c793f14253197b0099e27db404588612051e71c81a2f32",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-21T21:58:29.485611+00:00",
-    "title": "Trump-backed crypto ethics rule puts DOJ in charge of enforcement, prohibits federal officials from issuing cryptocurrencies"
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Trump-backed crypto ethics rule puts DOJ in charge of enforcement, prohibits federal officials from issuing cryptocurrencies: sources"
   },
   "https://www.theblock.co/post/409160/the-digital-chamber-sues-illinois-over-incoming-crypto-transaction-tax?utm_source=rss&utm_medium=rss": {
     "title_hash": "9ec7dfee346f532e82cec992e49fa62014cb88d37fe54c3b0e1e55a9afceb053",
@@ -1574,13 +1574,151 @@
   "https://www.elliptic.co/blog/crypto-regulatory-affairs-new-regulatory-future": {
     "title_hash": "67a95af589142d66159a2788696c6f06ae064418a0fa8ad0f8c19d3d6d101a38",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
     "title": "Crypto regulatory affairs: a new regulatory future in the age of AI"
   },
   "https://www.trmlabs.com/resources/blog/screening-htx-beyond-the-uk-designation-why-blockchain-intelligence-matters": {
     "title_hash": "26624da8b9b45f70fb497cb3f5dcef88870a546136d852a6c806ffb0d53724e7",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-21T21:58:29.485611+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
     "title": "Screening HTX Beyond the UK Designation: Why Blockchain Intelligence Matters"
+  },
+  "https://www.coindesk.com/business/2026/07/22/kraken-parent-expands-tokenized-stocks-to-hong-kong-uk-and-south-korea-equities": {
+    "title_hash": "92700fd3531883b1076a11684716dec364edae09537403acae10371bde92a003",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Kraken parent expands tokenized stocks to Hong Kong, UK and South Korea equities"
+  },
+  "https://www.theblock.co/post/409448/kraken-parent-payward-partners-gtn-scale-xstocks-internationally-beyond-us-equities?utm_source=rss&utm_medium=rss": {
+    "title_hash": "87d102add6cc78fccc9d72234d926c181cd2bb8d8d01388a58c7552a7ced4df6",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Kraken parent Payward partners with GTN to scale xStocks internationally, beyond US equities"
+  },
+  "https://www.fincen.gov/news/news-releases/fincen-extends-comment-period-proposed-rule-amend-definition-huione-group": {
+    "title_hash": "c69a3b493ca3ac3fe258d4af406d652d5bf5b025dd5e6d9b436b315fb4255768",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "FinCEN Extends Comment Period for Proposed Rule To Amend the Definition of Huione Group"
+  },
+  "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary": {
+    "title_hash": "82553672247bc80d9edcece2a6d93f4fa2ba75c130dd75f6c881523abadf7a63",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "New draft of Clarity Act is out, and it would impose limits on Trump's crypto empire"
+  },
+  "https://www.coindesk.com/policy/2026/07/22/sec-s-peirce-warns-some-defi-vaults-onchain-lending-may-fall-under-securities-laws": {
+    "title_hash": "8cfd594ea52a4df87a81ef890c3dca4b30012e06f85722aab000993609b2e1d0",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "SEC's Peirce warns some DeFi vaults, onchain lending may fall under securities laws"
+  },
+  "https://www.coindesk.com/policy/2026/07/22/u-s-seeks-forfeiture-of-usd25-million-in-crypto-tied-to-romance-and-investment-scams": {
+    "title_hash": "1fe1d37af699649286a152e095f4b929a33e0abee59027abfaa37c58c0022038",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "U.S. seeks forfeiture of $25 million in crypto tied to romance and investment scams"
+  },
+  "https://www.coindesk.com/policy/2026/07/21/crypto-lobby-group-tdc-sues-illinois-to-block-digital-asset-tax": {
+    "title_hash": "5c0f260a901ce5b4407551e7a183fb8e1bacaf1e9ba935cde388f2a59687a86c",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Crypto lobby group Digital Chamber sues Illinois to block digital asset tax"
+  },
+  "https://www.theblock.co/post/409470/bipartisan-support-critical-as-democrats-push-back-on-gop-crypto-bill-on-ethics-grounds?utm_source=rss&utm_medium=rss": {
+    "title_hash": "b60dd188a7e03cfbb38142435ee29d1376615089e07bede372a803279d53e454",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Bipartisan support ‘critical’ as Democrats push back on GOP crypto bill on ethics grounds"
+  },
+  "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029?utm_source=rss&utm_medium=rss": {
+    "title_hash": "cb233576d7e29bad170452b13e7929580c5b2107612b11e5efad758e22fa6329",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Senate releases latest version of Clarity Act including software developer protections and ethics provision with ‘sunset’ date in 2029"
+  },
+  "https://www.theblock.co/post/409418/crypto-wrench-attacks-persist-total-climbs-52-value-targeted-jumps-tenfold-certik?utm_source=rss&utm_medium=rss": {
+    "title_hash": "507cf0f0068946b3e3971af004fac2823ffb20a3bd62268872b4fd6b63165c5b",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Crypto ‘wrench attacks’ persist as total climbs to 52 and value targeted jumps more than tenfold, CertiK says"
+  },
+  "https://www.theblock.co/post/409409/you-will-have-a-painful-fall-secs-peirce-warns-crypto-vault-builders-against-twisting-securities-law?utm_source=rss&utm_medium=rss": {
+    "title_hash": "00c18fce0b02a007e037d35140e30d42740b151ac4c0a47a8faa65df45c20d7f",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "‘You will have a painful fall’: SEC’s Peirce warns crypto vault builders against twisting securities law"
+  },
+  "https://www.theblock.co/post/409390/benchmark-lowers-coinbase-earnings-estimates-clarity-act-eclipse-weak-quarter?utm_source=rss&utm_medium=rss": {
+    "title_hash": "fd5fe925792af6103f494ace8fe09789eddc4992ab4f3dda4cd631d9d176d1b1",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Benchmark lowers Coinbase earnings estimates but says Clarity Act could eclipse weak second quarter"
+  },
+  "https://www.theblock.co/post/409193/bis-warns-stablecoins-capital-controls?utm_source=rss&utm_medium=rss": {
+    "title_hash": "3faa8d99fd2fe8747740e975b9f6897096cc455217db05c1ef5398ad4daa0d89",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "BIS warns USD stablecoins can evade capital controls, challenging traditional market regulations"
+  },
+  "https://www.theblock.co/post/409194/us-seeks-forfeiture-25-million-crypto?utm_source=rss&utm_medium=rss": {
+    "title_hash": "34378eff27e818e092ab9ddf806e8bca5c78accb261e700cbdf06ef1e0f57e34",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "US seeks forfeiture of $25 million in crypto tied to global fraud investigations"
+  },
+  "https://www.theblock.co/post/409187/htx-rotates-wallets-uk-sanctions-screening?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f16a2051e042721717578960ee185b823ec1908027f04a2a3f6d17d5eb65cab9",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "HTX keeps rotating wallets to evade UK sanctions screening: TRM Labs"
+  },
+  "https://www.theblock.co/post/409180/pakistan-crypto-investigation-unit?utm_source=rss&utm_medium=rss": {
+    "title_hash": "d98260e0ae1678e25e8333ea44d11c742ab21518ba25fd5d226c08a1f957e8e0",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Pakistan launches crypto investigation unit to crack down on digital asset crimes: report"
+  },
+  "https://www.coindesk.com/markets/2026/07/22/tesla-holds-bitcoin-steady-reports-usd112m-impairment-loss": {
+    "title_hash": "1cb5bafeac60ede0e796ee2365ce395d6694d81b0ccc655b0b078fe9bef6219a",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Tesla holds bitcoin treasury steady, reports $112M impairment loss"
+  },
+  "https://www.coindesk.com/business/2026/07/22/midnight-token-rebounds-after-wanchain-bridge-hack-hoskinson-calls-for-industry-overhaul": {
+    "title_hash": "74241a024ba15abb06f8ce837b7e55b375fcadbdd45bf85b6e09f4567019d6fa",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Midnight token rebounds 19% after Wanchain bridge hack, Hoskinson calls for ZK revamp"
+  },
+  "https://www.coindesk.com/tech/2026/07/22/balance-stablecoin-collapses-99-after-usd1-million-exploit-drains-its-bitcoin-vaults": {
+    "title_hash": "0091b2b124d080d603473d0f963a56f340994f973aabee2368303bcbabf9ded4",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Balance stablecoin collapses 99% after $1 million exploit drains its bitcoin vaults"
+  },
+  "https://www.theblock.co/post/409453/clarity-act-impact-on-circle-could-be-negative-over-long-term-mizuho?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f6be25175a31f015ba1a05540651f717b877c50c3d7f9949d3c55f722899c08b",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "Clarity Act’s impact on Circle could be negative over the long term, Mizuho says"
+  },
+  "https://www.theblock.co/post/409437/sec-reaches-settlement-coinbase-over-records-requests-gensler-era?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f25df96ae9ae1f16df2b52567b1f59640ae3c8525af4ef2997f2b7d93bd4e995",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "SEC reaches settlement with Coinbase over records requests from Gensler era"
+  },
+  "https://www.theblock.co/post/409398/optimistic-signals-meet-68000-wall-bitcoin-recovery-faces-next-test-analysts?utm_source=rss&utm_medium=rss": {
+    "title_hash": "b9f3fa5138b13b3235fa7e1ae23d7c7f627484f9a8b6264dd79620089ded61e4",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "‘Optimistic signals’ meet a $68,000 wall as bitcoin’s recovery faces its next test: analysts"
+  },
+  "https://www.elliptic.co/blog/how-bitcoin-atm-scams-work": {
+    "title_hash": "39aa08596f98bfbf951e5af8399b25cfb71005870bc4b9dbcf951f115a25e4a6",
+    "first_seen": "2026-07-22T22:00:20.071247+00:00",
+    "last_seen": "2026-07-22T22:00:20.071247+00:00",
+    "title": "How Bitcoin ATM scams work and how banks can spot the risk on-chain"
   }
 }

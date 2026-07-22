@@ -1,529 +1,7 @@
 {
-  "generated_at": "2026-07-21T21:58:29.485603+00:00",
+  "generated_at": "2026-07-22T22:00:20.071241+00:00",
   "top_of_mind": "",
   "items": [
-    {
-      "id": "hk-securities-and-futures-commission-circulars-908dd92f06",
-      "jurisdiction": "HK",
-      "source": "Securities and Futures Commission — Circulars",
-      "title": "Circular to Licensed Corporations, SFC-licensed Virtual Asset Service Providers and Associated Entities - Anti-Money Laundering / Counter-Financing of Terrorism (1) FATF Statement on High-Risk Jurisdictions subject to a Call for Action (2) FATF Statement on Jurisdictions under Increased Monitoring (3) Outcomes from the FATF Plenary, 17-19 June 2026",
-      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39",
-      "published": "2026-07-14T10:31:00+00:00",
-      "type": "guidance",
-      "priority": "high",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "Securities and Futures Commission — Circulars",
-            "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39"
-          }
-        ],
-        "checked": {
-          "at": "2026-07-21T07:59:50+00:00",
-          "against": "Hong Kong Securities and Futures Commission -- Circular SFO/IS/025/2026 (ref 26EC39, 14 July 2026)",
-          "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/aml/doc?refNo=26EC39",
-          "note": "Circular's own text confirms the FATF countermeasures and increased-monitoring list changes verbatim; independently corroborated by the US Treasury's official readout of the same June 2026 FATF plenary outcomes."
-        }
-      },
-      "summary": "Hong Kong's Securities and Futures Commission circulated the Financial Action Task Force (FATF) June 2026 updates to licensed firms and licensed virtual-asset service providers, which keep countermeasures against North Korea and Iran, add Bosnia and Herzegovina and Iraq to the increased-monitoring list, and remove Algeria and Namibia.",
-      "so_what": "Country-risk ratings, screening lists and enhanced due-diligence triggers for Hong Kong virtual-asset business need refreshing for the added and removed jurisdictions, and the Financial Action Task Force consultation on cross-border payment transparency closes on 21 August 2026.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-3cab9f08f4",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Ethereum Foundation privacy team spins out as for-profit EthSystems to serve institutions with Lubin, Bitmine backing",
-      "url": "https://www.theblock.co/post/408331/ethereum-foundation-privacy-team-spins-out-as-for-profit-ethsystems-to-serve-institutions-with-lubin-bitmine-backing?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-14T20:56:51+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/408331/ethereum-foundation-privacy-team-spins-out-as-for-profit-ethsystems-to-serve-institutions-with-lubin-bitmine-backing?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "The Ethereum Foundation's privacy team has spun out into a for-profit company, EthSystems, backed by Joe Lubin, Bitmine and SharpLink, to help financial institutions transact on the public Ethereum blockchain using zero-knowledge cryptography that keeps trade details confidential.",
-      "so_what": "Confidential-transaction tooling for institutions sharpens the tension between on-chain privacy and monitoring visibility, relevant when assessing whether privacy-preserving settlement flows can still meet anti-money-laundering and travel-rule expectations.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-f3033d54d2",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "US-UK transatlantic taskforce unveils digital asset roadmap promoting stablecoin innovation",
-      "url": "https://www.theblock.co/post/408305/us-uk-transatlantic-taskforce-unveils-digital-asset-roadmap-promoting-stablecoin-innovation?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-14T17:59:25+00:00",
-      "type": "news",
-      "priority": "high",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/408305/us-uk-transatlantic-taskforce-unveils-digital-asset-roadmap-promoting-stablecoin-innovation?utm_source=rss&utm_medium=rss"
-          },
-          {
-            "name": "US Treasury and HM Treasury",
-            "url": "https://www.gov.uk/government/publications/recommendations-of-the-transatlantic-taskforce-for-markets-of-the-future/uk-us-joint-statement-on-stablecoins"
-          }
-        ],
-        "checked": {
-          "at": "2026-07-21T07:58:43+00:00",
-          "against": "US Treasury and HM Treasury -- UK-US Joint Statement on Stablecoins, 14 July 2026",
-          "url": "https://www.gov.uk/government/publications/recommendations-of-the-transatlantic-taskforce-for-markets-of-the-future/uk-us-joint-statement-on-stablecoins",
-          "note": "Joint statement requires reserve segregation and a clear, protected legal claim on reserves with priority ahead of other creditors in insolvency -- matches."
-        }
-      },
-      "summary": "The United States Treasury and the United Kingdom's Treasury released a joint digital-asset roadmap backing regulated stablecoins and tokenised deposits, including strong custody and reserve-segregation standards, a protected legal claim on stablecoin reserves in insolvency, and work on cross-border capital raising.",
-      "so_what": "Convergence between the two largest financial markets on stablecoin reserve, custody and insolvency standards will shape the baseline against which other regimes, including Hong Kong's stablecoin framework, are compared and assessed.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-a2b0fc30d7",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Binance bets on becoming a crypto 'super app' as stablecoins reshape growth",
-      "url": "https://www.coindesk.com/business/2026/07/14/binance-bets-on-becoming-a-crypto-super-app-as-stablecoins-reshape-growth",
-      "published": "2026-07-14T17:33:19+00:00",
-      "type": "peer_move",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/business/2026/07/14/binance-bets-on-becoming-a-crypto-super-app-as-stablecoins-reshape-growth"
-          }
-        ]
-      },
-      "summary": "Binance executives said the exchange aims to become a super app spanning payments and broader financial services, with stablecoin-based payments — especially in emerging markets with limited banking access — driving growth beyond trading.",
-      "so_what": "An exchange steering users toward stablecoin payments expands the routes by which retail and corporate payment flows can touch virtual assets, widening the scope that transaction-monitoring and payment-screening controls may need to address.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-institutional-moves-61b1d861b5",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Institutional moves",
-      "title": "Wall Street turns cautious on Circle as analysts warn USDC economics face mounting pressure",
-      "url": "https://www.theblock.co/post/408280/wall-street-cautious-circle-warn-usdc-economics?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-14T17:14:47+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Institutional moves",
-            "url": "https://www.theblock.co/post/408280/wall-street-cautious-circle-warn-usdc-economics?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Several investment banks turned cautious on stablecoin issuer Circle, warning that the rival Open USD consortium and generous revenue-sharing deals with distribution partners are squeezing the reserve income behind its USDC stablecoin, while Bernstein and William Blair stayed positive.",
-      "so_what": "Analyst commentary on stablecoin issuer economics is a market story rather than a compliance event, though shifting competition among major dollar stablecoins can gradually change which tokens dominate client flows.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-431c90ddf2",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Mizuho downgrades Circle to underperform, cuts price target to $50 on Open USD threat",
-      "url": "https://www.coindesk.com/business/2026/07/14/mizuho-downgrades-circle-to-underperform-cuts-price-target-to-usd50-on-open-usd-threat",
-      "published": "2026-07-14T16:59:44+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/business/2026/07/14/mizuho-downgrades-circle-to-underperform-cuts-price-target-to-usd50-on-open-usd-threat"
-          }
-        ]
-      },
-      "summary": "Brokerage Mizuho downgraded stablecoin issuer Circle to underperform and cut its price target from US$85 to US$50, arguing that Open USD — a rival stablecoin from a consortium including Mastercard, Stripe, Coinbase and BlackRock that passes most reserve income to distributors — could undermine Circle's business model.",
-      "so_what": "A single broker's rating change carries no direct compliance implication, but the rise of consortium-issued stablecoins such as Open USD may reshape the issuer landscape that exposure monitoring and due-diligence files need to reflect.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-e353911657",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Wikipedia blackout could hurt how AI engines like ChatGPT understand crypto",
-      "url": "https://www.coindesk.com/policy/2026/07/14/wikipedia-blackout-could-hurt-how-ai-engines-like-chatgpt-understand-crypto",
-      "published": "2026-07-14T16:39:26+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/07/14/wikipedia-blackout-could-hurt-how-ai-engines-like-chatgpt-understand-crypto"
-          }
-        ]
-      },
-      "summary": "A report covered by CoinDesk found that only 67 of the 1,000 largest crypto projects by market value have Wikipedia entries, a coverage gap that may leave artificial-intelligence chat tools, which cite Wikipedia more than any other source, with incomplete information about the industry.",
-      "so_what": "Artificial-intelligence research assistants may hold thin or missing background on many sizeable crypto projects, so their output used in customer or counterparty due diligence should be checked against primary sources.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-647b69a990",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "U.S., UK move to align rules for tokenized finance across world's largest financial markets",
-      "url": "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets",
-      "published": "2026-07-14T16:29:48+00:00",
-      "type": "news",
-      "priority": "high",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets"
-          },
-          {
-            "name": "US Treasury and HM Treasury",
-            "url": "https://home.treasury.gov/system/files/136/TTMFRecommendations.pdf"
-          }
-        ],
-        "checked": {
-          "at": "2026-07-21T07:58:43+00:00",
-          "against": "US Treasury and HM Treasury -- Recommendations of the Transatlantic Taskforce for Markets of the Future (10 recommendations)",
-          "url": "https://home.treasury.gov/system/files/136/TTMFRecommendations.pdf",
-          "note": "Document contains exactly 10 recommendations covering settlement finality of tokenised securities, stablecoins, cross-border tokenisation testing, and Basel cryptoasset-standards review -- matches."
-        }
-      },
-      "summary": "A ten-point roadmap from the United States-United Kingdom Transatlantic Taskforce for Markets of the Future commits regulators in both countries to coordinate on tokenised securities settlement, stablecoins, industry-led cross-border tokenisation pilots and a review of global banking standards for cryptoassets.",
-      "so_what": "Coordinated United States-United Kingdom approaches to tokenised settlement and bank cryptoasset standards will influence the group-level prudential and custody expectations that international banks apply across booking centres, including Hong Kong.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-2c42652152",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "JPMorgan says Hyperliquid's rise threatens Circle's USDC economics",
-      "url": "https://www.coindesk.com/business/2026/07/14/jpmorgan-says-hyperliquid-s-rise-threatens-circle-s-usdc-economics",
-      "published": "2026-07-14T14:57:16+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/07/14/jpmorgan-says-hyperliquid-s-rise-threatens-circle-s-usdc-economics"
-          }
-        ]
-      },
-      "summary": "JPMorgan analysts warned that trading platform Hyperliquid's new arrangement, under which Coinbase collects the reserve income on roughly US$6 billion of USDC stablecoin holdings and passes 90 percent to Hyperliquid, squeezes issuer Circle's earnings and could trigger competing revenue-sharing concessions.",
-      "so_what": "Bank research flagging stablecoin issuer revenue pressure is primarily a market-structure story, requiring awareness of shifting stablecoin economics rather than any direct control or screening change.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-7c37c47958",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Tether leads $7 million round in Pact Labs to boost USAT stablecoin adoption",
-      "url": "https://www.theblock.co/post/408239/tether-leads-7-million-round-in-pact-labs-to-boost-usat-stablecoin-adoption?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-14T14:37:15+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/408239/tether-leads-7-million-round-in-pact-labs-to-boost-usat-stablecoin-adoption?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Tether led a US$7 million investment in Pact Labs, an infrastructure firm building payroll, credit and everyday-payment rails for USAT, the stablecoin Tether launched in January 2026 for the United States market to comply with the GENIUS Act, the United States stablecoin law.",
-      "so_what": "Stablecoin issuers funding wage and everyday-payment rails signal stablecoins moving deeper into retail payment flows, an area where exposure can arise indirectly through payment-processor and fintech client relationships.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-cb73b321c5",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Dragonfly, FirstMark lead $38 million Series A for stablecoin startup Velocity with support from Coinbase, Ripple and more",
-      "url": "https://www.theblock.co/post/408242/dragonfly-firstmark-series-a-stablecoin-velocity-coinbase-ripple-capital-one-ventures?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-14T14:30:43+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/408242/dragonfly-firstmark-series-a-stablecoin-velocity-coinbase-ripple-capital-one-ventures?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Stablecoin treasury and settlement platform Velocity raised US$38 million in a funding round led by Dragonfly and FirstMark, with participation from Coinbase Ventures, Ripple and Capital One Ventures, to help companies hold and settle funds in stablecoins alongside traditional banking rails.",
-      "so_what": "Sustained venture investment in enterprise stablecoin settlement suggests corporate treasury flows will increasingly involve stablecoins, an exposure route to cover in payment screening and counterparty due-diligence reviews.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-74bd98c7b1",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "For pension funds, tokenization’s real play is balance-sheet management, Fidelity’s Lai says",
-      "url": "https://www.coindesk.com/markets/2026/07/14/for-pension-funds-tokenization-s-real-play-is-balance-sheet-management-fidelity-s-lai-says",
-      "published": "2026-07-14T14:05:18+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/markets/2026/07/14/for-pension-funds-tokenization-s-real-play-is-balance-sheet-management-fidelity-s-lai-says"
-          }
-        ]
-      },
-      "summary": "A Fidelity International digital-assets strategist told the WebX conference in Tokyo that the strongest institutional case for tokenised money-market funds is managing cash held across multiple jurisdictions rather than round-the-clock trading, estimating the ecosystem will take about twenty years to mature.",
-      "so_what": "Major asset managers positioning tokenised funds as cross-border cash-management tools suggests such products will appear more often in institutional client portfolios, a trend relevant to product due diligence and monitoring scope across Asia-Pacific.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-54fe5cb4ad",
-      "jurisdiction": "EU",
-      "source": "CoinDesk — Institutional moves",
-      "title": "ECB picks firms including Deutsche Bank, Revolut for digital euro pilot",
-      "url": "https://www.coindesk.com/business/2026/07/14/ecb-picks-firms-including-deutsche-bank-revolut-for-digital-euro-pilot",
-      "published": "2026-07-14T12:10:03+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/07/14/ecb-picks-firms-including-deutsche-bank-revolut-for-digital-euro-pilot"
-          }
-        ]
-      },
-      "summary": "The European Central Bank selected 36 firms, including Deutsche Bank, Revolut, UniCredit, Adyen, SumUp and Worldline, for a twelve-month pilot of a beta digital euro beginning in the second half of 2027, ahead of possible issuance around 2029 subject to European Union legislation.",
-      "so_what": "A digital euro moving from design into live piloting signals that central-bank digital money may join stablecoins in European payment flows within a few years, a development to track when planning screening coverage for European counterparties.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-ebef329e11",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "Japan’s biggest card network taps Circle to bring stablecoins to 40 million merchants",
-      "url": "https://www.coindesk.com/business/2026/07/14/circle-signs-mou-with-japan-s-largest-card-network-to-explore-stablecoin-payments",
-      "published": "2026-07-14T12:01:50+00:00",
-      "type": "peer_move",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/07/14/circle-signs-mou-with-japan-s-largest-card-network-to-explore-stablecoin-payments"
-          },
-          {
-            "name": "JCB Co., Ltd.",
-            "url": "https://www.jcnnewswire.com/pressrelease/108413/3/JCB-Signs-Memorandum-of-Understanding-with-Circle-to-Explore-Collaboration-Utilizing-Stablecoins"
-          }
-        ],
-        "checked": {
-          "at": "2026-07-21T07:58:43+00:00",
-          "against": "JCB Co., Ltd. -- press release, 14 July 2026",
-          "url": "https://www.jcnnewswire.com/pressrelease/108413/3/JCB-Signs-Memorandum-of-Understanding-with-Circle-to-Explore-Collaboration-Utilizing-Stablecoins",
-          "note": "MOU with a Circle affiliate to explore USDC for cross-border treasury/payments and merchant payments, proof of concept on internal fund transfers -- matches."
-        }
-      },
-      "summary": "JCB, Japan's largest payment card network, signed a memorandum of understanding with stablecoin issuer Circle to explore use of the USDC stablecoin for cross-border payments, merchant acceptance and internal fund transfers, beginning with a proof of concept.",
-      "so_what": "Stablecoin payments reaching mainstream Japanese card rails and roughly forty million merchants would widen the points where regulated payment flows touch crypto-assets, relevant to the transaction-monitoring perimeter of banks active across Asia-Pacific.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-6df7f1e589",
-      "jurisdiction": "UK",
-      "source": "The Block — Policy",
-      "title": "UK HMRC adopts ‘no gain, no loss’ tax treatment for crypto lending, liquidity pools",
-      "url": "https://www.theblock.co/post/408206/uk-hmrc-adopts-no-gain-no-loss-tax-treatment-for-crypto-lending-liquidity-pools?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-14T10:59:02+00:00",
-      "type": "final_rule",
-      "priority": "high",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/408206/uk-hmrc-adopts-no-gain-no-loss-tax-treatment-for-crypto-lending-liquidity-pools?utm_source=rss&utm_medium=rss"
-          },
-          {
-            "name": "HM Revenue & Customs",
-            "url": "https://www.gov.uk/government/publications/cryptoasset-loans-and-liquidity-pools/tax-treatment-of-cryptoasset-loans-and-liquidity-pools"
-          }
-        ],
-        "checked": {
-          "at": "2026-07-21T07:58:43+00:00",
-          "against": "HM Revenue & Customs -- policy paper 'Tax treatment of Cryptoasset Loans and Liquidity Pools', published 13 July 2026",
-          "url": "https://www.gov.uk/government/publications/cryptoasset-loans-and-liquidity-pools/tax-treatment-of-cryptoasset-loans-and-liquidity-pools",
-          "note": "No gain, no loss Capital Gains Tax treatment for crypto lending/borrowing/liquidity pools, effect from 6 April 2027 -- matches (announced policy with draft legislation, not yet enacted)."
-        }
-      },
-      "summary": "The United Kingdom's tax authority, His Majesty's Revenue and Customs, adopted a 'no gain, no loss' capital-gains treatment for crypto-asset lending, borrowing and liquidity-pool transactions, deferring tax until the assets are actually disposed of, with effect from 6 April 2027.",
-      "so_what": "The clarified United Kingdom tax treatment of crypto lending and liquidity-pool activity gives compliance teams a firmer reference point when evaluating customer explanations of decentralised-finance transaction flows and source-of-funds claims.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-bad83488d8",
-      "jurisdiction": "US",
-      "source": "The Block — Policy",
-      "title": "US government moves over $288 million in seized bitcoin, ether to Coinbase Prime: Arkham",
-      "url": "https://www.theblock.co/post/408202/us-government-moves-288-million-bitcoin-ether?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-14T10:17:39+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/408202/us-government-moves-288-million-bitcoin-ether?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Wallets linked to the United States government moved about 288 million dollars of bitcoin and ether, seized in criminal cases including the shuttered BTC-e exchange matter, to Coinbase's institutional custody arm, according to analytics firm Arkham Intelligence.",
-      "so_what": "Official movements of forfeited crypto-assets can appear as large exchange inflows from wallets flagged in past criminal cases, so investigators tracing such flows should distinguish government asset management from fresh illicit activity.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-3b2d842714",
-      "jurisdiction": "US",
-      "source": "The Block — Policy",
-      "title": "Former LASD deputy jailed for obstructing crypto ‘mogul’ Adam Iza extortion probe",
-      "url": "https://www.theblock.co/post/408193/former-lasd-deputy-jailed-for-obstructing-crypto-mogul-adam-iza-extortion-probe?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-14T09:55:02+00:00",
-      "type": "enforcement",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/408193/former-lasd-deputy-jailed-for-obstructing-crypto-mogul-adam-iza-extortion-probe?utm_source=rss&utm_medium=rss"
-          },
-          {
-            "name": "US Attorney's Office, Central District of California (via Wayback Machine + federal court record)",
-            "url": "https://www.justice.gov/usao-cdca/pr/former-la-county-sheriffs-deputy-sentenced-18-months-federal-prison-obstructing"
-          }
-        ],
-        "checked": {
-          "at": "2026-07-21T08:22:54+00:00",
-          "against": "US Attorney's Office, Central District of California -- press release (via Wayback Machine archive, 2026-07-14); corroborated by the signed plea agreement in US v. Simpkins, C.D. Cal. No. 2:26-cr-00133-PA (public federal court record via RECAP)",
-          "url": "https://www.justice.gov/usao-cdca/pr/former-la-county-sheriffs-deputy-sentenced-18-months-federal-prison-obstructing",
-          "note": "Official release headline and the plea agreement both confirm Scott Allen Simpkins, a former LA County Sheriff's deputy, received an 18-month federal sentence for obstructing the Adam Iza extortion/fraud investigation; the fine amount is press-corroborated only, not stated in the release."
-        }
-      },
-      "summary": "A former Los Angeles County sheriff's deputy, Scott Simpkins, was sentenced to eighteen months in United States federal prison and fined for lying to investigators to obstruct the extortion and fraud investigation into crypto entrepreneur Adam Iza.",
-      "so_what": "United States prosecutors are pursuing facilitators as well as principals in crypto-linked extortion cases, useful context when adverse-media screening surfaces parties connected to the Adam Iza matter.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-fc94e92412",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "South Korea maintains blockchain economy push as AI takes center stage",
-      "url": "https://www.theblock.co/post/408180/south-korea-blockchain-economy-h2-2026?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-14T08:51:22+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/408180/south-korea-blockchain-economy-h2-2026?utm_source=rss&utm_medium=rss"
-          },
-          {
-            "name": "Government of the Republic of Korea",
-            "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156770707"
-          }
-        ],
-        "checked": {
-          "at": "2026-07-21T08:04:45+00:00",
-          "against": "Republic of Korea government -- '2026 Second-Half Economic Growth Strategy', confirmed at the 30th State Council meeting, announced 2026-07-14",
-          "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156770707",
-          "note": "Official strategy document (p.26) confirms pursuing the Digital Asset Basic Act in H2 2026 covering stablecoin institutionalisation and cross-border stablecoin transaction rules; the document says 'stablecoins' generally rather than specifically 'Korean-won-pegged'."
-        }
-      },
-      "summary": "South Korea's government reaffirmed plans to enact a Digital Asset Basic Act in the second half of 2026, covering business conduct rules and a regime for Korean-won-pegged stablecoins including cross-border transactions, alongside a 2027 central bank digital currency and tokenised government bond pilot and support for spot crypto exchange-traded funds.",
-      "so_what": "A statutory framework for won-denominated stablecoins and cross-border stablecoin transactions in South Korea would add another Asia-Pacific regulatory regime for compliance teams to track when assessing regional counterparties and payment corridors.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-b17d975c58",
-      "jurisdiction": "US",
-      "source": "CoinDesk — Market news",
-      "title": "U.S. government moves $288 million in seized bitcoin, ether to Coinbase Prime",
-      "url": "https://www.coindesk.com/markets/2026/07/14/u-s-government-moves-usd288-million-in-seized-bitcoin-ether-to-coinbase-prime",
-      "published": "2026-07-14T06:28:43+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/07/14/u-s-government-moves-usd288-million-in-seized-bitcoin-ether-to-coinbase-prime"
-          }
-        ]
-      },
-      "summary": "United States government wallets transferred roughly 3,800 bitcoin and 30,007 ether, worth about 288 million dollars and seized in the Ryan Farace and Brian Krewson criminal cases and from the defunct BTC-e exchange, to Coinbase's institutional custody platform, blockchain data from Arkham Intelligence showed.",
-      "so_what": "Known United States seizure addresses feeding an exchange are generally government asset-management activity rather than new criminal flows, context that helps calibrate transaction-screening alerts touching those wallets.",
-      "first_seen": "2026-07-14T21:51:46.650457+00:00",
-      "date_source": "feed"
-    },
     {
       "id": "global-coindesk-market-news-960b4b8fb9",
       "jurisdiction": "GLOBAL",
@@ -2206,12 +1684,12 @@
       "id": "global-the-block-policy-5e474b8534",
       "jurisdiction": "GLOBAL",
       "source": "The Block — Policy",
-      "title": "Trump-backed crypto ethics rule puts DOJ in charge of enforcement, prohibits federal officials from issuing cryptocurrencies",
+      "title": "Trump-backed crypto ethics rule puts DOJ in charge of enforcement, prohibits federal officials from issuing cryptocurrencies: sources",
       "url": "https://www.theblock.co/post/409173/trump-backed-crypto-ethics-rule-doj-enforcement-prohibits-federal-officials-issuing-cryptocurrencies?utm_source=rss&utm_medium=rss",
       "published": "2026-07-21T21:11:05+00:00",
       "type": "news",
       "priority": "normal",
-      "status": "new",
+      "status": "update",
       "verification": {
         "level": "single_source",
         "sources": [
@@ -2221,9 +1699,9 @@
           }
         ]
       },
-      "summary": "Trump-backed crypto ethics rule puts DOJ in charge of enforcement, prohibits federal officials from issuing cryptocurrencies",
+      "summary": "Trump-backed crypto ethics rule puts DOJ in charge of enforcement, prohibits federal officials from issuing cryptocurrencies: sources",
       "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-21T21:58:29.485603+00:00",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
       "date_source": "feed"
     },
     {
@@ -2633,6 +2111,558 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-07-21T21:58:29.485603+00:00",
       "date_source": "page"
+    },
+    {
+      "id": "us-financial-crimes-enforcement-network-fincen-press-releases-3f9821b505",
+      "jurisdiction": "US",
+      "source": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
+      "title": "FinCEN Extends Comment Period for Proposed Rule To Amend the Definition of Huione Group",
+      "url": "https://www.fincen.gov/news/news-releases/fincen-extends-comment-period-proposed-rule-amend-definition-huione-group",
+      "published": "2026-07-22T12:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
+            "url": "https://www.fincen.gov/news/news-releases/fincen-extends-comment-period-proposed-rule-amend-definition-huione-group"
+          }
+        ]
+      },
+      "summary": "FinCEN Extends Comment Period for Proposed Rule To Amend the Definition of Huione Group",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "page"
+    },
+    {
+      "id": "global-the-block-policy-47e7f284ac",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Bipartisan support ‘critical’ as Democrats push back on GOP crypto bill on ethics grounds",
+      "url": "https://www.theblock.co/post/409470/bipartisan-support-critical-as-democrats-push-back-on-gop-crypto-bill-on-ethics-grounds?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T21:57:28+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409470/bipartisan-support-critical-as-democrats-push-back-on-gop-crypto-bill-on-ethics-grounds?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Bipartisan support ‘critical’ as Democrats push back on GOP crypto bill on ethics grounds",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-0e2e3a7764",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Tesla holds bitcoin treasury steady, reports $112M impairment loss",
+      "url": "https://www.coindesk.com/markets/2026/07/22/tesla-holds-bitcoin-steady-reports-usd112m-impairment-loss",
+      "published": "2026-07-22T20:40:24+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/07/22/tesla-holds-bitcoin-steady-reports-usd112m-impairment-loss"
+          }
+        ]
+      },
+      "summary": "Tesla holds bitcoin treasury steady, reports $112M impairment loss",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-aef34e7323",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Clarity Act’s impact on Circle could be negative over the long term, Mizuho says",
+      "url": "https://www.theblock.co/post/409453/clarity-act-impact-on-circle-could-be-negative-over-long-term-mizuho?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T18:02:44+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/409453/clarity-act-impact-on-circle-could-be-negative-over-long-term-mizuho?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Clarity Act’s impact on Circle could be negative over the long term, Mizuho says",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-the-block-china-policy-42f42b5f6a",
+      "jurisdiction": "CN",
+      "source": "The Block — China policy",
+      "title": "Kraken parent Payward partners with GTN to scale xStocks internationally, beyond US equities",
+      "url": "https://www.theblock.co/post/409448/kraken-parent-payward-partners-gtn-scale-xstocks-internationally-beyond-us-equities?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T17:31:33+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — China policy",
+            "url": "https://www.theblock.co/post/409448/kraken-parent-payward-partners-gtn-scale-xstocks-internationally-beyond-us-equities?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Kraken parent Payward partners with GTN to scale xStocks internationally, beyond US equities",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-41e290c817",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "SEC reaches settlement with Coinbase over records requests from Gensler era",
+      "url": "https://www.theblock.co/post/409437/sec-reaches-settlement-coinbase-over-records-requests-gensler-era?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T16:55:08+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/409437/sec-reaches-settlement-coinbase-over-records-requests-gensler-era?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "SEC reaches settlement with Coinbase over records requests from Gensler era",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-c468960ac3",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Senate releases latest version of Clarity Act including software developer protections and ethics provision with ‘sunset’ date in 2029",
+      "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T16:46:22+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409442/senate-releases-latest-clarity-act-software-developer-protections-ethics-provision-sunset-date-2029?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Senate releases latest version of Clarity Act including software developer protections and ethics provision with ‘sunset’ date in 2029",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-4b7b0b590b",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "New draft of Clarity Act is out, and it would impose limits on Trump's crypto empire",
+      "url": "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary",
+      "published": "2026-07-22T16:15:55+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary"
+          }
+        ]
+      },
+      "summary": "New draft of Clarity Act is out, and it would impose limits on Trump's crypto empire",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-7bdbbe005f",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Crypto ‘wrench attacks’ persist as total climbs to 52 and value targeted jumps more than tenfold, CertiK says",
+      "url": "https://www.theblock.co/post/409418/crypto-wrench-attacks-persist-total-climbs-52-value-targeted-jumps-tenfold-certik?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T15:48:35+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409418/crypto-wrench-attacks-persist-total-climbs-52-value-targeted-jumps-tenfold-certik?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Crypto ‘wrench attacks’ persist as total climbs to 52 and value targeted jumps more than tenfold, CertiK says",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-726b0f5700",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "SEC's Peirce warns some DeFi vaults, onchain lending may fall under securities laws",
+      "url": "https://www.coindesk.com/policy/2026/07/22/sec-s-peirce-warns-some-defi-vaults-onchain-lending-may-fall-under-securities-laws",
+      "published": "2026-07-22T15:37:36+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/22/sec-s-peirce-warns-some-defi-vaults-onchain-lending-may-fall-under-securities-laws"
+          }
+        ]
+      },
+      "summary": "SEC's Peirce warns some DeFi vaults, onchain lending may fall under securities laws",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-00502559f9",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "‘You will have a painful fall’: SEC’s Peirce warns crypto vault builders against twisting securities law",
+      "url": "https://www.theblock.co/post/409409/you-will-have-a-painful-fall-secs-peirce-warns-crypto-vault-builders-against-twisting-securities-law?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T15:11:57+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409409/you-will-have-a-painful-fall-secs-peirce-warns-crypto-vault-builders-against-twisting-securities-law?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "‘You will have a painful fall’: SEC’s Peirce warns crypto vault builders against twisting securities law",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-44f9f1b8ee",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Benchmark lowers Coinbase earnings estimates but says Clarity Act could eclipse weak second quarter",
+      "url": "https://www.theblock.co/post/409390/benchmark-lowers-coinbase-earnings-estimates-clarity-act-eclipse-weak-quarter?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T15:03:42+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409390/benchmark-lowers-coinbase-earnings-estimates-clarity-act-eclipse-weak-quarter?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Benchmark lowers Coinbase earnings estimates but says Clarity Act could eclipse weak second quarter",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-8f8c7ee5a6",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "‘Optimistic signals’ meet a $68,000 wall as bitcoin’s recovery faces its next test: analysts",
+      "url": "https://www.theblock.co/post/409398/optimistic-signals-meet-68000-wall-bitcoin-recovery-faces-next-test-analysts?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T14:55:18+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/409398/optimistic-signals-meet-68000-wall-bitcoin-recovery-faces-next-test-analysts?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "‘Optimistic signals’ meet a $68,000 wall as bitcoin’s recovery faces its next test: analysts",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-elliptic-blog-0510c3fcfa",
+      "jurisdiction": "GLOBAL",
+      "source": "Elliptic — Blog",
+      "title": "How Bitcoin ATM scams work and how banks can spot the risk on-chain",
+      "url": "https://www.elliptic.co/blog/how-bitcoin-atm-scams-work",
+      "published": "2026-07-22T14:30:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Elliptic — Blog",
+            "url": "https://www.elliptic.co/blog/how-bitcoin-atm-scams-work"
+          }
+        ]
+      },
+      "summary": "How Bitcoin ATM scams work and how banks can spot the risk on-chain",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-e90697b846",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "U.S. seeks forfeiture of $25 million in crypto tied to romance and investment scams",
+      "url": "https://www.coindesk.com/policy/2026/07/22/u-s-seeks-forfeiture-of-usd25-million-in-crypto-tied-to-romance-and-investment-scams",
+      "published": "2026-07-22T13:45:58+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/22/u-s-seeks-forfeiture-of-usd25-million-in-crypto-tied-to-romance-and-investment-scams"
+          }
+        ]
+      },
+      "summary": "U.S. seeks forfeiture of $25 million in crypto tied to romance and investment scams",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-3e01d2aa61",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Midnight token rebounds 19% after Wanchain bridge hack, Hoskinson calls for ZK revamp",
+      "url": "https://www.coindesk.com/business/2026/07/22/midnight-token-rebounds-after-wanchain-bridge-hack-hoskinson-calls-for-industry-overhaul",
+      "published": "2026-07-22T11:45:42+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/07/22/midnight-token-rebounds-after-wanchain-bridge-hack-hoskinson-calls-for-industry-overhaul"
+          }
+        ]
+      },
+      "summary": "Midnight token rebounds 19% after Wanchain bridge hack, Hoskinson calls for ZK revamp",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-coindesk-china-policy-49756b73f2",
+      "jurisdiction": "CN",
+      "source": "CoinDesk — China policy",
+      "title": "Kraken parent expands tokenized stocks to Hong Kong, UK and South Korea equities",
+      "url": "https://www.coindesk.com/business/2026/07/22/kraken-parent-expands-tokenized-stocks-to-hong-kong-uk-and-south-korea-equities",
+      "published": "2026-07-22T10:30:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — China policy",
+            "url": "https://www.coindesk.com/business/2026/07/22/kraken-parent-expands-tokenized-stocks-to-hong-kong-uk-and-south-korea-equities"
+          }
+        ]
+      },
+      "summary": "Kraken parent expands tokenized stocks to Hong Kong, UK and South Korea equities",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-8cf044729a",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Balance stablecoin collapses 99% after $1 million exploit drains its bitcoin vaults",
+      "url": "https://www.coindesk.com/tech/2026/07/22/balance-stablecoin-collapses-99-after-usd1-million-exploit-drains-its-bitcoin-vaults",
+      "published": "2026-07-22T09:01:54+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/tech/2026/07/22/balance-stablecoin-collapses-99-after-usd1-million-exploit-drains-its-bitcoin-vaults"
+          }
+        ]
+      },
+      "summary": "Balance stablecoin collapses 99% after $1 million exploit drains its bitcoin vaults",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-a3044eda88",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "BIS warns USD stablecoins can evade capital controls, challenging traditional market regulations",
+      "url": "https://www.theblock.co/post/409193/bis-warns-stablecoins-capital-controls?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T07:47:26+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409193/bis-warns-stablecoins-capital-controls?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "BIS warns USD stablecoins can evade capital controls, challenging traditional market regulations",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-177ddc8330",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "US seeks forfeiture of $25 million in crypto tied to global fraud investigations",
+      "url": "https://www.theblock.co/post/409194/us-seeks-forfeiture-25-million-crypto?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T07:41:49+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409194/us-seeks-forfeiture-25-million-crypto?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "US seeks forfeiture of $25 million in crypto tied to global fraud investigations",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-a203b0476c",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "HTX keeps rotating wallets to evade UK sanctions screening: TRM Labs",
+      "url": "https://www.theblock.co/post/409187/htx-rotates-wallets-uk-sanctions-screening?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T04:23:08+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409187/htx-rotates-wallets-uk-sanctions-screening?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "HTX keeps rotating wallets to evade UK sanctions screening: TRM Labs",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-2e4f050ec6",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Pakistan launches crypto investigation unit to crack down on digital asset crimes: report",
+      "url": "https://www.theblock.co/post/409180/pakistan-crypto-investigation-unit?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-22T02:46:51+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409180/pakistan-crypto-investigation-unit?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Pakistan launches crypto investigation unit to crack down on digital asset crimes: report",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-3e138e31b7",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Crypto lobby group Digital Chamber sues Illinois to block digital asset tax",
+      "url": "https://www.coindesk.com/policy/2026/07/21/crypto-lobby-group-tdc-sues-illinois-to-block-digital-asset-tax",
+      "published": "2026-07-21T22:08:10+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/21/crypto-lobby-group-tdc-sues-illinois-to-block-digital-asset-tax"
+          }
+        ]
+      },
+      "summary": "Crypto lobby group Digital Chamber sues Illinois to block digital asset tax",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-22T22:00:20.071241+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -2641,7 +2671,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484746+00:00",
+      "checked_at": "2026-07-22T22:00:20.070586+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2649,7 +2679,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484758+00:00",
+      "checked_at": "2026-07-22T22:00:20.070595+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2657,7 +2687,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484764+00:00",
+      "checked_at": "2026-07-22T22:00:20.070600+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2665,7 +2695,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484768+00:00",
+      "checked_at": "2026-07-22T22:00:20.070603+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2673,7 +2703,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484772+00:00",
+      "checked_at": "2026-07-22T22:00:20.070607+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2681,7 +2711,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484776+00:00",
+      "checked_at": "2026-07-22T22:00:20.070610+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2689,7 +2719,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484779+00:00",
+      "checked_at": "2026-07-22T22:00:20.070617+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2697,7 +2727,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484782+00:00",
+      "checked_at": "2026-07-22T22:00:20.070621+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2705,7 +2735,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484785+00:00",
+      "checked_at": "2026-07-22T22:00:20.070624+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2713,7 +2743,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484789+00:00",
+      "checked_at": "2026-07-22T22:00:20.070627+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2721,7 +2751,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484792+00:00",
+      "checked_at": "2026-07-22T22:00:20.070630+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2729,7 +2759,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484795+00:00",
+      "checked_at": "2026-07-22T22:00:20.070634+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2737,7 +2767,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484798+00:00",
+      "checked_at": "2026-07-22T22:00:20.070637+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2745,7 +2775,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484801+00:00",
+      "checked_at": "2026-07-22T22:00:20.070640+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2753,7 +2783,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484805+00:00",
+      "checked_at": "2026-07-22T22:00:20.070643+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2761,7 +2791,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484808+00:00",
+      "checked_at": "2026-07-22T22:00:20.070646+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2769,7 +2799,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484810+00:00",
+      "checked_at": "2026-07-22T22:00:20.070649+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2777,7 +2807,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484814+00:00",
+      "checked_at": "2026-07-22T22:00:20.070652+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2785,7 +2815,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484841+00:00",
+      "checked_at": "2026-07-22T22:00:20.070655+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -2793,7 +2823,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484845+00:00",
+      "checked_at": "2026-07-22T22:00:20.070658+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2801,15 +2831,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484850+00:00",
+      "checked_at": "2026-07-22T22:00:20.070661+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (no parseable items); 1 consecutive failure — self-heal at 3.",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484855+00:00",
+      "checked_at": "2026-07-22T22:00:20.070667+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2817,7 +2847,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484861+00:00",
+      "checked_at": "2026-07-22T22:00:20.070670+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2825,7 +2855,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-21T21:58:29.484864+00:00",
+      "checked_at": "2026-07-22T22:00:20.070672+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2833,7 +2863,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484867+00:00",
+      "checked_at": "2026-07-22T22:00:20.070675+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2841,7 +2871,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484870+00:00",
+      "checked_at": "2026-07-22T22:00:20.070678+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2849,7 +2879,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484873+00:00",
+      "checked_at": "2026-07-22T22:00:20.070681+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2857,7 +2887,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484876+00:00",
+      "checked_at": "2026-07-22T22:00:20.070684+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2865,7 +2895,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484879+00:00",
+      "checked_at": "2026-07-22T22:00:20.070686+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2873,7 +2903,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484881+00:00",
+      "checked_at": "2026-07-22T22:00:20.070689+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2881,7 +2911,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484885+00:00",
+      "checked_at": "2026-07-22T22:00:20.070691+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2889,7 +2919,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484887+00:00",
+      "checked_at": "2026-07-22T22:00:20.070694+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2897,7 +2927,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-21T21:58:29.484890+00:00",
+      "checked_at": "2026-07-22T22:00:20.070697+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2907,10 +2937,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-07-12T21:42:40.430082+00:00",
-      "note": "Daily fetch: 22 new items surfaced; 33/34 sources ok"
-    },
     {
       "at": "2026-07-13T02:58:14.287837+00:00",
       "note": "Enrichment: 22 items summarised and classified via Claude Code session (Opus, for a large backlog); one licensing item was corroborated and fact-checked against an official release."
@@ -2946,6 +2972,10 @@
     {
       "at": "2026-07-21T21:58:29.485603+00:00",
       "note": "Daily fetch: 20 new items surfaced; 33/34 sources ok"
+    },
+    {
+      "at": "2026-07-22T22:00:20.071241+00:00",
+      "note": "Daily fetch: 24 new items surfaced; 33/34 sources ok"
     }
   ],
   "radar": [
