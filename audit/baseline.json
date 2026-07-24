@@ -1,7 +1,4 @@
 {
-  "trends": {
-    "digest_size": {"note": "populated by future audit runs; not yet tracked"},
-    "jurisdiction_source_health": {"note": "populated by future audit runs; not yet tracked"}
-  },
+  "trends": {"note": "unused placeholder -- no audit code reads or writes trend data; a human decides if real trend tracking is ever worth building"},
   "accepted_dead": []
 }

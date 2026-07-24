@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-23T21:59:35.807907+00:00",
-  "top_of_mind": "A United Kingdom-sanctioned exchange is rotating wallet addresses to defeat static blocklists, meaning screening needs behaviour-based methods, not just address lists. Separately, the United States Financial Crimes Enforcement Network reopened comments to 2 August on widening a money-laundering network's official name coverage for correspondent-banking screening.",
+  "top_of_mind": "The Financial Action Task Force (FATF)'s seventh progress report on virtual assets finds most countries now have crypto anti-money-laundering laws but enforcement lags far behind, so jurisdiction risk ratings should weigh whether rules are genuinely enforced, not merely enacted.",
   "items": [
     {
       "id": "hk-hong-kong-monetary-authority-press-releases-3f17c0262d",
@@ -3087,7 +3087,7 @@
     },
     {
       "at": "2026-07-21T08:24:40Z",
-      "note": "Enrichment: 97 items summarised and classified (Fable; 101-item backlog from 8 unenriched days). 4 vendor-marketing items removed (expect a deletion_diff critical); 18 corroborated, one summary corrected."
+      "note": "Enrichment: 97 items summarised and classified via Claude Code session, clearing a multi-day backlog. Four vendor-marketing items were removed per editorial policy; 18 items corroborated and one summary corrected."
     },
     {
       "at": "2026-07-21T21:58:29.485603+00:00",
@@ -3103,7 +3103,7 @@
     },
     {
       "at": "2026-07-23T22:47:15Z",
-      "note": "Enrichment: 65 items summarised and classified via Claude Code session (Opus-drafted, Sonnet-reviewed; backlog from several unenriched days). Ten high-priority items were corroborated against a second independent or official source, and one summary was corrected after a cross-source fact-check."
+      "note": "Enrichment: 65 items summarised and classified via Claude Code session, clearing a several-day backlog. Ten high-priority items were corroborated against second sources, and one summary was corrected."
     },
     {
       "at": "2026-07-24T22:34:39Z",
