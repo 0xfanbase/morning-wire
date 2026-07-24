@@ -75,6 +75,16 @@ def _load_active_exceptions(repo_root, today=None):
             continue
         if not isinstance(entry.get("check"), str) or not isinstance(entry.get("evidence"), dict):
             continue
+        if not entry["evidence"]:
+            # An empty evidence dict would match EVERY finding of the named
+            # check (all() over zero keys is vacuously true in
+            # _apply_exceptions) -- exactly the whole-check wildcard
+            # suppression the PLAYBOOK's never-list forbids. Refuse it loudly
+            # rather than honouring it.
+            print(f"[audit] ignoring exceptions.json entry for check {entry['check']!r}: "
+                  "empty evidence would act as a whole-check suppression (PLAYBOOK requires "
+                  "one exact finding -- check id + at least one evidence key)")
+            continue
         expires = entry.get("expires")
         if not isinstance(expires, str) or expires < today:
             continue  # expired, or missing an expiry -- PLAYBOOK requires a concrete one
@@ -92,7 +102,11 @@ def _apply_exceptions(findings, exceptions):
     file."""
     for f in findings:
         f["suppressed"] = False
-        if f["check"] in PROTECTED_CHECK_IDS and f["severity"] == "critical":
+        # could_not_run is bypassed alongside critical: a guard that cannot
+        # run must be as loud as a guard that fails (PLAYBOOK Phase 1), so a
+        # protected check's could_not_run must be exactly as unsuppressible
+        # as its critical.
+        if f["check"] in PROTECTED_CHECK_IDS and f["severity"] in ("critical", "could_not_run"):
             continue
         for exc in exceptions:
             if exc["check"] != f["check"]:
@@ -231,6 +245,24 @@ def main():
                      and not f.get("suppressed")]
     exit_code = 1 if hard_critical else 0
 
+    # Ledger append happens BEFORE the --json early exit: the weekly playbook's
+    # own Phase 1 command is `audit.py --json`, and appending only on the
+    # human-readable path silently left the append-only history frozen while
+    # documented audit runs kept happening (the ledger sat stuck at its
+    # 2026-07-09 entry through the 07-13 and 07-24 audits). Still gated on
+    # `not args.ci` -- the daily tripwire is report-only by design.
+    if not args.ci:
+        LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
+        entry = {
+            "at": datetime.now(timezone.utc).isoformat(),
+            "checks_ran": checks_ran,
+            "checks_expected": checks_expected,
+            "findings": findings,
+            "hard_failure": bool(hard_critical),
+        }
+        with LEDGER_PATH.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
     if args.json:
         print(json.dumps({
             "checks_ran": checks_ran, "checks_expected": checks_expected,
@@ -255,18 +287,6 @@ def main():
     for f in suppressed:
         print(f"\n[SUPPRESSED] ({f['mode']}) {f['check']}: {f['title']}")
         print(f"  exception reason: {f.get('suppressed_reason', '(none given)')}")
-
-    if not args.ci:
-        LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
-        entry = {
-            "at": datetime.now(timezone.utc).isoformat(),
-            "checks_ran": checks_ran,
-            "checks_expected": checks_expected,
-            "findings": findings,
-            "hard_failure": bool(hard_critical),
-        }
-        with LEDGER_PATH.open("a", encoding="utf-8") as fh:
-            fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
     sys.exit(exit_code)
 
