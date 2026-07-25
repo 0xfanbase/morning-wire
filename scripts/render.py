@@ -227,8 +227,19 @@ def _valid_radar_entry(entry, generated_at):
         print(f"[render] dropped a malformed radar entry: {entry!r}")
         return False
     date = entry.get("date")
+    # Shape AND calendar validity: the regex alone accepted "2026-08-32",
+    # which then threw client-side in the Intl.DateTimeFormat call and
+    # aborted the whole render -- feed, briefs and radar all blank with no
+    # error shown. fromisoformat alone is not enough either (it accepts the
+    # basic "20260832" form the client can't parse), so both gates stay.
     if not isinstance(date, str) or not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
         print(f"[render] dropped a radar entry with a bad date: {entry.get('date')!r} ({entry.get('label')!r})")
+        return False
+    try:
+        datetime.strptime(date, "%Y-%m-%d")
+    except ValueError:
+        print(f"[render] dropped a radar entry whose date is not a real calendar day: "
+              f"{date!r} ({entry.get('label')!r})")
         return False
     if not isinstance(entry.get("label"), str) or not entry["label"].strip():
         print(f"[render] dropped a radar entry with no label: {entry!r}")
@@ -282,6 +293,19 @@ def _valid_health_entry(entry, source_jurisdictions):
         entry["status"] = "dead"
     entry["note"] = _clean_text(str(entry.get("note") or ""))
     entry["name"] = _clean_text(str(entry.get("name") or "")) or "unknown source"
+    # Same normalize-or-strip discipline every other date field already gets
+    # (verification.checked.at, published, first_seen): the client formats
+    # checked_at with the shared Intl.DateTimeFormat helpers, which throw on
+    # a JS-unparseable value -- degrade to "no timestamp" (the table renders
+    # an em dash) rather than let one bad row abort the tab.
+    if entry.get("checked_at") is not None:
+        normalized = _normalize_iso(entry["checked_at"])
+        if normalized is None:
+            print(f"[render] source_health entry {entry['name']!r} has an unparseable checked_at "
+                  f"{entry.get('checked_at')!r} -- stripped")
+            entry.pop("checked_at", None)
+        else:
+            entry["checked_at"] = normalized
     jurisdiction = source_jurisdictions.get(entry["name"])
     if jurisdiction in VALID_JURISDICTIONS:
         entry["jurisdiction"] = jurisdiction
@@ -418,10 +442,22 @@ def render(digest):
             raise RuntimeError(f"template is missing the {placeholder} placeholder")
 
     og_title, og_desc = _og_strings(clean)
-    html = (template
-            .replace("__DIGEST_JSON__", _safe_json_embed(clean))
-            .replace("__OG_TITLE__", html_mod.escape(og_title, quote=True))
-            .replace("__OG_DESC__", html_mod.escape(og_desc, quote=True)))
+    replacements = {
+        "__DIGEST_JSON__": _safe_json_embed(clean),
+        "__OG_TITLE__": html_mod.escape(og_title, quote=True),
+        "__OG_DESC__": html_mod.escape(og_desc, quote=True),
+    }
+    # ONE pass over the template, so no substitution's OUTPUT is ever itself
+    # scanned for placeholders. Sequential .replace() calls re-scanned the
+    # whole document: a scraped title containing a literal "__OG_DESC__"
+    # landed inside the embedded JSON payload first, then the OG pass
+    # replaced it THERE with HTML-escaped prose -- corrupting the payload,
+    # and (since html.escape leaves backslashes alone) capable of producing
+    # genuinely invalid JSON that kills the page's <script> boot outright.
+    # The lambda replacement is also literal -- re.sub never interprets
+    # backslashes in it, which the JSON payload is full of.
+    html = re.sub("|".join(re.escape(p) for p in replacements),
+                  lambda m: replacements[m.group(0)], template)
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(html, encoding="utf-8")

@@ -12,6 +12,9 @@
 <meta property="og:image" content="https://0xfanbase.github.io/morning-wire/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="Digital Assets Morning Wire" href="https://0xfanbase.github.io/morning-wire/feed.xml">
+<!-- Inline SVG favicon: the page's own terracotta + the ✦ bolt mark it
+     already uses -- self-contained data: URI, no extra file, no request. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23C15F3C'/%3E%3Ctext%20x='32'%20y='46'%20font-size='38'%20text-anchor='middle'%20fill='%23FAF9F5'%20font-family='Georgia,serif'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
 <script>
 /* Set the theme before first paint -- doing this at the end of <body> gives
    dark-OS readers a flash of the light palette on every load. */
@@ -364,6 +367,10 @@ try {
     background: color-mix(in srgb, var(--accent) 10%, transparent);
     color: var(--accent-deep); font-weight: 600;
     padding: 3px 6px 3px 11px;
+    /* The search chip echoes the query verbatim; an unbroken token (a
+       wallet address) has no natural break points, so without this the
+       chip itself pushed the page past the viewport edge. */
+    max-width: 100%; min-width: 0; overflow-wrap: anywhere;
   }
   .applied-strip .fchip button {
     appearance: none; border: none; background: none; cursor: pointer;
@@ -394,7 +401,13 @@ try {
   .font-ctrl button:active:not(:disabled) { color: var(--accent); background: var(--bg-2); }
   .font-ctrl button:disabled { color: var(--ink-3); opacity: .4; cursor: default; }
   .font-ctrl #fontReset { font-size: 11px; font-weight: 600; min-width: 48px; }
-  .search-wrap { display: inline-flex; align-items: center; gap: 6px; }
+  /* max-width + wrap: the toggle(~90px) + open input(up to 340px) + clear
+     button total ~470px as one rigid unit, which overflowed a 390px phone
+     viewport horizontally (the natural query for this audience -- a pasted
+     wallet address -- guarantees the input opens at full width). Capped to
+     the toolbar row and allowed to wrap, the input drops to its own line
+     instead of pushing the page sideways. */
+  .search-wrap { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; flex-wrap: wrap; }
   .search-toggle {
     appearance: none; cursor: pointer;
     min-height: 36px;
@@ -424,7 +437,10 @@ try {
     transition: max-width .34s cubic-bezier(.2,.8,.2,1), opacity .22s ease, padding .34s ease;
   }
   .search-wrap.open #searchInput {
-    flex: 1 1 200px; width: auto; min-width: 160px; max-width: 340px;
+    /* 100% resolves against .search-wrap, itself capped to the toolbar row
+       above -- so the open input can never exceed the viewport however long
+       the typed/pasted query is. */
+    flex: 1 1 200px; width: auto; min-width: 160px; max-width: min(340px, 100%);
     padding: 0 14px; opacity: 1;
     animation: searchGlow .5s ease-out;
   }
@@ -721,6 +737,13 @@ try {
   }
   html[data-theme="dark"] .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
   .chip .count { margin-left: 7px; font-size: 12px; opacity: .85; font-variant-numeric: tabular-nums; }
+  /* A zero-count jurisdiction stays VISIBLE but visually quiet -- for this
+     page's core Hong Kong/mainland China readership, "no chip at all" made
+     a quiet jurisdiction indistinguishable from a broken filter. Still
+     fully interactive: clicking it shows the honest "no items match"
+     state, which is the answer the reader asked for. */
+  .chip.is-empty { opacity: .55; }
+  .chip.is-empty[aria-pressed="true"] { opacity: .8; }
   /* Stacked mobile spacing between filter groups (Range / Jurisdiction /
      Category) -- general sibling rule so a new middle group (Jurisdiction,
      with no class of its own) still gets a gap above it, not just the last. */
@@ -930,6 +953,10 @@ try {
   }
   .empty .e-mark { font-size: 30px; color: var(--accent); opacity: .7; }
   .empty h3, .empty h4 { font-family: var(--serif); font-size: 21px; margin: 12px 0 6px; color: var(--ink); }
+  /* The search headings echo the query verbatim ("No matches for X" /
+     "N results for X"); an unbroken token -- a wallet address, a hash --
+     otherwise pushes the whole page wider than the phone viewport. */
+  #feed .empty h3, #feed .section-head h2 { overflow-wrap: anywhere; }
   .empty p { color: var(--ink-3); font-size: 14.5px; margin: 0; }
 
   /* ============================================================
@@ -1399,7 +1426,16 @@ const _dayKeyCache = new Map();
 function hkDayKey(iso) {
   let v = _dayKeyCache.get(iso);
   if (v === undefined) {
-    v = DAY_KEY_FMT.format(new Date(iso));
+    // Intl.DateTimeFormat.format THROWS on an Invalid Date -- and this
+    // helper sits under every section's render, so one unparseable date
+    // (a radar "2026-08-32" that survives shape-only server validation, a
+    // malformed checked_at) used to abort the ENTIRE render with a blank
+    // page and no error shown. Degrade to the value's own date-shaped
+    // prefix instead: visibly odd on one row beats invisibly broken
+    // everywhere. Day-bucketing stays safe -- a fallback string can only
+    // equal GEN_DAY if it already looked like that exact day.
+    const d = new Date(iso);
+    v = isNaN(d) ? String(iso).slice(0, 10) : DAY_KEY_FMT.format(d);
     _dayKeyCache.set(iso, v);
   }
   return v;
@@ -1605,11 +1641,19 @@ function renderChips(opts = {}) {
     }).join("");
 
     const jc = document.getElementById("jurisChips");
-    const jurisPresent = JURIS_ORDER.filter(j => DIGEST.items.some(it => it.jurisdiction === j));
-    const jList = [["ALL", "All"], ...jurisPresent.map(j => [j, JURIS_FULL[j]])];
+    // EVERY jurisdiction in JURIS_ORDER gets a chip, zero items or not --
+    // an absent chip made "quiet" and "broken" look identical for exactly
+    // the jurisdictions this page's core readership scans for first (a
+    // stretch with no mainland China items removed the China chip
+    // entirely). Zero-count chips render muted (.is-empty) but stay
+    // clickable, mirroring how the Range and Category chips already show
+    // their zeros. The saved-filter restore (restoreFilters) already
+    // handles a remembered lens with no items, so a muted chip can safely
+    // be pressed and remembered.
+    const jList = [["ALL", "All"], ...JURIS_ORDER.map(j => [j, JURIS_FULL[j]])];
     jc.innerHTML = jList.map(([val, lbl]) => {
       const n = scoped.filter(inBucket).filter(it => val === "ALL" ? true : it.jurisdiction === val).length;
-      return `<button class="chip" type="button" aria-pressed="${state.juris === val}" data-juris="${val}">${esc(lbl)}<span class="count">${n}</span></button>`;
+      return `<button class="chip${n === 0 ? " is-empty" : ""}" type="button" aria-pressed="${state.juris === val}" data-juris="${val}">${esc(lbl)}<span class="count">${n}</span></button>`;
     }).join("");
 
     const bc = document.getElementById("bucketChips");
@@ -2415,24 +2459,32 @@ function buildWeekView() {
 /* ============================================================
    MASTER RENDER
    ============================================================ */
+// One section throwing must never blank every section after it: before this
+// guard, a single unexpected bad value reaching e.g. renderRadar() aborted
+// render() mid-way and the feed below simply never appeared -- an empty page
+// with no error shown, the exact failure mode the server-side schema gate
+// exists to prevent. Isolate each section; log loudly instead.
+function renderSection(fn) {
+  try { fn(); } catch (e) { console.error("render: section failed, continuing --", e); }
+}
 function render(opts = {}) {
-  renderChips(opts);
-  renderFreshness();
+  renderSection(() => renderChips(opts));
+  renderSection(renderFreshness);
   // Top of mind is a "what matters overall" summary -- irrelevant once the
   // reader has narrowed to a specific query, so it steps out of the way
   // during search (the filter toolbar itself always stays visible now).
   if (state.search.trim()) {
     document.getElementById("topmind-slot").innerHTML = "";
-    renderSearchResults();
+    renderSection(renderSearchResults);
     return;
   }
-  renderTopOfMind();
+  renderSection(renderTopOfMind);
   const scoped = rangeItems(state.range).filter(matchesFilters);
-  renderJumpnav(scoped);
-  renderPriority(scoped);
-  renderRadar();
-  renderCatchup();
-  renderFeed(scoped);
+  renderSection(() => renderJumpnav(scoped));
+  renderSection(() => renderPriority(scoped));
+  renderSection(renderRadar);
+  renderSection(renderCatchup);
+  renderSection(() => renderFeed(scoped));
 }
 
 /* ---------- header meta ---------- */
@@ -2570,9 +2622,24 @@ function setThemeMenuOpen(open) {
   }
   themeMenu.classList.toggle("open", open);
   btn.setAttribute("aria-expanded", String(open));
+  if (!open) delete themeMenu.dataset.openedBy;
 }
-document.getElementById("themeBtn").onclick = () =>
-  setThemeMenuOpen(!themeMenu.classList.contains("open"));
+// Track HOW the menu came to be open. Without this, a mouse user's natural
+// hover-then-click sequence self-defeated: mouseenter opened the menu, then
+// the click toggled "already open" back to closed -- the click that meant
+// "open this" closed it. A click while hover-open now just confirms the
+// open state (and pins it as click-owned); only a click on a click-opened
+// menu toggles it closed.
+document.getElementById("themeBtn").onclick = () => {
+  const isOpen = themeMenu.classList.contains("open");
+  if (isOpen && themeMenu.dataset.openedBy === "hover") {
+    themeMenu.dataset.openedBy = "click";
+    setThemeMenuOpen(true);
+    return;
+  }
+  if (!isOpen) themeMenu.dataset.openedBy = "click";
+  setThemeMenuOpen(!isOpen);
+};
 document.querySelectorAll("[data-theme-opt]").forEach(b => b.onclick = () => {
   applyTheme(b.dataset.themeOpt);
   try { localStorage.setItem("regradar-theme", b.dataset.themeOpt); } catch (e) {}
@@ -2589,7 +2656,13 @@ document.addEventListener("keydown", e => {
 // .open class (and therefore Escape-to-close) honest about hover-triggered
 // visibility too, which a CSS-only rule left completely out of sync.
 const themeHoverCapable = () => matchMedia("(hover: hover) and (pointer: fine)").matches;
-themeMenu.addEventListener("mouseenter", () => { if (themeHoverCapable()) setThemeMenuOpen(true); });
+themeMenu.addEventListener("mouseenter", () => {
+  if (!themeHoverCapable()) return;
+  // Only claim hover ownership when hover is what's actually opening it --
+  // re-entering a click-opened menu must not downgrade it to hover-owned.
+  if (!themeMenu.classList.contains("open")) themeMenu.dataset.openedBy = "hover";
+  setThemeMenuOpen(true);
+});
 themeMenu.addEventListener("mouseleave", () => { if (themeHoverCapable()) setThemeMenuOpen(false); });
 // WAI-ARIA APG menu-button pattern: ArrowDown/Up on the closed button opens
 // the menu and moves focus to the first/last item; within the open menu,
@@ -2963,9 +3036,17 @@ healthRO.observe(healthTabEl);
 healthRO.observe(healthTableEl);
 window.addEventListener("resize", syncHealthScrollHint);
 
-/* ---------- keep the freshness state honest on a long-lived tab ---------- */
-document.addEventListener("visibilitychange", () => { if (!document.hidden) { renderFreshness(); renderRadar(); } });
-setInterval(() => { renderFreshness(); renderRadar(); }, 10 * 60000);
+/* ---------- keep the freshness state honest on a long-lived tab ----------
+   The radar refresh is skipped during an active search: renderSearchResults
+   deliberately clears the radar slot (results own that space), and an
+   unguarded timer/tab-return refresh painted the strip right back OVER the
+   search results. The freshness banner has no such conflict and stays live. */
+function refreshTimeSensitive() {
+  renderFreshness();
+  if (!state.search.trim()) renderRadar();
+}
+document.addEventListener("visibilitychange", () => { if (!document.hidden) refreshTimeSensitive(); });
+setInterval(refreshTimeSensitive, 10 * 60000);
 
 /* ---------- boot ---------- */
 restoreFilters();

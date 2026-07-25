@@ -2,10 +2,16 @@
 
 Runs fetch -> register diff -> health/heal -> dedupe -> verify -> summarise
 -> render, then leaves data/digest.json, data/seen-items.json, data/sources.json
-and docs/index.html ready for the workflow to commit. On any failure, exits
-non-zero WITHOUT touching digest.json or docs/index.html, so the published
-page never regresses to blank -- the workflow step that follows simply finds
-nothing new to commit.
+and docs/index.html ready for the workflow to commit. On any failure up to
+and including the render step, exits non-zero without touching digest.json,
+seen-items.json or docs/, so the published page never regresses to blank --
+the workflow step that follows simply finds nothing new to commit. One
+narrow honesty note: render writes docs/index.html and docs/feed.xml BEFORE
+the data/ files are persisted (deliberately -- a bad render must not corrupt
+pipeline memory), so a failure in the short window between those writes
+leaves docs/ one run ahead of data/ until the next successful run; the
+workflow's all-or-nothing commit step is what keeps that state out of the
+published branch.
 """
 import hashlib
 import json
