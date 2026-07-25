@@ -36,7 +36,17 @@ jobs:
   deploy:
     # Skip quietly while the repository is still private (free-plan Pages
     # requires a public repo -- running would just produce a daily red X).
-    if: ${{ github.event.repository.private != true }}
+    # For the workflow_run trigger only, also require the upstream "Daily
+    # digest" run to have SUCCEEDED: `types: [completed]` fires on failure
+    # and cancellation too, and a failed pipeline run has nothing new in
+    # docs/ to publish -- deploying anyway is at best a no-op and at worst
+    # (via `concurrency: cancel-in-progress: true` above) cancels an
+    # in-flight deploy of a newer, legitimate push to redeploy the same
+    # content. The push and workflow_dispatch paths are unaffected.
+    if: >-
+      ${{ github.event.repository.private != true &&
+          (github.event_name != 'workflow_run' ||
+           github.event.workflow_run.conclusion == 'success') }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages

@@ -52,16 +52,21 @@ _EXPR_RE = re.compile(r"\$\{\{(.*?)\}\}")
 def _run_blocks(text):
     """Yield (line_no, block_text) for every `run:` step body in a workflow
     file -- both single-line (`run: cmd`) and block-scalar (`run: |` /
-    `run: >`, indented continuation lines) forms. A sibling `env:` key,
+    `run: >`, indented continuation lines) forms, and both the mapping form
+    (`run:` on its own line under `- name:`) and the sequence-item shorthand
+    (`- run: cmd` as the first key of the step). A sibling `env:` key,
     whether before or after `run:` in the step, is never included: it sits
-    at the same indentation as `run:`, not deeper, so the block-scalar
+    at the column where `run:` starts (not deeper), so the block-scalar
     continuation scan stops before it and the single-line form never reaches
-    it at all."""
+    it at all. The continuation-indent threshold is the length of the FULL
+    matched prefix (leading whitespace plus any `- ` sequence marker), i.e.
+    the column of the `run` token itself -- anchoring on the `-` column
+    instead would swallow a sibling `env:` into the scanned block."""
     lines = text.splitlines()
     i = 0
     while i < len(lines):
         line = lines[i]
-        m = re.match(r"^(\s*)run:\s*(.*)$", line)
+        m = re.match(r"^(\s*(?:-\s+)?)run:\s*(.*)$", line)
         if not m:
             i += 1
             continue
@@ -93,7 +98,10 @@ def run(repo_root):
         return [could_not_run(CHECK_ID, "no .github/workflows/ directory found")]
 
     findings = []
-    for path in sorted(workflows_dir.glob("*.yml")):
+    # GitHub Actions loads workflows from both extensions -- scanning only
+    # *.yml would let a workflow dodge this check just by being named *.yaml.
+    paths = sorted(list(workflows_dir.glob("*.yml")) + list(workflows_dir.glob("*.yaml")))
+    for path in paths:
         try:
             text = path.read_text(encoding="utf-8")
         except Exception as exc:

@@ -123,8 +123,19 @@ def run(repo_root, bootstrap_cutoff=BOOTSTRAP_CUTOFF, since_days_override=None):
         # Prefer the id-anchored value: it survives a `url` edit, the
         # dedupe-key-based `anchor` does not (see module docstring / L2).
         anc_fs = anchor_by_id.get(it.get("id")) or anchor.get(key)
-        if anc_fs and cur_fs < anc_fs:
-            cur_dt, anc_dt = _parse(cur_fs), _parse(anc_fs)
+        # Compare INSTANTS, never raw ISO strings: render._normalize_iso
+        # preserves whatever UTC offset it parsed, and the enrichment recipe
+        # legitimately writes midnight-+08:00 values -- a lexicographic
+        # compare only agrees with the timeline when both sides share an
+        # offset, so a genuine multi-hour backdate can hide behind a
+        # differing offset ("...T08:00+08:00" sorts AFTER "...T02:00+00:00"
+        # despite being two hours EARLIER). Fall back to the old string
+        # compare only when a side is unparseable, so nothing that fired
+        # before goes quiet.
+        cur_dt, anc_dt = _parse(cur_fs), _parse(anc_fs)
+        backdated = ((cur_dt < anc_dt) if (cur_dt and anc_dt)
+                     else bool(anc_fs and cur_fs < anc_fs))
+        if backdated:
             backdate_amount = (anc_dt - cur_dt) if (cur_dt and anc_dt) else None
             # A genuine update's first_seen only ever moves forward (see
             # UPDATE_BACKDATE_TOLERANCE above) -- status="update" excuses a
@@ -146,13 +157,27 @@ def run(repo_root, bootstrap_cutoff=BOOTSTRAP_CUTOFF, since_days_override=None):
                 ))
 
         s = seen.get(key)
-        if s and s.get("first_seen") and cur_fs[:16] != s["first_seen"][:16] and not is_update:
-            findings.append(finding(
-                CHECK_ID, "critical",
-                f"first_seen disagrees with seen-items.json for '{it.get('title', '')[:60]}'",
-                f"digest.json first_seen={cur_fs} but seen-items.json (the pipeline's live dedupe "
-                f"memory) records first_seen={s['first_seen']} for the same key.",
-                {"id": it.get("id"), "key": key, "digest_first_seen": cur_fs, "seen_items_first_seen": s["first_seen"]},
-            ))
+        if s and s.get("first_seen") and not is_update:
+            # Same instants-not-strings reasoning as the git-anchor gate
+            # above. The old `[:16]` prefix compare tolerated same-minute
+            # noise but only within a shared offset: the same instant written
+            # at two offsets read as a disagreement, and two instants EIGHT
+            # HOURS apart with matching wall-clock prefixes read as
+            # agreement. Parsed sides disagree when more than the same
+            # sub-minute noise apart; an unparseable side falls back to the
+            # old prefix compare so nothing that fired before goes quiet.
+            seen_dt = _parse(s["first_seen"])
+            if cur_dt and seen_dt:
+                disagrees = abs((cur_dt - seen_dt).total_seconds()) >= 60
+            else:
+                disagrees = cur_fs[:16] != s["first_seen"][:16]
+            if disagrees:
+                findings.append(finding(
+                    CHECK_ID, "critical",
+                    f"first_seen disagrees with seen-items.json for '{it.get('title', '')[:60]}'",
+                    f"digest.json first_seen={cur_fs} but seen-items.json (the pipeline's live dedupe "
+                    f"memory) records first_seen={s['first_seen']} for the same key.",
+                    {"id": it.get("id"), "key": key, "digest_first_seen": cur_fs, "seen_items_first_seen": s["first_seen"]},
+                ))
 
     return findings

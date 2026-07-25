@@ -94,4 +94,29 @@ def run(repo_root):
                     "requires neutral voice -- never 'we'/'our bank'/'your firm'.",
                     {"id": it.get("id"), "field": field, "matched": m.group(0)},
                 ))
+
+    # Session-authored text OUTSIDE items is bound by the same house rule and
+    # renders on the same public page (the Top-of-mind callout, the Audit log
+    # tab, the radar strip, the Source health tab) -- scanning items alone
+    # left every one of those a blind spot.
+    top_level_texts = [("top_of_mind", None, str(digest.get("top_of_mind") or ""))]
+    for i, e in enumerate(digest.get("run_log") or []):
+        if isinstance(e, dict):
+            top_level_texts.append((f"run_log[{i}].note", e.get("at"), str(e.get("note") or "")))
+    for i, e in enumerate(digest.get("radar") or []):
+        if isinstance(e, dict):
+            top_level_texts.append((f"radar[{i}].label", e.get("date"), str(e.get("label") or "")))
+    for i, e in enumerate(digest.get("source_health") or []):
+        if isinstance(e, dict):
+            top_level_texts.append((f"source_health[{i}].note", e.get("name"), str(e.get("note") or "")))
+    for field, ref, text in top_level_texts:
+        m = neutrality_re.search(text)
+        if m:
+            findings.append(finding(
+                CHECK_ID, "warn", f"institutional first-person voice in digest.{field}",
+                f"Matched {m.group(0)!r} in: {text[:120]}. The page's neutrality rule (CLAUDE.md) "
+                "requires neutral voice -- never 'we'/'our bank'/'your firm' -- in every "
+                "session-authored field, not just item prose.",
+                {"field": field, "ref": ref, "matched": m.group(0)},
+            ))
     return findings
