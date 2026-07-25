@@ -24,6 +24,7 @@ CLAIMS = [
     ("README.md", r"rolling ~(\d+)-day window of published items", "run.DIGEST_ITEMS_MAX_AGE_DAYS"),
     ("README.md", r"Items published more than (\d+) days ago are ignored at ingest", "fetch.MAX_ITEM_AGE_DAYS"),
     ("CLAUDE.md", r"capped at (\d+) rows", "page.PRIORITY_CAP"),
+    ("CLAUDE.md", r"hard-caps\s+the list at (\d+) rows", "render.RADAR_MAX_ENTRIES"),
 ]
 
 

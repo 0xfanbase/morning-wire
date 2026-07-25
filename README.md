@@ -43,15 +43,19 @@ Each scheduled run (`scripts/run.py`):
    type, and a priority (`scripts/summarise.py`). All Claude JSON responses are parsed
    defensively (fence-stripped, try/except with safe fallbacks).
 7. **Render** — writes `data/digest.json` and injects it into the designed template
-   (`scripts/templates/page.html`) to produce `docs/index.html`, which GitHub Pages
-   serves from `main`/`docs` (`scripts/render.py`). Every item is schema-validated before
+   (`scripts/templates/page.html`) to produce `docs/index.html`, which
+   `.github/workflows/pages.yml` publishes as a GitHub Actions Pages artifact
+   (Pages source is "GitHub Actions", not branch-serving — see Setup)
+   (`scripts/render.py`). Every item is schema-validated before
    it's embedded in the public page; malformed items are dropped rather than crashing
    the render for everyone else.
-8. **Commit** — the workflow commits `data/` and `docs/` back (plain message; the
-   Pages deploy listens for this workflow's completion via `workflow_run`, since
-   bot-token pushes never fire push-triggered workflows). If any
-   step above raises, `run.py` exits non-zero *before* touching `digest.json` or
-   `docs/index.html`, so the workflow's commit step finds nothing to commit and the
+8. **Commit** — the workflow pushes the updated `data/` and `docs/` to a short-lived
+   `digest/<timestamp>` branch and lands it on `main` through an auto-merged pull
+   request (`main`'s ruleset requires changes to arrive via PR, so a direct push
+   would be rejected). The Pages deploy then listens for this workflow's completion
+   via `workflow_run`, since bot-token activity never fires push-triggered
+   workflows. If any step above raises, `run.py` exits non-zero and the workflow's
+   commit step never runs, so nothing partial lands and the
    published page never regresses to blank.
 
 ## Setup
@@ -157,12 +161,13 @@ Each scheduled run (`scripts/run.py`):
   anything else runs, so a CFTC or Federal Reserve press feed doesn't flood the digest
   with unrelated releases.
 - **Backlog cap.** Items published more than 7 days ago are ignored at ingest
-  (`MAX_ITEM_AGE_DAYS` in `scripts/fetch.py`, aligned with the priority strip's
-  own 7-day window) — feeds return their most recent N
+  (`MAX_ITEM_AGE_DAYS` in `scripts/fetch.py`) — feeds return their most recent N
   entries regardless of age, so a source's first-ever run (or a newly added source)
   would otherwise flood a *daily* digest with months-old items presented as new. The
-  page's priority strip is stricter still: it only admits items published within the
-  last 7 days, each row showing its publication date.
+  page's Priority strip is narrower still: it shows only the current digest day's
+  high-priority items (bucketed by `first_seen`, like the rest of the Today view),
+  each row showing its publication date, and on a quiet day points at the last
+  7 days' still-open high-priority items instead.
 - **No mechanical historical backfill.** The digest fills in gradually from each
   day's real fetch, not by reaching backwards for a month of history on day one:
   RSS/Atom feeds only expose their current recent-items window (typically the last

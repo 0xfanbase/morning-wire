@@ -128,8 +128,9 @@ this:
    windows — into the top-level `radar` list (the page's "On the radar" strip):
    `{"date": "YYYY-MM-DD", "label": "Comments close: <what>", "jurisdiction":
    "HK|CN|US|UK|EU|SG|GLOBAL", "url": "<source url, optional>"}`. Only dates stated
-   in the source — never inferred. Keep at most ~6 rows, nearest first; leave
-   existing rows alone (the renderer auto-drops past dates).
+   in the source — never inferred. Keep at most ~6 rows (the renderer hard-caps
+   the list at 8 rows, `RADAR_MAX_ENTRIES` in `scripts/render.py`), nearest
+   first; leave existing rows alone (the renderer auto-drops past dates).
 6. Optional but valuable: for `tier`-industry items whose `verification.level` is
    `single_source`, use web search to look for an official source or a second
    independent reputable outlet (regulator site, Reuters, Bloomberg, FT or equivalent).
