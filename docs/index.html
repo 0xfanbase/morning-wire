@@ -15,6 +15,9 @@
 <!-- Inline SVG favicon: the page's own terracotta + the ✦ bolt mark it
      already uses -- self-contained data: URI, no extra file, no request. -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23C15F3C'/%3E%3Ctext%20x='32'%20y='46'%20font-size='38'%20text-anchor='middle'%20fill='%23FAF9F5'%20font-family='Georgia,serif'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
+<!-- iOS "Add to Home Screen" icon: separate from the tab favicon above --
+     Safari only honours a real PNG here, not the inline SVG. -->
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script>
 /* Set the theme before first paint -- doing this at the end of <body> gives
    dark-OS readers a flash of the light palette on every load. */
