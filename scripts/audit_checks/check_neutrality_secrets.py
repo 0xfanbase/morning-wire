@@ -5,7 +5,12 @@ covers ongoing drift, not history):
 
 1. Secret-pattern scan over every tracked text file -- API keys, private key
    headers, generic token= assignments. A hit here means something leaked
-   into a commit that shouldn't have.
+   into a commit that shouldn't have. Excludes scripts/audit_checks/fixtures/
+   itself: those files deliberately contain realistic, synthetic
+   secret-shaped strings as red-fixture test data (see e.g.
+   test_l9_secret_pattern_gaps.py) -- scanning them would make this check
+   permanently, falsely red, exactly the kind of noise that erodes trust in
+   a real finding.
 2. Neutrality scan over the published digest content (title/summary/so_what)
    for institutional first-person voice ("our bank", "we recommend", "your
    firm's") -- the page's whole design promise is neutrality; an enrichment
@@ -28,17 +33,29 @@ SECRET_PATTERNS = [
     r"ghp_[A-Za-z0-9]{30,}",
     r"github_pat_[A-Za-z0-9_]{30,}",
     r"gho_[A-Za-z0-9]{30,}",
+    r"ghs_[A-Za-z0-9]{30,}",  # GitHub App installation-access token
+    r"ghu_[A-Za-z0-9]{30,}",  # GitHub App user-to-server token
+    r"ghr_[A-Za-z0-9]{30,}",  # GitHub App refresh token
     r"AKIA[0-9A-Z]{16}",
     r"xox[bpars]-[A-Za-z0-9-]{10,}",
     r"xapp-[A-Za-z0-9-]{10,}",  # Slack app-level token
+    r"hooks\.slack\.com/services/[A-Za-z0-9/]{10,}",  # Slack incoming webhook URL
     r"ya29\.[A-Za-z0-9_-]{20,}",  # Google OAuth access token
     r"-----BEGIN [A-Z ]*PRIVATE KEY-----",
     r"AIza[0-9A-Za-z_-]{35}",
     r"eyJ[A-Za-z0-9_-]{10,}\.eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}",  # JWT (3 dot-separated segments)
-    # Generic "credential-named variable assigned a long quoted string" --
-    # deliberately requires both a suggestive name AND real payload length,
-    # so it doesn't fire on every url `?token=` query-string example in docs.
-    r"(?i:\b(api[_-]?key|secret|password|access[_-]?token|auth[_-]?token)\b\s*[:=]\s*[\"'][A-Za-z0-9_\-/+=]{16,}[\"'])",
+    # Basic-auth-style credentials embedded in a connection string -- a
+    # database URL or any other scheme carrying an inline username and
+    # password ahead of the host, separated by a colon and terminated by an
+    # at-sign. Deliberately requires a non-empty value on both sides of that
+    # colon, so it doesn't fire on a bare `user@host` email-shaped string.
+    r"[a-zA-Z][a-zA-Z0-9+.-]*://[^\s/:@]+:[^\s/@]+@[^\s/]+",
+    # Generic "credential-named variable assigned a long string" -- requires
+    # both a suggestive name AND real payload length, so it doesn't fire on
+    # every url `?token=` query-string example in docs. Covers both a quoted
+    # assignment (api_key: "...") and an unquoted .env-style one
+    # (API_KEY=...), which the quote-only version used to miss entirely.
+    r"(?i:\b(api[_-]?key|secret|password|access[_-]?token|auth[_-]?token)\b\s*[:=]\s*[\"']?[A-Za-z0-9_\-/+=]{16,}[\"']?)",
 ]
 
 NEUTRALITY_PATTERNS = [
@@ -62,6 +79,8 @@ def run(repo_root):
     for rel in tracked:
         path = repo_root / rel
         if not path.is_file() or path.suffix in (".png", ".jpg", ".jpeg", ".ico", ".woff", ".woff2"):
+            continue
+        if rel.startswith("scripts/audit_checks/fixtures/"):
             continue
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")

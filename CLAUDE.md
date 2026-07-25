@@ -256,6 +256,66 @@ recipe — a data/content problem belongs to one of the other two recipes, not h
    PR automatically — always leave it for human review, same as every other change to
    the published page.
 
+## Task: "bi-weekly security audit"
+
+When a bi-weekly security-audit Routine fires (or a human asks to run one),
+this is a dedicated red-team sweep of the repo's CI/CD and script-level
+security posture — a different lens from the weekly integrity audit above,
+which is about data-integrity (silent drops, backdated timestamps, wrongful
+deletions), not attacker-facing surfaces.
+
+**Model: default to Opus for this task specifically** — a deliberate
+exception to the "enrich today's digest" recipe's Sonnet-default rule.
+Dispatch Fable-model sub-agents for the actual per-lens investigation (as
+this session did to establish the pattern below), but the orchestrating
+session doing the synthesis, verification, and fixing should be Opus or
+higher, given the stakes of a security-focused pass.
+
+1. Read `audit/lessons.md` in full first, so this run doesn't rediscover a
+   class already found and fixed (e.g. L4's GitHub Actions script-injection
+   lesson) or a still-open item already on record.
+2. Sweep at least these three lenses, each looking for something a prior
+   pass may have missed rather than confirming things are fine (mirror this
+   project's own L1→L2 adversarial-verification precedent — a "clean bill
+   of health" isn't trusted until something has genuinely tried to break
+   it):
+   - **Injection/RCE**: every `.github/workflows/*.yml` file's `run:` blocks
+     and any `actions/github-script` inline `script:` blocks, for an
+     untrusted GitHub-context expression (a PR branch name, title, body,
+     commit message — see `scripts/audit_checks/check_workflow_injection.py`
+     for the exact documented list) used directly rather than through
+     `env:`. Also actor/identity checks like `scripts/audit_guard.py`'s
+     actor+branch exemption, for string-matching bypasses.
+   - **Supply-chain/dependency**: are all third-party GitHub Actions still
+     pinned to a commit SHA (not a drifted-back mutable tag from a new
+     workflow step someone added)? Is `requirements.txt` still exact-pinned?
+     Any newly-added third-party action, dependency, or self-modifying
+     config write (like `scripts/heal.py`'s source-URL self-repair) worth a
+     fresh look?
+   - **Secrets/exfiltration**: does `ANTHROPIC_API_KEY` (the only repo
+     secret) ever reach a third-party action's sandboxed context, a log
+     line, or a prompt sent to the model itself? Any new outbound
+     `requests.post`/webhook/telemetry call anywhere in `scripts/*.py`?
+3. A genuinely NEW failure class found and fixed gets the same treatment as
+   the weekly audit's Phase 6: a new `audit/lessons.md` entry
+   (LESSON → INVARIANT → EVIDENCE → CHECK → RULE → STATUS) plus a new or
+   extended `scripts/audit_checks/*.py` module with a red-fixture-backed
+   test proving it fires on the bad case, `STATUS: absorbed` only once that
+   check exists and passes. A finding that's a one-off mechanical fix
+   (e.g. re-pinning one drifted action) doesn't need a new lesson entry —
+   just fix it and say so in the PR.
+4. Ship everything on a branch + PR — **never a direct commit, never a
+   self-merge**, same discipline as every other change this project makes
+   (a security-focused PR gets human eyes precisely because it's
+   security-focused, not less).
+5. Log the run to the public Audit log tab the same way the weekly audit's
+   Phase 7 does (`data/digest.json`'s `run_log`, following the Audit log
+   style rule above — vague-but-honest, no forensic detail, at most 2
+   sentences), whether or not anything was found: `{"at": "<now>", "note":
+   "Bi-weekly security audit: no new findings."}` or `"...: found and
+   addressed 1 item; see PR #<NN>."` This is safe to commit directly to
+   main, same as the weekly audit's own log entry (not the fixes themselves).
+
 ## House rules
 
 - The published page must stay neutral: no employer names, no byline, no

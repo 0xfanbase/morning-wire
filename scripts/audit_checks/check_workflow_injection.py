@@ -16,6 +16,13 @@ extraction makes (good enough to catch the known-risky pattern, not a
 general-purpose static analyzer). A human reviewing a PR that adds a new
 workflow step should still eyeball any `${{ }}` usage in `run:` -- this check
 is a backstop, not a replacement for that.
+
+Known limitation, not yet closed (see audit/lessons.md L9): a `run:` value
+written as a multi-line quoted scalar (e.g. `run: 'echo\n  ${{ ... }}'`,
+folding across lines without a `|`/`>` block indicator) has its continuation
+lines silently dropped by `_run_blocks`, which only treats `|`/`>` as
+multi-line. No workflow in this repo currently uses this style; flagged
+here rather than silently assumed fixed.
 """
 import re
 
@@ -46,7 +53,11 @@ UNTRUSTED_PATTERNS = [
     r"github\.event\.pages\b",
 ]
 _UNTRUSTED_RE = re.compile("|".join(UNTRUSTED_PATTERNS))
-_EXPR_RE = re.compile(r"\$\{\{(.*?)\}\}")
+# DOTALL: a block-scalar's lines are joined with "\n" before this searches
+# them (see _run_blocks) -- without DOTALL, an expression split across two
+# physical lines inside that joined block would evade detection because "."
+# wouldn't match the newline between them.
+_EXPR_RE = re.compile(r"\$\{\{(.*?)\}\}", re.DOTALL)
 
 
 def _run_blocks(text):
@@ -61,7 +72,12 @@ def _run_blocks(text):
     it at all. The continuation-indent threshold is the length of the FULL
     matched prefix (leading whitespace plus any `- ` sequence marker), i.e.
     the column of the `run` token itself -- anchoring on the `-` column
-    instead would swallow a sibling `env:` into the scanned block."""
+    instead would swallow a sibling `env:` into the scanned block.
+
+    Known evasion this does NOT catch (see audit/lessons.md L9): a `run:`
+    value written as a multi-line quoted scalar (folding across lines
+    without a `|`/`>` indicator) -- only its first physical line is ever
+    scanned."""
     lines = text.splitlines()
     i = 0
     while i < len(lines):

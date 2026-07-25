@@ -601,3 +601,93 @@ the real `cd206e3` incident — 55 critical `deletion_diff` findings and 28
 critical `first_seen_3way` findings at the incident commit, both previously
 masked to 0 for `deletion_diff`; the full existing fixture suite — L2
 through L7 — re-verified with no regression after this change).
+
+---
+
+## L9 — adversarial red-team pass finds gaps in this session's own new checks (2026-07-08)
+
+**LESSON:** The direct answer to "why did the L4 script-injection bug slip
+through so many rounds of audits" is that it didn't — `git log --oneline --
+.github/workflows/audit-guard.yml` shows that file's entire history is 3
+commits: creation, the commit that introduced the vulnerable
+`github.head_ref` interpolation (earlier the same session, while adding an
+actor/branch exemption), and L4's fix (the very next audit round, same
+session). No prior round had ever specifically red-teamed CI/CD security —
+they covered data-integrity and UI/UX. This lesson is what happened when one
+finally did: a genuinely adversarial pass (three Fable-model agents, each
+told to try to DISPROVE a "clean" verdict rather than confirm it, covering
+injection/RCE, supply-chain, and secrets/exfiltration lenses) found that
+L4's own brand-new check — written to close the injection gap — itself had
+a real detection hole, and that the pre-existing `check_neutrality_secrets`
+had several. A check is not proven sound by being written; it's proven
+sound by someone trying to break it.
+
+**INVARIANT:** A regex-based detection check's own test coverage must
+include the SHAPE of input a real author would actually write, not just the
+shape the check's author happened to write while fixing the original bug.
+
+**EVIDENCE:**
+1. `check_workflow_injection.py`'s `_run_blocks` matched a `run:` key only
+   when preceded by pure whitespace (`^(\s*)run:`), so the far more common
+   single-line step shorthand `- run: cmd` (dash-and-run-on-one-line,
+   distinct from the two-line `- name: ...` / `run: ...` form the original
+   fixture happened to use) was never scanned at all — a live
+   `github.head_ref` injection written this way would sail through the
+   PROTECTED check with zero findings. Reproduced directly:
+   `_run_blocks("- run: echo ${{ github.head_ref }}")` returned an empty
+   list before the fix. A secondary, lower-severity gap in the same check —
+   `_EXPR_RE` had no `re.DOTALL`, so an expression split across two physical
+   lines inside an already-joined multi-line block scalar would also evade
+   `finditer` — was fixed in the same pass. A third, documented-not-fixed
+   limitation remains: a `run:` value written as a multi-line quoted scalar
+   (folding without a `|`/`>` indicator) still only has its first physical
+   line scanned; no workflow in this repo uses that style today.
+2. `check_neutrality_secrets.py`'s `SECRET_PATTERNS` had no pattern for a
+   GitHub App installation/user/refresh token (only `ghp_`/`gho_`/
+   `github_pat_` were covered), no Slack incoming-webhook URL pattern, no
+   basic-auth-style connection-string pattern (a URL carrying an inline
+   username and password ahead of the host), and its one generic
+   "credential-named assignment" rule required a quoted value, silently
+   missing an unquoted `.env`-style assignment.
+3. Two further real findings surfaced by the same pass were investigated
+   but deliberately NOT fixed in this round, because a correct fix has
+   larger operational scope/risk than a same-session side-fix warrants —
+   recorded here as still-open rather than rushed:
+   - `requirements.txt` is exact-pinned but has no `--require-hashes` /
+     per-package hash pins, and every TRANSITIVE dependency (urllib3,
+     certifi, httpx, pydantic, etc.) floats to latest-at-install on every
+     CI run — a much wider supply-chain surface than the four pinned
+     top-level packages suggest. Fixing this properly needs a generated,
+     hash-locked requirements file and verification that CI still installs
+     cleanly, not a hand-edit.
+   - `scripts/heal.py`'s self-heal has no domain allowlist for a
+     Claude-proposed replacement source URL — only "it fetches and parses"
+     is checked — and a successful heal is written to `data/sources.json`
+     then auto-merged to `main` with zero human review via `digest.yml`'s
+     bot PR flow. A structural fix (an allowlist, or routing heal PRs
+     through required review) changes the live, currently-unattended daily
+     pipeline's behavior and deserves explicit human sign-off on the
+     tradeoff (a dead source would then stay dead longer pending review),
+     not a unilateral change bundled into a security-audit side-task.
+
+**CHECK:** `scripts/audit_checks/fixtures/test_l9_inline_dash_evasion.py`
+(red: the exact `- run:` and `- run: |` forms with a live
+`github.head_ref` injection, both now caught; green: the `env:`-based fix
+stays clean) and `test_l9_secret_pattern_gaps.py` (red: all four newly
+covered secret shapes; green: two benign near-miss texts stay clean; plus a
+live-repo check — this pattern set's own first draft accidentally matched
+its own explanatory comment, caught and fixed before landing).
+
+**RULE:** Any new detection-regex check must be adversarially tested against
+at least one input shape the check's own author did NOT use while writing
+it, before its STATUS can read `absorbed` — writing only the fixture that
+happens to match your first implementation proves the implementation
+matches itself, not that it catches the bug class.
+
+**STATUS:** partially absorbed — both audit_checks gaps (workflow-injection
+inline-dash form, neutrality_secrets pattern coverage) are fixed with
+red-fixture-backed checks; the multi-line-quoted-scalar evasion is
+documented as a known, unfixed limitation in the check's own docstring; the
+two larger-scope items (dependency hash-pinning, heal.py's self-heal
+allowlist/review gate) remain open, flagged for explicit human decision
+rather than a unilateral fix.
