@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-25T05:02:47.960445+00:00",
-  "top_of_mind": "",
+  "top_of_mind": "The European Union's 21st Russia sanctions package designates 14 crypto platforms across six countries and, for the first time, lets the EU block any transaction with any crypto provider used by Russia — screening processes should be updated to reflect this broader, provider-based ban.",
   "items": [
     {
       "id": "global-the-block-policy-d4d13fa3f2",
@@ -2346,8 +2346,8 @@
       "source": "Financial Conduct Authority — News",
       "title": "FCA publishes landmark review into impact of AI on retail financial services",
       "url": "https://www.fca.org.uk/news/press-releases/fca-publishes-landmark-review-impact-ai-retail-financial-services",
-      "published": "2026-07-25T05:02:08.007128+00:00",
-      "type": "news",
+      "published": "2026-07-06T00:00:00+08:00",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2359,14 +2359,14 @@
           }
         ]
       },
-      "summary": "FCA publishes landmark review into impact of AI on retail financial services",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The UK Financial Conduct Authority published a review (the Mills Review) on how artificial intelligence could reshape retail financial services by 2030, recommending steps such as strengthening its AI supervision lab and preparing oversight for autonomous financial AI tools.",
+      "so_what": "The review does not address digital assets directly, but its recommendations on supervising autonomous AI-driven financial tools may signal how UK and other regulators eventually approach AI systems used in crypto trading, custody or compliance functions.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
-      "date_source": "fetch_time"
+      "date_source": "verified"
     },
     {
       "id": "global-the-block-policy-1f7fa6488b",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "Bitcoin Policy Institute, Palantir and Anduril join US State Department’s Freedom Tech Excellence Program",
       "url": "https://www.theblock.co/post/409652/bitcoin-policy-institute-palantir-anduril-us-state-departments-freedom-tech-excellence-program?utm_source=rss&utm_medium=rss",
@@ -2383,43 +2383,47 @@
           }
         ]
       },
-      "summary": "Bitcoin Policy Institute, Palantir and Anduril join US State Department’s Freedom Tech Excellence Program",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The US State Department launched a talent-exchange program, the Freedom Tech Excellence Program, embedding staff from organisations including the Bitcoin Policy Institute, Palantir and Anduril into the department to work on online-freedom and privacy-technology initiatives.",
+      "so_what": "This signals closer, informal ties between the current US administration's pro-crypto policy agenda and technology and advocacy groups, which a compliance function may want to track as a channel through which crypto-friendly policy positions could gain traction inside the government.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-chainalysis-blog-d3ffb08abc",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "EU",
       "source": "Chainalysis — Blog",
       "title": "The EU’s 21st Russia Sanctions Package Targets Crypto Platforms for Sanctions Evasion, Introduces Third-Country Ban Mechanism",
       "url": "https://www.chainalysis.com/blog/eu-21st-russia-sanctions-package-crypto-patforms-july-2026/",
       "published": "2026-07-24T19:23:06+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "designation",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "Chainalysis — Blog",
             "url": "https://www.chainalysis.com/blog/eu-21st-russia-sanctions-package-crypto-patforms-july-2026/"
+          },
+          {
+            "name": "CoinDesk",
+            "url": "https://www.coindesk.com/policy/2026/07/24/eu-hits-russia-with-massive-21st-sanctions-package-targeting-usd120b-crypto-network"
           }
         ]
       },
-      "summary": "The EU’s 21st Russia Sanctions Package Targets Crypto Platforms for Sanctions Evasion, Introduces Third-Country Ban Mechanism",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The European Union's 21st sanctions package against Russia, adopted 23 July 2026, designates 14 unnamed crypto platforms based in Georgia, Panama, the United Arab Emirates, the Marshall Islands, Kyrgyzstan and Belarus, and introduces a new mechanism letting the EU ban any transaction between an EU business and any crypto provider used by Russia.",
+      "so_what": "The new third-country ban mechanism significantly widens the net beyond individually-named platforms, so sanctions-screening and crypto-counterparty due-diligence processes should be updated to flag exposure to any crypto provider used by Russia, not only to specifically listed entities.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-0d21378ea3",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "Wise plans to resubmit national trust bank application under GENIUS Act framework",
       "url": "https://www.theblock.co/post/409631/wise-plans-resubmit-national-trust-bank-application-under-genius-act-framework?utm_source=rss&utm_medium=rss",
       "published": "2026-07-24T17:37:34+00:00",
-      "type": "news",
+      "type": "licensing",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2431,14 +2435,14 @@
           }
         ]
       },
-      "summary": "Wise plans to resubmit national trust bank application under GENIUS Act framework",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Wise plans to resubmit its application for a national trust bank charter from the US Office of the Comptroller of the Currency, after its original application was denied on 21 July 2026 because it conflicted with the Federal Reserve's currently-paused policy on granting new payment-system master accounts.",
+      "so_what": "A charter would give Wise direct access to US domestic payment rails, so compliance functions monitoring payment-service-provider relationships should note that approval is not guaranteed while the Federal Reserve's master-account policy remains unsettled, and that Wise has a past multi-state anti-money-laundering consent order on record.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-99cebfdc55",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Policy",
       "title": "Senate Dems should accept the victory they won on Trump's crypto limits: White House",
       "url": "https://www.coindesk.com/policy/2026/07/24/senate-dems-should-accept-the-victory-they-won-on-trump-s-crypto-limits-white-house",
@@ -2455,8 +2459,8 @@
           }
         ]
       },
-      "summary": "Senate Dems should accept the victory they won on Trump's crypto limits: White House",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "US Senate Democrats and the White House are disputing how strictly to enforce ethics restrictions in the pending Digital Asset Market Clarity Act, which would bar senior government officials, including the president, from issuing or promoting cryptocurrencies while in office.",
+      "so_what": "The Clarity Act remains short of the votes needed to pass and its enforcement mechanism is still contested, so a digital-asset compliance function should continue treating a finalised US market-structure law as not yet in place rather than something to build controls around yet.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "feed"
     },
@@ -2479,8 +2483,8 @@
           }
         ]
       },
-      "summary": "Saylor and team overhaul Strategy's bitcoin metrics as bear market persists",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Strategy (formerly MicroStrategy) is changing how it presents its bitcoin holdings and financial metrics to investors, as a prolonged bitcoin bear market puts pressure on its corporate treasury strategy.",
+      "so_what": "Firms holding large corporate bitcoin treasuries may face growing pressure to change how they report crypto-asset exposure, so functions monitoring counterparty balance-sheet crypto exposure should watch for similar disclosure changes elsewhere.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "feed"
     },
@@ -2503,32 +2507,36 @@
           }
         ]
       },
-      "summary": "Brazilian farmers tokenized dairy cows to get loans, bypassing bank lending limits",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "A group of dairy farmers in Brazil are tokenizing their cows as loan collateral, working around limits on how much traditional banks will lend against livestock.",
+      "so_what": "This is a small, informal example of real-world-asset tokenisation being used outside regulated banking channels, worth noting as one more data point on how tokenisation is spreading into unregulated retail and agricultural lending.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-433a200ad7",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "EU",
       "source": "CoinDesk — Policy",
       "title": "EU hits Russia with massive 21st sanctions package targeting $120B crypto network",
       "url": "https://www.coindesk.com/policy/2026/07/24/eu-hits-russia-with-massive-21st-sanctions-package-targeting-usd120b-crypto-network",
       "published": "2026-07-24T11:58:06+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "designation",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — Policy",
             "url": "https://www.coindesk.com/policy/2026/07/24/eu-hits-russia-with-massive-21st-sanctions-package-targeting-usd120b-crypto-network"
+          },
+          {
+            "name": "Chainalysis",
+            "url": "https://www.chainalysis.com/blog/eu-21st-russia-sanctions-package-crypto-patforms-july-2026/"
           }
         ]
       },
-      "summary": "EU hits Russia with massive 21st sanctions package targeting $120B crypto network",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The European Union's 21st sanctions package against Russia, adopted 23 July 2026, designates 14 unnamed crypto platforms based in Georgia, Panama, the United Arab Emirates, the Marshall Islands, Kyrgyzstan and Belarus, plus four entities tied to the A7 cross-border payments network -- which Chainalysis estimates has processed nearly 120 billion US dollars, largely built to help Russia evade sanctions. The package also introduces a new tool letting the EU ban any transaction between an EU business and any crypto provider used by Russia, rather than naming platforms one at a time.",
+      "so_what": "The new blanket-ban mechanism means sanctions and crypto-counterparty screening should be updated to catch exposure to any crypto provider servicing Russia in general, not only to the specific platforms and entities named in this package, since future providers could be covered automatically.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "feed"
     },
@@ -2551,32 +2559,36 @@
           }
         ]
       },
-      "summary": "Bitcoin treasury companies sell up, repay debt, pivot to AI as share prices collapse",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "A number of publicly listed companies that built up large corporate bitcoin holdings are now selling assets, repaying debt, and shifting focus toward artificial intelligence as their share prices fall amid a prolonged bitcoin bear market.",
+      "so_what": "A wave of corporate bitcoin-treasury unwinding could affect the balance-sheet risk profile of counterparties known to hold large crypto positions, so functions tracking counterparty financial health may want to watch for further disclosures from bitcoin-treasury companies.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-trm-labs-insights-59126ed077",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "EU",
       "source": "TRM Labs — Insights",
       "title": "EU's 21st Package Extends Crypto Sanctions to Third Countries",
       "url": "https://www.trmlabs.com/resources/blog/eus-21st-package-extends-crypto-sanctions-to-third-countries",
       "published": "2026-07-24T00:00:00+08:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "designation",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "TRM Labs — Insights",
             "url": "https://www.trmlabs.com/resources/blog/eus-21st-package-extends-crypto-sanctions-to-third-countries"
+          },
+          {
+            "name": "CoinDesk",
+            "url": "https://www.coindesk.com/policy/2026/07/24/eu-hits-russia-with-massive-21st-sanctions-package-targeting-usd120b-crypto-network"
           }
         ]
       },
-      "summary": "EU's 21st Package Extends Crypto Sanctions to Third Countries",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "TRM Labs reported that the European Union's 21st Russia sanctions package, adopted 23 July 2026, extends crypto-related sanctions to platforms based in third countries rather than only Russian entities, adding a mechanism to block EU dealings with crypto providers used by Russia regardless of where those providers are located.",
+      "so_what": "Because this extends sanctions exposure to crypto providers in third countries rather than only Russia-based entities, a counterparty's location outside Russia should no longer be treated as sufficient on its own to rule out sanctions-evasion risk tied to this package.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "page"
     }
@@ -2864,8 +2876,8 @@
     },
     {
       "name": "Claude summarisation",
-      "status": "dead",
-      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
+      "status": "ok",
+      "note": "Sonnet — Claude Code session on 2026-07-25 (off-cycle manual test run)"
     }
   ],
   "run_log": [
@@ -2908,6 +2920,10 @@
     {
       "at": "2026-07-25T05:02:47.960445+00:00",
       "note": "Daily fetch: 10 new items surfaced; 35/36 sources ok"
+    },
+    {
+      "at": "2026-07-25T05:10:00Z",
+      "note": "Off-cycle manual test: a one-off refresh was dispatched and 10 new items were summarised and classified. Three items on the same EU sanctions story were corroborated against each other."
     }
   ],
   "radar": [
