@@ -744,8 +744,13 @@ try {
      page's core Hong Kong/mainland China readership, "no chip at all" made
      a quiet jurisdiction indistinguishable from a broken filter. Still
      fully interactive: clicking it shows the honest "no items match"
-     state, which is the answer the reader asked for. */
-  .chip.is-empty { opacity: .55; }
+     state, which is the answer the reader asked for.
+     .55 measured at 3.07:1 (light) / 4.18:1 (dark) against the toolbar's
+     own background -- both below WCAG AA's 4.5:1 for normal text (found by
+     the nightly UI audit's axe-core scan). .75 clears 4.5:1 with margin in
+     both themes (5.2:1 / 6.6:1) while staying visibly quieter than
+     full-strength text. */
+  .chip.is-empty { opacity: .75; }
   .chip.is-empty[aria-pressed="true"] { opacity: .8; }
   /* Stacked mobile spacing between filter groups (Range / Jurisdiction /
      Category) -- general sibling rule so a new middle group (Jurisdiction,
