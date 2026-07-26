@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-25T05:02:47.960445+00:00",
-  "top_of_mind": "The European Union's 21st Russia sanctions package designates 14 crypto platforms across six countries and, for the first time, lets the EU block any transaction with any crypto provider used by Russia — screening processes should be updated to reflect this broader, provider-based ban.",
+  "generated_at": "2026-07-26T21:52:48.755931+00:00",
+  "top_of_mind": "",
   "items": [
     {
       "id": "global-the-block-policy-d4d13fa3f2",
@@ -2591,6 +2591,150 @@
       "so_what": "Because this extends sanctions exposure to crypto providers in third countries rather than only Russia-based entities, a counterparty's location outside Russia should no longer be treated as sufficient on its own to rule out sanctions-evasion risk tied to this package.",
       "first_seen": "2026-07-25T05:02:47.960445+00:00",
       "date_source": "page"
+    },
+    {
+      "id": "global-the-block-market-news-1cb05d7b82",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Michael Saylor teases ‘another color’ after four straight weeks without a Strategy bitcoin buy",
+      "url": "https://www.theblock.co/post/409675/michael-saylor-teases-another-color-after-four-straight-weeks-without-a-strategy-bitcoin-buy?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-26T20:49:10+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/409675/michael-saylor-teases-another-color-after-four-straight-weeks-without-a-strategy-bitcoin-buy?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Michael Saylor teases ‘another color’ after four straight weeks without a Strategy bitcoin buy",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-26T21:52:48.755931+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-48e14165c9",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "2 weeks left for Clarity: State of Crypto",
+      "url": "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto",
+      "published": "2026-07-26T18:30:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto"
+          }
+        ]
+      },
+      "summary": "2 weeks left for Clarity: State of Crypto",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-26T21:52:48.755931+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-0e26faf0bc",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Europe's high regulatory bar could spark new crypto industry M&A wave",
+      "url": "https://www.coindesk.com/policy/2026/07/26/europe-s-high-regulatory-bar-could-spark-new-crypto-industry-m-and-a-wave",
+      "published": "2026-07-26T10:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/26/europe-s-high-regulatory-bar-could-spark-new-crypto-industry-m-and-a-wave"
+          }
+        ]
+      },
+      "summary": "Europe's high regulatory bar could spark new crypto industry M&A wave",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-26T21:52:48.755931+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-7a8ab813d7",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "EU adds HTX to Russia sanctions list, barring transactions starting Aug. 23",
+      "url": "https://www.theblock.co/post/409668/eu-adds-htx-to-russia-sanctions-list-barring-transactions-starting-aug-23?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-25T21:23:27+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409668/eu-adds-htx-to-russia-sanctions-list-barring-transactions-starting-aug-23?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "EU adds HTX to Russia sanctions list, barring transactions starting Aug. 23",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-26T21:52:48.755931+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-fb298216d4",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto",
+      "url": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
+      "published": "2026-07-25T15:46:05+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto"
+          }
+        ]
+      },
+      "summary": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-26T21:52:48.755931+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-2dc8476a71",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Bitcoin ETF weekly trading volume falls to lowest since October 2024 as ether funds lead inflows again",
+      "url": "https://www.theblock.co/post/409660/bitcoin-etf-weekly-trading-volume-falls-to-lowest-since-october-2024-as-ether-funds-lead-inflows-again?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-25T13:59:06+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/409660/bitcoin-etf-weekly-trading-volume-falls-to-lowest-since-october-2024-as-ether-funds-lead-inflows-again?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Bitcoin ETF weekly trading volume falls to lowest since October 2024 as ether funds lead inflows again",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-26T21:52:48.755931+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -2599,7 +2743,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959450+00:00",
+      "checked_at": "2026-07-26T21:52:48.754885+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2607,7 +2751,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959465+00:00",
+      "checked_at": "2026-07-26T21:52:48.754900+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2615,7 +2759,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959473+00:00",
+      "checked_at": "2026-07-26T21:52:48.754908+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2623,7 +2767,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959479+00:00",
+      "checked_at": "2026-07-26T21:52:48.754914+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2631,7 +2775,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959486+00:00",
+      "checked_at": "2026-07-26T21:52:48.754920+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2639,7 +2783,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959492+00:00",
+      "checked_at": "2026-07-26T21:52:48.754926+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2647,7 +2791,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959498+00:00",
+      "checked_at": "2026-07-26T21:52:48.754932+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2655,7 +2799,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959503+00:00",
+      "checked_at": "2026-07-26T21:52:48.754937+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2663,7 +2807,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959508+00:00",
+      "checked_at": "2026-07-26T21:52:48.754942+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2671,7 +2815,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959514+00:00",
+      "checked_at": "2026-07-26T21:52:48.754947+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2679,7 +2823,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959519+00:00",
+      "checked_at": "2026-07-26T21:52:48.754953+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2687,7 +2831,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959524+00:00",
+      "checked_at": "2026-07-26T21:52:48.754959+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2695,15 +2839,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959529+00:00",
+      "checked_at": "2026-07-26T21:52:48.754964+00:00",
       "jurisdiction": "US"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='www.occ.gov', port=443): Max retries exceeded with url: /rss/occ_news.xml (Caused by NewConnectionError(\"HTTPSConnection(host='www.occ.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))); 1 consecutive failure — self-heal at 3.",
+      "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959538+00:00",
+      "checked_at": "2026-07-26T21:52:48.754970+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2711,7 +2855,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959544+00:00",
+      "checked_at": "2026-07-26T21:52:48.754975+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2719,7 +2863,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959549+00:00",
+      "checked_at": "2026-07-26T21:52:48.754980+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2727,7 +2871,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959554+00:00",
+      "checked_at": "2026-07-26T21:52:48.754985+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2735,7 +2879,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959559+00:00",
+      "checked_at": "2026-07-26T21:52:48.754990+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2743,7 +2887,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959564+00:00",
+      "checked_at": "2026-07-26T21:52:48.754996+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2751,7 +2895,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959570+00:00",
+      "checked_at": "2026-07-26T21:52:48.755001+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2759,7 +2903,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959576+00:00",
+      "checked_at": "2026-07-26T21:52:48.755006+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -2767,7 +2911,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959582+00:00",
+      "checked_at": "2026-07-26T21:52:48.755011+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2775,7 +2919,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959585+00:00",
+      "checked_at": "2026-07-26T21:52:48.755016+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2783,7 +2927,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959589+00:00",
+      "checked_at": "2026-07-26T21:52:48.755021+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2791,7 +2935,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959592+00:00",
+      "checked_at": "2026-07-26T21:52:48.755026+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2799,7 +2943,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-25T05:02:47.959595+00:00",
+      "checked_at": "2026-07-26T21:52:48.755031+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2807,7 +2951,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959598+00:00",
+      "checked_at": "2026-07-26T21:52:48.755037+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2815,7 +2959,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959601+00:00",
+      "checked_at": "2026-07-26T21:52:48.755041+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2823,7 +2967,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959605+00:00",
+      "checked_at": "2026-07-26T21:52:48.755047+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2831,7 +2975,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959608+00:00",
+      "checked_at": "2026-07-26T21:52:48.755052+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2839,7 +2983,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959611+00:00",
+      "checked_at": "2026-07-26T21:52:48.755058+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2847,7 +2991,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959614+00:00",
+      "checked_at": "2026-07-26T21:52:48.755064+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2855,7 +2999,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959617+00:00",
+      "checked_at": "2026-07-26T21:52:48.755070+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2863,7 +3007,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959620+00:00",
+      "checked_at": "2026-07-26T21:52:48.755073+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2871,24 +3015,16 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-25T05:02:47.959623+00:00",
+      "checked_at": "2026-07-26T21:52:48.755076+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Claude summarisation",
-      "status": "ok",
-      "note": "Sonnet — Claude Code session on 2026-07-25 (off-cycle manual test run)"
+      "status": "dead",
+      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
     }
   ],
   "run_log": [
-    {
-      "at": "2026-07-16T21:58:51.014585+00:00",
-      "note": "Daily fetch: 17 new items surfaced; 32/34 sources ok"
-    },
-    {
-      "at": "2026-07-19T21:43:43.273201+00:00",
-      "note": "Daily fetch: 17 new items surfaced; 32/34 sources ok"
-    },
     {
       "at": "2026-07-20T21:57:20.544589+00:00",
       "note": "Daily fetch: 13 new items surfaced; 32/34 sources ok"
@@ -2924,6 +3060,10 @@
     {
       "at": "2026-07-25T05:10:00Z",
       "note": "Off-cycle manual test: a one-off refresh was dispatched and 10 new items were summarised and classified. Three items on the same EU sanctions story were corroborated against each other."
+    },
+    {
+      "at": "2026-07-26T21:52:48.755931+00:00",
+      "note": "Daily fetch: 6 new items surfaced; 35/36 sources ok"
     }
   ],
   "radar": [
