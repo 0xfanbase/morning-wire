@@ -302,13 +302,13 @@
   "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown": {
     "title_hash": "8c3b80518513189fa8c2a73e13e7bb89731b2167c8f87f52dd05924c8d2b1f37",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Operation Prince: Inside a $15 billion crypto fraud takedown"
   },
   "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance": {
     "title_hash": "845f69cfb33b768889d3284ccfca72c2ffb52666caedf185fa77ff391743f8f2",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "What OFAC’s crypto mixer sanctions mean for financial crime compliance"
   },
   "https://www.acams.org/en/opinion/crypto-threats-vulnerabilities-and-what-do-next": {
@@ -1454,7 +1454,7 @@
   "https://www.elliptic.co/blog/where-crypto-fits-in-fatfs-new-public-private-partnership-report": {
     "title_hash": "893f2c2f3d812639caaff312d6983fb1ed88f4fa66e2a548bf98d062b4afceba",
     "first_seen": "2026-07-20T21:57:20.544598+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Where crypto fits in the FATF’s new public-private partnership report"
   },
   "https://www.trmlabs.com/resources/blog/crypto-aml-software-for-detecting-money-laundering-a-buyers-guide": {
@@ -1466,7 +1466,7 @@
   "https://www.acams.org/en/opinion/next-blind-spot-financial-crime-compliance-crypto-and-fiat-convergence": {
     "title_hash": "2a73a954bd30215bbff877ee41225e4fb8535d58c26d38c95a0a7d6710b14150",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "The next blind spot in financial crime compliance: Crypto and fiat convergence"
   },
   "https://www.coindesk.com/policy/2026/07/21/crypto-clarity-act-still-at-mercy-of-ethics-section-as-democrats-balk-at-trump-deal": {
@@ -1574,13 +1574,13 @@
   "https://www.elliptic.co/blog/crypto-regulatory-affairs-new-regulatory-future": {
     "title_hash": "67a95af589142d66159a2788696c6f06ae064418a0fa8ad0f8c19d3d6d101a38",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Crypto regulatory affairs: a new regulatory future in the age of AI"
   },
   "https://www.trmlabs.com/resources/blog/screening-htx-beyond-the-uk-designation-why-blockchain-intelligence-matters": {
     "title_hash": "26624da8b9b45f70fb497cb3f5dcef88870a546136d852a6c806ffb0d53724e7",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Screening HTX Beyond the UK Designation: Why Blockchain Intelligence Matters"
   },
   "https://www.coindesk.com/business/2026/07/22/kraken-parent-expands-tokenized-stocks-to-hong-kong-uk-and-south-korea-equities": {
@@ -1598,7 +1598,7 @@
   "https://www.fincen.gov/news/news-releases/fincen-extends-comment-period-proposed-rule-amend-definition-huione-group": {
     "title_hash": "c69a3b493ca3ac3fe258d4af406d652d5bf5b025dd5e6d9b436b315fb4255768",
     "first_seen": "2026-07-22T22:00:20.071247+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "FinCEN Extends Comment Period for Proposed Rule To Amend the Definition of Huione Group"
   },
   "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary": {
@@ -1718,19 +1718,19 @@
   "https://www.elliptic.co/blog/how-bitcoin-atm-scams-work": {
     "title_hash": "39aa08596f98bfbf951e5af8399b25cfb71005870bc4b9dbcf951f115a25e4a6",
     "first_seen": "2026-07-22T22:00:20.071247+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "How Bitcoin ATM scams work and how banks can spot the risk on-chain"
   },
   "https://www.acams.org/en/opinion/tren-de-aragua-crypto-and-cash-inside-one-chiles-biggest-money-laundering-cases": {
     "title_hash": "7eaee6c7cdffb693850b8754b7b980ab3676828ca93dcfb31ee08f9c3701a884",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Tren de Aragua, Crypto, and Cash: Inside One of Chile’s Biggest Money Laundering Cases"
   },
   "https://www.acams.org/en/opinion/compliance-powers-stablecoins": {
     "title_hash": "047b177c5a1ade3d23fc1342bff7f77455c733cfe0131af551315583ee0152d7",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "The compliance powers of stablecoins"
   },
   "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules": {
@@ -1766,13 +1766,13 @@
   "https://www.theblock.co/post/409536/moonpay-discover-network-card-payments-crypto?utm_source=rss&utm_medium=rss": {
     "title_hash": "f5057c4bfcc2ba734d08a9da36065fe61e1efd6c03563c614aa37f1caa90d80c",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "MoonPay now accepts Discover Network cards for crypto purchases and sales in US"
   },
   "https://www.theblock.co/post/409522/strategy-blackrock-form-bitcoin-security-consortium-to-prepare-for-quantum-computing-threat?utm_source=rss&utm_medium=rss": {
     "title_hash": "60addbc6f81aab1842179e3f4f361ae8ddc3775760e6610a8a29e7fd40d6b843",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Strategy, BlackRock form Bitcoin Security Consortium to prepare for quantum computing threat"
   },
   "https://www.theblock.co/post/409507/layerzero-keeta-enable-tokenized-bank-deposits-across-ethereum-solana-and-base?utm_source=rss&utm_medium=rss": {
@@ -1814,19 +1814,19 @@
   "https://www.theblock.co/post/409560/robinhood-ceo-x-account-apparently-hacked-promote-vladhood-memecoin-flagged-scam?utm_source=rss&utm_medium=rss": {
     "title_hash": "445d61e560377f45e875016933f9fdb615799b0a742088aacd95cf4f8c7d62e4",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Robinhood CEO’s X account hacked to promote Vladhood memecoin flagged as ‘scam’"
   },
   "https://www.theblock.co/post/409538/swan-ceo-twenty-one-serves-tethers-us-political-interests-mallers-role-ceremonial?utm_source=rss&utm_medium=rss": {
     "title_hash": "094e74673349ba8fd99d5d10c195da6ba82605fabfb25be63dbb6ebc05b67b96",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Swan CEO claims Twenty One serves Tether’s US political interests, calls Mallers’ role ‘ceremonial’"
   },
   "https://www.theblock.co/post/409539/coinbase-ai-payments-most-high-conviction-bet-businesses-accepting-agent-payments?utm_source=rss&utm_medium=rss": {
     "title_hash": "2fc96f1cfb1b0d2f5b41f46809e73de05c59b317d987d69836171cd9007279d7",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Coinbase calls AI payments its ‘most high-conviction bet’ as businesses begin accepting agent payments"
   },
   "https://www.theblock.co/post/409489/new-verus-ethereum-bridge-attack?utm_source=rss&utm_medium=rss": {
@@ -1844,73 +1844,109 @@
   "https://www.chainalysis.com/blog/fatf-7th-targeted-update-crypto-compliance": {
     "title_hash": "0f154144264032b9b032070aead8cc19957a5d01289931886ff2e4a09414bf90",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "What FATF’s 7th Crypto Compliance Report Card Means: Enforcement Must Catch Up With Legislation"
   },
   "https://www.elliptic.co/blog/what-webx-tokyo-taught-me-about-japans-readiness-for-on-chain-finance": {
     "title_hash": "a6260b9168ecfaf1b29c3ef9d683a1183f126145832e0b1913064f0d519702fc",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "What WebX Tokyo taught me about Japan’s readiness for on-chain finance"
   },
   "https://www.fca.org.uk/news/press-releases/fca-publishes-landmark-review-impact-ai-retail-financial-services": {
     "title_hash": "95837e8c75e98a122546467636562a35146f5724da3a7a59a61740903906e034",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "FCA publishes landmark review into impact of AI on retail financial services"
   },
   "https://www.coindesk.com/policy/2026/07/24/senate-dems-should-accept-the-victory-they-won-on-trump-s-crypto-limits-white-house": {
     "title_hash": "defb40187656ff8b0a570c97951124372a983379b54073b14d6d9680a1eb05ba",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Senate Dems should accept the victory they won on Trump's crypto limits: White House"
   },
   "https://www.coindesk.com/policy/2026/07/24/eu-hits-russia-with-massive-21st-sanctions-package-targeting-usd120b-crypto-network": {
     "title_hash": "cddf1adcb396ee37a1a806afad170d5f83d29b896758f23a9c87ad79c17a8b08",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "EU hits Russia with massive 21st sanctions package targeting $120B crypto network"
   },
   "https://www.theblock.co/post/409652/bitcoin-policy-institute-palantir-anduril-us-state-departments-freedom-tech-excellence-program?utm_source=rss&utm_medium=rss": {
     "title_hash": "c8cfd274321988562dee37bed65875a47a4a42735b1a434413f41ae3af301ec3",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Bitcoin Policy Institute, Palantir and Anduril join US State Department’s Freedom Tech Excellence Program"
   },
   "https://www.theblock.co/post/409631/wise-plans-resubmit-national-trust-bank-application-under-genius-act-framework?utm_source=rss&utm_medium=rss": {
     "title_hash": "f8adcf16225de5b7636fba356e4dd892b65b221d1a2589aedb7af2ad7ef53df1",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Wise plans to resubmit national trust bank application under GENIUS Act framework"
   },
   "https://www.coindesk.com/markets/2026/07/24/brazilian-farmers-tokenized-dairy-cows-to-get-loans-bypassing-bank-lending-limits": {
     "title_hash": "acbf4c371659102bff2599835f2346704d93f81431a7204b5e95951243b5c51f",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Brazilian farmers tokenized dairy cows to get loans, bypassing bank lending limits"
   },
   "https://www.coindesk.com/markets/2026/07/24/saylor-and-team-overhaul-strategy-s-bitcoin-metrics-as-bear-market-persists": {
     "title_hash": "d6300cd83170264b2ac36da7dc51b403a9fec1d786eea8ed8ff7af2b663bda86",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Saylor and team overhaul Strategy's bitcoin metrics as bear market persists"
   },
   "https://www.coindesk.com/markets/2026/07/24/bitcoin-treasury-companies-sell-up-repay-debt-pivot-to-ai-as-share-prices-collapse": {
     "title_hash": "a44bd27d96fc0fcc7a197ff47b92ea10c3e45e2810c690c7f1eacfb353e77502",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Bitcoin treasury companies sell up, repay debt, pivot to AI as share prices collapse"
   },
   "https://www.chainalysis.com/blog/eu-21st-russia-sanctions-package-crypto-patforms-july-2026": {
     "title_hash": "fceec2e6019560efcf64481f25e3576f4d4f11bcae91dae631744a0fb5745c57",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "The EU’s 21st Russia Sanctions Package Targets Crypto Platforms for Sanctions Evasion, Introduces Third-Country Ban Mechanism"
   },
   "https://www.trmlabs.com/resources/blog/eus-21st-package-extends-crypto-sanctions-to-third-countries": {
     "title_hash": "f540246338da823e712a6ae4af94f7760d2c8791b754cf6909f9c19b5d97a712",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-25T05:02:47.960452+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "EU's 21st Package Extends Crypto Sanctions to Third Countries"
+  },
+  "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto": {
+    "title_hash": "b21ad88d64732384e7c4b0e568292097387f525109ace9949a0e01c5ae7b8eab",
+    "first_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "title": "2 weeks left for Clarity: State of Crypto"
+  },
+  "https://www.coindesk.com/policy/2026/07/26/europe-s-high-regulatory-bar-could-spark-new-crypto-industry-m-and-a-wave": {
+    "title_hash": "8d79c08ae89b5f577135d627a71bd1c07f9253e5ae092c00cddab50c0133e024",
+    "first_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "title": "Europe's high regulatory bar could spark new crypto industry M&A wave"
+  },
+  "https://www.theblock.co/post/409668/eu-adds-htx-to-russia-sanctions-list-barring-transactions-starting-aug-23?utm_source=rss&utm_medium=rss": {
+    "title_hash": "ca6571335f1b5cb25ad5f384ac005136141d9b274af9fd5918e089fec0741135",
+    "first_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "title": "EU adds HTX to Russia sanctions list, barring transactions starting Aug. 23"
+  },
+  "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto": {
+    "title_hash": "77c000caae80d2b87cc6d84f4ffa41ce0b1df4f5897f6e071f81d819846f1f45",
+    "first_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "title": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto"
+  },
+  "https://www.theblock.co/post/409675/michael-saylor-teases-another-color-after-four-straight-weeks-without-a-strategy-bitcoin-buy?utm_source=rss&utm_medium=rss": {
+    "title_hash": "30e18bd499eb90694fc7a6600e575f45b7730f912f88504923ce2dd41b872391",
+    "first_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "title": "Michael Saylor teases ‘another color’ after four straight weeks without a Strategy bitcoin buy"
+  },
+  "https://www.theblock.co/post/409660/bitcoin-etf-weekly-trading-volume-falls-to-lowest-since-october-2024-as-ether-funds-lead-inflows-again?utm_source=rss&utm_medium=rss": {
+    "title_hash": "e67f1bcedc94abfc1ddc26a7d625c06c692f9b64fe819f8eaf9c255f27ffb618",
+    "first_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "title": "Bitcoin ETF weekly trading volume falls to lowest since October 2024 as ether funds lead inflows again"
   }
 }
