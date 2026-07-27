@@ -4,161 +4,8 @@
 <title>Digital Assets Morning Wire</title>
 <link>https://0xfanbase.github.io/morning-wire/</link>
 <description>Daily digital-asset regulatory and market digest. AI-sourced and AI-generated — verify against official sources before acting.</description>
-<lastBuildDate>Sun, 26 Jul 2026 21:52:48 +0000</lastBuildDate>
+<lastBuildDate>Mon, 27 Jul 2026 21:59:02 +0000</lastBuildDate>
 <atom:link href="https://0xfanbase.github.io/morning-wire/feed.xml" rel="self" type="application/rss+xml"/>
-<item>
-<title>Upbit parent Dunamu faces sanction process nearly eight months after $30 million hack: report</title>
-<link>https://www.theblock.co/post/408848/upbit-parent-dunamu-faces-sanction-process-nearly-eight-months-after-30-million-hack-report?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-d4d13fa3f2</guid>
-<pubDate>Sun, 19 Jul 2026 20:31:29 +0000</pubDate>
-<description>South Korea's Financial Supervisory Service has taken the first formal step in a sanction process against Dunamu, operator of the cryptocurrency exchange Upbit, nearly eight months after roughly 30 million US dollars of assets were stolen from the exchange. So what: The case tests how South Korea's virtual-asset user-protection law applies to exchange security failures, a precedent relevant to due diligence on exchange counterparties and to incident-accountability expectations across Asian markets. [single source]</description>
-<category>Global</category>
-<category>Enforcement</category>
-</item>
-<item>
-<title>The GENIUS Act turns 1: State of Crypto</title>
-<link>https://www.coindesk.com/policy/2026/07/19/the-genius-act-turns-1-state-of-crypto</link>
-<guid isPermaLink="false">global-coindesk-policy-5ea0b11fb6</guid>
-<pubDate>Sun, 19 Jul 2026 18:30:00 +0000</pubDate>
-<description>One year after the United States enacted the GENIUS Act, its first federal stablecoin law, banking regulators are still developing the implementing rules, with proposals covering custody, capital, liquidity and customer due-diligence checks for stablecoin issuers out for comment but none yet final. So what: The direction of United States stablecoin rulemaking, including proposed know-your-customer obligations on issuers, will shape the regulatory standing of the stablecoins most used by clients and counterparties in Asia, so the finalisation timetable is worth tracking. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Bitcoin's biggest advocate, Michael Saylor, says new plan to clean up the blockchain is 'a bad idea'</title>
-<link>https://www.coindesk.com/tech/2026/07/19/bitcoin-s-biggest-advocate-michael-saylor-says-new-plan-to-clean-up-the-blockchain-is-a-bad-idea</link>
-<guid isPermaLink="false">global-coindesk-market-news-5796eef33e</guid>
-<pubDate>Sun, 19 Jul 2026 15:19:21 +0000</pubDate>
-<description>Michael Saylor, a prominent bitcoin advocate, publicly opposed Bitcoin Improvement Proposal 110, a proposed one-year change to the network's rules that would restrict storing arbitrary data on the bitcoin blockchain, arguing it threatens the network's neutrality. So what: The debate carries no direct regulatory implication, but a contested change to bitcoin's core rules can create network-split risk that would complicate custody, settlement and asset-listing decisions across the industry. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Tether's USDT hits 2-year countdown threatening its position on U.S. crypto platforms</title>
-<link>https://www.coindesk.com/news-analysis/2026/07/17/tether-s-usdt-hits-2-year-countdown-threatening-its-position-on-u-s-crypto-platforms</link>
-<guid isPermaLink="false">global-coindesk-policy-0a9e7495e0</guid>
-<pubDate>Sun, 19 Jul 2026 13:00:00 +0000</pubDate>
-<description>Analysis of the United States GENIUS Act stablecoin law indicates Tether has until around July 2028 to restructure its stablecoin's reserves into cash and Treasury bills and register with the Office of the Comptroller of the Currency, or United States platforms will have to stop offering it. So what: If the largest stablecoin cannot satisfy United States requirements by 2028, liquidity and counterparty exposure could shift across venues worldwide, so the issuer's reserve restructuring and registration progress belongs in ongoing stablecoin risk assessments. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Kraken says simpler options can unlock crypto's next derivatives market</title>
-<link>https://www.coindesk.com/business/2026/07/19/kraken-says-simpler-options-can-unlock-crypto-s-next-derivatives-market</link>
-<guid isPermaLink="false">global-coindesk-market-news-5700922535</guid>
-<pubDate>Sun, 19 Jul 2026 13:00:00 +0000</pubDate>
-<description>Cryptocurrency exchange Kraken launched cash-settled bitcoin and ether options priced in US dollars on its professional platform for eligible international clients, saying simpler product design can broaden the crypto derivatives market. So what: Broader retail access to crypto derivatives at global exchanges is relevant context for exchange counterparty reviews and for anticipating how regulators in Hong Kong and other Asian markets approach suitability and conduct standards for such products. [single source]</description>
-<category>Global</category>
-<category>Peer move</category>
-</item>
-<item>
-<title>Inside Zcash's new node that targets Visa-scale privacy at 50,000 transactions per second</title>
-<link>https://www.coindesk.com/tech/2026/07/16/inside-zcash-s-new-node-that-targets-visa-scale-privacy-at-50-000-transactions-per-second</link>
-<guid isPermaLink="false">global-coindesk-institutional-moves-305277147c</guid>
-<pubDate>Sun, 19 Jul 2026 05:37:34 +0000</pubDate>
-<description>Independent developers released Zakura, new software for running the privacy-focused Zcash network, as part of an effort to scale private transactions from roughly one per second today toward 50,000 per second. So what: Greater scalability for privacy-preserving cryptocurrencies is relevant to transaction-monitoring and asset-listing policies, since shielded transfers limit the tracing on which anti-money-laundering controls rely. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>US regulators miss GENIUS Act’s one-year deadline for final stablecoin rules</title>
-<link>https://www.theblock.co/post/408843/us-regulators-miss-genius-acts-one-year-deadline-for-final-stablecoin-rules?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-f8be30cbcf</guid>
-<pubDate>Sat, 18 Jul 2026 22:04:40 +0000</pubDate>
-<description>United States regulators missed the Guiding and Establishing National Innovation for U.S. Stablecoins (GENIUS) Act's one-year deadline to finalise federal stablecoin rules, leaving reserve, capital, custody, customer-identification and anti-money-laundering rule packages at the proposal stage while the law's January 2027 effective date stands. So what: Stablecoin-exposed compliance programmes face a compressed adjustment window, as final United States reserve, custody and anti-money-laundering requirements may now arrive only shortly before the law's January 2027 effective date. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Bank of America taps new leaders to bridge crypto, AI and traditional finance</title>
-<link>https://www.theblock.co/post/408830/bank-america-taps-new-leaders-bridge-crypto-ai-traditional-finance?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-institutional-moves-ec8f48e113</guid>
-<pubDate>Fri, 17 Jul 2026 21:08:02 +0000</pubDate>
-<description>Bank of America appointed Sonali Theisen to lead its global digital-assets platform, covering tokenised deposits, stablecoins, digital collateral, trading settlement and custody, alongside a new head of artificial-intelligence transformation. So what: Digital-asset platform build-outs at major United States banks signal that tokenised deposits and stablecoin services are moving into mainstream banking, so correspondent and counterparty reviews will increasingly need to understand peer institutions' cryptoasset activities. [single source]</description>
-<category>Global</category>
-<category>Peer move</category>
-</item>
-<item>
-<title>CryptoQuant says Strategy still needs disciplined bitcoin buying and selling framework</title>
-<link>https://www.theblock.co/post/408825/cryptoquant-strategy-bitcoin-buying-selling-framework-mstr?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-3d11a70df6</guid>
-<pubDate>Fri, 17 Jul 2026 20:01:43 +0000</pubDate>
-<description>Research firm CryptoQuant said Strategy, the largest corporate holder of bitcoin, still lacks a systematic model for timing bitcoin purchases and a disciplined framework for selling, despite the capital-management framework the company announced in late June. So what: Concentrated corporate bitcoin treasuries carry liquidity and governance risks that remain relevant when risk-assessing clients or counterparties whose balance sheets depend heavily on cryptoasset holdings. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Stripe and Swift race to control the next generation of global payments infrastructure</title>
-<link>https://www.coindesk.com/business/2026/07/17/stripe-and-swift-race-to-control-the-next-generation-of-global-payments-infrastructure</link>
-<guid isPermaLink="false">global-coindesk-institutional-moves-45210ab796</guid>
-<pubDate>Fri, 17 Jul 2026 17:23:01 +0000</pubDate>
-<description>Payments firm Stripe has launched an unsolicited 53 billion United States dollar bid for PayPal, whose platform includes a dollar stablecoin, while the interbank messaging network Swift is expanding a blockchain-based settlement initiative to more than 40 financial institutions. So what: Consolidation of stablecoin and blockchain settlement capability inside the largest payment networks would concentrate transaction flows that sanctions-screening and transaction-monitoring arrangements at correspondent banks will need to cover. [single source]</description>
-<category>Global</category>
-<category>Peer move</category>
-</item>
-<item>
-<title>Bitcoin slides toward $63,000 as Coinbase premium stays negative for a record 60 days</title>
-<link>https://www.theblock.co/post/408793/bitcoin-slides-63000-coinbase-premium-stays-negative-record-60-days?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-4748c808ff</guid>
-<pubDate>Fri, 17 Jul 2026 16:38:50 +0000</pubDate>
-<description>Bitcoin fell below 63,000 United States dollars as the Coinbase price premium, a gauge of United States institutional demand, stayed negative for a record 60 consecutive days. So what: This is market context rather than a control trigger, though a prolonged downturn is relevant when assessing the financial resilience of virtual-asset trading platforms and other crypto-exposed clients. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Bitcoin ETFs could mirror gold’s history of ‘spectacular gains’ and ‘painful drawdowns,’ analyst says</title>
-<link>https://www.theblock.co/post/408782/bitcoin-etfs-ibit-mirror-golds-history-spectacular-gains-painful-drawdowns-analyst?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-1ae9bdd7f0</guid>
-<pubDate>Fri, 17 Jul 2026 15:40:50 +0000</pubDate>
-<description>A Bloomberg exchange-traded-fund analyst argued that bitcoin exchange-traded funds may repeat gold funds' pattern of spectacular gains followed by long drawdowns, with the largest bitcoin fund's assets down to about 60 billion United States dollars from a brief 100 billion peak. So what: Fund-flow volatility is primarily an investor-suitability matter, though the continued shift of retail cryptoasset exposure into regulated fund wrappers moves activity into channels with established intermediary oversight. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Bitcoin faces fresh headwinds as China’s Kimi beats Claude, GPT in coding benchmark</title>
-<link>https://www.coindesk.com/markets/2026/07/17/bitcoin-faces-fresh-headwinds-as-china-s-kimi-beats-claude-gpt-in-coding-benchmark</link>
-<guid isPermaLink="false">cn-coindesk-china-policy-a6ad606c4d</guid>
-<pubDate>Fri, 17 Jul 2026 12:45:11 +0000</pubDate>
-<description>Bitcoin came under pressure after Beijing-based Moonshot AI released an open-weight model that topped United States rivals on a coding benchmark, unsettling the artificial-intelligence data-centre business model that many bitcoin miners have adopted. So what: There is no regulatory action here; the episode mainly illustrates how closely cryptoasset prices now track the artificial-intelligence investment cycle, a market linkage rather than a financial-crime-compliance issue. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Airbnb CEO says X account was hacked, attacker posted AI-slop on tokenization</title>
-<link>https://www.coindesk.com/web3/2026/07/17/airbnb-ceo-says-x-account-was-hacked-attacker-posted-ai-slop-thread-on-tokenization</link>
-<guid isPermaLink="false">global-coindesk-market-news-7fbb3c1ac7</guid>
-<pubDate>Fri, 17 Jul 2026 08:50:22 +0000</pubDate>
-<description>Airbnb's chief executive said his account on the social-media platform X was hacked, with the attacker posting artificial-intelligence-generated promotional threads about tokenising real-world assets, though no scam links or wallet addresses were posted. So what: Compromised high-profile social-media accounts remain a standard opening move in cryptoasset investment scams, reinforcing customer-education and fraud-typology material warning that authentic-looking endorsements of token products can be fake. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Taiwan sentences BitShine crypto exchange ringleader to 22 years in $39 million fraud case: reports</title>
-<link>https://www.theblock.co/post/408748/taiwan-sentences-bitshine-crypto-exchange-ringleader-22-years?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-9d08d91164</guid>
-<pubDate>Fri, 17 Jul 2026 08:48:10 +0000</pubDate>
-<description>A Taiwanese court sentenced the ringleader of the BitShine cryptocurrency-exchange fraud to 22 years in prison for defrauding about 1,539 victims of roughly 39 million United States dollars and laundering larger sums overseas via the stablecoin Tether. So what: The group hired compliance staff to build legitimate-looking customer checks and then coached members to bypass them, underlining that polished onboarding paperwork at regional virtual-asset platforms is not reliable evidence of genuine anti-money-laundering controls. [corroborated]</description>
-<category>Global</category>
-<category>Enforcement</category>
-</item>
-<item>
-<title>UK gang jailed over $5.4 million crypto scam posing as police</title>
-<link>https://www.theblock.co/post/408745/uk-gang-jailed-crypto-scam?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-fb080894e2</guid>
-<pubDate>Fri, 17 Jul 2026 08:28:00 +0000</pubDate>
-<description>A London court jailed three men who posed as police officers and used fake police websites to steal about 4 million pounds (5.4 million United States dollars) in cryptocurrency from eight victims, following a Metropolitan Police investigation. So what: Police-impersonation scams that trick victims into surrendering cryptocurrency credentials are an active typology, and customer transfers prompted by purported law-enforcement contact remain a red flag worth reflecting in fraud and transaction-monitoring scenarios. [corroborated]</description>
-<category>United Kingdom</category>
-<category>Enforcement</category>
-</item>
-<item>
-<title>USDT vs USDC: Comparing the Two Largest Stablecoins</title>
-<link>https://www.theblock.co/learn/408738/usdt-vs-usdc-comparing-the-two-largest-stablecoins?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-b07e690f3f</guid>
-<pubDate>Fri, 17 Jul 2026 04:22:22 +0000</pubDate>
-<description>An educational explainer compares the two largest dollar-pegged stablecoins, Tether (USDT) and USD Coin (USDC), on market share, reserves, transparency and regulatory standing, noting USD Coin complies with the European Union's Markets in Crypto-Assets framework while Tether does not meet new United States stablecoin-law requirements. So what: Reserve transparency and regulatory standing differ materially between the two dominant stablecoins, which matters when risk-rating client flows, since tokens restricted in some markets can carry heightened regulatory and counterparty risk. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
 <item>
 <title>Grayscale could take Worldcoin to Wall Street after ETF filing with the SEC</title>
 <link>https://www.theblock.co/post/408995/grayscale-worldcoin-etf-filing-sec?utm_source=rss&amp;utm_medium=rss</link>
@@ -993,6 +840,132 @@
 <guid isPermaLink="false">global-the-block-market-news-2dc8476a71</guid>
 <pubDate>Sat, 25 Jul 2026 13:59:06 +0000</pubDate>
 <description>Weekly trading volume for United States spot bitcoin exchange-traded funds fell to its lowest level since October 2024, while ether funds continued to attract more new inflows than bitcoin funds. So what: Declining bitcoin ETF trading activity alongside continued ether fund inflows is a market-structure trend worth noting for functions that monitor product concentration and flows through regulated fund wrappers, though it does not itself change any compliance obligation. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Outcomes monitoring: why understanding the consumer experience matters and where firms should focus</title>
+<link>https://www.fca.org.uk/news/blogs/outcomes-monitoring-why-understanding-consumer-experience-matters</link>
+<guid isPermaLink="false">uk-financial-conduct-authority-news-40faa92dad</guid>
+<pubDate>Mon, 27 Jul 2026 21:58:19 +0000</pubDate>
+<description>Outcomes monitoring: why understanding the consumer experience matters and where firms should focus So what: Review the source directly; automated analysis unavailable. [official]</description>
+<category>United Kingdom</category>
+<category>News</category>
+</item>
+<item>
+<title>NY Attorney General Letitia James warns Clarity Act would ‘dilute’ states’ ability to go after fraud as pressure mounts</title>
+<link>https://www.theblock.co/post/409831/ny-attorney-general-letitia-james-warns-clarity-act-dilute-states-ability-fraud-pressure-mounts?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-819f53184c</guid>
+<pubDate>Mon, 27 Jul 2026 20:31:57 +0000</pubDate>
+<description>NY Attorney General Letitia James warns Clarity Act would ‘dilute’ states’ ability to go after fraud as pressure mounts So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Securitize expands regulated platform with SEC adviser license</title>
+<link>https://www.theblock.co/post/409821/securitize-expands-regulated-platform-with-sec-adviser-license?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-55d4596817</guid>
+<pubDate>Mon, 27 Jul 2026 18:08:44 +0000</pubDate>
+<description>Securitize expands regulated platform with SEC adviser license So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Metaplanet’s brokerage deal ‘badly undersells’ plans for bitcoin-backed ‘Bitbonds,’ Benchmark says</title>
+<link>https://www.theblock.co/post/409752/benchmark-metaplanet-brokerage-deal-badly-undersells-plans-bitcoin-backed-bitbonds?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-institutional-moves-4f66733bff</guid>
+<pubDate>Mon, 27 Jul 2026 15:06:52 +0000</pubDate>
+<description>Metaplanet’s brokerage deal ‘badly undersells’ plans for bitcoin-backed ‘Bitbonds,’ Benchmark says So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>IBM portfolio acquisition makes Circle the largest US blockchain patent holder</title>
+<link>https://www.theblock.co/post/409750/circle-acquires-ibm-blockchain-patent-portfolio-becomes-largest-us-patent-holder?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-e6e04b5289</guid>
+<pubDate>Mon, 27 Jul 2026 14:19:44 +0000</pubDate>
+<description>IBM portfolio acquisition makes Circle the largest US blockchain patent holder So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack</title>
+<link>https://www.coindesk.com/policy/2026/07/27/thailand-s-sec-alleges-bitkub-concealed-cyberattack-that-led-to-usd50-million-hack</link>
+<guid isPermaLink="false">global-coindesk-market-news-cf9072c529</guid>
+<pubDate>Mon, 27 Jul 2026 13:32:16 +0000</pubDate>
+<description>Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Circle buys nearly 1,000 blockchain patents from IBM</title>
+<link>https://www.coindesk.com/business/2026/07/27/circle-buys-nearly-1-000-blockchain-patents-from-ibm</link>
+<guid isPermaLink="false">global-coindesk-market-news-12b72c330c</guid>
+<pubDate>Mon, 27 Jul 2026 12:47:04 +0000</pubDate>
+<description>Circle buys nearly 1,000 blockchain patents from IBM So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Kraken parent Payward acquires Magic Labs’ embedded wallet business</title>
+<link>https://www.theblock.co/post/409705/kraken-parent-payward-acquires-magic-labs-embedded-wallet-business?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-e7966ca22c</guid>
+<pubDate>Mon, 27 Jul 2026 12:15:00 +0000</pubDate>
+<description>Kraken parent Payward acquires Magic Labs’ embedded wallet business So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Michael Saylor's Strategy boosted cash reserve to $3.75 billion, repurchased $25 million of STRC</title>
+<link>https://www.coindesk.com/markets/2026/07/27/michael-saylor-s-strategy-boosted-cash-reserve-to-usd3-75-billion</link>
+<guid isPermaLink="false">global-coindesk-market-news-766f2d62d8</guid>
+<pubDate>Mon, 27 Jul 2026 12:12:54 +0000</pubDate>
+<description>Michael Saylor's Strategy boosted cash reserve to $3.75 billion, repurchased $25 million of STRC So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Bitcoin ETFs post third straight weekly inflows despite $465 million in late-week losses</title>
+<link>https://www.coindesk.com/markets/2026/07/27/bitcoin-etfs-record-third-consecutive-weekly-inflows-despite-losses-of-usd465-million-to-end-week</link>
+<guid isPermaLink="false">global-coindesk-market-news-898a85fb94</guid>
+<pubDate>Mon, 27 Jul 2026 11:04:39 +0000</pubDate>
+<description>Bitcoin ETFs post third straight weekly inflows despite $465 million in late-week losses So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Coinbase CEO Brian Armstrong criticizes crypto startups that rebrand to AI</title>
+<link>https://www.coindesk.com/business/2026/07/27/coinbase-ceo-brian-armstrong-criticizes-crypto-startups-that-rebrand-to-ai</link>
+<guid isPermaLink="false">global-coindesk-market-news-d5ee1b68bc</guid>
+<pubDate>Mon, 27 Jul 2026 10:39:22 +0000</pubDate>
+<description>Coinbase CEO Brian Armstrong criticizes crypto startups that rebrand to AI So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Interest rates in U.S., U.K., Japan and Coinbase, Strategy earnings: Crypto Week Ahead</title>
+<link>https://www.coindesk.com/markets/2026/07/27/interest-rates-in-u-s-u-k-japan-and-coinbase-strategy-earnings-crypto-week-ahead</link>
+<guid isPermaLink="false">global-coindesk-market-news-6602ed709f</guid>
+<pubDate>Mon, 27 Jul 2026 09:43:58 +0000</pubDate>
+<description>Interest rates in U.S., U.K., Japan and Coinbase, Strategy earnings: Crypto Week Ahead So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>South Korea’s KB Kookmin Bank to launch cross-border payment service on JPMorgan’s Kinexys: report</title>
+<link>https://www.theblock.co/post/409702/kb-kookmin-bank-payment-jpmorgans-kinexys?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-institutional-moves-b36158b146</guid>
+<pubDate>Mon, 27 Jul 2026 06:38:09 +0000</pubDate>
+<description>South Korea’s KB Kookmin Bank to launch cross-border payment service on JPMorgan’s Kinexys: report So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>The Funding: Are crypto vaults funds and curators fund managers?</title>
+<link>https://www.theblock.co/post/409690/are-crypto-vaults-funds-curators-fund-managers?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-36702c976b</guid>
+<pubDate>Mon, 27 Jul 2026 04:39:17 +0000</pubDate>
+<description>The Funding: Are crypto vaults funds and curators fund managers? So what: Review the source directly; automated analysis unavailable. [single source]</description>
 <category>Global</category>
 <category>News</category>
 </item>

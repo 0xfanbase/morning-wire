@@ -302,13 +302,13 @@
   "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown": {
     "title_hash": "8c3b80518513189fa8c2a73e13e7bb89731b2167c8f87f52dd05924c8d2b1f37",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "Operation Prince: Inside a $15 billion crypto fraud takedown"
   },
   "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance": {
     "title_hash": "845f69cfb33b768889d3284ccfca72c2ffb52666caedf185fa77ff391743f8f2",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "What OFAC’s crypto mixer sanctions mean for financial crime compliance"
   },
   "https://www.acams.org/en/opinion/crypto-threats-vulnerabilities-and-what-do-next": {
@@ -1466,7 +1466,7 @@
   "https://www.acams.org/en/opinion/next-blind-spot-financial-crime-compliance-crypto-and-fiat-convergence": {
     "title_hash": "2a73a954bd30215bbff877ee41225e4fb8535d58c26d38c95a0a7d6710b14150",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "The next blind spot in financial crime compliance: Crypto and fiat convergence"
   },
   "https://www.coindesk.com/policy/2026/07/21/crypto-clarity-act-still-at-mercy-of-ethics-section-as-democrats-balk-at-trump-deal": {
@@ -1574,7 +1574,7 @@
   "https://www.elliptic.co/blog/crypto-regulatory-affairs-new-regulatory-future": {
     "title_hash": "67a95af589142d66159a2788696c6f06ae064418a0fa8ad0f8c19d3d6d101a38",
     "first_seen": "2026-07-21T21:58:29.485611+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "Crypto regulatory affairs: a new regulatory future in the age of AI"
   },
   "https://www.trmlabs.com/resources/blog/screening-htx-beyond-the-uk-designation-why-blockchain-intelligence-matters": {
@@ -1598,7 +1598,7 @@
   "https://www.fincen.gov/news/news-releases/fincen-extends-comment-period-proposed-rule-amend-definition-huione-group": {
     "title_hash": "c69a3b493ca3ac3fe258d4af406d652d5bf5b025dd5e6d9b436b315fb4255768",
     "first_seen": "2026-07-22T22:00:20.071247+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "FinCEN Extends Comment Period for Proposed Rule To Amend the Definition of Huione Group"
   },
   "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary": {
@@ -1718,19 +1718,19 @@
   "https://www.elliptic.co/blog/how-bitcoin-atm-scams-work": {
     "title_hash": "39aa08596f98bfbf951e5af8399b25cfb71005870bc4b9dbcf951f115a25e4a6",
     "first_seen": "2026-07-22T22:00:20.071247+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "How Bitcoin ATM scams work and how banks can spot the risk on-chain"
   },
   "https://www.acams.org/en/opinion/tren-de-aragua-crypto-and-cash-inside-one-chiles-biggest-money-laundering-cases": {
     "title_hash": "7eaee6c7cdffb693850b8754b7b980ab3676828ca93dcfb31ee08f9c3701a884",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "Tren de Aragua, Crypto, and Cash: Inside One of Chile’s Biggest Money Laundering Cases"
   },
   "https://www.acams.org/en/opinion/compliance-powers-stablecoins": {
     "title_hash": "047b177c5a1ade3d23fc1342bff7f77455c733cfe0131af551315583ee0152d7",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "The compliance powers of stablecoins"
   },
   "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules": {
@@ -1844,13 +1844,13 @@
   "https://www.chainalysis.com/blog/fatf-7th-targeted-update-crypto-compliance": {
     "title_hash": "0f154144264032b9b032070aead8cc19957a5d01289931886ff2e4a09414bf90",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "What FATF’s 7th Crypto Compliance Report Card Means: Enforcement Must Catch Up With Legislation"
   },
   "https://www.elliptic.co/blog/what-webx-tokyo-taught-me-about-japans-readiness-for-on-chain-finance": {
     "title_hash": "a6260b9168ecfaf1b29c3ef9d683a1183f126145832e0b1913064f0d519702fc",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "What WebX Tokyo taught me about Japan’s readiness for on-chain finance"
   },
   "https://www.fca.org.uk/news/press-releases/fca-publishes-landmark-review-impact-ai-retail-financial-services": {
@@ -1904,13 +1904,13 @@
   "https://www.chainalysis.com/blog/eu-21st-russia-sanctions-package-crypto-patforms-july-2026": {
     "title_hash": "fceec2e6019560efcf64481f25e3576f4d4f11bcae91dae631744a0fb5745c57",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "The EU’s 21st Russia Sanctions Package Targets Crypto Platforms for Sanctions Evasion, Introduces Third-Country Ban Mechanism"
   },
   "https://www.trmlabs.com/resources/blog/eus-21st-package-extends-crypto-sanctions-to-third-countries": {
     "title_hash": "f540246338da823e712a6ae4af94f7760d2c8791b754cf6909f9c19b5d97a712",
     "first_seen": "2026-07-25T05:02:47.960452+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "EU's 21st Package Extends Crypto Sanctions to Third Countries"
   },
   "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto": {
@@ -1940,7 +1940,7 @@
   "https://www.theblock.co/post/409675/michael-saylor-teases-another-color-after-four-straight-weeks-without-a-strategy-bitcoin-buy?utm_source=rss&utm_medium=rss": {
     "title_hash": "30e18bd499eb90694fc7a6600e575f45b7730f912f88504923ce2dd41b872391",
     "first_seen": "2026-07-26T21:52:48.755937+00:00",
-    "last_seen": "2026-07-26T21:52:48.755937+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
     "title": "Michael Saylor teases ‘another color’ after four straight weeks without a Strategy bitcoin buy"
   },
   "https://www.theblock.co/post/409660/bitcoin-etf-weekly-trading-volume-falls-to-lowest-since-october-2024-as-ether-funds-lead-inflows-again?utm_source=rss&utm_medium=rss": {
@@ -1948,5 +1948,89 @@
     "first_seen": "2026-07-26T21:52:48.755937+00:00",
     "last_seen": "2026-07-26T21:52:48.755937+00:00",
     "title": "Bitcoin ETF weekly trading volume falls to lowest since October 2024 as ether funds lead inflows again"
+  },
+  "https://www.fca.org.uk/news/blogs/outcomes-monitoring-why-understanding-consumer-experience-matters": {
+    "title_hash": "f50d47f51cd0b54605d0a5d2a516a31b8a019f9658a1d165ad2d904cf71b8365",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Outcomes monitoring: why understanding the consumer experience matters and where firms should focus"
+  },
+  "https://www.theblock.co/post/409831/ny-attorney-general-letitia-james-warns-clarity-act-dilute-states-ability-fraud-pressure-mounts?utm_source=rss&utm_medium=rss": {
+    "title_hash": "eef7ee52ea8921e48af9a71cf7e5a95ba7c3b7012cdc4e7418e9979db8056b4b",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "NY Attorney General Letitia James warns Clarity Act would ‘dilute’ states’ ability to go after fraud as pressure mounts"
+  },
+  "https://www.theblock.co/post/409821/securitize-expands-regulated-platform-with-sec-adviser-license?utm_source=rss&utm_medium=rss": {
+    "title_hash": "0ee75ab539c1b5b4dc04aecd82dad1eaac5d9b61317af1ca0d571aeb63ecb0d5",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Securitize expands regulated platform with SEC adviser license"
+  },
+  "https://www.theblock.co/post/409690/are-crypto-vaults-funds-curators-fund-managers?utm_source=rss&utm_medium=rss": {
+    "title_hash": "0c2fbc3b2e33d3056e2c12e28597aa6e7907c1067a9a730a822eddd95151dad6",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "The Funding: Are crypto vaults funds and curators fund managers?"
+  },
+  "https://www.theblock.co/post/409752/benchmark-metaplanet-brokerage-deal-badly-undersells-plans-bitcoin-backed-bitbonds?utm_source=rss&utm_medium=rss": {
+    "title_hash": "1cae084ad4cd4563b5e51d2db960d967b0c22b5a99ba2faf3c6b798ef921a7d1",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Metaplanet’s brokerage deal ‘badly undersells’ plans for bitcoin-backed ‘Bitbonds,’ Benchmark says"
+  },
+  "https://www.theblock.co/post/409702/kb-kookmin-bank-payment-jpmorgans-kinexys?utm_source=rss&utm_medium=rss": {
+    "title_hash": "3c08f37a5b2c7a83713bbee5f0a84ed59456b5ca908bd8e45d7b49f4eac1af16",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "South Korea’s KB Kookmin Bank to launch cross-border payment service on JPMorgan’s Kinexys: report"
+  },
+  "https://www.coindesk.com/policy/2026/07/27/thailand-s-sec-alleges-bitkub-concealed-cyberattack-that-led-to-usd50-million-hack": {
+    "title_hash": "46da9ae3fd7bcfc289fd4f9d9657c278e73ec9f676d814d6db928cd3ea09b93d",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack"
+  },
+  "https://www.coindesk.com/business/2026/07/27/circle-buys-nearly-1-000-blockchain-patents-from-ibm": {
+    "title_hash": "a17a86e098ef01b3e6b848fa746bbc3284abebd4394e4a29629d2afe54c3d8c5",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Circle buys nearly 1,000 blockchain patents from IBM"
+  },
+  "https://www.coindesk.com/markets/2026/07/27/michael-saylor-s-strategy-boosted-cash-reserve-to-usd3-75-billion": {
+    "title_hash": "c4982c485681e2fe7f49816507307b0b7deb374fa8714694261342072c172862",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Michael Saylor's Strategy boosted cash reserve to $3.75 billion, repurchased $25 million of STRC"
+  },
+  "https://www.coindesk.com/markets/2026/07/27/bitcoin-etfs-record-third-consecutive-weekly-inflows-despite-losses-of-usd465-million-to-end-week": {
+    "title_hash": "9fdf141a24c446fd31babd4f8dc91dbb490178bba7b383bdba79d4e2fa88f236",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Bitcoin ETFs post third straight weekly inflows despite $465 million in late-week losses"
+  },
+  "https://www.coindesk.com/business/2026/07/27/coinbase-ceo-brian-armstrong-criticizes-crypto-startups-that-rebrand-to-ai": {
+    "title_hash": "5fa39f2a4e982e6c0e0d78e89985b6b2d7f6576690e99cb01b96c1cda5a6f19b",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Coinbase CEO Brian Armstrong criticizes crypto startups that rebrand to AI"
+  },
+  "https://www.coindesk.com/markets/2026/07/27/interest-rates-in-u-s-u-k-japan-and-coinbase-strategy-earnings-crypto-week-ahead": {
+    "title_hash": "dccbb59d4110c4012edb8e9d864915e4318683a07f0bc0d2dea489d0f4c3889c",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Interest rates in U.S., U.K., Japan and Coinbase, Strategy earnings: Crypto Week Ahead"
+  },
+  "https://www.theblock.co/post/409750/circle-acquires-ibm-blockchain-patent-portfolio-becomes-largest-us-patent-holder?utm_source=rss&utm_medium=rss": {
+    "title_hash": "9e9037348d1bf5837a250a2e468389138838a51fdd554e370e152e2d8137f814",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "IBM portfolio acquisition makes Circle the largest US blockchain patent holder"
+  },
+  "https://www.theblock.co/post/409705/kraken-parent-payward-acquires-magic-labs-embedded-wallet-business?utm_source=rss&utm_medium=rss": {
+    "title_hash": "16213b38dd935d8ca3e45cc3bda0ed273c7c862f50281056eef7efabb380d5a6",
+    "first_seen": "2026-07-27T21:59:02.867861+00:00",
+    "last_seen": "2026-07-27T21:59:02.867861+00:00",
+    "title": "Kraken parent Payward acquires Magic Labs’ embedded wallet business"
   }
 }
