@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-27T21:59:02.867855+00:00",
-  "top_of_mind": "",
+  "top_of_mind": "Thailand's securities regulator filed a criminal complaint alleging the exchange Bitkub concealed a 2021 cyberattack from regulatory filings — a reminder that incident-disclosure obligations to regulators are an ongoing compliance requirement, not a one-time judgment call made at the time of a breach.",
   "items": [
     {
       "id": "global-the-block-market-news-91afbcdd63",
@@ -2324,8 +2324,8 @@
       "source": "Financial Conduct Authority — News",
       "title": "Outcomes monitoring: why understanding the consumer experience matters and where firms should focus",
       "url": "https://www.fca.org.uk/news/blogs/outcomes-monitoring-why-understanding-consumer-experience-matters",
-      "published": "2026-07-27T21:58:19.801544+00:00",
-      "type": "news",
+      "published": "2026-07-27T00:00:00+08:00",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2337,14 +2337,14 @@
           }
         ]
       },
-      "summary": "Outcomes monitoring: why understanding the consumer experience matters and where firms should focus",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The UK Financial Conduct Authority published guidance on outcomes monitoring under its Consumer Duty framework, calling on regulated firms to track whether customers are actually experiencing good results from products and services, not just collect data passively.",
+      "so_what": "The piece does not address digital assets directly, but its emphasis on evidencing real customer outcomes, not just monitoring activity, is a supervisory expectation that could extend to firms offering crypto-adjacent retail products under the same Consumer Duty framework.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
-      "date_source": "fetch_time"
+      "date_source": "verified"
     },
     {
       "id": "global-the-block-policy-819f53184c",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "NY Attorney General Letitia James warns Clarity Act would ‘dilute’ states’ ability to go after fraud as pressure mounts",
       "url": "https://www.theblock.co/post/409831/ny-attorney-general-letitia-james-warns-clarity-act-dilute-states-ability-fraud-pressure-mounts?utm_source=rss&utm_medium=rss",
@@ -2361,32 +2361,36 @@
           }
         ]
       },
-      "summary": "NY Attorney General Letitia James warns Clarity Act would ‘dilute’ states’ ability to go after fraud as pressure mounts",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "New York Attorney General Letitia James testified to the US Senate that the pending Digital Asset Market Clarity Act would preempt state investor-protection laws and weaken states' ability to prosecute cryptocurrency fraud, and called for stronger anti-money-laundering, know-your-customer and anti-mixing-service requirements in the bill.",
+      "so_what": "The dispute over whether federal crypto market-structure legislation should preempt state enforcement powers remains unresolved, so a compliance function should continue monitoring both federal and state-level crypto enforcement activity rather than assuming one will supersede the other soon.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-55d4596817",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "Securitize expands regulated platform with SEC adviser license",
       "url": "https://www.theblock.co/post/409821/securitize-expands-regulated-platform-with-sec-adviser-license?utm_source=rss&utm_medium=rss",
       "published": "2026-07-27T18:08:44+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "licensing",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "The Block — Policy",
             "url": "https://www.theblock.co/post/409821/securitize-expands-regulated-platform-with-sec-adviser-license?utm_source=rss&utm_medium=rss"
+          },
+          {
+            "name": "CoinDesk",
+            "url": "https://www.coindesk.com/business/2026/07/27/securitize-builds-wall-street-credentials-with-sec-adviser-license-as-tokenization-expands"
           }
         ]
       },
-      "summary": "Securitize expands regulated platform with SEC adviser license",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Securitize Capital, a subsidiary of the tokenisation platform Securitize, registered with the US Securities and Exchange Commission as an investment adviser, adding to its existing SEC-registered broker-dealer and transfer-agent registrations.",
+      "so_what": "The registration lets Securitize work directly with asset managers and institutional investors on tokenised investment strategies under a regulated framework, so counterparties evaluating tokenisation service providers should note this adds to the small set of platforms holding a full stack of US federal securities registrations.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2409,8 +2413,8 @@
           }
         ]
       },
-      "summary": "Metaplanet’s brokerage deal ‘badly undersells’ plans for bitcoin-backed ‘Bitbonds,’ Benchmark says",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "An analyst at Benchmark said Metaplanet's recent brokerage acquisition undersells the company's broader plans for bitcoin-backed bond products it calls \"Bitbonds.\"",
+      "so_what": "This is analyst commentary on a corporate strategy, not a regulatory development, though functions tracking bitcoin-backed debt instruments as an emerging product category may want to note Metaplanet's plans.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2433,8 +2437,8 @@
           }
         ]
       },
-      "summary": "IBM portfolio acquisition makes Circle the largest US blockchain patent holder",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Circle, the issuer of the USDC stablecoin, acquired a portfolio of blockchain-related patents from IBM, making it the largest holder of blockchain patents among US companies.",
+      "so_what": "A stablecoin issuer building a large patent portfolio is a competitive and intellectual-property development rather than a compliance matter, though it may be useful context for functions assessing a major stablecoin issuer's overall business position.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2445,20 +2449,24 @@
       "title": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack",
       "url": "https://www.coindesk.com/policy/2026/07/27/thailand-s-sec-alleges-bitkub-concealed-cyberattack-that-led-to-usd50-million-hack",
       "published": "2026-07-27T13:32:16+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "enforcement",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — Market news",
             "url": "https://www.coindesk.com/policy/2026/07/27/thailand-s-sec-alleges-bitkub-concealed-cyberattack-that-led-to-usd50-million-hack"
+          },
+          {
+            "name": "Bangkok Post",
+            "url": "https://www.bangkokpost.com/business/general/3290607/sec-files-criminal-complaint-over-bitkubs-alleged-concealment-of-b17bn-hack"
           }
         ]
       },
-      "summary": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Thailand's Securities and Exchange Commission alleged that the cryptocurrency exchange Bitkub and two of its former directors concealed a 2021 cyberattack that resulted in the theft of digital assets worth about 50 million US dollars, and filed a criminal complaint over the alleged concealment.",
+      "so_what": "This is a reminder that concealing a security incident from a securities regulator can itself become a separate enforcement matter years later, so incident-disclosure obligations to regulators should be treated as an ongoing requirement, not a one-time judgment call made at the time of the breach.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2481,8 +2489,8 @@
           }
         ]
       },
-      "summary": "Circle buys nearly 1,000 blockchain patents from IBM",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Circle, the issuer of the USDC stablecoin, purchased close to 1,000 blockchain-related patents from IBM.",
+      "so_what": "This patent acquisition is a competitive and intellectual-property development rather than a compliance matter, though it may be useful context for functions assessing a major stablecoin issuer's overall business position.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2505,8 +2513,8 @@
           }
         ]
       },
-      "summary": "Kraken parent Payward acquires Magic Labs’ embedded wallet business",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Payward, the parent company of the Kraken cryptocurrency exchange, acquired the embedded-wallet business of Magic Labs.",
+      "so_what": "This is a corporate acquisition expanding Kraken's wallet infrastructure, not a regulatory development, though it may be useful context for functions assessing counterparty group structures.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2529,8 +2537,8 @@
           }
         ]
       },
-      "summary": "Michael Saylor's Strategy boosted cash reserve to $3.75 billion, repurchased $25 million of STRC",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Strategy (formerly MicroStrategy) increased its cash reserve to 3.75 billion US dollars and repurchased 25 million US dollars of its own stock.",
+      "so_what": "Changes in a major corporate bitcoin holder's cash position and share buybacks are market and balance-sheet developments rather than compliance matters, though functions tracking counterparty financial health may note the shift.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2553,8 +2561,8 @@
           }
         ]
       },
-      "summary": "Bitcoin ETFs post third straight weekly inflows despite $465 million in late-week losses",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "US spot bitcoin exchange-traded funds recorded a third consecutive week of net inflows overall, despite 465 million US dollars in losses during the final days of the week.",
+      "so_what": "Continued net inflows into regulated bitcoin fund products is a market-structure trend worth noting for functions that monitor product concentration and flows through regulated fund wrappers, though it does not itself change any compliance obligation.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2577,8 +2585,8 @@
           }
         ]
       },
-      "summary": "Coinbase CEO Brian Armstrong criticizes crypto startups that rebrand to AI",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Coinbase chief executive Brian Armstrong publicly criticised crypto startups that have been rebranding themselves as artificial-intelligence companies.",
+      "so_what": "This is public commentary and industry opinion rather than a regulatory or compliance development, with no direct action required.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2601,8 +2609,8 @@
           }
         ]
       },
-      "summary": "Interest rates in U.S., U.K., Japan and Coinbase, Strategy earnings: Crypto Week Ahead",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "A weekly market preview covered upcoming interest-rate decisions in the United States, United Kingdom and Japan alongside earnings reports from Coinbase and Strategy.",
+      "so_what": "This is a market-calendar roundup rather than a regulatory development, useful only as a general awareness item of upcoming market-moving events.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
@@ -2613,7 +2621,7 @@
       "title": "South Korea’s KB Kookmin Bank to launch cross-border payment service on JPMorgan’s Kinexys: report",
       "url": "https://www.theblock.co/post/409702/kb-kookmin-bank-payment-jpmorgans-kinexys?utm_source=rss&utm_medium=rss",
       "published": "2026-07-27T06:38:09+00:00",
-      "type": "news",
+      "type": "peer_move",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2625,19 +2633,19 @@
           }
         ]
       },
-      "summary": "South Korea’s KB Kookmin Bank to launch cross-border payment service on JPMorgan’s Kinexys: report",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "South Korea's KB Kookmin Bank will launch a cross-border payment service built on JPMorgan's blockchain-based Kinexys platform.",
+      "so_what": "This is another example of an established bank using blockchain-based payment infrastructure for cross-border settlement, a trend worth tracking as more banks integrate similar rails into correspondent banking relationships.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-36702c976b",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "The Funding: Are crypto vaults funds and curators fund managers?",
       "url": "https://www.theblock.co/post/409690/are-crypto-vaults-funds-curators-fund-managers?utm_source=rss&utm_medium=rss",
       "published": "2026-07-27T04:39:17+00:00",
-      "type": "news",
+      "type": "speech",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2649,8 +2657,8 @@
           }
         ]
       },
-      "summary": "The Funding: Are crypto vaults funds and curators fund managers?",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "A US Securities and Exchange Commission commissioner raised the question of whether decentralised-finance \"vaults\" -- pooled onchain contracts that deploy deposits under a stated strategy -- and their curators fall under existing US securities laws as unregistered investment funds and fund managers.",
+      "so_what": "Curated vaults hold billions of dollars in assets and the applicable rules remain unsettled, so a compliance function should treat this as an emerging, still-unresolved area of United States securities regulation to monitor rather than a settled classification.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
     }
@@ -2938,8 +2946,8 @@
     },
     {
       "name": "Claude summarisation",
-      "status": "dead",
-      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
+      "status": "ok",
+      "note": "Sonnet — Claude Code session on 2026-07-27"
     }
   ],
   "run_log": [
@@ -2982,6 +2990,10 @@
     {
       "at": "2026-07-27T21:59:02.867855+00:00",
       "note": "Daily fetch: 14 new items surfaced; 35/36 sources ok"
+    },
+    {
+      "at": "2026-07-27T22:14:48Z",
+      "note": "Enrichment: 14 items summarised and classified via Claude Code session. Two items were corroborated against second sources."
     }
   ],
   "radar": [
