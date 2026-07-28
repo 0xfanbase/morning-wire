@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-28T21:57:31.146595+00:00",
-  "top_of_mind": "",
+  "top_of_mind": "The Hong Kong Monetary Authority found Hong Kong's banks score just 2.3 out of 10 on a new quantum-readiness index — since quantum computing threatens the cryptography securing digital-asset custody, this signals a long-term security question for custody infrastructure Hong Kong-linked counterparties rely on.",
   "items": [
     {
       "id": "global-acams-today-04c078866d",
@@ -2370,8 +2370,8 @@
       "source": "Financial Conduct Authority — News",
       "title": "Strengthening resilience across an increasingly interconnected financial system",
       "url": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system",
-      "published": "2026-07-28T21:56:43.609036+00:00",
-      "type": "news",
+      "published": "2026-07-28T00:00:00+08:00",
+      "type": "guidance",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2383,20 +2383,20 @@
           }
         ]
       },
-      "summary": "Strengthening resilience across an increasingly interconnected financial system",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The UK Financial Conduct Authority explained its new Critical Third Parties oversight regime, which directly monitors essential technology and service providers supporting the UK financial system after finding that 27 percent of incidents reported to it in 2025 involved third-party issues.",
+      "so_what": "The piece does not address digital assets directly, but its focus on systemic third-party operational risk is a supervisory approach that could extend to critical infrastructure providers digital-asset firms also rely on, such as custody technology or cloud services.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
-      "date_source": "fetch_time"
+      "date_source": "verified"
     },
     {
       "id": "global-global-digital-finance-gdf-news-b66f407f25",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "Global Digital Finance (GDF) — News",
       "title": "GDF and ISDA Release Landmark Report on U.S. Tokenized Money Market Funds",
       "url": "https://www.gdf.io/news-letters/gdf-and-isda-release-landmark-report-on-u-s-tokenized-money-market-funds/",
       "published": "2026-07-28T06:45:49+00:00",
       "type": "news",
-      "priority": "normal",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -2407,8 +2407,8 @@
           }
         ]
       },
-      "summary": "GDF and ISDA Release Landmark Report on U.S. Tokenized Money Market Funds",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Global Digital Finance and the International Swaps and Derivatives Association published a report, based on sandbox testing by 48 firms and survey responses from over 120 financial institutions, concluding that tokenised money market funds can function as institutional collateral under existing United States law, with two exceptions.",
+      "so_what": "With most surveyed institutions planning to launch tokenised money market funds and to accept them as collateral within the next two years, functions handling collateral and counterparty due diligence should expect tokenised fund structures to become a more common feature of institutional relationships.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     },
@@ -2431,14 +2431,14 @@
           }
         ]
       },
-      "summary": "Crypto hacks hit record high in H1 2026 as losses top $1 billion, Blockaid says",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Blockchain security firm Blockaid reported that crypto hacks and exploits reached a record number of incidents in the first half of 2026, with total losses exceeding 1 billion US dollars, of which nearly 600 million US dollars was linked to North Korean hacking groups.",
+      "so_what": "The continued concentration of theft losses in North Korea-linked incidents, often carried out via social-engineering attacks on multi-signature wallet holders, reinforces the value of screening counterparties and transaction patterns against known North Korea-linked typologies.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-institutional-moves-752f1305b0",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Institutional moves",
       "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
       "url": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act",
@@ -2455,32 +2455,8 @@
           }
         ]
       },
-      "summary": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-07-28T21:57:31.146595+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-elliptic-blog-9c3cbebd90",
-      "jurisdiction": "GLOBAL",
-      "source": "Elliptic — Blog",
-      "title": "Elliptic supports compliant confidential finance with Zama",
-      "url": "https://www.elliptic.co/blog/elliptic-supports-compliant-confidential-finance-with-zama",
-      "published": "2026-07-28T15:09:50+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "Elliptic — Blog",
-            "url": "https://www.elliptic.co/blog/elliptic-supports-compliant-confidential-finance-with-zama"
-          }
-        ]
-      },
-      "summary": "Elliptic supports compliant confidential finance with Zama",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "BlackRock, Fidelity, Franklin Templeton, Goldman Sachs and SoFi publicly endorsed the pending Digital Asset Market Clarity Act, while the bill's path through the US Senate remains constrained by limited floor time before the chamber's August recess.",
+      "so_what": "Broad Wall Street support does not resolve the bill's unsettled ethics provisions or guarantee timely passage, so a compliance function should continue treating US digital-asset market-structure legislation as pending rather than final.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     },
@@ -2491,20 +2467,24 @@
       "title": "Russia outlines new digital depository rules ahead of fall crypto framework roll-out",
       "url": "https://www.coindesk.com/policy/2026/07/28/russia-outlines-new-digital-depository-rules-ahead-of-fall-crypto-framework-roll-out",
       "published": "2026-07-28T14:49:50+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "consultation",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — Policy",
             "url": "https://www.coindesk.com/policy/2026/07/28/russia-outlines-new-digital-depository-rules-ahead-of-fall-crypto-framework-roll-out"
+          },
+          {
+            "name": "cryptobriefing.com",
+            "url": "https://cryptobriefing.com/bank-of-russia-publishes-draft-rules-for-regulated-crypto-trading-custody-and-settlement/"
           }
         ]
       },
-      "summary": "Russia outlines new digital depository rules ahead of fall crypto framework roll-out",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Russia's central bank published draft rules establishing regulated \"digital depositories\" to hold and record cryptocurrency and other digital-asset holdings, with tiered minimum capital requirements depending on the type of custody or settlement activity, ahead of a broader digital-assets law taking full effect by September 2026.",
+      "so_what": "As Russia builds out a formal regulated custody framework for digital assets, due-diligence processes evaluating exposure to Russia-linked crypto infrastructure should track which entities become licensed digital depositories, particularly given the framework's timing alongside recent European Union sanctions on Russia-linked crypto platforms.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     },
@@ -2515,7 +2495,7 @@
       "title": "Morgan Stanley debuts Ethereum and Solana ETFs with market’s lowest fee, staking rewards",
       "url": "https://www.theblock.co/post/409898/morgan-stanley-debuts-ethereum-solana-etfs-markets-lowest-fee-staking-rewards?utm_source=rss&utm_medium=rss",
       "published": "2026-07-28T14:31:47+00:00",
-      "type": "news",
+      "type": "peer_move",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2527,8 +2507,8 @@
           }
         ]
       },
-      "summary": "Morgan Stanley debuts Ethereum and Solana ETFs with market’s lowest fee, staking rewards",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Morgan Stanley launched exchange-traded funds providing exposure to ether and solana, offering the lowest fees in the market along with staking rewards.",
+      "so_what": "This is a peer financial institution's digital-asset product launch rather than a regulatory development, useful as context for functions tracking how mainstream brokers are expanding crypto product offerings.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     },
@@ -2539,7 +2519,7 @@
       "title": "Morgan Stanley debuts ether, solana exchange-traded products after bitcoin fund success",
       "url": "https://www.coindesk.com/markets/2026/07/28/morgan-stanley-debuts-ether-and-solana-etps-after-bitcoin-fund-success",
       "published": "2026-07-28T14:30:57+00:00",
-      "type": "news",
+      "type": "peer_move",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2551,8 +2531,8 @@
           }
         ]
       },
-      "summary": "Morgan Stanley debuts ether, solana exchange-traded products after bitcoin fund success",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Morgan Stanley debuted ether and solana exchange-traded products following the earlier success of its bitcoin fund.",
+      "so_what": "This is a peer financial institution's digital-asset product launch rather than a regulatory development, useful as context for functions tracking how mainstream brokers are expanding crypto product offerings.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     },
@@ -2563,7 +2543,7 @@
       "title": "Russia’s central bank drafts first rules for ‘organized’ crypto trading",
       "url": "https://www.theblock.co/post/409877/russias-central-bank-drafts-first-rules-for-organized-crypto-trading?utm_source=rss&utm_medium=rss",
       "published": "2026-07-28T13:22:21+00:00",
-      "type": "news",
+      "type": "consultation",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2575,8 +2555,8 @@
           }
         ]
       },
-      "summary": "Russia’s central bank drafts first rules for ‘organized’ crypto trading",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Russia's central bank published its first draft rules for \"organised\" cryptocurrency trading venues, part of the broader digital-assets framework due to take full effect by September 2026.",
+      "so_what": "As Russia moves toward licensing formal crypto trading venues, functions assessing counterparty and correspondent exposure to Russia-linked crypto infrastructure should track which platforms become licensed under the new framework.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     },
@@ -2599,38 +2579,42 @@
           }
         ]
       },
-      "summary": "Binance makes fighting crypto crime more difficult, says new report",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The New York Times reported that Binance's April 2025 policy requiring most foreign law-enforcement data requests to be routed through the United Arab Emirates or formal mutual-legal-assistance treaties has significantly slowed investigators' ability to obtain user records and freeze or seize stolen assets, according to European and United States investigators; Binance disputes that its cooperation has slowed.",
+      "so_what": "Counterparty and correspondent due-diligence assessments of exchanges should factor in how quickly a platform can respond to a legitimate law-enforcement or asset-freeze request, since slower response times can directly affect the ability to recover funds in a fraud or hack investigation.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     },
     {
       "id": "cn-coindesk-china-policy-578f2b285b",
-      "jurisdiction": "CN",
+      "jurisdiction": "HK",
       "source": "CoinDesk — China policy",
       "title": "Hong Kong’s central bank puts a number on lenders' quantum preparedness. It's very low.",
       "url": "https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low",
       "published": "2026-07-28T07:55:41+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "guidance",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — China policy",
             "url": "https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low"
+          },
+          {
+            "name": "crypto.news",
+            "url": "https://crypto.news/hkma-warns-hong-kong-banks-lag-on-quantum-security/"
           }
         ]
       },
-      "summary": "Hong Kong’s central bank puts a number on lenders' quantum preparedness. It's very low.",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Hong Kong Monetary Authority found that Hong Kong's banking sector scored only 2.3 out of 10 on its newly created Quantum Preparedness Index, with about half of banks not yet having formal plans to transition to quantum-resistant cryptography ahead of an estimated threat window as early as 2029.",
+      "so_what": "Because quantum computing threatens the same cryptographic foundations that secure digital-asset custody and blockchain transactions, a low industry-wide quantum-readiness score is directly relevant to assessing the long-term security of any digital-asset custody or wallet infrastructure a Hong Kong-linked counterparty relies on.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-46c3ed12a1",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Policy",
       "title": "U.S. Senate puts off crypto Clarity Act for now as it focuses limited bandwidth elsewhere",
       "url": "https://www.coindesk.com/policy/2026/07/27/u-s-senate-puts-off-crypto-clarity-act-for-now-as-it-focuses-limited-bandwidth-elsewhere",
@@ -2647,8 +2631,8 @@
           }
         ]
       },
-      "summary": "U.S. Senate puts off crypto Clarity Act for now as it focuses limited bandwidth elsewhere",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The US Senate delayed further action on the Digital Asset Market Clarity Act to prioritise other business, including nominations and Russia sanctions legislation, before its 8 August summer recess, leaving the bill's ethics provisions for senior officials' personal crypto dealings still unresolved.",
+      "so_what": "With the bill unlikely to advance before the recess and its next realistic window uncertain, a compliance function should continue planning around the absence of finalised US digital-asset market-structure legislation for the time being.",
       "first_seen": "2026-07-28T21:57:31.146595+00:00",
       "date_source": "feed"
     }
@@ -2936,8 +2920,8 @@
     },
     {
       "name": "Claude summarisation",
-      "status": "dead",
-      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
+      "status": "ok",
+      "note": "Sonnet — Claude Code session on 2026-07-28"
     }
   ],
   "run_log": [
@@ -2980,6 +2964,10 @@
     {
       "at": "2026-07-28T21:57:31.146595+00:00",
       "note": "Daily fetch: 12 new items surfaced; 35/36 sources ok"
+    },
+    {
+      "at": "2026-07-28T22:14:13Z",
+      "note": "Enrichment: 11 items summarised and classified via Claude Code session; one vendor partnership-announcement item was removed as marketing, not news. Two items were corroborated against second sources."
     }
   ],
   "radar": [
