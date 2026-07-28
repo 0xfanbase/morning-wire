@@ -1,305 +1,7 @@
 {
-  "generated_at": "2026-07-27T21:59:02.867855+00:00",
-  "top_of_mind": "Thailand's securities regulator filed a criminal complaint alleging the exchange Bitkub concealed a 2021 cyberattack from regulatory filings — a reminder that incident-disclosure obligations to regulators are an ongoing compliance requirement, not a one-time judgment call made at the time of a breach.",
+  "generated_at": "2026-07-28T21:57:31.146595+00:00",
+  "top_of_mind": "",
   "items": [
-    {
-      "id": "global-the-block-market-news-91afbcdd63",
-      "jurisdiction": "US",
-      "source": "The Block — Market news",
-      "title": "Grayscale could take Worldcoin to Wall Street after ETF filing with the SEC",
-      "url": "https://www.theblock.co/post/408995/grayscale-worldcoin-etf-filing-sec?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-20T21:25:00+00:00",
-      "type": "peer_move",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/408995/grayscale-worldcoin-etf-filing-sec?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Asset manager Grayscale filed a registration statement with the United States Securities and Exchange Commission for an exchange-traded fund that would hold Worldcoin, the token of the eye-scanning digital-identity project co-founded by OpenAI's chief executive.",
-      "so_what": "The steady extension of United States exchange-traded funds to smaller, novel tokens widens the set of cryptoassets reachable through mainstream brokerage channels, gradually expanding what product-approval and screening processes may need to cover.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-c0ab10a586",
-      "jurisdiction": "US",
-      "source": "The Block — Policy",
-      "title": "Trump’s crypto ethics stance leaves Clarity Act negotiations in limbo",
-      "url": "https://www.theblock.co/post/408804/president-trump-agrees-some-level-ethics-language-potentially-clearing-hurdles-pass-crypto-bill?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-20T20:26:38+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/408804/president-trump-agrees-some-level-ethics-language-potentially-clearing-hurdles-pass-crypto-bill?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Negotiations over the Clarity Act, the proposed United States law that would set a market-structure framework for cryptoassets, remain stalled because President Trump has not agreed to ethics language restricting federal officials' profits from cryptoassets, with a Senate vote targeted for early August.",
-      "so_what": "Delay to the main United States market-structure bill prolongs regulatory uncertainty for cryptoasset counterparties with United States exposure, leaving current rules as the operative baseline for counterparty and product assessments ahead of a possible Senate vote in early August.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-2134ae3202",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Vietnam sets new crypto trading fines on par with drunk-driving penalties",
-      "url": "https://www.theblock.co/post/408980/vietnam-new-unlicensed-crypto-trading-fines-on-par-drunk-driving-penalties?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-20T19:47:47+00:00",
-      "type": "final_rule",
-      "priority": "high",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/408980/vietnam-new-unlicensed-crypto-trading-fines-on-par-drunk-driving-penalties?utm_source=rss&utm_medium=rss"
-          },
-          {
-            "name": "Government of Vietnam -- official legal-documents portal",
-            "url": "https://vanban.chinhphu.vn/?docid=218906&pageid=27160"
-          }
-        ],
-        "checked": {
-          "at": "2026-07-21T07:59:50+00:00",
-          "against": "Government of Vietnam -- Decree 284/2026/ND-CP on the official legal-documents portal (vanban.chinhphu.vn), signed 16 July 2026",
-          "url": "https://vanban.chinhphu.vn/?docid=218906&pageid=27160",
-          "note": "Official portal confirms decree number, 16 July 2026 signing and 1 September 2026 effective date; penalty bands cross-checked on the government news portal baochinhphu.vn."
-        }
-      },
-      "summary": "Vietnam's government issued a decree, taking effect on 1 September 2026, that fines individuals and organisations for trading cryptoassets outside newly licensed domestic exchanges, with penalties for unlicensed service providers of up to about 200 million Vietnamese dong (roughly 7,600 United States dollars).",
-      "so_what": "Vietnam is drawing a hard licensing perimeter around cryptoasset trading, so country-risk assessments and transaction-monitoring assumptions for Vietnamese retail and corporate flows to offshore exchanges will need updating once the penalties take effect in September.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-elliptic-blog-2f26d19c00",
-      "jurisdiction": "GLOBAL",
-      "source": "Elliptic — Blog",
-      "title": "Where crypto fits in the FATF’s new public-private partnership report",
-      "url": "https://www.elliptic.co/blog/where-crypto-fits-in-fatfs-new-public-private-partnership-report",
-      "published": "2026-07-20T13:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "Elliptic — Blog",
-            "url": "https://www.elliptic.co/blog/where-crypto-fits-in-fatfs-new-public-private-partnership-report"
-          }
-        ]
-      },
-      "summary": "Analytics firm Elliptic reviewed a new Financial Action Task Force (FATF) report on public-private partnerships against financial crime, which finds the cryptoasset industry remains under-integrated into government-industry information-sharing arrangements.",
-      "so_what": "With the Financial Action Task Force pressing for deeper public-private information sharing under the new United Kingdom presidency, banks active in digital assets can expect encouragement to bring cryptoasset expertise and blockchain analytics into existing intelligence-sharing partnerships, including in Hong Kong.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-d313c67fa8",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Saylor's Strategy raises cash reserves to $3.2 billion, leaving bitcoin holdings unchanged",
-      "url": "https://www.coindesk.com/business/2026/07/20/saylor-s-strategy-raises-cash-reserves-to-usd3-225-billion-leaving-bitcoin-holdings-unchanged",
-      "published": "2026-07-20T12:35:02+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/business/2026/07/20/saylor-s-strategy-raises-cash-reserves-to-usd3-225-billion-leaving-bitcoin-holdings-unchanged"
-          }
-        ]
-      },
-      "summary": "Strategy, the largest corporate holder of bitcoin, raised its cash reserves to about 3.2 billion United States dollars through share sales while leaving its roughly 843,775 bitcoin untouched, rebuilding a buffer to support dividends on its preferred stock after recent market pressure on its financing model.",
-      "so_what": "The episode illustrates how leveraged corporate bitcoin-treasury structures can come under funding strain in downturns, a concentration and credit consideration when assessing exposure to counterparties whose balance sheets are dominated by cryptoassets.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-cc712b27d9",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Brazil’s securities regulator sets up task force with 60-day deadline for tokenization proposal",
-      "url": "https://www.coindesk.com/policy/2026/07/20/brazil-s-securities-regulator-sets-up-task-force-with-60-day-deadline-for-tokenization-proposal",
-      "published": "2026-07-20T12:02:28+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/07/20/brazil-s-securities-regulator-sets-up-task-force-with-60-day-deadline-for-tokenization-proposal"
-          }
-        ]
-      },
-      "summary": "Brazil's securities regulator established a working group, due to report within 60 days of its installation, to propose an experimental framework for issuing, trading and settling tokenised securities, covering questions such as official ownership records, private-key custody and transaction reversibility.",
-      "so_what": "Another sizeable market designing rules for tokenised securities adds to the fragmented international landscape that compliance functions supporting custody and tokenisation business must track, and Brazil's answers on private-key custody and transaction reversibility may be cited in policy debates elsewhere.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-1e1d53d0dc",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Ethereum co-founder Vitalik Buterin ‘vibe-codes’ anonymous billboard demo with onchain moderation on Aztec",
-      "url": "https://www.theblock.co/post/408888/ethereum-co-founder-vitalik-buterin-vibe-codes-anonymous-billboard-demo-with-onchain-moderation-on-aztec?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-20T11:24:22+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/408888/ethereum-co-founder-vitalik-buterin-vibe-codes-anonymous-billboard-demo-with-onchain-moderation-on-aztec?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Ethereum co-founder Vitalik Buterin released a demonstration application on the privacy-focused Aztec network that lets users post messages with no public link to their identity or original deposits, moderated by an automated system whose rules are stored transparently on the blockchain.",
-      "so_what": "Privacy systems that sever the link between deposits and subsequent on-chain activity illustrate the limits of blockchain-tracing tools, a factor to weigh when risk-rating exposure to privacy-focused networks in transaction monitoring and source-of-funds reviews.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-44750be2c7",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Cross-chain protocol Allbridge halts after $1.65 million flash loan exploit",
-      "url": "https://www.coindesk.com/business/2026/07/20/cross-chain-protocol-allbridge-halts-after-usd1-65-million-flash-loan-exploit",
-      "published": "2026-07-20T09:31:22+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/business/2026/07/20/cross-chain-protocol-allbridge-halts-after-usd1-65-million-flash-loan-exploit"
-          }
-        ]
-      },
-      "summary": "Cross-chain bridge protocol Allbridge paused operations after an attacker used a flash loan — a large uncollateralised loan borrowed and repaid within a single transaction — to distort its Solana stablecoin pools and extract about 1.65 million United States dollars.",
-      "so_what": "The stolen funds were quickly bridged to Ethereum and dispersed across addresses, a reminder that exploit proceeds move fast across chains and that exposure screening should pick up addresses linked to newly reported bridge incidents.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-d512f7cb53",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Bitcoin ETFs see new money again, but inflows remain ‘peanuts’ relative to the recent exodus",
-      "url": "https://www.coindesk.com/markets/2026/07/20/bitcoin-etfs-see-new-money-again-but-inflows-remain-peanuts-relative-to-the-recent-exodus",
-      "published": "2026-07-20T05:46:36+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/07/20/bitcoin-etfs-see-new-money-again-but-inflows-remain-peanuts-relative-to-the-recent-exodus"
-          }
-        ]
-      },
-      "summary": "United States-listed spot bitcoin exchange-traded funds recorded about 273 million United States dollars of net inflows over two weeks, ending an eight-week withdrawal streak in which more than 8 billion United States dollars had left the products.",
-      "so_what": "Fund-flow swings of this scale mainly signal shifting institutional sentiment rather than any compliance obligation, though sustained outflows from exchange-traded products can foreshadow reduced client activity in related brokerage and custody services.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-8dc1fdf732",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Allbridge Core pauses protocol after $1.65 million flash loan exploit: onchain analysts",
-      "url": "https://www.theblock.co/post/408855/allbridge-core-exploit?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-20T03:33:56+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/408855/allbridge-core-exploit?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Cross-chain bridge protocol Allbridge Core was paused after a flash-loan attack manipulated its stablecoin pools for a loss of about 1.65 million United States dollars, with security firms tracking the stolen funds as they moved through privacy tools from Solana to Ethereum.",
-      "so_what": "The routing of bridge-exploit proceeds through privacy protocols within hours underlines why screening tools need timely incident-attribution data, particularly for funds arriving from cross-chain bridges.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-institutional-moves-263c15a097",
-      "jurisdiction": "US",
-      "source": "The Block — Institutional moves",
-      "title": "Stablecoins vs Traditional Banking",
-      "url": "https://www.theblock.co/learn/408854/stablecoins-vs-traditional-banking?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-20T03:29:46+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Institutional moves",
-            "url": "https://www.theblock.co/learn/408854/stablecoins-vs-traditional-banking?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "An educational explainer contrasts stablecoins with traditional bank deposits, noting that under the United States' GENIUS Act stablecoin issuers must hold full reserves and may not pay interest to holders, while banks retain deposit insurance, lending functions and newly chartered stablecoin competitors under federal supervision.",
-      "so_what": "The piece is background reading rather than a new development, but the distinction it draws — full-reserve, non-interest-bearing stablecoins versus insured bank deposits — frames how client questions about stablecoin exposure are likely to arise as United States-regulated issuers expand.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-d21dce3e35",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Saylor urges Bitcoin to reject BIP-110 in 110-point essay as soft fork’s August showdown approaches",
-      "url": "https://www.theblock.co/post/408850/saylor-urges-bitcoin-to-reject-bip-110-in-110-point-essay-as-soft-forks-august-showdown-approaches?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-19T21:51:32+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/408850/saylor-urges-bitcoin-to-reject-bip-110-in-110-point-essay-as-soft-forks-august-showdown-approaches?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Michael Saylor, co-founder of bitcoin-holding company Strategy, published an essay opposing Bitcoin Improvement Proposal 110 (BIP-110), a contested temporary change to Bitcoin's rules that would restrict data-heavy transactions, ahead of a miner signalling period expected to begin in early August.",
-      "so_what": "A contested change to Bitcoin's consensus rules carries some risk of a network split, an operational scenario that custody and settlement functions typically prepare for with deposit-freeze and fork-handling procedures.",
-      "first_seen": "2026-07-20T21:57:20.544589+00:00",
-      "date_source": "feed"
-    },
     {
       "id": "global-acams-today-04c078866d",
       "jurisdiction": "GLOBAL",
@@ -2661,6 +2363,294 @@
       "so_what": "Curated vaults hold billions of dollars in assets and the applicable rules remain unsettled, so a compliance function should treat this as an emerging, still-unresolved area of United States securities regulation to monitor rather than a settled classification.",
       "first_seen": "2026-07-27T21:59:02.867855+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "uk-financial-conduct-authority-news-dda74f6c16",
+      "jurisdiction": "UK",
+      "source": "Financial Conduct Authority — News",
+      "title": "Strengthening resilience across an increasingly interconnected financial system",
+      "url": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system",
+      "published": "2026-07-28T21:56:43.609036+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Financial Conduct Authority — News",
+            "url": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system"
+          }
+        ]
+      },
+      "summary": "Strengthening resilience across an increasingly interconnected financial system",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "fetch_time"
+    },
+    {
+      "id": "global-global-digital-finance-gdf-news-b66f407f25",
+      "jurisdiction": "GLOBAL",
+      "source": "Global Digital Finance (GDF) — News",
+      "title": "GDF and ISDA Release Landmark Report on U.S. Tokenized Money Market Funds",
+      "url": "https://www.gdf.io/news-letters/gdf-and-isda-release-landmark-report-on-u-s-tokenized-money-market-funds/",
+      "published": "2026-07-28T06:45:49+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Global Digital Finance (GDF) — News",
+            "url": "https://www.gdf.io/news-letters/gdf-and-isda-release-landmark-report-on-u-s-tokenized-money-market-funds/"
+          }
+        ]
+      },
+      "summary": "GDF and ISDA Release Landmark Report on U.S. Tokenized Money Market Funds",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-6bdd523864",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Crypto hacks hit record high in H1 2026 as losses top $1 billion, Blockaid says",
+      "url": "https://www.theblock.co/post/409944/crypto-hacks-hit-record-high-in-h1-2026-as-losses-top-1-billion-blockaid-says?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-28T19:45:26+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/409944/crypto-hacks-hit-record-high-in-h1-2026-as-losses-top-1-billion-blockaid-says?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Crypto hacks hit record high in H1 2026 as losses top $1 billion, Blockaid says",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-752f1305b0",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
+      "url": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act",
+      "published": "2026-07-28T16:08:19+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act"
+          }
+        ]
+      },
+      "summary": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-elliptic-blog-9c3cbebd90",
+      "jurisdiction": "GLOBAL",
+      "source": "Elliptic — Blog",
+      "title": "Elliptic supports compliant confidential finance with Zama",
+      "url": "https://www.elliptic.co/blog/elliptic-supports-compliant-confidential-finance-with-zama",
+      "published": "2026-07-28T15:09:50+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Elliptic — Blog",
+            "url": "https://www.elliptic.co/blog/elliptic-supports-compliant-confidential-finance-with-zama"
+          }
+        ]
+      },
+      "summary": "Elliptic supports compliant confidential finance with Zama",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-243b5ca16c",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Russia outlines new digital depository rules ahead of fall crypto framework roll-out",
+      "url": "https://www.coindesk.com/policy/2026/07/28/russia-outlines-new-digital-depository-rules-ahead-of-fall-crypto-framework-roll-out",
+      "published": "2026-07-28T14:49:50+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/28/russia-outlines-new-digital-depository-rules-ahead-of-fall-crypto-framework-roll-out"
+          }
+        ]
+      },
+      "summary": "Russia outlines new digital depository rules ahead of fall crypto framework roll-out",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-6ec46502af",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "Morgan Stanley debuts Ethereum and Solana ETFs with market’s lowest fee, staking rewards",
+      "url": "https://www.theblock.co/post/409898/morgan-stanley-debuts-ethereum-solana-etfs-markets-lowest-fee-staking-rewards?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-28T14:31:47+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/post/409898/morgan-stanley-debuts-ethereum-solana-etfs-markets-lowest-fee-staking-rewards?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Morgan Stanley debuts Ethereum and Solana ETFs with market’s lowest fee, staking rewards",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-aa5ece0943",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Morgan Stanley debuts ether, solana exchange-traded products after bitcoin fund success",
+      "url": "https://www.coindesk.com/markets/2026/07/28/morgan-stanley-debuts-ether-and-solana-etps-after-bitcoin-fund-success",
+      "published": "2026-07-28T14:30:57+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/markets/2026/07/28/morgan-stanley-debuts-ether-and-solana-etps-after-bitcoin-fund-success"
+          }
+        ]
+      },
+      "summary": "Morgan Stanley debuts ether, solana exchange-traded products after bitcoin fund success",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-2b7111fb44",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Russia’s central bank drafts first rules for ‘organized’ crypto trading",
+      "url": "https://www.theblock.co/post/409877/russias-central-bank-drafts-first-rules-for-organized-crypto-trading?utm_source=rss&utm_medium=rss",
+      "published": "2026-07-28T13:22:21+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/409877/russias-central-bank-drafts-first-rules-for-organized-crypto-trading?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Russia’s central bank drafts first rules for ‘organized’ crypto trading",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-b8445934e8",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Binance makes fighting crypto crime more difficult, says new report",
+      "url": "https://www.coindesk.com/business/2026/07/28/binance-makes-fighting-crypto-crime-more-difficult-says-new-nyt-article",
+      "published": "2026-07-28T12:24:02+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/07/28/binance-makes-fighting-crypto-crime-more-difficult-says-new-nyt-article"
+          }
+        ]
+      },
+      "summary": "Binance makes fighting crypto crime more difficult, says new report",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-coindesk-china-policy-578f2b285b",
+      "jurisdiction": "CN",
+      "source": "CoinDesk — China policy",
+      "title": "Hong Kong’s central bank puts a number on lenders' quantum preparedness. It's very low.",
+      "url": "https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low",
+      "published": "2026-07-28T07:55:41+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — China policy",
+            "url": "https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low"
+          }
+        ]
+      },
+      "summary": "Hong Kong’s central bank puts a number on lenders' quantum preparedness. It's very low.",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-46c3ed12a1",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "U.S. Senate puts off crypto Clarity Act for now as it focuses limited bandwidth elsewhere",
+      "url": "https://www.coindesk.com/policy/2026/07/27/u-s-senate-puts-off-crypto-clarity-act-for-now-as-it-focuses-limited-bandwidth-elsewhere",
+      "published": "2026-07-27T23:55:16+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/07/27/u-s-senate-puts-off-crypto-clarity-act-for-now-as-it-focuses-limited-bandwidth-elsewhere"
+          }
+        ]
+      },
+      "summary": "U.S. Senate puts off crypto Clarity Act for now as it focuses limited bandwidth elsewhere",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-07-28T21:57:31.146595+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -2669,7 +2659,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.866957+00:00",
+      "checked_at": "2026-07-28T21:57:31.145557+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2677,7 +2667,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.866971+00:00",
+      "checked_at": "2026-07-28T21:57:31.145571+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2685,7 +2675,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.866979+00:00",
+      "checked_at": "2026-07-28T21:57:31.145579+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2693,7 +2683,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.866985+00:00",
+      "checked_at": "2026-07-28T21:57:31.145585+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2701,7 +2691,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.866990+00:00",
+      "checked_at": "2026-07-28T21:57:31.145590+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2709,7 +2699,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.866997+00:00",
+      "checked_at": "2026-07-28T21:57:31.145597+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2717,7 +2707,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867003+00:00",
+      "checked_at": "2026-07-28T21:57:31.145603+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2725,7 +2715,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867009+00:00",
+      "checked_at": "2026-07-28T21:57:31.145608+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2733,7 +2723,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867014+00:00",
+      "checked_at": "2026-07-28T21:57:31.145613+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2741,7 +2731,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867017+00:00",
+      "checked_at": "2026-07-28T21:57:31.145619+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2749,7 +2739,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867020+00:00",
+      "checked_at": "2026-07-28T21:57:31.145624+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2757,7 +2747,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867023+00:00",
+      "checked_at": "2026-07-28T21:57:31.145629+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2765,7 +2755,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867026+00:00",
+      "checked_at": "2026-07-28T21:57:31.145634+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2773,7 +2763,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867029+00:00",
+      "checked_at": "2026-07-28T21:57:31.145639+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2781,7 +2771,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867032+00:00",
+      "checked_at": "2026-07-28T21:57:31.145645+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2789,7 +2779,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867035+00:00",
+      "checked_at": "2026-07-28T21:57:31.145650+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2797,7 +2787,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867038+00:00",
+      "checked_at": "2026-07-28T21:57:31.145655+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2805,7 +2795,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867041+00:00",
+      "checked_at": "2026-07-28T21:57:31.145660+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2813,7 +2803,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867044+00:00",
+      "checked_at": "2026-07-28T21:57:31.145665+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2821,7 +2811,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867046+00:00",
+      "checked_at": "2026-07-28T21:57:31.145670+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2829,7 +2819,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867049+00:00",
+      "checked_at": "2026-07-28T21:57:31.145676+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -2837,7 +2827,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867052+00:00",
+      "checked_at": "2026-07-28T21:57:31.145681+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2845,7 +2835,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867055+00:00",
+      "checked_at": "2026-07-28T21:57:31.145686+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2853,7 +2843,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867058+00:00",
+      "checked_at": "2026-07-28T21:57:31.145691+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2861,7 +2851,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867061+00:00",
+      "checked_at": "2026-07-28T21:57:31.145697+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2869,7 +2859,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-27T21:59:02.867064+00:00",
+      "checked_at": "2026-07-28T21:57:31.145702+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2877,7 +2867,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867067+00:00",
+      "checked_at": "2026-07-28T21:57:31.145707+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2885,7 +2875,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867069+00:00",
+      "checked_at": "2026-07-28T21:57:31.145712+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2893,7 +2883,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867072+00:00",
+      "checked_at": "2026-07-28T21:57:31.145717+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2901,7 +2891,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867075+00:00",
+      "checked_at": "2026-07-28T21:57:31.145722+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2909,7 +2899,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867078+00:00",
+      "checked_at": "2026-07-28T21:57:31.145727+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2917,7 +2907,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867080+00:00",
+      "checked_at": "2026-07-28T21:57:31.145732+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2925,7 +2915,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867084+00:00",
+      "checked_at": "2026-07-28T21:57:31.145737+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2933,7 +2923,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867086+00:00",
+      "checked_at": "2026-07-28T21:57:31.145742+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2941,24 +2931,16 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-27T21:59:02.867089+00:00",
+      "checked_at": "2026-07-28T21:57:31.145747+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Claude summarisation",
-      "status": "ok",
-      "note": "Sonnet — Claude Code session on 2026-07-27"
+      "status": "dead",
+      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
     }
   ],
   "run_log": [
-    {
-      "at": "2026-07-21T21:58:29.485603+00:00",
-      "note": "Daily fetch: 20 new items surfaced; 33/34 sources ok"
-    },
-    {
-      "at": "2026-07-22T22:00:20.071241+00:00",
-      "note": "Daily fetch: 24 new items surfaced; 33/34 sources ok"
-    },
     {
       "at": "2026-07-23T21:59:35.807907+00:00",
       "note": "Daily fetch: 22 new items surfaced; 33/34 sources ok"
@@ -2994,6 +2976,10 @@
     {
       "at": "2026-07-27T22:14:48Z",
       "note": "Enrichment: 14 items summarised and classified via Claude Code session. Two items were corroborated against second sources."
+    },
+    {
+      "at": "2026-07-28T21:57:31.146595+00:00",
+      "note": "Daily fetch: 12 new items surfaced; 35/36 sources ok"
     }
   ],
   "radar": [
