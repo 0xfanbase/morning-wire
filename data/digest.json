@@ -1893,8 +1893,8 @@
           }
         ]
       },
-      "summary": "Coinbase shares slip after Q2 results despite prediction markets doubling and record trading market share",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Coinbase's stock fell about 7% in after-hours trading even though the exchange reported record global crypto trading market share and more than doubled its prediction-market revenue in the second quarter.",
+      "so_what": "The drop despite strong operating metrics is a reminder that even leading regulated exchanges remain exposed to volatile investor sentiment, which is useful context when assessing the financial stability of exchange counterparties.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
@@ -1917,14 +1917,14 @@
           }
         ]
       },
-      "summary": "Coinbase sinks 5% after missing second quarter revenue estimates",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Coinbase shares fell about 5% after the exchange reported second-quarter revenue of 1.22 billion dollars, roughly 70 million dollars below analyst estimates, as industry-wide crypto trading volumes fell more than 20 percent during the quarter.",
+      "so_what": "A broad decline in industry trading volumes affecting even the largest exchange is a useful indicator when reviewing revenue and liquidity assumptions for exchange counterparties.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-d163d86fc1",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "IRS warns crypto holders fraudster sending fake letters in attempt to steal digital assets or data: Bloomberg",
       "url": "https://www.theblock.co/post/410204/irs-crypto-holders-fraudster-sending-fake-letters-steal-digital-assets-data-bloomberg?utm_source=rss&utm_medium=rss",
@@ -1933,22 +1933,26 @@
       "priority": "normal",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "The Block — Policy",
             "url": "https://www.theblock.co/post/410204/irs-crypto-holders-fraudster-sending-fake-letters-steal-digital-assets-data-bloomberg?utm_source=rss&utm_medium=rss"
+          },
+          {
+            "name": "Bloomberg",
+            "url": "https://www.bloomberg.com/news/articles/2026-07-30/scam-artists-are-posing-as-irs-agents-to-drain-crypto-wallets"
           }
         ]
       },
-      "summary": "IRS warns crypto holders fraudster sending fake letters in attempt to steal digital assets or data: Bloomberg",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The United States Internal Revenue Service warned that fraudsters are mailing fake letters to crypto holders directing them to a bogus 'Digital Asset Compliance Portal' in an attempt to steal digital assets or personal data.",
+      "so_what": "The warning is useful input for customer fraud-awareness communications, since it shows criminals impersonating tax authorities by physical mail rather than only email or text, a channel account holders may trust more readily.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-e67deba4a1",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "JPMorgan says crypto bill’s fading odds hurt outlook, warns parts could discourage institutional adoption",
       "url": "https://www.theblock.co/post/410185/jpmorgan-crypto-bill-clarity-act-market-outlook?utm_source=rss&utm_medium=rss",
@@ -1957,16 +1961,20 @@
       "priority": "normal",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "The Block — Policy",
             "url": "https://www.theblock.co/post/410185/jpmorgan-crypto-bill-clarity-act-market-outlook?utm_source=rss&utm_medium=rss"
+          },
+          {
+            "name": "Benzinga",
+            "url": "https://www.benzinga.com/crypto/cryptocurrency/26/07/60807728/jpmorgan-warns-crypto-faces-setback-as-clarity-act-odds-drop-to-37"
           }
         ]
       },
-      "summary": "JPMorgan says crypto bill’s fading odds hurt outlook, warns parts could discourage institutional adoption",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "JPMorgan analysts said prediction-market odds that the United States Clarity Act crypto market-structure bill passes this year have fallen to their lowest point so far, and warned some provisions could let decentralised-finance platforms trade tokenised securities and derivatives entirely outside the oversight of the Securities and Exchange Commission or the Commodity Futures Trading Commission, while holding crypto firms to lighter anti-money-laundering standards than banks.",
+      "so_what": "If the bill advances with those gaps intact, banks should expect an uneven anti-money-laundering standard between regulated institutions and crypto trading platforms, a live legislative uncertainty worth tracking when assessing digital-asset counterparties.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
@@ -1977,20 +1985,30 @@
       "title": "Global banks test tokenized money for cross-border payments in $1 million BIS pilot",
       "url": "https://www.coindesk.com/business/2026/07/30/global-banks-test-tokenized-money-for-cross-border-payments-in-usd1-million-bis-pilot",
       "published": "2026-07-30T17:34:03+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "peer_move",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — Institutional moves",
             "url": "https://www.coindesk.com/business/2026/07/30/global-banks-test-tokenized-money-for-cross-border-payments-in-usd1-million-bis-pilot"
+          },
+          {
+            "name": "Bank for International Settlements — Project Agorá Real Value Testing results",
+            "url": "https://www.bis.org/about/bisih/topics/fmis/agora/rvt.htm"
           }
-        ]
+        ],
+        "checked": {
+          "at": "2026-07-30T22:23:39Z",
+          "against": "Bank for International Settlements — Project Agorá Real Value Testing official results page",
+          "url": "https://www.bis.org/about/bisih/topics/fmis/agora/rvt.htm",
+          "note": "Matched the approximately 80-second average settlement time and roughly CHF 800,000 (about US$1 million) transaction volume reported for the real-value testing round."
+        }
       },
-      "summary": "Global banks test tokenized money for cross-border payments in $1 million BIS pilot",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Five central banks and 28 commercial banks, including JPMorgan, Citi, UBS, Deutsche Bank and Standard Chartered, completed a Bank for International Settlements pilot moving about 1 million dollars in tokenised central-bank and commercial-bank money across six currencies, with cross-border payments settling in around 80 seconds.",
+      "so_what": "As major international banks gain live experience with tokenised, multi-currency settlement rails, compliance functions should expect tokenisation and real-time cross-border settlement to become a mainstream part of correspondent banking rather than a niche pilot.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
@@ -2013,14 +2031,14 @@
           }
         ]
       },
-      "summary": "The 2026 World Cup On-Chain: $20 Billion in Crypto Flows, From Bets to Tickets",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Blockchain analytics firm Chainalysis reported that 2026 FIFA World Cup-linked prediction markets and digital-collectible ticketing generated around 20 billion dollars in on-chain activity, with less than 1 percent of prediction-market wallets showing ties to illicit activity, including 5.4 million dollars traced to the sanctioned exchange Huobi, also known as HTX.",
+      "so_what": "The small but real flow of funds to a sanctioned exchange during a major global sporting event is a reminder to keep already-sanctioned virtual-asset platforms such as Huobi/HTX on watch-lists when reviewing customer transaction patterns around high-volume events.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-ac9b553f4d",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Policy",
       "title": "JPMorgan says fading Clarity Act odds weigh on crypto outlook",
       "url": "https://www.coindesk.com/policy/2026/07/30/jpmorgan-says-fading-clarity-act-odds-weigh-on-crypto-outlook",
@@ -2029,22 +2047,26 @@
       "priority": "normal",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — Policy",
             "url": "https://www.coindesk.com/policy/2026/07/30/jpmorgan-says-fading-clarity-act-odds-weigh-on-crypto-outlook"
+          },
+          {
+            "name": "Benzinga",
+            "url": "https://www.benzinga.com/crypto/cryptocurrency/26/07/60807728/jpmorgan-warns-crypto-faces-setback-as-clarity-act-odds-drop-to-37"
           }
         ]
       },
-      "summary": "JPMorgan says fading Clarity Act odds weigh on crypto outlook",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "CoinDesk reported that JPMorgan's research team now sees fading odds that the United States Congress passes the Clarity Act crypto market-structure bill this year, and flagged that parts of the bill could leave decentralised-finance trading outside the Securities and Exchange Commission and Commodity Futures Trading Commission's oversight while holding crypto firms to lighter anti-money-laundering obligations than banks and broker-dealers.",
+      "so_what": "The same anti-money-laundering gap flagged across multiple outlets is a reason to read closely whatever final bill text emerges before relying on it to set risk-based due-diligence expectations for crypto-platform counterparties.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-market-news-fcb8e057b3",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Market news",
       "title": "Bitcoin ETFs on track for the smallest monthly inflows ever",
       "url": "https://www.coindesk.com/daybook-us/2026/07/30/bitcoin-etfs-on-track-for-the-smallest-monthly-inflows-ever",
@@ -2061,8 +2083,8 @@
           }
         ]
       },
-      "summary": "Bitcoin ETFs on track for the smallest monthly inflows ever",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "United States spot Bitcoin exchange-traded funds attracted just 205 million dollars in net inflows in July, the lowest monthly total since they launched, reflecting weak institutional demand even as prices moved higher.",
+      "so_what": "Thin institutional inflows into regulated Bitcoin investment products are a useful indicator of institutional risk appetite when calibrating expectations for digital-asset business volumes.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
@@ -2077,16 +2099,20 @@
       "priority": "normal",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — Policy",
             "url": "https://www.coindesk.com/policy/2026/07/30/south-korea-s-long-delayed-crypto-tax-set-to-start-in-2027"
+          },
+          {
+            "name": "International Business Times",
+            "url": "https://www.ibtimes.com/south-korea-revives-its-crypto-tax-plan-parliament-will-decide-whether-it-survives-3805911"
           }
         ]
       },
-      "summary": "South Korea plans to tax crypto gains over $1,740 as political battle moves to parliament",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "South Korea's government confirmed plans to start taxing cryptocurrency gains above about 1,740 dollars at a combined 22 percent rate from January 2027, even as opposition lawmakers push a competing bill to scrap the tax entirely.",
+      "so_what": "A confirmed effective date for retail crypto-gains taxation, alongside a live legislative push to repeal it, is useful context for anticipating shifts in customer trading activity toward offshore exchanges or peer-to-peer venues if the tax proceeds as planned.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
@@ -2109,8 +2135,8 @@
           }
         ]
       },
-      "summary": "Ostium blames off-chain breach for $24 million exploit, rules out smart contract flaw",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Onchain derivatives exchange Ostium said attackers stole about 24 million dollars in USDC, a United States dollar-pegged stablecoin, by compromising its off-chain price-reporting infrastructure to submit false Bitcoin price data, and said the incident did not involve a smart-contract vulnerability or a compromise of the multi-signature wallets governing the protocol.",
+      "so_what": "The incident is a reminder that a decentralised-finance protocol's on-chain code can be secure while its off-chain infrastructure remains a weak point, worth factoring into due-diligence on any digital-asset platform's operational risk controls.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
@@ -2133,19 +2159,19 @@
           }
         ]
       },
-      "summary": "Russia detains crypto mining firm BitRiver founder on fraud charges: report",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Russian authorities detained Igor Runets, founder of the crypto-mining company BitRiver, on fraud charges relating to an equipment transaction with the energy group En+, and separately charged him with tax evasion.",
+      "so_what": "BitRiver's Swiss holding company was added to the United States Treasury's sanctions list in 2022 for helping Russian entities evade sanctions through crypto mining, so continued developments involving its leadership remain useful input for ongoing due-diligence and sanctions-screening reviews of the group and its subsidiaries.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-market-news-a27b9d89ab",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Market news",
       "title": "Binance.US to apply for CFTC license in August for prediction market platform",
       "url": "https://www.theblock.co/post/410110/binance-us-cftc-license?utm_source=rss&utm_medium=rss",
       "published": "2026-07-30T03:17:36+00:00",
-      "type": "news",
+      "type": "peer_move",
       "priority": "normal",
       "status": "new",
       "verification": {
@@ -2157,14 +2183,14 @@
           }
         ]
       },
-      "summary": "Binance.US to apply for CFTC license in August for prediction market platform",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Binance.US said it plans to apply in August for a United States Commodity Futures Trading Commission licence that would let it offer futures, options and event-based prediction contracts to retail customers, entering a market already served by Kalshi and Polymarket US.",
+      "so_what": "A major exchange seeking a federally regulated licence for prediction markets signals further convergence between crypto-exchange and traditional derivatives-market regulation, useful when assessing the regulatory maturity of exchange counterparties offering these products.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-a4d17bea73",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Policy",
       "title": "Senators ready to send stricter ethics rules on Trump's crypto ventures to White House, sources say",
       "url": "https://www.coindesk.com/policy/2026/07/29/senators-said-to-strike-idea-to-toughen-trump-s-concession-on-clarity-act-s-crypto-limits",
@@ -2181,8 +2207,8 @@
           }
         ]
       },
-      "summary": "Senators ready to send stricter ethics rules on Trump's crypto ventures to White House, sources say",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "United States Senators Thom Tillis and Ruben Gallego finalised, but have not yet publicly detailed, revised ethics language meant to limit senior government officials' financial ties to crypto ventures, which still needs White House and Democratic sign-off before the Senate's self-described 'sell-by date' of 7 August to attach it to the Clarity Act.",
+      "so_what": "Whether this ethics language survives into a final bill will shape how seriously government conflict-of-interest standards for crypto holdings are enforced, worth monitoring given the reputational sensitivity of dealing with politically exposed persons who hold digital assets.",
       "first_seen": "2026-07-30T22:02:13.266288+00:00",
       "date_source": "feed"
     }
@@ -2470,8 +2496,8 @@
     },
     {
       "name": "Claude summarisation",
-      "status": "dead",
-      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
+      "status": "ok",
+      "note": "Sonnet — Claude Code session on 2026-07-30"
     }
   ],
   "run_log": [
@@ -2514,6 +2540,10 @@
     {
       "at": "2026-07-30T22:02:13.266288+00:00",
       "note": "Daily fetch: 13 new items surfaced; 35/36 sources ok"
+    },
+    {
+      "at": "2026-07-30T22:23:39Z",
+      "note": "Enrichment: 13 items summarised and classified via Claude Code session. Five items were corroborated against independent sources, including one high-priority item checked against an official confirmation."
     }
   ],
   "radar": [
@@ -2570,6 +2600,18 @@
       "label": "HTX transaction ban takes effect (EU Russia sanctions)",
       "jurisdiction": "EU",
       "url": "https://www.theblock.co/post/409668/eu-adds-htx-to-russia-sanctions-list-barring-transactions-starting-aug-23?utm_source=rss&utm_medium=rss"
+    },
+    {
+      "date": "2027-01-01",
+      "label": "South Korea's crypto capital-gains tax takes effect",
+      "jurisdiction": "GLOBAL",
+      "url": "https://www.coindesk.com/policy/2026/07/30/south-korea-s-long-delayed-crypto-tax-set-to-start-in-2027"
+    },
+    {
+      "date": "2026-08-07",
+      "label": "Senate's self-described deadline to pass the Clarity Act before recess",
+      "jurisdiction": "US",
+      "url": "https://www.coindesk.com/policy/2026/07/29/senators-said-to-strike-idea-to-toughen-trump-s-concession-on-clarity-act-s-crypto-limits"
     }
   ]
 }
