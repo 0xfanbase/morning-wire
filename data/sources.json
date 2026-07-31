@@ -154,6 +154,13 @@
     "tier": "official"
   },
   {
+    "name": "HM Treasury — Publications & announcements",
+    "jurisdiction": "UK",
+    "kind": "feed",
+    "url": "https://www.gov.uk/government/organisations/hm-treasury.atom",
+    "tier": "official"
+  },
+  {
     "name": "European Securities and Markets Authority — News",
     "jurisdiction": "EU",
     "kind": "page",
@@ -166,6 +173,13 @@
     "jurisdiction": "EU",
     "kind": "feed",
     "url": "https://eba.europa.eu/news-press/news/rss.xml",
+    "tier": "official"
+  },
+  {
+    "name": "European Central Bank — Press releases",
+    "jurisdiction": "EU",
+    "kind": "feed",
+    "url": "https://www.ecb.europa.eu/rss/press.html",
     "tier": "official"
   },
   {
