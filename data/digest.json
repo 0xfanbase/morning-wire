@@ -2544,6 +2544,10 @@
     {
       "at": "2026-07-30T22:23:39Z",
       "note": "Enrichment: 13 items summarised and classified via Claude Code session. Five items were corroborated against independent sources, including one high-priority item checked against an official confirmation."
+    },
+    {
+      "at": "2026-07-31T22:24:26Z",
+      "note": "Weekly integrity audit: 14/14 checks ran; all findings were previously-known or already-explained, with no new incident. Also completed this week's source-coverage deep-dive and opened PR #88 proposing two new tracked sources."
     }
   ],
   "radar": [
