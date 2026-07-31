@@ -2001,7 +2001,7 @@
           }
         ],
         "checked": {
-          "at": "2026-07-30T22:23:39Z",
+          "at": "2026-07-30T22:23:39+00:00",
           "against": "Bank for International Settlements — Project Agorá Real Value Testing official results page",
           "url": "https://www.bis.org/about/bisih/topics/fmis/agora/rvt.htm",
           "note": "Matched the approximately 80-second average settlement time and roughly CHF 800,000 (about US$1 million) transaction volume reported for the real-value testing round."
@@ -2219,7 +2219,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265368+00:00",
+      "checked_at": "2026-07-31T22:12:47.115807+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2227,7 +2227,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265382+00:00",
+      "checked_at": "2026-07-31T22:12:47.115819+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2235,7 +2235,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265389+00:00",
+      "checked_at": "2026-07-31T22:12:47.115825+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2243,7 +2243,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265395+00:00",
+      "checked_at": "2026-07-31T22:12:47.115829+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2251,7 +2251,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265400+00:00",
+      "checked_at": "2026-07-31T22:12:47.115835+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2259,7 +2259,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265406+00:00",
+      "checked_at": "2026-07-31T22:12:47.115839+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2267,7 +2267,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265411+00:00",
+      "checked_at": "2026-07-31T22:12:47.115845+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2275,7 +2275,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265415+00:00",
+      "checked_at": "2026-07-31T22:12:47.115857+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2283,7 +2283,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265420+00:00",
+      "checked_at": "2026-07-31T22:12:47.115864+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2291,7 +2291,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265426+00:00",
+      "checked_at": "2026-07-31T22:12:47.115868+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2299,7 +2299,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265432+00:00",
+      "checked_at": "2026-07-31T22:12:47.115873+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2307,7 +2307,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265439+00:00",
+      "checked_at": "2026-07-31T22:12:47.115877+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2315,15 +2315,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265444+00:00",
+      "checked_at": "2026-07-31T22:12:47.115881+00:00",
       "jurisdiction": "US"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='www.occ.gov', port=443): Max retries exceeded with url: /rss/occ_news.xml (Caused by NewConnectionError(\"HTTPSConnection(host='www.occ.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))); 1 consecutive failure — self-heal at 3.",
+      "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265452+00:00",
+      "checked_at": "2026-07-31T22:12:47.115885+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2331,7 +2331,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265457+00:00",
+      "checked_at": "2026-07-31T22:12:47.115890+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2339,7 +2339,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265462+00:00",
+      "checked_at": "2026-07-31T22:12:47.115894+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2347,7 +2347,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265467+00:00",
+      "checked_at": "2026-07-31T22:12:47.115898+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2355,7 +2355,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265473+00:00",
+      "checked_at": "2026-07-31T22:12:47.115902+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2363,7 +2363,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265479+00:00",
+      "checked_at": "2026-07-31T22:12:47.115907+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2371,7 +2371,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265484+00:00",
+      "checked_at": "2026-07-31T22:12:47.115912+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2379,7 +2379,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265487+00:00",
+      "checked_at": "2026-07-31T22:12:47.115916+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -2387,7 +2387,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265490+00:00",
+      "checked_at": "2026-07-31T22:12:47.115921+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2395,15 +2395,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265493+00:00",
+      "checked_at": "2026-07-31T22:12:47.115925+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 1 consecutive failure — self-heal at 3.",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265496+00:00",
+      "checked_at": "2026-07-31T22:12:47.115932+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2411,7 +2411,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265499+00:00",
+      "checked_at": "2026-07-31T22:12:47.115937+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2419,7 +2419,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-07-30T22:02:13.265501+00:00",
+      "checked_at": "2026-07-31T22:12:47.115942+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2427,7 +2427,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265504+00:00",
+      "checked_at": "2026-07-31T22:12:47.115946+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2435,7 +2435,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265507+00:00",
+      "checked_at": "2026-07-31T22:12:47.115950+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2443,7 +2443,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265510+00:00",
+      "checked_at": "2026-07-31T22:12:47.115954+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2451,7 +2451,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265513+00:00",
+      "checked_at": "2026-07-31T22:12:47.115957+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2459,7 +2459,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265515+00:00",
+      "checked_at": "2026-07-31T22:12:47.115961+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2467,7 +2467,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265518+00:00",
+      "checked_at": "2026-07-31T22:12:47.115965+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2475,15 +2475,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265520+00:00",
+      "checked_at": "2026-07-31T22:12:47.115970+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml); 1 consecutive failure — self-heal at 3.",
+      "note": "Fetch failed this run (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml); 2 consecutive failures — self-heal at 3.",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265525+00:00",
+      "checked_at": "2026-07-31T22:12:47.115976+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2491,7 +2491,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-07-30T22:02:13.265528+00:00",
+      "checked_at": "2026-07-31T22:12:47.115980+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
