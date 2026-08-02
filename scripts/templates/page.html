@@ -580,8 +580,13 @@ try {
      the Mon-Fri pipeline's weekend gap) is re-checked client-side against
      the reader's current date -- struck through rather than silently
      dropped, so a row that was genuinely on the radar this week doesn't
-     just vanish with no trace of having existed. */
-  .radar-item.is-closed { opacity: .6; }
+     just vanish with no trace of having existed. No opacity dimming here:
+     .rd/.rj/.radar-closed-tag already use the page's muted --accent-deep/
+     --ink-3 colors, each independently AA-compliant against --bg-2; CSS
+     opacity composites the whole subtree toward the background as one unit
+     (a child can't opt back out), so dimming the row would re-break contrast
+     that was already correctly tuned -- the strikethrough plus the explicit
+     "Closed" tag is signal enough on its own. */
   .radar-item.is-closed a, .radar-item.is-closed span:not(.rd):not(.rj) { text-decoration: line-through; }
   .radar-closed-tag {
     text-decoration: none !important; font-size: 10.5px; font-weight: 700;
