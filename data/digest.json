@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-08-02T21:47:31.026457+00:00",
-  "top_of_mind": "",
+  "top_of_mind": "A Reuters investigation alleges an unlicensed Dubai exchange routed over 676 million dollars linked to Iranian entities through Binance wallets, highlighting sanctions-evasion risk via nested platforms. Circle's stablecoin issuer also gained a New York trust charter alongside its existing federal one.",
   "items": [
     {
       "id": "global-the-block-market-news-1cb05d7b82",
@@ -1435,8 +1435,8 @@
       "title": "United States Attorney’s Office Files Civil Forfeiture Action to Recover Crypto Involved in Online Fraud Scheme",
       "url": "https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-crypto-involved",
       "published": "2026-07-31T12:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "enforcement",
+      "priority": "high",
       "status": "new",
       "verification": {
         "level": "official",
@@ -1445,16 +1445,22 @@
             "name": "US Department of Justice — Press releases",
             "url": "https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-crypto-involved"
           }
-        ]
+        ],
+        "checked": {
+          "at": "2026-08-02T22:20:51Z",
+          "against": "US Department of Justice — US Attorney's Office for the District of Massachusetts, official press release",
+          "url": "https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-crypto-involved",
+          "note": "Matched the 47,461.73 USDT (about $47,000) forfeiture amount and the five-victim tech-support-scam narrative exactly as stated in the release."
+        }
       },
-      "summary": "United States Attorney’s Office Files Civil Forfeiture Action to Recover Crypto Involved in Online Fraud Scheme",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The United States Attorney's Office for the District of Massachusetts filed a civil forfeiture action to recover about 47,462 units of the stablecoin Tether, worth roughly 47,000 United States dollars, seized from a wallet traced to five victims of a technical-support impersonation scam who were told their bank accounts had been compromised and directed to deposit cash into a cryptocurrency automated teller machine.",
+      "so_what": "Fraud proceeds converted into stablecoins at cash machines commonly move on into hosted exchange wallets, so impersonation-scam typologies in transaction monitoring and the handling of law-enforcement requests should cover routine low-value cases and not only headline-sized losses.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-480473ffc1",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "SEC keeps Nasdaq bitcoin options on hold after granting CME review",
       "url": "https://www.theblock.co/post/410373/sec-keeps-nasdaq-bitcoin-options-on-hold-after-granting-cme-review?utm_source=rss&utm_medium=rss",
@@ -1471,14 +1477,14 @@
           }
         ]
       },
-      "summary": "SEC keeps Nasdaq bitcoin options on hold after granting CME review",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The United States Securities and Exchange Commission kept its approval of cash-settled bitcoin index options proposed by the Nasdaq PHLX options exchange on hold and agreed to review that approval after the derivatives exchange operator CME Group argued the contracts are commodity options falling only under the Commodity Futures Trading Commission, with written submissions due by 24 August 2026.",
+      "so_what": "The boundary between the United States securities and derivatives regulators over bitcoin index-linked products remains unsettled, so which rulebook and which supervisor applies is still open for these instruments, a point relevant to product-approval, suitability and counterparty reviews touching United States listed crypto derivatives.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-10073e1a0a",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Policy",
       "title": "Counting down the days: State of Crypto",
       "url": "https://www.coindesk.com/policy/2026/08/02/counting-down-the-days-state-of-crypto",
@@ -1495,8 +1501,8 @@
           }
         ]
       },
-      "summary": "Counting down the days: State of Crypto",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "With about a week left before the United States Senate's August recess, the procedural step needed to bring the Digital Asset Market Clarity Act, a proposed digital-asset market-structure law, to a floor vote had still not been taken, leaving disagreements over ethics provisions, stablecoin reserves, yield and law-enforcement powers unresolved and passage likely to slip to September at the earliest.",
+      "so_what": "Continued delay leaves United States market-structure rules unsettled, including stablecoin reserve standards and the related law-enforcement authorities, so horizon-scanning for United States digital-asset activity should not assume legislative certainty before the autumn.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1519,8 +1525,8 @@
           }
         ]
       },
-      "summary": "Saylor hints at Strategy bitcoin buy after five-week pause as STRC rate stays at 12%: ‘Bitcoin Drive engaged’",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Michael Saylor signalled that Strategy, the largest corporate holder of bitcoin, may resume buying after a five-week pause in disclosures, while the company kept the annual dividend rate on its variable-rate preferred shares (ticker STRC) at 12%; its 843,775 bitcoin, bought for about 63.69 billion United States dollars, were worth roughly 53.3 billion dollars at the time of publication.",
+      "so_what": "There is no direct financial-crime action here, but a large loss-making corporate bitcoin treasury funded by high-yield preferred shares is useful context for counterparty, credit and source-of-wealth reviews of corporate clients whose balance sheets are concentrated in digital assets.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1543,8 +1549,8 @@
           }
         ]
       },
-      "summary": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "A firmware flaw dating back to March 2021 in Coldcard bitcoin hardware wallets caused some devices to generate wallet keys from a predictable software source instead of the device's own hardware random-number generator, letting attackers recreate those keys remotely and take an estimated 1,000 to 1,300 bitcoin, put at about 89 million United States dollars, from more than 1,000 addresses, with holders responding by moving coins back onto exchanges rather than deeper into self-custody.",
+      "so_what": "Large thefts from self-custody devices push stolen and displaced legitimate coins onto exchanges at the same time, so screening against the reported exploit-linked address clusters and source-of-funds enquiries on sudden large inbound transfers from personal wallets carry added weight in the days that follow.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1556,19 +1562,23 @@
       "url": "https://www.theblock.co/post/410355/iran-linked-exchange-sent-676-million-to-binance-in-alleged-sanctions-evasion-operation-reuters?utm_source=rss&utm_medium=rss",
       "published": "2026-08-01T21:18:45+00:00",
       "type": "news",
-      "priority": "normal",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "The Block — Policy",
             "url": "https://www.theblock.co/post/410355/iran-linked-exchange-sent-676-million-to-binance-in-alleged-sanctions-evasion-operation-reuters?utm_source=rss&utm_medium=rss"
+          },
+          {
+            "name": "CryptoBriefing",
+            "url": "https://cryptobriefing.com/iran-linked-exchange-sent-676m-to-binance-in-sanctions-evasion-scheme-reuters/"
           }
         ]
       },
-      "summary": "Iran-linked exchange sent $676 million to Binance wallets in alleged sanctions-evasion operation: Reuters",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "A Reuters investigation reported that Shelbit, an unlicensed Dubai-based cryptocurrency exchange, processed more than 4 billion United States dollars since May 2024 and sent at least 676 million dollars of it to wallets at the exchange Binance, allegedly acting as a hub connecting Iranian gambling websites, Iran's central bank and wallets suspected of links to the Islamic Revolutionary Guard Corps; Binance said it had no evidence supporting the claims and that its compliance programme operated as it should have.",
+      "so_what": "Alleged Iranian-linked flows of this scale reaching a major global exchange show how sanctions exposure arrives indirectly through nested platforms, making counterparty due diligence on virtual-asset exchanges, screening for the named platform and its associated wallet clusters, and review of exposure to unlicensed Gulf-based providers a practical priority.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1591,14 +1601,14 @@
           }
         ]
       },
-      "summary": "Russian decree bans crypto mining across Moscow region through 2032",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Russian government issued a decree, dated 25 July 2026, banning cryptocurrency mining and participation in mining pools in Moscow, the surrounding Moscow region and parts of Kursk region from 15 August 2026 through the end of 2032, on the grounds that year-round mining risks local electricity shortages.",
+      "so_what": "Forced relocation of mining capacity out of a major region tends to change where mining operators incorporate, bank and sell their coins, so counterparty screening and source-of-funds review for mining-related clients and payment flows should allow for shifts in operator domicile.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-institutional-moves-2c2181ffdc",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "EU",
       "source": "CoinDesk — Institutional moves",
       "title": "Bank of Italy research suggests stablecoins aren't necessarily cheaper for remittances",
       "url": "https://www.coindesk.com/business/2026/08/01/bank-of-italy-research-suggests-stablecoins-aren-t-necessarily-cheaper-for-remittances",
@@ -1615,14 +1625,14 @@
           }
         ]
       },
-      "summary": "Bank of Italy research suggests stablecoins aren't necessarily cheaper for remittances",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The Bank of Italy published research finding that sending money across borders with stablecoins, digital tokens designed to hold a steady value against a currency such as the United States dollar, is not systematically cheaper than traditional money-transfer operators, because the cost of converting into and out of ordinary currency, rather than the blockchain transfer itself, pushed the total cost of 200 test transfers across ten international corridors to between roughly 0.3% and almost 9% of the amount sent.",
+      "so_what": "Since the expense and the intermediaries sit at the points where value enters and leaves the blockchain rather than on the chain itself, cross-border payment propositions built on stablecoins are best assessed on the conversion and correspondent arrangements at each end, which is also where customer due-diligence and sanctions-screening obligations actually bite.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-a72da6ad10",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Policy",
       "title": "SEC to review Nasdaq bitcoin options approval after CME challenge",
       "url": "https://www.coindesk.com/policy/2026/08/01/sec-to-review-nasdaq-bitcoin-options-approval-after-cme-challenge",
@@ -1639,8 +1649,8 @@
           }
         ]
       },
-      "summary": "SEC to review Nasdaq bitcoin options approval after CME challenge",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The United States Securities and Exchange Commission has suspended the approval it granted Nasdaq in May 2026 for cash-settled options tracking a bitcoin index and referred the decision to the full commission for review, after CME Group argued that because bitcoin is a commodity such contracts fall under the Commodity Futures Trading Commission's authority instead, with interested parties able to file statements until 24 August 2026.",
+      "so_what": "Which of the two United States market regulators holds authority over bitcoin-linked derivatives determines which rulebook governs those products, leaving firms that structure, clear or facilitate them facing continued uncertainty over the applicable registration, reporting and market-conduct requirements.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1663,8 +1673,8 @@
           }
         ]
       },
-      "summary": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Binance founder Changpeng Zhao urged holders of digital assets to spread funds across several wallets after an attacker drained 1,082.65 bitcoin, worth roughly 70 million United States dollars, from 1,196 addresses in about 41 minutes by exploiting a weakness dating to March 2021 in how Coldcard hardware wallets, physical devices that store cryptocurrency keys offline, generated their recovery phrases.",
+      "so_what": "Offline hardware storage is not inherently safe, and a single vendor defect can create a large pool of stolen coins that later surfaces in customer deposits or counterparty flows, so transaction-monitoring and source-of-funds checks should treat hardware-wallet compromise as a live typology rather than an edge case.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1687,8 +1697,8 @@
           }
         ]
       },
-      "summary": "Bitcoin losses linked to Coldcard vulnerability grow to $70 million, Galaxy Research says",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Galaxy Research reported that a single attacker emptied 1,196 bitcoin addresses of 1,082.65 bitcoin, about 70.2 million United States dollars, over roughly 41 minutes on 30 July, exploiting a flaw in the way Coldcard hardware wallets generated recovery phrases that originated in a March 2021 firmware release and also affects several later device models.",
+      "so_what": "The research warns that further thefts remain possible from any address a Coldcard device created, so the exposure is open-ended rather than closed, and firms receiving digital-asset flows should expect attempted deposits of these stolen coins and factor the incident into wallet-provenance and source-of-funds enquiries.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1711,8 +1721,8 @@
           }
         ]
       },
-      "summary": "Coinbase’s Q2 miss sparks split on Wall Street, analysts debate growth beyond crypto trading",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Coinbase shares fell to their lowest level in about two and a half years after second-quarter results came in below expectations, and equity analysts divided over whether the exchange's newer businesses, including prediction markets and tokenised equities, can grow fast enough to reduce its dependence on cryptocurrency trading fees, with price targets cut at JPMorgan to 148 United States dollars from 196 and at Mizuho to 155 from 200, but held at 330 dollars by Bernstein.",
+      "so_what": "Earnings pressure at a major exchange counterparty is worth tracking in counterparty and concentration reviews, and the push into prediction markets and tokenised equities points to product lines whose financial-crime typologies and regulatory perimeter differ from ordinary spot trading and may not be covered by existing monitoring rules.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1724,19 +1734,23 @@
       "url": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half",
       "published": "2026-07-31T18:24:55+00:00",
       "type": "news",
-      "priority": "normal",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — Market news",
             "url": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half"
+          },
+          {
+            "name": "crypto.news",
+            "url": "https://crypto.news/tether-q2-profit-reserve-buffer-halves/"
           }
         ]
       },
-      "summary": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Tether, the issuer of the largest dollar-pegged stablecoin, reported 1.5 billion United States dollars of net operating profit for the second quarter while its excess reserves, the assets held above what is needed to back the tokens in issue, fell to 4.11 billion dollars from 8.23 billion the previous quarter, against 184.6 billion dollars of tokens outstanding, as falling gold and bitcoin prices cut the value of those holdings.",
+      "so_what": "A smaller cushion above the assets required to back the stablecoin most widely used to settle digital-asset trades in Asia narrows the margin for absorbing losses, so exposure limits, liquidity assumptions and any reliance on that token as a stable settlement asset in client flows warrant review.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1748,19 +1762,23 @@
       "url": "https://www.theblock.co/post/410305/tethers-excess-reserves-fall-by-more-than-4-billion-amid-weaker-q2-financial-results?utm_source=rss&utm_medium=rss",
       "published": "2026-07-31T17:58:47+00:00",
       "type": "news",
-      "priority": "normal",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "The Block — Market news",
             "url": "https://www.theblock.co/post/410305/tethers-excess-reserves-fall-by-more-than-4-billion-amid-weaker-q2-financial-results?utm_source=rss&utm_medium=rss"
+          },
+          {
+            "name": "crypto.news",
+            "url": "https://crypto.news/tether-q2-profit-reserve-buffer-halves/"
           }
         ]
       },
-      "summary": "Tether’s excess reserves fall by more than $4 billion amid weaker Q2 financial results",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Tether's excess reserves, the assets it holds above what is needed to back its dollar-pegged tokens, fell by more than 4 billion United States dollars during the second quarter, to about 4.1 billion from 8.2 billion, as net operating profit dropped to 1.5 billion dollars from 4.9 billion of net profit a year earlier and the company's bitcoin and gold holdings each lost more than a tenth of their value, contributing to a negative 3.2 billion dollar financial result for the first half of the year.",
+      "so_what": "Erosion of the buffer behind the stablecoin most commonly used to move value between digital-asset venues, driven by holdings in volatile assets rather than cash equivalents, is a concentration and liquidity consideration for any function assessing how far client transaction flows depend on that token holding its value.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1783,8 +1801,8 @@
           }
         ]
       },
-      "summary": "Analysts back Strategy’s cash buildup as Saylor shifts from ‘100% bitcoin’ approach",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Strategy, the United States-listed company with the largest corporate bitcoin holding, reported an 8.2 billion dollar quarterly loss as bitcoin's price fell, paused its purchases for five weeks to build a 3.75 billion dollar cash reserve, and its executive chairman said the company's holdings will no longer be entirely in bitcoin.",
+      "so_what": "A large corporate holder shifting from an all-bitcoin balance sheet to a multi-billion-dollar cash buffer is a useful signal for counterparty and source-of-wealth reviews of clients whose financial position depends heavily on digital-asset prices.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1807,8 +1825,8 @@
           }
         ]
       },
-      "summary": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "A flaw in the software running Coldcard hardware wallets, devices used to store bitcoin offline, let attackers reconstruct owners' secret recovery phrases and steal roughly 38 million dollars of bitcoin so far, close to 600 coins, with the manufacturer urging anyone whose keys were created on the device to move their funds immediately.",
+      "so_what": "A large-scale theft of self-custodied bitcoin creates a pool of tainted coins likely to be moved through exchanges and over-the-counter dealers, so blockchain screening rules and alert thresholds should account for the affected addresses, and customer demand may shift toward regulated custodians and exchange-traded funds.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1831,32 +1849,42 @@
           }
         ]
       },
-      "summary": "Crypto faces 3 barriers to next bull run, STS Digital CEO says",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "The chief executive of STS Digital, a Bermuda-licensed digital-asset options trading firm, said three things are holding back the next crypto rally: institutional options selling that has pushed bitcoin's expected price swings to among the lowest of this cycle, investor money rotating into artificial intelligence, and delays to the United States market-structure legislation known as the Clarity Act.",
+      "so_what": "The continued absence of finalised United States market-structure rules means the classification of digital assets there stays unsettled, so product timelines and perimeter assumptions that depend on that legislation passing should be treated as provisional.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-coindesk-policy-add90be258",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "CoinDesk — Policy",
       "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
       "url": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
       "published": "2026-07-31T13:35:17+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "licensing",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "CoinDesk — Policy",
             "url": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates"
+          },
+          {
+            "name": "Circle — official press release",
+            "url": "https://www.circle.com/pressroom/circle-granted-trust-charter-by-the-new-york-department-of-financial-services"
           }
-        ]
+        ],
+        "checked": {
+          "at": "2026-08-02T22:20:51Z",
+          "against": "Circle — official press release confirming the New York Department of Financial Services trust charter",
+          "url": "https://www.circle.com/pressroom/circle-granted-trust-charter-by-the-new-york-department-of-financial-services",
+          "note": "Matched the entity (Circle New York Trust), the charter type (limited-purpose trust charter) and the 31 July 2026 date."
+        }
       },
-      "summary": "Circle secures New York trust charter as crypto regulatory push accelerates",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Circle, the issuer of the dollar-pegged stablecoin USDC, was granted a limited-purpose trust charter by the New York State Department of Financial Services, allowing it to provide fiduciary, custody and asset-management services under New York banking law three weeks after the United States Office of the Comptroller of the Currency approved its national trust bank.",
+      "so_what": "A major stablecoin issuer now sitting under both state and federal banking supervision in the United States gives counterparty due-diligence and reserve-risk assessments a supervised entity to point to, and offers a comparison point for firms mapping stablecoin exposure against Hong Kong's own stablecoin licensing regime.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
@@ -1879,38 +1907,48 @@
           }
         ]
       },
-      "summary": "Coinbase's weak quarter leaves Wall Street split on timing of a recovery",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Coinbase reported quarterly revenue of 1.22 billion dollars and guidance for the next quarter below analysts' expectations as weak prices and subdued trading persisted, sending its shares down about 6 percent before the market opened, even as it reached a record 10.3 percent share of global crypto trading volume.",
+      "so_what": "Subdued trading volumes alongside a single venue holding a record share of global activity is a useful reference point when reviewing counterparty concentration in digital-asset exposures and when re-baselining expected customer transaction volumes for monitoring.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-market-news-05c7a72c48",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Market news",
       "title": "Circle secures NYDFS trust charter, adding state layer to federal USDC oversight",
       "url": "https://www.theblock.co/post/410275/circle-secures-nydfs-trust-charter-adding-state-layer-to-federal-usdc-oversight?utm_source=rss&utm_medium=rss",
       "published": "2026-07-31T12:59:31+00:00",
-      "type": "news",
-      "priority": "normal",
+      "type": "licensing",
+      "priority": "high",
       "status": "new",
       "verification": {
-        "level": "single_source",
+        "level": "corroborated",
         "sources": [
           {
             "name": "The Block — Market news",
             "url": "https://www.theblock.co/post/410275/circle-secures-nydfs-trust-charter-adding-state-layer-to-federal-usdc-oversight?utm_source=rss&utm_medium=rss"
+          },
+          {
+            "name": "Circle — official press release",
+            "url": "https://www.circle.com/pressroom/circle-granted-trust-charter-by-the-new-york-department-of-financial-services"
           }
-        ]
+        ],
+        "checked": {
+          "at": "2026-08-02T22:20:51Z",
+          "against": "Circle — official press release confirming the New York Department of Financial Services trust charter",
+          "url": "https://www.circle.com/pressroom/circle-granted-trust-charter-by-the-new-york-department-of-financial-services",
+          "note": "Matched the entity (Circle New York Trust), the charter type (limited-purpose trust charter) and the 31 July 2026 date."
+        }
       },
-      "summary": "Circle secures NYDFS trust charter, adding state layer to federal USDC oversight",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Circle's New York subsidiary received a limited-purpose trust charter from the New York State Department of Financial Services, adding state supervision alongside the federal national trust bank approval granted on 10 July 2026 and meaning issuance of its dollar-pegged stablecoin USDC would run through the New York trust company rather than the national bank.",
+      "so_what": "Because supervision of the issuing entity, not the token brand, determines who oversees reserves and redemption, entity records for stablecoin counterparties should capture which chartered company actually issues the token and which regulator supervises it.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     },
     {
       "id": "global-the-block-policy-30c70c7161",
-      "jurisdiction": "GLOBAL",
+      "jurisdiction": "US",
       "source": "The Block — Policy",
       "title": "Senate Democrats propose anti-corruption bureau as Trump’s crypto portfolio draws more scrutiny",
       "url": "https://www.theblock.co/post/410260/senate-democrat-anti-corruption-bureau?utm_source=rss&utm_medium=rss",
@@ -1927,8 +1965,8 @@
           }
         ]
       },
-      "summary": "Senate Democrats propose anti-corruption bureau as Trump’s crypto portfolio draws more scrutiny",
-      "so_what": "Review the source directly; automated analysis unavailable.",
+      "summary": "Senate Democratic leader Chuck Schumer introduced a bill to create a seven-member federal anti-corruption bureau with investigative, subpoena and enforcement powers to recover money obtained corruptly by presidents and senior officials, as scrutiny grows over an estimated 620 million dollars of cryptocurrency earnings linked to the Trump family and the ethics dispute delays broader United States market-structure legislation.",
+      "so_what": "Sustained political scrutiny of digital-asset earnings tied to senior officials is a prompt to confirm that politically exposed person screening and source-of-wealth review capture token sales, non-fungible tokens and mining interests, not only conventional assets and shareholdings.",
       "first_seen": "2026-08-02T21:47:31.026457+00:00",
       "date_source": "feed"
     }
@@ -2216,8 +2254,8 @@
     },
     {
       "name": "Claude summarisation",
-      "status": "dead",
-      "note": "No ANTHROPIC_API_KEY configured -- AI summaries, corroboration and source self-healing are disabled; cards show raw source titles."
+      "status": "ok",
+      "note": "Opus — Claude Code session on 2026-08-02"
     }
   ],
   "run_log": [
@@ -2260,6 +2298,10 @@
     {
       "at": "2026-08-02T21:47:31.026457+00:00",
       "note": "Daily fetch: 21 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-08-02T22:20:51Z",
+      "note": "Enrichment: 21 items summarised and classified via Claude Code session (Opus, given an unusually large backlog). Six items were corroborated or checked against independent and official sources."
     }
   ],
   "radar": [
@@ -2328,6 +2370,18 @@
       "label": "Senate's self-described deadline to pass the Clarity Act before recess",
       "jurisdiction": "US",
       "url": "https://www.coindesk.com/policy/2026/07/29/senators-said-to-strike-idea-to-toughen-trump-s-concession-on-clarity-act-s-crypto-limits"
+    },
+    {
+      "date": "2026-08-24",
+      "label": "Comments close: SEC review of Nasdaq bitcoin options approval (CME challenge)",
+      "jurisdiction": "US",
+      "url": "https://www.coindesk.com/policy/2026/08/01/sec-to-review-nasdaq-bitcoin-options-approval-after-cme-challenge"
+    },
+    {
+      "date": "2026-08-15",
+      "label": "Effective: Russia's Moscow-region crypto mining ban begins",
+      "jurisdiction": "GLOBAL",
+      "url": "https://www.theblock.co/post/410345/russian-decree-bans-crypto-mining-across-moscow-region-through-2032?utm_source=rss&utm_medium=rss"
     }
   ]
 }
