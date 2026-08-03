@@ -4,62 +4,8 @@
 <title>Digital Assets Morning Wire</title>
 <link>https://0xfanbase.github.io/morning-wire/</link>
 <description>Daily digital-asset regulatory and market digest. AI-sourced and AI-generated — verify against official sources before acting.</description>
-<lastBuildDate>Sun, 02 Aug 2026 21:47:31 +0000</lastBuildDate>
+<lastBuildDate>Mon, 03 Aug 2026 22:00:57 +0000</lastBuildDate>
 <atom:link href="https://0xfanbase.github.io/morning-wire/feed.xml" rel="self" type="application/rss+xml"/>
-<item>
-<title>Michael Saylor teases ‘another color’ after four straight weeks without a Strategy bitcoin buy</title>
-<link>https://www.theblock.co/post/409675/michael-saylor-teases-another-color-after-four-straight-weeks-without-a-strategy-bitcoin-buy?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-1cb05d7b82</guid>
-<pubDate>Sun, 26 Jul 2026 20:49:10 +0000</pubDate>
-<description>Strategy (formerly MicroStrategy) executive chairman Michael Saylor hinted at new corporate financial activity after four consecutive weeks without the company adding to its bitcoin holdings. So what: A pause in one of the largest corporate bitcoin holders' buying pattern is primarily a market-watching item, though functions tracking counterparty crypto-treasury exposure may note any change in direction once details emerge. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>2 weeks left for Clarity: State of Crypto</title>
-<link>https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto</link>
-<guid isPermaLink="false">global-coindesk-policy-48e14165c9</guid>
-<pubDate>Sun, 26 Jul 2026 18:30:00 +0000</pubDate>
-<description>The US Senate faces a tight deadline to advance the Digital Asset Market Clarity Act before its August recess, with a newly merged committee text that for the first time includes ethics provisions on the president's personal cryptocurrency dealings, though Democrats and Republicans still disagree on how strict those provisions should be. So what: The bill's market-structure provisions remain unsettled and contingent on resolving the ethics dispute, so a compliance function should continue treating a finalised US digital-asset market-structure law as not yet in place rather than planning around a specific outcome. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Europe's high regulatory bar could spark new crypto industry M&amp;A wave</title>
-<link>https://www.coindesk.com/policy/2026/07/26/europe-s-high-regulatory-bar-could-spark-new-crypto-industry-m-and-a-wave</link>
-<guid isPermaLink="false">global-coindesk-policy-0e26faf0bc</guid>
-<pubDate>Sun, 26 Jul 2026 10:00:00 +0000</pubDate>
-<description>High compliance costs under the European Union's Markets in Crypto-Assets framework and the United Kingdom's developing crypto rules may push smaller crypto firms toward mergers with, or acquisition by, traditional financial institutions that already have the required governance, capital and custody systems in place. So what: As compliance-driven consolidation brings more crypto activity inside regulated financial institutions' ownership structures, due-diligence processes for new banking relationships and counterparties should expect more crypto-native firms to appear as acquisition targets or subsidiaries of traditional financial groups. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>EU adds HTX to Russia sanctions list, barring transactions starting Aug. 23</title>
-<link>https://www.theblock.co/post/409668/eu-adds-htx-to-russia-sanctions-list-barring-transactions-starting-aug-23?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-7a8ab813d7</guid>
-<pubDate>Sat, 25 Jul 2026 21:23:27 +0000</pubDate>
-<description>The European Union added the crypto exchange HTX (formerly Huobi) to its Russia sanctions list as part of its 21st sanctions package, barring European Union operators from transacting with the platform from 23 August 2026, though eligible European Union, European Economic Area and Swiss nationals have a wind-down window to withdraw funds or close accounts. So what: Sanctions and crypto-counterparty screening lists should be updated to include HTX ahead of the 23 August 2026 effective date, and any existing exposure to the platform should be reviewed given the limited wind-down window for European Union, European Economic Area and Swiss account holders. [corroborated]</description>
-<category>European Union</category>
-<category>Designation</category>
-</item>
-<item>
-<title>North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto</title>
-<link>https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto</link>
-<guid isPermaLink="false">global-coindesk-market-news-fb298216d4</guid>
-<pubDate>Sat, 25 Jul 2026 15:46:05 +0000</pubDate>
-<description>North Korea's own intelligence agency arrested former military hackers accused of stealing foreign-currency and trade funds from two North Korean state banks and laundering them through cryptocurrency and China-based brokers before the scheme was detected. So what: The laundering techniques described, splitting transfers into small amounts, using encrypted messaging and unregistered devices, and converting through brokers near the China border, match patterns already associated with North Korea-linked crypto theft more broadly, making this a useful reference point for transaction-monitoring typologies. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Bitcoin ETF weekly trading volume falls to lowest since October 2024 as ether funds lead inflows again</title>
-<link>https://www.theblock.co/post/409660/bitcoin-etf-weekly-trading-volume-falls-to-lowest-since-october-2024-as-ether-funds-lead-inflows-again?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-2dc8476a71</guid>
-<pubDate>Sat, 25 Jul 2026 13:59:06 +0000</pubDate>
-<description>Weekly trading volume for United States spot bitcoin exchange-traded funds fell to its lowest level since October 2024, while ether funds continued to attract more new inflows than bitcoin funds. So what: Declining bitcoin ETF trading activity alongside continued ether fund inflows is a market-structure trend worth noting for functions that monitor product concentration and flows through regulated fund wrappers, though it does not itself change any compliance obligation. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
 <item>
 <title>Outcomes monitoring: why understanding the consumer experience matters and where firms should focus</title>
 <link>https://www.fca.org.uk/news/blogs/outcomes-monitoring-why-understanding-consumer-experience-matters</link>
@@ -706,6 +652,186 @@
 <pubDate>Fri, 31 Jul 2026 09:34:29 +0000</pubDate>
 <description>Senate Democratic leader Chuck Schumer introduced a bill to create a seven-member federal anti-corruption bureau with investigative, subpoena and enforcement powers to recover money obtained corruptly by presidents and senior officials, as scrutiny grows over an estimated 620 million dollars of cryptocurrency earnings linked to the Trump family and the ethics dispute delays broader United States market-structure legislation. So what: Sustained political scrutiny of digital-asset earnings tied to senior officials is a prompt to confirm that politically exposed person screening and source-of-wealth review capture token sales, non-fungible tokens and mining interests, not only conventional assets and shareholdings. [single source]</description>
 <category>United States</category>
+<category>News</category>
+</item>
+<item>
+<title>Appointments to Task Force on Promoting Web3 Development</title>
+<link>https://www.info.gov.hk/gia/general/202607/31/P2026073100331.htm</link>
+<guid isPermaLink="false">hk-financial-services-and-the-treasury-bureau-press-releases-ee71d3ec35</guid>
+<pubDate>Fri, 31 Jul 2026 00:00:00 +0800</pubDate>
+<description>Appointments to Task Force on Promoting Web3 Development So what: Review the source directly; automated analysis unavailable. [official]</description>
+<category>Hong Kong</category>
+<category>News</category>
+</item>
+<item>
+<title>Blockchain Association counters National Sheriffs’ group claims as pivotal week for Clarity Act unfolds</title>
+<link>https://www.theblock.co/post/410507/blockchain-association-counters-sheriffs-associations-claims-pivotal-week-clarity-act?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-7a2ab87c0d</guid>
+<pubDate>Mon, 03 Aug 2026 21:13:10 +0000</pubDate>
+<description>Blockchain Association counters National Sheriffs’ group claims as pivotal week for Clarity Act unfolds So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>FBI agent accused of stealing $1 million in crypto, allegedly turned to ChatGPT for vacation plans</title>
+<link>https://www.theblock.co/post/410491/fbi-agent-stealing-1-million-crypto-turned-to-chatgpt-vacation-plans?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-77d11ccbcd</guid>
+<pubDate>Mon, 03 Aug 2026 18:48:34 +0000</pubDate>
+<description>FBI agent accused of stealing $1 million in crypto, allegedly turned to ChatGPT for vacation plans So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Proof of Attendance Protocol is shutting down after 5+ years</title>
+<link>https://www.theblock.co/post/410482/proof-of-attendance-protocol-is-shutting-down-after-5-years?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-35676fe975</guid>
+<pubDate>Mon, 03 Aug 2026 18:40:12 +0000</pubDate>
+<description>Proof of Attendance Protocol is shutting down after 5+ years So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>BlackRock launches two tokenized money market funds for stablecoin reserves</title>
+<link>https://www.theblock.co/post/410469/blackrock-launches-two-tokenized-money-market-funds-stablecoin-reserves?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-a40857a6ca</guid>
+<pubDate>Mon, 03 Aug 2026 17:48:09 +0000</pubDate>
+<description>BlackRock launches two tokenized money market funds for stablecoin reserves So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Jameson Lopp says Coldcard exploit exposes limits of Bitcoin’s ‘don’t trust, verify’ mantra</title>
+<link>https://www.theblock.co/post/410446/jameson-lopp-coldcard-exploit-exposes-limits-bitcoins-dont-trust-verify-mantra?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-23df41c035</guid>
+<pubDate>Mon, 03 Aug 2026 16:59:42 +0000</pubDate>
+<description>Jameson Lopp says Coldcard exploit exposes limits of Bitcoin’s ‘don’t trust, verify’ mantra So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Michael Saylor says he’s never sold his personal bitcoin after Strategy dumps more BTC</title>
+<link>https://www.theblock.co/post/410451/michael-saylor-says-never-sold-his-personal-bitcoin-strategy-dumps-more-btc?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-2638c1e5f4</guid>
+<pubDate>Mon, 03 Aug 2026 16:57:22 +0000</pubDate>
+<description>Michael Saylor says he’s never sold his personal bitcoin after Strategy dumps more BTC So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Circle slides after Morgan Stanley downgrade, cut in price target</title>
+<link>https://www.coindesk.com/markets/2026/08/03/circle-internet-slides-after-morgan-stanley-downgrade-cut-in-price-target</link>
+<guid isPermaLink="false">global-coindesk-institutional-moves-0d0d9199b2</guid>
+<pubDate>Mon, 03 Aug 2026 13:59:50 +0000</pubDate>
+<description>Circle slides after Morgan Stanley downgrade, cut in price target So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Bernstein sees another leg lower for crypto markets if Clarity Act stalls</title>
+<link>https://www.coindesk.com/policy/2026/08/03/bernstein-sees-another-leg-lower-for-crypto-markets-if-clarity-act-stalls</link>
+<guid isPermaLink="false">global-coindesk-policy-3f2df5f4c7</guid>
+<pubDate>Mon, 03 Aug 2026 13:49:40 +0000</pubDate>
+<description>Bernstein sees another leg lower for crypto markets if Clarity Act stalls So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>BlackRock expands tokenized cash with new blockchain-based money market offerings</title>
+<link>https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings</link>
+<guid isPermaLink="false">global-coindesk-institutional-moves-08167fc397</guid>
+<pubDate>Mon, 03 Aug 2026 13:15:46 +0000</pubDate>
+<description>BlackRock expands tokenized cash with new blockchain-based money market offerings So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Eric Trump’s American Bitcoin treasury tops 8,000 BTC as Q2 mining production hits record</title>
+<link>https://www.theblock.co/post/410426/eric-trumps-american-bitcoin-treasury-tops-8000-btc-as-q2-mining-production-hits-record?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-fd0cf51e97</guid>
+<pubDate>Mon, 03 Aug 2026 13:03:00 +0000</pubDate>
+<description>Eric Trump’s American Bitcoin treasury tops 8,000 BTC as Q2 mining production hits record So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Michael Saylor’s Strategy sells another 1,638 BTC for $105 million, reducing total holdings to 842,138 BTC</title>
+<link>https://www.theblock.co/post/410414/michael-saylors-strategy-sells-another-1638-btc-for-105-million-reducing-total-holdings-to-842138-btc?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-24afe66f0d</guid>
+<pubDate>Mon, 03 Aug 2026 12:13:30 +0000</pubDate>
+<description>Michael Saylor’s Strategy sells another 1,638 BTC for $105 million, reducing total holdings to 842,138 BTC So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>BitGo launches Link, connecting clients to Coinbase, Kraken, Crypto.com and more</title>
+<link>https://www.theblock.co/post/410408/bitgo-link-coinbase-kraken-crypto-com?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-d27415018e</guid>
+<pubDate>Mon, 03 Aug 2026 11:50:02 +0000</pubDate>
+<description>BitGo launches Link, connecting clients to Coinbase, Kraken, Crypto.com and more So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Bitcoin, ether decline as Coldcard exploit enters a fifth day</title>
+<link>https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day</link>
+<guid isPermaLink="false">global-coindesk-market-news-ba2f3e2822</guid>
+<pubDate>Mon, 03 Aug 2026 10:51:37 +0000</pubDate>
+<description>Bitcoin, ether decline as Coldcard exploit enters a fifth day So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Bernstein says Clarity Act failure could accelerate SEC, CFTC crypto rulemaking</title>
+<link>https://www.theblock.co/post/410395/bernstein-says-clarity-act-failure-could-accelerate-sec-cftc-crypto-rulemaking?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-0e4c2f9f95</guid>
+<pubDate>Mon, 03 Aug 2026 09:49:47 +0000</pubDate>
+<description>Bernstein says Clarity Act failure could accelerate SEC, CFTC crypto rulemaking So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Robinhood wins UK crypto registration before new regulatory regime kicks off</title>
+<link>https://www.coindesk.com/policy/2026/08/03/robinhood-wins-uk-crypto-registration-before-new-regulatory-regime-kicks-off</link>
+<guid isPermaLink="false">global-coindesk-policy-02a62d0bcd</guid>
+<pubDate>Mon, 03 Aug 2026 09:38:53 +0000</pubDate>
+<description>Robinhood wins UK crypto registration before new regulatory regime kicks off So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead</title>
+<link>https://www.coindesk.com/markets/2026/08/03/u-s-jobs-circle-galaxy-american-bitcoin-earnings-crypto-week-ahead</link>
+<guid isPermaLink="false">global-coindesk-market-news-16a6912242</guid>
+<pubDate>Mon, 03 Aug 2026 08:16:28 +0000</pubDate>
+<description>U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Michael Saylor’s Strategy is now tracking bitcoin’s 200-week moving average</title>
+<link>https://www.coindesk.com/markets/2026/08/03/michael-saylor-s-strategy-is-now-tracking-bitcoin-s-200-week-moving-average</link>
+<guid isPermaLink="false">global-coindesk-market-news-aef4cb428f</guid>
+<pubDate>Mon, 03 Aug 2026 05:07:49 +0000</pubDate>
+<description>Michael Saylor’s Strategy is now tracking bitcoin’s 200-week moving average So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Kalshi and Polymarket’s combined volume reaches all-time high in July, surpassing $50 billion</title>
+<link>https://www.theblock.co/post/410382/kalshi-polymarket-volume-july?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-d3d8e12ed6</guid>
+<pubDate>Mon, 03 Aug 2026 04:34:46 +0000</pubDate>
+<description>Kalshi and Polymarket’s combined volume reaches all-time high in July, surpassing $50 billion So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Hong Kong police flag $3.3 million romance scam involving fake crypto app</title>
+<link>https://www.theblock.co/post/410377/hong-kong-3-million-crypto-romance-scam?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">cn-the-block-china-policy-7356587b93</guid>
+<pubDate>Mon, 03 Aug 2026 03:42:16 +0000</pubDate>
+<description>Hong Kong police flag $3.3 million romance scam involving fake crypto app So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Mainland China</category>
 <category>News</category>
 </item>
 </channel>
