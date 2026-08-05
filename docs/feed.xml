@@ -4,107 +4,8 @@
 <title>Digital Assets Morning Wire</title>
 <link>https://0xfanbase.github.io/morning-wire/</link>
 <description>Daily digital-asset regulatory and market digest. AI-sourced and AI-generated — verify against official sources before acting.</description>
-<lastBuildDate>Tue, 04 Aug 2026 22:06:15 +0000</lastBuildDate>
+<lastBuildDate>Wed, 05 Aug 2026 22:07:47 +0000</lastBuildDate>
 <atom:link href="https://0xfanbase.github.io/morning-wire/feed.xml" rel="self" type="application/rss+xml"/>
-<item>
-<title>Strengthening resilience across an increasingly interconnected financial system</title>
-<link>https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system</link>
-<guid isPermaLink="false">uk-financial-conduct-authority-news-dda74f6c16</guid>
-<pubDate>Tue, 28 Jul 2026 00:00:00 +0800</pubDate>
-<description>The UK Financial Conduct Authority explained its new Critical Third Parties oversight regime, which directly monitors essential technology and service providers supporting the UK financial system after finding that 27 percent of incidents reported to it in 2025 involved third-party issues. So what: The piece does not address digital assets directly, but its focus on systemic third-party operational risk is a supervisory approach that could extend to critical infrastructure providers digital-asset firms also rely on, such as custody technology or cloud services. [official]</description>
-<category>United Kingdom</category>
-<category>Guidance</category>
-</item>
-<item>
-<title>GDF and ISDA Release Landmark Report on U.S. Tokenized Money Market Funds</title>
-<link>https://www.gdf.io/news-letters/gdf-and-isda-release-landmark-report-on-u-s-tokenized-money-market-funds/</link>
-<guid isPermaLink="false">global-global-digital-finance-gdf-news-b66f407f25</guid>
-<pubDate>Tue, 28 Jul 2026 06:45:49 +0000</pubDate>
-<description>Global Digital Finance and the International Swaps and Derivatives Association published a report, based on sandbox testing by 48 firms and survey responses from over 120 financial institutions, concluding that tokenised money market funds can function as institutional collateral under existing United States law, with two exceptions. So what: With most surveyed institutions planning to launch tokenised money market funds and to accept them as collateral within the next two years, functions handling collateral and counterparty due diligence should expect tokenised fund structures to become a more common feature of institutional relationships. [official]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Crypto hacks hit record high in H1 2026 as losses top $1 billion, Blockaid says</title>
-<link>https://www.theblock.co/post/409944/crypto-hacks-hit-record-high-in-h1-2026-as-losses-top-1-billion-blockaid-says?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-6bdd523864</guid>
-<pubDate>Tue, 28 Jul 2026 19:45:26 +0000</pubDate>
-<description>Blockchain security firm Blockaid reported that crypto hacks and exploits reached a record number of incidents in the first half of 2026, with total losses exceeding 1 billion US dollars, of which nearly 600 million US dollars was linked to North Korean hacking groups. So what: The continued concentration of theft losses in North Korea-linked incidents, often carried out via social-engineering attacks on multi-signature wallet holders, reinforces the value of screening counterparties and transaction patterns against known North Korea-linked typologies. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>BlackRock, Fidelity, other Wall Street giants back the Clarity Act</title>
-<link>https://www.coindesk.com/policy/2026/07/28/blackrock-fidelity-other-wall-street-giants-back-the-clarity-act</link>
-<guid isPermaLink="false">global-coindesk-institutional-moves-752f1305b0</guid>
-<pubDate>Tue, 28 Jul 2026 16:08:19 +0000</pubDate>
-<description>BlackRock, Fidelity, Franklin Templeton, Goldman Sachs and SoFi publicly endorsed the pending Digital Asset Market Clarity Act, while the bill's path through the US Senate remains constrained by limited floor time before the chamber's August recess. So what: Broad Wall Street support does not resolve the bill's unsettled ethics provisions or guarantee timely passage, so a compliance function should continue treating US digital-asset market-structure legislation as pending rather than final. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Russia outlines new digital depository rules ahead of fall crypto framework roll-out</title>
-<link>https://www.coindesk.com/policy/2026/07/28/russia-outlines-new-digital-depository-rules-ahead-of-fall-crypto-framework-roll-out</link>
-<guid isPermaLink="false">global-coindesk-policy-243b5ca16c</guid>
-<pubDate>Tue, 28 Jul 2026 14:49:50 +0000</pubDate>
-<description>Russia's central bank published draft rules establishing regulated "digital depositories" to hold and record cryptocurrency and other digital-asset holdings, with tiered minimum capital requirements depending on the type of custody or settlement activity, ahead of a broader digital-assets law taking full effect by September 2026. So what: As Russia builds out a formal regulated custody framework for digital assets, due-diligence processes evaluating exposure to Russia-linked crypto infrastructure should track which entities become licensed digital depositories, particularly given the framework's timing alongside recent European Union sanctions on Russia-linked crypto platforms. [corroborated]</description>
-<category>Global</category>
-<category>Consultation</category>
-</item>
-<item>
-<title>Morgan Stanley debuts Ethereum and Solana ETFs with market’s lowest fee, staking rewards</title>
-<link>https://www.theblock.co/post/409898/morgan-stanley-debuts-ethereum-solana-etfs-markets-lowest-fee-staking-rewards?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-institutional-moves-6ec46502af</guid>
-<pubDate>Tue, 28 Jul 2026 14:31:47 +0000</pubDate>
-<description>Morgan Stanley launched exchange-traded funds providing exposure to ether and solana, offering the lowest fees in the market along with staking rewards. So what: This is a peer financial institution's digital-asset product launch rather than a regulatory development, useful as context for functions tracking how mainstream brokers are expanding crypto product offerings. [single source]</description>
-<category>Global</category>
-<category>Peer move</category>
-</item>
-<item>
-<title>Morgan Stanley debuts ether, solana exchange-traded products after bitcoin fund success</title>
-<link>https://www.coindesk.com/markets/2026/07/28/morgan-stanley-debuts-ether-and-solana-etps-after-bitcoin-fund-success</link>
-<guid isPermaLink="false">global-coindesk-institutional-moves-aa5ece0943</guid>
-<pubDate>Tue, 28 Jul 2026 14:30:57 +0000</pubDate>
-<description>Morgan Stanley debuted ether and solana exchange-traded products following the earlier success of its bitcoin fund. So what: This is a peer financial institution's digital-asset product launch rather than a regulatory development, useful as context for functions tracking how mainstream brokers are expanding crypto product offerings. [single source]</description>
-<category>Global</category>
-<category>Peer move</category>
-</item>
-<item>
-<title>Russia’s central bank drafts first rules for ‘organized’ crypto trading</title>
-<link>https://www.theblock.co/post/409877/russias-central-bank-drafts-first-rules-for-organized-crypto-trading?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-2b7111fb44</guid>
-<pubDate>Tue, 28 Jul 2026 13:22:21 +0000</pubDate>
-<description>Russia's central bank published its first draft rules for "organised" cryptocurrency trading venues, part of the broader digital-assets framework due to take full effect by September 2026. So what: As Russia moves toward licensing formal crypto trading venues, functions assessing counterparty and correspondent exposure to Russia-linked crypto infrastructure should track which platforms become licensed under the new framework. [single source]</description>
-<category>Global</category>
-<category>Consultation</category>
-</item>
-<item>
-<title>Binance makes fighting crypto crime more difficult, says new report</title>
-<link>https://www.coindesk.com/business/2026/07/28/binance-makes-fighting-crypto-crime-more-difficult-says-new-nyt-article</link>
-<guid isPermaLink="false">global-coindesk-market-news-b8445934e8</guid>
-<pubDate>Tue, 28 Jul 2026 12:24:02 +0000</pubDate>
-<description>The New York Times reported that Binance's April 2025 policy requiring most foreign law-enforcement data requests to be routed through the United Arab Emirates or formal mutual-legal-assistance treaties has significantly slowed investigators' ability to obtain user records and freeze or seize stolen assets, according to European and United States investigators; Binance disputes that its cooperation has slowed. So what: Counterparty and correspondent due-diligence assessments of exchanges should factor in how quickly a platform can respond to a legitimate law-enforcement or asset-freeze request, since slower response times can directly affect the ability to recover funds in a fraud or hack investigation. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Hong Kong’s central bank puts a number on lenders' quantum preparedness. It's very low.</title>
-<link>https://www.coindesk.com/markets/2026/07/28/hong-kong-s-central-bank-puts-a-number-on-lenders-quantum-preparedness-it-s-very-low</link>
-<guid isPermaLink="false">cn-coindesk-china-policy-578f2b285b</guid>
-<pubDate>Tue, 28 Jul 2026 07:55:41 +0000</pubDate>
-<description>The Hong Kong Monetary Authority found that Hong Kong's banking sector scored only 2.3 out of 10 on its newly created Quantum Preparedness Index, with about half of banks not yet having formal plans to transition to quantum-resistant cryptography ahead of an estimated threat window as early as 2029. So what: Because quantum computing threatens the same cryptographic foundations that secure digital-asset custody and blockchain transactions, a low industry-wide quantum-readiness score is directly relevant to assessing the long-term security of any digital-asset custody or wallet infrastructure a Hong Kong-linked counterparty relies on. [corroborated]</description>
-<category>Hong Kong</category>
-<category>Guidance</category>
-</item>
-<item>
-<title>U.S. Senate puts off crypto Clarity Act for now as it focuses limited bandwidth elsewhere</title>
-<link>https://www.coindesk.com/policy/2026/07/27/u-s-senate-puts-off-crypto-clarity-act-for-now-as-it-focuses-limited-bandwidth-elsewhere</link>
-<guid isPermaLink="false">global-coindesk-policy-46c3ed12a1</guid>
-<pubDate>Mon, 27 Jul 2026 23:55:16 +0000</pubDate>
-<description>The US Senate delayed further action on the Digital Asset Market Clarity Act to prioritise other business, including nominations and Russia sanctions legislation, before its 8 August summer recess, leaving the bill's ethics provisions for senior officials' personal crypto dealings still unresolved. So what: With the bill unlikely to advance before the recess and its next realistic window uncertain, a compliance function should continue planning around the absence of finalised US digital-asset market-structure legislation for the time being. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
 <item>
 <title>Fed holds rates steady as 3 officials push for hike while crypto market stays flat</title>
 <link>https://www.theblock.co/post/410092/fed-holds-rates-steady-three-officials-push-hike-crypto-market-stays-flat?utm_source=rss&amp;utm_medium=rss</link>
@@ -903,6 +804,204 @@
 <guid isPermaLink="false">global-the-block-institutional-moves-60fd48fcc1</guid>
 <pubDate>Tue, 04 Aug 2026 03:34:53 +0000</pubDate>
 <description>Mastercard completes BVNK acquisition to expand stablecoin payments infrastructure So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>‘At a standstill:’ Senate races to salvage Clarity Act before August recess as ethics fight, law enforcement concerns loom</title>
+<link>https://www.theblock.co/post/410940/standstill-senate-races-salvage-clarity-act-before-august-recess-ethics-fight-law-enforcement-concerns-loom?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-3464e2c704</guid>
+<pubDate>Wed, 05 Aug 2026 21:41:36 +0000</pubDate>
+<description>‘At a standstill:’ Senate races to salvage Clarity Act before August recess as ethics fight, law enforcement concerns loom So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Crypto firm RedotPay says it will defend itself ‘vigorously’ against Binance lawsuit</title>
+<link>https://www.coindesk.com/business/2026/08/05/binance-sues-redotpay-for-usd470-million-claiming-it-diverted-users</link>
+<guid isPermaLink="false">global-coindesk-market-news-92a599df48</guid>
+<pubDate>Wed, 05 Aug 2026 21:40:33 +0000</pubDate>
+<description>Crypto firm RedotPay says it will defend itself ‘vigorously’ against Binance lawsuit So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Crypto's campaign efforts see rare loss, but crypto roster in Congress likely to grow</title>
+<link>https://www.coindesk.com/policy/2026/08/05/crypto-s-campaign-efforts-see-rare-loss-but-crypto-roster-in-congress-likely-to-grow</link>
+<guid isPermaLink="false">global-coindesk-policy-6efe8fd122</guid>
+<pubDate>Wed, 05 Aug 2026 18:15:21 +0000</pubDate>
+<description>Crypto's campaign efforts see rare loss, but crypto roster in Congress likely to grow So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Analysts see bitcoin bottom forming through boredom as price clings to $64K amid spot ETF inflows</title>
+<link>https://www.theblock.co/post/410905/analysts-see-bitcoin-bottom-forming-through-boredom-price-clings-64k-amid-spot-etf-inflows?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-3b48b3426b</guid>
+<pubDate>Wed, 05 Aug 2026 17:31:31 +0000</pubDate>
+<description>Analysts see bitcoin bottom forming through boredom as price clings to $64K amid spot ETF inflows So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>NFT founder accused of using millions from investor funds to finance DJ hobby, gambling</title>
+<link>https://www.theblock.co/post/410890/nft-founder-accused-using-millions-investor-funds-finance-dj-hobby-gambling?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-5065e225d0</guid>
+<pubDate>Wed, 05 Aug 2026 16:17:47 +0000</pubDate>
+<description>NFT founder accused of using millions from investor funds to finance DJ hobby, gambling So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say</title>
+<link>https://www.coindesk.com/tech/2026/08/05/coldcard-exploit-could-boost-demand-for-regulated-bitcoin-exposure-analysts-say</link>
+<guid isPermaLink="false">global-coindesk-market-news-9db5e5a349</guid>
+<pubDate>Wed, 05 Aug 2026 15:44:08 +0000</pubDate>
+<description>Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Kraken parent Payward shifts position on tokenized equities and voting rights</title>
+<link>https://www.theblock.co/post/410878/kraken-parent-payward-shifts-position-tokenized-equities-voting-rights?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-c14aff69c3</guid>
+<pubDate>Wed, 05 Aug 2026 15:26:17 +0000</pubDate>
+<description>Kraken parent Payward shifts position on tokenized equities and voting rights So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Saylor’s Strategy joins Coinbase, Morgan Stanley and more in pledging contributions to Trump Accounts</title>
+<link>https://www.theblock.co/post/410849/saylors-strategy-joins-morgan-stanley-goldman-sachs-contributions-trump-accounts?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-institutional-moves-3ee7558681</guid>
+<pubDate>Wed, 05 Aug 2026 14:16:41 +0000</pubDate>
+<description>Saylor’s Strategy joins Coinbase, Morgan Stanley and more in pledging contributions to Trump Accounts So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Chainalysis Supports Cronos with Automatic Token Support</title>
+<link>https://www.chainalysis.com/blog/cronos-automatic-token-support/</link>
+<guid isPermaLink="false">global-chainalysis-blog-0ede5293ff</guid>
+<pubDate>Wed, 05 Aug 2026 14:00:27 +0000</pubDate>
+<description>Chainalysis Supports Cronos with Automatic Token Support So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Nomura’s Laser Digital backs ZIGChain for onchain private credit push in UAE</title>
+<link>https://www.coindesk.com/business/2026/08/05/noumura-s-laser-digital-backs-zigchain-for-onchain-private-credit-push-in-uae</link>
+<guid isPermaLink="false">global-coindesk-institutional-moves-9435d69c25</guid>
+<pubDate>Wed, 05 Aug 2026 13:25:04 +0000</pubDate>
+<description>Nomura’s Laser Digital backs ZIGChain for onchain private credit push in UAE So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Mastercard expands stablecoin push with Crypto Credential pilot</title>
+<link>https://www.theblock.co/post/410830/mastercard-expands-stablecoin-push-with-crypto-credential-pilot?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-institutional-moves-57412b6ea8</guid>
+<pubDate>Wed, 05 Aug 2026 13:00:00 +0000</pubDate>
+<description>Mastercard expands stablecoin push with Crypto Credential pilot So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Circle names BlackRock, DTCC among Arc validators as Q2 revenue hits $701 million</title>
+<link>https://www.theblock.co/post/410840/circle-names-blackrock-dtcc-among-arc-validators-as-q2-revenue-hits-701-million?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-institutional-moves-2d55b58863</guid>
+<pubDate>Wed, 05 Aug 2026 12:16:27 +0000</pubDate>
+<description>Circle names BlackRock, DTCC among Arc validators as Q2 revenue hits $701 million So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Yellow Card raises $40 million to link banks to stablecoin processing</title>
+<link>https://www.coindesk.com/business/2026/08/05/yellow-card-raises-usd40-million-to-link-banks-to-stablecoin-processing</link>
+<guid isPermaLink="false">global-coindesk-institutional-moves-4081e61e27</guid>
+<pubDate>Wed, 05 Aug 2026 12:09:05 +0000</pubDate>
+<description>Yellow Card raises $40 million to link banks to stablecoin processing So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Visa expands stablecoin capabilities on Visa Direct with zerohash collaboration</title>
+<link>https://www.theblock.co/post/410657/stablecoin-capabilities-visa-direct-zerohash?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-institutional-moves-eef97b948a</guid>
+<pubDate>Wed, 05 Aug 2026 12:00:00 +0000</pubDate>
+<description>Visa expands stablecoin capabilities on Visa Direct with zerohash collaboration So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>The $120 million Coldcard hack lights up Bitcoin's memory pool</title>
+<link>https://www.coindesk.com/daybook-us/2026/08/05/the-usd120-million-coldcard-hack-lights-up-bitcoin-s-memory-pool</link>
+<guid isPermaLink="false">global-coindesk-market-news-9c88accaa9</guid>
+<pubDate>Wed, 05 Aug 2026 11:20:58 +0000</pubDate>
+<description>The $120 million Coldcard hack lights up Bitcoin's memory pool So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Circle shares fall 3% despite earnings beat as stablecoin issuer misses on revenue</title>
+<link>https://www.coindesk.com/markets/2026/08/05/circle-shares-jump-as-earnings-beat-offsets-revenue-miss-arc-blockchain-gains-wall-street-backing</link>
+<guid isPermaLink="false">global-coindesk-market-news-5b1f4e4539</guid>
+<pubDate>Wed, 05 Aug 2026 11:13:17 +0000</pubDate>
+<description>Circle shares fall 3% despite earnings beat as stablecoin issuer misses on revenue So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Coldcard hack sparks a self-custody security overhaul: Cory Klippsten</title>
+<link>https://www.coindesk.com/markets/2026/08/05/coldcard-hack-sparks-a-self-custody-security-overhaul-cory-klippsten</link>
+<guid isPermaLink="false">global-coindesk-market-news-be547cf6c7</guid>
+<pubDate>Wed, 05 Aug 2026 09:55:32 +0000</pubDate>
+<description>Coldcard hack sparks a self-custody security overhaul: Cory Klippsten So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Former LAPD officer gets life sentence for kidnapping teen in $350,000 bitcoin robbery: report</title>
+<link>https://www.theblock.co/post/410805/former-lapd-officer-gets-life-sentence-bitcoin-robbery?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-304d27cd7e</guid>
+<pubDate>Wed, 05 Aug 2026 08:37:20 +0000</pubDate>
+<description>Former LAPD officer gets life sentence for kidnapping teen in $350,000 bitcoin robbery: report So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Crypto PAC Fairshake scores primary wins in Michigan and Washington</title>
+<link>https://www.theblock.co/post/410744/fairshake-michigan-washington-primaries?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-fa7bb704a2</guid>
+<pubDate>Wed, 05 Aug 2026 06:29:14 +0000</pubDate>
+<description>Crypto PAC Fairshake scores primary wins in Michigan and Washington So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Three Missouri men charged over alleged plot to steal bitcoin through home invasion</title>
+<link>https://www.theblock.co/post/410688/three-missouri-men-charged-bitcoin-home-invasion?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-fd1719cea9</guid>
+<pubDate>Wed, 05 Aug 2026 02:47:25 +0000</pubDate>
+<description>Three Missouri men charged over alleged plot to steal bitcoin through home invasion So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Crypto ‘will be fine’ even if Clarity fails to pass this week, Bitwise CIO Matt Hougan says</title>
+<link>https://www.theblock.co/post/410676/crypto-will-be-fine-if-clarity-fails-matt-hougan?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-7aeb9f4267</guid>
+<pubDate>Wed, 05 Aug 2026 02:31:03 +0000</pubDate>
+<description>Crypto ‘will be fine’ even if Clarity fails to pass this week, Bitwise CIO Matt Hougan says So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>The Largest Hardware Wallet Exploit of 2026: Inside the USD 116 Million Coldcard Hack</title>
+<link>https://www.trmlabs.com/resources/blog/the-largest-hardware-wallet-exploit-of-2026-inside-the-usd-116-million-coldcard-hack</link>
+<guid isPermaLink="false">global-trm-labs-insights-366411d8ef</guid>
+<pubDate>Wed, 05 Aug 2026 00:00:00 +0800</pubDate>
+<description>The Largest Hardware Wallet Exploit of 2026: Inside the USD 116 Million Coldcard Hack So what: Review the source directly; automated analysis unavailable. [single source]</description>
 <category>Global</category>
 <category>News</category>
 </item>
