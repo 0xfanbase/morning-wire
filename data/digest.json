@@ -1,331 +1,7 @@
 {
-  "generated_at": "2026-08-05T22:07:47.049239+00:00",
+  "generated_at": "2026-08-07T01:00:50.983214+00:00",
   "top_of_mind": "",
   "items": [
-    {
-      "id": "global-the-block-policy-540778c40d",
-      "jurisdiction": "US",
-      "source": "The Block — Policy",
-      "title": "Fed holds rates steady as 3 officials push for hike while crypto market stays flat",
-      "url": "https://www.theblock.co/post/410092/fed-holds-rates-steady-three-officials-push-hike-crypto-market-stays-flat?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-29T19:38:31+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/410092/fed-holds-rates-steady-three-officials-push-hike-crypto-market-stays-flat?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "The US Federal Reserve held its benchmark interest rate steady at 3.5 to 3.75 percent, with three policymakers dissenting in favour of a rate increase, citing Middle East-driven energy-price pressures on inflation; cryptocurrency prices were largely unmoved by the decision.",
-      "so_what": "A steady-to-easier US interest-rate environment is a general market backdrop rather than a compliance development, though functions monitoring macro conditions affecting institutional crypto flows may note continued rate stability.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-institutional-moves-6c93ef3ec4",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Institutional moves",
-      "title": "Visa CEO sidesteps labeling Open USD a challenger to Tether and USDC: ‘Our role is not to pick winners’",
-      "url": "https://www.theblock.co/post/410064/visa-ceo-downplays-open-usd-challenger-tether-usdc-our-role-is-not-pick-winners?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-29T17:06:06+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Institutional moves",
-            "url": "https://www.theblock.co/post/410064/visa-ceo-downplays-open-usd-challenger-tether-usdc-our-role-is-not-pick-winners?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Visa's chief executive declined to characterise the company's new Open USD stablecoin initiative as a direct challenger to Tether or Circle's USDC, saying Visa's role is not to pick market winners.",
-      "so_what": "This is corporate positioning commentary rather than a regulatory development, useful only as context for functions tracking how major payment networks are approaching stablecoin infrastructure.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-f57764f0b4",
-      "jurisdiction": "US",
-      "source": "The Block — Policy",
-      "title": "Anchorage Digital says Fed’s proposed payment account is no ‘workable substitute’ for master account",
-      "url": "https://www.theblock.co/post/410068/anchorage-digital-feds-proposed-payment-account-no-substitute-master-account?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-29T17:01:02+00:00",
-      "type": "consultation",
-      "priority": "high",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/410068/anchorage-digital-feds-proposed-payment-account-no-substitute-master-account?utm_source=rss&utm_medium=rss"
-          },
-          {
-            "name": "American Banker",
-            "url": "https://www.americanbanker.com/podcast/anchorage-coo-is-a-fan-of-the-feds-skinny-master-accounts"
-          }
-        ]
-      },
-      "summary": "Anchorage Digital filed a comment letter opposing the Federal Reserve's proposed limited \"payment account\" for crypto companies, arguing that excluding FedACH access, intraday liquidity and interest on reserves makes it an impractical substitute for a full Federal Reserve master account.",
-      "so_what": "As long as crypto-native banks lack full, direct access to Federal Reserve payment infrastructure, they will continue relying on intermediary banks for settlement, which is a relevant factor when assessing a crypto-native counterparty's operational and concentration risk.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-8759149a06",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "The traditional 9-to-5 banking day is officially dying, says Morgan Stanley execs",
-      "url": "https://www.coindesk.com/markets/2026/07/29/morgan-stanley-execs-admit-the-traditional-9-to-5-banking-day-is-officially-dying",
-      "published": "2026-07-29T16:09:32+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/markets/2026/07/29/morgan-stanley-execs-admit-the-traditional-9-to-5-banking-day-is-officially-dying"
-          }
-        ]
-      },
-      "summary": "Morgan Stanley executives said the traditional nine-to-five banking day is ending as blockchain-based settlement and round-the-clock digital markets push financial institutions toward continuous operations.",
-      "so_what": "As institutions move toward round-the-clock settlement, transaction-monitoring and sanctions-screening functions built around traditional business-day cycles may need to adapt to a continuous operating model.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-1f8ab6c883",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Coinbase hit by spot trading slump: Wall Street trims expectations ahead of earnings",
-      "url": "https://www.coindesk.com/markets/2026/07/29/investors-look-past-expected-weak-q2-earnings-to-focus-on-coinbase-s-political-future",
-      "published": "2026-07-29T15:15:08+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/07/29/investors-look-past-expected-weak-q2-earnings-to-focus-on-coinbase-s-political-future"
-          }
-        ]
-      },
-      "summary": "Wall Street analysts lowered earnings expectations for Coinbase ahead of its results, citing a slowdown in spot trading volume.",
-      "so_what": "This is a market-performance and analyst-expectations item rather than a compliance development, useful only as general context on exchange business conditions.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-add6b914cc",
-      "jurisdiction": "US",
-      "source": "The Block — Policy",
-      "title": "‘The moment to act is now’: Solana Policy Institute urges Senate to move on crypto bill as time dwindles",
-      "url": "https://www.theblock.co/post/410041/the-moment-to-act-is-now-solana-policy-institute-urges-senate-to-move-on-crypto-bill-as-time-dwindles?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-29T14:35:02+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/410041/the-moment-to-act-is-now-solana-policy-institute-urges-senate-to-move-on-crypto-bill-as-time-dwindles?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "The Solana Policy Institute urged the US Senate to act on pending crypto market-structure legislation before time runs out in the current legislative session.",
-      "so_what": "This is an industry advocacy position rather than a regulatory development, consistent with the continued uncertainty around when, or whether, US market-structure legislation will pass.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-6dd36d9ceb",
-      "jurisdiction": "US",
-      "source": "The Block — Policy",
-      "title": "Tether’s GENIUS-compliant USAT stablecoin launches on Celo, marking first expansion beyond Ethereum",
-      "url": "https://www.theblock.co/post/410048/tethers-genius-compliant-usat-stablecoin-launches-on-celo-marking-first-expansion-beyond-ethereum?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-29T14:06:34+00:00",
-      "type": "peer_move",
-      "priority": "high",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/410048/tethers-genius-compliant-usat-stablecoin-launches-on-celo-marking-first-expansion-beyond-ethereum?utm_source=rss&utm_medium=rss"
-          },
-          {
-            "name": "Celo Blog",
-            "url": "https://blog.celo.org/usa-is-now-live-on-celo-bringing-tethers-us-dollar-stablecoin-to-the-most-widely-adopted-network-efe36c03ef1b"
-          }
-        ]
-      },
-      "summary": "Tether's US-regulated USAT stablecoin, issued through the federally chartered Anchorage Digital Bank under the GENIUS Act framework, expanded to the Celo blockchain, marking its first deployment beyond Ethereum.",
-      "so_what": "As GENIUS Act-compliant stablecoins expand across more blockchain networks, due-diligence and transaction-monitoring processes should track which chains and venues carry regulated, bank-issued stablecoins compared with unregulated alternatives.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "cn-coindesk-china-policy-663ba4282a",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — China policy",
-      "title": "The inside story of how a hike in Hong Kong changed crypto trading forever",
-      "url": "https://www.coindesk.com/business/2026/07/29/the-inside-story-of-how-a-hike-in-hong-kong-changed-crypto-trading-forever",
-      "published": "2026-07-29T13:53:01+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — China policy",
-            "url": "https://www.coindesk.com/business/2026/07/29/the-inside-story-of-how-a-hike-in-hong-kong-changed-crypto-trading-forever"
-          }
-        ]
-      },
-      "summary": "A feature article recounted how BitMEX co-founder Ben Delo invented the perpetual swap, a futures contract with no expiry date, during a casual hike in Hong Kong in 2015; the product is now used by every major crypto exchange and processes tens of trillions of dollars in trading volume annually.",
-      "so_what": "This is a product-history feature rather than a regulatory development, useful only as background on how perpetual swaps, a product now facing possible United States regulatory frameworks, originated.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-elliptic-blog-3001bd116e",
-      "jurisdiction": "GLOBAL",
-      "source": "Elliptic — Blog",
-      "title": "How banks should approach stablecoin compliance and financial crime risk",
-      "url": "https://www.elliptic.co/blog/how-banks-should-approach-stablecoin-compliance-and-financial-crime-risk",
-      "published": "2026-07-29T13:00:00+00:00",
-      "type": "guidance",
-      "priority": "high",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "Elliptic — Blog",
-            "url": "https://www.elliptic.co/blog/how-banks-should-approach-stablecoin-compliance-and-financial-crime-risk"
-          }
-        ]
-      },
-      "summary": "Compliance analytics firm Elliptic published a framework for banks assessing stablecoin-related financial-crime risk, identifying three channels through which such risk can reach a bank (counterparty, product and indirect exposure) and five design factors that shape a given stablecoin's risk profile, including transferability, ecosystem participants, regulatory status, freezability and the extent of blockchain analytics use.",
-      "so_what": "The framework's emphasis on verifying an issuer's actual on-chain wallet behaviour, not just its disclosed policies, is a practical due-diligence enhancement banks assessing stablecoin exposure or counterparty relationships may want to incorporate.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-4efcf5e8cf",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Bernstein cuts Circle price target to $140, says Open USD threat will fade",
-      "url": "https://www.theblock.co/post/410029/bernstein-cuts-circle-price-target-to-140-says-open-usd-threat-will-fade?utm_source=rss&utm_medium=rss",
-      "published": "2026-07-29T12:55:18+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/410029/bernstein-cuts-circle-price-target-to-140-says-open-usd-threat-will-fade?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Investment bank Bernstein cut its price target for Circle, the issuer of the USDC stablecoin, to 140 US dollars, saying competitive pressure from Visa's Open USD initiative is likely to fade.",
-      "so_what": "This is an analyst valuation call rather than a regulatory development, useful only as general market context on competitive dynamics among stablecoin issuers.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-0a4f6b5a0f",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Binance offers gold and silver options after commodity futures pull in billions in daily volume",
-      "url": "https://www.coindesk.com/markets/2026/07/29/binance-offers-gold-and-silver-options-after-commodity-futures-pull-in-billions-in-daily-volume",
-      "published": "2026-07-29T10:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/07/29/binance-offers-gold-and-silver-options-after-commodity-futures-pull-in-billions-in-daily-volume"
-          }
-        ]
-      },
-      "summary": "Binance launched options contracts on gold and silver after its existing commodity futures products attracted billions of dollars in daily trading volume.",
-      "so_what": "This is a product-expansion item rather than a regulatory development, useful only as context on how major exchanges are broadening into traditional-commodity-linked derivatives.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-elliptic-blog-4fc18ffd19",
-      "jurisdiction": "GLOBAL",
-      "source": "Elliptic — Blog",
-      "title": "The fall of A7A5: how sanctions strangled the ruble stablecoin",
-      "url": "https://www.elliptic.co/blog/the-fall-of-a7a5-how-sanctions-strangled-the-ruble-stablecoin",
-      "published": "2026-07-29T09:10:35+00:00",
-      "type": "news",
-      "priority": "high",
-      "status": "new",
-      "verification": {
-        "level": "corroborated",
-        "sources": [
-          {
-            "name": "Elliptic — Blog",
-            "url": "https://www.elliptic.co/blog/the-fall-of-a7a5-how-sanctions-strangled-the-ruble-stablecoin"
-          },
-          {
-            "name": "CoinDesk",
-            "url": "https://www.coindesk.com/business/2026/07/03/this-sanctioned-russian-stablecoin-claims-it-processes-billions-but-blockchain-analysts-disagree"
-          }
-        ]
-      },
-      "summary": "The A7A5 ruble-pegged stablecoin, designed to help Russia evade Western sanctions and first backed by a sanctioned Russian state bank, collapsed after the United States, United Kingdom and European Union designated it and its supporting infrastructure in 2025, with transaction volumes down 96 percent from their peak and no new tokens minted since July 2025.",
-      "so_what": "This is a concrete case study showing that coordinated sanctions designations, combined with exchanges screening and freezing tainted funds, can materially shut down a sanctions-evasion vehicle even while its smart contracts remain technically operational, reinforcing the value of screening for exposure to designated stablecoins specifically, not just to designated entities directly.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-ae3a024073",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Coinbase wants to be Canada’s ‘everything exchange,’ but says clearer rules are needed first",
-      "url": "https://www.coindesk.com/policy/2026/07/28/coinbase-wants-to-be-canada-s-everything-exchange-but-says-clearer-rules-are-needed-first",
-      "published": "2026-07-28T23:50:38+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/policy/2026/07/28/coinbase-wants-to-be-canada-s-everything-exchange-but-says-clearer-rules-are-needed-first"
-          }
-        ]
-      },
-      "summary": "Coinbase said it wants to become Canada's comprehensive \"everything exchange\" but that clearer regulatory rules are needed first.",
-      "so_what": "This is a corporate market-expansion statement rather than a regulatory development, useful only as context on how a major exchange is positioning for the Canadian market pending regulatory clarity.",
-      "first_seen": "2026-07-29T21:53:29.702190+00:00",
-      "date_source": "feed"
-    },
     {
       "id": "global-the-block-market-news-86e18bcd9e",
       "jurisdiction": "GLOBAL",
@@ -2741,6 +2417,366 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-08-05T22:07:47.049239+00:00",
       "date_source": "page"
+    },
+    {
+      "id": "global-the-block-policy-12ba140680",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Crypto bill ethics provision could let Trump defer millions in taxes: Bloomberg",
+      "url": "https://www.theblock.co/post/411065/crypto-bill-ethics-provision-could-let-trump-defer-millions-in-taxes-bloomberg?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T21:52:43+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/411065/crypto-bill-ethics-provision-could-let-trump-defer-millions-in-taxes-bloomberg?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Crypto bill ethics provision could let Trump defer millions in taxes: Bloomberg",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-31e269b4a1",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Wintermute registers as SEC broker-dealer to trade stocks, options and crypto ETFs",
+      "url": "https://www.theblock.co/post/411060/wintermute-registers-as-sec-broker-dealer-to-trade-stocks-options-and-crypto-etfs?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T21:29:13+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/411060/wintermute-registers-as-sec-broker-dealer-to-trade-stocks-options-and-crypto-etfs?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Wintermute registers as SEC broker-dealer to trade stocks, options and crypto ETFs",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-18d8839fbb",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Coinbase’s Base app will become ‘less Base-centric’ under Cobie, Jesse Pollak says",
+      "url": "https://www.theblock.co/post/411023/jesse-pollak-base-app-become-less-base-centric-cobie-builds-trading-platform?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T19:05:56+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/411023/jesse-pollak-base-app-become-less-base-centric-cobie-builds-trading-platform?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Coinbase’s Base app will become ‘less Base-centric’ under Cobie, Jesse Pollak says",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-9ce78a60a4",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "JPMorgan says Hyperliquid faces growing competition while HYPE ETF inflows stall",
+      "url": "https://www.theblock.co/post/411001/jpmorgan-hyperliquid-competition-hype-etf-inflows-stall?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T16:17:58+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/post/411001/jpmorgan-hyperliquid-competition-hype-etf-inflows-stall?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "JPMorgan says Hyperliquid faces growing competition while HYPE ETF inflows stall",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-44625621d5",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Tether expands tokenization business into Saudi Arabia, starting with real estate",
+      "url": "https://www.coindesk.com/business/2026/08/06/tether-expands-tokenization-business-into-saudi-arabia-starting-with-real-estate",
+      "published": "2026-08-06T16:10:04+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/08/06/tether-expands-tokenization-business-into-saudi-arabia-starting-with-real-estate"
+          }
+        ]
+      },
+      "summary": "Tether expands tokenization business into Saudi Arabia, starting with real estate",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-chainalysis-blog-83f0939d20",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "Penlink Plugs Into Trusted Blockchain Data With Chainalysis",
+      "url": "https://www.chainalysis.com/blog/penlink-integration-blockchain-intelligence-august-2026/",
+      "published": "2026-08-06T14:22:56+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/penlink-integration-blockchain-intelligence-august-2026/"
+          }
+        ]
+      },
+      "summary": "Penlink Plugs Into Trusted Blockchain Data With Chainalysis",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-912c8e9b27",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts",
+      "url": "https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts",
+      "published": "2026-08-06T12:46:42+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts"
+          }
+        ]
+      },
+      "summary": "JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-d510bfc75d",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Bernstein says Circle’s Q2 counters bearish concerns over competition, reserve income",
+      "url": "https://www.theblock.co/post/410979/bernstein-says-circles-q2-counters-bearish-concerns-over-competition-reserve-income?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T12:10:44+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/410979/bernstein-says-circles-q2-counters-bearish-concerns-over-competition-reserve-income?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Bernstein says Circle’s Q2 counters bearish concerns over competition, reserve income",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-chainalysis-blog-68db731e3f",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "Estimated $30 Million Stolen in Violent Crypto Attacks in 2026 as France Records Emerges as Hotspot",
+      "url": "https://www.chainalysis.com/blog/violent-crypto-wrench-attacks-2026/",
+      "published": "2026-08-06T12:00:41+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/violent-crypto-wrench-attacks-2026/"
+          }
+        ]
+      },
+      "summary": "Estimated $30 Million Stolen in Violent Crypto Attacks in 2026 as France Records Emerges as Hotspot",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-c0d9525335",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "More than $30 million stolen in violent crypto attacks in 2026 as France emerges as ‘wrench attack’ hotspot: Chainalysis",
+      "url": "https://www.theblock.co/post/410984/more-than-30-million-stolen-in-violent-crypto-attacks-in-2026-as-france-emerges-as-wrench-attack-hotspot-chainalysis?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T12:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/410984/more-than-30-million-stolen-in-violent-crypto-attacks-in-2026-as-france-emerges-as-wrench-attack-hotspot-chainalysis?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "More than $30 million stolen in violent crypto attacks in 2026 as France emerges as ‘wrench attack’ hotspot: Chainalysis",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-fde17df1d3",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "NFT startup founder charged with misusing funds from $10 million fundraising",
+      "url": "https://www.coindesk.com/policy/2026/08/06/nft-startup-founder-charged-with-misusing-funds-from-usd10-million-fundraising",
+      "published": "2026-08-06T09:19:03+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/08/06/nft-startup-founder-charged-with-misusing-funds-from-usd10-million-fundraising"
+          }
+        ]
+      },
+      "summary": "NFT startup founder charged with misusing funds from $10 million fundraising",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-0897688691",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "EU watchdogs warn scammers are posing as crypto firms and regulators after MiCA deadline: FT",
+      "url": "https://www.theblock.co/post/410966/eu-watchdogs-warn-crypto-scams-mica?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T09:08:47+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/410966/eu-watchdogs-warn-crypto-scams-mica?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "EU watchdogs warn scammers are posing as crypto firms and regulators after MiCA deadline: FT",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-5aea6ee45b",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Coinbase launches 24/5 US stock trading for UK users, advancing ‘Everything Exchange’ strategy",
+      "url": "https://www.theblock.co/post/410870/coinbase-launches-24-5-us-stock-trading-uk-users-advancing-everything-exchange-strategy?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T08:00:03+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/410870/coinbase-launches-24-5-us-stock-trading-uk-users-advancing-everything-exchange-strategy?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Coinbase launches 24/5 US stock trading for UK users, advancing ‘Everything Exchange’ strategy",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-98fbf2a23b",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Cathie Wood’s Ark Invest scoops up $17 million in Circle, $20 million in SpaceX shares following Q2 results",
+      "url": "https://www.theblock.co/post/410948/cathie-wood-ark-invest-circle-spacex-q2?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T02:22:22+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/post/410948/cathie-wood-ark-invest-circle-spacex-q2?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Cathie Wood’s Ark Invest scoops up $17 million in Circle, $20 million in SpaceX shares following Q2 results",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-e1331115f9",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Putin signs landmark crypto law allowing regulated retail trading in Russia",
+      "url": "https://www.theblock.co/post/410951/putin-signs-russia-crypto-law?utm_source=rss&utm_medium=rss",
+      "published": "2026-08-06T02:11:16+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/post/410951/putin-signs-russia-crypto-law?utm_source=rss&utm_medium=rss"
+          }
+        ]
+      },
+      "summary": "Putin signs landmark crypto law allowing regulated retail trading in Russia",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-07T01:00:50.983214+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -2749,7 +2785,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.007966+00:00",
+      "checked_at": "2026-08-07T01:00:50.862623+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2757,7 +2793,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.007978+00:00",
+      "checked_at": "2026-08-07T01:00:50.862638+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2765,7 +2801,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.007986+00:00",
+      "checked_at": "2026-08-07T01:00:50.862646+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2773,7 +2809,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.007992+00:00",
+      "checked_at": "2026-08-07T01:00:50.862652+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2781,7 +2817,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.007998+00:00",
+      "checked_at": "2026-08-07T01:00:50.862658+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2789,7 +2825,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008003+00:00",
+      "checked_at": "2026-08-07T01:00:50.862665+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2797,7 +2833,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008008+00:00",
+      "checked_at": "2026-08-07T01:00:50.862671+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2805,7 +2841,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008013+00:00",
+      "checked_at": "2026-08-07T01:00:50.862676+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2813,7 +2849,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008018+00:00",
+      "checked_at": "2026-08-07T01:00:50.862682+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2821,7 +2857,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008023+00:00",
+      "checked_at": "2026-08-07T01:00:50.862687+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2829,7 +2865,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008029+00:00",
+      "checked_at": "2026-08-07T01:00:50.862693+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2837,7 +2873,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008034+00:00",
+      "checked_at": "2026-08-07T01:00:50.862699+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2845,7 +2881,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008040+00:00",
+      "checked_at": "2026-08-07T01:00:50.862705+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2853,7 +2889,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008046+00:00",
+      "checked_at": "2026-08-07T01:00:50.862710+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2861,7 +2897,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008051+00:00",
+      "checked_at": "2026-08-07T01:00:50.862715+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2869,7 +2905,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008055+00:00",
+      "checked_at": "2026-08-07T01:00:50.862720+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2877,7 +2913,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008060+00:00",
+      "checked_at": "2026-08-07T01:00:50.862725+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2885,7 +2921,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008064+00:00",
+      "checked_at": "2026-08-07T01:00:50.862730+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2893,7 +2929,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008069+00:00",
+      "checked_at": "2026-08-07T01:00:50.862735+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2901,7 +2937,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008073+00:00",
+      "checked_at": "2026-08-07T01:00:50.862740+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2909,7 +2945,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008078+00:00",
+      "checked_at": "2026-08-07T01:00:50.862745+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -2917,7 +2953,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008082+00:00",
+      "checked_at": "2026-08-07T01:00:50.862750+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2925,7 +2961,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008087+00:00",
+      "checked_at": "2026-08-07T01:00:50.862756+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2933,7 +2969,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008091+00:00",
+      "checked_at": "2026-08-07T01:00:50.862761+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2941,7 +2977,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008096+00:00",
+      "checked_at": "2026-08-07T01:00:50.862766+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2949,7 +2985,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-05T22:07:47.008101+00:00",
+      "checked_at": "2026-08-07T01:00:50.862771+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2957,7 +2993,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008105+00:00",
+      "checked_at": "2026-08-07T01:00:50.862776+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2965,7 +3001,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008110+00:00",
+      "checked_at": "2026-08-07T01:00:50.862781+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2973,7 +3009,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008114+00:00",
+      "checked_at": "2026-08-07T01:00:50.862787+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2981,7 +3017,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008118+00:00",
+      "checked_at": "2026-08-07T01:00:50.862793+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2989,7 +3025,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008122+00:00",
+      "checked_at": "2026-08-07T01:00:50.862798+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2997,7 +3033,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008127+00:00",
+      "checked_at": "2026-08-07T01:00:50.862804+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3005,15 +3041,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.008132+00:00",
+      "checked_at": "2026-08-07T01:00:50.862811+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 6 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
+      "note": "Failing for 7 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.048226+00:00",
+      "checked_at": "2026-08-07T01:00:50.982066+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3021,7 +3057,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-05T22:07:47.048240+00:00",
+      "checked_at": "2026-08-07T01:00:50.982087+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3031,10 +3067,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-07-29T21:53:29.702190+00:00",
-      "note": "Daily fetch: 14 new items surfaced; 35/36 sources ok"
-    },
     {
       "at": "2026-07-29T22:16:00Z",
       "note": "Enrichment: 13 items summarised and classified via Claude Code session; one vendor product-promotion item was removed as marketing, not news. Three items were corroborated against second sources."
@@ -3070,6 +3102,10 @@
     {
       "at": "2026-08-05T22:07:47.049239+00:00",
       "note": "Daily fetch: 22 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-08-07T01:00:50.983214+00:00",
+      "note": "Daily fetch: 15 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
