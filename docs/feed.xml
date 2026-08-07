@@ -4,125 +4,8 @@
 <title>Digital Assets Morning Wire</title>
 <link>https://0xfanbase.github.io/morning-wire/</link>
 <description>Daily digital-asset regulatory and market digest. AI-sourced and AI-generated — verify against official sources before acting.</description>
-<lastBuildDate>Wed, 05 Aug 2026 22:07:47 +0000</lastBuildDate>
+<lastBuildDate>Fri, 07 Aug 2026 01:00:50 +0000</lastBuildDate>
 <atom:link href="https://0xfanbase.github.io/morning-wire/feed.xml" rel="self" type="application/rss+xml"/>
-<item>
-<title>Fed holds rates steady as 3 officials push for hike while crypto market stays flat</title>
-<link>https://www.theblock.co/post/410092/fed-holds-rates-steady-three-officials-push-hike-crypto-market-stays-flat?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-540778c40d</guid>
-<pubDate>Wed, 29 Jul 2026 19:38:31 +0000</pubDate>
-<description>The US Federal Reserve held its benchmark interest rate steady at 3.5 to 3.75 percent, with three policymakers dissenting in favour of a rate increase, citing Middle East-driven energy-price pressures on inflation; cryptocurrency prices were largely unmoved by the decision. So what: A steady-to-easier US interest-rate environment is a general market backdrop rather than a compliance development, though functions monitoring macro conditions affecting institutional crypto flows may note continued rate stability. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Visa CEO sidesteps labeling Open USD a challenger to Tether and USDC: ‘Our role is not to pick winners’</title>
-<link>https://www.theblock.co/post/410064/visa-ceo-downplays-open-usd-challenger-tether-usdc-our-role-is-not-pick-winners?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-institutional-moves-6c93ef3ec4</guid>
-<pubDate>Wed, 29 Jul 2026 17:06:06 +0000</pubDate>
-<description>Visa's chief executive declined to characterise the company's new Open USD stablecoin initiative as a direct challenger to Tether or Circle's USDC, saying Visa's role is not to pick market winners. So what: This is corporate positioning commentary rather than a regulatory development, useful only as context for functions tracking how major payment networks are approaching stablecoin infrastructure. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Anchorage Digital says Fed’s proposed payment account is no ‘workable substitute’ for master account</title>
-<link>https://www.theblock.co/post/410068/anchorage-digital-feds-proposed-payment-account-no-substitute-master-account?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-f57764f0b4</guid>
-<pubDate>Wed, 29 Jul 2026 17:01:02 +0000</pubDate>
-<description>Anchorage Digital filed a comment letter opposing the Federal Reserve's proposed limited "payment account" for crypto companies, arguing that excluding FedACH access, intraday liquidity and interest on reserves makes it an impractical substitute for a full Federal Reserve master account. So what: As long as crypto-native banks lack full, direct access to Federal Reserve payment infrastructure, they will continue relying on intermediary banks for settlement, which is a relevant factor when assessing a crypto-native counterparty's operational and concentration risk. [corroborated]</description>
-<category>United States</category>
-<category>Consultation</category>
-</item>
-<item>
-<title>The traditional 9-to-5 banking day is officially dying, says Morgan Stanley execs</title>
-<link>https://www.coindesk.com/markets/2026/07/29/morgan-stanley-execs-admit-the-traditional-9-to-5-banking-day-is-officially-dying</link>
-<guid isPermaLink="false">global-coindesk-institutional-moves-8759149a06</guid>
-<pubDate>Wed, 29 Jul 2026 16:09:32 +0000</pubDate>
-<description>Morgan Stanley executives said the traditional nine-to-five banking day is ending as blockchain-based settlement and round-the-clock digital markets push financial institutions toward continuous operations. So what: As institutions move toward round-the-clock settlement, transaction-monitoring and sanctions-screening functions built around traditional business-day cycles may need to adapt to a continuous operating model. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Coinbase hit by spot trading slump: Wall Street trims expectations ahead of earnings</title>
-<link>https://www.coindesk.com/markets/2026/07/29/investors-look-past-expected-weak-q2-earnings-to-focus-on-coinbase-s-political-future</link>
-<guid isPermaLink="false">global-coindesk-market-news-1f8ab6c883</guid>
-<pubDate>Wed, 29 Jul 2026 15:15:08 +0000</pubDate>
-<description>Wall Street analysts lowered earnings expectations for Coinbase ahead of its results, citing a slowdown in spot trading volume. So what: This is a market-performance and analyst-expectations item rather than a compliance development, useful only as general context on exchange business conditions. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>‘The moment to act is now’: Solana Policy Institute urges Senate to move on crypto bill as time dwindles</title>
-<link>https://www.theblock.co/post/410041/the-moment-to-act-is-now-solana-policy-institute-urges-senate-to-move-on-crypto-bill-as-time-dwindles?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-add6b914cc</guid>
-<pubDate>Wed, 29 Jul 2026 14:35:02 +0000</pubDate>
-<description>The Solana Policy Institute urged the US Senate to act on pending crypto market-structure legislation before time runs out in the current legislative session. So what: This is an industry advocacy position rather than a regulatory development, consistent with the continued uncertainty around when, or whether, US market-structure legislation will pass. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Tether’s GENIUS-compliant USAT stablecoin launches on Celo, marking first expansion beyond Ethereum</title>
-<link>https://www.theblock.co/post/410048/tethers-genius-compliant-usat-stablecoin-launches-on-celo-marking-first-expansion-beyond-ethereum?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-6dd36d9ceb</guid>
-<pubDate>Wed, 29 Jul 2026 14:06:34 +0000</pubDate>
-<description>Tether's US-regulated USAT stablecoin, issued through the federally chartered Anchorage Digital Bank under the GENIUS Act framework, expanded to the Celo blockchain, marking its first deployment beyond Ethereum. So what: As GENIUS Act-compliant stablecoins expand across more blockchain networks, due-diligence and transaction-monitoring processes should track which chains and venues carry regulated, bank-issued stablecoins compared with unregulated alternatives. [corroborated]</description>
-<category>United States</category>
-<category>Peer move</category>
-</item>
-<item>
-<title>The inside story of how a hike in Hong Kong changed crypto trading forever</title>
-<link>https://www.coindesk.com/business/2026/07/29/the-inside-story-of-how-a-hike-in-hong-kong-changed-crypto-trading-forever</link>
-<guid isPermaLink="false">cn-coindesk-china-policy-663ba4282a</guid>
-<pubDate>Wed, 29 Jul 2026 13:53:01 +0000</pubDate>
-<description>A feature article recounted how BitMEX co-founder Ben Delo invented the perpetual swap, a futures contract with no expiry date, during a casual hike in Hong Kong in 2015; the product is now used by every major crypto exchange and processes tens of trillions of dollars in trading volume annually. So what: This is a product-history feature rather than a regulatory development, useful only as background on how perpetual swaps, a product now facing possible United States regulatory frameworks, originated. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>How banks should approach stablecoin compliance and financial crime risk</title>
-<link>https://www.elliptic.co/blog/how-banks-should-approach-stablecoin-compliance-and-financial-crime-risk</link>
-<guid isPermaLink="false">global-elliptic-blog-3001bd116e</guid>
-<pubDate>Wed, 29 Jul 2026 13:00:00 +0000</pubDate>
-<description>Compliance analytics firm Elliptic published a framework for banks assessing stablecoin-related financial-crime risk, identifying three channels through which such risk can reach a bank (counterparty, product and indirect exposure) and five design factors that shape a given stablecoin's risk profile, including transferability, ecosystem participants, regulatory status, freezability and the extent of blockchain analytics use. So what: The framework's emphasis on verifying an issuer's actual on-chain wallet behaviour, not just its disclosed policies, is a practical due-diligence enhancement banks assessing stablecoin exposure or counterparty relationships may want to incorporate. [single source]</description>
-<category>Global</category>
-<category>Guidance</category>
-</item>
-<item>
-<title>Bernstein cuts Circle price target to $140, says Open USD threat will fade</title>
-<link>https://www.theblock.co/post/410029/bernstein-cuts-circle-price-target-to-140-says-open-usd-threat-will-fade?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-4efcf5e8cf</guid>
-<pubDate>Wed, 29 Jul 2026 12:55:18 +0000</pubDate>
-<description>Investment bank Bernstein cut its price target for Circle, the issuer of the USDC stablecoin, to 140 US dollars, saying competitive pressure from Visa's Open USD initiative is likely to fade. So what: This is an analyst valuation call rather than a regulatory development, useful only as general market context on competitive dynamics among stablecoin issuers. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Binance offers gold and silver options after commodity futures pull in billions in daily volume</title>
-<link>https://www.coindesk.com/markets/2026/07/29/binance-offers-gold-and-silver-options-after-commodity-futures-pull-in-billions-in-daily-volume</link>
-<guid isPermaLink="false">global-coindesk-market-news-0a4f6b5a0f</guid>
-<pubDate>Wed, 29 Jul 2026 10:00:00 +0000</pubDate>
-<description>Binance launched options contracts on gold and silver after its existing commodity futures products attracted billions of dollars in daily trading volume. So what: This is a product-expansion item rather than a regulatory development, useful only as context on how major exchanges are broadening into traditional-commodity-linked derivatives. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>The fall of A7A5: how sanctions strangled the ruble stablecoin</title>
-<link>https://www.elliptic.co/blog/the-fall-of-a7a5-how-sanctions-strangled-the-ruble-stablecoin</link>
-<guid isPermaLink="false">global-elliptic-blog-4fc18ffd19</guid>
-<pubDate>Wed, 29 Jul 2026 09:10:35 +0000</pubDate>
-<description>The A7A5 ruble-pegged stablecoin, designed to help Russia evade Western sanctions and first backed by a sanctioned Russian state bank, collapsed after the United States, United Kingdom and European Union designated it and its supporting infrastructure in 2025, with transaction volumes down 96 percent from their peak and no new tokens minted since July 2025. So what: This is a concrete case study showing that coordinated sanctions designations, combined with exchanges screening and freezing tainted funds, can materially shut down a sanctions-evasion vehicle even while its smart contracts remain technically operational, reinforcing the value of screening for exposure to designated stablecoins specifically, not just to designated entities directly. [corroborated]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Coinbase wants to be Canada’s ‘everything exchange,’ but says clearer rules are needed first</title>
-<link>https://www.coindesk.com/policy/2026/07/28/coinbase-wants-to-be-canada-s-everything-exchange-but-says-clearer-rules-are-needed-first</link>
-<guid isPermaLink="false">global-coindesk-market-news-ae3a024073</guid>
-<pubDate>Tue, 28 Jul 2026 23:50:38 +0000</pubDate>
-<description>Coinbase said it wants to become Canada's comprehensive "everything exchange" but that clearer regulatory rules are needed first. So what: This is a corporate market-expansion statement rather than a regulatory development, useful only as context on how a major exchange is positioning for the Canadian market pending regulatory clarity. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
 <item>
 <title>Coinbase shares slip after Q2 results despite prediction markets doubling and record trading market share</title>
 <link>https://www.theblock.co/post/410208/coinbase-shares-slip-after-q2-results-despite-prediction-markets-doubling-and-record-trading-market-share?utm_source=rss&amp;utm_medium=rss</link>
@@ -1002,6 +885,141 @@
 <guid isPermaLink="false">global-trm-labs-insights-366411d8ef</guid>
 <pubDate>Wed, 05 Aug 2026 00:00:00 +0800</pubDate>
 <description>The Largest Hardware Wallet Exploit of 2026: Inside the USD 116 Million Coldcard Hack So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Crypto bill ethics provision could let Trump defer millions in taxes: Bloomberg</title>
+<link>https://www.theblock.co/post/411065/crypto-bill-ethics-provision-could-let-trump-defer-millions-in-taxes-bloomberg?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-12ba140680</guid>
+<pubDate>Thu, 06 Aug 2026 21:52:43 +0000</pubDate>
+<description>Crypto bill ethics provision could let Trump defer millions in taxes: Bloomberg So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Wintermute registers as SEC broker-dealer to trade stocks, options and crypto ETFs</title>
+<link>https://www.theblock.co/post/411060/wintermute-registers-as-sec-broker-dealer-to-trade-stocks-options-and-crypto-etfs?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-31e269b4a1</guid>
+<pubDate>Thu, 06 Aug 2026 21:29:13 +0000</pubDate>
+<description>Wintermute registers as SEC broker-dealer to trade stocks, options and crypto ETFs So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Coinbase’s Base app will become ‘less Base-centric’ under Cobie, Jesse Pollak says</title>
+<link>https://www.theblock.co/post/411023/jesse-pollak-base-app-become-less-base-centric-cobie-builds-trading-platform?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-18d8839fbb</guid>
+<pubDate>Thu, 06 Aug 2026 19:05:56 +0000</pubDate>
+<description>Coinbase’s Base app will become ‘less Base-centric’ under Cobie, Jesse Pollak says So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>JPMorgan says Hyperliquid faces growing competition while HYPE ETF inflows stall</title>
+<link>https://www.theblock.co/post/411001/jpmorgan-hyperliquid-competition-hype-etf-inflows-stall?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-institutional-moves-9ce78a60a4</guid>
+<pubDate>Thu, 06 Aug 2026 16:17:58 +0000</pubDate>
+<description>JPMorgan says Hyperliquid faces growing competition while HYPE ETF inflows stall So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Tether expands tokenization business into Saudi Arabia, starting with real estate</title>
+<link>https://www.coindesk.com/business/2026/08/06/tether-expands-tokenization-business-into-saudi-arabia-starting-with-real-estate</link>
+<guid isPermaLink="false">global-coindesk-market-news-44625621d5</guid>
+<pubDate>Thu, 06 Aug 2026 16:10:04 +0000</pubDate>
+<description>Tether expands tokenization business into Saudi Arabia, starting with real estate So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Penlink Plugs Into Trusted Blockchain Data With Chainalysis</title>
+<link>https://www.chainalysis.com/blog/penlink-integration-blockchain-intelligence-august-2026/</link>
+<guid isPermaLink="false">global-chainalysis-blog-83f0939d20</guid>
+<pubDate>Thu, 06 Aug 2026 14:22:56 +0000</pubDate>
+<description>Penlink Plugs Into Trusted Blockchain Data With Chainalysis So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts</title>
+<link>https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts</link>
+<guid isPermaLink="false">global-coindesk-institutional-moves-912c8e9b27</guid>
+<pubDate>Thu, 06 Aug 2026 12:46:42 +0000</pubDate>
+<description>JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Bernstein says Circle’s Q2 counters bearish concerns over competition, reserve income</title>
+<link>https://www.theblock.co/post/410979/bernstein-says-circles-q2-counters-bearish-concerns-over-competition-reserve-income?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-d510bfc75d</guid>
+<pubDate>Thu, 06 Aug 2026 12:10:44 +0000</pubDate>
+<description>Bernstein says Circle’s Q2 counters bearish concerns over competition, reserve income So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Estimated $30 Million Stolen in Violent Crypto Attacks in 2026 as France Records Emerges as Hotspot</title>
+<link>https://www.chainalysis.com/blog/violent-crypto-wrench-attacks-2026/</link>
+<guid isPermaLink="false">global-chainalysis-blog-68db731e3f</guid>
+<pubDate>Thu, 06 Aug 2026 12:00:41 +0000</pubDate>
+<description>Estimated $30 Million Stolen in Violent Crypto Attacks in 2026 as France Records Emerges as Hotspot So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>More than $30 million stolen in violent crypto attacks in 2026 as France emerges as ‘wrench attack’ hotspot: Chainalysis</title>
+<link>https://www.theblock.co/post/410984/more-than-30-million-stolen-in-violent-crypto-attacks-in-2026-as-france-emerges-as-wrench-attack-hotspot-chainalysis?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-c0d9525335</guid>
+<pubDate>Thu, 06 Aug 2026 12:00:00 +0000</pubDate>
+<description>More than $30 million stolen in violent crypto attacks in 2026 as France emerges as ‘wrench attack’ hotspot: Chainalysis So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>NFT startup founder charged with misusing funds from $10 million fundraising</title>
+<link>https://www.coindesk.com/policy/2026/08/06/nft-startup-founder-charged-with-misusing-funds-from-usd10-million-fundraising</link>
+<guid isPermaLink="false">global-coindesk-policy-fde17df1d3</guid>
+<pubDate>Thu, 06 Aug 2026 09:19:03 +0000</pubDate>
+<description>NFT startup founder charged with misusing funds from $10 million fundraising So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>EU watchdogs warn scammers are posing as crypto firms and regulators after MiCA deadline: FT</title>
+<link>https://www.theblock.co/post/410966/eu-watchdogs-warn-crypto-scams-mica?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-0897688691</guid>
+<pubDate>Thu, 06 Aug 2026 09:08:47 +0000</pubDate>
+<description>EU watchdogs warn scammers are posing as crypto firms and regulators after MiCA deadline: FT So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Coinbase launches 24/5 US stock trading for UK users, advancing ‘Everything Exchange’ strategy</title>
+<link>https://www.theblock.co/post/410870/coinbase-launches-24-5-us-stock-trading-uk-users-advancing-everything-exchange-strategy?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-5aea6ee45b</guid>
+<pubDate>Thu, 06 Aug 2026 08:00:03 +0000</pubDate>
+<description>Coinbase launches 24/5 US stock trading for UK users, advancing ‘Everything Exchange’ strategy So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Cathie Wood’s Ark Invest scoops up $17 million in Circle, $20 million in SpaceX shares following Q2 results</title>
+<link>https://www.theblock.co/post/410948/cathie-wood-ark-invest-circle-spacex-q2?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-98fbf2a23b</guid>
+<pubDate>Thu, 06 Aug 2026 02:22:22 +0000</pubDate>
+<description>Cathie Wood’s Ark Invest scoops up $17 million in Circle, $20 million in SpaceX shares following Q2 results So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Putin signs landmark crypto law allowing regulated retail trading in Russia</title>
+<link>https://www.theblock.co/post/410951/putin-signs-russia-crypto-law?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-e1331115f9</guid>
+<pubDate>Thu, 06 Aug 2026 02:11:16 +0000</pubDate>
+<description>Putin signs landmark crypto law allowing regulated retail trading in Russia So what: Review the source directly; automated analysis unavailable. [single source]</description>
 <category>Global</category>
 <category>News</category>
 </item>
