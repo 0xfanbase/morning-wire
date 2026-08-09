@@ -302,7 +302,7 @@
   "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown": {
     "title_hash": "8c3b80518513189fa8c2a73e13e7bb89731b2167c8f87f52dd05924c8d2b1f37",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "Operation Prince: Inside a $15 billion crypto fraud takedown"
   },
   "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance": {
@@ -1724,13 +1724,13 @@
   "https://www.acams.org/en/opinion/tren-de-aragua-crypto-and-cash-inside-one-chiles-biggest-money-laundering-cases": {
     "title_hash": "7eaee6c7cdffb693850b8754b7b980ab3676828ca93dcfb31ee08f9c3701a884",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "Tren de Aragua, Crypto, and Cash: Inside One of Chile’s Biggest Money Laundering Cases"
   },
   "https://www.acams.org/en/opinion/compliance-powers-stablecoins": {
     "title_hash": "047b177c5a1ade3d23fc1342bff7f77455c733cfe0131af551315583ee0152d7",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "The compliance powers of stablecoins"
   },
   "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules": {
@@ -1952,7 +1952,7 @@
   "https://www.fca.org.uk/news/blogs/outcomes-monitoring-why-understanding-consumer-experience-matters": {
     "title_hash": "f50d47f51cd0b54605d0a5d2a516a31b8a019f9658a1d165ad2d904cf71b8365",
     "first_seen": "2026-07-27T21:59:02.867861+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "Outcomes monitoring: why understanding the consumer experience matters and where firms should focus"
   },
   "https://www.theblock.co/post/409831/ny-attorney-general-letitia-james-warns-clarity-act-dilute-states-ability-fraud-pressure-mounts?utm_source=rss&utm_medium=rss": {
@@ -2042,7 +2042,7 @@
   "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system": {
     "title_hash": "76d0b10514759ebcc315198668b28d086021b31c06483bac2f95975e0533dde8",
     "first_seen": "2026-07-28T21:57:31.146602+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "Strengthening resilience across an increasingly interconnected financial system"
   },
   "https://www.gdf.io/news-letters/gdf-and-isda-release-landmark-report-on-u-s-tokenized-money-market-funds": {
@@ -2516,7 +2516,7 @@
   "https://www.fca.org.uk/news/press-releases/tribunal-upholds-fca-ban-pair-pensions-advice": {
     "title_hash": "4186bdb320d978152caaa38ecb40ec66a3875af0265a9ca8adc3947e1a19d915",
     "first_seen": "2026-08-04T22:06:15.870891+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "Tribunal upholds FCA ban on pair involved in pension transfer advice and reduces fines"
   },
   "https://www.coindesk.com/policy/2026/08/03/as-clarity-act-teeters-mystery-group-hammers-away-at-crypto-in-washington-ads": {
@@ -2768,13 +2768,13 @@
   "https://www.chainalysis.com/blog/cronos-automatic-token-support": {
     "title_hash": "8293e14cedab81dbded4acc2c4ca659ca2e51b18edf1a3f2b0d37ed409f2f487",
     "first_seen": "2026-08-05T22:07:47.049246+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "Chainalysis Supports Cronos with Automatic Token Support"
   },
   "https://www.trmlabs.com/resources/blog/the-largest-hardware-wallet-exploit-of-2026-inside-the-usd-116-million-coldcard-hack": {
     "title_hash": "5086a3eb8a40181e226038a51663aa249103c317862953603e18a6fc77927d62",
     "first_seen": "2026-08-05T22:07:47.049246+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "The Largest Hardware Wallet Exploit of 2026: Inside the USD 116 Million Coldcard Hack"
   },
   "https://www.coindesk.com/policy/2026/08/06/nft-startup-founder-charged-with-misusing-funds-from-usd10-million-fundraising": {
@@ -2858,13 +2858,133 @@
   "https://www.chainalysis.com/blog/penlink-integration-blockchain-intelligence-august-2026": {
     "title_hash": "e72a2708579291c8b85b18db28e73e000ecab156c2a73c9182a46ca53b92c0b2",
     "first_seen": "2026-08-07T01:00:50.983223+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "Penlink Plugs Into Trusted Blockchain Data With Chainalysis"
   },
   "https://www.chainalysis.com/blog/violent-crypto-wrench-attacks-2026": {
     "title_hash": "810104f2f8127e1114e94daabdf04348d6162f47f3b58aa05cc67fa54bb10528",
     "first_seen": "2026-08-07T01:00:50.983223+00:00",
-    "last_seen": "2026-08-07T01:00:50.983223+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
     "title": "Estimated $30 Million Stolen in Violent Crypto Attacks in 2026 as France Records Emerges as Hotspot"
+  },
+  "https://www.coindesk.com/policy/2026/08/09/is-clarity-s-delay-a-blessing-in-disguise-state-of-crypto": {
+    "title_hash": "83d3b4a86c799c273f6ec258ca44cd1cb976b6e62cd57f465f5a2844a508604b",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Is Clarity's delay a blessing in disguise?: State of Crypto"
+  },
+  "https://www.coindesk.com/policy/2026/08/08/u-s-senate-opens-first-stage-of-crypto-clarity-act-voting-to-give-bill-a-chance-next-month": {
+    "title_hash": "6581ee0b7043efe3c0b86f0bf39631f4ed47e83a77c64c07c3dbb8f3a01e3da5",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "U.S. Senate opens first stage of crypto Clarity Act voting to give bill a chance next month"
+  },
+  "https://www.coindesk.com/policy/2026/08/07/u-s-widens-iran-crypto-crackdown-with-sanctions-on-two-exchanges": {
+    "title_hash": "0ac246ded05f1030e75b9c69040388ecc975edd392f82a964128ade9b7f0f02b",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "U.S. widens Iran crypto crackdown with sanctions on two exchanges"
+  },
+  "https://www.coindesk.com/policy/2026/08/04/okx-s-rafique-doubts-clarity-act-will-pass-warns-optimism-is-already-priced-into-bitcoin": {
+    "title_hash": "52480c3ce94d5ba879aaf9a8bc5c90ffa2b5e45a44c191d2724d0368e7313b9e",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "OKX's Rafique doubts Clarity Act will pass, warns optimism is already priced into bitcoin"
+  },
+  "https://www.coindesk.com/policy/2026/08/07/russia-cracks-down-on-unlicensed-crypto-exchanges-it-claims-are-linked-to-ukraine": {
+    "title_hash": "51f51a1c730cd9cb6ffed616ec6f16a4a02bf44ae0d8e9acd7297bbbce58eb0d",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Russia cracks down on unlicensed crypto exchanges it claims are linked to Ukraine"
+  },
+  "https://www.coindesk.com/news-analysis/2026/08/06/after-a-clarity-act-funeral-the-crypto-world-would-keep-turning": {
+    "title_hash": "b65ba533300cd91a4366dcf57e5a4a995e008b47577bbcec439e683d59fd38f6",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "After a Clarity Act funeral, the crypto world would keep turning"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-09-brazil-to-tighten-crypto-fraud-controls-with-new-24-hour-wait-on-transfers-to-self-custody-wallets-411219?utm_source=rss&utm_medium=rss": {
+    "title_hash": "ac1eaff97bfa41f307e812b5fe6f567fb0365f70912f2e12ed12e441fb4ed66b",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Brazil to tighten crypto fraud controls with new 24-hour wait on transfers to self-custody wallets"
+  },
+  "https://www.theblock.co/news/deals/2026-08-07-trump-media-crypto-com-end-partnerships-as-companies-shifts-priorities-411198?utm_source=rss&utm_medium=rss": {
+    "title_hash": "ce4ed121fa8eb52b3d7f8912ecc45f778e39c78ba788499f9124f49c38fa4a6a",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Trump Media and Crypto.com end partnerships as companies shift priorities"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-07-us-sanctions-two-more-iranian-crypto-exchanges-under-economic-fury-campaign-411184?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f55bc504db4ff11d249004a3358d39cac9f72fd12a7b8d7ac94ea820e31cd8fd",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "US sanctions two more Iranian crypto exchanges under ‘Economic Fury’ campaign"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-07-coldcard-bitcoin-exploit-crypto-original-sin-private-keys-blockaid-ceo-411160?utm_source=rss&utm_medium=rss": {
+    "title_hash": "660a292a4c7d94a1258b179b889ff5c89ee4886166d90116f64ee267685ec5e6",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Coldcard bitcoin exploit exposes crypto’s ‘original sin’ of private keys, Blockaid CEO says"
+  },
+  "https://www.theblock.co/news/markets/2026-08-07-bitcoin-tops-65000-after-massive-surprise-us-jobs-miss-411154?utm_source=rss&utm_medium=rss": {
+    "title_hash": "7930abd5df527c1eb2796f98402ba410a2d437a76ab0bc7e817526a7280165b8",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Bitcoin tops $65,000 after ‘massive surprise’ US jobs miss"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-06-crypto-bill-ethics-provision-could-let-trump-defer-millions-in-taxes-bloomberg-411065?utm_source=rss&utm_medium=rss": {
+    "title_hash": "01cdeb7b6f98716d1ebd50c580eb3fcd304cda9d4a3caf81b0989aecd157409e",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Crypto bill ethics provision could let Trump defer millions in taxes: Bloomberg"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-06-wintermute-registers-as-sec-broker-dealer-to-trade-stocks-options-and-crypto-etfs-411060?utm_source=rss&utm_medium=rss": {
+    "title_hash": "7a12b4bbfc409175dc42857ab66be403825bbda0fd9a023c84baf46c0b6da2af",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Wintermute registers as SEC broker-dealer to trade stocks, options and crypto ETFs"
+  },
+  "https://www.coindesk.com/markets/2026/08/09/bitcoin-investors-pour-usd853-million-into-spot-etfs-blackrock-s-ibit-claims-the-bulk": {
+    "title_hash": "63b0ffdc8d644475371d898f7f2de33207aef20f6bb0479dc9c80db146343f55",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Bitcoin investors pour $853 million into spot ETFs. BlackRock’s IBIT claims the bulk"
+  },
+  "https://www.coindesk.com/markets/2026/08/06/why-trillion-dollar-asset-manager-t-rowe-price-put-memecoins-in-its-crypto-etf": {
+    "title_hash": "8c91877d54c6b65caa7b87d4ae0ed104f85afa35a4bcce9a58fc3902a33b07ba",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF"
+  },
+  "https://www.coindesk.com/tech/2026/08/08/another-bitcoin-infrastructure-exploit-hits-this-time-draining-merchant-lightning-nodes": {
+    "title_hash": "0b7337916e8e00c7addfc71d56dc99ee2ef4aad74cba91e42887794ec7b26c2a",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Another Bitcoin infrastructure exploit hits, this time draining Lightning payment servers"
+  },
+  "https://www.coindesk.com/policy/2026/08/07/bybit-sues-north-korea-and-lazarus-group-over-usd1-5-billion-hack-secures-asset-freeze": {
+    "title_hash": "95845af1f76643cf09369c0e1ad396c7e57a3dcb6f66e224367398db5995bbbf",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Bybit sues North Korea and Lazarus Group over $1.5 billion hack, secures asset freeze"
+  },
+  "https://www.theblock.co/news/markets/2026-08-08-bitcoin-ether-etfs-draw-1-1-billion-in-best-inflow-week-since-april-despite-low-volume-411204?utm_source=rss&utm_medium=rss": {
+    "title_hash": "f2a2fb85877a4414adef4e3b9e1c9aab39dfd1aaa38c6d20984cef52f3f0faa9",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "Bitcoin, ether ETFs draw $1.1 billion in best inflow week since April, despite low volume"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-07-michigan-judge-denies-coinbase-bid-prediction-markets-411128?utm_source=rss&utm_medium=rss": {
+    "title_hash": "07b42d67e48cf38971afb5bd48d3db21e43259c7499f4ed8d1ab616b66af3be2",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "‘Applesauce’: Michigan judge denies Coinbase bid to block state enforcement of sports event contracts"
+  },
+  "https://www.trmlabs.com/resources/blog/eu-vasps-after-mica-authorization-rates-and-illicit-exposure": {
+    "title_hash": "44bff25dde64679abd0f0b37064de0540a11bee8f13ded285872e2a3f044cd9e",
+    "first_seen": "2026-08-09T21:23:58.892840+00:00",
+    "last_seen": "2026-08-09T21:23:58.892840+00:00",
+    "title": "EU VASPs After MiCA: Authorization Rates and Illicit Exposure"
   }
 }
