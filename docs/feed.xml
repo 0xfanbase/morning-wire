@@ -4,125 +4,8 @@
 <title>Digital Assets Morning Wire</title>
 <link>https://0xfanbase.github.io/morning-wire/</link>
 <description>Daily digital-asset regulatory and market digest. AI-sourced and AI-generated — verify against official sources before acting.</description>
-<lastBuildDate>Fri, 07 Aug 2026 01:00:50 +0000</lastBuildDate>
+<lastBuildDate>Sun, 09 Aug 2026 21:23:58 +0000</lastBuildDate>
 <atom:link href="https://0xfanbase.github.io/morning-wire/feed.xml" rel="self" type="application/rss+xml"/>
-<item>
-<title>Coinbase shares slip after Q2 results despite prediction markets doubling and record trading market share</title>
-<link>https://www.theblock.co/post/410208/coinbase-shares-slip-after-q2-results-despite-prediction-markets-doubling-and-record-trading-market-share?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-86e18bcd9e</guid>
-<pubDate>Thu, 30 Jul 2026 21:09:49 +0000</pubDate>
-<description>Coinbase's stock fell about 7% in after-hours trading even though the exchange reported record global crypto trading market share and more than doubled its prediction-market revenue in the second quarter. So what: The drop despite strong operating metrics is a reminder that even leading regulated exchanges remain exposed to volatile investor sentiment, which is useful context when assessing the financial stability of exchange counterparties. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Coinbase sinks 5% after missing second quarter revenue estimates</title>
-<link>https://www.coindesk.com/markets/2026/07/30/coinbase-sinks-5-after-missing-q2-revenue-estimates</link>
-<guid isPermaLink="false">global-coindesk-market-news-7ed78e7938</guid>
-<pubDate>Thu, 30 Jul 2026 20:18:33 +0000</pubDate>
-<description>Coinbase shares fell about 5% after the exchange reported second-quarter revenue of 1.22 billion dollars, roughly 70 million dollars below analyst estimates, as industry-wide crypto trading volumes fell more than 20 percent during the quarter. So what: A broad decline in industry trading volumes affecting even the largest exchange is a useful indicator when reviewing revenue and liquidity assumptions for exchange counterparties. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>IRS warns crypto holders fraudster sending fake letters in attempt to steal digital assets or data: Bloomberg</title>
-<link>https://www.theblock.co/post/410204/irs-crypto-holders-fraudster-sending-fake-letters-steal-digital-assets-data-bloomberg?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-d163d86fc1</guid>
-<pubDate>Thu, 30 Jul 2026 19:19:02 +0000</pubDate>
-<description>The United States Internal Revenue Service warned that fraudsters are mailing fake letters to crypto holders directing them to a bogus 'Digital Asset Compliance Portal' in an attempt to steal digital assets or personal data. So what: The warning is useful input for customer fraud-awareness communications, since it shows criminals impersonating tax authorities by physical mail rather than only email or text, a channel account holders may trust more readily. [corroborated]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>JPMorgan says crypto bill’s fading odds hurt outlook, warns parts could discourage institutional adoption</title>
-<link>https://www.theblock.co/post/410185/jpmorgan-crypto-bill-clarity-act-market-outlook?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-e67deba4a1</guid>
-<pubDate>Thu, 30 Jul 2026 17:49:56 +0000</pubDate>
-<description>JPMorgan analysts said prediction-market odds that the United States Clarity Act crypto market-structure bill passes this year have fallen to their lowest point so far, and warned some provisions could let decentralised-finance platforms trade tokenised securities and derivatives entirely outside the oversight of the Securities and Exchange Commission or the Commodity Futures Trading Commission, while holding crypto firms to lighter anti-money-laundering standards than banks. So what: If the bill advances with those gaps intact, banks should expect an uneven anti-money-laundering standard between regulated institutions and crypto trading platforms, a live legislative uncertainty worth tracking when assessing digital-asset counterparties. [corroborated]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Global banks test tokenized money for cross-border payments in $1 million BIS pilot</title>
-<link>https://www.coindesk.com/business/2026/07/30/global-banks-test-tokenized-money-for-cross-border-payments-in-usd1-million-bis-pilot</link>
-<guid isPermaLink="false">global-coindesk-institutional-moves-4848471e25</guid>
-<pubDate>Thu, 30 Jul 2026 17:34:03 +0000</pubDate>
-<description>Five central banks and 28 commercial banks, including JPMorgan, Citi, UBS, Deutsche Bank and Standard Chartered, completed a Bank for International Settlements pilot moving about 1 million dollars in tokenised central-bank and commercial-bank money across six currencies, with cross-border payments settling in around 80 seconds. So what: As major international banks gain live experience with tokenised, multi-currency settlement rails, compliance functions should expect tokenisation and real-time cross-border settlement to become a mainstream part of correspondent banking rather than a niche pilot. [corroborated]</description>
-<category>Global</category>
-<category>Peer move</category>
-</item>
-<item>
-<title>The 2026 World Cup On-Chain: $20 Billion in Crypto Flows, From Bets to Tickets</title>
-<link>https://www.chainalysis.com/blog/2026-world-cup-prediction-markets-nft-tickets/</link>
-<guid isPermaLink="false">global-chainalysis-blog-52b402b7dd</guid>
-<pubDate>Thu, 30 Jul 2026 16:00:30 +0000</pubDate>
-<description>Blockchain analytics firm Chainalysis reported that 2026 FIFA World Cup-linked prediction markets and digital-collectible ticketing generated around 20 billion dollars in on-chain activity, with less than 1 percent of prediction-market wallets showing ties to illicit activity, including 5.4 million dollars traced to the sanctioned exchange Huobi, also known as HTX. So what: The small but real flow of funds to a sanctioned exchange during a major global sporting event is a reminder to keep already-sanctioned virtual-asset platforms such as Huobi/HTX on watch-lists when reviewing customer transaction patterns around high-volume events. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>JPMorgan says fading Clarity Act odds weigh on crypto outlook</title>
-<link>https://www.coindesk.com/policy/2026/07/30/jpmorgan-says-fading-clarity-act-odds-weigh-on-crypto-outlook</link>
-<guid isPermaLink="false">global-coindesk-policy-ac9b553f4d</guid>
-<pubDate>Thu, 30 Jul 2026 14:06:14 +0000</pubDate>
-<description>CoinDesk reported that JPMorgan's research team now sees fading odds that the United States Congress passes the Clarity Act crypto market-structure bill this year, and flagged that parts of the bill could leave decentralised-finance trading outside the Securities and Exchange Commission and Commodity Futures Trading Commission's oversight while holding crypto firms to lighter anti-money-laundering obligations than banks and broker-dealers. So what: The same anti-money-laundering gap flagged across multiple outlets is a reason to read closely whatever final bill text emerges before relying on it to set risk-based due-diligence expectations for crypto-platform counterparties. [corroborated]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Bitcoin ETFs on track for the smallest monthly inflows ever</title>
-<link>https://www.coindesk.com/daybook-us/2026/07/30/bitcoin-etfs-on-track-for-the-smallest-monthly-inflows-ever</link>
-<guid isPermaLink="false">global-coindesk-market-news-fcb8e057b3</guid>
-<pubDate>Thu, 30 Jul 2026 11:18:34 +0000</pubDate>
-<description>United States spot Bitcoin exchange-traded funds attracted just 205 million dollars in net inflows in July, the lowest monthly total since they launched, reflecting weak institutional demand even as prices moved higher. So what: Thin institutional inflows into regulated Bitcoin investment products are a useful indicator of institutional risk appetite when calibrating expectations for digital-asset business volumes. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>South Korea plans to tax crypto gains over $1,740 as political battle moves to parliament</title>
-<link>https://www.coindesk.com/policy/2026/07/30/south-korea-s-long-delayed-crypto-tax-set-to-start-in-2027</link>
-<guid isPermaLink="false">global-coindesk-policy-4ebab97b36</guid>
-<pubDate>Thu, 30 Jul 2026 11:17:56 +0000</pubDate>
-<description>South Korea's government confirmed plans to start taxing cryptocurrency gains above about 1,740 dollars at a combined 22 percent rate from January 2027, even as opposition lawmakers push a competing bill to scrap the tax entirely. So what: A confirmed effective date for retail crypto-gains taxation, alongside a live legislative push to repeal it, is useful context for anticipating shifts in customer trading activity toward offshore exchanges or peer-to-peer venues if the tax proceeds as planned. [corroborated]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Ostium blames off-chain breach for $24 million exploit, rules out smart contract flaw</title>
-<link>https://www.theblock.co/post/410122/ostium-post-mortem-exploit?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-cc68d5a8a0</guid>
-<pubDate>Thu, 30 Jul 2026 06:25:55 +0000</pubDate>
-<description>Onchain derivatives exchange Ostium said attackers stole about 24 million dollars in USDC, a United States dollar-pegged stablecoin, by compromising its off-chain price-reporting infrastructure to submit false Bitcoin price data, and said the incident did not involve a smart-contract vulnerability or a compromise of the multi-signature wallets governing the protocol. So what: The incident is a reminder that a decentralised-finance protocol's on-chain code can be secure while its off-chain infrastructure remains a weak point, worth factoring into due-diligence on any digital-asset platform's operational risk controls. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Russia detains crypto mining firm BitRiver founder on fraud charges: report</title>
-<link>https://www.theblock.co/post/410117/russia-detains-bitriver-founder?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-050672be9a</guid>
-<pubDate>Thu, 30 Jul 2026 05:13:34 +0000</pubDate>
-<description>Russian authorities detained Igor Runets, founder of the crypto-mining company BitRiver, on fraud charges relating to an equipment transaction with the energy group En+, and separately charged him with tax evasion. So what: BitRiver's Swiss holding company was added to the United States Treasury's sanctions list in 2022 for helping Russian entities evade sanctions through crypto mining, so continued developments involving its leadership remain useful input for ongoing due-diligence and sanctions-screening reviews of the group and its subsidiaries. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Binance.US to apply for CFTC license in August for prediction market platform</title>
-<link>https://www.theblock.co/post/410110/binance-us-cftc-license?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-a27b9d89ab</guid>
-<pubDate>Thu, 30 Jul 2026 03:17:36 +0000</pubDate>
-<description>Binance.US said it plans to apply in August for a United States Commodity Futures Trading Commission licence that would let it offer futures, options and event-based prediction contracts to retail customers, entering a market already served by Kalshi and Polymarket US. So what: A major exchange seeking a federally regulated licence for prediction markets signals further convergence between crypto-exchange and traditional derivatives-market regulation, useful when assessing the regulatory maturity of exchange counterparties offering these products. [single source]</description>
-<category>United States</category>
-<category>Peer move</category>
-</item>
-<item>
-<title>Senators ready to send stricter ethics rules on Trump's crypto ventures to White House, sources say</title>
-<link>https://www.coindesk.com/policy/2026/07/29/senators-said-to-strike-idea-to-toughen-trump-s-concession-on-clarity-act-s-crypto-limits</link>
-<guid isPermaLink="false">global-coindesk-policy-a4d17bea73</guid>
-<pubDate>Wed, 29 Jul 2026 23:12:04 +0000</pubDate>
-<description>United States Senators Thom Tillis and Ruben Gallego finalised, but have not yet publicly detailed, revised ethics language meant to limit senior government officials' financial ties to crypto ventures, which still needs White House and Democratic sign-off before the Senate's self-described 'sell-by date' of 7 August to attach it to the Clarity Act. So what: Whether this ethics language survives into a final bill will shape how seriously government conflict-of-interest standards for crypto holdings are enforced, worth monitoring given the reputational sensitivity of dealing with politically exposed persons who hold digital assets. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
 <item>
 <title>United States Attorney’s Office Files Civil Forfeiture Action to Recover Crypto Involved in Online Fraud Scheme</title>
 <link>https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-crypto-involved</link>
@@ -1020,6 +903,186 @@
 <guid isPermaLink="false">global-the-block-policy-e1331115f9</guid>
 <pubDate>Thu, 06 Aug 2026 02:11:16 +0000</pubDate>
 <description>Putin signs landmark crypto law allowing regulated retail trading in Russia So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Is Clarity's delay a blessing in disguise?: State of Crypto</title>
+<link>https://www.coindesk.com/policy/2026/08/09/is-clarity-s-delay-a-blessing-in-disguise-state-of-crypto</link>
+<guid isPermaLink="false">global-coindesk-policy-d56ec20d25</guid>
+<pubDate>Sun, 09 Aug 2026 18:30:00 +0000</pubDate>
+<description>Is Clarity's delay a blessing in disguise?: State of Crypto So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Brazil to tighten crypto fraud controls with new 24-hour wait on transfers to self-custody wallets</title>
+<link>https://www.theblock.co/news/regulation/2026-08-09-brazil-to-tighten-crypto-fraud-controls-with-new-24-hour-wait-on-transfers-to-self-custody-wallets-411219?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-8b1587c92c</guid>
+<pubDate>Sun, 09 Aug 2026 17:03:38 +0000</pubDate>
+<description>Brazil to tighten crypto fraud controls with new 24-hour wait on transfers to self-custody wallets So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Bitcoin investors pour $853 million into spot ETFs. BlackRock’s IBIT claims the bulk</title>
+<link>https://www.coindesk.com/markets/2026/08/09/bitcoin-investors-pour-usd853-million-into-spot-etfs-blackrock-s-ibit-claims-the-bulk</link>
+<guid isPermaLink="false">global-coindesk-institutional-moves-5d150598a2</guid>
+<pubDate>Sun, 09 Aug 2026 14:19:35 +0000</pubDate>
+<description>Bitcoin investors pour $853 million into spot ETFs. BlackRock’s IBIT claims the bulk So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Bitcoin, ether ETFs draw $1.1 billion in best inflow week since April, despite low volume</title>
+<link>https://www.theblock.co/news/markets/2026-08-08-bitcoin-ether-etfs-draw-1-1-billion-in-best-inflow-week-since-april-despite-low-volume-411204?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-02e729e352</guid>
+<pubDate>Sat, 08 Aug 2026 14:52:11 +0000</pubDate>
+<description>Bitcoin, ether ETFs draw $1.1 billion in best inflow week since April, despite low volume So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF</title>
+<link>https://www.coindesk.com/markets/2026/08/06/why-trillion-dollar-asset-manager-t-rowe-price-put-memecoins-in-its-crypto-etf</link>
+<guid isPermaLink="false">global-coindesk-market-news-4ec144ec75</guid>
+<pubDate>Sat, 08 Aug 2026 13:00:00 +0000</pubDate>
+<description>Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>U.S. Senate opens first stage of crypto Clarity Act voting to give bill a chance next month</title>
+<link>https://www.coindesk.com/policy/2026/08/08/u-s-senate-opens-first-stage-of-crypto-clarity-act-voting-to-give-bill-a-chance-next-month</link>
+<guid isPermaLink="false">global-coindesk-policy-11eb78955c</guid>
+<pubDate>Sat, 08 Aug 2026 09:07:24 +0000</pubDate>
+<description>U.S. Senate opens first stage of crypto Clarity Act voting to give bill a chance next month So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Another Bitcoin infrastructure exploit hits, this time draining Lightning payment servers</title>
+<link>https://www.coindesk.com/tech/2026/08/08/another-bitcoin-infrastructure-exploit-hits-this-time-draining-merchant-lightning-nodes</link>
+<guid isPermaLink="false">global-coindesk-market-news-a91bd03adb</guid>
+<pubDate>Sat, 08 Aug 2026 07:46:04 +0000</pubDate>
+<description>Another Bitcoin infrastructure exploit hits, this time draining Lightning payment servers So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Trump Media and Crypto.com end partnerships as companies shift priorities</title>
+<link>https://www.theblock.co/news/deals/2026-08-07-trump-media-crypto-com-end-partnerships-as-companies-shifts-priorities-411198?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-8f42225ceb</guid>
+<pubDate>Fri, 07 Aug 2026 21:01:36 +0000</pubDate>
+<description>Trump Media and Crypto.com end partnerships as companies shift priorities So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>US sanctions two more Iranian crypto exchanges under ‘Economic Fury’ campaign</title>
+<link>https://www.theblock.co/news/regulation/2026-08-07-us-sanctions-two-more-iranian-crypto-exchanges-under-economic-fury-campaign-411184?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-4c698f2071</guid>
+<pubDate>Fri, 07 Aug 2026 19:49:33 +0000</pubDate>
+<description>US sanctions two more Iranian crypto exchanges under ‘Economic Fury’ campaign So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>U.S. widens Iran crypto crackdown with sanctions on two exchanges</title>
+<link>https://www.coindesk.com/policy/2026/08/07/u-s-widens-iran-crypto-crackdown-with-sanctions-on-two-exchanges</link>
+<guid isPermaLink="false">global-coindesk-policy-91d95bf4eb</guid>
+<pubDate>Fri, 07 Aug 2026 18:42:44 +0000</pubDate>
+<description>U.S. widens Iran crypto crackdown with sanctions on two exchanges So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Bybit sues North Korea and Lazarus Group over $1.5 billion hack, secures asset freeze</title>
+<link>https://www.coindesk.com/policy/2026/08/07/bybit-sues-north-korea-and-lazarus-group-over-usd1-5-billion-hack-secures-asset-freeze</link>
+<guid isPermaLink="false">global-coindesk-market-news-aabed7ed18</guid>
+<pubDate>Fri, 07 Aug 2026 16:32:41 +0000</pubDate>
+<description>Bybit sues North Korea and Lazarus Group over $1.5 billion hack, secures asset freeze So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Coldcard bitcoin exploit exposes crypto’s ‘original sin’ of private keys, Blockaid CEO says</title>
+<link>https://www.theblock.co/news/regulation/2026-08-07-coldcard-bitcoin-exploit-crypto-original-sin-private-keys-blockaid-ceo-411160?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-bc76b6ff5c</guid>
+<pubDate>Fri, 07 Aug 2026 15:30:05 +0000</pubDate>
+<description>Coldcard bitcoin exploit exposes crypto’s ‘original sin’ of private keys, Blockaid CEO says So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>OKX's Rafique doubts Clarity Act will pass, warns optimism is already priced into bitcoin</title>
+<link>https://www.coindesk.com/policy/2026/08/04/okx-s-rafique-doubts-clarity-act-will-pass-warns-optimism-is-already-priced-into-bitcoin</link>
+<guid isPermaLink="false">global-coindesk-policy-1c5dbd10c0</guid>
+<pubDate>Fri, 07 Aug 2026 15:22:44 +0000</pubDate>
+<description>OKX's Rafique doubts Clarity Act will pass, warns optimism is already priced into bitcoin So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Russia cracks down on unlicensed crypto exchanges it claims are linked to Ukraine</title>
+<link>https://www.coindesk.com/policy/2026/08/07/russia-cracks-down-on-unlicensed-crypto-exchanges-it-claims-are-linked-to-ukraine</link>
+<guid isPermaLink="false">global-coindesk-policy-51fc4ee008</guid>
+<pubDate>Fri, 07 Aug 2026 14:04:47 +0000</pubDate>
+<description>Russia cracks down on unlicensed crypto exchanges it claims are linked to Ukraine So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Bitcoin tops $65,000 after ‘massive surprise’ US jobs miss</title>
+<link>https://www.theblock.co/news/markets/2026-08-07-bitcoin-tops-65000-after-massive-surprise-us-jobs-miss-411154?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-511a34c793</guid>
+<pubDate>Fri, 07 Aug 2026 14:02:44 +0000</pubDate>
+<description>Bitcoin tops $65,000 after ‘massive surprise’ US jobs miss So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>After a Clarity Act funeral, the crypto world would keep turning</title>
+<link>https://www.coindesk.com/news-analysis/2026/08/06/after-a-clarity-act-funeral-the-crypto-world-would-keep-turning</link>
+<guid isPermaLink="false">global-coindesk-policy-2cfddb6040</guid>
+<pubDate>Fri, 07 Aug 2026 12:00:00 +0000</pubDate>
+<description>After a Clarity Act funeral, the crypto world would keep turning So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>‘Applesauce’: Michigan judge denies Coinbase bid to block state enforcement of sports event contracts</title>
+<link>https://www.theblock.co/news/regulation/2026-08-07-michigan-judge-denies-coinbase-bid-prediction-markets-411128?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-market-news-d8c7a21386</guid>
+<pubDate>Fri, 07 Aug 2026 09:06:56 +0000</pubDate>
+<description>‘Applesauce’: Michigan judge denies Coinbase bid to block state enforcement of sports event contracts So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Crypto bill ethics provision could let Trump defer millions in taxes: Bloomberg</title>
+<link>https://www.theblock.co/news/regulation/2026-08-06-crypto-bill-ethics-provision-could-let-trump-defer-millions-in-taxes-bloomberg-411065?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-216be04bf3</guid>
+<pubDate>Thu, 06 Aug 2026 21:52:43 +0000</pubDate>
+<description>Crypto bill ethics provision could let Trump defer millions in taxes: Bloomberg So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Wintermute registers as SEC broker-dealer to trade stocks, options and crypto ETFs</title>
+<link>https://www.theblock.co/news/regulation/2026-08-06-wintermute-registers-as-sec-broker-dealer-to-trade-stocks-options-and-crypto-etfs-411060?utm_source=rss&amp;utm_medium=rss</link>
+<guid isPermaLink="false">global-the-block-policy-27ab6c9b36</guid>
+<pubDate>Thu, 06 Aug 2026 21:29:13 +0000</pubDate>
+<description>Wintermute registers as SEC broker-dealer to trade stocks, options and crypto ETFs So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>EU VASPs After MiCA: Authorization Rates and Illicit Exposure</title>
+<link>https://www.trmlabs.com/resources/blog/eu-vasps-after-mica-authorization-rates-and-illicit-exposure</link>
+<guid isPermaLink="false">global-trm-labs-insights-4a34776c42</guid>
+<pubDate>Fri, 07 Aug 2026 00:00:00 +0800</pubDate>
+<description>EU VASPs After MiCA: Authorization Rates and Illicit Exposure So what: Review the source directly; automated analysis unavailable. [single source]</description>
 <category>Global</category>
 <category>News</category>
 </item>
