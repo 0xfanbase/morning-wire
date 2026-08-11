@@ -4,197 +4,8 @@
 <title>Digital Assets Morning Wire</title>
 <link>https://0xfanbase.github.io/morning-wire/</link>
 <description>Daily digital-asset regulatory and market digest. AI-sourced and AI-generated — verify against official sources before acting.</description>
-<lastBuildDate>Mon, 10 Aug 2026 21:34:36 +0000</lastBuildDate>
+<lastBuildDate>Tue, 11 Aug 2026 21:38:35 +0000</lastBuildDate>
 <atom:link href="https://0xfanbase.github.io/morning-wire/feed.xml" rel="self" type="application/rss+xml"/>
-<item>
-<title>United States Attorney’s Office Files Civil Forfeiture Action to Recover Crypto Involved in Online Fraud Scheme</title>
-<link>https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-crypto-involved</link>
-<guid isPermaLink="false">us-us-department-of-justice-press-releases-b9f27ab2ac</guid>
-<pubDate>Fri, 31 Jul 2026 12:00:00 +0000</pubDate>
-<description>The United States Attorney's Office for the District of Massachusetts filed a civil forfeiture action to recover about 47,462 units of the stablecoin Tether, worth roughly 47,000 United States dollars, seized from a wallet traced to five victims of a technical-support impersonation scam who were told their bank accounts had been compromised and directed to deposit cash into a cryptocurrency automated teller machine. So what: Fraud proceeds converted into stablecoins at cash machines commonly move on into hosted exchange wallets, so impersonation-scam typologies in transaction monitoring and the handling of law-enforcement requests should cover routine low-value cases and not only headline-sized losses. [official]</description>
-<category>United States</category>
-<category>Enforcement</category>
-</item>
-<item>
-<title>SEC keeps Nasdaq bitcoin options on hold after granting CME review</title>
-<link>https://www.theblock.co/post/410373/sec-keeps-nasdaq-bitcoin-options-on-hold-after-granting-cme-review?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-480473ffc1</guid>
-<pubDate>Sun, 02 Aug 2026 21:25:36 +0000</pubDate>
-<description>The United States Securities and Exchange Commission kept its approval of cash-settled bitcoin index options proposed by the Nasdaq PHLX options exchange on hold and agreed to review that approval after the derivatives exchange operator CME Group argued the contracts are commodity options falling only under the Commodity Futures Trading Commission, with written submissions due by 24 August 2026. So what: The boundary between the United States securities and derivatives regulators over bitcoin index-linked products remains unsettled, so which rulebook and which supervisor applies is still open for these instruments, a point relevant to product-approval, suitability and counterparty reviews touching United States listed crypto derivatives. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Counting down the days: State of Crypto</title>
-<link>https://www.coindesk.com/policy/2026/08/02/counting-down-the-days-state-of-crypto</link>
-<guid isPermaLink="false">global-coindesk-policy-10073e1a0a</guid>
-<pubDate>Sun, 02 Aug 2026 18:30:00 +0000</pubDate>
-<description>With about a week left before the United States Senate's August recess, the procedural step needed to bring the Digital Asset Market Clarity Act, a proposed digital-asset market-structure law, to a floor vote had still not been taken, leaving disagreements over ethics provisions, stablecoin reserves, yield and law-enforcement powers unresolved and passage likely to slip to September at the earliest. So what: Continued delay leaves United States market-structure rules unsettled, including stablecoin reserve standards and the related law-enforcement authorities, so horizon-scanning for United States digital-asset activity should not assume legislative certainty before the autumn. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Saylor hints at Strategy bitcoin buy after five-week pause as STRC rate stays at 12%: ‘Bitcoin Drive engaged’</title>
-<link>https://www.theblock.co/post/410370/saylor-hints-at-strategy-bitcoin-buy-after-five-week-pause-as-strc-rate-stays-at-12-bitcoin-drive-engaged?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-25624ee837</guid>
-<pubDate>Sun, 02 Aug 2026 18:10:43 +0000</pubDate>
-<description>Michael Saylor signalled that Strategy, the largest corporate holder of bitcoin, may resume buying after a five-week pause in disclosures, while the company kept the annual dividend rate on its variable-rate preferred shares (ticker STRC) at 12%; its 843,775 bitcoin, bought for about 63.69 billion United States dollars, were worth roughly 53.3 billion dollars at the time of publication. So what: There is no direct financial-crime action here, but a large loss-making corporate bitcoin treasury funded by high-yield preferred shares is useful context for counterparty, credit and source-of-wealth reviews of corporate clients whose balance sheets are concentrated in digital assets. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges</title>
-<link>https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges</link>
-<guid isPermaLink="false">global-coindesk-market-news-5baabe49dc</guid>
-<pubDate>Sun, 02 Aug 2026 12:03:51 +0000</pubDate>
-<description>A firmware flaw dating back to March 2021 in Coldcard bitcoin hardware wallets caused some devices to generate wallet keys from a predictable software source instead of the device's own hardware random-number generator, letting attackers recreate those keys remotely and take an estimated 1,000 to 1,300 bitcoin, put at about 89 million United States dollars, from more than 1,000 addresses, with holders responding by moving coins back onto exchanges rather than deeper into self-custody. So what: Large thefts from self-custody devices push stolen and displaced legitimate coins onto exchanges at the same time, so screening against the reported exploit-linked address clusters and source-of-funds enquiries on sudden large inbound transfers from personal wallets carry added weight in the days that follow. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Iran-linked exchange sent $676 million to Binance wallets in alleged sanctions-evasion operation: Reuters</title>
-<link>https://www.theblock.co/post/410355/iran-linked-exchange-sent-676-million-to-binance-in-alleged-sanctions-evasion-operation-reuters?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-e3332904e9</guid>
-<pubDate>Sat, 01 Aug 2026 21:18:45 +0000</pubDate>
-<description>A Reuters investigation reported that Shelbit, an unlicensed Dubai-based cryptocurrency exchange, processed more than 4 billion United States dollars since May 2024 and sent at least 676 million dollars of it to wallets at the exchange Binance, allegedly acting as a hub connecting Iranian gambling websites, Iran's central bank and wallets suspected of links to the Islamic Revolutionary Guard Corps; Binance said it had no evidence supporting the claims and that its compliance programme operated as it should have. So what: Alleged Iranian-linked flows of this scale reaching a major global exchange show how sanctions exposure arrives indirectly through nested platforms, making counterparty due diligence on virtual-asset exchanges, screening for the named platform and its associated wallet clusters, and review of exposure to unlicensed Gulf-based providers a practical priority. [corroborated]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Russian decree bans crypto mining across Moscow region through 2032</title>
-<link>https://www.theblock.co/post/410345/russian-decree-bans-crypto-mining-across-moscow-region-through-2032?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-6dfbdd2bdb</guid>
-<pubDate>Sat, 01 Aug 2026 16:09:15 +0000</pubDate>
-<description>The Russian government issued a decree, dated 25 July 2026, banning cryptocurrency mining and participation in mining pools in Moscow, the surrounding Moscow region and parts of Kursk region from 15 August 2026 through the end of 2032, on the grounds that year-round mining risks local electricity shortages. So what: Forced relocation of mining capacity out of a major region tends to change where mining operators incorporate, bank and sell their coins, so counterparty screening and source-of-funds review for mining-related clients and payment flows should allow for shifts in operator domicile. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Bank of Italy research suggests stablecoins aren't necessarily cheaper for remittances</title>
-<link>https://www.coindesk.com/business/2026/08/01/bank-of-italy-research-suggests-stablecoins-aren-t-necessarily-cheaper-for-remittances</link>
-<guid isPermaLink="false">global-coindesk-institutional-moves-2c2181ffdc</guid>
-<pubDate>Sat, 01 Aug 2026 16:00:00 +0000</pubDate>
-<description>The Bank of Italy published research finding that sending money across borders with stablecoins, digital tokens designed to hold a steady value against a currency such as the United States dollar, is not systematically cheaper than traditional money-transfer operators, because the cost of converting into and out of ordinary currency, rather than the blockchain transfer itself, pushed the total cost of 200 test transfers across ten international corridors to between roughly 0.3% and almost 9% of the amount sent. So what: Since the expense and the intermediaries sit at the points where value enters and leaves the blockchain rather than on the chain itself, cross-border payment propositions built on stablecoins are best assessed on the conversion and correspondent arrangements at each end, which is also where customer due-diligence and sanctions-screening obligations actually bite. [single source]</description>
-<category>European Union</category>
-<category>News</category>
-</item>
-<item>
-<title>SEC to review Nasdaq bitcoin options approval after CME challenge</title>
-<link>https://www.coindesk.com/policy/2026/08/01/sec-to-review-nasdaq-bitcoin-options-approval-after-cme-challenge</link>
-<guid isPermaLink="false">global-coindesk-policy-a72da6ad10</guid>
-<pubDate>Sat, 01 Aug 2026 15:48:27 +0000</pubDate>
-<description>The United States Securities and Exchange Commission has suspended the approval it granted Nasdaq in May 2026 for cash-settled options tracking a bitcoin index and referred the decision to the full commission for review, after CME Group argued that because bitcoin is a commodity such contracts fall under the Commodity Futures Trading Commission's authority instead, with interested parties able to file statements until 24 August 2026. So what: Which of the two United States market regulators holds authority over bitcoin-linked derivatives determines which rulebook governs those products, leaving firms that structure, clear or facilitate them facing continued uncertainty over the applicable registration, reporting and market-conduct requirements. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
-<item>
-<title>Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit</title>
-<link>https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit</link>
-<guid isPermaLink="false">global-coindesk-market-news-3c85220a13</guid>
-<pubDate>Sat, 01 Aug 2026 09:01:08 +0000</pubDate>
-<description>Binance founder Changpeng Zhao urged holders of digital assets to spread funds across several wallets after an attacker drained 1,082.65 bitcoin, worth roughly 70 million United States dollars, from 1,196 addresses in about 41 minutes by exploiting a weakness dating to March 2021 in how Coldcard hardware wallets, physical devices that store cryptocurrency keys offline, generated their recovery phrases. So what: Offline hardware storage is not inherently safe, and a single vendor defect can create a large pool of stolen coins that later surfaces in customer deposits or counterparty flows, so transaction-monitoring and source-of-funds checks should treat hardware-wallet compromise as a live typology rather than an edge case. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Bitcoin losses linked to Coldcard vulnerability grow to $70 million, Galaxy Research says</title>
-<link>https://www.theblock.co/post/410332/bitcoin-losses-linked-coldcard-vulnerability-70-million-galaxy-research?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-1816dccb80</guid>
-<pubDate>Fri, 31 Jul 2026 20:20:52 +0000</pubDate>
-<description>Galaxy Research reported that a single attacker emptied 1,196 bitcoin addresses of 1,082.65 bitcoin, about 70.2 million United States dollars, over roughly 41 minutes on 30 July, exploiting a flaw in the way Coldcard hardware wallets generated recovery phrases that originated in a March 2021 firmware release and also affects several later device models. So what: The research warns that further thefts remain possible from any address a Coldcard device created, so the exposure is open-ended rather than closed, and firms receiving digital-asset flows should expect attempted deposits of these stolen coins and factor the incident into wallet-provenance and source-of-funds enquiries. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Coinbase’s Q2 miss sparks split on Wall Street, analysts debate growth beyond crypto trading</title>
-<link>https://www.theblock.co/post/410316/coinbase-q2-miss-sparks-split-wall-street-analysts-debate-growth-beyond-trading?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-3fc78574f2</guid>
-<pubDate>Fri, 31 Jul 2026 19:34:26 +0000</pubDate>
-<description>Coinbase shares fell to their lowest level in about two and a half years after second-quarter results came in below expectations, and equity analysts divided over whether the exchange's newer businesses, including prediction markets and tokenised equities, can grow fast enough to reduce its dependence on cryptocurrency trading fees, with price targets cut at JPMorgan to 148 United States dollars from 196 and at Mizuho to 155 from 200, but held at 330 dollars by Bernstein. So what: Earnings pressure at a major exchange counterparty is worth tracking in counterparty and concentration reviews, and the push into prediction markets and tokenised equities points to product lines whose financial-crime typologies and regulatory perimeter differ from ordinary spot trading and may not be covered by existing monitoring rules. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half</title>
-<link>https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half</link>
-<guid isPermaLink="false">global-coindesk-market-news-540c5f0f6b</guid>
-<pubDate>Fri, 31 Jul 2026 18:24:55 +0000</pubDate>
-<description>Tether, the issuer of the largest dollar-pegged stablecoin, reported 1.5 billion United States dollars of net operating profit for the second quarter while its excess reserves, the assets held above what is needed to back the tokens in issue, fell to 4.11 billion dollars from 8.23 billion the previous quarter, against 184.6 billion dollars of tokens outstanding, as falling gold and bitcoin prices cut the value of those holdings. So what: A smaller cushion above the assets required to back the stablecoin most widely used to settle digital-asset trades in Asia narrows the margin for absorbing losses, so exposure limits, liquidity assumptions and any reliance on that token as a stable settlement asset in client flows warrant review. [corroborated]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Tether’s excess reserves fall by more than $4 billion amid weaker Q2 financial results</title>
-<link>https://www.theblock.co/post/410305/tethers-excess-reserves-fall-by-more-than-4-billion-amid-weaker-q2-financial-results?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-0c9743bf48</guid>
-<pubDate>Fri, 31 Jul 2026 17:58:47 +0000</pubDate>
-<description>Tether's excess reserves, the assets it holds above what is needed to back its dollar-pegged tokens, fell by more than 4 billion United States dollars during the second quarter, to about 4.1 billion from 8.2 billion, as net operating profit dropped to 1.5 billion dollars from 4.9 billion of net profit a year earlier and the company's bitcoin and gold holdings each lost more than a tenth of their value, contributing to a negative 3.2 billion dollar financial result for the first half of the year. So what: Erosion of the buffer behind the stablecoin most commonly used to move value between digital-asset venues, driven by holdings in volatile assets rather than cash equivalents, is a concentration and liquidity consideration for any function assessing how far client transaction flows depend on that token holding its value. [corroborated]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Analysts back Strategy’s cash buildup as Saylor shifts from ‘100% bitcoin’ approach</title>
-<link>https://www.theblock.co/post/410297/strategy-cash-buildup-saylor-shifts-from-100-bitcoin-approach?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-ce7f4e61d9</guid>
-<pubDate>Fri, 31 Jul 2026 17:40:13 +0000</pubDate>
-<description>Strategy, the United States-listed company with the largest corporate bitcoin holding, reported an 8.2 billion dollar quarterly loss as bitcoin's price fell, paused its purchases for five weeks to build a 3.75 billion dollar cash reserve, and its executive chairman said the company's holdings will no longer be entirely in bitcoin. So what: A large corporate holder shifting from an all-bitcoin balance sheet to a multi-billion-dollar cash buffer is a useful signal for counterparty and source-of-wealth reviews of clients whose financial position depends heavily on digital-asset prices. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs</title>
-<link>https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs</link>
-<guid isPermaLink="false">global-coindesk-market-news-3b7393fcc2</guid>
-<pubDate>Fri, 31 Jul 2026 17:07:30 +0000</pubDate>
-<description>A flaw in the software running Coldcard hardware wallets, devices used to store bitcoin offline, let attackers reconstruct owners' secret recovery phrases and steal roughly 38 million dollars of bitcoin so far, close to 600 coins, with the manufacturer urging anyone whose keys were created on the device to move their funds immediately. So what: A large-scale theft of self-custodied bitcoin creates a pool of tainted coins likely to be moved through exchanges and over-the-counter dealers, so blockchain screening rules and alert thresholds should account for the affected addresses, and customer demand may shift toward regulated custodians and exchange-traded funds. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Crypto faces 3 barriers to next bull run, STS Digital CEO says</title>
-<link>https://www.coindesk.com/markets/2026/07/31/crypto-faces-3-barriers-to-next-bull-run-sts-digital-ceo-says</link>
-<guid isPermaLink="false">global-coindesk-policy-26288fdd05</guid>
-<pubDate>Fri, 31 Jul 2026 15:00:00 +0000</pubDate>
-<description>The chief executive of STS Digital, a Bermuda-licensed digital-asset options trading firm, said three things are holding back the next crypto rally: institutional options selling that has pushed bitcoin's expected price swings to among the lowest of this cycle, investor money rotating into artificial intelligence, and delays to the United States market-structure legislation known as the Clarity Act. So what: The continued absence of finalised United States market-structure rules means the classification of digital assets there stays unsettled, so product timelines and perimeter assumptions that depend on that legislation passing should be treated as provisional. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Circle secures New York trust charter as crypto regulatory push accelerates</title>
-<link>https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates</link>
-<guid isPermaLink="false">global-coindesk-policy-add90be258</guid>
-<pubDate>Fri, 31 Jul 2026 13:35:17 +0000</pubDate>
-<description>Circle, the issuer of the dollar-pegged stablecoin USDC, was granted a limited-purpose trust charter by the New York State Department of Financial Services, allowing it to provide fiduciary, custody and asset-management services under New York banking law three weeks after the United States Office of the Comptroller of the Currency approved its national trust bank. So what: A major stablecoin issuer now sitting under both state and federal banking supervision in the United States gives counterparty due-diligence and reserve-risk assessments a supervised entity to point to, and offers a comparison point for firms mapping stablecoin exposure against Hong Kong's own stablecoin licensing regime. [corroborated]</description>
-<category>United States</category>
-<category>Licensing</category>
-</item>
-<item>
-<title>Coinbase's weak quarter leaves Wall Street split on timing of a recovery</title>
-<link>https://www.coindesk.com/markets/2026/07/31/coinbase-s-weak-quarter-leaves-wall-street-split-on-timing-of-a-recovery</link>
-<guid isPermaLink="false">global-coindesk-market-news-9f8be6d3f9</guid>
-<pubDate>Fri, 31 Jul 2026 13:20:45 +0000</pubDate>
-<description>Coinbase reported quarterly revenue of 1.22 billion dollars and guidance for the next quarter below analysts' expectations as weak prices and subdued trading persisted, sending its shares down about 6 percent before the market opened, even as it reached a record 10.3 percent share of global crypto trading volume. So what: Subdued trading volumes alongside a single venue holding a record share of global activity is a useful reference point when reviewing counterparty concentration in digital-asset exposures and when re-baselining expected customer transaction volumes for monitoring. [single source]</description>
-<category>Global</category>
-<category>News</category>
-</item>
-<item>
-<title>Circle secures NYDFS trust charter, adding state layer to federal USDC oversight</title>
-<link>https://www.theblock.co/post/410275/circle-secures-nydfs-trust-charter-adding-state-layer-to-federal-usdc-oversight?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-market-news-05c7a72c48</guid>
-<pubDate>Fri, 31 Jul 2026 12:59:31 +0000</pubDate>
-<description>Circle's New York subsidiary received a limited-purpose trust charter from the New York State Department of Financial Services, adding state supervision alongside the federal national trust bank approval granted on 10 July 2026 and meaning issuance of its dollar-pegged stablecoin USDC would run through the New York trust company rather than the national bank. So what: Because supervision of the issuing entity, not the token brand, determines who oversees reserves and redemption, entity records for stablecoin counterparties should capture which chartered company actually issues the token and which regulator supervises it. [corroborated]</description>
-<category>United States</category>
-<category>Licensing</category>
-</item>
-<item>
-<title>Senate Democrats propose anti-corruption bureau as Trump’s crypto portfolio draws more scrutiny</title>
-<link>https://www.theblock.co/post/410260/senate-democrat-anti-corruption-bureau?utm_source=rss&amp;utm_medium=rss</link>
-<guid isPermaLink="false">global-the-block-policy-30c70c7161</guid>
-<pubDate>Fri, 31 Jul 2026 09:34:29 +0000</pubDate>
-<description>Senate Democratic leader Chuck Schumer introduced a bill to create a seven-member federal anti-corruption bureau with investigative, subpoena and enforcement powers to recover money obtained corruptly by presidents and senior officials, as scrutiny grows over an estimated 620 million dollars of cryptocurrency earnings linked to the Trump family and the ethics dispute delays broader United States market-structure legislation. So what: Sustained political scrutiny of digital-asset earnings tied to senior officials is a prompt to confirm that politically exposed person screening and source-of-wealth review capture token sales, non-fungible tokens and mining interests, not only conventional assets and shareholdings. [single source]</description>
-<category>United States</category>
-<category>News</category>
-</item>
 <item>
 <title>Appointments to Task Force on Promoting Web3 Development</title>
 <link>https://www.info.gov.hk/gia/general/202607/31/P2026073100331.htm</link>
@@ -1182,6 +993,159 @@
 <guid isPermaLink="false">global-coindesk-market-news-89945e4875</guid>
 <pubDate>Mon, 10 Aug 2026 04:26:01 +0000</pubDate>
 <description>XRP is getting left behind in the crypto bounce even as ETFs keep attracting investor money So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Florida man charged by CFTC over $397 million crypto Ponzi scheme</title>
+<link>https://www.theblock.co/news/regulation/2026-08-11-florida-man-charged-by-cftc-over-397-million-crypto-ponzi-scheme-411491</link>
+<guid isPermaLink="false">global-the-block-policy-bf352b6260</guid>
+<pubDate>Tue, 11 Aug 2026 20:14:55 +0000</pubDate>
+<description>Florida man charged by CFTC over $397 million crypto Ponzi scheme So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Brazil's largest lender Itaú is stepping deeper into the tokenization</title>
+<link>https://www.coindesk.com/business/2026/08/11/brazil-s-largest-lender-itau-is-stepping-deeper-into-the-tokenization</link>
+<guid isPermaLink="false">global-coindesk-institutional-moves-3703d4d5d8</guid>
+<pubDate>Tue, 11 Aug 2026 19:06:23 +0000</pubDate>
+<description>Brazil's largest lender Itaú is stepping deeper into the tokenization So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>What’s next for the Clarity Act as September brings a tough road ahead</title>
+<link>https://www.theblock.co/news/regulation/2026-08-11-whats-next-for-clarity-act-september-brings-tough-road-ahead-411465</link>
+<guid isPermaLink="false">global-the-block-policy-5143fc1a47</guid>
+<pubDate>Tue, 11 Aug 2026 18:35:00 +0000</pubDate>
+<description>What’s next for the Clarity Act as September brings a tough road ahead So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>SEC could propose ‘pivotal’ crypto rules that may start with token safe harbor, TD Cowen says</title>
+<link>https://www.theblock.co/news/regulation/2026-08-11-sec-crypto-rules-token-safe-harbor-td-cowen-411455</link>
+<guid isPermaLink="false">global-the-block-policy-81a4a336e2</guid>
+<pubDate>Tue, 11 Aug 2026 17:14:08 +0000</pubDate>
+<description>SEC could propose ‘pivotal’ crypto rules that may start with token safe harbor, TD Cowen says So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>New Bitcoin addresses jump as Coldcard exploit pushes users to move funds</title>
+<link>https://www.theblock.co/news/ecosystems/2026-08-11-new-bitcoin-addresses-jump-coldcard-exploit-pushes-users-move-funds-411317</link>
+<guid isPermaLink="false">global-the-block-market-news-cd0b15a10a</guid>
+<pubDate>Tue, 11 Aug 2026 16:46:02 +0000</pubDate>
+<description>New Bitcoin addresses jump as Coldcard exploit pushes users to move funds So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Twenty One Capital takes $414 million Q2 loss as new CEO plots path to become ‘more than a Bitcoin treasury’</title>
+<link>https://www.theblock.co/news/business/2026-08-11-twenty-one-capital-414-million-q2-loss-new-ceo-plots-path-bitcoin-treasury-411432</link>
+<guid isPermaLink="false">global-the-block-market-news-9406bcda5a</guid>
+<pubDate>Tue, 11 Aug 2026 15:15:42 +0000</pubDate>
+<description>Twenty One Capital takes $414 million Q2 loss as new CEO plots path to become ‘more than a Bitcoin treasury’ So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>If crypto goes back to the congressional drawing board, 3 Democrat women loom large</title>
+<link>https://www.coindesk.com/news-analysis/2026/08/11/if-crypto-goes-back-to-the-congressional-drawing-board-3-democrat-women-loom-large</link>
+<guid isPermaLink="false">global-coindesk-policy-2768bd9a37</guid>
+<pubDate>Tue, 11 Aug 2026 14:40:15 +0000</pubDate>
+<description>If crypto goes back to the congressional drawing board, 3 Democrat women loom large So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Grvt eyes $100 million USDY position in Ondo Finance tie-up</title>
+<link>https://www.theblock.co/news/defi/2026-08-11-grvt-100-million-usdy-position-ondo-finance-411393</link>
+<guid isPermaLink="false">global-the-block-institutional-moves-0449ab8c10</guid>
+<pubDate>Tue, 11 Aug 2026 13:05:02 +0000</pubDate>
+<description>Grvt eyes $100 million USDY position in Ondo Finance tie-up So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Australian watchdog suspends Cryptolink, forcing 96 ATMs offline</title>
+<link>https://www.coindesk.com/policy/2026/08/11/australian-watchdog-suspends-cryptolink-forcing-96-atms-offline</link>
+<guid isPermaLink="false">global-coindesk-policy-0954616055</guid>
+<pubDate>Tue, 11 Aug 2026 11:45:47 +0000</pubDate>
+<description>Australian watchdog suspends Cryptolink, forcing 96 ATMs offline So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Trump Media records $360.6 million unrealized loss on digital assets in first half of the year</title>
+<link>https://www.theblock.co/news/business/2026-08-11-trump-media-records-360-6-million-unrealized-loss-on-digital-assets-in-first-half-of-the-year-411394</link>
+<guid isPermaLink="false">global-the-block-policy-b5c324b149</guid>
+<pubDate>Tue, 11 Aug 2026 11:34:20 +0000</pubDate>
+<description>Trump Media records $360.6 million unrealized loss on digital assets in first half of the year So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Coinbase picks Abu Dhabi for its global tokenized asset push</title>
+<link>https://www.coindesk.com/business/2026/08/11/coinbase-picks-abu-dhabi-for-its-global-tokenized-asset-push</link>
+<guid isPermaLink="false">global-coindesk-market-news-d3cf1992e3</guid>
+<pubDate>Tue, 11 Aug 2026 11:23:25 +0000</pubDate>
+<description>Coinbase picks Abu Dhabi for its global tokenized asset push So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>‘One of the single biggest barriers to growth’: UK lawmakers press banks over crypto access ahead of new FCA regime</title>
+<link>https://www.theblock.co/news/regulation/2026-08-11-uk-crypto-banking-access-411389</link>
+<guid isPermaLink="false">global-the-block-policy-294a6778dd</guid>
+<pubDate>Tue, 11 Aug 2026 11:04:38 +0000</pubDate>
+<description>‘One of the single biggest barriers to growth’: UK lawmakers press banks over crypto access ahead of new FCA regime So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>UK lawmakers question lenders over lack of banking for the country’s crypto firms</title>
+<link>https://www.coindesk.com/policy/2026/08/11/uk-lawmakers-question-lenders-over-lack-of-banking-for-the-country-s-crypto-firms</link>
+<guid isPermaLink="false">global-coindesk-policy-322ceb7d64</guid>
+<pubDate>Tue, 11 Aug 2026 10:06:39 +0000</pubDate>
+<description>UK lawmakers question lenders over lack of banking for the country’s crypto firms So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>Coinbase rolls out derivatives for UK professional investors</title>
+<link>https://www.theblock.co/news/business/2026-08-11-coinbase-expands-uk-derivatives-411380</link>
+<guid isPermaLink="false">global-the-block-market-news-09604c7ade</guid>
+<pubDate>Tue, 11 Aug 2026 08:00:00 +0000</pubDate>
+<description>Coinbase rolls out derivatives for UK professional investors So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>BTCPay offers $190,000 bounty after bitcoin payment servers drained in exploit</title>
+<link>https://www.coindesk.com/markets/2026/08/11/btcpay-offers-usd190-000-bounty-after-bitcoin-payment-servers-drained-in-exploit</link>
+<guid isPermaLink="false">global-coindesk-market-news-6621a6a7ce</guid>
+<pubDate>Tue, 11 Aug 2026 06:19:07 +0000</pubDate>
+<description>BTCPay offers $190,000 bounty after bitcoin payment servers drained in exploit So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>U.S. SEC sets meeting to propose Reg Crypto to support certain digital assets offerings</title>
+<link>https://www.coindesk.com/policy/2026/08/11/u-s-sec-sets-meeting-to-propose-reg-crypto-to-support-certain-digital-assets-offerings</link>
+<guid isPermaLink="false">global-coindesk-policy-f43fcff341</guid>
+<pubDate>Tue, 11 Aug 2026 04:07:48 +0000</pubDate>
+<description>U.S. SEC sets meeting to propose Reg Crypto to support certain digital assets offerings So what: Review the source directly; automated analysis unavailable. [single source]</description>
+<category>Global</category>
+<category>News</category>
+</item>
+<item>
+<title>BTCPay Server supporters offer up to 3 BTC for recovery bounty after critical exploit</title>
+<link>https://www.theblock.co/news/ecosystems/2026-08-10-btcpay-server-supporters-offer-3-btc-recovery-bounty-critical-exploit-411353</link>
+<guid isPermaLink="false">global-the-block-market-news-f73474a33d</guid>
+<pubDate>Mon, 10 Aug 2026 20:59:57 +0000</pubDate>
+<description>BTCPay Server supporters offer up to 3 BTC for recovery bounty after critical exploit So what: Review the source directly; automated analysis unavailable. [single source]</description>
 <category>Global</category>
 <category>News</category>
 </item>
