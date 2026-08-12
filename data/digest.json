@@ -1,487 +1,7 @@
 {
-  "generated_at": "2026-08-11T21:38:35.013065+00:00",
+  "generated_at": "2026-08-12T21:38:53.267358+00:00",
   "top_of_mind": "",
   "items": [
-    {
-      "id": "hk-financial-services-and-the-treasury-bureau-press-releases-ee71d3ec35",
-      "jurisdiction": "HK",
-      "source": "Financial Services and the Treasury Bureau — Press releases",
-      "title": "Appointments to Task Force on Promoting Web3 Development",
-      "url": "https://www.info.gov.hk/gia/general/202607/31/P2026073100331.htm",
-      "published": "2026-07-31T00:00:00+08:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "Financial Services and the Treasury Bureau — Press releases",
-            "url": "https://www.info.gov.hk/gia/general/202607/31/P2026073100331.htm"
-          }
-        ]
-      },
-      "summary": "Appointments to Task Force on Promoting Web3 Development",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "page"
-    },
-    {
-      "id": "global-the-block-policy-7a2ab87c0d",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Blockchain Association counters National Sheriffs’ group claims as pivotal week for Clarity Act unfolds",
-      "url": "https://www.theblock.co/post/410507/blockchain-association-counters-sheriffs-associations-claims-pivotal-week-clarity-act?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T21:13:10+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/410507/blockchain-association-counters-sheriffs-associations-claims-pivotal-week-clarity-act?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Blockchain Association counters National Sheriffs’ group claims as pivotal week for Clarity Act unfolds",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-77d11ccbcd",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "FBI agent accused of stealing $1 million in crypto, allegedly turned to ChatGPT for vacation plans",
-      "url": "https://www.theblock.co/post/410491/fbi-agent-stealing-1-million-crypto-turned-to-chatgpt-vacation-plans?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T18:48:34+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/410491/fbi-agent-stealing-1-million-crypto-turned-to-chatgpt-vacation-plans?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "FBI agent accused of stealing $1 million in crypto, allegedly turned to ChatGPT for vacation plans",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-35676fe975",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Proof of Attendance Protocol is shutting down after 5+ years",
-      "url": "https://www.theblock.co/post/410482/proof-of-attendance-protocol-is-shutting-down-after-5-years?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T18:40:12+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/410482/proof-of-attendance-protocol-is-shutting-down-after-5-years?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Proof of Attendance Protocol is shutting down after 5+ years",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-a40857a6ca",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "BlackRock launches two tokenized money market funds for stablecoin reserves",
-      "url": "https://www.theblock.co/post/410469/blackrock-launches-two-tokenized-money-market-funds-stablecoin-reserves?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T17:48:09+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/410469/blackrock-launches-two-tokenized-money-market-funds-stablecoin-reserves?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "BlackRock launches two tokenized money market funds for stablecoin reserves",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-23df41c035",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Jameson Lopp says Coldcard exploit exposes limits of Bitcoin’s ‘don’t trust, verify’ mantra",
-      "url": "https://www.theblock.co/post/410446/jameson-lopp-coldcard-exploit-exposes-limits-bitcoins-dont-trust-verify-mantra?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T16:59:42+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/410446/jameson-lopp-coldcard-exploit-exposes-limits-bitcoins-dont-trust-verify-mantra?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Jameson Lopp says Coldcard exploit exposes limits of Bitcoin’s ‘don’t trust, verify’ mantra",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-2638c1e5f4",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Michael Saylor says he’s never sold his personal bitcoin after Strategy dumps more BTC",
-      "url": "https://www.theblock.co/post/410451/michael-saylor-says-never-sold-his-personal-bitcoin-strategy-dumps-more-btc?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T16:57:22+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/410451/michael-saylor-says-never-sold-his-personal-bitcoin-strategy-dumps-more-btc?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Michael Saylor says he’s never sold his personal bitcoin after Strategy dumps more BTC",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-0d0d9199b2",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "Circle slides after Morgan Stanley downgrade, cut in price target",
-      "url": "https://www.coindesk.com/markets/2026/08/03/circle-internet-slides-after-morgan-stanley-downgrade-cut-in-price-target",
-      "published": "2026-08-03T13:59:50+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/markets/2026/08/03/circle-internet-slides-after-morgan-stanley-downgrade-cut-in-price-target"
-          }
-        ]
-      },
-      "summary": "Circle slides after Morgan Stanley downgrade, cut in price target",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-3f2df5f4c7",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Bernstein sees another leg lower for crypto markets if Clarity Act stalls",
-      "url": "https://www.coindesk.com/policy/2026/08/03/bernstein-sees-another-leg-lower-for-crypto-markets-if-clarity-act-stalls",
-      "published": "2026-08-03T13:49:40+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/08/03/bernstein-sees-another-leg-lower-for-crypto-markets-if-clarity-act-stalls"
-          }
-        ]
-      },
-      "summary": "Bernstein sees another leg lower for crypto markets if Clarity Act stalls",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-08167fc397",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
-      "url": "https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings",
-      "published": "2026-08-03T13:15:46+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings"
-          }
-        ]
-      },
-      "summary": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-fd0cf51e97",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Eric Trump’s American Bitcoin treasury tops 8,000 BTC as Q2 mining production hits record",
-      "url": "https://www.theblock.co/post/410426/eric-trumps-american-bitcoin-treasury-tops-8000-btc-as-q2-mining-production-hits-record?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T13:03:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/410426/eric-trumps-american-bitcoin-treasury-tops-8000-btc-as-q2-mining-production-hits-record?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Eric Trump’s American Bitcoin treasury tops 8,000 BTC as Q2 mining production hits record",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-24afe66f0d",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Michael Saylor’s Strategy sells another 1,638 BTC for $105 million, reducing total holdings to 842,138 BTC",
-      "url": "https://www.theblock.co/post/410414/michael-saylors-strategy-sells-another-1638-btc-for-105-million-reducing-total-holdings-to-842138-btc?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T12:13:30+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/410414/michael-saylors-strategy-sells-another-1638-btc-for-105-million-reducing-total-holdings-to-842138-btc?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Michael Saylor’s Strategy sells another 1,638 BTC for $105 million, reducing total holdings to 842,138 BTC",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-d27415018e",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "BitGo launches Link, connecting clients to Coinbase, Kraken, Crypto.com and more",
-      "url": "https://www.theblock.co/post/410408/bitgo-link-coinbase-kraken-crypto-com?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T11:50:02+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/410408/bitgo-link-coinbase-kraken-crypto-com?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "BitGo launches Link, connecting clients to Coinbase, Kraken, Crypto.com and more",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-ba2f3e2822",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
-      "url": "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day",
-      "published": "2026-08-03T10:51:37+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day"
-          }
-        ]
-      },
-      "summary": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-0e4c2f9f95",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Bernstein says Clarity Act failure could accelerate SEC, CFTC crypto rulemaking",
-      "url": "https://www.theblock.co/post/410395/bernstein-says-clarity-act-failure-could-accelerate-sec-cftc-crypto-rulemaking?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T09:49:47+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/post/410395/bernstein-says-clarity-act-failure-could-accelerate-sec-cftc-crypto-rulemaking?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Bernstein says Clarity Act failure could accelerate SEC, CFTC crypto rulemaking",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-02a62d0bcd",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Robinhood wins UK crypto registration before new regulatory regime kicks off",
-      "url": "https://www.coindesk.com/policy/2026/08/03/robinhood-wins-uk-crypto-registration-before-new-regulatory-regime-kicks-off",
-      "published": "2026-08-03T09:38:53+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/08/03/robinhood-wins-uk-crypto-registration-before-new-regulatory-regime-kicks-off"
-          }
-        ]
-      },
-      "summary": "Robinhood wins UK crypto registration before new regulatory regime kicks off",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-16a6912242",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead",
-      "url": "https://www.coindesk.com/markets/2026/08/03/u-s-jobs-circle-galaxy-american-bitcoin-earnings-crypto-week-ahead",
-      "published": "2026-08-03T08:16:28+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/08/03/u-s-jobs-circle-galaxy-american-bitcoin-earnings-crypto-week-ahead"
-          }
-        ]
-      },
-      "summary": "U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-aef4cb428f",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Michael Saylor’s Strategy is now tracking bitcoin’s 200-week moving average",
-      "url": "https://www.coindesk.com/markets/2026/08/03/michael-saylor-s-strategy-is-now-tracking-bitcoin-s-200-week-moving-average",
-      "published": "2026-08-03T05:07:49+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/08/03/michael-saylor-s-strategy-is-now-tracking-bitcoin-s-200-week-moving-average"
-          }
-        ]
-      },
-      "summary": "Michael Saylor’s Strategy is now tracking bitcoin’s 200-week moving average",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-d3d8e12ed6",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Kalshi and Polymarket’s combined volume reaches all-time high in July, surpassing $50 billion",
-      "url": "https://www.theblock.co/post/410382/kalshi-polymarket-volume-july?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T04:34:46+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/post/410382/kalshi-polymarket-volume-july?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Kalshi and Polymarket’s combined volume reaches all-time high in July, surpassing $50 billion",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "cn-the-block-china-policy-7356587b93",
-      "jurisdiction": "CN",
-      "source": "The Block — China policy",
-      "title": "Hong Kong police flag $3.3 million romance scam involving fake crypto app",
-      "url": "https://www.theblock.co/post/410377/hong-kong-3-million-crypto-romance-scam?utm_source=rss&utm_medium=rss",
-      "published": "2026-08-03T03:42:16+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — China policy",
-            "url": "https://www.theblock.co/post/410377/hong-kong-3-million-crypto-romance-scam?utm_source=rss&utm_medium=rss"
-          }
-        ]
-      },
-      "summary": "Hong Kong police flag $3.3 million romance scam involving fake crypto app",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-03T22:00:57.058757+00:00",
-      "date_source": "feed"
-    },
     {
       "id": "uk-financial-conduct-authority-news-6d7bb42860",
       "jurisdiction": "UK",
@@ -3049,6 +2569,318 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-08-11T21:38:35.013065+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-56ffd754f4",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "SEC clears Franklin Templeton funds to use onchain BENJI system for cash management",
+      "url": "https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654",
+      "published": "2026-08-12T21:04:46+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/news/defi/2026-08-12-sec-clears-franklin-templeton-funds-use-onchain-benji-system-cash-management-411654"
+          }
+        ]
+      },
+      "summary": "SEC clears Franklin Templeton funds to use onchain BENJI system for cash management",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-98b7be8470",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Goldman Sachs leaps into bitcoin income ETFs with $2.25 billion NEOS buyout",
+      "url": "https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout",
+      "published": "2026-08-12T17:21:03+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout"
+          }
+        ]
+      },
+      "summary": "Goldman Sachs leaps into bitcoin income ETFs with $2.25 billion NEOS buyout",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-3d5db60b5a",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "Goldman Sachs to gain bitcoin and ETH income ETFs in up to $2.25 billion Neos acquisition",
+      "url": "https://www.theblock.co/news/business/2026-08-12-goldman-sachs-bitcoin-ether-income-etfs-neos-deal-411618",
+      "published": "2026-08-12T17:01:47+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/news/business/2026-08-12-goldman-sachs-bitcoin-ether-income-etfs-neos-deal-411618"
+          }
+        ]
+      },
+      "summary": "Goldman Sachs to gain bitcoin and ETH income ETFs in up to $2.25 billion Neos acquisition",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-c3e07ba7a9",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Attackers keep hitting the wrong house in rural France after crypto millionaire moved: report",
+      "url": "https://www.theblock.co/news/regulation/2026-08-12-attackers-keep-hitting-wrong-house-rural-france-after-crypto-millionaire-moved-report-411605",
+      "published": "2026-08-12T15:30:05+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-08-12-attackers-keep-hitting-wrong-house-rural-france-after-crypto-millionaire-moved-report-411605"
+          }
+        ]
+      },
+      "summary": "Attackers keep hitting the wrong house in rural France after crypto millionaire moved: report",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-f630fabcbd",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Bitcoin dips under $64,000 as in-line CPI buys the Fed time, not conviction: analysts",
+      "url": "https://www.theblock.co/news/markets/2026-08-12-bitcoin-dips-under-64000-in-line-cpi-buys-fed-time-not-conviction-analysts-411594",
+      "published": "2026-08-12T14:35:08+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/markets/2026-08-12-bitcoin-dips-under-64000-in-line-cpi-buys-fed-time-not-conviction-analysts-411594"
+          }
+        ]
+      },
+      "summary": "Bitcoin dips under $64,000 as in-line CPI buys the Fed time, not conviction: analysts",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-coindesk-china-policy-a6d4a78d85",
+      "jurisdiction": "CN",
+      "source": "CoinDesk — China policy",
+      "title": "Standard Chartered-led Anchorpoint launches Hong Kong dollar stablecoin",
+      "url": "https://www.coindesk.com/business/2026/08/12/standard-chartered-led-anchorpoint-launches-hong-kong-dollar-stablecoin",
+      "published": "2026-08-12T13:13:49+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — China policy",
+            "url": "https://www.coindesk.com/business/2026/08/12/standard-chartered-led-anchorpoint-launches-hong-kong-dollar-stablecoin"
+          }
+        ]
+      },
+      "summary": "Standard Chartered-led Anchorpoint launches Hong Kong dollar stablecoin",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-the-block-china-policy-338bd79a89",
+      "jurisdiction": "CN",
+      "source": "The Block — China policy",
+      "title": "Standard Chartered-backed Anchorpoint begins HKDAP stablecoin rollout",
+      "url": "https://www.theblock.co/news/business/2026-08-12-standard-chartered-anchorpoint-hkdap-stablecoin-rollout-411575",
+      "published": "2026-08-12T12:16:29+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — China policy",
+            "url": "https://www.theblock.co/news/business/2026-08-12-standard-chartered-anchorpoint-hkdap-stablecoin-rollout-411575"
+          }
+        ]
+      },
+      "summary": "Standard Chartered-backed Anchorpoint begins HKDAP stablecoin rollout",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-90c78e9d6b",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Russia moves to restrict retail crypto trading to bitcoin, ether and USDT",
+      "url": "https://www.coindesk.com/policy/2026/08/12/russia-moves-to-restrict-retail-crypto-trading-to-bitcoin-ether-and-usdt",
+      "published": "2026-08-12T11:19:32+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/08/12/russia-moves-to-restrict-retail-crypto-trading-to-bitcoin-ether-and-usdt"
+          }
+        ]
+      },
+      "summary": "Russia moves to restrict retail crypto trading to bitcoin, ether and USDT",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-32623e5b63",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Bitcoin holds near $64,000 as U.S. inflation data looms, Harmony exploit rattles altcoins",
+      "url": "https://www.coindesk.com/markets/2026/08/12/bitcoin-holds-near-usd64-000-as-u-s-inflation-data-looms-harmony-exploit-rattles-altcoins",
+      "published": "2026-08-12T10:30:10+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/08/12/bitcoin-holds-near-usd64-000-as-u-s-inflation-data-looms-harmony-exploit-rattles-altcoins"
+          }
+        ]
+      },
+      "summary": "Bitcoin holds near $64,000 as U.S. inflation data looms, Harmony exploit rattles altcoins",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-1cc44523d6",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Bank of England to test stablecoin, digital currency use in cross-border finance",
+      "url": "https://www.coindesk.com/business/2026/08/12/bank-of-england-to-test-stablecoin-digital-currency-use-in-cross-border-finance",
+      "published": "2026-08-12T10:17:05+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/08/12/bank-of-england-to-test-stablecoin-digital-currency-use-in-cross-border-finance"
+          }
+        ]
+      },
+      "summary": "Bank of England to test stablecoin, digital currency use in cross-border finance",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-5153aece8d",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Fidelity moves to add staking, quarterly payouts to near $900 million ether ETF",
+      "url": "https://www.coindesk.com/business/2026/08/12/fidelity-moves-to-add-staking-quarterly-payouts-to-near-usd900-million-ether-etf",
+      "published": "2026-08-12T09:30:20+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/08/12/fidelity-moves-to-add-staking-quarterly-payouts-to-near-usd900-million-ether-etf"
+          }
+        ]
+      },
+      "summary": "Fidelity moves to add staking, quarterly payouts to near $900 million ether ETF",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-8a90b02935",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Harmony confirms exploit involving unauthorized minting of 4 billion ONE tokens",
+      "url": "https://www.theblock.co/news/defi/2026-08-12-harmony-confirms-exploit-one-token-411527",
+      "published": "2026-08-12T06:24:39+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/defi/2026-08-12-harmony-confirms-exploit-one-token-411527"
+          }
+        ]
+      },
+      "summary": "Harmony confirms exploit involving unauthorized minting of 4 billion ONE tokens",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-741acabf4c",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Bitcoin stuck as ETF inflows offset selling, but inflation data could spark a move",
+      "url": "https://www.coindesk.com/markets/2026/08/11/bitcoin-stuck-as-etf-inflows-offset-selling-but-inflation-data-could-spark-a-move",
+      "published": "2026-08-11T21:38:13+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/08/11/bitcoin-stuck-as-etf-inflows-offset-selling-but-inflation-data-could-spark-a-move"
+          }
+        ]
+      },
+      "summary": "Bitcoin stuck as ETF inflows offset selling, but inflation data could spark a move",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-12T21:38:53.267358+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -3057,7 +2889,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971732+00:00",
+      "checked_at": "2026-08-12T21:38:53.185975+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -3065,7 +2897,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971745+00:00",
+      "checked_at": "2026-08-12T21:38:53.185984+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -3073,7 +2905,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971754+00:00",
+      "checked_at": "2026-08-12T21:38:53.185990+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -3081,7 +2913,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971760+00:00",
+      "checked_at": "2026-08-12T21:38:53.185993+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -3089,7 +2921,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971767+00:00",
+      "checked_at": "2026-08-12T21:38:53.185996+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -3097,7 +2929,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971771+00:00",
+      "checked_at": "2026-08-12T21:38:53.186004+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -3105,7 +2937,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971775+00:00",
+      "checked_at": "2026-08-12T21:38:53.186009+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -3113,7 +2945,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971778+00:00",
+      "checked_at": "2026-08-12T21:38:53.186013+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -3121,7 +2953,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971781+00:00",
+      "checked_at": "2026-08-12T21:38:53.186016+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -3129,7 +2961,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971785+00:00",
+      "checked_at": "2026-08-12T21:38:53.186020+00:00",
       "jurisdiction": "US"
     },
     {
@@ -3137,7 +2969,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971788+00:00",
+      "checked_at": "2026-08-12T21:38:53.186023+00:00",
       "jurisdiction": "US"
     },
     {
@@ -3145,7 +2977,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971792+00:00",
+      "checked_at": "2026-08-12T21:38:53.186026+00:00",
       "jurisdiction": "US"
     },
     {
@@ -3153,15 +2985,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971795+00:00",
+      "checked_at": "2026-08-12T21:38:53.186030+00:00",
       "jurisdiction": "US"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='www.occ.gov', port=443): Max retries exceeded with url: /rss/occ_news.xml (Caused by NewConnectionError(\"HTTPSConnection(host='www.occ.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))); 1 consecutive failure — self-heal at 3.",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971798+00:00",
+      "checked_at": "2026-08-12T21:38:53.186054+00:00",
       "jurisdiction": "US"
     },
     {
@@ -3169,7 +3001,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971801+00:00",
+      "checked_at": "2026-08-12T21:38:53.186059+00:00",
       "jurisdiction": "US"
     },
     {
@@ -3177,7 +3009,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971804+00:00",
+      "checked_at": "2026-08-12T21:38:53.186063+00:00",
       "jurisdiction": "US"
     },
     {
@@ -3185,7 +3017,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971807+00:00",
+      "checked_at": "2026-08-12T21:38:53.186066+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -3193,7 +3025,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971810+00:00",
+      "checked_at": "2026-08-12T21:38:53.186071+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -3201,7 +3033,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971813+00:00",
+      "checked_at": "2026-08-12T21:38:53.186075+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -3209,7 +3041,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971816+00:00",
+      "checked_at": "2026-08-12T21:38:53.186078+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -3217,7 +3049,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971819+00:00",
+      "checked_at": "2026-08-12T21:38:53.186082+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -3225,7 +3057,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971822+00:00",
+      "checked_at": "2026-08-12T21:38:53.186085+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3233,7 +3065,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971826+00:00",
+      "checked_at": "2026-08-12T21:38:53.186089+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3241,7 +3073,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971829+00:00",
+      "checked_at": "2026-08-12T21:38:53.186092+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3249,7 +3081,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971832+00:00",
+      "checked_at": "2026-08-12T21:38:53.186096+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3257,7 +3089,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-11T21:38:34.971835+00:00",
+      "checked_at": "2026-08-12T21:38:53.186100+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3265,7 +3097,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971838+00:00",
+      "checked_at": "2026-08-12T21:38:53.186104+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3273,7 +3105,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971841+00:00",
+      "checked_at": "2026-08-12T21:38:53.186108+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3281,7 +3113,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971844+00:00",
+      "checked_at": "2026-08-12T21:38:53.186112+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3289,7 +3121,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971847+00:00",
+      "checked_at": "2026-08-12T21:38:53.186116+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3297,7 +3129,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971851+00:00",
+      "checked_at": "2026-08-12T21:38:53.186120+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3305,7 +3137,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971853+00:00",
+      "checked_at": "2026-08-12T21:38:53.186124+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3313,15 +3145,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:34.971856+00:00",
+      "checked_at": "2026-08-12T21:38:53.186127+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 10 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
+      "note": "Failing for 11 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:35.012170+00:00",
+      "checked_at": "2026-08-12T21:38:53.266524+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3329,7 +3161,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-11T21:38:35.012184+00:00",
+      "checked_at": "2026-08-12T21:38:53.266544+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -3339,10 +3171,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-07-31T22:24:26Z",
-      "note": "Weekly integrity audit: 14/14 checks ran; all findings were previously-known or already-explained, with no new incident. Also completed this week's source-coverage deep-dive and opened PR #88 proposing two new tracked sources."
-    },
     {
       "at": "2026-08-02T21:47:31.026457+00:00",
       "note": "Daily fetch: 21 new items surfaced; 34/36 sources ok"
@@ -3378,6 +3206,10 @@
     {
       "at": "2026-08-11T21:38:35.013065+00:00",
       "note": "Daily fetch: 17 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-08-12T21:38:53.267358+00:00",
+      "note": "Daily fetch: 13 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
