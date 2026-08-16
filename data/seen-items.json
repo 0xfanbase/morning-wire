@@ -302,7 +302,7 @@
   "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown": {
     "title_hash": "8c3b80518513189fa8c2a73e13e7bb89731b2167c8f87f52dd05924c8d2b1f37",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-08-13T21:38:40.922770+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
     "title": "Operation Prince: Inside a $15 billion crypto fraud takedown"
   },
   "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance": {
@@ -1724,13 +1724,13 @@
   "https://www.acams.org/en/opinion/tren-de-aragua-crypto-and-cash-inside-one-chiles-biggest-money-laundering-cases": {
     "title_hash": "7eaee6c7cdffb693850b8754b7b980ab3676828ca93dcfb31ee08f9c3701a884",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-08-13T21:38:40.922770+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
     "title": "Tren de Aragua, Crypto, and Cash: Inside One of Chile’s Biggest Money Laundering Cases"
   },
   "https://www.acams.org/en/opinion/compliance-powers-stablecoins": {
     "title_hash": "047b177c5a1ade3d23fc1342bff7f77455c733cfe0131af551315583ee0152d7",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-08-13T21:38:40.922770+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
     "title": "The compliance powers of stablecoins"
   },
   "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules": {
@@ -1952,7 +1952,7 @@
   "https://www.fca.org.uk/news/blogs/outcomes-monitoring-why-understanding-consumer-experience-matters": {
     "title_hash": "f50d47f51cd0b54605d0a5d2a516a31b8a019f9658a1d165ad2d904cf71b8365",
     "first_seen": "2026-07-27T21:59:02.867861+00:00",
-    "last_seen": "2026-08-13T21:38:40.922770+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
     "title": "Outcomes monitoring: why understanding the consumer experience matters and where firms should focus"
   },
   "https://www.theblock.co/post/409831/ny-attorney-general-letitia-james-warns-clarity-act-dilute-states-ability-fraud-pressure-mounts?utm_source=rss&utm_medium=rss": {
@@ -2042,7 +2042,7 @@
   "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system": {
     "title_hash": "76d0b10514759ebcc315198668b28d086021b31c06483bac2f95975e0533dde8",
     "first_seen": "2026-07-28T21:57:31.146602+00:00",
-    "last_seen": "2026-08-13T21:38:40.922770+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
     "title": "Strengthening resilience across an increasingly interconnected financial system"
   },
   "https://www.gdf.io/news-letters/gdf-and-isda-release-landmark-report-on-u-s-tokenized-money-market-funds": {
@@ -2516,7 +2516,7 @@
   "https://www.fca.org.uk/news/press-releases/tribunal-upholds-fca-ban-pair-pensions-advice": {
     "title_hash": "4186bdb320d978152caaa38ecb40ec66a3875af0265a9ca8adc3947e1a19d915",
     "first_seen": "2026-08-04T22:06:15.870891+00:00",
-    "last_seen": "2026-08-13T21:38:40.922770+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
     "title": "Tribunal upholds FCA ban on pair involved in pension transfer advice and reduces fines"
   },
   "https://www.coindesk.com/policy/2026/08/03/as-clarity-act-teeters-mystery-group-hammers-away-at-crypto-in-washington-ads": {
@@ -3050,7 +3050,7 @@
   "https://www.chainalysis.com/blog/understanding-fatf-defi-report-july-2026": {
     "title_hash": "5cb90dd53ea1c0f91bf44fbd1e2043b9bc02ef61c6b3ff3366ac8d3984057674",
     "first_seen": "2026-08-10T21:34:36.249822+00:00",
-    "last_seen": "2026-08-13T21:38:40.922770+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
     "title": "Understanding the FATF’s DeFi Report: A Functional Approach to Decentralized Finance Regulation"
   },
   "https://www.coindesk.com/news-analysis/2026/08/11/if-crypto-goes-back-to-the-congressional-drawing-board-3-democrat-women-loom-large": {
@@ -3292,5 +3292,143 @@
     "first_seen": "2026-08-13T21:38:40.922770+00:00",
     "last_seen": "2026-08-13T21:38:40.922770+00:00",
     "title": "Baltimore sues Kalshi and Polymarket, roping Coinbase, Robinhood and Webull into the fight"
+  },
+  "https://www.coindesk.com/policy/2026/08/16/the-sec-meeting-that-wasn-t-state-of-crypto": {
+    "title_hash": "e4ea4626f26e7f923dd1e5ab602f0a5467b48d29ea839c5ceabb53be773b8877",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "The SEC meeting that wasn't: State of Crypto"
+  },
+  "https://www.coindesk.com/business/2026/08/14/mica-s-cleanup-is-creating-a-new-scam-wave-across-the-european-union": {
+    "title_hash": "63788bd444426b66ebff56a195e814ed64703632bdeadf4f334664dc4674a08f",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "MiCA's cleanup is creating a new scam wave across the European Union"
+  },
+  "https://www.coindesk.com/policy/2026/08/15/why-the-world-s-second-largest-bitcoin-mining-power-is-shutting-down-rigs-in-its-capital-city": {
+    "title_hash": "6aa551b365175eae4229d66a967da60bc1224def0b236e8c026d61b284ad1ea8",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city"
+  },
+  "https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era": {
+    "title_hash": "ad22872340cd67f6d69b5b8994307dfb3bd469d4b6bd12575ee3b456ece6b1c0",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "The $11.2 billion in 2026 funding that killed crypto’s permissionless era"
+  },
+  "https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say": {
+    "title_hash": "8fe275e0f547c32c31e29f2be86e5d439aafd89ac46806430dc77b35fd249695",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Trump expected to attend White House meeting with crypto CEOs, sources say"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-15-trump-cftc-chair-selig-expected-at-wednesday-white-house-meeting-with-crypto-and-prediction-market-executives-411919": {
+    "title_hash": "152be91a22f13539b4a04a9280050c48e656bf0cc9e73964ea14e5a34f71a747",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Trump, CFTC Chair Selig expected at Wednesday White House meeting with crypto and prediction market executives"
+  },
+  "https://www.theblock.co/news/ecosystems/2026-08-14-french-tax-breach-exposes-nearly-678000-people-crypto-wrench-attacks-pile-up-411876": {
+    "title_hash": "20da1cc506beefcef64b2b2607f2b446a040b3ee0ab5578d25643f54c08e63d3",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "French tax breach exposes nearly 678,000 people as crypto wrench attacks pile up"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-14-cboe-seeks-sec-nod-for-first-us-3x-bitcoin-and-ether-etfs-411879": {
+    "title_hash": "26cb4b20c704d0444e583dbea40383532e72fd64ed0556d03e34c9e123be6efa",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Cboe seeks SEC nod for first US 3x bitcoin and ether ETFs"
+  },
+  "https://www.coindesk.com/news-analysis/2026/08/14/the-stablecoin-yield-clash-that-won-t-go-away-has-banks-crypto-battling-over-tradition": {
+    "title_hash": "816da06efe5ac3da6f9fcb67ef96173cb17c99571ce5f19ef3920916bb4f4975",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "The stablecoin yield clash that won't go away has banks, crypto battling over tradition"
+  },
+  "https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options": {
+    "title_hash": "6d67e8da8f8dbd2d085478ba4fc102625017efb140fc566397786440541277ca",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Swiss mega-bank UBS ramps up its Bitcoin exposure with a massive 24-fold surge in ETF call options"
+  },
+  "https://www.coindesk.com/business/2026/08/15/paul-tudor-jones-investment-firm-increases-blackrock-s-bitcoin-etf-stake-after-year-of-selling": {
+    "title_hash": "30617658f3d361a777749484650654b0b1eaeac23e9d9af8baa9e91b81c4b4ab",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Paul Tudor Jones’ investment firm increases stake in BlackRock's bitcoin ETF after year of selling"
+  },
+  "https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories": {
+    "title_hash": "5a2ac8122ed975f81530eaa3a138585b681629c7dd387d480961c0968b7904ca",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Clarity survives (barely), Strategy sells and the untold story of Mastercard's $1.8 billion deal: Crypto's week in 5 stories"
+  },
+  "https://www.theblock.co/news/business/2026-08-15-jpmorgan-cut-polymarkets-banking-ties-in-october-but-still-wants-a-role-in-a-potential-ipo-ft-411929": {
+    "title_hash": "d66643c329a7a5e2bf70cc563ad860fb16ec687c6ea3ebfcb385f07045cd0302",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "JPMorgan cut Polymarket’s banking ties in October but still wants a role in a potential IPO: FT"
+  },
+  "https://www.coindesk.com/markets/2026/08/14/bitcoin-slips-as-u-s-inflation-fails-to-spark-gains-etfs-see-august-s-first-two-day-drawdown": {
+    "title_hash": "70d3a47d0a46f79fbcc29c7a3ff07a76bcc109659a8c0d4f92520def36e2c28a",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Bitcoin slips as U.S. inflation fails to spark gains, ETFs see August's first two-day drawdown"
+  },
+  "https://www.theblock.co/news/defi/2026-08-16-hackers-exploited-macos-screen-sharing-flaw-to-install-monero-miners-dutch-cyber-agency-says-411932": {
+    "title_hash": "4f854c8e1b97e55205419565dd556d18eed00e6803caca18c9274a4e8e3cc760",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Hackers exploited macOS Screen Sharing flaw to install Monero miners, Dutch cyber agency says"
+  },
+  "https://www.theblock.co/news/markets/2026-08-15-harvard-leaves-bitcoin-etf-stake-untouched-in-q2-after-cutting-it-43-in-the-prior-quarter-411926": {
+    "title_hash": "0b49ebac67958d3f80bd87416f6102413034db1ddc8d65a61cfb7eb4a9178d01",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Harvard leaves bitcoin ETF stake untouched in Q2 after cutting it 43% in the prior quarter"
+  },
+  "https://www.theblock.co/news/business/2026-08-14-honestly-i-dont-care-tether-ceo-dismisses-critics-first-kpmg-audit-411886": {
+    "title_hash": "bb7356f707495fd7b73c6bc11a5f814792287174ed0943e97bc7faf0d8853161",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "‘Honestly, I don’t care’: Tether CEO dismisses critics following first KPMG audit"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-14-binance-block-transactions-htx-10-other-exchanges-eu-russia-sanctions-411858": {
+    "title_hash": "f78528d40b617feb81b1a78395e83e91c1cbcf35d15a5188cdedaf8164627cdc",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Binance to block transactions with HTX, 10 other exchanges under EU Russia sanctions"
+  },
+  "https://www.theblock.co/news/business/2026-08-14-ethena-treasury-company-stablecoinx-shares-jump-12-revealing-20-stake-ena-supply-411845": {
+    "title_hash": "3f9a484fef1e4cbb50a6ac3c14759023da5b70a0b3d3a2d2f71d49513fd5a499",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Ethena treasury company StablecoinX shares jump 12% after revealing 20% stake in ENA supply"
+  },
+  "https://www.theblock.co/news/markets/2026-08-14-norway-sovereign-wealth-fund-indirect-bitcoin-exposure-all-time-high-strategy-k33-411815": {
+    "title_hash": "54fec0357d76f1cdada3edf8dd6b1e21f410ebea94827736f750be46459649a5",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Norway sovereign wealth fund sees indirect bitcoin exposure hit all-time high, with Strategy accounting for 86%: K33"
+  },
+  "https://www.theblock.co/news/business/2026-08-14-kraken-parent-payward-508-million-q2-adjusted-revenue-411818": {
+    "title_hash": "b6c57f0d05a665a2bbb9809c27649280b5e31c350f6f33f3735b05b528dcfe5a",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Kraken parent Payward posts $508 million in Q2 adjusted revenue as growth broadens beyond crypto trading"
+  },
+  "https://www.theblock.co/news/defi/2026-08-14-bitwise-tokenize-sol-staking-etf-411790": {
+    "title_hash": "41ea657bfcc7c14182c11e1873783e93653babc6b34f617e3e13ee931a2aa9be",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Bitwise mulls tokenizing its Solana staking ETF via Superstate partnership"
+  },
+  "https://www.chainalysis.com/blog/ml-role-in-blockchain-intelligence": {
+    "title_hash": "ef2193e54e01b2b31fea7ed3fe187ed27f73958d5a6bb0c832177cf0d8584a94",
+    "first_seen": "2026-08-16T21:14:21.394146+00:00",
+    "last_seen": "2026-08-16T21:14:21.394146+00:00",
+    "title": "Machine Learning Has a Specific Role in Blockchain Intelligence"
   }
 }
