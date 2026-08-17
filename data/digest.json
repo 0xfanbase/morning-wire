@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T21:14:21.394139+00:00",
+  "generated_at": "2026-08-17T21:20:04.520982+00:00",
   "top_of_mind": "",
   "items": [
     {
@@ -2257,6 +2257,294 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-08-16T21:14:21.394139+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "us-us-department-of-justice-press-releases-ebfce1db38",
+      "jurisdiction": "US",
+      "source": "US Department of Justice — Press releases",
+      "title": "Alleged Mastermind of $165 Million Cryptocurrency Ponzi Scheme Facing Federal Charges after Deportation from Fiji",
+      "url": "https://www.justice.gov/usao-ndga/pr/alleged-mastermind-165-million-cryptocurrency-ponzi-scheme-facing-federal-charges",
+      "published": "2026-08-17T12:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "US Department of Justice — Press releases",
+            "url": "https://www.justice.gov/usao-ndga/pr/alleged-mastermind-165-million-cryptocurrency-ponzi-scheme-facing-federal-charges"
+          }
+        ]
+      },
+      "summary": "Alleged Mastermind of $165 Million Cryptocurrency Ponzi Scheme Facing Federal Charges after Deportation from Fiji",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-7e6413445b",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Tokenized equities triple market share as Ondo, Binance and xStocks dominate",
+      "url": "https://www.theblock.co/news/defi/2026-08-17-tokenized-equities-triple-market-share-ondo-binance-xstocks-dominate-411996",
+      "published": "2026-08-17T20:55:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/defi/2026-08-17-tokenized-equities-triple-market-share-ondo-binance-xstocks-dominate-411996"
+          }
+        ]
+      },
+      "summary": "Tokenized equities triple market share as Ondo, Binance and xStocks dominate",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-35d49ee2e2",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Saylor says share buyback isn’t priority as Strategy builds $4.8 billion cash reserve",
+      "url": "https://www.coindesk.com/markets/2026/08/17/saylor-says-share-buyback-isn-t-a-priority-as-it-builds-its-usd4-8-billion-cash-reserve-though-a-possibility",
+      "published": "2026-08-17T18:53:47+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/08/17/saylor-says-share-buyback-isn-t-a-priority-as-it-builds-its-usd4-8-billion-cash-reserve-though-a-possibility"
+          }
+        ]
+      },
+      "summary": "Saylor says share buyback isn’t priority as Strategy builds $4.8 billion cash reserve",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-64d25ddf9a",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "US Treasury seeks public comment on GENIUS Act stablecoin rules",
+      "url": "https://www.theblock.co/news/regulation/2026-08-17-us-treasury-seeks-public-comment-genius-act-stablecoin-rules-411987",
+      "published": "2026-08-17T16:40:26+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-08-17-us-treasury-seeks-public-comment-genius-act-stablecoin-rules-411987"
+          }
+        ]
+      },
+      "summary": "US Treasury seeks public comment on GENIUS Act stablecoin rules",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-6003f8764a",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "U.S. Treasury Department proposes GENIUS Act stablecoin rule",
+      "url": "https://www.coindesk.com/policy/2026/08/17/u-s-treasury-department-proposes-genius-act-stablecoin-rule",
+      "published": "2026-08-17T14:44:29+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/08/17/u-s-treasury-department-proposes-genius-act-stablecoin-rule"
+          }
+        ]
+      },
+      "summary": "U.S. Treasury Department proposes GENIUS Act stablecoin rule",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-d7cffbbc9e",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "The Coldcard hack proves reputation is not a security model",
+      "url": "https://www.coindesk.com/opinion/2026/08/17/the-coldcard-hack-proves-reputation-is-not-a-security-model",
+      "published": "2026-08-17T14:09:46+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/opinion/2026/08/17/the-coldcard-hack-proves-reputation-is-not-a-security-model"
+          }
+        ]
+      },
+      "summary": "The Coldcard hack proves reputation is not a security model",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-470230f692",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "How a bug in Coldcard’s code went unnoticed for years, leading to $100 million in hacked funds",
+      "url": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds",
+      "published": "2026-08-17T13:57:11+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds"
+          }
+        ]
+      },
+      "summary": "How a bug in Coldcard’s code went unnoticed for years, leading to $100 million in hacked funds",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-cc84b047c0",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Austria’s FMA fines crypto broker Bitpanda $81,000 in first published MiCA penalty",
+      "url": "https://www.theblock.co/news/regulation/2026-08-17-austria-mica-penalty-bitpanda-411960",
+      "published": "2026-08-17T13:03:16+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-08-17-austria-mica-penalty-bitpanda-411960"
+          }
+        ]
+      },
+      "summary": "Austria’s FMA fines crypto broker Bitpanda $81,000 in first published MiCA penalty",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-971bcaa3b8",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Bitcoin tracks equity bounce, but $390 million ETF outflow week keeps bulls on back foot",
+      "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tracks-equity-bounce-but-usd390-million-etf-outflow-week-keeps-bulls-on-back-foot",
+      "published": "2026-08-17T09:59:55+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tracks-equity-bounce-but-usd390-million-etf-outflow-week-keeps-bulls-on-back-foot"
+          }
+        ]
+      },
+      "summary": "Bitcoin tracks equity bounce, but $390 million ETF outflow week keeps bulls on back foot",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-fa6e81e0d5",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Binance handed user data to Russia that led to a Ukrainian donor's arrest",
+      "url": "https://www.coindesk.com/policy/2026/08/17/binance-handed-user-data-to-russia-that-led-to-a-ukrainian-donor-s-arrest",
+      "published": "2026-08-17T09:16:14+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/policy/2026/08/17/binance-handed-user-data-to-russia-that-led-to-a-ukrainian-donor-s-arrest"
+          }
+        ]
+      },
+      "summary": "Binance handed user data to Russia that led to a Ukrainian donor's arrest",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-4770ab25ce",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Coinbase-Circle USDC collaboration, FOMC minutes, oil price: Crypto Week Ahead",
+      "url": "https://www.coindesk.com/markets/2026/08/17/coinbase-circle-usdc-collaboration-fomc-minutes-oil-price-crypto-week-ahead",
+      "published": "2026-08-17T09:13:02+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/08/17/coinbase-circle-usdc-collaboration-fomc-minutes-oil-price-crypto-week-ahead"
+          }
+        ]
+      },
+      "summary": "Coinbase-Circle USDC collaboration, FOMC minutes, oil price: Crypto Week Ahead",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-b315478ec3",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "September Fed interest-rate increase is 'very unlikely,' Goldman Sachs says",
+      "url": "https://www.coindesk.com/markets/2026/08/17/september-fed-interest-rate-increase-is-very-unlikely-goldman-sachs-says",
+      "published": "2026-08-17T08:16:11+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/markets/2026/08/17/september-fed-interest-rate-increase-is-very-unlikely-goldman-sachs-says"
+          }
+        ]
+      },
+      "summary": "September Fed interest-rate increase is 'very unlikely,' Goldman Sachs says",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-17T21:20:04.520982+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -2265,7 +2553,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278541+00:00",
+      "checked_at": "2026-08-17T21:20:04.479844+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2273,7 +2561,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278553+00:00",
+      "checked_at": "2026-08-17T21:20:04.479858+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2281,7 +2569,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278559+00:00",
+      "checked_at": "2026-08-17T21:20:04.479865+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2289,7 +2577,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278568+00:00",
+      "checked_at": "2026-08-17T21:20:04.479872+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2297,7 +2585,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278572+00:00",
+      "checked_at": "2026-08-17T21:20:04.479879+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2305,7 +2593,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278576+00:00",
+      "checked_at": "2026-08-17T21:20:04.479884+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2313,7 +2601,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278579+00:00",
+      "checked_at": "2026-08-17T21:20:04.479887+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2321,7 +2609,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278583+00:00",
+      "checked_at": "2026-08-17T21:20:04.479891+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2329,7 +2617,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278586+00:00",
+      "checked_at": "2026-08-17T21:20:04.479894+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2337,7 +2625,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278589+00:00",
+      "checked_at": "2026-08-17T21:20:04.479897+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2345,7 +2633,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278593+00:00",
+      "checked_at": "2026-08-17T21:20:04.479901+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2353,7 +2641,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278596+00:00",
+      "checked_at": "2026-08-17T21:20:04.479904+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2361,15 +2649,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278599+00:00",
+      "checked_at": "2026-08-17T21:20:04.479907+00:00",
       "jurisdiction": "US"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='www.occ.gov', port=443): Max retries exceeded with url: /rss/occ_news.xml (Caused by NewConnectionError(\"HTTPSConnection(host='www.occ.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))); 1 consecutive failure — self-heal at 3.",
+      "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278605+00:00",
+      "checked_at": "2026-08-17T21:20:04.479911+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2377,7 +2665,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278609+00:00",
+      "checked_at": "2026-08-17T21:20:04.479914+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2385,7 +2673,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278612+00:00",
+      "checked_at": "2026-08-17T21:20:04.479917+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2393,7 +2681,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278615+00:00",
+      "checked_at": "2026-08-17T21:20:04.479921+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2401,7 +2689,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278618+00:00",
+      "checked_at": "2026-08-17T21:20:04.479924+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2409,7 +2697,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278621+00:00",
+      "checked_at": "2026-08-17T21:20:04.479927+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2417,7 +2705,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278625+00:00",
+      "checked_at": "2026-08-17T21:20:04.479930+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2425,15 +2713,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278628+00:00",
+      "checked_at": "2026-08-17T21:20:04.479933+00:00",
       "jurisdiction": "SG"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: 502 Server Error: Bad Gateway for url: https://wolfsberg-group.org/news); 1 consecutive failure — self-heal at 3.",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278632+00:00",
+      "checked_at": "2026-08-17T21:20:04.479939+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2441,7 +2729,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278635+00:00",
+      "checked_at": "2026-08-17T21:20:04.479943+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2449,7 +2737,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278638+00:00",
+      "checked_at": "2026-08-17T21:20:04.479946+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2457,7 +2745,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278641+00:00",
+      "checked_at": "2026-08-17T21:20:04.479949+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2465,7 +2753,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-16T21:14:21.278644+00:00",
+      "checked_at": "2026-08-17T21:20:04.479953+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2473,7 +2761,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278647+00:00",
+      "checked_at": "2026-08-17T21:20:04.479956+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2481,7 +2769,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278651+00:00",
+      "checked_at": "2026-08-17T21:20:04.479959+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2489,7 +2777,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278654+00:00",
+      "checked_at": "2026-08-17T21:20:04.479963+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2497,7 +2785,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278657+00:00",
+      "checked_at": "2026-08-17T21:20:04.479967+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2505,7 +2793,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278660+00:00",
+      "checked_at": "2026-08-17T21:20:04.479970+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2513,7 +2801,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278663+00:00",
+      "checked_at": "2026-08-17T21:20:04.479974+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2521,15 +2809,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.278666+00:00",
+      "checked_at": "2026-08-17T21:20:04.479979+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 13 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
+      "note": "Failing for 14 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.393158+00:00",
+      "checked_at": "2026-08-17T21:20:04.520048+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2537,7 +2825,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-16T21:14:21.393177+00:00",
+      "checked_at": "2026-08-17T21:20:04.520065+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2547,10 +2835,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-08-03T22:00:57.058757+00:00",
-      "note": "Daily fetch: 20 new items surfaced; 34/36 sources ok"
-    },
     {
       "at": "2026-08-04T22:06:15.870883+00:00",
       "note": "Daily fetch: 22 new items surfaced; 34/36 sources ok"
@@ -2586,6 +2870,10 @@
     {
       "at": "2026-08-16T21:14:21.394139+00:00",
       "note": "Daily fetch: 23 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-08-17T21:20:04.520982+00:00",
+      "note": "Daily fetch: 12 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
