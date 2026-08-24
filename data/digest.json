@@ -1,559 +1,7 @@
 {
-  "generated_at": "2026-08-23T21:14:03.686685+00:00",
+  "generated_at": "2026-08-24T21:22:55.377058+00:00",
   "top_of_mind": "",
   "items": [
-    {
-      "id": "global-coindesk-policy-04501efdb6",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "The SEC meeting that wasn't: State of Crypto",
-      "url": "https://www.coindesk.com/policy/2026/08/16/the-sec-meeting-that-wasn-t-state-of-crypto",
-      "published": "2026-08-16T18:30:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/08/16/the-sec-meeting-that-wasn-t-state-of-crypto"
-          }
-        ]
-      },
-      "summary": "The SEC meeting that wasn't: State of Crypto",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-2a18fc742c",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Hackers exploited macOS Screen Sharing flaw to install Monero miners, Dutch cyber agency says",
-      "url": "https://www.theblock.co/news/defi/2026-08-16-hackers-exploited-macos-screen-sharing-flaw-to-install-monero-miners-dutch-cyber-agency-says-411932",
-      "published": "2026-08-16T15:07:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/defi/2026-08-16-hackers-exploited-macos-screen-sharing-flaw-to-install-monero-miners-dutch-cyber-agency-says-411932"
-          }
-        ]
-      },
-      "summary": "Hackers exploited macOS Screen Sharing flaw to install Monero miners, Dutch cyber agency says",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-c2a9014bc6",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "MiCA's cleanup is creating a new scam wave across the European Union",
-      "url": "https://www.coindesk.com/business/2026/08/14/mica-s-cleanup-is-creating-a-new-scam-wave-across-the-european-union",
-      "published": "2026-08-16T14:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/business/2026/08/14/mica-s-cleanup-is-creating-a-new-scam-wave-across-the-european-union"
-          }
-        ]
-      },
-      "summary": "MiCA's cleanup is creating a new scam wave across the European Union",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-fc816a8952",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "The stablecoin yield clash that won't go away has banks, crypto battling over tradition",
-      "url": "https://www.coindesk.com/news-analysis/2026/08/14/the-stablecoin-yield-clash-that-won-t-go-away-has-banks-crypto-battling-over-tradition",
-      "published": "2026-08-16T13:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/news-analysis/2026/08/14/the-stablecoin-yield-clash-that-won-t-go-away-has-banks-crypto-battling-over-tradition"
-          }
-        ]
-      },
-      "summary": "The stablecoin yield clash that won't go away has banks, crypto battling over tradition",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-institutional-moves-1950cd3ad5",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Institutional moves",
-      "title": "JPMorgan cut Polymarket’s banking ties in October but still wants a role in a potential IPO: FT",
-      "url": "https://www.theblock.co/news/business/2026-08-15-jpmorgan-cut-polymarkets-banking-ties-in-october-but-still-wants-a-role-in-a-potential-ipo-ft-411929",
-      "published": "2026-08-15T21:51:41+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Institutional moves",
-            "url": "https://www.theblock.co/news/business/2026-08-15-jpmorgan-cut-polymarkets-banking-ties-in-october-but-still-wants-a-role-in-a-potential-ipo-ft-411929"
-          }
-        ]
-      },
-      "summary": "JPMorgan cut Polymarket’s banking ties in October but still wants a role in a potential IPO: FT",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-584bb88e93",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Harvard leaves bitcoin ETF stake untouched in Q2 after cutting it 43% in the prior quarter",
-      "url": "https://www.theblock.co/news/markets/2026-08-15-harvard-leaves-bitcoin-etf-stake-untouched-in-q2-after-cutting-it-43-in-the-prior-quarter-411926",
-      "published": "2026-08-15T18:37:59+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/markets/2026-08-15-harvard-leaves-bitcoin-etf-stake-untouched-in-q2-after-cutting-it-43-in-the-prior-quarter-411926"
-          }
-        ]
-      },
-      "summary": "Harvard leaves bitcoin ETF stake untouched in Q2 after cutting it 43% in the prior quarter",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-7bcb1f8ce3",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "Swiss mega-bank UBS ramps up its Bitcoin exposure with a massive 24-fold surge in ETF call options",
-      "url": "https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options",
-      "published": "2026-08-15T15:56:05+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options"
-          }
-        ]
-      },
-      "summary": "Swiss mega-bank UBS ramps up its Bitcoin exposure with a massive 24-fold surge in ETF call options",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-f399258dbf",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city",
-      "url": "https://www.coindesk.com/policy/2026/08/15/why-the-world-s-second-largest-bitcoin-mining-power-is-shutting-down-rigs-in-its-capital-city",
-      "published": "2026-08-15T15:21:15+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/08/15/why-the-world-s-second-largest-bitcoin-mining-power-is-shutting-down-rigs-in-its-capital-city"
-          }
-        ]
-      },
-      "summary": "Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-42321c7aed",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Trump, CFTC Chair Selig expected at Wednesday White House meeting with crypto and prediction market executives",
-      "url": "https://www.theblock.co/news/regulation/2026-08-15-trump-cftc-chair-selig-expected-at-wednesday-white-house-meeting-with-crypto-and-prediction-market-executives-411919",
-      "published": "2026-08-15T15:20:19+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-08-15-trump-cftc-chair-selig-expected-at-wednesday-white-house-meeting-with-crypto-and-prediction-market-executives-411919"
-          }
-        ]
-      },
-      "summary": "Trump, CFTC Chair Selig expected at Wednesday White House meeting with crypto and prediction market executives",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-1ab96c9c16",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "Paul Tudor Jones’ investment firm increases stake in BlackRock's bitcoin ETF after year of selling",
-      "url": "https://www.coindesk.com/business/2026/08/15/paul-tudor-jones-investment-firm-increases-blackrock-s-bitcoin-etf-stake-after-year-of-selling",
-      "published": "2026-08-15T15:12:29+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/08/15/paul-tudor-jones-investment-firm-increases-blackrock-s-bitcoin-etf-stake-after-year-of-selling"
-          }
-        ]
-      },
-      "summary": "Paul Tudor Jones’ investment firm increases stake in BlackRock's bitcoin ETF after year of selling",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-ba2d76cbad",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "The $11.2 billion in 2026 funding that killed crypto’s permissionless era",
-      "url": "https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era",
-      "published": "2026-08-15T14:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era"
-          }
-        ]
-      },
-      "summary": "The $11.2 billion in 2026 funding that killed crypto’s permissionless era",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-e2f0497095",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "Clarity survives (barely), Strategy sells and the untold story of Mastercard's $1.8 billion deal: Crypto's week in 5 stories",
-      "url": "https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories",
-      "published": "2026-08-15T13:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories"
-          }
-        ]
-      },
-      "summary": "Clarity survives (barely), Strategy sells and the untold story of Mastercard's $1.8 billion deal: Crypto's week in 5 stories",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-f87a9b39c8",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Trump expected to attend White House meeting with crypto CEOs, sources say",
-      "url": "https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say",
-      "published": "2026-08-14T23:41:49+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say"
-          }
-        ]
-      },
-      "summary": "Trump expected to attend White House meeting with crypto CEOs, sources say",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-a3e40d5df1",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "‘Honestly, I don’t care’: Tether CEO dismisses critics following first KPMG audit",
-      "url": "https://www.theblock.co/news/business/2026-08-14-honestly-i-dont-care-tether-ceo-dismisses-critics-first-kpmg-audit-411886",
-      "published": "2026-08-14T19:25:43+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/business/2026-08-14-honestly-i-dont-care-tether-ceo-dismisses-critics-first-kpmg-audit-411886"
-          }
-        ]
-      },
-      "summary": "‘Honestly, I don’t care’: Tether CEO dismisses critics following first KPMG audit",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-0acee7810a",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "French tax breach exposes nearly 678,000 people as crypto wrench attacks pile up",
-      "url": "https://www.theblock.co/news/ecosystems/2026-08-14-french-tax-breach-exposes-nearly-678000-people-crypto-wrench-attacks-pile-up-411876",
-      "published": "2026-08-14T19:07:47+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/ecosystems/2026-08-14-french-tax-breach-exposes-nearly-678000-people-crypto-wrench-attacks-pile-up-411876"
-          }
-        ]
-      },
-      "summary": "French tax breach exposes nearly 678,000 people as crypto wrench attacks pile up",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-2921be4871",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Cboe seeks SEC nod for first US 3x bitcoin and ether ETFs",
-      "url": "https://www.theblock.co/news/regulation/2026-08-14-cboe-seeks-sec-nod-for-first-us-3x-bitcoin-and-ether-etfs-411879",
-      "published": "2026-08-14T19:01:18+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-08-14-cboe-seeks-sec-nod-for-first-us-3x-bitcoin-and-ether-etfs-411879"
-          }
-        ]
-      },
-      "summary": "Cboe seeks SEC nod for first US 3x bitcoin and ether ETFs",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-aa1686f231",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Binance to block transactions with HTX, 10 other exchanges under EU Russia sanctions",
-      "url": "https://www.theblock.co/news/regulation/2026-08-14-binance-block-transactions-htx-10-other-exchanges-eu-russia-sanctions-411858",
-      "published": "2026-08-14T15:43:26+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/regulation/2026-08-14-binance-block-transactions-htx-10-other-exchanges-eu-russia-sanctions-411858"
-          }
-        ]
-      },
-      "summary": "Binance to block transactions with HTX, 10 other exchanges under EU Russia sanctions",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-d9761a45a5",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Ethena treasury company StablecoinX shares jump 12% after revealing 20% stake in ENA supply",
-      "url": "https://www.theblock.co/news/business/2026-08-14-ethena-treasury-company-stablecoinx-shares-jump-12-revealing-20-stake-ena-supply-411845",
-      "published": "2026-08-14T15:17:03+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/business/2026-08-14-ethena-treasury-company-stablecoinx-shares-jump-12-revealing-20-stake-ena-supply-411845"
-          }
-        ]
-      },
-      "summary": "Ethena treasury company StablecoinX shares jump 12% after revealing 20% stake in ENA supply",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-chainalysis-blog-a3514fe65c",
-      "jurisdiction": "GLOBAL",
-      "source": "Chainalysis — Blog",
-      "title": "Machine Learning Has a Specific Role in Blockchain Intelligence",
-      "url": "https://www.chainalysis.com/blog/ml-role-in-blockchain-intelligence/",
-      "published": "2026-08-14T14:00:32+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "Chainalysis — Blog",
-            "url": "https://www.chainalysis.com/blog/ml-role-in-blockchain-intelligence/"
-          }
-        ]
-      },
-      "summary": "Machine Learning Has a Specific Role in Blockchain Intelligence",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-98f87eba8d",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Norway sovereign wealth fund sees indirect bitcoin exposure hit all-time high, with Strategy accounting for 86%: K33",
-      "url": "https://www.theblock.co/news/markets/2026-08-14-norway-sovereign-wealth-fund-indirect-bitcoin-exposure-all-time-high-strategy-k33-411815",
-      "published": "2026-08-14T12:25:38+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/markets/2026-08-14-norway-sovereign-wealth-fund-indirect-bitcoin-exposure-all-time-high-strategy-k33-411815"
-          }
-        ]
-      },
-      "summary": "Norway sovereign wealth fund sees indirect bitcoin exposure hit all-time high, with Strategy accounting for 86%: K33",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-d85132f71f",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Kraken parent Payward posts $508 million in Q2 adjusted revenue as growth broadens beyond crypto trading",
-      "url": "https://www.theblock.co/news/business/2026-08-14-kraken-parent-payward-508-million-q2-adjusted-revenue-411818",
-      "published": "2026-08-14T12:21:02+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/business/2026-08-14-kraken-parent-payward-508-million-q2-adjusted-revenue-411818"
-          }
-        ]
-      },
-      "summary": "Kraken parent Payward posts $508 million in Q2 adjusted revenue as growth broadens beyond crypto trading",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-168a78702d",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Bitcoin slips as U.S. inflation fails to spark gains, ETFs see August's first two-day drawdown",
-      "url": "https://www.coindesk.com/markets/2026/08/14/bitcoin-slips-as-u-s-inflation-fails-to-spark-gains-etfs-see-august-s-first-two-day-drawdown",
-      "published": "2026-08-14T11:06:12+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/08/14/bitcoin-slips-as-u-s-inflation-fails-to-spark-gains-etfs-see-august-s-first-two-day-drawdown"
-          }
-        ]
-      },
-      "summary": "Bitcoin slips as U.S. inflation fails to spark gains, ETFs see August's first two-day drawdown",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-e771141c6c",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Bitwise mulls tokenizing its Solana staking ETF via Superstate partnership",
-      "url": "https://www.theblock.co/news/defi/2026-08-14-bitwise-tokenize-sol-staking-etf-411790",
-      "published": "2026-08-14T04:09:44+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/defi/2026-08-14-bitwise-tokenize-sol-staking-etf-411790"
-          }
-        ]
-      },
-      "summary": "Bitwise mulls tokenizing its Solana staking ETF via Superstate partnership",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-16T21:14:21.394139+00:00",
-      "date_source": "feed"
-    },
     {
       "id": "us-us-department-of-justice-press-releases-ebfce1db38",
       "jurisdiction": "US",
@@ -2305,6 +1753,222 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-08-23T21:14:03.686685+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-2c5643df7f",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "US escalates Iran pressure with sanctions on crypto, aviation, shipping and gold as part of ‘economic D-Day’",
+      "url": "https://www.theblock.co/news/regulation/2026-08-24-us-escalates-iran-pressure-sanctions-crypto-aviation-shipping-gold-economic-d-day-412648",
+      "published": "2026-08-24T19:23:02+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-08-24-us-escalates-iran-pressure-sanctions-crypto-aviation-shipping-gold-economic-d-day-412648"
+          }
+        ]
+      },
+      "summary": "US escalates Iran pressure with sanctions on crypto, aviation, shipping and gold as part of ‘economic D-Day’",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-24T21:22:55.377058+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-d8e37a344e",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Crypto political group details list of U.S. congressional allies its backing this year",
+      "url": "https://www.coindesk.com/policy/2026/08/24/crypto-political-group-details-list-of-u-s-congressional-allies-its-backing-this-year",
+      "published": "2026-08-24T17:30:10+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/08/24/crypto-political-group-details-list-of-u-s-congressional-allies-its-backing-this-year"
+          }
+        ]
+      },
+      "summary": "Crypto political group details list of U.S. congressional allies its backing this year",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-24T21:22:55.377058+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-59cc6cc4fe",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Coinbase debuts tokenized stocks on Base network, joining race to bring equities on blockchain",
+      "url": "https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain",
+      "published": "2026-08-24T17:12:35+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain"
+          }
+        ]
+      },
+      "summary": "Coinbase debuts tokenized stocks on Base network, joining race to bring equities on blockchain",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-24T21:22:55.377058+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-638a15c155",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Stand With Crypto ramps up midterm push with 32 House endorsements",
+      "url": "https://www.theblock.co/news/regulation/2026-08-24-stand-with-crypto-ramps-up-midterm-push-with-32-house-endorsements-412616",
+      "published": "2026-08-24T15:57:45+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-08-24-stand-with-crypto-ramps-up-midterm-push-with-32-house-endorsements-412616"
+          }
+        ]
+      },
+      "summary": "Stand With Crypto ramps up midterm push with 32 House endorsements",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-24T21:22:55.377058+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-coindesk-china-policy-f01f40a549",
+      "jurisdiction": "CN",
+      "source": "CoinDesk — China policy",
+      "title": "Standard Chartered becomes first bank to distribute Hong Kong dollar stablecoin",
+      "url": "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin",
+      "published": "2026-08-24T11:36:55+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — China policy",
+            "url": "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin"
+          }
+        ]
+      },
+      "summary": "Standard Chartered becomes first bank to distribute Hong Kong dollar stablecoin",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-24T21:22:55.377058+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-4805534dc8",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Pakistan kicks off crypto licensing regime with Sept. 5 registration deadline",
+      "url": "https://www.coindesk.com/policy/2026/08/24/pakistan-kicks-off-crypto-licensing-regime-with-sept-5-registration-deadline",
+      "published": "2026-08-24T11:19:16+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/08/24/pakistan-kicks-off-crypto-licensing-regime-with-sept-5-registration-deadline"
+          }
+        ]
+      },
+      "summary": "Pakistan kicks off crypto licensing regime with Sept. 5 registration deadline",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-24T21:22:55.377058+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-a1a99d5ffa",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Bernstein says Circle’s growth cycle can continue without the Clarity Act, sees 59% upside",
+      "url": "https://www.theblock.co/news/business/2026-08-24-bernstein-says-circles-growth-cycle-can-continue-without-the-clarity-act-sees-59-upside-412573",
+      "published": "2026-08-24T10:08:38+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/business/2026-08-24-bernstein-says-circles-growth-cycle-can-continue-without-the-clarity-act-sees-59-upside-412573"
+          }
+        ]
+      },
+      "summary": "Bernstein says Circle’s growth cycle can continue without the Clarity Act, sees 59% upside",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-24T21:22:55.377058+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-afc33c287a",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Fasset reaches unicorn status after $68 million raise led by SBI Group",
+      "url": "https://www.theblock.co/news/business/2026-08-24-fasset-68-million-raise-sbi-group-412563",
+      "published": "2026-08-24T07:56:44+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/business/2026-08-24-fasset-68-million-raise-sbi-group-412563"
+          }
+        ]
+      },
+      "summary": "Fasset reaches unicorn status after $68 million raise led by SBI Group",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-24T21:22:55.377058+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-8aad6237b9",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "DeFi lending protocol Term Finance loses an estimated $8.5 million to governance exploit",
+      "url": "https://www.theblock.co/news/defi/2026-08-23-defi-lending-protocol-term-finance-loses-an-estimated-8-5-million-to-governance-exploit-412543",
+      "published": "2026-08-23T20:50:45+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/defi/2026-08-23-defi-lending-protocol-term-finance-loses-an-estimated-8-5-million-to-governance-exploit-412543"
+          }
+        ]
+      },
+      "summary": "DeFi lending protocol Term Finance loses an estimated $8.5 million to governance exploit",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-24T21:22:55.377058+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -2313,7 +1977,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597890+00:00",
+      "checked_at": "2026-08-24T21:22:55.331493+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2321,7 +1985,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597901+00:00",
+      "checked_at": "2026-08-24T21:22:55.331510+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2329,7 +1993,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597907+00:00",
+      "checked_at": "2026-08-24T21:22:55.331519+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2337,7 +2001,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597912+00:00",
+      "checked_at": "2026-08-24T21:22:55.331526+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2345,7 +2009,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597917+00:00",
+      "checked_at": "2026-08-24T21:22:55.331532+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2353,7 +2017,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597921+00:00",
+      "checked_at": "2026-08-24T21:22:55.331538+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2361,7 +2025,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597925+00:00",
+      "checked_at": "2026-08-24T21:22:55.331544+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2369,7 +2033,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.597930+00:00",
+      "checked_at": "2026-08-24T21:22:55.331550+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2377,7 +2041,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.597935+00:00",
+      "checked_at": "2026-08-24T21:22:55.331555+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2385,7 +2049,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597939+00:00",
+      "checked_at": "2026-08-24T21:22:55.331561+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2393,7 +2057,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597943+00:00",
+      "checked_at": "2026-08-24T21:22:55.331566+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2401,7 +2065,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597947+00:00",
+      "checked_at": "2026-08-24T21:22:55.331571+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2409,7 +2073,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597951+00:00",
+      "checked_at": "2026-08-24T21:22:55.331577+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2417,7 +2081,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597954+00:00",
+      "checked_at": "2026-08-24T21:22:55.331582+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2425,7 +2089,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597958+00:00",
+      "checked_at": "2026-08-24T21:22:55.331588+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2433,7 +2097,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597962+00:00",
+      "checked_at": "2026-08-24T21:22:55.331593+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2441,7 +2105,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597965+00:00",
+      "checked_at": "2026-08-24T21:22:55.331598+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2449,7 +2113,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597969+00:00",
+      "checked_at": "2026-08-24T21:22:55.331605+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2457,7 +2121,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597972+00:00",
+      "checked_at": "2026-08-24T21:22:55.331611+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2465,7 +2129,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597976+00:00",
+      "checked_at": "2026-08-24T21:22:55.331618+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2473,15 +2137,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597980+00:00",
+      "checked_at": "2026-08-24T21:22:55.331624+00:00",
       "jurisdiction": "SG"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='wolfsberg-group.org', port=443): Read timed out. (read timeout=15)); 1 consecutive failure — self-heal at 3.",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597983+00:00",
+      "checked_at": "2026-08-24T21:22:55.331631+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2489,7 +2153,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597987+00:00",
+      "checked_at": "2026-08-24T21:22:55.331635+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2497,7 +2161,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.597990+00:00",
+      "checked_at": "2026-08-24T21:22:55.331639+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2505,7 +2169,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597994+00:00",
+      "checked_at": "2026-08-24T21:22:55.331642+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2513,7 +2177,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-23T21:14:03.597997+00:00",
+      "checked_at": "2026-08-24T21:22:55.331646+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2521,7 +2185,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.598001+00:00",
+      "checked_at": "2026-08-24T21:22:55.331650+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2529,7 +2193,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.598004+00:00",
+      "checked_at": "2026-08-24T21:22:55.331654+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2537,7 +2201,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.598008+00:00",
+      "checked_at": "2026-08-24T21:22:55.331657+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2545,7 +2209,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.598011+00:00",
+      "checked_at": "2026-08-24T21:22:55.331660+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2553,7 +2217,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.598015+00:00",
+      "checked_at": "2026-08-24T21:22:55.331664+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2561,7 +2225,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.598018+00:00",
+      "checked_at": "2026-08-24T21:22:55.331667+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2569,15 +2233,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.598021+00:00",
+      "checked_at": "2026-08-24T21:22:55.331671+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 18 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
+      "note": "Failing for 19 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.685714+00:00",
+      "checked_at": "2026-08-24T21:22:55.376057+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2585,7 +2249,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-23T21:14:03.685732+00:00",
+      "checked_at": "2026-08-24T21:22:55.376076+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2595,10 +2259,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-08-10T21:34:36.249814+00:00",
-      "note": "Daily fetch: 11 new items surfaced; 34/36 sources ok"
-    },
     {
       "at": "2026-08-11T21:38:35.013065+00:00",
       "note": "Daily fetch: 17 new items surfaced; 34/36 sources ok"
@@ -2634,6 +2294,10 @@
     {
       "at": "2026-08-23T21:14:03.686685+00:00",
       "note": "Daily fetch: 14 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-08-24T21:22:55.377058+00:00",
+      "note": "Daily fetch: 9 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
