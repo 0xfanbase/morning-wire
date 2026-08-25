@@ -1,295 +1,7 @@
 {
-  "generated_at": "2026-08-24T21:22:55.377058+00:00",
+  "generated_at": "2026-08-25T21:20:17.990178+00:00",
   "top_of_mind": "",
   "items": [
-    {
-      "id": "us-us-department-of-justice-press-releases-ebfce1db38",
-      "jurisdiction": "US",
-      "source": "US Department of Justice — Press releases",
-      "title": "Alleged Mastermind of $165 Million Cryptocurrency Ponzi Scheme Facing Federal Charges after Deportation from Fiji",
-      "url": "https://www.justice.gov/usao-ndga/pr/alleged-mastermind-165-million-cryptocurrency-ponzi-scheme-facing-federal-charges",
-      "published": "2026-08-17T12:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "US Department of Justice — Press releases",
-            "url": "https://www.justice.gov/usao-ndga/pr/alleged-mastermind-165-million-cryptocurrency-ponzi-scheme-facing-federal-charges"
-          }
-        ]
-      },
-      "summary": "Alleged Mastermind of $165 Million Cryptocurrency Ponzi Scheme Facing Federal Charges after Deportation from Fiji",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-7e6413445b",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Tokenized equities triple market share as Ondo, Binance and xStocks dominate",
-      "url": "https://www.theblock.co/news/defi/2026-08-17-tokenized-equities-triple-market-share-ondo-binance-xstocks-dominate-411996",
-      "published": "2026-08-17T20:55:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/defi/2026-08-17-tokenized-equities-triple-market-share-ondo-binance-xstocks-dominate-411996"
-          }
-        ]
-      },
-      "summary": "Tokenized equities triple market share as Ondo, Binance and xStocks dominate",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-35d49ee2e2",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Saylor says share buyback isn’t priority as Strategy builds $4.8 billion cash reserve",
-      "url": "https://www.coindesk.com/markets/2026/08/17/saylor-says-share-buyback-isn-t-a-priority-as-it-builds-its-usd4-8-billion-cash-reserve-though-a-possibility",
-      "published": "2026-08-17T18:53:47+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/08/17/saylor-says-share-buyback-isn-t-a-priority-as-it-builds-its-usd4-8-billion-cash-reserve-though-a-possibility"
-          }
-        ]
-      },
-      "summary": "Saylor says share buyback isn’t priority as Strategy builds $4.8 billion cash reserve",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-64d25ddf9a",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "US Treasury seeks public comment on GENIUS Act stablecoin rules",
-      "url": "https://www.theblock.co/news/regulation/2026-08-17-us-treasury-seeks-public-comment-genius-act-stablecoin-rules-411987",
-      "published": "2026-08-17T16:40:26+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-08-17-us-treasury-seeks-public-comment-genius-act-stablecoin-rules-411987"
-          }
-        ]
-      },
-      "summary": "US Treasury seeks public comment on GENIUS Act stablecoin rules",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-6003f8764a",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "U.S. Treasury Department proposes GENIUS Act stablecoin rule",
-      "url": "https://www.coindesk.com/policy/2026/08/17/u-s-treasury-department-proposes-genius-act-stablecoin-rule",
-      "published": "2026-08-17T14:44:29+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/08/17/u-s-treasury-department-proposes-genius-act-stablecoin-rule"
-          }
-        ]
-      },
-      "summary": "U.S. Treasury Department proposes GENIUS Act stablecoin rule",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-d7cffbbc9e",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "The Coldcard hack proves reputation is not a security model",
-      "url": "https://www.coindesk.com/opinion/2026/08/17/the-coldcard-hack-proves-reputation-is-not-a-security-model",
-      "published": "2026-08-17T14:09:46+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/opinion/2026/08/17/the-coldcard-hack-proves-reputation-is-not-a-security-model"
-          }
-        ]
-      },
-      "summary": "The Coldcard hack proves reputation is not a security model",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-470230f692",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "How a bug in Coldcard’s code went unnoticed for years, leading to $100 million in hacked funds",
-      "url": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds",
-      "published": "2026-08-17T13:57:11+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds"
-          }
-        ]
-      },
-      "summary": "How a bug in Coldcard’s code went unnoticed for years, leading to $100 million in hacked funds",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-cc84b047c0",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Austria’s FMA fines crypto broker Bitpanda $81,000 in first published MiCA penalty",
-      "url": "https://www.theblock.co/news/regulation/2026-08-17-austria-mica-penalty-bitpanda-411960",
-      "published": "2026-08-17T13:03:16+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-08-17-austria-mica-penalty-bitpanda-411960"
-          }
-        ]
-      },
-      "summary": "Austria’s FMA fines crypto broker Bitpanda $81,000 in first published MiCA penalty",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-971bcaa3b8",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Bitcoin tracks equity bounce, but $390 million ETF outflow week keeps bulls on back foot",
-      "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tracks-equity-bounce-but-usd390-million-etf-outflow-week-keeps-bulls-on-back-foot",
-      "published": "2026-08-17T09:59:55+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tracks-equity-bounce-but-usd390-million-etf-outflow-week-keeps-bulls-on-back-foot"
-          }
-        ]
-      },
-      "summary": "Bitcoin tracks equity bounce, but $390 million ETF outflow week keeps bulls on back foot",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-fa6e81e0d5",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Binance handed user data to Russia that led to a Ukrainian donor's arrest",
-      "url": "https://www.coindesk.com/policy/2026/08/17/binance-handed-user-data-to-russia-that-led-to-a-ukrainian-donor-s-arrest",
-      "published": "2026-08-17T09:16:14+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/policy/2026/08/17/binance-handed-user-data-to-russia-that-led-to-a-ukrainian-donor-s-arrest"
-          }
-        ]
-      },
-      "summary": "Binance handed user data to Russia that led to a Ukrainian donor's arrest",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-4770ab25ce",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Coinbase-Circle USDC collaboration, FOMC minutes, oil price: Crypto Week Ahead",
-      "url": "https://www.coindesk.com/markets/2026/08/17/coinbase-circle-usdc-collaboration-fomc-minutes-oil-price-crypto-week-ahead",
-      "published": "2026-08-17T09:13:02+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/08/17/coinbase-circle-usdc-collaboration-fomc-minutes-oil-price-crypto-week-ahead"
-          }
-        ]
-      },
-      "summary": "Coinbase-Circle USDC collaboration, FOMC minutes, oil price: Crypto Week Ahead",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-b315478ec3",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "September Fed interest-rate increase is 'very unlikely,' Goldman Sachs says",
-      "url": "https://www.coindesk.com/markets/2026/08/17/september-fed-interest-rate-increase-is-very-unlikely-goldman-sachs-says",
-      "published": "2026-08-17T08:16:11+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/markets/2026/08/17/september-fed-interest-rate-increase-is-very-unlikely-goldman-sachs-says"
-          }
-        ]
-      },
-      "summary": "September Fed interest-rate increase is 'very unlikely,' Goldman Sachs says",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-08-17T21:20:04.520982+00:00",
-      "date_source": "feed"
-    },
     {
       "id": "us-us-securities-and-exchange-commission-press-releases-9faf3525a0",
       "jurisdiction": "US",
@@ -1969,6 +1681,390 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-08-24T21:22:55.377058+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-aaf1cda746",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Bitwise turns Coinbase's tokenized stocks into automated AI, robotics and tech portfolios",
+      "url": "https://www.coindesk.com/business/2026/08/25/bitwise-turns-coinbase-s-tokenized-stocks-into-automated-ai-robotics-and-tech-portfolios",
+      "published": "2026-08-25T14:50:22+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/08/25/bitwise-turns-coinbase-s-tokenized-stocks-into-automated-ai-robotics-and-tech-portfolios"
+          }
+        ]
+      },
+      "summary": "Bitwise turns Coinbase's tokenized stocks into automated AI, robotics and tech portfolios",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-a0f9d68d17",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Bitwise launches automated tokenized stock portfolios for Mag 7, AI and robotics themes",
+      "url": "https://www.theblock.co/news/business/2026-08-25-bitwise-launches-automated-tokenized-stock-portfolios-for-mag-7-ai-and-robotics-themes-412706",
+      "published": "2026-08-25T14:16:26+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/business/2026-08-25-bitwise-launches-automated-tokenized-stock-portfolios-for-mag-7-ai-and-robotics-themes-412706"
+          }
+        ]
+      },
+      "summary": "Bitwise launches automated tokenized stock portfolios for Mag 7, AI and robotics themes",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-chainalysis-blog-e4313a4c41",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "Operation Lighthouse: Chainalysis’s CSAM-Disruption Sprint IDs Suspects in 125 Countries",
+      "url": "https://www.chainalysis.com/blog/operation-lighthouse-august-2026/",
+      "published": "2026-08-25T13:03:17+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/operation-lighthouse-august-2026/"
+          }
+        ]
+      },
+      "summary": "Operation Lighthouse: Chainalysis’s CSAM-Disruption Sprint IDs Suspects in 125 Countries",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-d1b421cedc",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Chainalysis-run sting targets child exploitation networks with aid of Binance, Coinbase",
+      "url": "https://www.coindesk.com/policy/2026/08/24/chainalysis-run-sting-targets-child-exploitation-networks-with-aid-of-binance-coinbase",
+      "published": "2026-08-25T13:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/policy/2026/08/24/chainalysis-run-sting-targets-child-exploitation-networks-with-aid-of-binance-coinbase"
+          }
+        ]
+      },
+      "summary": "Chainalysis-run sting targets child exploitation networks with aid of Binance, Coinbase",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-chainalysis-blog-917d7bbb0c",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "OFAC Targets Ministry of Intelligence, Crypto-for-Oil Payments in Latest Iran Sanctions",
+      "url": "https://www.chainalysis.com/blog/ofac-iran-oil-payments-august-2026/",
+      "published": "2026-08-25T12:54:35+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/ofac-iran-oil-payments-august-2026/"
+          }
+        ]
+      },
+      "summary": "OFAC Targets Ministry of Intelligence, Crypto-for-Oil Payments in Latest Iran Sanctions",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-2e8f527051",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Grayscale debuts first Zcash ETF of its kind as privacy coin surges",
+      "url": "https://www.theblock.co/news/regulation/2026-08-25-grayscale-debuts-zcash-etf-412654",
+      "published": "2026-08-25T12:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-08-25-grayscale-debuts-zcash-etf-412654"
+          }
+        ]
+      },
+      "summary": "Grayscale debuts first Zcash ETF of its kind as privacy coin surges",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-1d5201ea7b",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Las Vegas businessman convicted in $24 million 'AI supercomputer' crypto Ponzi scheme",
+      "url": "https://www.coindesk.com/policy/2026/08/25/crypto-supercomputer-ponzi-schemer-convicted-faces-up-to-280-years-in-prison",
+      "published": "2026-08-25T11:46:18+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/08/25/crypto-supercomputer-ponzi-schemer-convicted-faces-up-to-280-years-in-prison"
+          }
+        ]
+      },
+      "summary": "Las Vegas businessman convicted in $24 million 'AI supercomputer' crypto Ponzi scheme",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-9ee73e8da6",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Solana ETFs extend growth streak to 5 days after year's biggest inflows",
+      "url": "https://www.coindesk.com/markets/2026/08/25/solana-etfs-extend-growth-streak-to-5-days-after-year-s-biggest-inflows",
+      "published": "2026-08-25T10:25:32+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/08/25/solana-etfs-extend-growth-streak-to-5-days-after-year-s-biggest-inflows"
+          }
+        ]
+      },
+      "summary": "Solana ETFs extend growth streak to 5 days after year's biggest inflows",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-f93ba2cd0d",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "U.S. widens Iran crackdown to encompass crypto, gold, shipping and technology",
+      "url": "https://www.coindesk.com/policy/2026/08/25/u-s-widens-iran-crackdown-to-encompass-crypto-gold-shipping-and-technology",
+      "published": "2026-08-25T08:47:18+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/08/25/u-s-widens-iran-crackdown-to-encompass-crypto-gold-shipping-and-technology"
+          }
+        ]
+      },
+      "summary": "U.S. widens Iran crackdown to encompass crypto, gold, shipping and technology",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-692105a9c2",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Franklin Templeton and Hashkey roll out U.S. tokenized money fund in Asia",
+      "url": "https://www.coindesk.com/business/2026/08/25/franklin-templeton-and-hashkey-roll-out-u-s-tokenized-money-fund-in-asia",
+      "published": "2026-08-25T07:55:18+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/08/25/franklin-templeton-and-hashkey-roll-out-u-s-tokenized-money-fund-in-asia"
+          }
+        ]
+      },
+      "summary": "Franklin Templeton and Hashkey roll out U.S. tokenized money fund in Asia",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-f706876d5d",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Las Vegas businessman faces 280 years in prison after $24 million crypto fraud conviction",
+      "url": "https://www.theblock.co/news/regulation/2026-08-25-las-vegas-businessman-24-million-crypto-fraud-412690",
+      "published": "2026-08-25T07:53:23+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-08-25-las-vegas-businessman-24-million-crypto-fraud-412690"
+          }
+        ]
+      },
+      "summary": "Las Vegas businessman faces 280 years in prison after $24 million crypto fraud conviction",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-95f9048ca3",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Bitcoin holds above $80,000 backed by ETF flows; bull market case ‘early but optimistic,’ analyst says",
+      "url": "https://www.theblock.co/news/markets/2026-08-25-bitcoin-holds-above-80000-412674",
+      "published": "2026-08-25T06:46:31+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/markets/2026-08-25-bitcoin-holds-above-80000-412674"
+          }
+        ]
+      },
+      "summary": "Bitcoin holds above $80,000 backed by ETF flows; bull market case ‘early but optimistic,’ analyst says",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-e98ba7066a",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "Franklin Templeton partners with HashKey to offer tokenized money market fund in Asia",
+      "url": "https://www.theblock.co/news/business/2026-08-25-franklin-templeton-hashkey-tokenized-fund-412675",
+      "published": "2026-08-25T06:39:12+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/news/business/2026-08-25-franklin-templeton-hashkey-tokenized-fund-412675"
+          }
+        ]
+      },
+      "summary": "Franklin Templeton partners with HashKey to offer tokenized money market fund in Asia",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-8a0696c378",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Blockchain Association backs Treasury’s proposed GENIUS Act rules for stablecoin issuers",
+      "url": "https://www.theblock.co/news/regulation/2026-08-25-blockchain-association-backs-genius-act-412668",
+      "published": "2026-08-25T05:24:15+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-08-25-blockchain-association-backs-genius-act-412668"
+          }
+        ]
+      },
+      "summary": "Blockchain Association backs Treasury’s proposed GENIUS Act rules for stablecoin issuers",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-c85a3e946b",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "San Francisco-based gaming founder convicted of operating fraudulent crypto trading fund",
+      "url": "https://www.theblock.co/news/regulation/2026-08-24-san-francisco-gaming-founder-crypto-fraud-412662",
+      "published": "2026-08-25T02:08:02+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-08-24-san-francisco-gaming-founder-crypto-fraud-412662"
+          }
+        ]
+      },
+      "summary": "San Francisco-based gaming founder convicted of operating fraudulent crypto trading fund",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-trm-labs-insights-b0e0d3c7a5",
+      "jurisdiction": "GLOBAL",
+      "source": "TRM Labs — Insights",
+      "title": "Operation Economic Outcast: Treasury Sanctions Nearly 60 Iran-linked Targets and Names Digital Assets a Sanctionable Sector",
+      "url": "https://www.trmlabs.com/resources/blog/operation-economic-outcast-treasury-sanctions-nearly-60-iran-linked-targets-and-names-digital-assets-a-sanctionable-sector",
+      "published": "2026-08-24T00:00:00+08:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "TRM Labs — Insights",
+            "url": "https://www.trmlabs.com/resources/blog/operation-economic-outcast-treasury-sanctions-nearly-60-iran-linked-targets-and-names-digital-assets-a-sanctionable-sector"
+          }
+        ]
+      },
+      "summary": "Operation Economic Outcast: Treasury Sanctions Nearly 60 Iran-linked Targets and Names Digital Assets a Sanctionable Sector",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-08-25T21:20:17.990178+00:00",
+      "date_source": "page"
     }
   ],
   "source_health": [
@@ -1977,7 +2073,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331493+00:00",
+      "checked_at": "2026-08-25T21:20:17.869604+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1985,7 +2081,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331510+00:00",
+      "checked_at": "2026-08-25T21:20:17.869615+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1993,7 +2089,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331519+00:00",
+      "checked_at": "2026-08-25T21:20:17.869621+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2001,7 +2097,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331526+00:00",
+      "checked_at": "2026-08-25T21:20:17.869625+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2009,7 +2105,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331532+00:00",
+      "checked_at": "2026-08-25T21:20:17.869629+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2017,7 +2113,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331538+00:00",
+      "checked_at": "2026-08-25T21:20:17.869632+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2025,7 +2121,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331544+00:00",
+      "checked_at": "2026-08-25T21:20:17.869635+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2033,7 +2129,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331550+00:00",
+      "checked_at": "2026-08-25T21:20:17.869639+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2041,7 +2137,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331555+00:00",
+      "checked_at": "2026-08-25T21:20:17.869642+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2049,7 +2145,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331561+00:00",
+      "checked_at": "2026-08-25T21:20:17.869645+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2057,7 +2153,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331566+00:00",
+      "checked_at": "2026-08-25T21:20:17.869648+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2065,7 +2161,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331571+00:00",
+      "checked_at": "2026-08-25T21:20:17.869651+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2073,7 +2169,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331577+00:00",
+      "checked_at": "2026-08-25T21:20:17.869654+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2081,7 +2177,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331582+00:00",
+      "checked_at": "2026-08-25T21:20:17.869657+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2089,7 +2185,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331588+00:00",
+      "checked_at": "2026-08-25T21:20:17.869660+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2097,7 +2193,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331593+00:00",
+      "checked_at": "2026-08-25T21:20:17.869663+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2105,7 +2201,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331598+00:00",
+      "checked_at": "2026-08-25T21:20:17.869666+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2113,7 +2209,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331605+00:00",
+      "checked_at": "2026-08-25T21:20:17.869669+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2121,7 +2217,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331611+00:00",
+      "checked_at": "2026-08-25T21:20:17.869672+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2129,7 +2225,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331618+00:00",
+      "checked_at": "2026-08-25T21:20:17.869675+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2137,15 +2233,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331624+00:00",
+      "checked_at": "2026-08-25T21:20:17.869678+00:00",
       "jurisdiction": "SG"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='wolfsberg-group.org', port=443): Read timed out. (read timeout=15)); 1 consecutive failure — self-heal at 3.",
+      "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331631+00:00",
+      "checked_at": "2026-08-25T21:20:17.869681+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2153,7 +2249,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331635+00:00",
+      "checked_at": "2026-08-25T21:20:17.869687+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2161,7 +2257,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331639+00:00",
+      "checked_at": "2026-08-25T21:20:17.869693+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2169,7 +2265,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331642+00:00",
+      "checked_at": "2026-08-25T21:20:17.869697+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2177,7 +2273,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-08-24T21:22:55.331646+00:00",
+      "checked_at": "2026-08-25T21:20:17.869701+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2185,7 +2281,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331650+00:00",
+      "checked_at": "2026-08-25T21:20:17.869706+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2193,7 +2289,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331654+00:00",
+      "checked_at": "2026-08-25T21:20:17.869709+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2201,7 +2297,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331657+00:00",
+      "checked_at": "2026-08-25T21:20:17.869714+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2209,7 +2305,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331660+00:00",
+      "checked_at": "2026-08-25T21:20:17.869718+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2217,7 +2313,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331664+00:00",
+      "checked_at": "2026-08-25T21:20:17.869723+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2225,7 +2321,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331667+00:00",
+      "checked_at": "2026-08-25T21:20:17.869727+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2233,15 +2329,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.331671+00:00",
+      "checked_at": "2026-08-25T21:20:17.869731+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 19 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
+      "note": "Failing for 20 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.376057+00:00",
+      "checked_at": "2026-08-25T21:20:17.989051+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2249,7 +2345,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-08-24T21:22:55.376076+00:00",
+      "checked_at": "2026-08-25T21:20:17.989072+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2259,10 +2355,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-08-11T21:38:35.013065+00:00",
-      "note": "Daily fetch: 17 new items surfaced; 34/36 sources ok"
-    },
     {
       "at": "2026-08-12T21:38:53.267358+00:00",
       "note": "Daily fetch: 13 new items surfaced; 34/36 sources ok"
@@ -2298,6 +2390,10 @@
     {
       "at": "2026-08-24T21:22:55.377058+00:00",
       "note": "Daily fetch: 9 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-08-25T21:20:17.990178+00:00",
+      "note": "Daily fetch: 16 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
