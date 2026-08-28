@@ -302,7 +302,7 @@
   "https://www.acams.org/en/opinion/operation-prince-inside-15-billion-crypto-fraud-takedown": {
     "title_hash": "8c3b80518513189fa8c2a73e13e7bb89731b2167c8f87f52dd05924c8d2b1f37",
     "first_seen": "2026-07-07T07:50:49.166236+00:00",
-    "last_seen": "2026-08-27T00:23:25.016813+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "Operation Prince: Inside a $15 billion crypto fraud takedown"
   },
   "https://www.acams.org/en/opinion/what-ofacs-crypto-mixer-sanctions-mean-financial-crime-compliance": {
@@ -1724,13 +1724,13 @@
   "https://www.acams.org/en/opinion/tren-de-aragua-crypto-and-cash-inside-one-chiles-biggest-money-laundering-cases": {
     "title_hash": "7eaee6c7cdffb693850b8754b7b980ab3676828ca93dcfb31ee08f9c3701a884",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-08-27T00:23:25.016813+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "Tren de Aragua, Crypto, and Cash: Inside One of Chile’s Biggest Money Laundering Cases"
   },
   "https://www.acams.org/en/opinion/compliance-powers-stablecoins": {
     "title_hash": "047b177c5a1ade3d23fc1342bff7f77455c733cfe0131af551315583ee0152d7",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-08-27T00:23:25.016813+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "The compliance powers of stablecoins"
   },
   "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules": {
@@ -2516,7 +2516,7 @@
   "https://www.fca.org.uk/news/press-releases/tribunal-upholds-fca-ban-pair-pensions-advice": {
     "title_hash": "4186bdb320d978152caaa38ecb40ec66a3875af0265a9ca8adc3947e1a19d915",
     "first_seen": "2026-08-04T22:06:15.870891+00:00",
-    "last_seen": "2026-08-27T00:23:25.016813+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "Tribunal upholds FCA ban on pair involved in pension transfer advice and reduces fines"
   },
   "https://www.coindesk.com/policy/2026/08/03/as-clarity-act-teeters-mystery-group-hammers-away-at-crypto-in-washington-ads": {
@@ -4004,25 +4004,25 @@
   "https://www.chainalysis.com/blog/operation-lighthouse-august-2026": {
     "title_hash": "0c986f1b6ec60a85ca942fe5a130e1c8f4ec2d19fe3cbc934c8c35fe0bb9ea0a",
     "first_seen": "2026-08-25T21:20:17.990189+00:00",
-    "last_seen": "2026-08-27T00:23:25.016813+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "Operation Lighthouse: Chainalysis’s CSAM-Disruption Sprint IDs Suspects in 125 Countries"
   },
   "https://www.chainalysis.com/blog/ofac-iran-oil-payments-august-2026": {
     "title_hash": "6d646a180f6c2ab8296531b0f2de5a024f3e84c7bc75b9c3ba8bb567bc66ec27",
     "first_seen": "2026-08-25T21:20:17.990189+00:00",
-    "last_seen": "2026-08-27T00:23:25.016813+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "OFAC Targets Ministry of Intelligence, Crypto-for-Oil Payments in Latest Iran Sanctions"
   },
   "https://www.trmlabs.com/resources/blog/operation-economic-outcast-treasury-sanctions-nearly-60-iran-linked-targets-and-names-digital-assets-a-sanctionable-sector": {
     "title_hash": "2d4d84b7d2d89a14b4272aa792de8f5b03af6218bb6858bed55248bc91967052",
     "first_seen": "2026-08-25T21:20:17.990189+00:00",
-    "last_seen": "2026-08-27T00:23:25.016813+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "Operation Economic Outcast: Treasury Sanctions Nearly 60 Iran-linked Targets and Names Digital Assets a Sanctionable Sector"
   },
   "https://www.fca.org.uk/news/press-releases/fca-bans-trio-bypass-visa-rules": {
     "title_hash": "ed37b19ebf0607c7150f9bfaa9068b9c307f72ab47272606826b99526839c862",
     "first_seen": "2026-08-27T00:23:25.016813+00:00",
-    "last_seen": "2026-08-27T00:23:25.016813+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "FCA bans trio behind £35.5m scheme designed to bypass visa rules"
   },
   "https://www.coindesk.com/news-analysis/2026/08/26/sec-resurrecting-u-s-crypto-custody-rule-the-previous-administration-failed-to-land": {
@@ -4094,7 +4094,79 @@
   "https://www.chainalysis.com/blog/crypto-tax-reporting-carf": {
     "title_hash": "e5723a321764faf3f56ed9d49782e63171dd5bf5ff0407db84190a0a8bccf622",
     "first_seen": "2026-08-27T00:23:25.016813+00:00",
-    "last_seen": "2026-08-27T00:23:25.016813+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "What Blockchain Data Tell Us About $457+ Billion in Potentially Taxable Crypto Activity"
+  },
+  "https://www.coindesk.com/policy/2026/08/27/britain-plans-new-bank-of-england-objective-for-stablecoins": {
+    "title_hash": "36da916870a1019ddb8d912a5529c9e9188c33568c3232d008ec53ae6c648346",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "Britain plans new Bank of England objective for stablecoins"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-27-polish-olympic-committee-president-detained-in-zondacrypto-bribery-probe-412961": {
+    "title_hash": "76c88809bb92dd8a73d3fb909d973b458cb5e92331ac26ddafd0c712b59ac9a5",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "Polish Olympic Committee president detained in Zondacrypto bribery probe"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-27-chainalysis-says-global-crypto-taxable-activity-topped-457-billion-in-2025-412919": {
+    "title_hash": "4ac52fbf5f1ba0ca85245f2ac302075f860432de2f29f36ea717dc78555bc54c",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "Chainalysis says global crypto taxable activity topped $457 billion in 2025"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-27-bithumb-wins-lawsuit-btc-412893": {
+    "title_hash": "972966226f84fe33014de1eece9c2fb0555c5c86097018926967d6fe1225893a",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "Bithumb wins lawsuit over proceeds from 620,000 BTC fat-finger error: report"
+  },
+  "https://www.coindesk.com/markets/2026/08/27/blackrock-s-mitchnick-says-macro-case-for-bitcoin-is-strengthening-after-record-trading-in-positive-week": {
+    "title_hash": "56de0f2df68555b6c42158fa37ee326c36f140e1b6c192f6dd0febba50e70b46",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "BlackRock's Mitchnick says macro case for bitcoin is strengthening after record trading in positive week"
+  },
+  "https://www.theblock.co/news/markets/2026-08-27-blackrocks-mitchnick-says-bitcoins-risk-off-narrative-is-the-one-to-bet-on-long-term-as-rally-consolidates-near-80000-412897": {
+    "title_hash": "7f3d463ee19fe23e47068d2bef031bea8f31749e48e0efc8b2ce3c772bb86458",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "BlackRock’s Mitchnick says bitcoin’s risk-off narrative is ‘the one to bet on’ long term as rally consolidates near $80,000"
+  },
+  "https://www.coindesk.com/markets/2026/08/28/an-xrp-treasury-company-backed-by-ripple-is-a-shareholder-vote-away-from-nasdaq": {
+    "title_hash": "70bbf7edd347dc8d863b2805e8fc84e8b73f1389f1f9d46886c24a35cc66a1aa",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "An XRP treasury company backed by Ripple is a shareholder vote away from Nasdaq"
+  },
+  "https://www.coindesk.com/markets/2026/08/27/bitcoin-tests-its-largest-supply-wall-at-usd80-000-near-etf-holders-average-price": {
+    "title_hash": "8acc2c9ddf08a434635ab093f6c38fa8c78415febbc1f243cf0933b9fb604314",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "Bitcoin tests its largest supply wall at $80,000, near ETF holders’ average price"
+  },
+  "https://www.coindesk.com/markets/2026/08/27/bitcoin-steadies-above-usd79-000-as-etf-inflows-hit-longest-streak-since-april": {
+    "title_hash": "2bc0f81cbc8282d2ba626fbb69205c7dbfd508067ba504f6706e88b4622d1afe",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "Bitcoin steadies above $79,000 as ETF inflows hit longest streak since April"
+  },
+  "https://www.coindesk.com/business/2026/08/27/binance-co-founders-changpeng-cz-zhao-and-yi-he-used-the-simpsons-cartoon-aliases-homer-and-marge-in-company-meetings": {
+    "title_hash": "b3b0959b149bc13a0df87db6176a72daf5143b0e9bda36c663badf046a7c7bb9",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "Binance co-founders CZ and Yi He adopted Simpsons cartoon aliases ‘Homer’ and ‘Marge’ in company meetings"
+  },
+  "https://www.theblock.co/news/defi/2026-08-27-moonwell-investigates-base-lending-market-issue-412913": {
+    "title_hash": "5278a37d31587c8bdf79f9ec7e0a62df0287686e1fc97cac32f011e5319d927d",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "Moonwell investigates lending market issue on Base as security firms flag multimillion-dollar exploit"
+  },
+  "https://www.theblock.co/news/markets/2026-08-27-binance-co-founder-changpeng-cz-zhao-says-bitcoin-could-surpass-gold-in-next-bull-market-412904": {
+    "title_hash": "0443af03e6a9a3b3c9073be3e5c4fe0d220143b48f2db63eee6adf2a1fbe3545",
+    "first_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "title": "Binance co-founder Changpeng ‘CZ’ Zhao says bitcoin could surpass gold in next bull market"
   }
 }
