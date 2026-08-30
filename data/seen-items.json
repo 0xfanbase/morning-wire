@@ -1724,13 +1724,13 @@
   "https://www.acams.org/en/opinion/tren-de-aragua-crypto-and-cash-inside-one-chiles-biggest-money-laundering-cases": {
     "title_hash": "7eaee6c7cdffb693850b8754b7b980ab3676828ca93dcfb31ee08f9c3701a884",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
     "title": "Tren de Aragua, Crypto, and Cash: Inside One of Chile’s Biggest Money Laundering Cases"
   },
   "https://www.acams.org/en/opinion/compliance-powers-stablecoins": {
     "title_hash": "047b177c5a1ade3d23fc1342bff7f77455c733cfe0131af551315583ee0152d7",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
     "title": "The compliance powers of stablecoins"
   },
   "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules": {
@@ -2516,7 +2516,7 @@
   "https://www.fca.org.uk/news/press-releases/tribunal-upholds-fca-ban-pair-pensions-advice": {
     "title_hash": "4186bdb320d978152caaa38ecb40ec66a3875af0265a9ca8adc3947e1a19d915",
     "first_seen": "2026-08-04T22:06:15.870891+00:00",
-    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
     "title": "Tribunal upholds FCA ban on pair involved in pension transfer advice and reduces fines"
   },
   "https://www.coindesk.com/policy/2026/08/03/as-clarity-act-teeters-mystery-group-hammers-away-at-crypto-in-washington-ads": {
@@ -4004,13 +4004,13 @@
   "https://www.chainalysis.com/blog/operation-lighthouse-august-2026": {
     "title_hash": "0c986f1b6ec60a85ca942fe5a130e1c8f4ec2d19fe3cbc934c8c35fe0bb9ea0a",
     "first_seen": "2026-08-25T21:20:17.990189+00:00",
-    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
     "title": "Operation Lighthouse: Chainalysis’s CSAM-Disruption Sprint IDs Suspects in 125 Countries"
   },
   "https://www.chainalysis.com/blog/ofac-iran-oil-payments-august-2026": {
     "title_hash": "6d646a180f6c2ab8296531b0f2de5a024f3e84c7bc75b9c3ba8bb567bc66ec27",
     "first_seen": "2026-08-25T21:20:17.990189+00:00",
-    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
     "title": "OFAC Targets Ministry of Intelligence, Crypto-for-Oil Payments in Latest Iran Sanctions"
   },
   "https://www.trmlabs.com/resources/blog/operation-economic-outcast-treasury-sanctions-nearly-60-iran-linked-targets-and-names-digital-assets-a-sanctionable-sector": {
@@ -4022,7 +4022,7 @@
   "https://www.fca.org.uk/news/press-releases/fca-bans-trio-bypass-visa-rules": {
     "title_hash": "ed37b19ebf0607c7150f9bfaa9068b9c307f72ab47272606826b99526839c862",
     "first_seen": "2026-08-27T00:23:25.016813+00:00",
-    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
     "title": "FCA bans trio behind £35.5m scheme designed to bypass visa rules"
   },
   "https://www.coindesk.com/news-analysis/2026/08/26/sec-resurrecting-u-s-crypto-custody-rule-the-previous-administration-failed-to-land": {
@@ -4094,7 +4094,7 @@
   "https://www.chainalysis.com/blog/crypto-tax-reporting-carf": {
     "title_hash": "e5723a321764faf3f56ed9d49782e63171dd5bf5ff0407db84190a0a8bccf622",
     "first_seen": "2026-08-27T00:23:25.016813+00:00",
-    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
     "title": "What Blockchain Data Tell Us About $457+ Billion in Potentially Taxable Crypto Activity"
   },
   "https://www.coindesk.com/policy/2026/08/27/britain-plans-new-bank-of-england-objective-for-stablecoins": {
@@ -4106,7 +4106,7 @@
   "https://www.theblock.co/news/regulation/2026-08-27-polish-olympic-committee-president-detained-in-zondacrypto-bribery-probe-412961": {
     "title_hash": "76c88809bb92dd8a73d3fb909d973b458cb5e92331ac26ddafd0c712b59ac9a5",
     "first_seen": "2026-08-28T05:03:15.426728+00:00",
-    "last_seen": "2026-08-28T05:03:15.426728+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
     "title": "Polish Olympic Committee president detained in Zondacrypto bribery probe"
   },
   "https://www.theblock.co/news/regulation/2026-08-27-chainalysis-says-global-crypto-taxable-activity-topped-457-billion-in-2025-412919": {
@@ -4168,5 +4168,83 @@
     "first_seen": "2026-08-28T05:03:15.426728+00:00",
     "last_seen": "2026-08-28T05:03:15.426728+00:00",
     "title": "Binance co-founder Changpeng ‘CZ’ Zhao says bitcoin could surpass gold in next bull market"
+  },
+  "https://www.theblock.co/news/regulation/2026-08-28-uk-tax-crypto-capital-gains-412993": {
+    "title_hash": "816df4945b6c5c15ff68d0eaf6227863de26fc52bb52c03995520cf9cd46077f",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Latest annual UK tax data shows 240 people reported more than £1 million in crypto capital gains"
+  },
+  "https://www.coindesk.com/business/2026/08/30/from-hawala-to-swift-inside-the-1-000-year-battle-to-move-money-safely": {
+    "title_hash": "3a8c922bb3b3499fadb65df182738bb6bd0fa8eb41a54d29d1c46ac9df5310dc",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "From Hawala to Swift: Inside the 1,000-year battle to move money safely"
+  },
+  "https://www.coindesk.com/business/2026/08/29/swift-s-usd1-5-quadrillion-network-faces-a-blockchain-test": {
+    "title_hash": "17afb7e66c41125baac2e827064e5dd5b72304f19c3e01522aef88aeca42fd90",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Inside the high-stakes battle between digital dollars and Swift's massive money engine"
+  },
+  "https://www.coindesk.com/business/2026/08/28/visa-doubles-down-on-south-korea-with-upbit-operator-dunamu-on-stablecoin-payments": {
+    "title_hash": "d0d8d53b0133f314ccaee943fafbc3a31b9e2a8e6d80e72b8cb227ba1e95e94b",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Visa doubles down on South Korea with Upbit operator Dunamu on stablecoin payments"
+  },
+  "https://www.theblock.co/news/business/2026-08-28-dunamu-visa-partner-stablecoin-ai-ousd-412988": {
+    "title_hash": "d111a1dc135ffdb486c40e041fa29eb3c37a3db9ee19c09eff675142d872711f",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Dunamu and Visa partner on stablecoin, AI business; Open Standard’s OUSD under consideration"
+  },
+  "https://www.coindesk.com/markets/2026/08/30/bitcoin-nears-usd79-000-as-michael-saylor-hints-at-first-bitcoin-purchase-in-two-months": {
+    "title_hash": "7ddfb29fc15352054616321dbfe7a40c86192e3ec2c950af0a9b7e5ed7e1ee95",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Michael Saylor hints at first bitcoin purchase in two months as bitcoin nears $79,000"
+  },
+  "https://www.coindesk.com/web3/2026/08/29/a-usd1-1-million-crypto-card-hack-crashed-a-neobank-s-token-49": {
+    "title_hash": "0e082665b3420b6238741e05e449463fe49f95f5b4da2ffcff8e4e19f9f8cb0c",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "A $1.1 million crypto card hack crashed a neobank's token 49%"
+  },
+  "https://www.coindesk.com/business/2026/08/28/circle-s-usdc-takes-over-chelsea-s-jersey-in-premier-league-first": {
+    "title_hash": "8797f4cdc4d107439c23346a8d5af15ccc7b792ada18a676e0e0eaee44017feb",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Circle's USDC takes over Chelsea's jersey in Premier League first sponsorship deal"
+  },
+  "https://www.coindesk.com/business/2026/08/28/kraken-users-briefly-locked-out-after-a-flood-of-sanctioned-crypto-transactions": {
+    "title_hash": "847a42ee2dc30ca73a7b657f62fbf98f9daf7d93dcce8fa34da4052909fdbd78",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Kraken users briefly locked out after a flood of sanctioned crypto transactions"
+  },
+  "https://www.theblock.co/news/defi/2026-08-30-crypto-com-linked-cronos-network-halts-after-tectonic-exploit-estimated-at-75-million-413069": {
+    "title_hash": "40c46058eb6547d7c72bc32d7ea38f3dfe69ed86cec920f6c6e48c94647eb8d9",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Crypto.com-linked Cronos network halts after Tectonic exploit estimated at $75 million"
+  },
+  "https://www.theblock.co/news/defi/2026-08-29-cosmos-labs-says-it-wrongly-cleared-the-bug-behind-a-5-7-million-six-chain-hack-413061": {
+    "title_hash": "b22508c23ae644ad806ead6000c2ee2d15a27f3ea6f72280c04a127e47938c94",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Cosmos Labs says it wrongly cleared the bug behind a $5.7 million six-chain hack"
+  },
+  "https://www.theblock.co/news/markets/2026-08-28-bitwise-fund-is-first-solana-etf-to-hit-1-billion-aum-413035": {
+    "title_hash": "78d4bb0f602107300f426d56537b8ec25af993d399f085d4ad71f133e19e25c8",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Bitwise fund is first Solana ETF to hit $1 billion AUM"
+  },
+  "https://www.theblock.co/news/business/2026-08-28-circle-strikes-chelsea-front-of-shirt-sponsorship-deal-featuring-usdc-413002": {
+    "title_hash": "05f1ac03234a3e9f64be92be4a2434a0f6c80bebffb344bf4531d3b925ba333e",
+    "first_seen": "2026-08-30T23:02:47.839323+00:00",
+    "last_seen": "2026-08-30T23:02:47.839323+00:00",
+    "title": "Circle strikes Chelsea front-of-shirt sponsorship deal featuring USDC"
   }
 }
