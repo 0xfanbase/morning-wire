@@ -1724,13 +1724,13 @@
   "https://www.acams.org/en/opinion/tren-de-aragua-crypto-and-cash-inside-one-chiles-biggest-money-laundering-cases": {
     "title_hash": "7eaee6c7cdffb693850b8754b7b980ab3676828ca93dcfb31ee08f9c3701a884",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-09-01T00:15:53.979180+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
     "title": "Tren de Aragua, Crypto, and Cash: Inside One of Chile’s Biggest Money Laundering Cases"
   },
   "https://www.acams.org/en/opinion/compliance-powers-stablecoins": {
     "title_hash": "047b177c5a1ade3d23fc1342bff7f77455c733cfe0131af551315583ee0152d7",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-09-01T00:15:53.979180+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
     "title": "The compliance powers of stablecoins"
   },
   "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules": {
@@ -2516,7 +2516,7 @@
   "https://www.fca.org.uk/news/press-releases/tribunal-upholds-fca-ban-pair-pensions-advice": {
     "title_hash": "4186bdb320d978152caaa38ecb40ec66a3875af0265a9ca8adc3947e1a19d915",
     "first_seen": "2026-08-04T22:06:15.870891+00:00",
-    "last_seen": "2026-09-01T00:15:53.979180+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
     "title": "Tribunal upholds FCA ban on pair involved in pension transfer advice and reduces fines"
   },
   "https://www.coindesk.com/policy/2026/08/03/as-clarity-act-teeters-mystery-group-hammers-away-at-crypto-in-washington-ads": {
@@ -4022,7 +4022,7 @@
   "https://www.fca.org.uk/news/press-releases/fca-bans-trio-bypass-visa-rules": {
     "title_hash": "ed37b19ebf0607c7150f9bfaa9068b9c307f72ab47272606826b99526839c862",
     "first_seen": "2026-08-27T00:23:25.016813+00:00",
-    "last_seen": "2026-09-01T00:15:53.979180+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
     "title": "FCA bans trio behind £35.5m scheme designed to bypass visa rules"
   },
   "https://www.coindesk.com/news-analysis/2026/08/26/sec-resurrecting-u-s-crypto-custody-rule-the-previous-administration-failed-to-land": {
@@ -4094,7 +4094,7 @@
   "https://www.chainalysis.com/blog/crypto-tax-reporting-carf": {
     "title_hash": "e5723a321764faf3f56ed9d49782e63171dd5bf5ff0407db84190a0a8bccf622",
     "first_seen": "2026-08-27T00:23:25.016813+00:00",
-    "last_seen": "2026-09-01T00:15:53.979180+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
     "title": "What Blockchain Data Tell Us About $457+ Billion in Potentially Taxable Crypto Activity"
   },
   "https://www.coindesk.com/policy/2026/08/27/britain-plans-new-bank-of-england-objective-for-stablecoins": {
@@ -4250,7 +4250,7 @@
   "https://www.theblock.co/news/markets/2026-08-31-hyperliquid-eyes-us-entry-kraken-parent-payward-perpetual-futures-deal-bloomberg-413129": {
     "title_hash": "2fc4efff4f6b998ec1cd38654dea8957773aac0b423a49f98066660d33b8c610",
     "first_seen": "2026-09-01T00:15:53.979180+00:00",
-    "last_seen": "2026-09-01T00:15:53.979180+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
     "title": "Hyperliquid seeks US foothold through Kraken parent Payward in crypto perpetuals deal: Bloomberg"
   },
   "https://www.theblock.co/news/business/2026-08-31-russias-largest-bank-forecasts-46-billion-in-first-year-crypto-exchange-trading-under-new-rules-report-413082": {
@@ -4262,7 +4262,7 @@
   "https://www.coindesk.com/business/2026/08/31/north-korean-hackers-are-moving-tens-of-millions-on-hyperliquid-as-trump-pushes-to-onshore-the-crypto-platform": {
     "title_hash": "76a5759085e86becd810b77e84e7f16924db2d5b8868115b4ed6fbe4630f5f9f",
     "first_seen": "2026-09-01T00:15:53.979180+00:00",
-    "last_seen": "2026-09-01T00:15:53.979180+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
     "title": "North Korean hackers are moving tens of millions on Hyperliquid as Trump pushes to onshore the crypto platform"
   },
   "https://www.coindesk.com/tech/2026/08/31/cronos-halts-blockchain-after-usd75-million-lending-exploit-hits-lending-app-tectonic": {
@@ -4274,13 +4274,61 @@
   "https://www.theblock.co/news/business/2026-08-31-strive-fifth-largest-public-bitcoin-treasury-1800-btc-buy-td-cowen-lifts-asst-price-target-413112": {
     "title_hash": "0a9efdc0f999cba508daf67d24b086361ee575147b2489a6b36786145ac50f66",
     "first_seen": "2026-09-01T00:15:53.979180+00:00",
-    "last_seen": "2026-09-01T00:15:53.979180+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
     "title": "Strive becomes fifth-largest public bitcoin treasury after 1,800 BTC buy, TD Cowen lifts ASST price target"
   },
   "https://www.trmlabs.com/resources/blog/unpacking-taiwans-virtual-asset-service-act-what-crypto-and-stablecoin-issuers-need-to-know": {
     "title_hash": "be87a4ba615993fa41b38b02cae5a0e4712cfa422fab1bd7f227ddbb5938ce91",
     "first_seen": "2026-09-01T00:15:53.979180+00:00",
-    "last_seen": "2026-09-01T00:15:53.979180+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
     "title": "Unpacking Taiwan's Virtual Asset Service Act: What Crypto and Stablecoin Issuers Need to Know"
+  },
+  "https://www.coindesk.com/policy/2026/09/01/singapore-proposes-100-reserves-and-a-ban-on-yields-for-stablecoin-issuers": {
+    "title_hash": "e2f43122b6035994c9b7f48606dfddbb078af8a4240f651630e44a61a45679c1",
+    "first_seen": "2026-09-01T22:55:50.638094+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
+    "title": "Singapore proposes 100% reserves and a ban on yields for stablecoin issuers"
+  },
+  "https://www.theblock.co/news/business/2026-09-01-buying-memecoins-with-credit-cards-on-robinhood-wallet-fomo-sidestep-card-network-crypto-rules-411911": {
+    "title_hash": "613fd99494e7bf01f925e0029767a0bf0abd692facdffde58d54a9e80710880c",
+    "first_seen": "2026-09-01T22:55:50.638094+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
+    "title": "Buying memecoins with credit cards on Robinhood Wallet and Fomo appears to sidestep card-network crypto rules"
+  },
+  "https://www.theblock.co/news/regulation/2026-09-01-sec-seeks-update-1970s-era-transfer-agent-rules-for-blockchain-age-413278": {
+    "title_hash": "c6538aab61674fe6163a508497dd7d343f13fdcc0e5618354bd15cc5afbbd456",
+    "first_seen": "2026-09-01T22:55:50.638094+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
+    "title": "SEC seeks to update its 1970s-era transfer agent rules for the blockchain age"
+  },
+  "https://www.theblock.co/news/markets/2026-09-01-bitcoin-defies-oil-price-spike-and-rising-fed-hike-bets-after-best-august-since-2017-413218": {
+    "title_hash": "00ddd0af63b2acd798e7a3c2cf92c1cbcc5ed792e9b9fd9833c4fdfce71b0a93",
+    "first_seen": "2026-09-01T22:55:50.638094+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
+    "title": "Bitcoin defies oil price spike and rising Fed hike bets after best August since 2017"
+  },
+  "https://www.coindesk.com/business/2026/09/01/citi-goldman-other-global-banks-and-asset-managers-team-up-on-stablecoin-venture": {
+    "title_hash": "51dc0a48ad9ab149f212d977bfd03ecb04bfa56ec91b3bb84cab39fe50e1d27c",
+    "first_seen": "2026-09-01T22:55:50.638094+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
+    "title": "Citi, Goldman, other global banks and asset managers team up on stablecoin venture"
+  },
+  "https://www.theblock.co/news/markets/2026-09-01-bitcoin-gold-move-lockstep-debasement-trade-gains-steam-413137": {
+    "title_hash": "3a0bab92eda414c10cd7a4cca74258241c9a1d2ba6983e656b290844d3a2196f",
+    "first_seen": "2026-09-01T22:55:50.638094+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
+    "title": "Bitcoin and gold move in lockstep as debasement trade gains more steam"
+  },
+  "https://www.theblock.co/news/business/2026-09-01-binance-adds-options-1000-us-stocks-etfs-monthly-tradfi-perpetual-volume-surge-413213": {
+    "title_hash": "c72dbfbdb7060b0e3b00ad382ea66c73adfc67f9da007e5f067ce4ed8a51b901",
+    "first_seen": "2026-09-01T22:55:50.638094+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
+    "title": "Binance adds options on 1,000 US stocks and ETFs as monthly TradFi perpetual volume hits $433 billion"
+  },
+  "https://www.theblock.co/news/business/2026-09-01-kraken-parent-payward-to-tokenize-100-london-listed-stocks-with-lse-24-trading-planned-413208": {
+    "title_hash": "d448959a42fe10e653e085804f8e8cbf22bf01d65c4ab3bb0627ffd8de7f0a55",
+    "first_seen": "2026-09-01T22:55:50.638094+00:00",
+    "last_seen": "2026-09-01T22:55:50.638094+00:00",
+    "title": "Kraken parent Payward to tokenize 100 London-listed stocks, with LSE 24 trading planned"
   }
 }
