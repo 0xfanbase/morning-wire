@@ -1724,13 +1724,13 @@
   "https://www.acams.org/en/opinion/tren-de-aragua-crypto-and-cash-inside-one-chiles-biggest-money-laundering-cases": {
     "title_hash": "7eaee6c7cdffb693850b8754b7b980ab3676828ca93dcfb31ee08f9c3701a884",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-09-02T22:56:54.422944+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
     "title": "Tren de Aragua, Crypto, and Cash: Inside One of Chile’s Biggest Money Laundering Cases"
   },
   "https://www.acams.org/en/opinion/compliance-powers-stablecoins": {
     "title_hash": "047b177c5a1ade3d23fc1342bff7f77455c733cfe0131af551315583ee0152d7",
     "first_seen": "2026-07-23T21:59:35.807916+00:00",
-    "last_seen": "2026-09-02T22:56:54.422944+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
     "title": "The compliance powers of stablecoins"
   },
   "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules": {
@@ -2516,7 +2516,7 @@
   "https://www.fca.org.uk/news/press-releases/tribunal-upholds-fca-ban-pair-pensions-advice": {
     "title_hash": "4186bdb320d978152caaa38ecb40ec66a3875af0265a9ca8adc3947e1a19d915",
     "first_seen": "2026-08-04T22:06:15.870891+00:00",
-    "last_seen": "2026-09-02T22:56:54.422944+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
     "title": "Tribunal upholds FCA ban on pair involved in pension transfer advice and reduces fines"
   },
   "https://www.coindesk.com/policy/2026/08/03/as-clarity-act-teeters-mystery-group-hammers-away-at-crypto-in-washington-ads": {
@@ -4022,7 +4022,7 @@
   "https://www.fca.org.uk/news/press-releases/fca-bans-trio-bypass-visa-rules": {
     "title_hash": "ed37b19ebf0607c7150f9bfaa9068b9c307f72ab47272606826b99526839c862",
     "first_seen": "2026-08-27T00:23:25.016813+00:00",
-    "last_seen": "2026-09-02T22:56:54.422944+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
     "title": "FCA bans trio behind £35.5m scheme designed to bypass visa rules"
   },
   "https://www.coindesk.com/news-analysis/2026/08/26/sec-resurrecting-u-s-crypto-custody-rule-the-previous-administration-failed-to-land": {
@@ -4280,7 +4280,7 @@
   "https://www.trmlabs.com/resources/blog/unpacking-taiwans-virtual-asset-service-act-what-crypto-and-stablecoin-issuers-need-to-know": {
     "title_hash": "be87a4ba615993fa41b38b02cae5a0e4712cfa422fab1bd7f227ddbb5938ce91",
     "first_seen": "2026-09-01T00:15:53.979180+00:00",
-    "last_seen": "2026-09-02T22:56:54.422944+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
     "title": "Unpacking Taiwan's Virtual Asset Service Act: What Crypto and Stablecoin Issuers Need to Know"
   },
   "https://www.coindesk.com/policy/2026/09/01/singapore-proposes-100-reserves-and-a-ban-on-yields-for-stablecoin-issuers": {
@@ -4346,13 +4346,13 @@
   "https://www.coindesk.com/business/2026/09/02/kraken-parent-payward-pushes-ipo-back-to-mid-2027-at-earliest": {
     "title_hash": "dffc7932cc42219c346bd2c5e2073aa603e5bf7f787cac50a3a05048f676e859",
     "first_seen": "2026-09-02T22:56:54.422944+00:00",
-    "last_seen": "2026-09-02T22:56:54.422944+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
     "title": "Kraken parent Payward delays IPO to second quarter of 2027 at earliest"
   },
   "https://www.coindesk.com/business/2026/08/29/capital-b-aims-to-add-376-btc-to-bitcoin-treasury-following-usd8-8-million-adam-back-investment": {
     "title_hash": "911cd7b3c854308605bc03e4f288b4b71c27aaca3843f41cd7228e46517e7555",
     "first_seen": "2026-09-02T22:56:54.422944+00:00",
-    "last_seen": "2026-09-02T22:56:54.422944+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
     "title": "Capital B aims to add 376 BTC to bitcoin treasury following $8.8 million Adam Back investment"
   },
   "https://www.coindesk.com/business/2026/09/02/tether-sued-over-usd42-4-million-usdt-freeze-allegedly-made-months-before-u-s-warrant": {
@@ -4370,13 +4370,85 @@
   "https://www.theblock.co/news/business/2026-09-02-anthony-armstrong-former-cfo-elon-musk-xai-x-joins-coinbase-board-413405": {
     "title_hash": "b29dd8c913db97c970338b459dbd371c4df17606449d5f7f04ef00dbc55183fa",
     "first_seen": "2026-09-02T22:56:54.422944+00:00",
-    "last_seen": "2026-09-02T22:56:54.422944+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
     "title": "Anthony Armstrong, former CFO at Elon Musk’s xAI and X, joins Coinbase board"
   },
   "https://www.theblock.co/news/business/2026-09-02-adam-back-invests-another-8-8-million-in-capital-b-as-bitcoin-treasury-firm-targets-3521-btc-413339": {
     "title_hash": "7abc995291e7c43f13d0d9ed482bb02d09bae4ce1d2bef2b466c5dc4b106ab8d",
     "first_seen": "2026-09-02T22:56:54.422944+00:00",
-    "last_seen": "2026-09-02T22:56:54.422944+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
     "title": "Adam Back invests another $8.8 million in Capital B as bitcoin treasury firm targets 3,521 BTC"
+  },
+  "https://www.fincen.gov/news/news-releases/fincen-identifies-nearly-13-billion-linked-suspected-digital-asset-scams": {
+    "title_hash": "ebbbd6e64e46eda40e2b18919b684e687d396b528560c23066560be7b1dd964a",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "FinCEN Identifies Nearly $13 Billion Linked to Suspected Digital Asset Scams Operated by Overseas Scam Centers"
+  },
+  "https://www.fca.org.uk/news/press-releases/fca-ban-fine-daniel-thomas-unauthorised-pension-transfer-advice": {
+    "title_hash": "ad29494501e5e641b3184e3ed9375f0dad1f2223c7f7886d1c9a35dbe4a1f711",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "FCA decides to ban and fine Daniel Thomas over unauthorised pension transfer advice"
+  },
+  "https://www.coindesk.com/policy/2026/09/03/cftc-asks-judge-to-dismiss-cme-lawsuit-over-crypto-perpetual-futures": {
+    "title_hash": "da434ae6a8a3cecc93a75466143f6d62d8ae725f9f91a576a6026535b48c1cc6",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "CFTC asks judge to dismiss CME lawsuit over crypto perpetual futures"
+  },
+  "https://www.theblock.co/news/regulation/2026-09-03-coinbase-seeks-sec-greenlight-to-list-24-7-equity-perpetuals-413487": {
+    "title_hash": "e1bcb6b5106eda832f5bb63cd68245cd36df8b196199edbf2ce991293b7d3ac5",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "Coinbase seeks SEC greenlight to list 24/7 equity perpetuals"
+  },
+  "https://www.theblock.co/news/markets/2026-09-03-crypto-market-cap-surges-2-82-trillion-zcash-leads-rally-alongside-stocks-413478": {
+    "title_hash": "6878f13b1015d31a844ac0d5fe12bad23d4b2a6a8be0927cead69855db23c253",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "Crypto market cap surges to $2.82 trillion as Zcash leads rally alongside stocks"
+  },
+  "https://www.theblock.co/news/regulation/2026-09-02-cftc-dismiss-cme-413416": {
+    "title_hash": "81aa43e252e6e4da19ac0de4db2dfc06d4b79ad914cc709de7c0a133559a8c05",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "‘Much ado about nothing’: CFTC files to dismiss CME’s lawsuit over crypto perpetual futures"
+  },
+  "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae": {
+    "title_hash": "8ef22167fcdfd7c08650805a8f52b3d417cf6d9daa8c25e83cd227ebb3f5cc44",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "Standard Chartered brings spot crypto trading to Dubai FX platform"
+  },
+  "https://www.coindesk.com/business/2026/09/03/bitget-in-talks-with-wall-street-giants-including-blackrock-for-asian-distribution": {
+    "title_hash": "3378aa2ba24e262aebab67798173b778848e08d4b019e9b910104b2aed3a9bd7",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "Bitget in talks with Wall Street giants including BlackRock to fuel Asian distribution"
+  },
+  "https://www.coindesk.com/business/2026/09/03/sofi-kraken-tie-up-as-crypto-and-banking-push-into-each-other-s-turf": {
+    "title_hash": "98e87f64472a24f814eadc6de40d594992ce2ca3e38c2ce49a58483ca9d2c0e0",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "SoFi, Kraken tie up as crypto and banking push into each other's turf"
+  },
+  "https://www.theblock.co/news/business/2026-09-03-sofi-payward-agree-to-link-banking-network-with-kraken-infrastructure-413432": {
+    "title_hash": "ead2ea8bd074e248ec946364ec3befbe7d9b40ea4c5c4a969c3a7a011793c025",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "SoFi, Payward agree to link banking network with Kraken infrastructure"
+  },
+  "https://www.chainalysis.com/blog/chainalysis-supports-hyperevm-with-automatic-token-support": {
+    "title_hash": "5d40310e5a628378f48f5f98f11a4dee064b44c23be5b6ecf34ccb172cd032d7",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "Chainalysis Supports HyperEVM with Automatic Token Support"
+  },
+  "https://www.chainalysis.com/blog/fbi-seizes-hamas-crypto-fundraising-network": {
+    "title_hash": "314eda0b1c5488f0663aaffa159cdf0125cf1d57a4a22d3f333ea9dd0a54ce20",
+    "first_seen": "2026-09-03T22:56:26.637614+00:00",
+    "last_seen": "2026-09-03T22:56:26.637614+00:00",
+    "title": "FBI Seizes $560K in Crypto From Hamas Fundraising Network"
   }
 }

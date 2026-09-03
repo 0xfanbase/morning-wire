@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T22:56:54.422936+00:00",
+  "generated_at": "2026-09-03T22:56:26.637606+00:00",
   "top_of_mind": "",
   "items": [
     {
@@ -1441,6 +1441,294 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-09-02T22:56:54.422936+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "uk-financial-conduct-authority-news-8cfae4aeef",
+      "jurisdiction": "UK",
+      "source": "Financial Conduct Authority — News",
+      "title": "FCA decides to ban and fine Daniel Thomas over unauthorised pension transfer advice",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-ban-fine-daniel-thomas-unauthorised-pension-transfer-advice",
+      "published": "2026-09-03T22:54:33.384227+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Financial Conduct Authority — News",
+            "url": "https://www.fca.org.uk/news/press-releases/fca-ban-fine-daniel-thomas-unauthorised-pension-transfer-advice"
+          }
+        ]
+      },
+      "summary": "FCA decides to ban and fine Daniel Thomas over unauthorised pension transfer advice",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "fetch_time"
+    },
+    {
+      "id": "us-financial-crimes-enforcement-network-fincen-press-releases-975892f45d",
+      "jurisdiction": "US",
+      "source": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
+      "title": "FinCEN Identifies Nearly $13 Billion Linked to Suspected Digital Asset Scams Operated by Overseas Scam Centers",
+      "url": "https://www.fincen.gov/news/news-releases/fincen-identifies-nearly-13-billion-linked-suspected-digital-asset-scams",
+      "published": "2026-09-03T12:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Financial Crimes Enforcement Network (FinCEN) — Press releases",
+            "url": "https://www.fincen.gov/news/news-releases/fincen-identifies-nearly-13-billion-linked-suspected-digital-asset-scams"
+          }
+        ]
+      },
+      "summary": "FinCEN Identifies Nearly $13 Billion Linked to Suspected Digital Asset Scams Operated by Overseas Scam Centers",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "page"
+    },
+    {
+      "id": "global-the-block-policy-7cd0e9f1a0",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Coinbase seeks SEC greenlight to list 24/7 equity perpetuals",
+      "url": "https://www.theblock.co/news/regulation/2026-09-03-coinbase-seeks-sec-greenlight-to-list-24-7-equity-perpetuals-413487",
+      "published": "2026-09-03T20:46:52+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-03-coinbase-seeks-sec-greenlight-to-list-24-7-equity-perpetuals-413487"
+          }
+        ]
+      },
+      "summary": "Coinbase seeks SEC greenlight to list 24/7 equity perpetuals",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-19eb9ccbf6",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Crypto market cap surges to $2.82 trillion as Zcash leads rally alongside stocks",
+      "url": "https://www.theblock.co/news/markets/2026-09-03-crypto-market-cap-surges-2-82-trillion-zcash-leads-rally-alongside-stocks-413478",
+      "published": "2026-09-03T20:09:25+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/markets/2026-09-03-crypto-market-cap-surges-2-82-trillion-zcash-leads-rally-alongside-stocks-413478"
+          }
+        ]
+      },
+      "summary": "Crypto market cap surges to $2.82 trillion as Zcash leads rally alongside stocks",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-chainalysis-blog-bdd5b3bc3a",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "Chainalysis Supports HyperEVM with Automatic Token Support",
+      "url": "https://www.chainalysis.com/blog/chainalysis-supports-hyperevm-with-automatic-token-support/",
+      "published": "2026-09-03T17:39:27+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/chainalysis-supports-hyperevm-with-automatic-token-support/"
+          }
+        ]
+      },
+      "summary": "Chainalysis Supports HyperEVM with Automatic Token Support",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-0346f47f27",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Standard Chartered brings spot crypto trading to Dubai FX platform",
+      "url": "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
+      "published": "2026-09-03T15:58:02+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae"
+          }
+        ]
+      },
+      "summary": "Standard Chartered brings spot crypto trading to Dubai FX platform",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-5c3d42fb9d",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Bitget in talks with Wall Street giants including BlackRock to fuel Asian distribution",
+      "url": "https://www.coindesk.com/business/2026/09/03/bitget-in-talks-with-wall-street-giants-including-blackrock-for-asian-distribution",
+      "published": "2026-09-03T14:41:25+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/09/03/bitget-in-talks-with-wall-street-giants-including-blackrock-for-asian-distribution"
+          }
+        ]
+      },
+      "summary": "Bitget in talks with Wall Street giants including BlackRock to fuel Asian distribution",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-chainalysis-blog-2dc64f1511",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "FBI Seizes $560K in Crypto From Hamas Fundraising Network",
+      "url": "https://www.chainalysis.com/blog/fbi-seizes-hamas-crypto-fundraising-network/",
+      "published": "2026-09-03T13:03:20+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/fbi-seizes-hamas-crypto-fundraising-network/"
+          }
+        ]
+      },
+      "summary": "FBI Seizes $560K in Crypto From Hamas Fundraising Network",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-20962e08b3",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "SoFi, Payward agree to link banking network with Kraken infrastructure",
+      "url": "https://www.theblock.co/news/business/2026-09-03-sofi-payward-agree-to-link-banking-network-with-kraken-infrastructure-413432",
+      "published": "2026-09-03T12:52:54+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/business/2026-09-03-sofi-payward-agree-to-link-banking-network-with-kraken-infrastructure-413432"
+          }
+        ]
+      },
+      "summary": "SoFi, Payward agree to link banking network with Kraken infrastructure",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-e839ab9192",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "SoFi, Kraken tie up as crypto and banking push into each other's turf",
+      "url": "https://www.coindesk.com/business/2026/09/03/sofi-kraken-tie-up-as-crypto-and-banking-push-into-each-other-s-turf",
+      "published": "2026-09-03T12:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/09/03/sofi-kraken-tie-up-as-crypto-and-banking-push-into-each-other-s-turf"
+          }
+        ]
+      },
+      "summary": "SoFi, Kraken tie up as crypto and banking push into each other's turf",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-8e0e861905",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "CFTC asks judge to dismiss CME lawsuit over crypto perpetual futures",
+      "url": "https://www.coindesk.com/policy/2026/09/03/cftc-asks-judge-to-dismiss-cme-lawsuit-over-crypto-perpetual-futures",
+      "published": "2026-09-03T09:13:40+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/09/03/cftc-asks-judge-to-dismiss-cme-lawsuit-over-crypto-perpetual-futures"
+          }
+        ]
+      },
+      "summary": "CFTC asks judge to dismiss CME lawsuit over crypto perpetual futures",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-998d4d4f25",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "‘Much ado about nothing’: CFTC files to dismiss CME’s lawsuit over crypto perpetual futures",
+      "url": "https://www.theblock.co/news/regulation/2026-09-02-cftc-dismiss-cme-413416",
+      "published": "2026-09-03T03:39:02+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-02-cftc-dismiss-cme-413416"
+          }
+        ]
+      },
+      "summary": "‘Much ado about nothing’: CFTC files to dismiss CME’s lawsuit over crypto perpetual futures",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-03T22:56:26.637606+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -1449,7 +1737,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380876+00:00",
+      "checked_at": "2026-09-03T22:56:26.606012+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1457,7 +1745,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380889+00:00",
+      "checked_at": "2026-09-03T22:56:26.606023+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1465,7 +1753,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380897+00:00",
+      "checked_at": "2026-09-03T22:56:26.606030+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1473,7 +1761,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380903+00:00",
+      "checked_at": "2026-09-03T22:56:26.606034+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1481,7 +1769,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380908+00:00",
+      "checked_at": "2026-09-03T22:56:26.606039+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1489,7 +1777,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380914+00:00",
+      "checked_at": "2026-09-03T22:56:26.606043+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1497,7 +1785,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380919+00:00",
+      "checked_at": "2026-09-03T22:56:26.606047+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1505,7 +1793,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.380924+00:00",
+      "checked_at": "2026-09-03T22:56:26.606050+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1513,7 +1801,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.380929+00:00",
+      "checked_at": "2026-09-03T22:56:26.606054+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1521,7 +1809,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380934+00:00",
+      "checked_at": "2026-09-03T22:56:26.606058+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1529,7 +1817,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380939+00:00",
+      "checked_at": "2026-09-03T22:56:26.606062+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1537,7 +1825,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380943+00:00",
+      "checked_at": "2026-09-03T22:56:26.606065+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1545,7 +1833,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380948+00:00",
+      "checked_at": "2026-09-03T22:56:26.606069+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1553,7 +1841,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380953+00:00",
+      "checked_at": "2026-09-03T22:56:26.606073+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1561,7 +1849,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380958+00:00",
+      "checked_at": "2026-09-03T22:56:26.606077+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1569,7 +1857,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380962+00:00",
+      "checked_at": "2026-09-03T22:56:26.606081+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1577,7 +1865,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380967+00:00",
+      "checked_at": "2026-09-03T22:56:26.606085+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -1585,7 +1873,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380972+00:00",
+      "checked_at": "2026-09-03T22:56:26.606087+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -1593,7 +1881,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380977+00:00",
+      "checked_at": "2026-09-03T22:56:26.606089+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -1601,7 +1889,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380981+00:00",
+      "checked_at": "2026-09-03T22:56:26.606092+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -1609,15 +1897,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380986+00:00",
+      "checked_at": "2026-09-03T22:56:26.606095+00:00",
       "jurisdiction": "SG"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='wolfsberg-group.org', port=443): Read timed out. (read timeout=15)); 1 consecutive failure — self-heal at 3.",
+      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='wolfsberg-group.org', port=443): Read timed out. (read timeout=15)); 2 consecutive failures — self-heal at 3.",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380994+00:00",
+      "checked_at": "2026-09-03T22:56:26.606099+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1625,7 +1913,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.380999+00:00",
+      "checked_at": "2026-09-03T22:56:26.606102+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1633,7 +1921,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.381003+00:00",
+      "checked_at": "2026-09-03T22:56:26.606105+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1641,7 +1929,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.381008+00:00",
+      "checked_at": "2026-09-03T22:56:26.606107+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1649,7 +1937,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-02T22:56:54.381012+00:00",
+      "checked_at": "2026-09-03T22:56:26.606110+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1657,7 +1945,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.381017+00:00",
+      "checked_at": "2026-09-03T22:56:26.606113+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1665,7 +1953,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.381021+00:00",
+      "checked_at": "2026-09-03T22:56:26.606115+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1673,7 +1961,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.381025+00:00",
+      "checked_at": "2026-09-03T22:56:26.606117+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1681,7 +1969,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.381031+00:00",
+      "checked_at": "2026-09-03T22:56:26.606119+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1689,7 +1977,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.381035+00:00",
+      "checked_at": "2026-09-03T22:56:26.606121+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1697,7 +1985,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.381040+00:00",
+      "checked_at": "2026-09-03T22:56:26.606124+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1705,15 +1993,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.381044+00:00",
+      "checked_at": "2026-09-03T22:56:26.606126+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 26 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
+      "note": "Failing for 27 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.421813+00:00",
+      "checked_at": "2026-09-03T22:56:26.636913+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1721,7 +2009,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-02T22:56:54.421835+00:00",
+      "checked_at": "2026-09-03T22:56:26.636928+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1731,10 +2019,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-08-20T21:20:50.536582+00:00",
-      "note": "Daily fetch: 12 new items surfaced; 34/36 sources ok"
-    },
     {
       "at": "2026-08-23T21:14:03.686685+00:00",
       "note": "Daily fetch: 14 new items surfaced; 34/36 sources ok"
@@ -1770,6 +2054,10 @@
     {
       "at": "2026-09-02T22:56:54.422936+00:00",
       "note": "Daily fetch: 8 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-09-03T22:56:26.637606+00:00",
+      "note": "Daily fetch: 12 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
