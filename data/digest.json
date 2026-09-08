@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T23:13:12.661617+00:00",
+  "generated_at": "2026-09-08T23:07:06.213001+00:00",
   "top_of_mind": "",
   "items": [
     {
@@ -1345,6 +1345,318 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-09-07T23:13:12.661617+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-4285bb16cd",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Pons propels Robinhood Chain fees to record $6 million in daily fees as DEX volume doubles",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-08-pons-propels-robinhood-chain-fees-record-6-million-daily-fees-dex-volume-doubles-413852",
+      "published": "2026-09-08T22:26:02+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/ecosystems/2026-09-08-pons-propels-robinhood-chain-fees-record-6-million-daily-fees-dex-volume-doubles-413852"
+          }
+        ]
+      },
+      "summary": "Pons propels Robinhood Chain fees to record $6 million in daily fees as DEX volume doubles",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-d78cca976b",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Hyperliquid open interest climbs to $14.3 billion as HYPE hits all-time high",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-08-hyperliquid-open-interest-climbs-14-3-billion-hype-hits-all-time-high-413855",
+      "published": "2026-09-08T20:08:23+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/ecosystems/2026-09-08-hyperliquid-open-interest-climbs-14-3-billion-hype-hits-all-time-high-413855"
+          }
+        ]
+      },
+      "summary": "Hyperliquid open interest climbs to $14.3 billion as HYPE hits all-time high",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-c14bcfb413",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "A 22 year-old crypto ringleader pleads guilty to $245 million racketeering scheme",
+      "url": "https://www.theblock.co/news/regulation/2026-09-08-a-22-year-old-crypto-ringleader-pleads-guilty-to-245-million-racketeering-scheme-413911",
+      "published": "2026-09-08T19:17:17+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-08-a-22-year-old-crypto-ringleader-pleads-guilty-to-245-million-racketeering-scheme-413911"
+          }
+        ]
+      },
+      "summary": "A 22 year-old crypto ringleader pleads guilty to $245 million racketeering scheme",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-chainalysis-blog-ff293c1d9a",
+      "jurisdiction": "GLOBAL",
+      "source": "Chainalysis — Blog",
+      "title": "Tracing Crypto in a Narcotics Investigation: FBI Charges Alleged Opioid Distributors",
+      "url": "https://www.chainalysis.com/blog/fbi-traces-crypto-opioids-distributors/",
+      "published": "2026-09-08T17:23:45+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "Chainalysis — Blog",
+            "url": "https://www.chainalysis.com/blog/fbi-traces-crypto-opioids-distributors/"
+          }
+        ]
+      },
+      "summary": "Tracing Crypto in a Narcotics Investigation: FBI Charges Alleged Opioid Distributors",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-79db294098",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Robinhood expands prediction markets with Crypto.com, OG partnerships ahead of NFL season",
+      "url": "https://www.theblock.co/news/markets/2026-09-08-robinhood-expands-prediction-markets-crypto-com-og-partnerships-nfl-season-413832",
+      "published": "2026-09-08T15:54:17+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/markets/2026-09-08-robinhood-expands-prediction-markets-crypto-com-og-partnerships-nfl-season-413832"
+          }
+        ]
+      },
+      "summary": "Robinhood expands prediction markets with Crypto.com, OG partnerships ahead of NFL season",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-654173f4c4",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Circle agrees to buy cross-border payments firm Tazapay for $400 million",
+      "url": "https://www.coindesk.com/business/2026/09/08/circle-agrees-to-buy-cross-border-payments-firm-tazapay-for-usd400-million",
+      "published": "2026-09-08T14:40:46+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/09/08/circle-agrees-to-buy-cross-border-payments-firm-tazapay-for-usd400-million"
+          }
+        ]
+      },
+      "summary": "Circle agrees to buy cross-border payments firm Tazapay for $400 million",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-84bd7240a5",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Visa combines VisaNet data with onchain lending to power stablecoin card working capital",
+      "url": "https://www.coindesk.com/business/2026/09/08/visa-opens-settlement-data-to-help-blockchain-lenders-finance-crypto-cards-as-volume-surges",
+      "published": "2026-09-08T14:29:14+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/09/08/visa-opens-settlement-data-to-help-blockchain-lenders-finance-crypto-cards-as-volume-surges"
+          }
+        ]
+      },
+      "summary": "Visa combines VisaNet data with onchain lending to power stablecoin card working capital",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-254d3bc40c",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Bitcoin ETFs are still $1 billion shy of breaking even in 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/09/08/bitcoin-etfs-are-still-usd1-billion-shy-of-breaking-even-in-2026",
+      "published": "2026-09-08T11:26:27+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/daybook-us/2026/09/08/bitcoin-etfs-are-still-usd1-billion-shy-of-breaking-even-in-2026"
+          }
+        ]
+      },
+      "summary": "Bitcoin ETFs are still $1 billion shy of breaking even in 2026",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-1b485f1650",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "Visa stablecoin settlement tops $20 billion annualized run rate, up more than 15x year over year",
+      "url": "https://www.theblock.co/news/business/2026-09-08-visa-stablecoin-settlement-tops-20-billion-annualized-run-rate-up-more-than-15x-year-over-year-413749",
+      "published": "2026-09-08T11:09:21+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/news/business/2026-09-08-visa-stablecoin-settlement-tops-20-billion-annualized-run-rate-up-more-than-15x-year-over-year-413749"
+          }
+        ]
+      },
+      "summary": "Visa stablecoin settlement tops $20 billion annualized run rate, up more than 15x year over year",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-7bdb9878ea",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Polish prosecutors charge fifth suspect in Zondacrypto probe involving around $100 million in estimated losses",
+      "url": "https://www.theblock.co/news/regulation/2026-09-08-polish-prosecutors-charge-fifth-suspect-in-zondacrypto-probe-involving-around-100-million-in-estimated-losses-413745",
+      "published": "2026-09-08T10:38:15+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-08-polish-prosecutors-charge-fifth-suspect-in-zondacrypto-probe-involving-around-100-million-in-estimated-losses-413745"
+          }
+        ]
+      },
+      "summary": "Polish prosecutors charge fifth suspect in Zondacrypto probe involving around $100 million in estimated losses",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-f299c71d3a",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Cronos says $9.2 million remains unrecovered after Tectonic exploit, chain rollback",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-08-cronos-post-mortem-413724",
+      "published": "2026-09-08T05:51:16+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/ecosystems/2026-09-08-cronos-post-mortem-413724"
+          }
+        ]
+      },
+      "summary": "Cronos says $9.2 million remains unrecovered after Tectonic exploit, chain rollback",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-63a2065642",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Liquid Network gets back 3,400 bitcoin from whitehat hackers; talks underway for the rest",
+      "url": "https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network",
+      "published": "2026-09-08T04:41:17+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network"
+          }
+        ]
+      },
+      "summary": "Liquid Network gets back 3,400 bitcoin from whitehat hackers; talks underway for the rest",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-trm-labs-insights-4ce85209c7",
+      "jurisdiction": "GLOBAL",
+      "source": "TRM Labs — Insights",
+      "title": "Singapore's Proposed Stablecoin Rules: What the MAS Consultation Means for Issuers, Exchanges, and Banks",
+      "url": "https://www.trmlabs.com/resources/blog/singapores-proposed-stablecoin-rules-what-the-mas-consultation-means-for-issuers-exchanges-and-banks",
+      "published": "2026-09-08T00:00:00+08:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "TRM Labs — Insights",
+            "url": "https://www.trmlabs.com/resources/blog/singapores-proposed-stablecoin-rules-what-the-mas-consultation-means-for-issuers-exchanges-and-banks"
+          }
+        ]
+      },
+      "summary": "Singapore's Proposed Stablecoin Rules: What the MAS Consultation Means for Issuers, Exchanges, and Banks",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-08T23:07:06.213001+00:00",
+      "date_source": "page"
     }
   ],
   "source_health": [
@@ -1353,7 +1665,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620530+00:00",
+      "checked_at": "2026-09-08T23:07:06.181133+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1361,7 +1673,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620541+00:00",
+      "checked_at": "2026-09-08T23:07:06.181143+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1369,7 +1681,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620547+00:00",
+      "checked_at": "2026-09-08T23:07:06.181147+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1377,7 +1689,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620551+00:00",
+      "checked_at": "2026-09-08T23:07:06.181150+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1385,7 +1697,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620555+00:00",
+      "checked_at": "2026-09-08T23:07:06.181154+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1393,7 +1705,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620558+00:00",
+      "checked_at": "2026-09-08T23:07:06.181157+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1401,7 +1713,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620561+00:00",
+      "checked_at": "2026-09-08T23:07:06.181160+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1409,7 +1721,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620564+00:00",
+      "checked_at": "2026-09-08T23:07:06.181162+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1417,7 +1729,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620567+00:00",
+      "checked_at": "2026-09-08T23:07:06.181165+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1425,7 +1737,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620570+00:00",
+      "checked_at": "2026-09-08T23:07:06.181168+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1433,7 +1745,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620573+00:00",
+      "checked_at": "2026-09-08T23:07:06.181170+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1441,7 +1753,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620576+00:00",
+      "checked_at": "2026-09-08T23:07:06.181173+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1449,15 +1761,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620579+00:00",
+      "checked_at": "2026-09-08T23:07:06.181175+00:00",
       "jurisdiction": "US"
     },
     {
       "name": "Office of the Comptroller of the Currency — News releases",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='www.occ.gov', port=443): Max retries exceeded with url: /rss/occ_news.xml (Caused by NewConnectionError(\"HTTPSConnection(host='www.occ.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))); 1 consecutive failure — self-heal at 3.",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620582+00:00",
+      "checked_at": "2026-09-08T23:07:06.181181+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1465,7 +1777,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620585+00:00",
+      "checked_at": "2026-09-08T23:07:06.181183+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1473,7 +1785,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620587+00:00",
+      "checked_at": "2026-09-08T23:07:06.181186+00:00",
       "jurisdiction": "US"
     },
     {
@@ -1481,7 +1793,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620590+00:00",
+      "checked_at": "2026-09-08T23:07:06.181188+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -1489,7 +1801,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620593+00:00",
+      "checked_at": "2026-09-08T23:07:06.181191+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -1497,7 +1809,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620596+00:00",
+      "checked_at": "2026-09-08T23:07:06.181194+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -1505,7 +1817,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620598+00:00",
+      "checked_at": "2026-09-08T23:07:06.181196+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -1513,7 +1825,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620601+00:00",
+      "checked_at": "2026-09-08T23:07:06.181199+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -1521,7 +1833,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620604+00:00",
+      "checked_at": "2026-09-08T23:07:06.181201+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1529,7 +1841,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620606+00:00",
+      "checked_at": "2026-09-08T23:07:06.181204+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1537,7 +1849,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620609+00:00",
+      "checked_at": "2026-09-08T23:07:06.181206+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1545,7 +1857,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620612+00:00",
+      "checked_at": "2026-09-08T23:07:06.181208+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1553,7 +1865,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-07T23:13:12.620615+00:00",
+      "checked_at": "2026-09-08T23:07:06.181211+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1561,7 +1873,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620617+00:00",
+      "checked_at": "2026-09-08T23:07:06.181213+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1569,7 +1881,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620620+00:00",
+      "checked_at": "2026-09-08T23:07:06.181215+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1577,7 +1889,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620622+00:00",
+      "checked_at": "2026-09-08T23:07:06.181218+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1585,7 +1897,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620625+00:00",
+      "checked_at": "2026-09-08T23:07:06.181220+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1593,7 +1905,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620627+00:00",
+      "checked_at": "2026-09-08T23:07:06.181222+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1601,7 +1913,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620629+00:00",
+      "checked_at": "2026-09-08T23:07:06.181225+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1609,15 +1921,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.620632+00:00",
+      "checked_at": "2026-09-08T23:07:06.181228+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 29 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
+      "note": "Failing for 30 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.660762+00:00",
+      "checked_at": "2026-09-08T23:07:06.212256+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1625,7 +1937,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-07T23:13:12.660775+00:00",
+      "checked_at": "2026-09-08T23:07:06.212270+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -1635,10 +1947,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-08-25T21:20:17.990178+00:00",
-      "note": "Daily fetch: 16 new items surfaced; 34/36 sources ok"
-    },
     {
       "at": "2026-08-27T00:23:25.016806+00:00",
       "note": "Daily fetch: 13 new items surfaced; 34/36 sources ok"
@@ -1674,6 +1982,10 @@
     {
       "at": "2026-09-07T23:13:12.661617+00:00",
       "note": "Daily fetch: 9 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-09-08T23:07:06.213001+00:00",
+      "note": "Daily fetch: 13 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
