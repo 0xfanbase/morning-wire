@@ -1,223 +1,7 @@
 {
-  "generated_at": "2026-09-14T23:39:19.756673+00:00",
+  "generated_at": "2026-09-15T23:21:04.417206+00:00",
   "top_of_mind": "",
   "items": [
-    {
-      "id": "global-coindesk-policy-d5f01065bf",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Polish prosecutors charge fifth suspect in a massive crypto probe",
-      "url": "https://www.coindesk.com/policy/2026/09/07/polish-prosecutors-charge-fifth-suspect-in-a-massive-crypto-probe",
-      "published": "2026-09-07T15:28:43+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/09/07/polish-prosecutors-charge-fifth-suspect-in-a-massive-crypto-probe"
-          }
-        ]
-      },
-      "summary": "Polish prosecutors charge fifth suspect in a massive crypto probe",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-07T23:13:12.661617+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-80651d1c82",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "Stablecoin wallets challenge traditional bank accounts as main consumer money hub",
-      "url": "https://www.coindesk.com/business/2026/09/07/stablecoin-wallets-challenge-traditional-bank-accounts-as-main-consumer-money-hub",
-      "published": "2026-09-07T14:12:15+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/09/07/stablecoin-wallets-challenge-traditional-bank-accounts-as-main-consumer-money-hub"
-          }
-        ]
-      },
-      "summary": "Stablecoin wallets challenge traditional bank accounts as main consumer money hub",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-07T23:13:12.661617+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-26179c63e1",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Bitcoin holds near $80,000 despite renewed Fed rate hike fears as CPI test looms",
-      "url": "https://www.theblock.co/news/markets/2026-09-07-bitcoin-holds-near-80000-despite-renewed-fed-rate-hike-fears-as-cpi-test-looms-413692",
-      "published": "2026-09-07T13:41:02+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/markets/2026-09-07-bitcoin-holds-near-80000-despite-renewed-fed-rate-hike-fears-as-cpi-test-looms-413692"
-          }
-        ]
-      },
-      "summary": "Bitcoin holds near $80,000 despite renewed Fed rate hike fears as CPI test looms",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-07T23:13:12.661617+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-institutional-moves-53354a9886",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Institutional moves",
-      "title": "DBS, Citi say they completed first weekend USD payment between Singapore and US via tokenized deposits",
-      "url": "https://www.theblock.co/news/business/2026-09-07-dbs-citi-say-they-completed-first-weekend-usd-payment-between-singapore-and-us-via-tokenized-deposits-413689",
-      "published": "2026-09-07T13:00:40+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Institutional moves",
-            "url": "https://www.theblock.co/news/business/2026-09-07-dbs-citi-say-they-completed-first-weekend-usd-payment-between-singapore-and-us-via-tokenized-deposits-413689"
-          }
-        ]
-      },
-      "summary": "DBS, Citi say they completed first weekend USD payment between Singapore and US via tokenized deposits",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-07T23:13:12.661617+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-f799e54a48",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "DBS and Citi complete weekend USD payment via Swift’s Digital Ledger using tokenized deposits",
-      "url": "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger",
-      "published": "2026-09-07T12:05:32+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger"
-          }
-        ]
-      },
-      "summary": "DBS and Citi complete weekend USD payment via Swift’s Digital Ledger using tokenized deposits",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-07T23:13:12.661617+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-d01654622f",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "A two-key breach could hand control of $91 billion in USDT to hackers, report finds",
-      "url": "https://www.coindesk.com/tech/2026/09/04/tether-receives-bluechip-rating-upgrade-but-hacken-finds-major-key-security-gaps",
-      "published": "2026-09-07T10:35:23+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/tech/2026/09/04/tether-receives-bluechip-rating-upgrade-but-hacken-finds-major-key-security-gaps"
-          }
-        ]
-      },
-      "summary": "A two-key breach could hand control of $91 billion in USDT to hackers, report finds",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-07T23:13:12.661617+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-d3e35effe6",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "U.S. inflation, Coinbase’s Deribit switch: Crypto Week Ahead",
-      "url": "https://www.coindesk.com/markets/2026/09/07/u-s-inflation-coinbase-s-deribit-switch-crypto-week-ahead",
-      "published": "2026-09-07T08:07:05+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/09/07/u-s-inflation-coinbase-s-deribit-switch-crypto-week-ahead"
-          }
-        ]
-      },
-      "summary": "U.S. inflation, Coinbase’s Deribit switch: Crypto Week Ahead",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-07T23:13:12.661617+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-76686d591a",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Bitcoin network used by exchanges hit by $320 million exploit. Hackers claim they're the 'good guys'",
-      "url": "https://www.coindesk.com/markets/2026/09/07/bitcoin-network-used-by-exchanges-hit-by-usd320-million-exploit-hackers-claim-they-re-the-good-guys",
-      "published": "2026-09-07T03:43:12+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/09/07/bitcoin-network-used-by-exchanges-hit-by-usd320-million-exploit-hackers-claim-they-re-the-good-guys"
-          }
-        ]
-      },
-      "summary": "Bitcoin network used by exchanges hit by $320 million exploit. Hackers claim they're the 'good guys'",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-07T23:13:12.661617+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-ada848358c",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Spot bitcoin ETFs pull in $987 million last week as institutional demand recovers",
-      "url": "https://www.theblock.co/news/markets/2026-09-06-bitcoin-etfs-987-million-weekly-inflow-413639",
-      "published": "2026-09-07T02:15:55+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/markets/2026-09-06-bitcoin-etfs-987-million-weekly-inflow-413639"
-          }
-        ]
-      },
-      "summary": "Spot bitcoin ETFs pull in $987 million last week as institutional demand recovers",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-07T23:13:12.661617+00:00",
-      "date_source": "feed"
-    },
     {
       "id": "global-the-block-market-news-4285bb16cd",
       "jurisdiction": "GLOBAL",
@@ -1921,6 +1705,414 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-09-14T23:39:19.756673+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "uk-bank-of-england-news-b32ebafc04",
+      "jurisdiction": "UK",
+      "source": "Bank of England — News",
+      "title": "Statistical Notice 2026/08 - Changes to the criteria for monthly form BT reporting",
+      "url": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-08",
+      "published": "2026-09-15T09:21:31+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Bank of England — News",
+            "url": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-08"
+          }
+        ]
+      },
+      "summary": "Statistical Notice 2026/08 - Changes to the criteria for monthly form BT reporting",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-6edf9286db",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "‘This one stings’: Clarity Act fails procedural Senate vote — is crypto’s biggest regulatory push dead?",
+      "url": "https://www.theblock.co/news/regulation/2026-09-15-this-one-stings-clarity-act-fails-senate-is-cryptos-biggest-regulatory-push-dead-415135",
+      "published": "2026-09-15T21:24:18+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-15-this-one-stings-clarity-act-fails-senate-is-cryptos-biggest-regulatory-push-dead-415135"
+          }
+        ]
+      },
+      "summary": "‘This one stings’: Clarity Act fails procedural Senate vote — is crypto’s biggest regulatory push dead?",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-8160ab0b3a",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Crypto industry reacts after Clarity Act fails Senate vote",
+      "url": "https://www.coindesk.com/policy/2026/09/15/clarity-act-fails-in-senate-here-is-how-the-crypto-industry-is-reacting",
+      "published": "2026-09-15T19:06:31+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/09/15/clarity-act-fails-in-senate-here-is-how-the-crypto-industry-is-reacting"
+          }
+        ]
+      },
+      "summary": "Crypto industry reacts after Clarity Act fails Senate vote",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-90ca079226",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Clarity Act preliminary vote falls short in Senate amid ethics fight over Trump’s crypto wealth",
+      "url": "https://www.theblock.co/news/regulation/2026-09-15-clarity-act-preliminary-vote-falls-short-in-senate-amid-ethics-fight-over-trumps-crypto-wealth-415010",
+      "published": "2026-09-15T18:57:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-15-clarity-act-preliminary-vote-falls-short-in-senate-amid-ethics-fight-over-trumps-crypto-wealth-415010"
+          }
+        ]
+      },
+      "summary": "Clarity Act preliminary vote falls short in Senate amid ethics fight over Trump’s crypto wealth",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-99e80829f4",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Crypto Clarity Act flames out in failed U.S. Senate vote",
+      "url": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote",
+      "published": "2026-09-15T18:50:58+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote"
+          }
+        ]
+      },
+      "summary": "Crypto Clarity Act flames out in failed U.S. Senate vote",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-cc1a88f71a",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "DOJ charges Robinhood former engineers with front-running crypto listings on Hyperliquid",
+      "url": "https://www.theblock.co/news/regulation/2026-09-15-doj-charges-robinhood-engineers-front-running-crypto-listings-hyperliquid-414865",
+      "published": "2026-09-15T17:50:23+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-15-doj-charges-robinhood-engineers-front-running-crypto-listings-hyperliquid-414865"
+          }
+        ]
+      },
+      "summary": "DOJ charges Robinhood former engineers with front-running crypto listings on Hyperliquid",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-795bb9b80c",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Sen. Elizabeth Warren says she wants a crypto bill, but the Clarity Act just isn’t it",
+      "url": "https://www.theblock.co/news/regulation/2026-09-15-sen-elizabeth-warren-says-she-wants-a-crypto-bill-but-the-clarity-act-just-isnt-it-414869",
+      "published": "2026-09-15T17:49:30+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-15-sen-elizabeth-warren-says-she-wants-a-crypto-bill-but-the-clarity-act-just-isnt-it-414869"
+          }
+        ]
+      },
+      "summary": "Sen. Elizabeth Warren says she wants a crypto bill, but the Clarity Act just isn’t it",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-55bce0f9a3",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "Crypto Clarity Act barrels toward disappointment barring last-minute Senate turnaround",
+      "url": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-barrels-toward-disappointment-barring-last-minute-senate-turnaround",
+      "published": "2026-09-15T15:50:23+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-barrels-toward-disappointment-barring-last-minute-senate-turnaround"
+          }
+        ]
+      },
+      "summary": "Crypto Clarity Act barrels toward disappointment barring last-minute Senate turnaround",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-a724c196be",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Standard Chartered predicts Arbitrum's ARB to rise 70-fold to $10, citing Robinhood Chain revenue",
+      "url": "https://www.coindesk.com/markets/2026/09/15/standard-chartered-expects-arbitrum-s-arb-rising-70-fold-to-usd10-as-robinhood-boosts-its-revenue",
+      "published": "2026-09-15T13:25:52+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/markets/2026/09/15/standard-chartered-expects-arbitrum-s-arb-rising-70-fold-to-usd10-as-robinhood-boosts-its-revenue"
+          }
+        ]
+      },
+      "summary": "Standard Chartered predicts Arbitrum's ARB to rise 70-fold to $10, citing Robinhood Chain revenue",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-66383bd4f2",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "House committee releases sweeping crypto tax bill ahead of Wednesday markup",
+      "url": "https://www.theblock.co/news/regulation/2026-09-15-house-committee-crypto-tax-bill-414824",
+      "published": "2026-09-15T11:52:36+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-15-house-committee-crypto-tax-bill-414824"
+          }
+        ]
+      },
+      "summary": "House committee releases sweeping crypto tax bill ahead of Wednesday markup",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-838198e48f",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "Standard Chartered sees Arbitrum at $10 by end-2030, up 70-fold",
+      "url": "https://www.theblock.co/news/markets/2026-09-15-standard-chartered-sees-arbitrum-at-10-by-end-2030-up-70-fold-414821",
+      "published": "2026-09-15T11:50:30+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/news/markets/2026-09-15-standard-chartered-sees-arbitrum-at-10-by-end-2030-up-70-fold-414821"
+          }
+        ]
+      },
+      "summary": "Standard Chartered sees Arbitrum at $10 by end-2030, up 70-fold",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-aa6294a09d",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Velocity extends Series A to $48M at $200M valuation with backing from Visa, Circle, and Ripple",
+      "url": "https://www.coindesk.com/business/2026/09/10/velocity-extends-series-a-to-usd48m-at-usd200m-valuation-with-backing-from-visa-circle-and-ripple",
+      "published": "2026-09-15T11:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/09/10/velocity-extends-series-a-to-usd48m-at-usd200m-valuation-with-backing-from-visa-circle-and-ripple"
+          }
+        ]
+      },
+      "summary": "Velocity extends Series A to $48M at $200M valuation with backing from Visa, Circle, and Ripple",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-850f05dc54",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Ark Invest sells $14 million in Circle, trims Coinbase as crypto stocks rally",
+      "url": "https://www.theblock.co/news/business/2026-09-15-ark-invest-sells-circle-coinbase-414811",
+      "published": "2026-09-15T09:32:31+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/business/2026-09-15-ark-invest-sells-circle-coinbase-414811"
+          }
+        ]
+      },
+      "summary": "Ark Invest sells $14 million in Circle, trims Coinbase as crypto stocks rally",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-coindesk-china-policy-c29fa2390b",
+      "jurisdiction": "CN",
+      "source": "CoinDesk — China policy",
+      "title": "Hong Kong crypto exchange CoinEx to cease operations after 9 years in business",
+      "url": "https://www.coindesk.com/business/2026/09/15/hong-kong-crypto-exchange-coinex-to-cease-operations-after-9-years-in-business",
+      "published": "2026-09-15T09:30:58+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — China policy",
+            "url": "https://www.coindesk.com/business/2026/09/15/hong-kong-crypto-exchange-coinex-to-cease-operations-after-9-years-in-business"
+          }
+        ]
+      },
+      "summary": "Hong Kong crypto exchange CoinEx to cease operations after 9 years in business",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-8f1ea967f6",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Balancer proposes winding down protocol and distributing treasury to BAL holders",
+      "url": "https://www.theblock.co/news/defi/2026-09-15-balancer-proposes-winding-down-414782",
+      "published": "2026-09-15T05:29:13+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/defi/2026-09-15-balancer-proposes-winding-down-414782"
+          }
+        ]
+      },
+      "summary": "Balancer proposes winding down protocol and distributing treasury to BAL holders",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "cn-the-block-china-policy-2a0d3bb205",
+      "jurisdiction": "CN",
+      "source": "The Block — China policy",
+      "title": "US DOJ seeks $61 million in crypto proceeds from illicit Iranian oil sales laundered on Binance",
+      "url": "https://www.theblock.co/news/regulation/2026-09-15-doj-61-million-crypto-proceeds-iranian-oil-sales-414768",
+      "published": "2026-09-15T04:01:48+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — China policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-15-doj-61-million-crypto-proceeds-iranian-oil-sales-414768"
+          }
+        ]
+      },
+      "summary": "US DOJ seeks $61 million in crypto proceeds from illicit Iranian oil sales laundered on Binance",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-9307e8a8a6",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "U.S. House panel shares crypto tax bill ahead of hearing later this week",
+      "url": "https://www.coindesk.com/policy/2026/09/14/u-s-house-panel-shares-crypto-tax-bill-ahead-of-hearing-later-this-week",
+      "published": "2026-09-15T03:27:38+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/09/14/u-s-house-panel-shares-crypto-tax-bill-ahead-of-hearing-later-this-week"
+          }
+        ]
+      },
+      "summary": "U.S. House panel shares crypto tax bill ahead of hearing later this week",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-15T23:21:04.417206+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -1929,7 +2121,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714579+00:00",
+      "checked_at": "2026-09-15T23:21:04.389776+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1937,7 +2129,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714594+00:00",
+      "checked_at": "2026-09-15T23:21:04.389786+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1945,7 +2137,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714602+00:00",
+      "checked_at": "2026-09-15T23:21:04.389791+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1953,7 +2145,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714608+00:00",
+      "checked_at": "2026-09-15T23:21:04.389795+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1961,7 +2153,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714613+00:00",
+      "checked_at": "2026-09-15T23:21:04.389799+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1969,7 +2161,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714620+00:00",
+      "checked_at": "2026-09-15T23:21:04.389803+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -1977,7 +2169,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714625+00:00",
+      "checked_at": "2026-09-15T23:21:04.389806+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1985,7 +2177,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714630+00:00",
+      "checked_at": "2026-09-15T23:21:04.389810+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -1993,7 +2185,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714635+00:00",
+      "checked_at": "2026-09-15T23:21:04.389812+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2001,7 +2193,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714640+00:00",
+      "checked_at": "2026-09-15T23:21:04.389816+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2009,7 +2201,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714646+00:00",
+      "checked_at": "2026-09-15T23:21:04.389820+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2017,7 +2209,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714651+00:00",
+      "checked_at": "2026-09-15T23:21:04.389824+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2025,7 +2217,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714656+00:00",
+      "checked_at": "2026-09-15T23:21:04.389826+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2033,7 +2225,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714662+00:00",
+      "checked_at": "2026-09-15T23:21:04.389828+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2041,7 +2233,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714667+00:00",
+      "checked_at": "2026-09-15T23:21:04.389831+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2049,7 +2241,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714672+00:00",
+      "checked_at": "2026-09-15T23:21:04.389833+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2057,7 +2249,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714676+00:00",
+      "checked_at": "2026-09-15T23:21:04.389835+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2065,7 +2257,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714682+00:00",
+      "checked_at": "2026-09-15T23:21:04.389837+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2073,7 +2265,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714687+00:00",
+      "checked_at": "2026-09-15T23:21:04.389839+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2081,7 +2273,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714691+00:00",
+      "checked_at": "2026-09-15T23:21:04.389841+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2089,15 +2281,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714696+00:00",
+      "checked_at": "2026-09-15T23:21:04.389843+00:00",
       "jurisdiction": "SG"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
-      "note": "Fetch failed this run (no parseable items); 1 consecutive failure — self-heal at 3.",
+      "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714703+00:00",
+      "checked_at": "2026-09-15T23:21:04.389845+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2105,7 +2297,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714708+00:00",
+      "checked_at": "2026-09-15T23:21:04.389848+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2113,7 +2305,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714713+00:00",
+      "checked_at": "2026-09-15T23:21:04.389849+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2121,7 +2313,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714718+00:00",
+      "checked_at": "2026-09-15T23:21:04.389851+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2129,7 +2321,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-14T23:39:19.714723+00:00",
+      "checked_at": "2026-09-15T23:21:04.389853+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2137,7 +2329,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714728+00:00",
+      "checked_at": "2026-09-15T23:21:04.389856+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2145,7 +2337,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714734+00:00",
+      "checked_at": "2026-09-15T23:21:04.389857+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2153,7 +2345,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714739+00:00",
+      "checked_at": "2026-09-15T23:21:04.389860+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2161,7 +2353,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714746+00:00",
+      "checked_at": "2026-09-15T23:21:04.389862+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2169,7 +2361,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714751+00:00",
+      "checked_at": "2026-09-15T23:21:04.389864+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2177,7 +2369,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714756+00:00",
+      "checked_at": "2026-09-15T23:21:04.389866+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2185,15 +2377,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.714759+00:00",
+      "checked_at": "2026-09-15T23:21:04.389868+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 34 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
+      "note": "Failing for 35 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.755667+00:00",
+      "checked_at": "2026-09-15T23:21:04.416517+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2201,7 +2393,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-14T23:39:19.755678+00:00",
+      "checked_at": "2026-09-15T23:21:04.416536+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2211,10 +2403,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-09-01T22:55:50.638084+00:00",
-      "note": "Daily fetch: 8 new items surfaced; 34/36 sources ok"
-    },
     {
       "at": "2026-09-02T22:56:54.422936+00:00",
       "note": "Daily fetch: 8 new items surfaced; 34/36 sources ok"
@@ -2250,6 +2438,10 @@
     {
       "at": "2026-09-14T23:39:19.756673+00:00",
       "note": "Daily fetch: 20 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-09-15T23:21:04.417206+00:00",
+      "note": "Daily fetch: 17 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
