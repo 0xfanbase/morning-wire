@@ -1,271 +1,7 @@
 {
-  "generated_at": "2026-09-20T22:50:37.713327+00:00",
+  "generated_at": "2026-09-21T23:46:10.511688+00:00",
   "top_of_mind": "",
   "items": [
-    {
-      "id": "global-the-block-market-news-de2e37cad3",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Symbiosis says it recovered 15 BTC after Bitcoin bridge exploit, offers attacker 20% bounty",
-      "url": "https://www.theblock.co/news/defi/2026-09-13-symbiosis-says-it-recovered-15-btc-after-bitcoin-bridge-exploit-offers-attacker-20-bounty-414568",
-      "published": "2026-09-13T21:51:11+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/defi/2026-09-13-symbiosis-says-it-recovered-15-btc-after-bitcoin-bridge-exploit-offers-attacker-20-bounty-414568"
-          }
-        ]
-      },
-      "summary": "Symbiosis says it recovered 15 BTC after Bitcoin bridge exploit, offers attacker 20% bounty",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-fdc0c92ec4",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Is Clarity dead? A vibes-based analysis: State of Crypto",
-      "url": "https://www.coindesk.com/policy/2026/09/13/is-clarity-dead-a-vibes-based-analysis-state-of-crypto",
-      "published": "2026-09-13T18:45:08+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/09/13/is-clarity-dead-a-vibes-based-analysis-state-of-crypto"
-          }
-        ]
-      },
-      "summary": "Is Clarity dead? A vibes-based analysis: State of Crypto",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-6e929ef50b",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Mexican authorities raid hidden crypto mine, suspecting power theft and money laundering",
-      "url": "https://www.theblock.co/news/ecosystems/2026-09-13-mexican-authorities-raid-hidden-crypto-mine-suspecting-power-theft-and-money-laundering-414564",
-      "published": "2026-09-13T18:29:23+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/ecosystems/2026-09-13-mexican-authorities-raid-hidden-crypto-mine-suspecting-power-theft-and-money-laundering-414564"
-          }
-        ]
-      },
-      "summary": "Mexican authorities raid hidden crypto mine, suspecting power theft and money laundering",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-6ef80d860a",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Circle's $400M Tazapay deal buys emerging market links that take ‘years to build’",
-      "url": "https://www.coindesk.com/business/2026/09/13/circle-s-usd400m-tazapay-deal-buys-emerging-market-links-that-take-years-to-build",
-      "published": "2026-09-13T13:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/business/2026/09/13/circle-s-usd400m-tazapay-deal-buys-emerging-market-links-that-take-years-to-build"
-          }
-        ]
-      },
-      "summary": "Circle's $400M Tazapay deal buys emerging market links that take ‘years to build’",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-e61c161717",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Crypto's Clarity Act is a Schrödinger's cat in life-death limbo as U.S. Senate returns",
-      "url": "https://www.coindesk.com/news-analysis/2026/09/11/crypto-s-clarity-act-is-a-schroedinger-s-cat-in-life-death-limbo-as-u-s-senate-returns",
-      "published": "2026-09-13T12:00:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/news-analysis/2026/09/11/crypto-s-clarity-act-is-a-schroedinger-s-cat-in-life-death-limbo-as-u-s-senate-returns"
-          }
-        ]
-      },
-      "summary": "Crypto's Clarity Act is a Schrödinger's cat in life-death limbo as U.S. Senate returns",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-df5188b033",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Crypto billionaires Ben Delo and Christopher Harborne each donate £36 million to Farage’s Reform UK",
-      "url": "https://www.theblock.co/news/regulation/2026-09-12-crypto-billionaires-ben-delo-and-christopher-harborne-each-donate-36-million-to-farages-reform-uk-414509",
-      "published": "2026-09-12T16:18:05+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-09-12-crypto-billionaires-ben-delo-and-christopher-harborne-each-donate-36-million-to-farages-reform-uk-414509"
-          }
-        ]
-      },
-      "summary": "Crypto billionaires Ben Delo and Christopher Harborne each donate £36 million to Farage’s Reform UK",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-6eddc517e1",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Bitcoin, ether rise as inflation data does little to alter Fed interest rate outlook",
-      "url": "https://www.theblock.co/news/markets/2026-09-11-bitcoin-ether-rise-inflation-data-does-little-alter-fed-interest-rate-outlook-414287",
-      "published": "2026-09-11T17:40:54+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/markets/2026-09-11-bitcoin-ether-rise-inflation-data-does-little-alter-fed-interest-rate-outlook-414287"
-          }
-        ]
-      },
-      "summary": "Bitcoin, ether rise as inflation data does little to alter Fed interest rate outlook",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-institutional-moves-a5ac3608df",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Institutional moves",
-      "title": "‘DeFi’s federal bank’: Standard Chartered sees SKY token rising fivefold by end-2028",
-      "url": "https://www.theblock.co/news/markets/2026-09-11-standard-chartered-sky-token-defi-federal-bank-414280",
-      "published": "2026-09-11T16:48:11+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Institutional moves",
-            "url": "https://www.theblock.co/news/markets/2026-09-11-standard-chartered-sky-token-defi-federal-bank-414280"
-          }
-        ]
-      },
-      "summary": "‘DeFi’s federal bank’: Standard Chartered sees SKY token rising fivefold by end-2028",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-17227dcdc8",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "India’s SEBI Demat 2.0 pilot debuts with over $100 million in tokenized bonds",
-      "url": "https://www.theblock.co/news/regulation/2026-09-11-indias-sebi-demat-2-0-pilot-debuts-with-over-100-million-in-tokenized-bonds-414252",
-      "published": "2026-09-11T12:09:12+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-09-11-indias-sebi-demat-2-0-pilot-debuts-with-over-100-million-in-tokenized-bonds-414252"
-          }
-        ]
-      },
-      "summary": "India’s SEBI Demat 2.0 pilot debuts with over $100 million in tokenized bonds",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-74ab880356",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "‘Return the bitcoin’: Blockstream refuses ransom demand for remaining 600 BTC from Liquid exploit",
-      "url": "https://www.theblock.co/news/ecosystems/2026-09-11-return-the-bitcoin-blockstream-refuses-ransom-demand-for-remaining-600-btc-from-liquid-exploit-414247",
-      "published": "2026-09-11T11:21:17+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/ecosystems/2026-09-11-return-the-bitcoin-blockstream-refuses-ransom-demand-for-remaining-600-btc-from-liquid-exploit-414247"
-          }
-        ]
-      },
-      "summary": "‘Return the bitcoin’: Blockstream refuses ransom demand for remaining 600 BTC from Liquid exploit",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-trm-labs-insights-237333d299",
-      "jurisdiction": "GLOBAL",
-      "source": "TRM Labs — Insights",
-      "title": "As Much as 30% of a Blockchain's Transfers Are Spam. Here's What It Means for Sanctions Screening.",
-      "url": "https://www.trmlabs.com/resources/blog/as-much-as-30-of-a-blockchains-transfers-are-spam-heres-what-it-means-for-sanctions-screening",
-      "published": "2026-09-11T00:00:00+08:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "TRM Labs — Insights",
-            "url": "https://www.trmlabs.com/resources/blog/as-much-as-30-of-a-blockchains-transfers-are-spam-heres-what-it-means-for-sanctions-screening"
-          }
-        ]
-      },
-      "summary": "As Much as 30% of a Blockchain's Transfers Are Spam. Here's What It Means for Sanctions Screening.",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-13T22:45:36.528332+00:00",
-      "date_source": "page"
-    },
     {
       "id": "eu-european-banking-authority-news-5b841f80f5",
       "jurisdiction": "EU",
@@ -2353,6 +2089,174 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-09-20T22:50:37.713327+00:00",
       "date_source": "page"
+    },
+    {
+      "id": "global-global-digital-finance-gdf-news-981dc2ce09",
+      "jurisdiction": "GLOBAL",
+      "source": "Global Digital Finance (GDF) — News",
+      "title": "Global Stablecoin Regulatory Frameworks: Closing the Gap",
+      "url": "https://www.gdf.io/blog/global-stablecoin-regulatory-frameworks-closing-the-gap/",
+      "published": "2026-09-21T12:11:53+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Global Digital Finance (GDF) — News",
+            "url": "https://www.gdf.io/blog/global-stablecoin-regulatory-frameworks-closing-the-gap/"
+          }
+        ]
+      },
+      "summary": "Global Stablecoin Regulatory Frameworks: Closing the Gap",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-21T23:46:10.511688+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-dba011b33e",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "Why this investment bank expects little demand for tokenized stocks despite SEC’s new trading rules",
+      "url": "https://www.coindesk.com/markets/2026/09/21/why-this-investment-bank-sees-little-demand-for-tokenized-stocks-despite-sec-s-new-trading-rules",
+      "published": "2026-09-21T19:08:40+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/markets/2026/09/21/why-this-investment-bank-sees-little-demand-for-tokenized-stocks-despite-sec-s-new-trading-rules"
+          }
+        ]
+      },
+      "summary": "Why this investment bank expects little demand for tokenized stocks despite SEC’s new trading rules",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-21T23:46:10.511688+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-8b36267e3b",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Clarity Act fallout: crypto’s Fairshake PAC commits $30 million against Sherrod Brown",
+      "url": "https://www.theblock.co/news/regulation/2026-09-21-clarity-act-fallout-cryptos-fairshake-pac-commits-30-million-against-sherrod-brown-415962",
+      "published": "2026-09-21T16:35:43+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-21-clarity-act-fallout-cryptos-fairshake-pac-commits-30-million-against-sherrod-brown-415962"
+          }
+        ]
+      },
+      "summary": "Clarity Act fallout: crypto’s Fairshake PAC commits $30 million against Sherrod Brown",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-21T23:46:10.511688+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-c6484bf69a",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "ECB plans to buy tokenized bonds with its own funds",
+      "url": "https://www.coindesk.com/policy/2026/09/21/ecb-announces-it-will-invest-in-tokenized-securities-via-new-pontes-platform",
+      "published": "2026-09-21T15:00:47+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/09/21/ecb-announces-it-will-invest-in-tokenized-securities-via-new-pontes-platform"
+          }
+        ]
+      },
+      "summary": "ECB plans to buy tokenized bonds with its own funds",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-21T23:46:10.511688+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-ff0fe9e05b",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Coinbase opens IPO allocations to US customers, starting with Oura",
+      "url": "https://www.theblock.co/news/business/2026-09-21-coinbase-opens-ipo-allocations-us-customers-starting-oura-415942",
+      "published": "2026-09-21T14:47:12+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/business/2026-09-21-coinbase-opens-ipo-allocations-us-customers-starting-oura-415942"
+          }
+        ]
+      },
+      "summary": "Coinbase opens IPO allocations to US customers, starting with Oura",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-21T23:46:10.511688+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-75a775d648",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "ECB deploys Pontes platform to settle wholesale tokenized assets in central-bank money",
+      "url": "https://www.coindesk.com/business/2026/09/21/ecb-deploys-pontes-platform-to-settle-wholesale-tokenized-assets-in-central-bank-money",
+      "published": "2026-09-21T11:18:55+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/09/21/ecb-deploys-pontes-platform-to-settle-wholesale-tokenized-assets-in-central-bank-money"
+          }
+        ]
+      },
+      "summary": "ECB deploys Pontes platform to settle wholesale tokenized assets in central-bank money",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-21T23:46:10.511688+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-ce53b65dbf",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "X sues UK duo over alleged $277K crypto account payout fraud",
+      "url": "https://www.theblock.co/news/regulation/2026-09-21-x-sues-uk-duo-over-alleged-277k-crypto-account-payout-fraud-415889",
+      "published": "2026-09-21T09:24:27+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-21-x-sues-uk-duo-over-alleged-277k-crypto-account-payout-fraud-415889"
+          }
+        ]
+      },
+      "summary": "X sues UK duo over alleged $277K crypto account payout fraud",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-21T23:46:10.511688+00:00",
+      "date_source": "feed"
     }
   ],
   "source_health": [
@@ -2361,7 +2265,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618210+00:00",
+      "checked_at": "2026-09-21T23:46:10.410094+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2369,7 +2273,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618226+00:00",
+      "checked_at": "2026-09-21T23:46:10.410106+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2377,7 +2281,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618234+00:00",
+      "checked_at": "2026-09-21T23:46:10.410112+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2385,7 +2289,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618241+00:00",
+      "checked_at": "2026-09-21T23:46:10.410116+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2393,7 +2297,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618246+00:00",
+      "checked_at": "2026-09-21T23:46:10.410120+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2401,7 +2305,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618252+00:00",
+      "checked_at": "2026-09-21T23:46:10.410124+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2409,7 +2313,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618258+00:00",
+      "checked_at": "2026-09-21T23:46:10.410128+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2417,7 +2321,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618263+00:00",
+      "checked_at": "2026-09-21T23:46:10.410132+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2425,7 +2329,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618268+00:00",
+      "checked_at": "2026-09-21T23:46:10.410136+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2433,7 +2337,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618273+00:00",
+      "checked_at": "2026-09-21T23:46:10.410139+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2441,7 +2345,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618279+00:00",
+      "checked_at": "2026-09-21T23:46:10.410142+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2449,7 +2353,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618284+00:00",
+      "checked_at": "2026-09-21T23:46:10.410145+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2457,7 +2361,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618289+00:00",
+      "checked_at": "2026-09-21T23:46:10.410148+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2465,7 +2369,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618293+00:00",
+      "checked_at": "2026-09-21T23:46:10.410151+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2473,7 +2377,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618298+00:00",
+      "checked_at": "2026-09-21T23:46:10.410154+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2481,7 +2385,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618303+00:00",
+      "checked_at": "2026-09-21T23:46:10.410157+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2489,7 +2393,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618308+00:00",
+      "checked_at": "2026-09-21T23:46:10.410159+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2497,7 +2401,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618313+00:00",
+      "checked_at": "2026-09-21T23:46:10.410162+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2505,7 +2409,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618319+00:00",
+      "checked_at": "2026-09-21T23:46:10.410165+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2513,7 +2417,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618324+00:00",
+      "checked_at": "2026-09-21T23:46:10.410169+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2521,7 +2425,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618329+00:00",
+      "checked_at": "2026-09-21T23:46:10.410172+00:00",
       "jurisdiction": "SG"
     },
     {
@@ -2529,7 +2433,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618334+00:00",
+      "checked_at": "2026-09-21T23:46:10.410175+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2537,15 +2441,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618339+00:00",
+      "checked_at": "2026-09-21T23:46:10.410178+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 1 consecutive failure — self-heal at 3.",
+      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 2 consecutive failures — self-heal at 3.",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618357+00:00",
+      "checked_at": "2026-09-21T23:46:10.410183+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2553,7 +2457,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618362+00:00",
+      "checked_at": "2026-09-21T23:46:10.410186+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2561,7 +2465,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-20T22:50:37.618367+00:00",
+      "checked_at": "2026-09-21T23:46:10.410189+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2569,7 +2473,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618372+00:00",
+      "checked_at": "2026-09-21T23:46:10.410192+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2577,7 +2481,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618377+00:00",
+      "checked_at": "2026-09-21T23:46:10.410196+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2585,7 +2489,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618382+00:00",
+      "checked_at": "2026-09-21T23:46:10.410199+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2593,7 +2497,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618387+00:00",
+      "checked_at": "2026-09-21T23:46:10.410202+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2601,7 +2505,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618392+00:00",
+      "checked_at": "2026-09-21T23:46:10.410205+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2609,7 +2513,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618397+00:00",
+      "checked_at": "2026-09-21T23:46:10.410208+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2617,15 +2521,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.618403+00:00",
+      "checked_at": "2026-09-21T23:46:10.410211+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 38 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml/) — verify manually.",
+      "note": "Failing for 39 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml/) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.712244+00:00",
+      "checked_at": "2026-09-21T23:46:10.510831+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2633,7 +2537,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-20T22:50:37.712262+00:00",
+      "checked_at": "2026-09-21T23:46:10.510860+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2643,10 +2547,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-09-07T23:13:12.661617+00:00",
-      "note": "Daily fetch: 9 new items surfaced; 34/36 sources ok"
-    },
     {
       "at": "2026-09-08T23:07:06.213001+00:00",
       "note": "Daily fetch: 13 new items surfaced; 34/36 sources ok"
@@ -2682,6 +2582,10 @@
     {
       "at": "2026-09-20T22:50:37.713327+00:00",
       "note": "Daily fetch: 13 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-09-21T23:46:10.511688+00:00",
+      "note": "Daily fetch: 7 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
