@@ -1,463 +1,7 @@
 {
-  "generated_at": "2026-09-23T23:24:06.222771+00:00",
+  "generated_at": "2026-09-24T23:43:41.161504+00:00",
   "top_of_mind": "",
   "items": [
-    {
-      "id": "uk-financial-conduct-authority-news-2494c0447f",
-      "jurisdiction": "UK",
-      "source": "Financial Conduct Authority — News",
-      "title": "Crypto firms get guidance on how the new regime applies",
-      "url": "https://www.fca.org.uk/news/press-releases/crypto-firms-get-guidance-how-new-regime-applies",
-      "published": "2026-09-16T23:27:59.379524+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "official",
-        "sources": [
-          {
-            "name": "Financial Conduct Authority — News",
-            "url": "https://www.fca.org.uk/news/press-releases/crypto-firms-get-guidance-how-new-regime-applies"
-          }
-        ]
-      },
-      "summary": "Crypto firms get guidance on how the new regime applies",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "fetch_time"
-    },
-    {
-      "id": "global-acams-today-6a50a1a88e",
-      "jurisdiction": "GLOBAL",
-      "source": "ACAMS Today",
-      "title": "Venezuela and the future of sanctions enforcement in a crypto-enabled world",
-      "url": "https://www.acams.org/en/opinion/venezuela-and-future-sanctions-enforcement-crypto-enabled-world",
-      "published": "2026-09-16T23:28:52.589308+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "ACAMS Today",
-            "url": "https://www.acams.org/en/opinion/venezuela-and-future-sanctions-enforcement-crypto-enabled-world"
-          }
-        ]
-      },
-      "summary": "Venezuela and the future of sanctions enforcement in a crypto-enabled world",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "fetch_time"
-    },
-    {
-      "id": "global-the-block-policy-1cd157a41e",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Bitcoin, ether swing after unanimous quarter-point Fed rate hike as Warsh takes aim at inflation",
-      "url": "https://www.theblock.co/news/markets/2026-09-16-bitcoin-ether-swing-unanimous-quarter-point-fed-rate-hike-warsh-aim-inflation-415307",
-      "published": "2026-09-16T20:02:16+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/markets/2026-09-16-bitcoin-ether-swing-unanimous-quarter-point-fed-rate-hike-warsh-aim-inflation-415307"
-          }
-        ]
-      },
-      "summary": "Bitcoin, ether swing after unanimous quarter-point Fed rate hike as Warsh takes aim at inflation",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-65a4f9ccc5",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Revolut hackers demand $3 million in Monero, threaten to sell customer data",
-      "url": "https://www.coindesk.com/markets/2026/09/16/revolut-hackers-demand-usd3-million-in-monero-threaten-to-sell-customer-data",
-      "published": "2026-09-16T19:07:34+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/09/16/revolut-hackers-demand-usd3-million-in-monero-threaten-to-sell-customer-data"
-          }
-        ]
-      },
-      "summary": "Revolut hackers demand $3 million in Monero, threaten to sell customer data",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-8879db8036",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "‘Go time’: SEC, CFTC prepare to push crypto rules as Clarity Act stalls in Senate",
-      "url": "https://www.theblock.co/news/regulation/2026-09-16-go-time-sec-cftc-prepare-push-crypto-rules-clarity-act-stalls-senate-415281",
-      "published": "2026-09-16T18:06:15+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-09-16-go-time-sec-cftc-prepare-push-crypto-rules-clarity-act-stalls-senate-415281"
-          }
-        ]
-      },
-      "summary": "‘Go time’: SEC, CFTC prepare to push crypto rules as Clarity Act stalls in Senate",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-a0f54b5492",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "House panel approves first federal crypto tax framework, one day after Senate’s Clarity Act stumbles",
-      "url": "https://www.theblock.co/news/regulation/2026-09-16-house-panel-approves-first-federal-crypto-tax-framework-one-day-after-senates-clarity-act-stumbles-415293",
-      "published": "2026-09-16T17:29:50+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-09-16-house-panel-approves-first-federal-crypto-tax-framework-one-day-after-senates-clarity-act-stumbles-415293"
-          }
-        ]
-      },
-      "summary": "House panel approves first federal crypto tax framework, one day after Senate’s Clarity Act stumbles",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-chainalysis-blog-7e44c97918",
-      "jurisdiction": "GLOBAL",
-      "source": "Chainalysis — Blog",
-      "title": "Chainalysis Supports Arc with Automatic Token Support",
-      "url": "https://www.chainalysis.com/blog/chainalysis-supports-arc-with-automatic-token-support/",
-      "published": "2026-09-16T17:21:44+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "Chainalysis — Blog",
-            "url": "https://www.chainalysis.com/blog/chainalysis-supports-arc-with-automatic-token-support/"
-          }
-        ]
-      },
-      "summary": "Chainalysis Supports Arc with Automatic Token Support",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-1280da05fd",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Aave founder pitches ‘Uber path’ for DeFi after Clarity Act fails Senate vote",
-      "url": "https://www.theblock.co/news/defi/2026-09-16-aave-founder-pitches-uber-path-defi-clarity-act-fails-senate-vote-415278",
-      "published": "2026-09-16T17:08:29+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/defi/2026-09-16-aave-founder-pitches-uber-path-defi-clarity-act-fails-senate-vote-415278"
-          }
-        ]
-      },
-      "summary": "Aave founder pitches ‘Uber path’ for DeFi after Clarity Act fails Senate vote",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-91a6708dcc",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "JPMorgan says Clarity Act ‘not fully dead,’ but passage window ‘extremely narrow’",
-      "url": "https://www.theblock.co/news/regulation/2026-09-16-jpmorgan-clarity-act-crypto-bill-415280",
-      "published": "2026-09-16T17:01:22+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-09-16-jpmorgan-clarity-act-crypto-bill-415280"
-          }
-        ]
-      },
-      "summary": "JPMorgan says Clarity Act ‘not fully dead,’ but passage window ‘extremely narrow’",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-79bbcc72c4",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "U.S. House's tax committee advances crypto tax bill in wake of Clarity Act loss",
-      "url": "https://www.coindesk.com/policy/2026/09/16/u-s-house-s-tax-committee-advances-crypto-tax-bill-in-wake-of-clarity-act-loss",
-      "published": "2026-09-16T16:21:44+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/09/16/u-s-house-s-tax-committee-advances-crypto-tax-bill-in-wake-of-clarity-act-loss"
-          }
-        ]
-      },
-      "summary": "U.S. House's tax committee advances crypto tax bill in wake of Clarity Act loss",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-policy-be28a93c26",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Policy",
-      "title": "Hamas military wing told donors to avoid sending crypto directly from Binance, DOJ filing shows",
-      "url": "https://www.coindesk.com/policy/2026/09/16/hamas-military-wing-told-donors-to-avoid-binance-use-bybit-okx-and-others-instead",
-      "published": "2026-09-16T15:25:41+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Policy",
-            "url": "https://www.coindesk.com/policy/2026/09/16/hamas-military-wing-told-donors-to-avoid-binance-use-bybit-okx-and-others-instead"
-          }
-        ]
-      },
-      "summary": "Hamas military wing told donors to avoid sending crypto directly from Binance, DOJ filing shows",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-policy-e248debfbe",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Policy",
-      "title": "Bernstein says Clarity Act failure allows stablecoin rewards on idle balances to continue, expects ‘swift’ SEC and CFTC rulemaking",
-      "url": "https://www.theblock.co/news/regulation/2026-09-16-bernstein-says-clarity-act-failure-allows-stablecoin-rewards-on-idle-balances-to-continue-expects-swift-sec-and-cftc-rulemaking-415263",
-      "published": "2026-09-16T12:47:59+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Policy",
-            "url": "https://www.theblock.co/news/regulation/2026-09-16-bernstein-says-clarity-act-failure-allows-stablecoin-rewards-on-idle-balances-to-continue-expects-swift-sec-and-cftc-rulemaking-415263"
-          }
-        ]
-      },
-      "summary": "Bernstein says Clarity Act failure allows stablecoin rewards on idle balances to continue, expects ‘swift’ SEC and CFTC rulemaking",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-1d851e0a1d",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Bitcoin ETFs shed $450 million as Clarity Act fails",
-      "url": "https://www.coindesk.com/markets/2026/09/16/bitcoin-etfs-shed-usd450-million-as-clarity-act-fails",
-      "published": "2026-09-16T10:48:44+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/09/16/bitcoin-etfs-shed-usd450-million-as-clarity-act-fails"
-          }
-        ]
-      },
-      "summary": "Bitcoin ETFs shed $450 million as Clarity Act fails",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-institutional-moves-d522ced4f1",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Institutional moves",
-      "title": "Deutsche Bank close to debuting crypto custody for institutions",
-      "url": "https://www.coindesk.com/business/2026/09/16/deutsche-bank-nears-crypto-custody-service-debut-for-institutional-clients",
-      "published": "2026-09-16T10:46:28+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Institutional moves",
-            "url": "https://www.coindesk.com/business/2026/09/16/deutsche-bank-nears-crypto-custody-service-debut-for-institutional-clients"
-          }
-        ]
-      },
-      "summary": "Deutsche Bank close to debuting crypto custody for institutions",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-institutional-moves-11be1d3f8d",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Institutional moves",
-      "title": "Circle launches Arc mainnet with BlackRock and Visa among validators, mints 10 billion ARC tokens",
-      "url": "https://www.theblock.co/news/ecosystems/2026-09-16-circle-launches-arc-mainnet-with-blackrock-and-visa-among-validators-mints-10-billion-arc-tokens-415250",
-      "published": "2026-09-16T10:30:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Institutional moves",
-            "url": "https://www.theblock.co/news/ecosystems/2026-09-16-circle-launches-arc-mainnet-with-blackrock-and-visa-among-validators-mints-10-billion-arc-tokens-415250"
-          }
-        ]
-      },
-      "summary": "Circle launches Arc mainnet with BlackRock and Visa among validators, mints 10 billion ARC tokens",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-0a8553c3a3",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Circle debuts Arc blockchain which Jeremy Allaire calls ‘more consequential’ than USDC",
-      "url": "https://www.coindesk.com/business/2026/09/15/circle-debuts-arc-blockchain-which-jeremy-allaire-calls-more-consequential-than-usdc",
-      "published": "2026-09-16T10:30:00+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/business/2026/09/15/circle-debuts-arc-blockchain-which-jeremy-allaire-calls-more-consequential-than-usdc"
-          }
-        ]
-      },
-      "summary": "Circle debuts Arc blockchain which Jeremy Allaire calls ‘more consequential’ than USDC",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-institutional-moves-4dacf41fdc",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Institutional moves",
-      "title": "Deutsche Bank plans bitcoin, ether custody for institutional clients in Europe",
-      "url": "https://www.theblock.co/news/business/2026-09-16-deutsche-bank-plans-bitcoin-ether-custody-for-institutional-clients-in-europe-415251",
-      "published": "2026-09-16T10:05:28+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Institutional moves",
-            "url": "https://www.theblock.co/news/business/2026-09-16-deutsche-bank-plans-bitcoin-ether-custody-for-institutional-clients-in-europe-415251"
-          }
-        ]
-      },
-      "summary": "Deutsche Bank plans bitcoin, ether custody for institutional clients in Europe",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-coindesk-market-news-30aeec8ffb",
-      "jurisdiction": "GLOBAL",
-      "source": "CoinDesk — Market news",
-      "title": "Bitcoin's Coinbase premium sinks to one-month low, here’s why",
-      "url": "https://www.coindesk.com/markets/2026/09/16/bitcoin-s-coinbase-premium-sinks-to-one-month-low-here-s-why",
-      "published": "2026-09-16T09:57:12+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "CoinDesk — Market news",
-            "url": "https://www.coindesk.com/markets/2026/09/16/bitcoin-s-coinbase-premium-sinks-to-one-month-low-here-s-why"
-          }
-        ]
-      },
-      "summary": "Bitcoin's Coinbase premium sinks to one-month low, here’s why",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
-    {
-      "id": "global-the-block-market-news-d6ca1c709a",
-      "jurisdiction": "GLOBAL",
-      "source": "The Block — Market news",
-      "title": "Underdog sues Connecticut to stop sports prediction market crackdown",
-      "url": "https://www.theblock.co/news/regulation/2026-09-16-underdog-sues-connecticut-415242",
-      "published": "2026-09-16T07:08:26+00:00",
-      "type": "news",
-      "priority": "normal",
-      "status": "new",
-      "verification": {
-        "level": "single_source",
-        "sources": [
-          {
-            "name": "The Block — Market news",
-            "url": "https://www.theblock.co/news/regulation/2026-09-16-underdog-sues-connecticut-415242"
-          }
-        ]
-      },
-      "summary": "Underdog sues Connecticut to stop sports prediction market crackdown",
-      "so_what": "Review the source directly; automated analysis unavailable.",
-      "first_seen": "2026-09-16T23:29:01.421162+00:00",
-      "date_source": "feed"
-    },
     {
       "id": "uk-financial-conduct-authority-news-7e0c99d210",
       "jurisdiction": "UK",
@@ -2017,6 +1561,462 @@
       "so_what": "Review the source directly; automated analysis unavailable.",
       "first_seen": "2026-09-23T23:24:06.222771+00:00",
       "date_source": "feed"
+    },
+    {
+      "id": "us-federal-reserve-press-releases-a09909ffdb",
+      "jurisdiction": "US",
+      "source": "Federal Reserve — Press releases",
+      "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+      "published": "2026-09-24T18:30:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Federal Reserve — Press releases",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm"
+          }
+        ]
+      },
+      "summary": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "us-commodity-futures-trading-commission-press-releases-303690b946",
+      "jurisdiction": "US",
+      "source": "Commodity Futures Trading Commission — Press releases",
+      "title": "CFTC Staff Releases Updates to FAQs Concerning Registrants and Registered Entity Activities Relating to Crypto Assets and Blockchain Technologies",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/9303-26",
+      "published": "2026-09-24T14:46:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Commodity Futures Trading Commission — Press releases",
+            "url": "https://www.cftc.gov/PressRoom/PressReleases/9303-26"
+          }
+        ]
+      },
+      "summary": "CFTC Staff Releases Updates to FAQs Concerning Registrants and Registered Entity Activities Relating to Crypto Assets and Blockchain Technologies",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-global-digital-finance-gdf-news-8c321705ca",
+      "jurisdiction": "GLOBAL",
+      "source": "Global Digital Finance (GDF) — News",
+      "title": "Bank of England Stablecoin Roundtables Readout | 10 September 2026",
+      "url": "https://www.gdf.io/blog/bank-of-england-stablecoin-roundtables-readout-10-september-2026/",
+      "published": "2026-09-24T12:00:16+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "Global Digital Finance (GDF) — News",
+            "url": "https://www.gdf.io/blog/bank-of-england-stablecoin-roundtables-readout-10-september-2026/"
+          }
+        ]
+      },
+      "summary": "Bank of England Stablecoin Roundtables Readout | 10 September 2026",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "eu-european-banking-authority-news-07ccfd44d4",
+      "jurisdiction": "EU",
+      "source": "European Banking Authority — News",
+      "title": "The EBA identifies priorities for the review of MiCA",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-identifies-priorities-review-mica",
+      "published": "2026-09-24T07:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "official",
+        "sources": [
+          {
+            "name": "European Banking Authority — News",
+            "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-identifies-priorities-review-mica"
+          }
+        ]
+      },
+      "summary": "The EBA identifies priorities for the review of MiCA",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-d10033f80e",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "U.S. Federal Reserve moves on proposals to implement GENIUS Act for stablecoins",
+      "url": "https://www.coindesk.com/policy/2026/09/24/u-s-federal-reserve-moves-on-proposals-to-implement-genius-act-for-stablecoins",
+      "published": "2026-09-24T22:28:49+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/09/24/u-s-federal-reserve-moves-on-proposals-to-implement-genius-act-for-stablecoins"
+          }
+        ]
+      },
+      "summary": "U.S. Federal Reserve moves on proposals to implement GENIUS Act for stablecoins",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-09fac5b89d",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Crypto exchange Bitget says $352 million affected in a hack, claims user funds are 'safe'",
+      "url": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe",
+      "published": "2026-09-24T21:59:32+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe"
+          }
+        ]
+      },
+      "summary": "Crypto exchange Bitget says $352 million affected in a hack, claims user funds are 'safe'",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-policy-52b33e9c1b",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Policy",
+      "title": "Fed proposes reserve limits, capital standards for stablecoin issuers under GENIUS Act",
+      "url": "https://www.theblock.co/news/regulation/2026-09-24-fed-proposes-reserve-limits-capital-standards-stablecoin-issuers-genius-act-416336",
+      "published": "2026-09-24T20:19:46+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Policy",
+            "url": "https://www.theblock.co/news/regulation/2026-09-24-fed-proposes-reserve-limits-capital-standards-stablecoin-issuers-genius-act-416336"
+          }
+        ]
+      },
+      "summary": "Fed proposes reserve limits, capital standards for stablecoin issuers under GENIUS Act",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-181a8ca894",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "U.S. commodities firms can invest in tokenized assets, use blockchain records: CFTC",
+      "url": "https://www.coindesk.com/policy/2026/09/24/u-s-commodities-firms-can-invest-in-tokenized-assets-use-blockchain-records-cftc",
+      "published": "2026-09-24T20:04:46+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/09/24/u-s-commodities-firms-can-invest-in-tokenized-assets-use-blockchain-records-cftc"
+          }
+        ]
+      },
+      "summary": "U.S. commodities firms can invest in tokenized assets, use blockchain records: CFTC",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-98d5b1f498",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "JPMorgan says bitcoin crossing $85,000 production cost could ease miner selling pressure",
+      "url": "https://www.theblock.co/news/markets/2026-09-24-jpmorgan-bitcoin-production-cost-miners-relief-416283",
+      "published": "2026-09-24T18:22:39+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/news/markets/2026-09-24-jpmorgan-bitcoin-production-cost-miners-relief-416283"
+          }
+        ]
+      },
+      "summary": "JPMorgan says bitcoin crossing $85,000 production cost could ease miner selling pressure",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-dc7cccb510",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Crypto casino Duelbits goes offline after $7 million hot wallet hack",
+      "url": "https://www.coindesk.com/business/2026/09/24/crypto-casino-duelbits-goes-offline-after-usd7m-hot-wallet-hack",
+      "published": "2026-09-24T15:48:20+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/09/24/crypto-casino-duelbits-goes-offline-after-usd7m-hot-wallet-hack"
+          }
+        ]
+      },
+      "summary": "Crypto casino Duelbits goes offline after $7 million hot wallet hack",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-institutional-moves-c12c78d8e3",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Institutional moves",
+      "title": "UK’s largest banks complete world’s first interbank transactions using tokenized deposits",
+      "url": "https://www.coindesk.com/business/2026/09/24/uk-s-largest-banks-complete-world-s-first-interbank-transactions-using-tokenized-deposits",
+      "published": "2026-09-24T15:07:18+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Institutional moves",
+            "url": "https://www.coindesk.com/business/2026/09/24/uk-s-largest-banks-complete-world-s-first-interbank-transactions-using-tokenized-deposits"
+          }
+        ]
+      },
+      "summary": "UK’s largest banks complete world’s first interbank transactions using tokenized deposits",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-4ec27081f6",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "Ondo launches onchain portfolio tokens based on BlackRock-developed strategies",
+      "url": "https://www.theblock.co/news/markets/2026-09-24-ondo-launches-onchain-portfolio-tokens-based-blackrock-developed-strategies-416260",
+      "published": "2026-09-24T14:27:45+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/news/markets/2026-09-24-ondo-launches-onchain-portfolio-tokens-based-blackrock-developed-strategies-416260"
+          }
+        ]
+      },
+      "summary": "Ondo launches onchain portfolio tokens based on BlackRock-developed strategies",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-ccc83e8d9c",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Solana Foundation hires Binance, Polygon veterans as it ramps up tokenized finance push",
+      "url": "https://www.coindesk.com/business/2026/09/24/solana-foundation-hires-binance-polygon-veterans-as-it-ramps-up-tokenized-finance-push",
+      "published": "2026-09-24T13:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/09/24/solana-foundation-hires-binance-polygon-veterans-as-it-ramps-up-tokenized-finance-push"
+          }
+        ]
+      },
+      "summary": "Solana Foundation hires Binance, Polygon veterans as it ramps up tokenized finance push",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-56ef88c074",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Solana Foundation taps Binance, Polygon vets to drive institutional adoption and payments",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-24-solana-foundation-taps-binance-polygon-vets-to-drive-institutional-adoption-and-payments-416254",
+      "published": "2026-09-24T13:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/ecosystems/2026-09-24-solana-foundation-taps-binance-polygon-vets-to-drive-institutional-adoption-and-payments-416254"
+          }
+        ]
+      },
+      "summary": "Solana Foundation taps Binance, Polygon vets to drive institutional adoption and payments",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-policy-06fd24f9eb",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Policy",
+      "title": "EU's financial regulator to make AI and tokenization a supervisory priority in 2027",
+      "url": "https://www.coindesk.com/policy/2026/09/24/eu-s-financial-regulator-to-make-ai-and-tokenization-a-supervisory-priority-in-2027",
+      "published": "2026-09-24T12:26:43+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Policy",
+            "url": "https://www.coindesk.com/policy/2026/09/24/eu-s-financial-regulator-to-make-ai-and-tokenization-a-supervisory-priority-in-2027"
+          }
+        ]
+      },
+      "summary": "EU's financial regulator to make AI and tokenization a supervisory priority in 2027",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-coindesk-market-news-0f6f5402fb",
+      "jurisdiction": "GLOBAL",
+      "source": "CoinDesk — Market news",
+      "title": "Brooklyn man sent to prison for 12 years for stealing $16M in a Coinbase phishing scheme",
+      "url": "https://www.coindesk.com/business/2026/09/24/brooklyn-man-sent-to-prison-for-12-years-for-stealing-usd16m-in-a-coinbase-phishing-scheme",
+      "published": "2026-09-24T11:33:57+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "CoinDesk — Market news",
+            "url": "https://www.coindesk.com/business/2026/09/24/brooklyn-man-sent-to-prison-for-12-years-for-stealing-usd16m-in-a-coinbase-phishing-scheme"
+          }
+        ]
+      },
+      "summary": "Brooklyn man sent to prison for 12 years for stealing $16M in a Coinbase phishing scheme",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-institutional-moves-bb39631b59",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Institutional moves",
+      "title": "IBM connects Digital Asset Haven to Swift blockchain ledger for tokenized deposit transactions",
+      "url": "https://www.theblock.co/news/business/2026-09-24-ibm-connects-digital-asset-haven-to-swift-blockchain-ledger-for-tokenized-deposit-transactions-416237",
+      "published": "2026-09-24T10:00:00+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Institutional moves",
+            "url": "https://www.theblock.co/news/business/2026-09-24-ibm-connects-digital-asset-haven-to-swift-blockchain-ledger-for-tokenized-deposit-transactions-416237"
+          }
+        ]
+      },
+      "summary": "IBM connects Digital Asset Haven to Swift blockchain ledger for tokenized deposit transactions",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-the-block-market-news-00ecb57cfc",
+      "jurisdiction": "GLOBAL",
+      "source": "The Block — Market news",
+      "title": "Brooklyn man gets up to 12 years over $16 million Coinbase social engineering scheme",
+      "url": "https://www.theblock.co/news/regulation/2026-09-24-brooklyn-man-12-years-scheme-416231",
+      "published": "2026-09-24T08:21:32+00:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "The Block — Market news",
+            "url": "https://www.theblock.co/news/regulation/2026-09-24-brooklyn-man-12-years-scheme-416231"
+          }
+        ]
+      },
+      "summary": "Brooklyn man gets up to 12 years over $16 million Coinbase social engineering scheme",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "feed"
+    },
+    {
+      "id": "global-trm-labs-insights-bc7af5ad41",
+      "jurisdiction": "GLOBAL",
+      "source": "TRM Labs — Insights",
+      "title": "The State of Korean Digital Asset Compliance: While the Basic Act Waits",
+      "url": "https://www.trmlabs.com/resources/blog/the-state-of-korean-digital-asset-compliance-while-the-basic-act-waits",
+      "published": "2026-09-24T00:00:00+08:00",
+      "type": "news",
+      "priority": "normal",
+      "status": "new",
+      "verification": {
+        "level": "single_source",
+        "sources": [
+          {
+            "name": "TRM Labs — Insights",
+            "url": "https://www.trmlabs.com/resources/blog/the-state-of-korean-digital-asset-compliance-while-the-basic-act-waits"
+          }
+        ]
+      },
+      "summary": "The State of Korean Digital Asset Compliance: While the Basic Act Waits",
+      "so_what": "Review the source directly; automated analysis unavailable.",
+      "first_seen": "2026-09-24T23:43:41.161504+00:00",
+      "date_source": "page"
     }
   ],
   "source_health": [
@@ -2025,7 +2025,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182272+00:00",
+      "checked_at": "2026-09-24T23:43:41.055552+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2033,7 +2033,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182286+00:00",
+      "checked_at": "2026-09-24T23:43:41.055566+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2041,7 +2041,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182293+00:00",
+      "checked_at": "2026-09-24T23:43:41.055574+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2049,7 +2049,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182299+00:00",
+      "checked_at": "2026-09-24T23:43:41.055580+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2057,7 +2057,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182304+00:00",
+      "checked_at": "2026-09-24T23:43:41.055586+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2065,7 +2065,7 @@
       "status": "ok",
       "note": "No change",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182310+00:00",
+      "checked_at": "2026-09-24T23:43:41.055592+00:00",
       "jurisdiction": "HK"
     },
     {
@@ -2073,7 +2073,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182314+00:00",
+      "checked_at": "2026-09-24T23:43:41.055598+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2081,7 +2081,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182319+00:00",
+      "checked_at": "2026-09-24T23:43:41.055603+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2089,7 +2089,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182324+00:00",
+      "checked_at": "2026-09-24T23:43:41.055608+00:00",
       "jurisdiction": "CN"
     },
     {
@@ -2097,7 +2097,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182328+00:00",
+      "checked_at": "2026-09-24T23:43:41.055614+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2105,7 +2105,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182333+00:00",
+      "checked_at": "2026-09-24T23:43:41.055619+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2113,7 +2113,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182338+00:00",
+      "checked_at": "2026-09-24T23:43:41.055625+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2121,7 +2121,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182344+00:00",
+      "checked_at": "2026-09-24T23:43:41.055630+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2129,7 +2129,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182349+00:00",
+      "checked_at": "2026-09-24T23:43:41.055635+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2137,7 +2137,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182353+00:00",
+      "checked_at": "2026-09-24T23:43:41.055640+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2145,7 +2145,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182356+00:00",
+      "checked_at": "2026-09-24T23:43:41.055645+00:00",
       "jurisdiction": "US"
     },
     {
@@ -2153,7 +2153,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182359+00:00",
+      "checked_at": "2026-09-24T23:43:41.055650+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2161,7 +2161,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182363+00:00",
+      "checked_at": "2026-09-24T23:43:41.055656+00:00",
       "jurisdiction": "UK"
     },
     {
@@ -2169,7 +2169,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182366+00:00",
+      "checked_at": "2026-09-24T23:43:41.055661+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2177,7 +2177,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182369+00:00",
+      "checked_at": "2026-09-24T23:43:41.055667+00:00",
       "jurisdiction": "EU"
     },
     {
@@ -2185,15 +2185,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182372+00:00",
+      "checked_at": "2026-09-24T23:43:41.055673+00:00",
       "jurisdiction": "SG"
     },
     {
       "name": "Wolfsberg Group — News & publications",
       "status": "ok",
-      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='wolfsberg-group.org', port=443): Read timed out. (read timeout=15)); 1 consecutive failure — self-heal at 3.",
+      "note": "Fetch failed this run (fetch failed: HTTPSConnectionPool(host='wolfsberg-group.org', port=443): Read timed out. (read timeout=15)); 2 consecutive failures — self-heal at 3.",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182377+00:00",
+      "checked_at": "2026-09-24T23:43:41.055683+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2201,15 +2201,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182380+00:00",
+      "checked_at": "2026-09-24T23:43:41.055690+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "ACAMS Today",
       "status": "ok",
-      "note": "Feed responding normally",
+      "note": "Fetch failed this run (fetch failed: 403 Client Error: Forbidden for url: https://www.acams.org/en/acamstoday); 1 consecutive failure — self-heal at 3.",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182384+00:00",
+      "checked_at": "2026-09-24T23:43:41.055698+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2217,7 +2217,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182387+00:00",
+      "checked_at": "2026-09-24T23:43:41.055703+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2225,7 +2225,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "official",
-      "checked_at": "2026-09-23T23:24:06.182390+00:00",
+      "checked_at": "2026-09-24T23:43:41.055706+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2233,7 +2233,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182393+00:00",
+      "checked_at": "2026-09-24T23:43:41.055710+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2241,7 +2241,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182396+00:00",
+      "checked_at": "2026-09-24T23:43:41.055713+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2249,7 +2249,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182399+00:00",
+      "checked_at": "2026-09-24T23:43:41.055716+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2257,7 +2257,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182402+00:00",
+      "checked_at": "2026-09-24T23:43:41.055719+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2265,7 +2265,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182405+00:00",
+      "checked_at": "2026-09-24T23:43:41.055723+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2273,7 +2273,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182408+00:00",
+      "checked_at": "2026-09-24T23:43:41.055725+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2281,15 +2281,15 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.182411+00:00",
+      "checked_at": "2026-09-24T23:43:41.055729+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
       "name": "Elliptic — Blog",
       "status": "dead",
-      "note": "Failing for 41 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml/) — verify manually.",
+      "note": "Failing for 42 consecutive runs (fetch failed: 404 Client Error: Not Found for url: https://www.elliptic.co/insights/rss.xml/) — verify manually.",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.221673+00:00",
+      "checked_at": "2026-09-24T23:43:41.160260+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2297,7 +2297,7 @@
       "status": "ok",
       "note": "Feed responding normally",
       "tier": "industry",
-      "checked_at": "2026-09-23T23:24:06.221688+00:00",
+      "checked_at": "2026-09-24T23:43:41.160287+00:00",
       "jurisdiction": "GLOBAL"
     },
     {
@@ -2307,10 +2307,6 @@
     }
   ],
   "run_log": [
-    {
-      "at": "2026-09-10T22:53:07.560872+00:00",
-      "note": "Daily fetch: 12 new items surfaced; 34/36 sources ok"
-    },
     {
       "at": "2026-09-13T22:45:36.528332+00:00",
       "note": "Daily fetch: 11 new items surfaced; 34/36 sources ok"
@@ -2346,6 +2342,10 @@
     {
       "at": "2026-09-23T23:24:06.222771+00:00",
       "note": "Daily fetch: 11 new items surfaced; 34/36 sources ok"
+    },
+    {
+      "at": "2026-09-24T23:43:41.161504+00:00",
+      "note": "Daily fetch: 19 new items surfaced; 34/36 sources ok"
     }
   ],
   "radar": [
